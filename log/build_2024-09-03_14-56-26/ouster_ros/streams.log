@@ -1,0 +1,142 @@
+[0.011s] Invoking command in '/home/student/Desktop/workspace/build/ouster_ros': CMAKE_PREFIX_PATH=/home/student/Desktop/workspace/install/ouster_sensor_msgs:/home/student/Desktop/workspace/install/ouster_ros:/usr/local/labor_robotik/ros2/xarm_planner:/usr/local/labor_robotik/ros2/xarm_moveit_servo:/usr/local/labor_robotik/ros2/lri_xarm_integration:/usr/local/labor_robotik/ros2/xarm_moveit_config:/usr/local/labor_robotik/ros2/xarm_gazebo:/usr/local/labor_robotik/ros2/xarm_controller:/usr/local/labor_robotik/ros2/xarm_api:/usr/local/labor_robotik/ros2/xarm_sdk:/usr/local/labor_robotik/ros2/xarm_msgs:/usr/local/labor_robotik/ros2/xarm_description:/usr/local/labor_robotik/ros2/weiss_gripper:/usr/local/labor_robotik/ros2/weiss_gripper_interfaces:/usr/local/labor_robotik/ros2/sicktoolbox_wrapper:/usr/local/labor_robotik/ros2/sicktoolbox:/usr/local/labor_robotik/ros2/realsense_gazebo_plugin:/usr/local/labor_robotik/ros2/p2os_witness:/usr/local/labor_robotik/ros2/p2os_launch:/usr/local/labor_robotik/ros2/p2os_urdf:/usr/local/labor_robotik/ros2/p2os_device_plugins:/usr/local/labor_robotik/ros2/p2os_driver:/usr/local/labor_robotik/ros2/lri_webots_interface:/usr/local/labor_robotik/ros2/p2os_msgs:/usr/local/labor_robotik/ros2/lr_utility_lib:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/workspace/install/ouster_sensor_msgs/lib:/home/student/Desktop/workspace/install/ouster_ros/lib:/usr/local/labor_robotik/ros2/xarm_planner/lib:/usr/local/labor_robotik/ros2/xarm_moveit_servo/lib:/usr/local/labor_robotik/ros2/xarm_gazebo/lib:/usr/local/labor_robotik/ros2/xarm_controller/lib:/usr/local/labor_robotik/ros2/xarm_api/lib:/usr/local/labor_robotik/ros2/xarm_sdk/lib:/usr/local/labor_robotik/ros2/xarm_msgs/lib:/usr/local/labor_robotik/ros2/weiss_gripper/lib:/usr/local/labor_robotik/ros2/weiss_gripper_interfaces/lib:/usr/local/labor_robotik/ros2/sicktoolbox/lib:/usr/local/labor_robotik/ros2/realsense_gazebo_plugin/lib:/usr/local/labor_robotik/ros2/p2os_device_plugins/lib:/usr/local/labor_robotik/ros2/p2os_driver/lib:/usr/local/labor_robotik/ros2/lri_webots_interface/lib:/usr/local/labor_robotik/ros2/p2os_msgs/lib:/usr/local/labor_robotik/ros2/lr_utility_lib/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/local/lib/:/usr/lib/x86_64-linux-gnu/:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/local/lib/:/usr/lib/x86_64-linux-gnu/ /home/student/.local/bin/cmake --build /home/student/Desktop/workspace/build/ouster_ros -- -j16 -l16
+[0.054s] [34m[1mGenerating build info header[0m
+[0.060s] [  3%] Built target gtest_main
+[0.064s] [  7%] Built target os_sensor
+[0.066s] [ 10%] Built target gtest
+[0.066s] [ 14%] Built target os_image
+[0.067s] [ 18%] Built target os_driver
+[0.067s] [ 21%] Built target os_replay
+[0.068s] [ 25%] Built target os_cloud
+[0.070s] [ 25%] Built target ouster_generate_header
+[0.098s] [ 27%] [32mBuilding CXX object ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/types.cpp.o[0m
+[0.098s] [ 29%] [32mBuilding CXX object ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_info.cpp.o[0m
+[0.098s] [ 30%] [32mBuilding CXX object ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/lidar_scan.cpp.o[0m
+[7.695s] [ 32%] [32m[1mLinking CXX static library libouster_client.a[0m
+[7.741s] [ 52%] Built target ouster_client
+[7.761s] [ 54%] [32mBuilding CXX object CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.o[0m
+[15.876s] [ 56%] [32m[1mLinking CXX shared library libouster_ros_library.so[0m
+[15.990s] [ 56%] Built target ouster_ros_library
+[16.015s] [ 58%] [32mBuilding CXX object CMakeFiles/os_replay_component.dir/src/os_sensor_node_base.cpp.o[0m
+[16.018s] [ 60%] [32mBuilding CXX object CMakeFiles/os_sensor_component.dir/src/os_sensor_node_base.cpp.o[0m
+[16.021s] [ 61%] [32mBuilding CXX object CMakeFiles/os_sensor_component.dir/src/os_sensor_node.cpp.o[0m
+[16.025s] [ 65%] [32mBuilding CXX object CMakeFiles/os_cloud_component.dir/src/os_cloud_node.cpp.o[0m
+[16.025s] [ 65%] [32mBuilding CXX object CMakeFiles/os_image_component.dir/src/os_image_node.cpp.o[0m
+[16.030s] [ 67%] [32mBuilding CXX object CMakeFiles/os_driver_component.dir/src/os_sensor_node_base.cpp.o[0m
+[16.033s] [ 69%] [32mBuilding CXX object CMakeFiles/os_driver_component.dir/src/os_sensor_node.cpp.o[0m
+[16.037s] [ 70%] [32mBuilding CXX object CMakeFiles/os_driver_component.dir/src/os_driver_node.cpp.o[0m
+[16.072s] [ 72%] [32mBuilding CXX object CMakeFiles/ouster_ros_test.dir/src/os_ros.cpp.o[0m
+[16.076s] [ 74%] [32mBuilding CXX object CMakeFiles/ouster_ros_test.dir/test/point_accessor_test.cpp.o[0m
+[16.077s] [ 76%] [32mBuilding CXX object CMakeFiles/ouster_ros_test.dir/test/point_transform_test.cpp.o[0m
+[16.079s] [ 78%] [32mBuilding CXX object CMakeFiles/ouster_ros_test.dir/test/point_cloud_compose_test.cpp.o[0m
+[23.688s] In file included from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_cloud_node.cpp:24[m[K:
+[23.688s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/lidar_packet_handler.h:[m[K In member function ‘[01m[Kbool ouster_ros::LidarPacketHandler::lidar_handler_sensor_time(const ouster::sensor::packet_format&, const uint8_t*)[m[K’:
+[23.688s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/lidar_packet_handler.h:286:29:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool ouster::ScanBatcher::operator()(const uint8_t*, ouster::LidarScan&)[m[K’ is deprecated: Use ScanBatcher::operator(LidarPacket&, LidarScan&) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[23.688s]   286 |         if (![01;35m[K(*scan_batcher)(lidar_buf, *lidar_scans[ring_buffer.write_head()])[m[K) return false;
+[23.688s]       |              [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.688s] In file included from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/include/ouster_ros/os_ros.h:16[m[K,
+[23.688s]                  from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_cloud_node.cpp:12[m[K:
+[23.689s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/ouster-sdk/ouster_client/include/ouster/lidar_scan.h:532:5:[m[K [01;36m[Knote: [m[Kdeclared here
+[23.689s]   532 |     [01;36m[Koperator[m[K()(const uint8_t* packet_buf, LidarScan& ls);
+[23.689s]       |     [01;36m[K^~~~~~~~[m[K
+[23.705s] In file included from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_cloud_node.cpp:24[m[K:
+[23.705s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/lidar_packet_handler.h:[m[K In member function ‘[01m[Kbool ouster_ros::LidarPacketHandler::lidar_handler_sensor_time_ptp(const ouster::sensor::packet_format&, const uint8_t*, int64_t)[m[K’:
+[23.706s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/lidar_packet_handler.h:308:29:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool ouster::ScanBatcher::operator()(const uint8_t*, ouster::LidarScan&)[m[K’ is deprecated: Use ScanBatcher::operator(LidarPacket&, LidarScan&) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[23.706s]   308 |         if (![01;35m[K(*scan_batcher)(lidar_buf, *lidar_scans[ring_buffer.write_head()])[m[K) return false;
+[23.706s]       |              [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.706s] In file included from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/include/ouster_ros/os_ros.h:16[m[K,
+[23.706s]                  from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_cloud_node.cpp:12[m[K:
+[23.706s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/ouster-sdk/ouster_client/include/ouster/lidar_scan.h:532:5:[m[K [01;36m[Knote: [m[Kdeclared here
+[23.706s]   532 |     [01;36m[Koperator[m[K()(const uint8_t* packet_buf, LidarScan& ls);
+[23.706s]       |     [01;36m[K^~~~~~~~[m[K
+[23.707s] In file included from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_cloud_node.cpp:24[m[K:
+[23.707s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/lidar_packet_handler.h:[m[K In member function ‘[01m[Kbool ouster_ros::LidarPacketHandler::lidar_handler_ros_time(const ouster::sensor::packet_format&, const uint8_t*)[m[K’:
+[23.707s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/lidar_packet_handler.h:339:29:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool ouster::ScanBatcher::operator()(const uint8_t*, ouster::LidarScan&)[m[K’ is deprecated: Use ScanBatcher::operator(LidarPacket&, LidarScan&) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[23.707s]   339 |         if (![01;35m[K(*scan_batcher)(lidar_buf, *lidar_scans[ring_buffer.write_head()])[m[K) return false;
+[23.707s]       |              [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.707s] In file included from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/include/ouster_ros/os_ros.h:16[m[K,
+[23.707s]                  from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_cloud_node.cpp:12[m[K:
+[23.707s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/ouster-sdk/ouster_client/include/ouster/lidar_scan.h:532:5:[m[K [01;36m[Knote: [m[Kdeclared here
+[23.707s]   532 |     [01;36m[Koperator[m[K()(const uint8_t* packet_buf, LidarScan& ls);
+[23.708s]       |     [01;36m[K^~~~~~~~[m[K
+[23.763s] In file included from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_image_node.cpp:23[m[K:
+[23.763s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/lidar_packet_handler.h:[m[K In member function ‘[01m[Kbool ouster_ros::LidarPacketHandler::lidar_handler_sensor_time(const ouster::sensor::packet_format&, const uint8_t*)[m[K’:
+[23.763s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/lidar_packet_handler.h:286:29:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool ouster::ScanBatcher::operator()(const uint8_t*, ouster::LidarScan&)[m[K’ is deprecated: Use ScanBatcher::operator(LidarPacket&, LidarScan&) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[23.764s]   286 |         if (![01;35m[K(*scan_batcher)(lidar_buf, *lidar_scans[ring_buffer.write_head()])[m[K) return false;
+[23.764s]       |              [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.764s] In file included from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/include/ouster_ros/os_ros.h:16[m[K,
+[23.764s]                  from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_image_node.cpp:17[m[K:
+[23.764s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/ouster-sdk/ouster_client/include/ouster/lidar_scan.h:532:5:[m[K [01;36m[Knote: [m[Kdeclared here
+[23.764s]   532 |     [01;36m[Koperator[m[K()(const uint8_t* packet_buf, LidarScan& ls);
+[23.764s]       |     [01;36m[K^~~~~~~~[m[K
+[23.774s] In file included from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_image_node.cpp:23[m[K:
+[23.774s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/lidar_packet_handler.h:[m[K In member function ‘[01m[Kbool ouster_ros::LidarPacketHandler::lidar_handler_sensor_time_ptp(const ouster::sensor::packet_format&, const uint8_t*, int64_t)[m[K’:
+[23.775s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/lidar_packet_handler.h:308:29:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool ouster::ScanBatcher::operator()(const uint8_t*, ouster::LidarScan&)[m[K’ is deprecated: Use ScanBatcher::operator(LidarPacket&, LidarScan&) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[23.775s]   308 |         if (![01;35m[K(*scan_batcher)(lidar_buf, *lidar_scans[ring_buffer.write_head()])[m[K) return false;
+[23.775s]       |              [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.775s] In file included from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/include/ouster_ros/os_ros.h:16[m[K,
+[23.775s]                  from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_image_node.cpp:17[m[K:
+[23.775s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/ouster-sdk/ouster_client/include/ouster/lidar_scan.h:532:5:[m[K [01;36m[Knote: [m[Kdeclared here
+[23.775s]   532 |     [01;36m[Koperator[m[K()(const uint8_t* packet_buf, LidarScan& ls);
+[23.775s]       |     [01;36m[K^~~~~~~~[m[K
+[23.775s] In file included from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_image_node.cpp:23[m[K:
+[23.776s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/lidar_packet_handler.h:[m[K In member function ‘[01m[Kbool ouster_ros::LidarPacketHandler::lidar_handler_ros_time(const ouster::sensor::packet_format&, const uint8_t*)[m[K’:
+[23.776s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/lidar_packet_handler.h:339:29:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool ouster::ScanBatcher::operator()(const uint8_t*, ouster::LidarScan&)[m[K’ is deprecated: Use ScanBatcher::operator(LidarPacket&, LidarScan&) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[23.776s]   339 |         if (![01;35m[K(*scan_batcher)(lidar_buf, *lidar_scans[ring_buffer.write_head()])[m[K) return false;
+[23.776s]       |              [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.776s] In file included from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/include/ouster_ros/os_ros.h:16[m[K,
+[23.776s]                  from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_image_node.cpp:17[m[K:
+[23.776s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/ouster-sdk/ouster_client/include/ouster/lidar_scan.h:532:5:[m[K [01;36m[Knote: [m[Kdeclared here
+[23.776s]   532 |     [01;36m[Koperator[m[K()(const uint8_t* packet_buf, LidarScan& ls);
+[23.776s]       |     [01;36m[K^~~~~~~~[m[K
+[23.905s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_image_node.cpp:[m[K At global scope:
+[23.905s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_image_node.cpp:50:78:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::ConstPtr[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[23.905s]    50 |     void metadata_handler(const std_msgs::msg::String::ConstPtr& metadata_msg[01;35m[K)[m[K {
+[23.905s]       |                                                                              [01;35m[K^[m[K
+[23.905s] In file included from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:7[m[K,
+[23.906s]                  from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/include/ouster_ros/os_processing_node_base.h:14[m[K,
+[23.906s]                  from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_image_node.cpp:21[m[K:
+[23.906s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:105:5:[m[K [01;36m[Knote: [m[Kdeclared here
+[23.906s]   105 |     [01;36m[KConstPtr[m[K;
+[23.906s]       |     [01;36m[K^~~~~~~~[m[K
+[24.144s] In file included from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_driver_node.cpp:20[m[K:
+[24.144s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/lidar_packet_handler.h:[m[K In member function ‘[01m[Kbool ouster_ros::LidarPacketHandler::lidar_handler_sensor_time(const ouster::sensor::packet_format&, const uint8_t*)[m[K’:
+[24.144s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/lidar_packet_handler.h:286:29:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool ouster::ScanBatcher::operator()(const uint8_t*, ouster::LidarScan&)[m[K’ is deprecated: Use ScanBatcher::operator(LidarPacket&, LidarScan&) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[24.144s]   286 |         if (![01;35m[K(*scan_batcher)(lidar_buf, *lidar_scans[ring_buffer.write_head()])[m[K) return false;
+[24.144s]       |              [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[24.146s] In file included from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/include/ouster_ros/os_ros.h:16[m[K,
+[24.147s]                  from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_driver_node.cpp:13[m[K:
+[24.147s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/ouster-sdk/ouster_client/include/ouster/lidar_scan.h:532:5:[m[K [01;36m[Knote: [m[Kdeclared here
+[24.147s]   532 |     [01;36m[Koperator[m[K()(const uint8_t* packet_buf, LidarScan& ls);
+[24.147s]       |     [01;36m[K^~~~~~~~[m[K
+[24.161s] In file included from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_driver_node.cpp:20[m[K:
+[24.161s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/lidar_packet_handler.h:[m[K In member function ‘[01m[Kbool ouster_ros::LidarPacketHandler::lidar_handler_sensor_time_ptp(const ouster::sensor::packet_format&, const uint8_t*, int64_t)[m[K’:
+[24.161s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/lidar_packet_handler.h:308:29:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool ouster::ScanBatcher::operator()(const uint8_t*, ouster::LidarScan&)[m[K’ is deprecated: Use ScanBatcher::operator(LidarPacket&, LidarScan&) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[24.161s]   308 |         if (![01;35m[K(*scan_batcher)(lidar_buf, *lidar_scans[ring_buffer.write_head()])[m[K) return false;
+[24.161s]       |              [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[24.161s] In file included from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/include/ouster_ros/os_ros.h:16[m[K,
+[24.161s]                  from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_driver_node.cpp:13[m[K:
+[24.161s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/ouster-sdk/ouster_client/include/ouster/lidar_scan.h:532:5:[m[K [01;36m[Knote: [m[Kdeclared here
+[24.161s]   532 |     [01;36m[Koperator[m[K()(const uint8_t* packet_buf, LidarScan& ls);
+[24.162s]       |     [01;36m[K^~~~~~~~[m[K
+[24.162s] In file included from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_driver_node.cpp:20[m[K:
+[24.162s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/lidar_packet_handler.h:[m[K In member function ‘[01m[Kbool ouster_ros::LidarPacketHandler::lidar_handler_ros_time(const ouster::sensor::packet_format&, const uint8_t*)[m[K’:
+[24.162s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/lidar_packet_handler.h:339:29:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool ouster::ScanBatcher::operator()(const uint8_t*, ouster::LidarScan&)[m[K’ is deprecated: Use ScanBatcher::operator(LidarPacket&, LidarScan&) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[24.163s]   339 |         if (![01;35m[K(*scan_batcher)(lidar_buf, *lidar_scans[ring_buffer.write_head()])[m[K) return false;
+[24.163s]       |              [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[24.163s] In file included from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/include/ouster_ros/os_ros.h:16[m[K,
+[24.163s]                  from [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_driver_node.cpp:13[m[K:
+[24.163s] [01m[K/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/ouster-sdk/ouster_client/include/ouster/lidar_scan.h:532:5:[m[K [01;36m[Knote: [m[Kdeclared here
+[24.163s]   532 |     [01;36m[Koperator[m[K()(const uint8_t* packet_buf, LidarScan& ls);
+[24.163s]       |     [01;36m[K^~~~~~~~[m[K
+[25.346s] [ 80%] [32m[1mLinking CXX shared library libos_replay_component.so[0m
+[25.548s] [ 81%] Built target os_replay_component
+[27.691s] [ 83%] [32m[1mLinking CXX executable ouster_ros_test[0m
+[27.935s] [ 89%] Built target ouster_ros_test
+[31.699s] [ 90%] [32m[1mLinking CXX shared library libos_sensor_component.so[0m
+[31.876s] [ 90%] Built target os_sensor_component
+[33.312s] [ 92%] [32m[1mLinking CXX shared library libos_image_component.so[0m
+[33.524s] [ 94%] Built target os_image_component
+[36.627s] [ 96%] [32m[1mLinking CXX shared library libos_driver_component.so[0m
+[36.834s] [ 96%] Built target os_driver_component
+[38.904s] [ 98%] [32m[1mLinking CXX shared library libos_cloud_component.so[0m
+[39.118s] [100%] Built target os_cloud_component

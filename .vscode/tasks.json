@@ -1,0 +1,58 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Colcon build",
+			"command": "source /opt/ros/humble/setup.bash && colcon build --cmake-args ' -DCMAKE_BUILD_TYPE=${input:cmake_build_type}'",
+			"args": [],
+			"options": {
+				"cwd": "${workspaceFolder}",
+				"shell": {
+					"executable": "/bin/bash",
+					"args": [
+						"-c"
+					]
+				}
+			},
+			"group": "build"
+		},
+		{
+			"type": "shell",
+			"label": "Launch ROS2 Node Debugging",
+			"command": "source /opt/ros/humble/setup.bash && . install/setup.bash && ros2 run --prefix 'gdbserver :9091' ${input:ros2_run_input}",
+			"args": [],
+			"options": {
+				"cwd": "${workspaceFolder}",
+				"shell": {
+					"executable": "/bin/bash",
+					"args": [
+						"-c"
+					]
+				}
+			},
+			"group": "build"
+		}
+	],
+	"inputs": [
+		{
+			"id": "ros2_run_input",
+			"description": "ROS2 package, executable and options to start a debugging session with: ",
+			"default": "",
+			"type": "pickString",
+			"options": [
+				// Put your ROS2 package, executable and options here
+			]
+		},
+		{
+			"id": "cmake_build_type",
+			"description": "CMake build type: ",
+			"default": "DEBUG",
+			"type": "pickString",
+			"options": [
+				"DEBUG",
+				"RELEASE"
+			]
+		}
+	]
+}

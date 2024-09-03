@@ -1,0 +1,1 @@
+/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_typesupport_introspection_c/ouster_sensor_msgs/srv/detail/get_config__rosidl_typesupport_introspection_c.h

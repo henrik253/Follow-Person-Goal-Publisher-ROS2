@@ -1,0 +1,1 @@
+/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_cmake/srv/GetMetadata_Response.msg

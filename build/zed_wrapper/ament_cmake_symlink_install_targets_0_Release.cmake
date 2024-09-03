@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/student/Desktop/workspace/build/zed_wrapper/zed_wrapper" "TARGETS" "zed_wrapper" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "lib/zed_wrapper")

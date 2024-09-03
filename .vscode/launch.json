@@ -1,0 +1,37 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "gdb Remote Debug",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/${input:node_binary_path}",
+			"miDebuggerArgs": "",
+			"additionalSOLibSearchPath": "",
+			"stopAtEntry": true,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"miDebuggerServerAddress": "localhost:9091",
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			]
+		}
+	],
+	"inputs": [
+		{
+			"id": "node_binary_path",
+			"type": "pickString",
+			"description": "Path to the node's binary file",
+			"options": [
+				// Put a path to the node binary you want to debug here
+				"install/debugging_pkg/lib/debugging_pkg/debugging_node"
+			]
+		}
+	]
+}

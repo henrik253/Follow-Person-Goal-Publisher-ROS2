@@ -1,0 +1,41 @@
+[34m[1mGenerating build info header[0m
+[  3%] Built target gtest_main
+[  7%] Built target os_sensor
+[ 10%] Built target gtest
+[ 14%] Built target os_image
+[ 18%] Built target os_driver
+[ 21%] Built target os_replay
+[ 25%] Built target os_cloud
+[ 25%] Built target ouster_generate_header
+[ 27%] [32mBuilding CXX object ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/types.cpp.o[0m
+[ 29%] [32mBuilding CXX object ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_info.cpp.o[0m
+[ 30%] [32mBuilding CXX object ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/lidar_scan.cpp.o[0m
+[ 32%] [32m[1mLinking CXX static library libouster_client.a[0m
+[ 52%] Built target ouster_client
+[ 54%] [32mBuilding CXX object CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.o[0m
+[ 56%] [32m[1mLinking CXX shared library libouster_ros_library.so[0m
+[ 56%] Built target ouster_ros_library
+[ 58%] [32mBuilding CXX object CMakeFiles/os_replay_component.dir/src/os_sensor_node_base.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/os_sensor_component.dir/src/os_sensor_node_base.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/os_sensor_component.dir/src/os_sensor_node.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/os_cloud_component.dir/src/os_cloud_node.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/os_image_component.dir/src/os_image_node.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/os_driver_component.dir/src/os_sensor_node_base.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/os_driver_component.dir/src/os_sensor_node.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/os_driver_component.dir/src/os_driver_node.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/ouster_ros_test.dir/src/os_ros.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/ouster_ros_test.dir/test/point_accessor_test.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/ouster_ros_test.dir/test/point_transform_test.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/ouster_ros_test.dir/test/point_cloud_compose_test.cpp.o[0m
+[ 80%] [32m[1mLinking CXX shared library libos_replay_component.so[0m
+[ 81%] Built target os_replay_component
+[ 83%] [32m[1mLinking CXX executable ouster_ros_test[0m
+[ 89%] Built target ouster_ros_test
+[ 90%] [32m[1mLinking CXX shared library libos_sensor_component.so[0m
+[ 90%] Built target os_sensor_component
+[ 92%] [32m[1mLinking CXX shared library libos_image_component.so[0m
+[ 94%] Built target os_image_component
+[ 96%] [32m[1mLinking CXX shared library libos_driver_component.so[0m
+[ 96%] Built target os_driver_component
+[ 98%] [32m[1mLinking CXX shared library libos_cloud_component.so[0m
+[100%] Built target os_cloud_component
