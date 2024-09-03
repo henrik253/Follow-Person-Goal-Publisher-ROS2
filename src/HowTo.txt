@@ -1,0 +1,35 @@
+
+Ouster Repo Ros branch
+git clone --recursive --branch ros2 https://github.com/ouster-lidar/ouster-ros
+driver_params.yaml server hostname eintragen ... 
+colcon build --symlink-install
+. install/local_setup.bash
+ros2 launch ouster_ros driver.launch.py -s // zeigt optionen an z.B. ohne Vviz
+ros2 launch ouster_ros driver.launch.py  
+ip a 
+export ROS_DOMAIN_ID=4 // in allen Terminals 
+
+
+unter: http://rbt-10b.lri.hochschule-trier.de/config Ipv4 DHCP in sensor_hostname eintragen ohne port 192.168.119.140
+unter: http://rbt-10b.lri.hochschule-trier.de/config UDP Des Adresse diese in config eintragemn
+
+in anderem Terminal dann: 
+export ROS_Domain_ID=4 
+tos topic list 
+
+
+// RViz ohne ros2 launch öffnen: ros2 launch ouster_ros driver.launch.py viz:=False 
+wenn ROS_DOMAIN_ID=4 dann neues terminal öffnen ROS Domain ändern von 0 auf 4 dann rviz2 mittels Terminal öffnen: rviz2
+
+in RVIZ: 
+	-Reliabillity Policy auf Best Effort
+	- Fixed Frame auf etwas anderes als map os_imu z.B. 
+	
+	
+ZED 2I 
+https://github.com/stereolabs/zed-ros2-wrapper meneu lesemn aber nur notierten punkte beachten :
+
+git clone  --recursive https://github.com/stereolabs/zed-ros2-wrapper.git
+colcon build --symlink-install // symlink für linken in install ordner
+ ros2 launch zed_wrapper zed_camera.launch.py camera_model:=<camera_model> // camera_model = zed2i 
+
