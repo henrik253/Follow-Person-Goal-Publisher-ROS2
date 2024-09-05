@@ -33,3 +33,37 @@ git clone  --recursive https://github.com/stereolabs/zed-ros2-wrapper.git
 colcon build --symlink-install // symlink für linken in install ordner
  ros2 launch zed_wrapper zed_camera.launch.py camera_model:=<camera_model> // camera_model = zed2i 
 
+
+// Sauberer notiert
+GIT: 
+	Submodules
+		git submodules add -b branchname url 
+		git submodules add url 
+
+	Falls gleiche Submodules bereits gestaged sind dann nachschauen mit: 
+		git ls-files --stage projectname 
+	verwerfen mittels: 
+		git rm --cached projectname
+
+	falls submodules submodules besitzen: 
+		git submodules update --init --recursive 
+
+BASH: 
+	export varName="Value der localen Env Variable" 
+	echo $varName // gibt den Wert aus 
+	. // ist das gleiche wie source
+	source install/local_setup.bash // sourced skript, also führt es in der eigenen Shell aus
+
+	Skripting 
+	chmod +x script.sh // Skript ausführbar machne 
+	./script.sh 
+
+
+OUSTER OS1 
+-	Ouster mit Netzwerk verbinden 
+-	Im Browser mittels url suchen rbt-10b.lri.hochschule-trier.de
+-	Hostname in driver_params.yaml eintragen und UDP Dest Adresse: GGF. UDP DEST auf .36 erhöhen!!!  auf website und in config
+-	colcon build --symlink-install // in workspace!!!
+-	. install/local_setup.bash // sourcing des skriptes in eigener Shell (nicht in neuer) z.B.  Umgebungsvariablen in der Shell zu ändern
+-	ros2 launch ouster_ros driver.launch.py  
+		
