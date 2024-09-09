@@ -3,3 +3,7 @@
 	url = https://github.com/ouster-lidar/ouster-ros
 	branch = ros2
 
+[submodule "zed-ros2-wrapper"]
+	path = zed-ros2-wrapper
+	url = https://github.com/stereolabs/zed-ros2-wrapper
+
