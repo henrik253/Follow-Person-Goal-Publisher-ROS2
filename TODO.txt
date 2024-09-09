@@ -1,0 +1,9 @@
+
+
+1.Try to use LIDAR instead of ZED Stereo Point Cloud 
+2.Try to start the script working to run all the nodes just by starting the script 
+3. More comments and write documentation!
+4. add .gitignore fie
+
+
+When Object Estimation works, start working on other branches! 

@@ -5,6 +5,9 @@ from sensor_msgs.msg import PointCloud2
 import sensor_msgs_py.point_cloud2 as pc2
 import heapq
 
+
+
+# TODO try to use LiDAR insteaf of ZED depth image! 
 class Person:
     def __init__(self, person_id, x, y, z=float('nan')):
         self.person_id = person_id
