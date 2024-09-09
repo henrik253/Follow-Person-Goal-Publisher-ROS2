@@ -1,0 +1,16 @@
+running develop
+running egg_info
+creating position_estimation.egg-info
+writing position_estimation.egg-info/PKG-INFO
+writing dependency_links to position_estimation.egg-info/dependency_links.txt
+writing entry points to position_estimation.egg-info/entry_points.txt
+writing requirements to position_estimation.egg-info/requires.txt
+writing top-level names to position_estimation.egg-info/top_level.txt
+writing manifest file 'position_estimation.egg-info/SOURCES.txt'
+reading manifest file 'position_estimation.egg-info/SOURCES.txt'
+writing manifest file 'position_estimation.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/student/Desktop/workspace/install/position_estimation/lib/python3.10/site-packages/position-estimation.egg-link (link to .)
+Installing position_estimation_node script to /home/student/Desktop/workspace/install/position_estimation/lib/position_estimation
+
+Installed /home/student/Desktop/workspace/build/position_estimation

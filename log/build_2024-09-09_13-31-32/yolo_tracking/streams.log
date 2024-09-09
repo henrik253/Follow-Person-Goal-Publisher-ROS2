@@ -1,0 +1,12 @@
+[0.879s] Invoking command in '/home/student/Desktop/workspace/build/yolo_tracking': PYTHONPATH=/home/student/Desktop/workspace/build/yolo_tracking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/yolo_tracking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/yolo_tracking/build --no-deps symlink_data
+[1.231s] running develop
+[1.231s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.231s]   warnings.warn(
+[1.500s] running egg_info
+[1.500s] writing yolo_tracking.egg-info/PKG-INFO
+[1.500s] writing dependency_links to yolo_tracking.egg-info/dependency_links.txt
+[1.501s] writing entry points to yolo_tracking.egg-info/entry_points.txt
+[1.501s] writing requirements to yolo_tracking.egg-info/requires.txt
+[1.501s] writing top-level names to yolo_tracking.egg-info/top_level.txt
+[1.502s] error: package directory 'src' does not exist
+[1.524s] Invoked command in '/home/student/Desktop/workspace/build/yolo_tracking' returned '1': PYTHONPATH=/home/student/Desktop/workspace/build/yolo_tracking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/yolo_tracking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/yolo_tracking/build --no-deps symlink_data
