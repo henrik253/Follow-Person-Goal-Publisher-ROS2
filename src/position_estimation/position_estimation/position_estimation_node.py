@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float32MultiArray
 from sensor_msgs.msg import PointCloud2
+from sensor_msgs.msg import Image
 import sensor_msgs_py.point_cloud2 as pc2
 import heapq
 
@@ -66,6 +67,14 @@ class PositionEstimationNode(Node):
             10
         )
         
+        #Create a subscription to sensor depth map 
+        self.depth_subscription = self.create_subscription(
+            Image,
+            '/zed/zed_node/depth/depth_registered',
+            self.depth_callback,
+            10
+        )
+
         # Create a subscription to the sensor data topic
         self.sensor_subscription = self.create_subscription(
             PointCloud2,
@@ -77,11 +86,13 @@ class PositionEstimationNode(Node):
         self.detected_persons = PersonPool(capacity=MAX_POOL_MEMBERS)
         self.last_detected_person = None
         self.last_point_cloud = []
+        self.last_depth_map = None
+        self.last_center_index = None
 
     def object_callback(self, msg):
         positions = msg.data
         num_persons = len(positions) // 2  # Each person has 2 coordinates
-        self.get_logger().info(f'Received positions for {num_persons} detected persons.')
+        self.get_logger().info(f'\n Received positions for {num_persons} detected persons.')
         for i in range(num_persons):
             x = positions[2*i]
             y = positions[2*i + 1]
@@ -91,7 +102,7 @@ class PositionEstimationNode(Node):
                 self.get_logger().info('last_point_cloud is 0')
                 return  
             
-            z_world = self.get_z_coordinate(x, y)
+            z_world = self.get_z_coordinate_from_last_point_cloud(x, y)
 
             if z_world is None:
                 self.get_logger().info(f'No z found for x={x} and y={y}')
@@ -101,7 +112,23 @@ class PositionEstimationNode(Node):
             self.last_detected_person = person
 
             #self.detected_persons.add_person(person)
+
+    def depth_callback(self, msg):
+    # Convert ROS Image message to OpenCV image
+        width = msg.width
+        height = msg.height
+        self.depthmap = msg.data; 
         
+        #  int centerIdx = u + msg->width * v;
+        u = int(width /2)
+        v = int(height/2)
+        centerIndex = u + width * v
+        self.last_center_index = centerIndex
+
+        print(f'depth value at:::: {self.depthmap[centerIndex]}')
+
+    
+
     def zed_pointcloud_callback(self, msg):
         # Convert PointCloud2 message to a list of points
         point_cloud = pc2.read_points(msg, field_names=("x", "y", "z"), skip_nans=True)
@@ -110,12 +137,14 @@ class PositionEstimationNode(Node):
         # Uncomment if needed
         #self.get_logger().info(f'Received point cloud with {len(self.last_point_cloud)} points.')
     
-    def get_z_coordinate(self, x_image, y_image): 
-        print("Ximage: ", x_image)
-        print( "yimage:", y_image)
+    def get_z_coordinate_from_last_point_cloud(self, x_image, y_image): 
+        print("X-Image: ", x_image)
+        print("Y-Image:", y_image)
+
+        
         for point in self.last_point_cloud: 
             x, y, z = point
-
+            
             if abs(x - x_image) < 100.0 and abs(y - y_image) < 100.0:
                 return z
         return None
