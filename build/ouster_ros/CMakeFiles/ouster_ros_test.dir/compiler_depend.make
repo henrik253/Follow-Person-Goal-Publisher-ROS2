@@ -1229,6 +1229,10 @@ CMakeFiles/ouster_ros_test.dir/src/os_ros.cpp.o: /home/student/Desktop/workspace
   /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
   /opt/ros/humble/include/tf2/tf2/buffer_core.h \
   /opt/ros/humble/include/tf2/tf2/LinearMath/Transform.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp \
   /opt/ros/humble/include/tf2/tf2/buffer_core_interface.h \
   /opt/ros/humble/include/tf2/tf2/transform_storage.h \
   /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.h \
@@ -7380,8 +7384,6 @@ CMakeFiles/ouster_ros_test.dir/test/test_main.cpp.o: /home/student/Desktop/works
 
 /usr/include/boost/utility/identity_type.hpp:
 
-/usr/include/boost/preprocessor/arithmetic/detail/div_base.hpp:
-
 /usr/include/boost/preprocessor/arithmetic/mod.hpp:
 
 /usr/include/boost/preprocessor/seq/cat.hpp:
@@ -7765,6 +7767,14 @@ CMakeFiles/ouster_ros_test.dir/test/test_main.cpp.o: /home/student/Desktop/works
 /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:
 
 /opt/ros/humble/include/tf2/tf2/buffer_core_interface.h:
+
+/usr/include/boost/preprocessor/arithmetic/detail/div_base.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp:
 
 /opt/ros/humble/include/tf2/tf2/buffer_core.h:
 
@@ -10363,6 +10373,8 @@ CMakeFiles/ouster_ros_test.dir/test/test_main.cpp.o: /home/student/Desktop/works
 /usr/include/linux/errno.h:
 
 /usr/include/boost/preprocessor/control/detail/while.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp:
 
 /usr/include/boost/mpl/aux_/config/eti.hpp:
 

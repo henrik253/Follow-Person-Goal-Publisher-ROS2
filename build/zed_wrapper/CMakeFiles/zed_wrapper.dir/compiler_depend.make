@@ -769,6 +769,12 @@ CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o: /home/student/Desktop/workspac
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
   /opt/ros/humble/include/tf2/tf2/buffer_core_interface.h \
   /opt/ros/humble/include/tf2/tf2/time.h \
   /opt/ros/humble/include/tf2/tf2/exceptions.h \
@@ -849,11 +855,9 @@ CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o: /home/student/Desktop/workspac
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/path.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__builder.hpp \
@@ -1116,11 +1120,7 @@ CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o: /home/student/Desktop/workspac
 
 /opt/ros/humble/include/nav_msgs/nav_msgs/msg/path.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
-
 /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp:
 
@@ -1220,6 +1220,10 @@ CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o: /home/student/Desktop/workspac
 
 /opt/ros/humble/include/tf2/tf2/buffer_core_interface.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
+
 /opt/ros/humble/include/diagnostic_updater/diagnostic_updater.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp:
@@ -1245,6 +1249,8 @@ CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o: /home/student/Desktop/workspac
 /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.h:
 
 /opt/ros/humble/include/tf2/tf2/buffer_core.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:
 
@@ -2406,6 +2412,8 @@ CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o: /home/student/Desktop/workspac
 
 /usr/include/c++/11/typeindex:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp:
+
 /usr/include/c++/11/pstl/glue_algorithm_defs.h:
 
 /opt/ros/humble/include/rcl/rcl/init_options.h:
@@ -2471,6 +2479,8 @@ CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o: /home/student/Desktop/workspac
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp:
 
 /usr/include/c++/11/bits/ostream.tcc:
 
@@ -2939,6 +2949,8 @@ CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o: /home/student/Desktop/workspac
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp:
 
 /usr/local/cuda/include/crt/host_config.h:
 

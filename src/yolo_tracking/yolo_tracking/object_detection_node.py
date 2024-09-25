@@ -53,40 +53,60 @@ class ObjectTracker(Node):
         self.depth_image = None
         self.depth = None
         self.distance_formatted = ""
+    
     def image_callback(self, msg):
         # Convert ROS Image message to OpenCV image
         cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
         
         # Perform YOLOv8 detection
-        results = self.model(cv_image)
+        results = self.model.track(cv_image, persist=False)
         positions = Float32MultiArray()
         positions.data = []
         
         # Extract detections
-        for result in results:
-            for bbox in result.boxes:
-                if bbox.cls == self.human_class_id:
-                    x1, y1, x2, y2 = map(int, bbox.xyxy[0])
-                    cv2.rectangle(cv_image, (x1, y1), (x2, y2), (0, 255, 0), 2)
-                    
-                    x_center = (x1 + x2) // 2
-                    y_center = (y1 + y2) // 2
-                    
-                    distance = 0
-                    if self.depth is not None:
-                        # Ensure x_center and y_center are within bounds
-                        if 0 <= x_center < self.width_depth and 0 <= y_center < self.depth.shape[0]:
-                            distance = round(self.depth[y_center, x_center],2)
-                    
-                    # if distance is nan or inf we dont update the distance for better representation
-                    if(distance or not math.isnan(distance)):
-                        self.distance_formatted = f"{distance:.2f}"
 
-                    cv2.putText(cv_image, f'Person distance:{self.distance_formatted}', (x1, y1-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36, 255, 12), 2)
-                    print(distance)
-                    # Append to positions
-                    positions.data.append(float(x_center))
-                    positions.data.append(float(y_center))
+        
+        
+        
+        boxes = results[0].boxes
+        
+        if boxes.data.shape[0] == 0:
+            print("No detections found.")
+            return
+        try:
+            track_ids = results[0].boxes.id.int().cpu().tolist()
+            class_ids = boxes.cls.int().cpu().tolist() 
+        except Exception as e: 
+            return 
+        
+        for bbox, track_id, class_id in zip(boxes,track_ids, class_ids): 
+             
+            if class_id == self.human_class_id:
+                x1, y1, x2, y2 = map(int, bbox.xyxy[0])
+                cv2.rectangle(cv_image, (x1, y1), (x2, y2), (0, 255, 0), 2)
+                
+                
+
+                x_center = (x1 + x2) // 2
+                y_center = (y1 + y2) // 2
+                
+                distance = 0
+                if self.depth is not None:
+                    # Ensure x_center and y_center are within bounds
+                    if 0 <= x_center < self.width_depth and 0 <= y_center < self.depth.shape[0]:
+                        distance = round(self.depth[y_center, x_center],2)
+                
+                # if distance is nan or inf we dont update the distance for better representation
+                if(not math.isinf(distance) or not math.isnan(distance)):
+                    self.distance_formatted = f"{distance:.2f}"
+
+                cv2.putText(cv_image, f'Person {track_id} distance:{self.distance_formatted}', (x1, y1-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36, 255, 12), 2)
+                print(distance)
+                # Append to positions
+
+                
+                positions.data.append(float(x_center))
+                positions.data.append(float(y_center))
 
         # Publish detected object positions
         self.positions_publisher.publish(positions)

@@ -1543,6 +1543,12 @@ CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
   /opt/ros/humble/include/tf2/tf2/buffer_core_interface.h \
   /opt/ros/humble/include/tf2/tf2/time.h \
   /opt/ros/humble/include/tf2/tf2/exceptions.h \
@@ -1891,11 +1897,9 @@ CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/path.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__builder.hpp \
@@ -2284,11 +2288,7 @@ CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.
 
 /opt/ros/humble/include/nav_msgs/nav_msgs/msg/path.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
-
 /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp:
 
@@ -2770,11 +2770,21 @@ CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.
 
 /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__traits.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
 
 /usr/include/c++/11/bits/codecvt.h:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_factory.hpp:
 
@@ -2977,8 +2987,6 @@ CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.
 /usr/include/c++/11/thread:
 
 /usr/include/asm-generic/errno-base.h:
-
-/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:
 
 /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp:
 
@@ -3488,8 +3496,6 @@ CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
-/usr/include/c++/11/pstl/glue_algorithm_defs.h:
-
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_timer.hpp:
@@ -3600,8 +3606,6 @@ CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.
 
 /usr/include/c++/11/backward/binders.h:
 
-/usr/include/c++/11/bits/ostream.tcc:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
 
 /opt/ros/humble/include/rmw/rmw/time.h:
@@ -3697,6 +3701,8 @@ CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.
 /usr/local/cuda/include/cuda_runtime.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp:
 
 /usr/local/cuda/include/crt/host_config.h:
 
@@ -4026,6 +4032,10 @@ CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.
 
 /opt/ros/humble/include/rcutils/rcutils/types.h:
 
+/usr/include/c++/11/bits/ostream.tcc:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/signum-generic.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
@@ -4104,6 +4114,10 @@ CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.
 
 /opt/ros/humble/include/rcl/rcl/timer.h:
 
+/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
+
+/opt/ros/humble/include/rmw/rmw/event.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/sequence_bound.h:
@@ -4144,8 +4158,6 @@ CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.
 
 /usr/include/c++/11/bits/deque.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
-
 /home/student/Desktop/workspace/src/zed-ros2-wrapper/zed_components/src/tools/src/sl_win_avg.cpp:
 
 /home/student/Desktop/workspace/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/zed_camera_component.hpp:
@@ -4184,8 +4196,6 @@ CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.
 
 /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h:
 
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
-
 /usr/include/c++/11/bits/stl_construct.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp:
@@ -4206,15 +4216,29 @@ CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp:
 
+/usr/include/c++/11/pstl/glue_algorithm_defs.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:
+
+/opt/ros/humble/include/tf2/tf2/time.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/signum-arch.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
+
 /opt/ros/humble/include/tf2/tf2/buffer_core_interface.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/exceptions.hpp:
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:
-
-/opt/ros/humble/include/tf2/tf2/time.h:
 
 /home/student/Desktop/workspace/build/zed_interfaces/rosidl_generator_cpp/zed_interfaces/srv/set_roi.hpp:
 
@@ -4227,15 +4251,3 @@ CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.
 /opt/ros/humble/include/tf2_ros/tf2_ros/static_transform_broadcaster.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/signum-arch.h:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__traits.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
-
-/opt/ros/humble/include/rmw/rmw/event.h:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:

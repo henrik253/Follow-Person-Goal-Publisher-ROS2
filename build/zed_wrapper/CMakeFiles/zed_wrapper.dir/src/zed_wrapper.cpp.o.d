@@ -692,6 +692,12 @@ CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o: \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
  /opt/ros/humble/include/tf2/tf2/buffer_core_interface.h \
  /opt/ros/humble/include/tf2/tf2/time.h \
  /opt/ros/humble/include/tf2/tf2/exceptions.h \
@@ -772,11 +778,9 @@ CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o: \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/path.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__builder.hpp \
