@@ -1,0 +1,2 @@
+source;share/object_tracking_messages/environment/ament_prefix_path.sh
+source;share/object_tracking_messages/environment/path.sh

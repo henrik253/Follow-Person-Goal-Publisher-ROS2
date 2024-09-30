@@ -7,6 +7,7 @@ import cv2
 from ultralytics import YOLO
 import numpy as np
 import math
+from object_tracking_messages.msg import DetectedPerson, BoundingBox 
 class ObjectTracker(Node): 
     def __init__(self): 
         super().__init__('yolo_tracking')
@@ -73,6 +74,9 @@ class ObjectTracker(Node):
         if boxes.data.shape[0] == 0:
             print("No detections found.")
             return
+        ## For seperating into mulitple nodes
+        ## This Node should publish the bounding box of the detected object, including the detected id 
+        
         try:
             track_ids = results[0].boxes.id.int().cpu().tolist()
             class_ids = boxes.cls.int().cpu().tolist()  # when no object is detected an excption is thrown where cls attribute cant be found

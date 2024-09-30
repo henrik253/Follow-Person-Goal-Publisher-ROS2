@@ -1,0 +1,9 @@
+/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles/uninstall.dir
+/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles/object_tracking_messages_uninstall.dir
+/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles/test.dir
+/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles/edit_cache.dir
+/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles/rebuild_cache.dir
+/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles/list_install_components.dir
+/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles/install.dir
+/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles/install/local.dir
+/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles/install/strip.dir
