@@ -7,7 +7,7 @@ import cv2
 from ultralytics import YOLO
 import numpy as np
 import math
-from object_tracking_messages.msg import DetectedPerson, BoundingBox 
+
 class ObjectTracker(Node): 
     def __init__(self): 
         super().__init__('yolo_tracking')
@@ -80,9 +80,9 @@ class ObjectTracker(Node):
         try:
             track_ids = results[0].boxes.id.int().cpu().tolist()
             class_ids = boxes.cls.int().cpu().tolist()  # when no object is detected an excption is thrown where cls attribute cant be found
-       
+            confidences = boxes.conf.float().cpu().tolist()
             
-            for bbox, track_id, class_id in zip(boxes,track_ids, class_ids): 
+            for bbox, track_id, class_id, confidence in zip(boxes,track_ids, class_ids,confidences): 
                 
                 if class_id == self.human_class_id:
                     x1, y1, x2, y2 = map(int, bbox.xyxy[0])
@@ -99,11 +99,13 @@ class ObjectTracker(Node):
                         if 0 <= x_center < self.width_depth and 0 <= y_center < self.depth.shape[0]:
                             distance = round(self.depth[y_center, x_center],2)
                     
+                
+
                     # if distance is nan or inf we dont update the distance for better representation
                     if distance is not None and not math.isinf(distance) and not math.isnan(distance):
                         self.distance_formatted = f"{distance:.2f}"
 
-                    cv2.putText(cv_image, f'Person {track_id} distance:{self.distance_formatted}', (x1, y1-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36, 255, 12), 2)
+                    cv2.putText(cv_image, f'ID: {track_id} Conf: {confidence:.2f} dis:{self.distance_formatted}', (x1, y1-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36, 255, 12), 2)
                     print(distance)
                     # Append to positions
 

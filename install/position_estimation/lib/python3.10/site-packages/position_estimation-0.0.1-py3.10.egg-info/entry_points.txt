@@ -1,3 +1,0 @@
-[console_scripts]
-position_estimation_node = position_estimation.position_estimation_node:main
-
