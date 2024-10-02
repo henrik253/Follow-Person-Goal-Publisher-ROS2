@@ -21,6 +21,7 @@ object_tracking_messages__msg__DetectedPerson__init(object_tracking_messages__ms
   if (!msg) {
     return false;
   }
+  // confidence
   // id
   // bbox
   if (!object_tracking_messages__msg__BoundingBox__init(&msg->bbox)) {
@@ -36,6 +37,7 @@ object_tracking_messages__msg__DetectedPerson__fini(object_tracking_messages__ms
   if (!msg) {
     return;
   }
+  // confidence
   // id
   // bbox
   object_tracking_messages__msg__BoundingBox__fini(&msg->bbox);
@@ -45,6 +47,10 @@ bool
 object_tracking_messages__msg__DetectedPerson__are_equal(const object_tracking_messages__msg__DetectedPerson * lhs, const object_tracking_messages__msg__DetectedPerson * rhs)
 {
   if (!lhs || !rhs) {
+    return false;
+  }
+  // confidence
+  if (lhs->confidence != rhs->confidence) {
     return false;
   }
   // id
@@ -68,6 +74,8 @@ object_tracking_messages__msg__DetectedPerson__copy(
   if (!input || !output) {
     return false;
   }
+  // confidence
+  output->confidence = input->confidence;
   // id
   output->id = input->id;
   // bbox

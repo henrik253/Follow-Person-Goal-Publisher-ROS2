@@ -43,6 +43,7 @@ struct DetectedPerson_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
+      this->confidence = 0.0f;
       this->id = 0l;
     }
   }
@@ -53,11 +54,15 @@ struct DetectedPerson_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
+      this->confidence = 0.0f;
       this->id = 0l;
     }
   }
 
   // field types and members
+  using _confidence_type =
+    float;
+  _confidence_type confidence;
   using _id_type =
     int32_t;
   _id_type id;
@@ -66,6 +71,12 @@ struct DetectedPerson_
   _bbox_type bbox;
 
   // setters for named parameter idiom
+  Type & set__confidence(
+    const float & _arg)
+  {
+    this->confidence = _arg;
+    return *this;
+  }
   Type & set__id(
     const int32_t & _arg)
   {
@@ -121,6 +132,9 @@ struct DetectedPerson_
   // comparison operators
   bool operator==(const DetectedPerson_ & other) const
   {
+    if (this->confidence != other.confidence) {
+      return false;
+    }
     if (this->id != other.id) {
       return false;
     }

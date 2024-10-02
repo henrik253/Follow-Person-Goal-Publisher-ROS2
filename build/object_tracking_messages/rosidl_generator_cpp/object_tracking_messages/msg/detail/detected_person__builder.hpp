@@ -40,13 +40,29 @@ private:
 class Init_DetectedPerson_id
 {
 public:
-  Init_DetectedPerson_id()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  explicit Init_DetectedPerson_id(::object_tracking_messages::msg::DetectedPerson & msg)
+  : msg_(msg)
   {}
   Init_DetectedPerson_bbox id(::object_tracking_messages::msg::DetectedPerson::_id_type arg)
   {
     msg_.id = std::move(arg);
     return Init_DetectedPerson_bbox(msg_);
+  }
+
+private:
+  ::object_tracking_messages::msg::DetectedPerson msg_;
+};
+
+class Init_DetectedPerson_confidence
+{
+public:
+  Init_DetectedPerson_confidence()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_DetectedPerson_id confidence(::object_tracking_messages::msg::DetectedPerson::_confidence_type arg)
+  {
+    msg_.confidence = std::move(arg);
+    return Init_DetectedPerson_id(msg_);
   }
 
 private:
@@ -64,7 +80,7 @@ template<>
 inline
 auto build<::object_tracking_messages::msg::DetectedPerson>()
 {
-  return object_tracking_messages::msg::builder::Init_DetectedPerson_id();
+  return object_tracking_messages::msg::builder::Init_DetectedPerson_confidence();
 }
 
 }  // namespace object_tracking_messages

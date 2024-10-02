@@ -1,0 +1,3 @@
+# DetectedPersons.msg
+
+DetectedPerson[] persons

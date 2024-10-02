@@ -7,7 +7,11 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_person__builder.hpp"
   "rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_person__struct.hpp"
   "rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_person__traits.hpp"
+  "rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__builder.hpp"
+  "rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__struct.hpp"
+  "rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__traits.hpp"
   "rosidl_generator_cpp/object_tracking_messages/msg/detected_person.hpp"
+  "rosidl_generator_cpp/object_tracking_messages/msg/detected_persons.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

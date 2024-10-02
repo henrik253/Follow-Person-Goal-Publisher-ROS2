@@ -37,7 +37,24 @@ void DetectedPerson_fini_function(void * message_memory)
   typed_message->~DetectedPerson();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember DetectedPerson_message_member_array[2] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember DetectedPerson_message_member_array[3] = {
+  {
+    "confidence",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(object_tracking_messages::msg::DetectedPerson, confidence),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
   {
     "id",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
@@ -77,7 +94,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember DetectedPerso
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers DetectedPerson_message_members = {
   "object_tracking_messages::msg",  // message namespace
   "DetectedPerson",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(object_tracking_messages::msg::DetectedPerson),
   DetectedPerson_message_member_array,  // message members
   DetectedPerson_init_function,  // function to initialize message memory (memory has to be allocated)

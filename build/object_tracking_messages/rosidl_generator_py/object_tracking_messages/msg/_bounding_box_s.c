@@ -55,8 +55,8 @@ bool object_tracking_messages__msg__bounding_box__convert_from_py(PyObject * _py
     if (!field) {
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->x_min = (float)PyFloat_AS_DOUBLE(field);
+    assert(PyLong_Check(field));
+    ros_message->x_min = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // y_min
@@ -64,8 +64,8 @@ bool object_tracking_messages__msg__bounding_box__convert_from_py(PyObject * _py
     if (!field) {
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->y_min = (float)PyFloat_AS_DOUBLE(field);
+    assert(PyLong_Check(field));
+    ros_message->y_min = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // x_max
@@ -73,8 +73,8 @@ bool object_tracking_messages__msg__bounding_box__convert_from_py(PyObject * _py
     if (!field) {
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->x_max = (float)PyFloat_AS_DOUBLE(field);
+    assert(PyLong_Check(field));
+    ros_message->x_max = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // y_max
@@ -82,8 +82,8 @@ bool object_tracking_messages__msg__bounding_box__convert_from_py(PyObject * _py
     if (!field) {
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->y_max = (float)PyFloat_AS_DOUBLE(field);
+    assert(PyLong_Check(field));
+    ros_message->y_max = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
 
@@ -110,7 +110,7 @@ PyObject * object_tracking_messages__msg__bounding_box__convert_to_py(void * raw
   object_tracking_messages__msg__BoundingBox * ros_message = (object_tracking_messages__msg__BoundingBox *)raw_ros_message;
   {  // x_min
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->x_min);
+    field = PyLong_FromLong(ros_message->x_min);
     {
       int rc = PyObject_SetAttrString(_pymessage, "x_min", field);
       Py_DECREF(field);
@@ -121,7 +121,7 @@ PyObject * object_tracking_messages__msg__bounding_box__convert_to_py(void * raw
   }
   {  // y_min
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->y_min);
+    field = PyLong_FromLong(ros_message->y_min);
     {
       int rc = PyObject_SetAttrString(_pymessage, "y_min", field);
       Py_DECREF(field);
@@ -132,7 +132,7 @@ PyObject * object_tracking_messages__msg__bounding_box__convert_to_py(void * raw
   }
   {  // x_max
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->x_max);
+    field = PyLong_FromLong(ros_message->x_max);
     {
       int rc = PyObject_SetAttrString(_pymessage, "x_max", field);
       Py_DECREF(field);
@@ -143,7 +143,7 @@ PyObject * object_tracking_messages__msg__bounding_box__convert_to_py(void * raw
   }
   {  // y_max
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->y_max);
+    field = PyLong_FromLong(ros_message->y_max);
     {
       int rc = PyObject_SetAttrString(_pymessage, "y_max", field);
       Py_DECREF(field);

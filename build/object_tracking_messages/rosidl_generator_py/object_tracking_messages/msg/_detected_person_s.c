@@ -52,6 +52,15 @@ bool object_tracking_messages__msg__detected_person__convert_from_py(PyObject * 
     assert(strncmp("object_tracking_messages.msg._detected_person.DetectedPerson", full_classname_dest, 60) == 0);
   }
   object_tracking_messages__msg__DetectedPerson * ros_message = _ros_message;
+  {  // confidence
+    PyObject * field = PyObject_GetAttrString(_pymsg, "confidence");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->confidence = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
   {  // id
     PyObject * field = PyObject_GetAttrString(_pymsg, "id");
     if (!field) {
@@ -94,6 +103,17 @@ PyObject * object_tracking_messages__msg__detected_person__convert_to_py(void * 
     }
   }
   object_tracking_messages__msg__DetectedPerson * ros_message = (object_tracking_messages__msg__DetectedPerson *)raw_ros_message;
+  {  // confidence
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->confidence);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "confidence", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
   {  // id
     PyObject * field = NULL;
     field = PyLong_FromLong(ros_message->id);

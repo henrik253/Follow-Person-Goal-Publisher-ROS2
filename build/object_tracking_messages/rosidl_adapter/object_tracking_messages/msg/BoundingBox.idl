@@ -8,13 +8,13 @@ module object_tracking_messages {
     @verbatim (language="comment", text=
       "BoundingBox.msg")
     struct BoundingBox {
-      float x_min;
+      int32 x_min;
 
-      float y_min;
+      int32 y_min;
 
-      float x_max;
+      int32 x_max;
 
-      float y_max;
+      int32 y_max;
     };
   };
 };

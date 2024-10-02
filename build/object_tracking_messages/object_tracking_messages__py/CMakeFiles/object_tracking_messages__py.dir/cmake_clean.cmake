@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_bounding_box_s.c"
   "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_detected_person.py"
   "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_detected_person_s.c"
+  "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_detected_persons.py"
+  "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_detected_persons_s.c"
   "CMakeFiles/object_tracking_messages__py"
 )
 

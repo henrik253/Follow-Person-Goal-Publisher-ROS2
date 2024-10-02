@@ -248,8 +248,15 @@ CMakeFiles/object_tracking_messages__rosidl_typesupport_c__pyext.dir/rosidl_gene
   rosidl_generator_c/object_tracking_messages/msg/detail/bounding_box__functions.h \
   rosidl_generator_c/object_tracking_messages/msg/detail/detected_person__type_support.h \
   rosidl_generator_c/object_tracking_messages/msg/detail/detected_person__struct.h \
-  rosidl_generator_c/object_tracking_messages/msg/detail/detected_person__functions.h
+  rosidl_generator_c/object_tracking_messages/msg/detail/detected_person__functions.h \
+  rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__type_support.h \
+  rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__struct.h \
+  rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functions.h
 
+
+rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__struct.h:
+
+rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__type_support.h:
 
 rosidl_generator_c/object_tracking_messages/msg/detail/detected_person__functions.h:
 
@@ -576,6 +583,8 @@ rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosi
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functions.h:
 
 /usr/include/python3.10/cpython/pyfpe.h:
 

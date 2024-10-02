@@ -7,6 +7,8 @@
 
 import builtins  # noqa: E402, I100
 
+import math  # noqa: E402, I100
+
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -59,16 +61,19 @@ class DetectedPerson(metaclass=Metaclass_DetectedPerson):
     """Message class 'DetectedPerson'."""
 
     __slots__ = [
+        '_confidence',
         '_id',
         '_bbox',
     ]
 
     _fields_and_field_types = {
+        'confidence': 'float',
         'id': 'int32',
         'bbox': 'object_tracking_messages/BoundingBox',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['object_tracking_messages', 'msg'], 'BoundingBox'),  # noqa: E501
     )
@@ -77,6 +82,7 @@ class DetectedPerson(metaclass=Metaclass_DetectedPerson):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        self.confidence = kwargs.get('confidence', float())
         self.id = kwargs.get('id', int())
         from object_tracking_messages.msg import BoundingBox
         self.bbox = kwargs.get('bbox', BoundingBox())
@@ -110,6 +116,8 @@ class DetectedPerson(metaclass=Metaclass_DetectedPerson):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
+        if self.confidence != other.confidence:
+            return False
         if self.id != other.id:
             return False
         if self.bbox != other.bbox:
@@ -120,6 +128,21 @@ class DetectedPerson(metaclass=Metaclass_DetectedPerson):
     def get_fields_and_field_types(cls):
         from copy import copy
         return copy(cls._fields_and_field_types)
+
+    @builtins.property
+    def confidence(self):
+        """Message field 'confidence'."""
+        return self._confidence
+
+    @confidence.setter
+    def confidence(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'confidence' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'confidence' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._confidence = value
 
     @builtins.property  # noqa: A003
     def id(self):  # noqa: A003

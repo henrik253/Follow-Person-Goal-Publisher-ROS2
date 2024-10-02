@@ -38,10 +38,10 @@ struct BoundingBox_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->x_min = 0.0f;
-      this->y_min = 0.0f;
-      this->x_max = 0.0f;
-      this->y_max = 0.0f;
+      this->x_min = 0l;
+      this->y_min = 0l;
+      this->x_max = 0l;
+      this->y_max = 0l;
     }
   }
 
@@ -51,48 +51,48 @@ struct BoundingBox_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->x_min = 0.0f;
-      this->y_min = 0.0f;
-      this->x_max = 0.0f;
-      this->y_max = 0.0f;
+      this->x_min = 0l;
+      this->y_min = 0l;
+      this->x_max = 0l;
+      this->y_max = 0l;
     }
   }
 
   // field types and members
   using _x_min_type =
-    float;
+    int32_t;
   _x_min_type x_min;
   using _y_min_type =
-    float;
+    int32_t;
   _y_min_type y_min;
   using _x_max_type =
-    float;
+    int32_t;
   _x_max_type x_max;
   using _y_max_type =
-    float;
+    int32_t;
   _y_max_type y_max;
 
   // setters for named parameter idiom
   Type & set__x_min(
-    const float & _arg)
+    const int32_t & _arg)
   {
     this->x_min = _arg;
     return *this;
   }
   Type & set__y_min(
-    const float & _arg)
+    const int32_t & _arg)
   {
     this->y_min = _arg;
     return *this;
   }
   Type & set__x_max(
-    const float & _arg)
+    const int32_t & _arg)
   {
     this->x_max = _arg;
     return *this;
   }
   Type & set__y_max(
-    const float & _arg)
+    const int32_t & _arg)
   {
     this->y_max = _arg;
     return *this;

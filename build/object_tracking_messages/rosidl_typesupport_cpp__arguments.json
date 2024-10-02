@@ -4,7 +4,8 @@
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_cpp/resource",
   "idl_tuples": [
     "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages:msg/BoundingBox.idl",
-    "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages:msg/DetectedPerson.idl"
+    "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages:msg/DetectedPerson.idl",
+    "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages:msg/DetectedPersons.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp",
@@ -14,6 +15,7 @@
     "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em",
     "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/BoundingBox.idl",
-    "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/DetectedPerson.idl"
+    "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/DetectedPerson.idl",
+    "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/DetectedPersons.idl"
   ]
 }

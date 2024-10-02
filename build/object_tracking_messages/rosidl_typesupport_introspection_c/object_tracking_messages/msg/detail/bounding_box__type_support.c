@@ -34,7 +34,7 @@ void object_tracking_messages__msg__BoundingBox__rosidl_typesupport_introspectio
 static rosidl_typesupport_introspection_c__MessageMember object_tracking_messages__msg__BoundingBox__rosidl_typesupport_introspection_c__BoundingBox_message_member_array[4] = {
   {
     "x_min",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -51,7 +51,7 @@ static rosidl_typesupport_introspection_c__MessageMember object_tracking_message
   },
   {
     "y_min",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -68,7 +68,7 @@ static rosidl_typesupport_introspection_c__MessageMember object_tracking_message
   },
   {
     "x_max",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -85,7 +85,7 @@ static rosidl_typesupport_introspection_c__MessageMember object_tracking_message
   },
   {
     "y_max",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array

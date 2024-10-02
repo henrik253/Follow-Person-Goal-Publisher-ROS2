@@ -23,10 +23,10 @@ extern "C"
  */
 typedef struct object_tracking_messages__msg__BoundingBox
 {
-  float x_min;
-  float y_min;
-  float x_max;
-  float y_max;
+  int32_t x_min;
+  int32_t y_min;
+  int32_t x_max;
+  int32_t y_max;
 } object_tracking_messages__msg__BoundingBox;
 
 // Struct for a sequence of object_tracking_messages__msg__BoundingBox.

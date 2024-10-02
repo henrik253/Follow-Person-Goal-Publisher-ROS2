@@ -29,6 +29,13 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
+  // member: confidence
+  {
+    out << "confidence: ";
+    rosidl_generator_traits::value_to_yaml(msg.confidence, out);
+    out << ", ";
+  }
+
   // member: id
   {
     out << "id: ";
@@ -48,6 +55,16 @@ inline void to_block_style_yaml(
   const DetectedPerson & msg,
   std::ostream & out, size_t indentation = 0)
 {
+  // member: confidence
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "confidence: ";
+    rosidl_generator_traits::value_to_yaml(msg.confidence, out);
+    out << "\n";
+  }
+
   // member: id
   {
     if (indentation > 0) {

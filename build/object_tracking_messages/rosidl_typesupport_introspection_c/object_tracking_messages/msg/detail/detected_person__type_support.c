@@ -37,7 +37,24 @@ void object_tracking_messages__msg__DetectedPerson__rosidl_typesupport_introspec
   object_tracking_messages__msg__DetectedPerson__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember object_tracking_messages__msg__DetectedPerson__rosidl_typesupport_introspection_c__DetectedPerson_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember object_tracking_messages__msg__DetectedPerson__rosidl_typesupport_introspection_c__DetectedPerson_message_member_array[3] = {
+  {
+    "confidence",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(object_tracking_messages__msg__DetectedPerson, confidence),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
   {
     "id",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
@@ -77,7 +94,7 @@ static rosidl_typesupport_introspection_c__MessageMember object_tracking_message
 static const rosidl_typesupport_introspection_c__MessageMembers object_tracking_messages__msg__DetectedPerson__rosidl_typesupport_introspection_c__DetectedPerson_message_members = {
   "object_tracking_messages__msg",  // message namespace
   "DetectedPerson",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(object_tracking_messages__msg__DetectedPerson),
   object_tracking_messages__msg__DetectedPerson__rosidl_typesupport_introspection_c__DetectedPerson_message_member_array,  // message members
   object_tracking_messages__msg__DetectedPerson__rosidl_typesupport_introspection_c__DetectedPerson_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -95,7 +112,7 @@ static rosidl_message_type_support_t object_tracking_messages__msg__DetectedPers
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_object_tracking_messages
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, object_tracking_messages, msg, DetectedPerson)() {
-  object_tracking_messages__msg__DetectedPerson__rosidl_typesupport_introspection_c__DetectedPerson_message_member_array[1].members_ =
+  object_tracking_messages__msg__DetectedPerson__rosidl_typesupport_introspection_c__DetectedPerson_message_member_array[2].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, object_tracking_messages, msg, BoundingBox)();
   if (!object_tracking_messages__msg__DetectedPerson__rosidl_typesupport_introspection_c__DetectedPerson_message_type_support_handle.typesupport_identifier) {
     object_tracking_messages__msg__DetectedPerson__rosidl_typesupport_introspection_c__DetectedPerson_message_type_support_handle.typesupport_identifier =

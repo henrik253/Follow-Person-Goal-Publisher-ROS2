@@ -7,8 +7,6 @@
 
 import builtins  # noqa: E402, I100
 
-import math  # noqa: E402, I100
-
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -64,27 +62,27 @@ class BoundingBox(metaclass=Metaclass_BoundingBox):
     ]
 
     _fields_and_field_types = {
-        'x_min': 'float',
-        'y_min': 'float',
-        'x_max': 'float',
-        'y_max': 'float',
+        'x_min': 'int32',
+        'y_min': 'int32',
+        'x_max': 'int32',
+        'y_max': 'int32',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.x_min = kwargs.get('x_min', float())
-        self.y_min = kwargs.get('y_min', float())
-        self.x_max = kwargs.get('x_max', float())
-        self.y_max = kwargs.get('y_max', float())
+        self.x_min = kwargs.get('x_min', int())
+        self.y_min = kwargs.get('y_min', int())
+        self.x_max = kwargs.get('x_max', int())
+        self.y_max = kwargs.get('y_max', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -139,10 +137,10 @@ class BoundingBox(metaclass=Metaclass_BoundingBox):
     def x_min(self, value):
         if __debug__:
             assert \
-                isinstance(value, float), \
-                "The 'x_min' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'x_min' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+                isinstance(value, int), \
+                "The 'x_min' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'x_min' field must be an integer in [-2147483648, 2147483647]"
         self._x_min = value
 
     @builtins.property
@@ -154,10 +152,10 @@ class BoundingBox(metaclass=Metaclass_BoundingBox):
     def y_min(self, value):
         if __debug__:
             assert \
-                isinstance(value, float), \
-                "The 'y_min' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'y_min' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+                isinstance(value, int), \
+                "The 'y_min' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'y_min' field must be an integer in [-2147483648, 2147483647]"
         self._y_min = value
 
     @builtins.property
@@ -169,10 +167,10 @@ class BoundingBox(metaclass=Metaclass_BoundingBox):
     def x_max(self, value):
         if __debug__:
             assert \
-                isinstance(value, float), \
-                "The 'x_max' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'x_max' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+                isinstance(value, int), \
+                "The 'x_max' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'x_max' field must be an integer in [-2147483648, 2147483647]"
         self._x_max = value
 
     @builtins.property
@@ -184,8 +182,8 @@ class BoundingBox(metaclass=Metaclass_BoundingBox):
     def y_max(self, value):
         if __debug__:
             assert \
-                isinstance(value, float), \
-                "The 'y_max' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'y_max' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+                isinstance(value, int), \
+                "The 'y_max' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'y_max' field must be an integer in [-2147483648, 2147483647]"
         self._y_max = value

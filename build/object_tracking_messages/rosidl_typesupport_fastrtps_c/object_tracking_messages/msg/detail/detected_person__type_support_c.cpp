@@ -61,6 +61,11 @@ static bool _DetectedPerson__cdr_serialize(
     return false;
   }
   const _DetectedPerson__ros_msg_type * ros_message = static_cast<const _DetectedPerson__ros_msg_type *>(untyped_ros_message);
+  // Field name: confidence
+  {
+    cdr << ros_message->confidence;
+  }
+
   // Field name: id
   {
     cdr << ros_message->id;
@@ -92,6 +97,11 @@ static bool _DetectedPerson__cdr_deserialize(
     return false;
   }
   _DetectedPerson__ros_msg_type * ros_message = static_cast<_DetectedPerson__ros_msg_type *>(untyped_ros_message);
+  // Field name: confidence
+  {
+    cdr >> ros_message->confidence;
+  }
+
   // Field name: id
   {
     cdr >> ros_message->id;
@@ -128,6 +138,12 @@ size_t get_serialized_size_object_tracking_messages__msg__DetectedPerson(
   (void)padding;
   (void)wchar_size;
 
+  // field.name confidence
+  {
+    size_t item_size = sizeof(ros_message->confidence);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // field.name id
   {
     size_t item_size = sizeof(ros_message->id);
@@ -167,6 +183,14 @@ size_t max_serialized_size_object_tracking_messages__msg__DetectedPerson(
   full_bounded = true;
   is_plain = true;
 
+  // member: confidence
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
   // member: id
   {
     size_t array_size = 1;

@@ -27,6 +27,7 @@ extern "C"
  */
 typedef struct object_tracking_messages__msg__DetectedPerson
 {
+  float confidence;
   int32_t id;
   object_tracking_messages__msg__BoundingBox bbox;
 } object_tracking_messages__msg__DetectedPerson;

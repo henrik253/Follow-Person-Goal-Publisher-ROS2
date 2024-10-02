@@ -7,18 +7,17 @@ import cv2
 from ultralytics import YOLO
 import numpy as np
 import math
+import logging
+from object_tracking_messages.msg import DetectedPersons, DetectedPerson, BoundingBox
+
+logging.getLogger('ultralytics').setLevel(logging.WARNING)
 
 class ObjectTracker(Node): 
     def __init__(self): 
         super().__init__('yolo_tracking')
 
-        # QoS profile for depth image subscription
-        qos_profile = rclpy.qos.QoSProfile(
-            depth=10,
-            reliability=rclpy.qos.ReliabilityPolicy.BEST_EFFORT,
-            durability=rclpy.qos.DurabilityPolicy.VOLATILE
-        )
-
+      
+        
         # Create subscriptions
         self.create_subscription(
             Image,
@@ -26,18 +25,25 @@ class ObjectTracker(Node):
             self.image_callback,
             10
         )
-        
+        '''
+          # QoS profile for depth image subscription
+        qos_profile = rclpy.qos.QoSProfile(
+            depth=10,
+            reliability=rclpy.qos.ReliabilityPolicy.BEST_EFFORT,
+            durability=rclpy.qos.DurabilityPolicy.VOLATILE
+        )
+
         self.depth_subscription = self.create_subscription(
             Image,
             '/zed/zed_node/depth/depth_registered',
             self.depth_callback,
             qos_profile
         )
-
+        '''    
         # Create publisher for detected object positions
         self.positions_publisher = self.create_publisher(
-            Float32MultiArray,
-            'detected_object_positions',
+            DetectedPersons,
+            'detected_persons',
             10
         )
         
@@ -56,6 +62,7 @@ class ObjectTracker(Node):
         self.distance_formatted = ""
     
     def image_callback(self, msg):
+       
         # Convert ROS Image message to OpenCV image
         cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
         
@@ -66,9 +73,6 @@ class ObjectTracker(Node):
         
         # Extract detections
 
-        
-        
-        
         boxes = results[0].boxes
         
         if boxes.data.shape[0] == 0:
@@ -76,30 +80,45 @@ class ObjectTracker(Node):
             return
         ## For seperating into mulitple nodes
         ## This Node should publish the bounding box of the detected object, including the detected id 
+       
+        
+        
         
         try:
             track_ids = results[0].boxes.id.int().cpu().tolist()
             class_ids = boxes.cls.int().cpu().tolist()  # when no object is detected an excption is thrown where cls attribute cant be found
             confidences = boxes.conf.float().cpu().tolist()
             
+            detectedPersonsMsg = DetectedPersons()
+            persons = []
+
             for bbox, track_id, class_id, confidence in zip(boxes,track_ids, class_ids,confidences): 
                 
                 if class_id == self.human_class_id:
                     x1, y1, x2, y2 = map(int, bbox.xyxy[0])
-                    cv2.rectangle(cv_image, (x1, y1), (x2, y2), (0, 255, 0), 2)
+                    #cv2.rectangle(cv_image, (x1, y1), (x2, y2), (0, 255, 0), 2)
+                    detectedPerson = DetectedPerson()
+                    boundingBox = BoundingBox()
                     
-                    
-
+                    detectedPerson.id = track_id
+                    detectedPerson.confidence = confidence
+                    boundingBox.x_min = x1
+                    boundingBox.x_max = x2
+                    boundingBox.y_min = y1
+                    boundingBox.y_max = y2
+                    detectedPerson.bbox = boundingBox
+                    persons.append(detectedPerson)
+        
+                    '''
                     x_center = (x1 + x2) // 2
                     y_center = (y1 + y2) // 2
-                    
+             
                     distance = None
                     if self.depth is not None:
                         # Ensure x_center and y_center are within bounds
                         if 0 <= x_center < self.width_depth and 0 <= y_center < self.depth.shape[0]:
                             distance = round(self.depth[y_center, x_center],2)
-                    
-                
+                 
 
                     # if distance is nan or inf we dont update the distance for better representation
                     if distance is not None and not math.isinf(distance) and not math.isnan(distance):
@@ -113,20 +132,27 @@ class ObjectTracker(Node):
                     positions.data.append(float(x_center))
                     positions.data.append(float(y_center))
 
+                    ''' 
         except Exception as e: 
             print(e)
         
+
+        detectedPersonsMsg.persons = persons
+
+       # print(detectedPersonsMsg)
         # Publish detected object positions
-        self.positions_publisher.publish(positions)
-        cv2.imshow('Human Tracker', cv_image)
-        cv2.waitKey(1)
+        self.positions_publisher.publish(detectedPersonsMsg)
+        #cv2.imshow('Human Tracker', cv_image)
+        #cv2.waitKey(1)
 
         # Display the depth image if available
+        '''
         if self.depth_image is not None:
             depth_colored = cv2.applyColorMap(self.depth_image, cv2.COLORMAP_JET)
             cv2.imshow('Depth Map', depth_colored)
             cv2.waitKey(1)
-
+        '''
+    
     def depth_callback(self, msg):
         # Convert ROS Image message to OpenCV image
         depth_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='32FC1')

@@ -56,6 +56,8 @@ cdr_serialize(
   const object_tracking_messages::msg::DetectedPerson & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
+  // Member: confidence
+  cdr << ros_message.confidence;
   // Member: id
   cdr << ros_message.id;
   // Member: bbox
@@ -71,6 +73,9 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   object_tracking_messages::msg::DetectedPerson & ros_message)
 {
+  // Member: confidence
+  cdr >> ros_message.confidence;
+
   // Member: id
   cdr >> ros_message.id;
 
@@ -94,6 +99,12 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
+  // Member: confidence
+  {
+    size_t item_size = sizeof(ros_message.confidence);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // Member: id
   {
     size_t item_size = sizeof(ros_message.id);
@@ -128,6 +139,15 @@ max_serialized_size_DetectedPerson(
   full_bounded = true;
   is_plain = true;
 
+
+  // Member: confidence
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
 
   // Member: id
   {
