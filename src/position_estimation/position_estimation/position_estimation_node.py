@@ -5,8 +5,9 @@ from sensor_msgs.msg import PointCloud2
 from sensor_msgs.msg import Image
 import sensor_msgs_py.point_cloud2 as pc2
 import heapq
-
-
+from object_tracking_messages.msg import DetectedPersons, DetectedPerson, BoundingBox
+import numpy as np
+from cv_bridge import CvBridge
 
 # TODO try to use LiDAR insteaf of ZED depth image! 
 class Person:
@@ -61,57 +62,55 @@ class PositionEstimationNode(Node):
         
         # Create a subscription to the object detection topic
         self.object_subscription = self.create_subscription(
-            Float32MultiArray,
-            'detected_object_positions',
-            self.object_callback,
+            DetectedPersons,
+            'detected_persons',
+            self.detections_callback,
             10
         )
-        
-        #Create a subscription to sensor depth map 
+
+        # QoS profile for depth image subscription
+        qos_profile = rclpy.qos.QoSProfile(
+            depth=10,
+            reliability=rclpy.qos.ReliabilityPolicy.BEST_EFFORT,
+            durability=rclpy.qos.DurabilityPolicy.VOLATILE
+        )
+
         self.depth_subscription = self.create_subscription(
             Image,
             '/zed/zed_node/depth/depth_registered',
             self.depth_callback,
-            10
+            qos_profile
         )
 
-        # Create a subscription to the sensor data topic
-        self.sensor_subscription = self.create_subscription(
-            PointCloud2,
-            '/zed/zed_node/point_cloud/cloud_registered',
-            self.zed_pointcloud_callback,
-            10
-        )
+       # self.detected_person_pool = PersonPool(capacity=MAX_POOL_MEMBERS)
+        self.bridge = CvBridge()
+        self.width_depth = 0
+        self.depth_image = None
+        self.depth = None
+        self.distance_formatted = ""
 
-        self.detected_persons = PersonPool(capacity=MAX_POOL_MEMBERS)
-        self.last_detected_person = None
-        self.last_point_cloud = []
-        self.last_depth_map = None
-        self.last_center_index = None
+    def detections_callback(self, msg):
+        persons = msg.persons
 
-    def object_callback(self, msg):
-        positions = msg.data
-        num_persons = len(positions) // 2  # Each person has 2 coordinates
-        self.get_logger().info(f'\n Received positions for {num_persons} detected persons.')
-        for i in range(num_persons):
-            x = positions[2*i]
-            y = positions[2*i + 1]
-            self.get_logger().info(f'Person {i+1}: x={x}, y={y}')
-      
-            if len(self.last_point_cloud) == 0:
-                self.get_logger().info('last_point_cloud is 0')
-                return  
+        for person in persons: 
+            boundingBox = person.bbox
+            id = person.id
+            x1 = boundingBox.x_min
+            x2 = boundingBox.x_max
+            y1 = boundingBox.y_min
+            y2 = boundingBox.y_max
+
+            x_center = (x1 + x2) // 2
+            y_center = (y1 + y2) // 2
             
-            z_world = self.get_z_coordinate_from_last_point_cloud(x, y)
-
-            if z_world is None:
-                self.get_logger().info(f'No z found for x={x} and y={y}')
-            else:
-                self.get_logger().info(f'The z-coordinate for x={x} and y={y} is {z_world}')
-            person = Person(person_id=i+1, x=x, y=y, z=z_world)
-            self.last_detected_person = person
-
-            #self.detected_persons.add_person(person)
+            distance = None
+            if self.depth is not None:
+                # Ensure x_center and y_center are within bounds
+                if 0 <= x_center < self.width_depth and 0 <= y_center < self.depth.shape[0]:
+                    distance = round(self.depth[y_center, x_center],2)
+            
+            print(f"id: {id} and distance is {distance}")
+        
 
     def depth_callback(self, msg):
     # Convert ROS Image message to OpenCV image
@@ -125,29 +124,26 @@ class PositionEstimationNode(Node):
         centerIndex = u + width * v
         self.last_center_index = centerIndex
 
-        print(f'depth value at:::: {self.depthmap[centerIndex]}')
+        #print(f'depth value at:::: {self.depthmap[centerIndex]}')
 
     
+          # Convert ROS Image message to OpenCV image
+        depth_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='32FC1')
+        width = msg.width
+        height = msg.height
 
-    def zed_pointcloud_callback(self, msg):
-        # Convert PointCloud2 message to a list of points
-        point_cloud = pc2.read_points(msg, field_names=("x", "y", "z"), skip_nans=True)
-        # Print the number of points and some sample data
-        self.last_point_cloud = list(point_cloud)
-        # Uncomment if needed
-        #self.get_logger().info(f'Received point cloud with {len(self.last_point_cloud)} points.')
-    
-    def get_z_coordinate_from_last_point_cloud(self, x_image, y_image): 
-        print("X-Image: ", x_image)
-        print("Y-Image:", y_image)
-
+        # Convert depth data to numpy array
+        depthmap = np.frombuffer(msg.data, dtype=np.float32).reshape((height, width))
         
-        for point in self.last_point_cloud: 
-            x, y, z = point
-            
-            if abs(x - x_image) < 100.0 and abs(y - y_image) < 100.0:
-                return z
-        return None
+        self.width_depth = width
+        self.depth = depthmap
+
+        # Calculate center pixel index and print depth value
+        u = width // 2
+        v = height // 2
+        if 0 <= u < width and 0 <= v < height:
+            center_distance = depthmap[v, u]
+            #self.get_logger().info(f'Depth value at center: {center_distance}')
 
 def main(args=None):
     rclpy.init(args=args)
