@@ -1,0 +1,24 @@
+[0.029s] Invoking command in '/home/student/Desktop/workspace/build/ouster_sensor_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/position_estimation:/opt/ros/humble /home/student/.local/bin/cmake --build /home/student/Desktop/workspace/build/ouster_sensor_msgs -- -j16 -l16
+[0.332s] [  1%] Built target ouster_sensor_msgs__cpp
+[0.332s] [ 12%] Built target ouster_sensor_msgs__rosidl_generator_c
+[0.332s] [ 12%] Built target ament_cmake_python_symlink_ouster_sensor_msgs
+[0.332s] [ 23%] Built target ouster_sensor_msgs__rosidl_typesupport_introspection_cpp
+[0.332s] [ 34%] Built target ouster_sensor_msgs__rosidl_typesupport_introspection_c
+[0.332s] [ 45%] Built target ouster_sensor_msgs__rosidl_typesupport_cpp
+[0.333s] [ 56%] Built target ouster_sensor_msgs__rosidl_typesupport_fastrtps_cpp
+[0.333s] [ 70%] Built target ouster_sensor_msgs__rosidl_typesupport_fastrtps_c
+[0.333s] [ 78%] Built target ouster_sensor_msgs__rosidl_typesupport_c
+[0.333s] [ 78%] Built target ouster_sensor_msgs
+[0.333s] [ 80%] Built target ouster_sensor_msgs__py
+[0.333s] [ 89%] Built target ouster_sensor_msgs__rosidl_generator_py
+[0.333s] [ 92%] Built target ouster_sensor_msgs__rosidl_typesupport_c__pyext
+[0.333s] [ 96%] Built target ouster_sensor_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.333s] [100%] Built target ouster_sensor_msgs__rosidl_typesupport_introspection_c__pyext
+[0.358s] running egg_info
+[0.359s] writing ouster_sensor_msgs.egg-info/PKG-INFO
+[0.359s] writing dependency_links to ouster_sensor_msgs.egg-info/dependency_links.txt
+[0.359s] writing top-level names to ouster_sensor_msgs.egg-info/top_level.txt
+[0.361s] reading manifest file 'ouster_sensor_msgs.egg-info/SOURCES.txt'
+[0.362s] writing manifest file 'ouster_sensor_msgs.egg-info/SOURCES.txt'
+[0.385s] [100%] Built target ament_cmake_python_build_ouster_sensor_msgs_egg
+[0.603s] Invoked command in '/home/student/Desktop/workspace/build/ouster_sensor_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/position_estimation:/opt/ros/humble /home/student/.local/bin/cmake --build /home/student/Desktop/workspace/build/ouster_sensor_msgs -- -j16 -l16

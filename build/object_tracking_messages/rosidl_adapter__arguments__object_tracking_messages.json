@@ -1,0 +1,7 @@
+{
+  "package_name": "object_tracking_messages",
+  "non_idl_tuples": [
+    "/home/student/Desktop/workspace/src/object_tracking_messages:msg/BoundingBox.msg",
+    "/home/student/Desktop/workspace/src/object_tracking_messages:msg/DetectedPerson.msg"
+  ]
+}

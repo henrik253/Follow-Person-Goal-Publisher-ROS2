@@ -1,0 +1,19 @@
+{
+  "package_name": "object_tracking_messages",
+  "output_dir": "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_typesupport_cpp/object_tracking_messages",
+  "template_dir": "/opt/ros/humble/share/rosidl_typesupport_cpp/resource",
+  "idl_tuples": [
+    "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages:msg/BoundingBox.idl",
+    "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages:msg/DetectedPerson.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_cpp/__init__.py",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/action__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em",
+    "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/BoundingBox.idl",
+    "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/DetectedPerson.idl"
+  ]
+}

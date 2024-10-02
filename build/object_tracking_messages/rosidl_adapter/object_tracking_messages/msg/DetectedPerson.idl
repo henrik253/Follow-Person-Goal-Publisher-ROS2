@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from object_tracking_messages/msg/DetectedPerson.msg
+// generated code does not contain a copyright notice
+
+#include "object_tracking_messages/msg/BoundingBox.idl"
+
+module object_tracking_messages {
+  module msg {
+    @verbatim (language="comment", text=
+      "Detected Person.msg")
+    struct DetectedPerson {
+      int32 id;
+
+      object_tracking_messages::msg::BoundingBox bbox;
+    };
+  };
+};
