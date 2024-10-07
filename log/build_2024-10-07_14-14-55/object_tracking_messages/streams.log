@@ -1,0 +1,53 @@
+[0.034s] Invoking command in '/home/student/Desktop/workspace/build/object_tracking_messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/position_estimation:/opt/ros/humble /home/student/.local/bin/cmake --build /home/student/Desktop/workspace/build/object_tracking_messages -- -j16 -l16
+[0.659s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.659s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.659s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.659s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.659s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.659s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.659s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.659s] -- Configuring incomplete, errors occurred!
+[0.659s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[0.659s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[0.659s]   object_tracking_messages --arguments-file
+[0.659s]   /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter__arguments__object_tracking_messages.json
+[0.659s]   --output-dir
+[0.659s]   /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages
+[0.659s]   --output-file
+[0.659s]   /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages.idls)
+[0.659s]   returned error code 1:
+[0.659s] 
+[0.660s]   Error processing 'DetectedPersons detectedPersons' of
+[0.660s]   'object_tracking_messages/PersonDistance': ''detectedPersons' is an invalid
+[0.660s]   field name.  It should have the pattern
+[0.660s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$''
+[0.660s] 
+[0.660s]   Traceback (most recent call last):
+[0.660s] 
+[0.660s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[0.660s]       return _run_code(code, main_globals, None,
+[0.660s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[0.660s]       exec(code, run_globals)
+[0.660s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.660s]       sys.exit(main())
+[0.660s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[0.660s]       abs_idl_file = convert_to_idl(
+[0.660s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[0.660s]       return convert_msg_to_idl(
+[0.660s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[0.660s]       msg = parse_message_string(package_name, input_file.stem, content)
+[0.660s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 519, in parse_message_string
+[0.661s]       fields.append(Field(
+[0.661s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 354, in __init__
+[0.661s]       raise NameError(
+[0.661s] 
+[0.661s]   NameError: 'detectedPersons' is an invalid field name.  It should have the
+[0.661s]   pattern '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'
+[0.661s] 
+[0.661s] Call Stack (most recent call first):
+[0.661s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[0.661s]   CMakeLists.txt:13 (rosidl_generate_interfaces)
+[0.661s] 
+[0.661s] [0m
+[0.661s] gmake: *** [Makefile:1179: cmake_check_build_system] Error 1
+[0.662s] Invoked command in '/home/student/Desktop/workspace/build/object_tracking_messages' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/position_estimation:/opt/ros/humble /home/student/.local/bin/cmake --build /home/student/Desktop/workspace/build/object_tracking_messages -- -j16 -l16

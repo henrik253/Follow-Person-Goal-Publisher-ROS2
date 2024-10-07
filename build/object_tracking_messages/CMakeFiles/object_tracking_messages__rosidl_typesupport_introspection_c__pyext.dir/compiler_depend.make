@@ -251,8 +251,14 @@ CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_c__pyext.d
   rosidl_generator_c/object_tracking_messages/msg/detail/detected_person__functions.h \
   rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__type_support.h \
   rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__struct.h \
-  rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functions.h
+  rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functions.h \
+  rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__type_support.h \
+  rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+  rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.h
 
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 
 rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__struct.h:
 
@@ -303,6 +309,8 @@ rosidl_generator_c/object_tracking_messages/msg/detail/bounding_box__type_suppor
 /usr/include/python3.10/context.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__struct.h:
 
 /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
 
@@ -538,6 +546,8 @@ rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosi
 
 /usr/include/linux/stddef.h:
 
+rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.h:
+
 /usr/include/python3.10/pymacconfig.h:
 
 /usr/include/errno.h:
@@ -547,6 +557,8 @@ rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosi
 /usr/include/python3.10/descrobject.h:
 
 /usr/include/linux/errno.h:
+
+rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__type_support.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 

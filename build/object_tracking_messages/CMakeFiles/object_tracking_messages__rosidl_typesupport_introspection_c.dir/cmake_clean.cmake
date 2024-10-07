@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/object_tracking_messages/msg/detail/detected_person__type_support.c.o.d"
   "CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/object_tracking_messages/msg/detail/detected_persons__type_support.c.o"
   "CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/object_tracking_messages/msg/detail/detected_persons__type_support.c.o.d"
+  "CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/object_tracking_messages/msg/detail/person_distance__type_support.c.o"
+  "CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/object_tracking_messages/msg/detail/person_distance__type_support.c.o.d"
   "libobject_tracking_messages__rosidl_typesupport_introspection_c.pdb"
   "libobject_tracking_messages__rosidl_typesupport_introspection_c.so"
   "rosidl_typesupport_introspection_c/object_tracking_messages/msg/detail/bounding_box__rosidl_typesupport_introspection_c.h"
@@ -13,6 +15,8 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_introspection_c/object_tracking_messages/msg/detail/detected_person__type_support.c"
   "rosidl_typesupport_introspection_c/object_tracking_messages/msg/detail/detected_persons__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/object_tracking_messages/msg/detail/detected_persons__type_support.c"
+  "rosidl_typesupport_introspection_c/object_tracking_messages/msg/detail/person_distance__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/object_tracking_messages/msg/detail/person_distance__type_support.c"
 )
 
 # Per-language clean rules from dependency scanning.

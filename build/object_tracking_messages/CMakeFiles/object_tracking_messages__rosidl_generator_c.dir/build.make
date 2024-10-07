@@ -85,6 +85,7 @@ rosidl_generator_c/object_tracking_messages/msg/bounding_box.h: /opt/ros/humble/
 rosidl_generator_c/object_tracking_messages/msg/bounding_box.h: rosidl_adapter/object_tracking_messages/msg/BoundingBox.idl
 rosidl_generator_c/object_tracking_messages/msg/bounding_box.h: rosidl_adapter/object_tracking_messages/msg/DetectedPerson.idl
 rosidl_generator_c/object_tracking_messages/msg/bounding_box.h: rosidl_adapter/object_tracking_messages/msg/DetectedPersons.idl
+rosidl_generator_c/object_tracking_messages/msg/bounding_box.h: rosidl_adapter/object_tracking_messages/msg/PersonDistance.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c__arguments.json
 
@@ -121,6 +122,18 @@ rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__struct.
 rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__type_support.h: rosidl_generator_c/object_tracking_messages/msg/bounding_box.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__type_support.h
 
+rosidl_generator_c/object_tracking_messages/msg/person_distance.h: rosidl_generator_c/object_tracking_messages/msg/bounding_box.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/object_tracking_messages/msg/person_distance.h
+
+rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.h: rosidl_generator_c/object_tracking_messages/msg/bounding_box.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.h
+
+rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__struct.h: rosidl_generator_c/object_tracking_messages/msg/bounding_box.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__struct.h
+
+rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__type_support.h: rosidl_generator_c/object_tracking_messages/msg/bounding_box.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__type_support.h
+
 rosidl_generator_c/object_tracking_messages/msg/detail/bounding_box__functions.c: rosidl_generator_c/object_tracking_messages/msg/bounding_box.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/object_tracking_messages/msg/detail/bounding_box__functions.c
 
@@ -129,6 +142,9 @@ rosidl_generator_c/object_tracking_messages/msg/detail/detected_person__function
 
 rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functions.c: rosidl_generator_c/object_tracking_messages/msg/bounding_box.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functions.c
+
+rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c: rosidl_generator_c/object_tracking_messages/msg/bounding_box.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c
 
 CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/bounding_box__functions.c.o: CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/flags.make
 CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/bounding_box__functions.c.o: rosidl_generator_c/object_tracking_messages/msg/detail/bounding_box__functions.c
@@ -172,11 +188,26 @@ CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/o
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functions.c -o CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functions.c.s
 
+CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c.o: CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/flags.make
+CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c.o: rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c
+CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c.o: CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c.o -MF CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c.o.d -o CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c.o -c /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c
+
+CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c > CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c.i
+
+CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c -o CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c.s
+
 # Object files for target object_tracking_messages__rosidl_generator_c
 object_tracking_messages__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/bounding_box__functions.c.o" \
 "CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/detected_person__functions.c.o" \
-"CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functions.c.o"
+"CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functions.c.o" \
+"CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c.o"
 
 # External object files for target object_tracking_messages__rosidl_generator_c
 object_tracking_messages__rosidl_generator_c_EXTERNAL_OBJECTS =
@@ -184,11 +215,12 @@ object_tracking_messages__rosidl_generator_c_EXTERNAL_OBJECTS =
 libobject_tracking_messages__rosidl_generator_c.so: CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/bounding_box__functions.c.o
 libobject_tracking_messages__rosidl_generator_c.so: CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/detected_person__functions.c.o
 libobject_tracking_messages__rosidl_generator_c.so: CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functions.c.o
+libobject_tracking_messages__rosidl_generator_c.so: CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c.o
 libobject_tracking_messages__rosidl_generator_c.so: CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/build.make
 libobject_tracking_messages__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libobject_tracking_messages__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libobject_tracking_messages__rosidl_generator_c.so: CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libobject_tracking_messages__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libobject_tracking_messages__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -212,8 +244,13 @@ CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/depend: rosidl_gener
 CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functions.h
 CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__struct.h
 CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__type_support.h
+CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c
+CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.h
+CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__struct.h
+CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__type_support.h
 CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/object_tracking_messages/msg/detected_person.h
 CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/object_tracking_messages/msg/detected_persons.h
+CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/depend: rosidl_generator_c/object_tracking_messages/msg/person_distance.h
 	cd /home/student/Desktop/workspace/build/object_tracking_messages && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/workspace/src/object_tracking_messages /home/student/Desktop/workspace/src/object_tracking_messages /home/student/Desktop/workspace/build/object_tracking_messages /home/student/Desktop/workspace/build/object_tracking_messages /home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/depend
 

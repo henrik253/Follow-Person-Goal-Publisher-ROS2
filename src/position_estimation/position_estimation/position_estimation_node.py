@@ -5,7 +5,7 @@ from sensor_msgs.msg import PointCloud2
 from sensor_msgs.msg import Image
 import sensor_msgs_py.point_cloud2 as pc2
 import heapq
-from object_tracking_messages.msg import DetectedPersons, DetectedPerson, BoundingBox
+from object_tracking_messages.msg import DetectedPersons, DetectedPerson, BoundingBox, PersonDistance
 import numpy as np
 from cv_bridge import CvBridge
 
@@ -91,7 +91,10 @@ class PositionEstimationNode(Node):
 
     def detections_callback(self, msg):
         persons = msg.persons
-
+        
+        personDistanceMessage = PersonDistance() 
+        personDistanceMessage.detected_persons = persons 
+        distances = []
         for person in persons: 
             boundingBox = person.bbox
             id = person.id
@@ -110,6 +113,9 @@ class PositionEstimationNode(Node):
                     distance = round(self.depth[y_center, x_center],2)
             
             print(f"id: {id} and distance is {distance}")
+            distances.append(distance)
+        personDistanceMessage.distances = distances
+        self.positions_publisher.publish(personDistanceMessage)
         
 
     def depth_callback(self, msg):

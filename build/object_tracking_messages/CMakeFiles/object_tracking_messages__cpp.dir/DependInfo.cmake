@@ -21,8 +21,12 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__builder.hpp" "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp"
   "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__struct.hpp" "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp"
   "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__traits.hpp" "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp"
+  "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__builder.hpp" "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp"
+  "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__struct.hpp" "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp"
+  "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__traits.hpp" "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp"
   "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detected_person.hpp" "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp"
   "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detected_persons.hpp" "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp"
+  "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/person_distance.hpp" "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp"
   )
 
 

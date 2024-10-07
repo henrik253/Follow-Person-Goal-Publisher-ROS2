@@ -78,6 +78,10 @@ CMakeFiles/object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_m
 CMakeFiles/object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__builder.hpp
 CMakeFiles/object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__struct.hpp
 CMakeFiles/object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__traits.hpp
+CMakeFiles/object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/person_distance.hpp
+CMakeFiles/object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__builder.hpp
+CMakeFiles/object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__struct.hpp
+CMakeFiles/object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__traits.hpp
 
 rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -97,6 +101,7 @@ rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp: /opt/ros/hum
 rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp: rosidl_adapter/object_tracking_messages/msg/BoundingBox.idl
 rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp: rosidl_adapter/object_tracking_messages/msg/DetectedPerson.idl
 rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp: rosidl_adapter/object_tracking_messages/msg/DetectedPersons.idl
+rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp: rosidl_adapter/object_tracking_messages/msg/PersonDistance.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp__arguments.json
 
@@ -133,6 +138,18 @@ rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__struc
 rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__traits.hpp: rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__traits.hpp
 
+rosidl_generator_cpp/object_tracking_messages/msg/person_distance.hpp: rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/object_tracking_messages/msg/person_distance.hpp
+
+rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__builder.hpp: rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__builder.hpp
+
+rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__struct.hpp: rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__struct.hpp
+
+rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__traits.hpp: rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__traits.hpp
+
 object_tracking_messages__cpp: CMakeFiles/object_tracking_messages__cpp
 object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp
 object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/bounding_box__builder.hpp
@@ -144,8 +161,12 @@ object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg
 object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__builder.hpp
 object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__struct.hpp
 object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__traits.hpp
+object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__builder.hpp
+object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__struct.hpp
+object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__traits.hpp
 object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detected_person.hpp
 object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detected_persons.hpp
+object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/person_distance.hpp
 object_tracking_messages__cpp: CMakeFiles/object_tracking_messages__cpp.dir/build.make
 .PHONY : object_tracking_messages__cpp
 

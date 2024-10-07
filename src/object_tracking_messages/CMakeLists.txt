@@ -14,6 +14,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/BoundingBox.msg"
   "msg/DetectedPerson.msg"
   "msg/DetectedPersons.msg"
+  "msg/PersonDistance.msg"
  )
 
 # uncomment the following section in order to fill in

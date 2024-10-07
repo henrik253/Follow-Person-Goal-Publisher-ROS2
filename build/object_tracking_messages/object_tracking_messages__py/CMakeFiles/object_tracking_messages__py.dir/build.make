@@ -72,10 +72,12 @@ include /home/student/Desktop/workspace/build/object_tracking_messages/object_tr
 /home/student/Desktop/workspace/build/object_tracking_messages/object_tracking_messages__py/CMakeFiles/object_tracking_messages__py: rosidl_generator_py/object_tracking_messages/msg/_bounding_box.py
 /home/student/Desktop/workspace/build/object_tracking_messages/object_tracking_messages__py/CMakeFiles/object_tracking_messages__py: rosidl_generator_py/object_tracking_messages/msg/_detected_person.py
 /home/student/Desktop/workspace/build/object_tracking_messages/object_tracking_messages__py/CMakeFiles/object_tracking_messages__py: rosidl_generator_py/object_tracking_messages/msg/_detected_persons.py
+/home/student/Desktop/workspace/build/object_tracking_messages/object_tracking_messages__py/CMakeFiles/object_tracking_messages__py: rosidl_generator_py/object_tracking_messages/msg/_person_distance.py
 /home/student/Desktop/workspace/build/object_tracking_messages/object_tracking_messages__py/CMakeFiles/object_tracking_messages__py: rosidl_generator_py/object_tracking_messages/msg/__init__.py
 /home/student/Desktop/workspace/build/object_tracking_messages/object_tracking_messages__py/CMakeFiles/object_tracking_messages__py: rosidl_generator_py/object_tracking_messages/msg/_bounding_box_s.c
 /home/student/Desktop/workspace/build/object_tracking_messages/object_tracking_messages__py/CMakeFiles/object_tracking_messages__py: rosidl_generator_py/object_tracking_messages/msg/_detected_person_s.c
 /home/student/Desktop/workspace/build/object_tracking_messages/object_tracking_messages__py/CMakeFiles/object_tracking_messages__py: rosidl_generator_py/object_tracking_messages/msg/_detected_persons_s.c
+/home/student/Desktop/workspace/build/object_tracking_messages/object_tracking_messages__py/CMakeFiles/object_tracking_messages__py: rosidl_generator_py/object_tracking_messages/msg/_person_distance_s.c
 
 rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -93,6 +95,7 @@ rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosi
 rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/object_tracking_messages/msg/BoundingBox.idl
 rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/object_tracking_messages/msg/DetectedPerson.idl
 rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/object_tracking_messages/msg/DetectedPersons.idl
+rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/object_tracking_messages/msg/PersonDistance.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
 	cd /home/student/Desktop/workspace/build/object_tracking_messages/object_tracking_messages__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
@@ -111,6 +114,9 @@ rosidl_generator_py/object_tracking_messages/msg/_detected_person.py: rosidl_gen
 rosidl_generator_py/object_tracking_messages/msg/_detected_persons.py: rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/object_tracking_messages/msg/_detected_persons.py
 
+rosidl_generator_py/object_tracking_messages/msg/_person_distance.py: rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/object_tracking_messages/msg/_person_distance.py
+
 rosidl_generator_py/object_tracking_messages/msg/__init__.py: rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/object_tracking_messages/msg/__init__.py
 
@@ -123,6 +129,9 @@ rosidl_generator_py/object_tracking_messages/msg/_detected_person_s.c: rosidl_ge
 rosidl_generator_py/object_tracking_messages/msg/_detected_persons_s.c: rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/object_tracking_messages/msg/_detected_persons_s.c
 
+rosidl_generator_py/object_tracking_messages/msg/_person_distance_s.c: rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/object_tracking_messages/msg/_person_distance_s.c
+
 object_tracking_messages__py: /home/student/Desktop/workspace/build/object_tracking_messages/object_tracking_messages__py/CMakeFiles/object_tracking_messages__py
 object_tracking_messages__py: rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_c.c
 object_tracking_messages__py: rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_fastrtps_c.c
@@ -134,6 +143,8 @@ object_tracking_messages__py: rosidl_generator_py/object_tracking_messages/msg/_
 object_tracking_messages__py: rosidl_generator_py/object_tracking_messages/msg/_detected_person_s.c
 object_tracking_messages__py: rosidl_generator_py/object_tracking_messages/msg/_detected_persons.py
 object_tracking_messages__py: rosidl_generator_py/object_tracking_messages/msg/_detected_persons_s.c
+object_tracking_messages__py: rosidl_generator_py/object_tracking_messages/msg/_person_distance.py
+object_tracking_messages__py: rosidl_generator_py/object_tracking_messages/msg/_person_distance_s.c
 object_tracking_messages__py: /home/student/Desktop/workspace/build/object_tracking_messages/object_tracking_messages__py/CMakeFiles/object_tracking_messages__py.dir/build.make
 .PHONY : object_tracking_messages__py
 

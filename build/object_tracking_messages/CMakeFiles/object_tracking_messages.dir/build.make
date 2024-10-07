@@ -69,6 +69,7 @@ include CMakeFiles/object_tracking_messages.dir/progress.make
 CMakeFiles/object_tracking_messages: /home/student/Desktop/workspace/src/object_tracking_messages/msg/BoundingBox.msg
 CMakeFiles/object_tracking_messages: /home/student/Desktop/workspace/src/object_tracking_messages/msg/DetectedPerson.msg
 CMakeFiles/object_tracking_messages: /home/student/Desktop/workspace/src/object_tracking_messages/msg/DetectedPersons.msg
+CMakeFiles/object_tracking_messages: /home/student/Desktop/workspace/src/object_tracking_messages/msg/PersonDistance.msg
 
 object_tracking_messages: CMakeFiles/object_tracking_messages
 object_tracking_messages: CMakeFiles/object_tracking_messages.dir/build.make

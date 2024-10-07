@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from object_tracking_messages/msg/PersonDistance.msg
+// generated code does not contain a copyright notice
+
+#include "object_tracking_messages/msg/DetectedPersons.idl"
+
+module object_tracking_messages {
+  module msg {
+    @verbatim (language="comment", text=
+      "PersonDistance.msg")
+    struct PersonDistance {
+      object_tracking_messages::msg::DetectedPersons detected_persons;
+
+      sequence<float> distances;
+    };
+  };
+};
