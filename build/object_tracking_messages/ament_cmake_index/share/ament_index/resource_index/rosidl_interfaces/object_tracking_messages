@@ -1,0 +1,8 @@
+msg/BoundingBox.idl
+msg/BoundingBox.msg
+msg/DetectedPerson.idl
+msg/DetectedPerson.msg
+msg/DetectedPersons.idl
+msg/DetectedPersons.msg
+msg/PersonDistance.idl
+msg/PersonDistance.msg

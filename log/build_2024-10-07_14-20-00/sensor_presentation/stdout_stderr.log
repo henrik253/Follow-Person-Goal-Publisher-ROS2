@@ -1,0 +1,23 @@
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running develop
+running egg_info
+creating sensor_presentation.egg-info
+writing sensor_presentation.egg-info/PKG-INFO
+writing dependency_links to sensor_presentation.egg-info/dependency_links.txt
+writing entry points to sensor_presentation.egg-info/entry_points.txt
+writing requirements to sensor_presentation.egg-info/requires.txt
+writing top-level names to sensor_presentation.egg-info/top_level.txt
+writing manifest file 'sensor_presentation.egg-info/SOURCES.txt'
+reading manifest file 'sensor_presentation.egg-info/SOURCES.txt'
+writing manifest file 'sensor_presentation.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/student/Desktop/workspace/install/sensor_presentation/lib/python3.10/site-packages/sensor-presentation.egg-link (link to .)
+
+Installed /home/student/Desktop/workspace/build/sensor_presentation
+running symlink_data
+creating /home/student/Desktop/workspace/install/sensor_presentation/share/ament_index
+creating /home/student/Desktop/workspace/install/sensor_presentation/share/ament_index/resource_index
+creating /home/student/Desktop/workspace/install/sensor_presentation/share/ament_index/resource_index/packages
+symbolically linking /home/student/Desktop/workspace/build/sensor_presentation/resource/sensor_presentation -> /home/student/Desktop/workspace/install/sensor_presentation/share/ament_index/resource_index/packages
+symbolically linking /home/student/Desktop/workspace/build/sensor_presentation/package.xml -> /home/student/Desktop/workspace/install/sensor_presentation/share/sensor_presentation

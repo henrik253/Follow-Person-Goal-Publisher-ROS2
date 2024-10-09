@@ -1,0 +1,863 @@
+[0.116s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'sensor_presentation']
+[0.116s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['sensor_presentation'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f647607e260>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f647607d960>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f647607d960>>)
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.363s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.363s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.363s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.363s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.363s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.363s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/student/Desktop/workspace'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extensions ['ignore', 'ignore_ament_install']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extension 'ignore'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extension 'ignore_ament_install'
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extensions ['colcon_pkg']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extension 'colcon_pkg'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extensions ['colcon_meta']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extension 'colcon_meta'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extensions ['ros']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extension 'ros'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extensions ['cmake', 'python']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extension 'cmake'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extension 'python'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extensions ['python_setup_py']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extension 'python_setup_py'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid) by extensions ['ignore', 'ignore_ament_install']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid) by extension 'ignore'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid) by extension 'ignore_ament_install'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid) by extensions ['colcon_pkg']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid) by extension 'colcon_pkg'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid) by extensions ['colcon_meta']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid) by extension 'colcon_meta'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid) by extensions ['ros']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid) by extension 'ros'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid) by extensions ['cmake', 'python']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid) by extension 'cmake'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid) by extension 'python'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid) by extensions ['python_setup_py']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid) by extension 'python_setup_py'
+[3.496s] ERROR:colcon.colcon_core.package_identification:Exception in package identification extension 'python_setup_py' in 'src/deep-person-reid': Command '['/usr/bin/python3', '-c', 'import sys;from contextlib import suppress;exec("with suppress(ImportError):    from setuptools.extern.packaging.specifiers    import SpecifierSet");exec("with suppress(ImportError):    from packaging.specifiers import SpecifierSet");from distutils.core import run_setup;dist = run_setup(    \'setup.py\', script_args=(\'--dry-run\',), stop_after=\'config\');skip_keys = (\'cmdclass\', \'distclass\', \'ext_modules\', \'metadata\');data = {    key: value for key, value in dist.__dict__.items()     if (        not key.startswith(\'_\') and         not callable(value) and         key not in skip_keys and         key not in dist.display_option_names    )};data[\'metadata\'] = {    k: v for k, v in dist.metadata.__dict__.items()     if k not in (\'license_files\', \'provides_extras\')};sys.stdout.buffer.write(repr(data).encode(\'utf-8\'))']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/package_identification/__init__.py", line 144, in _identify
+    retval = extension.identify(_reused_descriptor_instance)
+  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 48, in identify
+    config = get_setup_information(setup_py)
+  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 241, in get_setup_information
+    _setup_information_cache[hashable_env] = _get_setup_information(
+  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 288, in _get_setup_information
+    result = subprocess.run(
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/usr/bin/python3', '-c', 'import sys;from contextlib import suppress;exec("with suppress(ImportError):    from setuptools.extern.packaging.specifiers    import SpecifierSet");exec("with suppress(ImportError):    from packaging.specifiers import SpecifierSet");from distutils.core import run_setup;dist = run_setup(    \'setup.py\', script_args=(\'--dry-run\',), stop_after=\'config\');skip_keys = (\'cmdclass\', \'distclass\', \'ext_modules\', \'metadata\');data = {    key: value for key, value in dist.__dict__.items()     if (        not key.startswith(\'_\') and         not callable(value) and         key not in skip_keys and         key not in dist.display_option_names    )};data[\'metadata\'] = {    k: v for k, v in dist.metadata.__dict__.items()     if k not in (\'license_files\', \'provides_extras\')};sys.stdout.buffer.write(repr(data).encode(\'utf-8\'))']' returned non-zero exit status 1.
+
+[3.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/configs) by extensions ['ignore', 'ignore_ament_install']
+[3.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/configs) by extension 'ignore'
+[3.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/configs) by extension 'ignore_ament_install'
+[3.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/configs) by extensions ['colcon_pkg']
+[3.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/configs) by extension 'colcon_pkg'
+[3.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/configs) by extensions ['colcon_meta']
+[3.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/configs) by extension 'colcon_meta'
+[3.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/configs) by extensions ['ros']
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/configs) by extension 'ros'
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/configs) by extensions ['cmake', 'python']
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/configs) by extension 'cmake'
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/configs) by extension 'python'
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/configs) by extensions ['python_setup_py']
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/configs) by extension 'python_setup_py'
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs) by extensions ['ignore', 'ignore_ament_install']
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs) by extension 'ignore'
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs) by extension 'ignore_ament_install'
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs) by extensions ['colcon_pkg']
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs) by extension 'colcon_pkg'
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs) by extensions ['colcon_meta']
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs) by extension 'colcon_meta'
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs) by extensions ['ros']
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs) by extension 'ros'
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs) by extensions ['cmake', 'python']
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs) by extension 'cmake'
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs) by extension 'python'
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs) by extensions ['python_setup_py']
+[3.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs) by extension 'python_setup_py'
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/figures) by extensions ['ignore', 'ignore_ament_install']
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/figures) by extension 'ignore'
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/figures) by extension 'ignore_ament_install'
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/figures) by extensions ['colcon_pkg']
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/figures) by extension 'colcon_pkg'
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/figures) by extensions ['colcon_meta']
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/figures) by extension 'colcon_meta'
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/figures) by extensions ['ros']
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/figures) by extension 'ros'
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/figures) by extensions ['cmake', 'python']
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/figures) by extension 'cmake'
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/figures) by extension 'python'
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/figures) by extensions ['python_setup_py']
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/figures) by extension 'python_setup_py'
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/pkg) by extensions ['ignore', 'ignore_ament_install']
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/pkg) by extension 'ignore'
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/pkg) by extension 'ignore_ament_install'
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/pkg) by extensions ['colcon_pkg']
+[3.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/pkg) by extension 'colcon_pkg'
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/pkg) by extensions ['colcon_meta']
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/pkg) by extension 'colcon_meta'
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/pkg) by extensions ['ros']
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/pkg) by extension 'ros'
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/pkg) by extensions ['cmake', 'python']
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/pkg) by extension 'cmake'
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/pkg) by extension 'python'
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/pkg) by extensions ['python_setup_py']
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/docs/pkg) by extension 'python_setup_py'
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects) by extensions ['ignore', 'ignore_ament_install']
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects) by extension 'ignore'
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects) by extension 'ignore_ament_install'
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects) by extensions ['colcon_pkg']
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects) by extension 'colcon_pkg'
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects) by extensions ['colcon_meta']
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects) by extension 'colcon_meta'
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects) by extensions ['ros']
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects) by extension 'ros'
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects) by extensions ['cmake', 'python']
+[3.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects) by extension 'cmake'
+[3.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects) by extension 'python'
+[3.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects) by extensions ['python_setup_py']
+[3.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects) by extension 'python_setup_py'
+[3.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/DML) by extensions ['ignore', 'ignore_ament_install']
+[3.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/DML) by extension 'ignore'
+[3.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/DML) by extension 'ignore_ament_install'
+[3.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/DML) by extensions ['colcon_pkg']
+[3.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/DML) by extension 'colcon_pkg'
+[3.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/DML) by extensions ['colcon_meta']
+[3.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/DML) by extension 'colcon_meta'
+[3.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/DML) by extensions ['ros']
+[3.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/DML) by extension 'ros'
+[3.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/DML) by extensions ['cmake', 'python']
+[3.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/DML) by extension 'cmake'
+[3.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/DML) by extension 'python'
+[3.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/DML) by extensions ['python_setup_py']
+[3.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/DML) by extension 'python_setup_py'
+[3.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/OSNet_AIN) by extensions ['ignore', 'ignore_ament_install']
+[3.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/OSNet_AIN) by extension 'ignore'
+[3.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/OSNet_AIN) by extension 'ignore_ament_install'
+[3.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/OSNet_AIN) by extensions ['colcon_pkg']
+[3.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/OSNet_AIN) by extension 'colcon_pkg'
+[3.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/OSNet_AIN) by extensions ['colcon_meta']
+[3.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/OSNet_AIN) by extension 'colcon_meta'
+[3.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/OSNet_AIN) by extensions ['ros']
+[3.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/OSNet_AIN) by extension 'ros'
+[3.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/OSNet_AIN) by extensions ['cmake', 'python']
+[3.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/OSNet_AIN) by extension 'cmake'
+[3.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/OSNet_AIN) by extension 'python'
+[3.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/OSNet_AIN) by extensions ['python_setup_py']
+[3.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/OSNet_AIN) by extension 'python_setup_py'
+[3.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition) by extensions ['ignore', 'ignore_ament_install']
+[3.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition) by extension 'ignore'
+[3.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition) by extension 'ignore_ament_install'
+[3.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition) by extensions ['colcon_pkg']
+[3.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition) by extension 'colcon_pkg'
+[3.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition) by extensions ['colcon_meta']
+[3.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition) by extension 'colcon_meta'
+[3.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition) by extensions ['ros']
+[3.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition) by extension 'ros'
+[3.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition) by extensions ['cmake', 'python']
+[3.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition) by extension 'cmake'
+[3.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition) by extension 'python'
+[3.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition) by extensions ['python_setup_py']
+[3.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition) by extension 'python_setup_py'
+[3.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/datasets) by extensions ['ignore', 'ignore_ament_install']
+[3.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/datasets) by extension 'ignore'
+[3.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/datasets) by extension 'ignore_ament_install'
+[3.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/datasets) by extensions ['colcon_pkg']
+[3.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/datasets) by extension 'colcon_pkg'
+[3.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/datasets) by extensions ['colcon_meta']
+[3.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/datasets) by extension 'colcon_meta'
+[3.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/datasets) by extensions ['ros']
+[3.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/datasets) by extension 'ros'
+[3.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/datasets) by extensions ['cmake', 'python']
+[3.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/datasets) by extension 'cmake'
+[3.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/datasets) by extension 'python'
+[3.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/datasets) by extensions ['python_setup_py']
+[3.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/datasets) by extension 'python_setup_py'
+[3.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/models) by extensions ['ignore', 'ignore_ament_install']
+[3.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/models) by extension 'ignore'
+[3.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/models) by extension 'ignore_ament_install'
+[3.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/models) by extensions ['colcon_pkg']
+[3.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/models) by extension 'colcon_pkg'
+[3.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/models) by extensions ['colcon_meta']
+[3.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/models) by extension 'colcon_meta'
+[3.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/models) by extensions ['ros']
+[3.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/models) by extension 'ros'
+[3.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/models) by extensions ['cmake', 'python']
+[3.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/models) by extension 'cmake'
+[3.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/models) by extension 'python'
+[3.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/models) by extensions ['python_setup_py']
+[3.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/projects/attribute_recognition/models) by extension 'python_setup_py'
+[3.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/scripts) by extensions ['ignore', 'ignore_ament_install']
+[3.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/scripts) by extension 'ignore'
+[3.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/scripts) by extension 'ignore_ament_install'
+[3.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/scripts) by extensions ['colcon_pkg']
+[3.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/scripts) by extension 'colcon_pkg'
+[3.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/scripts) by extensions ['colcon_meta']
+[3.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/scripts) by extension 'colcon_meta'
+[3.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/scripts) by extensions ['ros']
+[3.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/scripts) by extension 'ros'
+[3.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/scripts) by extensions ['cmake', 'python']
+[3.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/scripts) by extension 'cmake'
+[3.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/scripts) by extension 'python'
+[3.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/scripts) by extensions ['python_setup_py']
+[3.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/scripts) by extension 'python_setup_py'
+[3.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/tools) by extensions ['ignore', 'ignore_ament_install']
+[3.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/tools) by extension 'ignore'
+[3.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/tools) by extension 'ignore_ament_install'
+[3.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/tools) by extensions ['colcon_pkg']
+[3.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/tools) by extension 'colcon_pkg'
+[3.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/tools) by extensions ['colcon_meta']
+[3.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/tools) by extension 'colcon_meta'
+[3.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/tools) by extensions ['ros']
+[3.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/tools) by extension 'ros'
+[3.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/tools) by extensions ['cmake', 'python']
+[3.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/tools) by extension 'cmake'
+[3.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/tools) by extension 'python'
+[3.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/tools) by extensions ['python_setup_py']
+[3.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/tools) by extension 'python_setup_py'
+[3.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid) by extensions ['ignore', 'ignore_ament_install']
+[3.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid) by extension 'ignore'
+[3.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid) by extension 'ignore_ament_install'
+[3.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid) by extensions ['colcon_pkg']
+[3.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid) by extension 'colcon_pkg'
+[3.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid) by extensions ['colcon_meta']
+[3.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid) by extension 'colcon_meta'
+[3.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid) by extensions ['ros']
+[3.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid) by extension 'ros'
+[3.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid) by extensions ['cmake', 'python']
+[3.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid) by extension 'cmake'
+[3.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid) by extension 'python'
+[3.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid) by extensions ['python_setup_py']
+[3.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid) by extension 'python_setup_py'
+[3.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[3.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/__pycache__) by extension 'ignore'
+[3.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/__pycache__) by extension 'ignore_ament_install'
+[3.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/__pycache__) by extensions ['colcon_pkg']
+[3.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/__pycache__) by extension 'colcon_pkg'
+[3.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/__pycache__) by extensions ['colcon_meta']
+[3.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/__pycache__) by extension 'colcon_meta'
+[3.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/__pycache__) by extensions ['ros']
+[3.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/__pycache__) by extension 'ros'
+[3.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/__pycache__) by extensions ['cmake', 'python']
+[3.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/__pycache__) by extension 'cmake'
+[3.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/__pycache__) by extension 'python'
+[3.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/__pycache__) by extensions ['python_setup_py']
+[3.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/__pycache__) by extension 'python_setup_py'
+[3.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data) by extensions ['ignore', 'ignore_ament_install']
+[3.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data) by extension 'ignore'
+[3.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data) by extension 'ignore_ament_install'
+[3.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data) by extensions ['colcon_pkg']
+[3.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data) by extension 'colcon_pkg'
+[3.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data) by extensions ['colcon_meta']
+[3.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data) by extension 'colcon_meta'
+[3.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data) by extensions ['ros']
+[3.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data) by extension 'ros'
+[3.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data) by extensions ['cmake', 'python']
+[3.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data) by extension 'cmake'
+[3.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data) by extension 'python'
+[3.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data) by extensions ['python_setup_py']
+[3.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data) by extension 'python_setup_py'
+[3.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[3.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/__pycache__) by extension 'ignore'
+[3.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/__pycache__) by extension 'ignore_ament_install'
+[3.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/__pycache__) by extensions ['colcon_pkg']
+[3.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/__pycache__) by extension 'colcon_pkg'
+[3.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/__pycache__) by extensions ['colcon_meta']
+[3.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/__pycache__) by extension 'colcon_meta'
+[3.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/__pycache__) by extensions ['ros']
+[3.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/__pycache__) by extension 'ros'
+[3.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/__pycache__) by extensions ['cmake', 'python']
+[3.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/__pycache__) by extension 'cmake'
+[3.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/__pycache__) by extension 'python'
+[3.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/__pycache__) by extensions ['python_setup_py']
+[3.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/__pycache__) by extension 'python_setup_py'
+[3.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets) by extensions ['ignore', 'ignore_ament_install']
+[3.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets) by extension 'ignore'
+[3.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets) by extension 'ignore_ament_install'
+[3.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets) by extensions ['colcon_pkg']
+[3.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets) by extension 'colcon_pkg'
+[3.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets) by extensions ['colcon_meta']
+[3.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets) by extension 'colcon_meta'
+[3.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets) by extensions ['ros']
+[3.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets) by extension 'ros'
+[3.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets) by extensions ['cmake', 'python']
+[3.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets) by extension 'cmake'
+[3.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets) by extension 'python'
+[3.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets) by extensions ['python_setup_py']
+[3.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets) by extension 'python_setup_py'
+[3.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[3.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/__pycache__) by extension 'ignore'
+[3.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/__pycache__) by extension 'ignore_ament_install'
+[3.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/__pycache__) by extensions ['colcon_pkg']
+[3.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/__pycache__) by extension 'colcon_pkg'
+[3.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/__pycache__) by extensions ['colcon_meta']
+[3.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/__pycache__) by extension 'colcon_meta'
+[3.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/__pycache__) by extensions ['ros']
+[3.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/__pycache__) by extension 'ros'
+[3.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/__pycache__) by extensions ['cmake', 'python']
+[3.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/__pycache__) by extension 'cmake'
+[3.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/__pycache__) by extension 'python'
+[3.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/__pycache__) by extensions ['python_setup_py']
+[3.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/__pycache__) by extension 'python_setup_py'
+[3.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image) by extensions ['ignore', 'ignore_ament_install']
+[3.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image) by extension 'ignore'
+[3.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image) by extension 'ignore_ament_install'
+[3.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image) by extensions ['colcon_pkg']
+[3.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image) by extension 'colcon_pkg'
+[3.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image) by extensions ['colcon_meta']
+[3.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image) by extension 'colcon_meta'
+[3.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image) by extensions ['ros']
+[3.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image) by extension 'ros'
+[3.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image) by extensions ['cmake', 'python']
+[3.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image) by extension 'cmake'
+[3.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image) by extension 'python'
+[3.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image) by extensions ['python_setup_py']
+[3.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image) by extension 'python_setup_py'
+[3.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[3.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image/__pycache__) by extension 'ignore'
+[3.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image/__pycache__) by extension 'ignore_ament_install'
+[3.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image/__pycache__) by extensions ['colcon_pkg']
+[3.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image/__pycache__) by extension 'colcon_pkg'
+[3.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image/__pycache__) by extensions ['colcon_meta']
+[3.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image/__pycache__) by extension 'colcon_meta'
+[3.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image/__pycache__) by extensions ['ros']
+[3.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image/__pycache__) by extension 'ros'
+[3.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image/__pycache__) by extensions ['cmake', 'python']
+[3.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image/__pycache__) by extension 'cmake'
+[3.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image/__pycache__) by extension 'python'
+[3.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image/__pycache__) by extensions ['python_setup_py']
+[3.511s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/image/__pycache__) by extension 'python_setup_py'
+[3.512s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/video) by extensions ['ignore', 'ignore_ament_install']
+[3.512s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/video) by extension 'ignore'
+[3.512s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/video) by extension 'ignore_ament_install'
+[3.512s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/video) by extensions ['colcon_pkg']
+[3.512s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/video) by extension 'colcon_pkg'
+[3.512s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/video) by extensions ['colcon_meta']
+[3.512s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/video) by extension 'colcon_meta'
+[3.512s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/video) by extensions ['ros']
+[3.512s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/video) by extension 'ros'
+[3.512s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/video) by extensions ['cmake', 'python']
+[3.512s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/video) by extension 'cmake'
+[3.512s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/video) by extension 'python'
+[3.512s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/video) by extensions ['python_setup_py']
+[3.512s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/data/datasets/video) by extension 'python_setup_py'
+[3.512s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine) by extensions ['ignore', 'ignore_ament_install']
+[3.512s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine) by extension 'ignore'
+[3.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine) by extension 'ignore_ament_install'
+[3.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine) by extensions ['colcon_pkg']
+[3.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine) by extension 'colcon_pkg'
+[3.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine) by extensions ['colcon_meta']
+[3.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine) by extension 'colcon_meta'
+[3.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine) by extensions ['ros']
+[3.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine) by extension 'ros'
+[3.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine) by extensions ['cmake', 'python']
+[3.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine) by extension 'cmake'
+[3.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine) by extension 'python'
+[3.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine) by extensions ['python_setup_py']
+[3.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine) by extension 'python_setup_py'
+[3.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/image) by extensions ['ignore', 'ignore_ament_install']
+[3.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/image) by extension 'ignore'
+[3.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/image) by extension 'ignore_ament_install'
+[3.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/image) by extensions ['colcon_pkg']
+[3.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/image) by extension 'colcon_pkg'
+[3.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/image) by extensions ['colcon_meta']
+[3.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/image) by extension 'colcon_meta'
+[3.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/image) by extensions ['ros']
+[3.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/image) by extension 'ros'
+[3.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/image) by extensions ['cmake', 'python']
+[3.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/image) by extension 'cmake'
+[3.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/image) by extension 'python'
+[3.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/image) by extensions ['python_setup_py']
+[3.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/image) by extension 'python_setup_py'
+[3.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/video) by extensions ['ignore', 'ignore_ament_install']
+[3.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/video) by extension 'ignore'
+[3.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/video) by extension 'ignore_ament_install'
+[3.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/video) by extensions ['colcon_pkg']
+[3.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/video) by extension 'colcon_pkg'
+[3.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/video) by extensions ['colcon_meta']
+[3.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/video) by extension 'colcon_meta'
+[3.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/video) by extensions ['ros']
+[3.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/video) by extension 'ros'
+[3.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/video) by extensions ['cmake', 'python']
+[3.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/video) by extension 'cmake'
+[3.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/video) by extension 'python'
+[3.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/video) by extensions ['python_setup_py']
+[3.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/engine/video) by extension 'python_setup_py'
+[3.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/losses) by extensions ['ignore', 'ignore_ament_install']
+[3.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/losses) by extension 'ignore'
+[3.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/losses) by extension 'ignore_ament_install'
+[3.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/losses) by extensions ['colcon_pkg']
+[3.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/losses) by extension 'colcon_pkg'
+[3.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/losses) by extensions ['colcon_meta']
+[3.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/losses) by extension 'colcon_meta'
+[3.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/losses) by extensions ['ros']
+[3.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/losses) by extension 'ros'
+[3.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/losses) by extensions ['cmake', 'python']
+[3.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/losses) by extension 'cmake'
+[3.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/losses) by extension 'python'
+[3.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/losses) by extensions ['python_setup_py']
+[3.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/losses) by extension 'python_setup_py'
+[3.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics) by extensions ['ignore', 'ignore_ament_install']
+[3.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics) by extension 'ignore'
+[3.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics) by extension 'ignore_ament_install'
+[3.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics) by extensions ['colcon_pkg']
+[3.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics) by extension 'colcon_pkg'
+[3.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics) by extensions ['colcon_meta']
+[3.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics) by extension 'colcon_meta'
+[3.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics) by extensions ['ros']
+[3.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics) by extension 'ros'
+[3.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics) by extensions ['cmake', 'python']
+[3.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics) by extension 'cmake'
+[3.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics) by extension 'python'
+[3.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics) by extensions ['python_setup_py']
+[3.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics) by extension 'python_setup_py'
+[3.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics/rank_cylib) by extensions ['ignore', 'ignore_ament_install']
+[3.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics/rank_cylib) by extension 'ignore'
+[3.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics/rank_cylib) by extension 'ignore_ament_install'
+[3.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics/rank_cylib) by extensions ['colcon_pkg']
+[3.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics/rank_cylib) by extension 'colcon_pkg'
+[3.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics/rank_cylib) by extensions ['colcon_meta']
+[3.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics/rank_cylib) by extension 'colcon_meta'
+[3.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics/rank_cylib) by extensions ['ros']
+[3.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics/rank_cylib) by extension 'ros'
+[3.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics/rank_cylib) by extensions ['cmake', 'python']
+[3.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics/rank_cylib) by extension 'cmake'
+[3.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics/rank_cylib) by extension 'python'
+[3.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics/rank_cylib) by extensions ['python_setup_py']
+[3.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/metrics/rank_cylib) by extension 'python_setup_py'
+[4.471s] DEBUG:colcon.colcon_core.package_identification:Package 'src/deep-person-reid/torchreid/metrics/rank_cylib' with type 'python' and name 'Cython-based reid evaluation code'
+[4.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models) by extensions ['ignore', 'ignore_ament_install']
+[4.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models) by extension 'ignore'
+[4.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models) by extension 'ignore_ament_install'
+[4.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models) by extensions ['colcon_pkg']
+[4.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models) by extension 'colcon_pkg'
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models) by extensions ['colcon_meta']
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models) by extension 'colcon_meta'
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models) by extensions ['ros']
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models) by extension 'ros'
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models) by extensions ['cmake', 'python']
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models) by extension 'cmake'
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models) by extension 'python'
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models) by extensions ['python_setup_py']
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models) by extension 'python_setup_py'
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models/__pycache__) by extension 'ignore'
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models/__pycache__) by extension 'ignore_ament_install'
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models/__pycache__) by extensions ['colcon_pkg']
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models/__pycache__) by extension 'colcon_pkg'
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models/__pycache__) by extensions ['colcon_meta']
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models/__pycache__) by extension 'colcon_meta'
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models/__pycache__) by extensions ['ros']
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models/__pycache__) by extension 'ros'
+[4.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models/__pycache__) by extensions ['cmake', 'python']
+[4.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models/__pycache__) by extension 'cmake'
+[4.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models/__pycache__) by extension 'python'
+[4.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models/__pycache__) by extensions ['python_setup_py']
+[4.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/models/__pycache__) by extension 'python_setup_py'
+[4.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/optim) by extensions ['ignore', 'ignore_ament_install']
+[4.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/optim) by extension 'ignore'
+[4.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/optim) by extension 'ignore_ament_install'
+[4.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/optim) by extensions ['colcon_pkg']
+[4.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/optim) by extension 'colcon_pkg'
+[4.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/optim) by extensions ['colcon_meta']
+[4.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/optim) by extension 'colcon_meta'
+[4.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/optim) by extensions ['ros']
+[4.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/optim) by extension 'ros'
+[4.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/optim) by extensions ['cmake', 'python']
+[4.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/optim) by extension 'cmake'
+[4.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/optim) by extension 'python'
+[4.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/optim) by extensions ['python_setup_py']
+[4.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/optim) by extension 'python_setup_py'
+[4.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils) by extensions ['ignore', 'ignore_ament_install']
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils) by extension 'ignore'
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils) by extension 'ignore_ament_install'
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils) by extensions ['colcon_pkg']
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils) by extension 'colcon_pkg'
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils) by extensions ['colcon_meta']
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils) by extension 'colcon_meta'
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils) by extensions ['ros']
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils) by extension 'ros'
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils) by extensions ['cmake', 'python']
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils) by extension 'cmake'
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils) by extension 'python'
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils) by extensions ['python_setup_py']
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils) by extension 'python_setup_py'
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking) by extensions ['ignore', 'ignore_ament_install']
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking) by extension 'ignore'
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking) by extension 'ignore_ament_install'
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking) by extensions ['colcon_pkg']
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking) by extension 'colcon_pkg'
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking) by extensions ['colcon_meta']
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking) by extension 'colcon_meta'
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking) by extensions ['ros']
+[4.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking) by extension 'ros'
+[4.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking) by extensions ['cmake', 'python']
+[4.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking) by extension 'cmake'
+[4.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking) by extension 'python'
+[4.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking) by extensions ['python_setup_py']
+[4.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking) by extension 'python_setup_py'
+[4.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension) by extensions ['ignore', 'ignore_ament_install']
+[4.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension) by extension 'ignore'
+[4.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension) by extension 'ignore_ament_install'
+[4.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension) by extensions ['colcon_pkg']
+[4.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension) by extension 'colcon_pkg'
+[4.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension) by extensions ['colcon_meta']
+[4.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension) by extension 'colcon_meta'
+[4.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension) by extensions ['ros']
+[4.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension) by extension 'ros'
+[4.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension) by extensions ['cmake', 'python']
+[4.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension) by extension 'cmake'
+[4.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension) by extension 'python'
+[4.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension) by extensions ['python_setup_py']
+[4.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension) by extension 'python_setup_py'
+[4.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix) by extensions ['ignore', 'ignore_ament_install']
+[4.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix) by extension 'ignore'
+[4.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix) by extension 'ignore_ament_install'
+[4.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix) by extensions ['colcon_pkg']
+[4.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix) by extension 'colcon_pkg'
+[4.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix) by extensions ['colcon_meta']
+[4.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix) by extension 'colcon_meta'
+[4.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix) by extensions ['ros']
+[4.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix) by extension 'ros'
+[4.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix) by extensions ['cmake', 'python']
+[4.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix) by extension 'cmake'
+[4.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix) by extension 'python'
+[4.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix) by extensions ['python_setup_py']
+[4.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix) by extension 'python_setup_py'
+[6.570s] DEBUG:colcon.colcon_core.package_identification:Package 'src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix' with type 'python' and name 'build_adjacency_matrix'
+[6.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation) by extensions ['ignore', 'ignore_ament_install']
+[6.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation) by extension 'ignore'
+[6.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation) by extension 'ignore_ament_install'
+[6.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation) by extensions ['colcon_pkg']
+[6.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation) by extension 'colcon_pkg'
+[6.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation) by extensions ['colcon_meta']
+[6.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation) by extension 'colcon_meta'
+[6.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation) by extensions ['ros']
+[6.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation) by extension 'ros'
+[6.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation) by extensions ['cmake', 'python']
+[6.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation) by extension 'cmake'
+[6.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation) by extension 'python'
+[6.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation) by extensions ['python_setup_py']
+[6.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation) by extension 'python_setup_py'
+[8.702s] DEBUG:colcon.colcon_core.package_identification:Package 'src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation' with type 'python' and name 'gnn_propagate'
+[8.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[8.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/__pycache__) by extension 'ignore'
+[8.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/__pycache__) by extension 'ignore_ament_install'
+[8.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/__pycache__) by extensions ['colcon_pkg']
+[8.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/__pycache__) by extension 'colcon_pkg'
+[8.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/__pycache__) by extensions ['colcon_meta']
+[8.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/__pycache__) by extension 'colcon_meta'
+[8.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/__pycache__) by extensions ['ros']
+[8.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/__pycache__) by extension 'ros'
+[8.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/__pycache__) by extensions ['cmake', 'python']
+[8.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/__pycache__) by extension 'cmake'
+[8.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/__pycache__) by extension 'python'
+[8.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/__pycache__) by extensions ['python_setup_py']
+[8.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/deep-person-reid/torchreid/utils/__pycache__) by extension 'python_setup_py'
+[8.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracking_messages) by extensions ['ignore', 'ignore_ament_install']
+[8.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracking_messages) by extension 'ignore'
+[8.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracking_messages) by extension 'ignore_ament_install'
+[8.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracking_messages) by extensions ['colcon_pkg']
+[8.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracking_messages) by extension 'colcon_pkg'
+[8.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracking_messages) by extensions ['colcon_meta']
+[8.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracking_messages) by extension 'colcon_meta'
+[8.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracking_messages) by extensions ['ros']
+[8.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracking_messages) by extension 'ros'
+[8.708s] DEBUG:colcon.colcon_core.package_identification:Package 'src/object_tracking_messages' with type 'ros.ament_cmake' and name 'object_tracking_messages'
+[8.708s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros) by extensions ['ignore', 'ignore_ament_install']
+[8.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros) by extension 'ignore'
+[8.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros) by extension 'ignore_ament_install'
+[8.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros) by extensions ['colcon_pkg']
+[8.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros) by extension 'colcon_pkg'
+[8.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros) by extensions ['colcon_meta']
+[8.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros) by extension 'colcon_meta'
+[8.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros) by extensions ['ros']
+[8.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros) by extension 'ros'
+[8.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros) by extensions ['cmake', 'python']
+[8.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros) by extension 'cmake'
+[8.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros) by extension 'python'
+[8.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros) by extensions ['python_setup_py']
+[8.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros) by extension 'python_setup_py'
+[8.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs) by extensions ['ignore', 'ignore_ament_install']
+[8.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs) by extension 'ignore'
+[8.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs) by extension 'ignore_ament_install'
+[8.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs) by extensions ['colcon_pkg']
+[8.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs) by extension 'colcon_pkg'
+[8.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs) by extensions ['colcon_meta']
+[8.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs) by extension 'colcon_meta'
+[8.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs) by extensions ['ros']
+[8.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs) by extension 'ros'
+[8.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs) by extensions ['cmake', 'python']
+[8.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs) by extension 'cmake'
+[8.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs) by extension 'python'
+[8.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs) by extensions ['python_setup_py']
+[8.710s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs) by extension 'python_setup_py'
+[8.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs/images) by extensions ['ignore', 'ignore_ament_install']
+[8.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs/images) by extension 'ignore'
+[8.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs/images) by extension 'ignore_ament_install'
+[8.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs/images) by extensions ['colcon_pkg']
+[8.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs/images) by extension 'colcon_pkg'
+[8.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs/images) by extensions ['colcon_meta']
+[8.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs/images) by extension 'colcon_meta'
+[8.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs/images) by extensions ['ros']
+[8.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs/images) by extension 'ros'
+[8.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs/images) by extensions ['cmake', 'python']
+[8.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs/images) by extension 'cmake'
+[8.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs/images) by extension 'python'
+[8.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs/images) by extensions ['python_setup_py']
+[8.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/docs/images) by extension 'python_setup_py'
+[8.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/ouster-ros) by extensions ['ignore', 'ignore_ament_install']
+[8.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/ouster-ros) by extension 'ignore'
+[8.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/ouster-ros) by extension 'ignore_ament_install'
+[8.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/ouster-ros) by extensions ['colcon_pkg']
+[8.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/ouster-ros) by extension 'colcon_pkg'
+[8.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/ouster-ros) by extensions ['colcon_meta']
+[8.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/ouster-ros) by extension 'colcon_meta'
+[8.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/ouster-ros) by extensions ['ros']
+[8.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/ouster-ros) by extension 'ros'
+[8.714s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ouster-ros/ouster-ros' with type 'ros.ament_cmake' and name 'ouster_ros'
+[8.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/ouster-sensor-msgs) by extensions ['ignore', 'ignore_ament_install']
+[8.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/ouster-sensor-msgs) by extension 'ignore'
+[8.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/ouster-sensor-msgs) by extension 'ignore_ament_install'
+[8.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/ouster-sensor-msgs) by extensions ['colcon_pkg']
+[8.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/ouster-sensor-msgs) by extension 'colcon_pkg'
+[8.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/ouster-sensor-msgs) by extensions ['colcon_meta']
+[8.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/ouster-sensor-msgs) by extension 'colcon_meta'
+[8.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/ouster-sensor-msgs) by extensions ['ros']
+[8.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/ouster-ros/ouster-sensor-msgs) by extension 'ros'
+[8.716s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ouster-ros/ouster-sensor-msgs' with type 'ros.ament_cmake' and name 'ouster_sensor_msgs'
+[8.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/position_estimation) by extensions ['ignore', 'ignore_ament_install']
+[8.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/position_estimation) by extension 'ignore'
+[8.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/position_estimation) by extension 'ignore_ament_install'
+[8.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/position_estimation) by extensions ['colcon_pkg']
+[8.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/position_estimation) by extension 'colcon_pkg'
+[8.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/position_estimation) by extensions ['colcon_meta']
+[8.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/position_estimation) by extension 'colcon_meta'
+[8.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/position_estimation) by extensions ['ros']
+[8.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/position_estimation) by extension 'ros'
+[8.717s] DEBUG:colcon.colcon_core.package_identification:Package 'src/position_estimation' with type 'ros.ament_python' and name 'position_estimation'
+[8.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_presentation) by extensions ['ignore', 'ignore_ament_install']
+[8.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_presentation) by extension 'ignore'
+[8.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_presentation) by extension 'ignore_ament_install'
+[8.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_presentation) by extensions ['colcon_pkg']
+[8.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_presentation) by extension 'colcon_pkg'
+[8.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_presentation) by extensions ['colcon_meta']
+[8.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_presentation) by extension 'colcon_meta'
+[8.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_presentation) by extensions ['ros']
+[8.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_presentation) by extension 'ros'
+[8.719s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sensor_presentation' with type 'ros.ament_python' and name 'sensor_presentation'
+[8.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_tracking) by extensions ['ignore', 'ignore_ament_install']
+[8.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_tracking) by extension 'ignore'
+[8.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_tracking) by extension 'ignore_ament_install'
+[8.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_tracking) by extensions ['colcon_pkg']
+[8.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_tracking) by extension 'colcon_pkg'
+[8.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_tracking) by extensions ['colcon_meta']
+[8.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_tracking) by extension 'colcon_meta'
+[8.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_tracking) by extensions ['ros']
+[8.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_tracking) by extension 'ros'
+[8.720s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yolo_tracking' with type 'ros.ament_python' and name 'yolo_tracking'
+[8.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['ignore', 'ignore_ament_install']
+[8.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'ignore'
+[8.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'ignore_ament_install'
+[8.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['colcon_pkg']
+[8.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'colcon_pkg'
+[8.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['colcon_meta']
+[8.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'colcon_meta'
+[8.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['ros']
+[8.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'ros'
+[8.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['cmake', 'python']
+[8.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'cmake'
+[8.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'python'
+[8.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['python_setup_py']
+[8.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'python_setup_py'
+[8.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['ignore', 'ignore_ament_install']
+[8.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'ignore'
+[8.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'ignore_ament_install'
+[8.721s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['colcon_pkg']
+[8.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'colcon_pkg'
+[8.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['colcon_meta']
+[8.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'colcon_meta'
+[8.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['ros']
+[8.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'ros'
+[8.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['cmake', 'python']
+[8.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'cmake'
+[8.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'python'
+[8.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['python_setup_py']
+[8.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'python_setup_py'
+[8.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['ignore', 'ignore_ament_install']
+[8.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'ignore'
+[8.722s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'ignore_ament_install'
+[8.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['colcon_pkg']
+[8.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'colcon_pkg'
+[8.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['colcon_meta']
+[8.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'colcon_meta'
+[8.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['ros']
+[8.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'ros'
+[8.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['cmake', 'python']
+[8.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'cmake'
+[8.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'python'
+[8.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['python_setup_py']
+[8.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'python_setup_py'
+[8.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed-ros2-interfaces) by extensions ['ignore', 'ignore_ament_install']
+[8.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed-ros2-interfaces) by extension 'ignore'
+[8.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed-ros2-interfaces) by extension 'ignore_ament_install'
+[8.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed-ros2-interfaces) by extensions ['colcon_pkg']
+[8.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed-ros2-interfaces) by extension 'colcon_pkg'
+[8.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed-ros2-interfaces) by extensions ['colcon_meta']
+[8.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed-ros2-interfaces) by extension 'colcon_meta'
+[8.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed-ros2-interfaces) by extensions ['ros']
+[8.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed-ros2-interfaces) by extension 'ros'
+[8.725s] DEBUG:colcon.colcon_core.package_identification:Package 'src/zed-ros2-wrapper/zed-ros2-interfaces' with type 'ros.ament_cmake' and name 'zed_interfaces'
+[8.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extensions ['ignore', 'ignore_ament_install']
+[8.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'ignore'
+[8.725s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'ignore_ament_install'
+[8.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extensions ['colcon_pkg']
+[8.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'colcon_pkg'
+[8.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extensions ['colcon_meta']
+[8.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'colcon_meta'
+[8.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extensions ['ros']
+[8.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'ros'
+[8.728s] DEBUG:colcon.colcon_core.package_identification:Package 'src/zed-ros2-wrapper/zed_components' with type 'ros.ament_cmake' and name 'zed_components'
+[8.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extensions ['ignore', 'ignore_ament_install']
+[8.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'ignore'
+[8.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'ignore_ament_install'
+[8.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extensions ['colcon_pkg']
+[8.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'colcon_pkg'
+[8.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extensions ['colcon_meta']
+[8.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'colcon_meta'
+[8.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extensions ['ros']
+[8.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'ros'
+[8.729s] DEBUG:colcon.colcon_core.package_identification:Package 'src/zed-ros2-wrapper/zed_ros2' with type 'ros.ament_cmake' and name 'zed_ros2'
+[8.729s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extensions ['ignore', 'ignore_ament_install']
+[8.730s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'ignore'
+[8.730s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'ignore_ament_install'
+[8.730s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extensions ['colcon_pkg']
+[8.730s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'colcon_pkg'
+[8.730s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extensions ['colcon_meta']
+[8.730s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'colcon_meta'
+[8.730s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extensions ['ros']
+[8.730s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'ros'
+[8.731s] DEBUG:colcon.colcon_core.package_identification:Package 'src/zed-ros2-wrapper/zed_wrapper' with type 'ros.ament_cmake' and name 'zed_wrapper'
+[8.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[8.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[8.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[8.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[8.731s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[8.764s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'Cython-based reid evaluation code' in 'src/deep-person-reid/torchreid/metrics/rank_cylib'
+[8.764s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'build_adjacency_matrix' in 'src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix'
+[8.764s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'gnn_propagate' in 'src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation'
+[8.764s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'object_tracking_messages' in 'src/object_tracking_messages'
+[8.764s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ouster_sensor_msgs' in 'src/ouster-ros/ouster-sensor-msgs'
+[8.764s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'position_estimation' in 'src/position_estimation'
+[8.764s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'yolo_tracking' in 'src/yolo_tracking'
+[8.764s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'zed_interfaces' in 'src/zed-ros2-wrapper/zed-ros2-interfaces'
+[8.764s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ouster_ros' in 'src/ouster-ros/ouster-ros'
+[8.764s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'zed_components' in 'src/zed-ros2-wrapper/zed_components'
+[8.764s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'zed_wrapper' in 'src/zed-ros2-wrapper/zed_wrapper'
+[8.764s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'zed_ros2' in 'src/zed-ros2-wrapper/zed_ros2'
+[8.765s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[8.765s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[8.769s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 13 installed packages in /home/student/Desktop/workspace/install
+[8.770s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 23 installed packages in /usr/local/labor_robotik/ros2
+[8.772s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 572 installed packages in /opt/ros/humble
+[8.775s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[8.834s] Level 5:colcon.colcon_core.verb:set package 'sensor_presentation' build argument 'cmake_args' from command line to 'None'
+[8.834s] Level 5:colcon.colcon_core.verb:set package 'sensor_presentation' build argument 'cmake_target' from command line to 'None'
+[8.834s] Level 5:colcon.colcon_core.verb:set package 'sensor_presentation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[8.834s] Level 5:colcon.colcon_core.verb:set package 'sensor_presentation' build argument 'cmake_clean_cache' from command line to 'False'
+[8.834s] Level 5:colcon.colcon_core.verb:set package 'sensor_presentation' build argument 'cmake_clean_first' from command line to 'False'
+[8.834s] Level 5:colcon.colcon_core.verb:set package 'sensor_presentation' build argument 'cmake_force_configure' from command line to 'False'
+[8.835s] Level 5:colcon.colcon_core.verb:set package 'sensor_presentation' build argument 'ament_cmake_args' from command line to 'None'
+[8.835s] Level 5:colcon.colcon_core.verb:set package 'sensor_presentation' build argument 'catkin_cmake_args' from command line to 'None'
+[8.835s] Level 5:colcon.colcon_core.verb:set package 'sensor_presentation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[8.835s] DEBUG:colcon.colcon_core.verb:Building package 'sensor_presentation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/Desktop/workspace/build/sensor_presentation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/Desktop/workspace/install/sensor_presentation', 'merge_install': False, 'path': '/home/student/Desktop/workspace/src/sensor_presentation', 'symlink_install': False, 'test_result_base': None}
+[8.835s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[8.836s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[8.836s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/student/Desktop/workspace/src/sensor_presentation' with build type 'ament_python'
+[8.836s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensor_presentation', 'ament_prefix_path')
+[8.838s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[8.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/workspace/install/sensor_presentation/share/sensor_presentation/hook/ament_prefix_path.ps1'
+[8.839s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/Desktop/workspace/install/sensor_presentation/share/sensor_presentation/hook/ament_prefix_path.dsv'
+[8.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/workspace/install/sensor_presentation/share/sensor_presentation/hook/ament_prefix_path.sh'
+[8.840s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.840s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.147s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/student/Desktop/workspace/src/sensor_presentation'
+[9.148s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.148s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.636s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/Desktop/workspace/src/sensor_presentation': PYTHONPATH=/home/student/Desktop/workspace/build/sensor_presentation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/sensor_presentation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/sensor_presentation build --build-base /home/student/Desktop/workspace/build/sensor_presentation/build install --record /home/student/Desktop/workspace/build/sensor_presentation/install.log --single-version-externally-managed install_data
+[9.979s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/Desktop/workspace/src/sensor_presentation' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/sensor_presentation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/sensor_presentation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/sensor_presentation build --build-base /home/student/Desktop/workspace/build/sensor_presentation/build install --record /home/student/Desktop/workspace/build/sensor_presentation/install.log --single-version-externally-managed install_data
+[9.981s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/workspace/install/sensor_presentation' for CMake module files
+[9.981s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/workspace/install/sensor_presentation' for CMake config files
+[9.982s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/workspace/install/sensor_presentation/lib'
+[9.982s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/workspace/install/sensor_presentation/bin'
+[9.982s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/workspace/install/sensor_presentation/lib/pkgconfig/sensor_presentation.pc'
+[9.982s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/workspace/install/sensor_presentation/lib/python3.10/site-packages'
+[9.982s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensor_presentation', 'pythonpath')
+[9.983s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/workspace/install/sensor_presentation/share/sensor_presentation/hook/pythonpath.ps1'
+[9.983s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/Desktop/workspace/install/sensor_presentation/share/sensor_presentation/hook/pythonpath.dsv'
+[9.983s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/workspace/install/sensor_presentation/share/sensor_presentation/hook/pythonpath.sh'
+[9.984s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/workspace/install/sensor_presentation/bin'
+[9.984s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sensor_presentation)
+[9.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/workspace/install/sensor_presentation/share/sensor_presentation/package.ps1'
+[9.985s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/Desktop/workspace/install/sensor_presentation/share/sensor_presentation/package.dsv'
+[9.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/workspace/install/sensor_presentation/share/sensor_presentation/package.sh'
+[9.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/workspace/install/sensor_presentation/share/sensor_presentation/package.bash'
+[9.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/workspace/install/sensor_presentation/share/sensor_presentation/package.zsh'
+[9.987s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/Desktop/workspace/install/sensor_presentation/share/colcon-core/packages/sensor_presentation)
+[9.987s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.988s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.988s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.988s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.993s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.993s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.993s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.998s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.999s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/Desktop/workspace/install/local_setup.ps1'
+[10.000s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/student/Desktop/workspace/install/_local_setup_util_ps1.py'
+[10.001s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/Desktop/workspace/install/setup.ps1'
+[10.004s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/Desktop/workspace/install/local_setup.sh'
+[10.004s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/student/Desktop/workspace/install/_local_setup_util_sh.py'
+[10.005s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/Desktop/workspace/install/setup.sh'
+[10.008s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/Desktop/workspace/install/local_setup.bash'
+[10.008s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/Desktop/workspace/install/setup.bash'
+[10.010s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/Desktop/workspace/install/local_setup.zsh'
+[10.011s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/Desktop/workspace/install/setup.zsh'

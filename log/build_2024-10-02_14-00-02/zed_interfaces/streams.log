@@ -1,0 +1,24 @@
+[0.032s] Invoking command in '/home/student/Desktop/workspace/build/zed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/position_estimation:/opt/ros/humble /home/student/.local/bin/cmake --build /home/student/Desktop/workspace/build/zed_interfaces -- -j16 -l16
+[0.334s] [  0%] Built target ament_cmake_python_symlink_zed_interfaces
+[0.335s] [  0%] Built target zed_interfaces__cpp
+[0.335s] [ 12%] Built target zed_interfaces__rosidl_generator_c
+[0.336s] [ 24%] Built target zed_interfaces__rosidl_typesupport_introspection_c
+[0.336s] [ 42%] Built target zed_interfaces__rosidl_typesupport_cpp
+[0.337s] [ 48%] Built target zed_interfaces__rosidl_typesupport_c
+[0.337s] [ 60%] Built target zed_interfaces__rosidl_typesupport_introspection_cpp
+[0.337s] [ 72%] Built target zed_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.337s] [ 84%] Built target zed_interfaces__rosidl_typesupport_fastrtps_c
+[0.337s] [ 84%] Built target zed_interfaces
+[0.337s] [ 85%] Built target zed_interfaces__py
+[0.337s] [ 96%] Built target zed_interfaces__rosidl_generator_py
+[0.338s] [ 99%] Built target zed_interfaces__rosidl_typesupport_c__pyext
+[0.338s] [ 99%] Built target zed_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.338s] [100%] Built target zed_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.388s] running egg_info
+[0.390s] writing zed_interfaces.egg-info/PKG-INFO
+[0.390s] writing dependency_links to zed_interfaces.egg-info/dependency_links.txt
+[0.390s] writing top-level names to zed_interfaces.egg-info/top_level.txt
+[0.394s] reading manifest file 'zed_interfaces.egg-info/SOURCES.txt'
+[0.395s] writing manifest file 'zed_interfaces.egg-info/SOURCES.txt'
+[0.414s] [100%] Built target ament_cmake_python_build_zed_interfaces_egg
+[0.611s] Invoked command in '/home/student/Desktop/workspace/build/zed_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/position_estimation:/opt/ros/humble /home/student/.local/bin/cmake --build /home/student/Desktop/workspace/build/zed_interfaces -- -j16 -l16

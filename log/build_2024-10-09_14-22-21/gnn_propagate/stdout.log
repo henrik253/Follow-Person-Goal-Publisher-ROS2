@@ -1,0 +1,11 @@
+running develop
+running egg_info
+creating gnn_propagate.egg-info
+writing gnn_propagate.egg-info/PKG-INFO
+writing dependency_links to gnn_propagate.egg-info/dependency_links.txt
+writing top-level names to gnn_propagate.egg-info/top_level.txt
+writing manifest file 'gnn_propagate.egg-info/SOURCES.txt'
+reading manifest file 'gnn_propagate.egg-info/SOURCES.txt'
+writing manifest file 'gnn_propagate.egg-info/SOURCES.txt'
+running build_ext
+ninja: error: '/home/student/Desktop/workspace/build/gnn_propagate/gnn_propagate.cpp', needed by '/home/student/Desktop/workspace/build/gnn_propagate/build/temp.linux-x86_64-3.10/gnn_propagate.o', missing and no known rule to make it

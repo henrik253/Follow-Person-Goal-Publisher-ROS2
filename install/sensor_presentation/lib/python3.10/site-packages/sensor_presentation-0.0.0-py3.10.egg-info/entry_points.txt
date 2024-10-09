@@ -1,0 +1,3 @@
+[console_scripts]
+sensor_presentation_node = sensor_presentation.sensor_presentation_node:main
+

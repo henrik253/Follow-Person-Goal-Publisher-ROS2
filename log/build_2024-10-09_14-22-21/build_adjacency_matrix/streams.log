@@ -1,0 +1,80 @@
+[7.531s] Invoking command in '/home/student/Desktop/workspace/build/build_adjacency_matrix': PYTHONPATH=/home/student/Desktop/workspace/build/build_adjacency_matrix/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/build_adjacency_matrix/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/build_adjacency_matrix/build --no-deps
+[11.619s] running develop
+[11.620s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[11.620s]   warnings.warn(
+[11.995s] running egg_info
+[11.995s] creating build_adjacency_matrix.egg-info
+[11.996s] writing build_adjacency_matrix.egg-info/PKG-INFO
+[11.996s] writing dependency_links to build_adjacency_matrix.egg-info/dependency_links.txt
+[11.996s] writing top-level names to build_adjacency_matrix.egg-info/top_level.txt
+[11.996s] writing manifest file 'build_adjacency_matrix.egg-info/SOURCES.txt'
+[12.003s] reading manifest file 'build_adjacency_matrix.egg-info/SOURCES.txt'
+[12.003s] writing manifest file 'build_adjacency_matrix.egg-info/SOURCES.txt'
+[12.004s] running build_ext
+[12.030s] /home/student/.local/lib/python3.10/site-packages/torch/utils/cpp_extension.py:414: UserWarning: The detected CUDA version (12.3) has a minor version mismatch with the version that was used to compile PyTorch (12.1). Most likely this shouldn't be a problem.
+[12.030s]   warnings.warn(CUDA_MISMATCH_WARN.format(cuda_str_version, torch.version.cuda))
+[12.030s] /home/student/.local/lib/python3.10/site-packages/torch/utils/cpp_extension.py:424: UserWarning: There are no x86_64-linux-gnu-g++ version bounds defined for CUDA version 12.3
+[12.030s]   warnings.warn(f'There are no {compiler_name} version bounds defined for CUDA version {cuda_str_version}')
+[12.625s] /usr/lib/python3/dist-packages/pythran/tables.py:4520: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.
+[12.625s]   if not hasattr(numpy, method):
+[12.654s] /usr/lib/python3/dist-packages/pythran/tables.py:4553: FutureWarning: In the future `np.bytes` will be defined as the corresponding NumPy scalar.
+[12.654s]   obj = getattr(themodule, elem)
+[13.047s] /home/student/.local/lib/python3.10/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+[13.047s] If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+[13.047s]   warnings.warn(
+[13.144s] Emitting ninja build file /home/student/Desktop/workspace/build/build_adjacency_matrix/build/temp.linux-x86_64-3.10/build.ninja...
+[13.145s] Compiling objects...
+[13.145s] Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[13.158s] ninja: error: '/home/student/Desktop/workspace/build/build_adjacency_matrix/build_adjacency_matrix.cpp', needed by '/home/student/Desktop/workspace/build/build_adjacency_matrix/build/temp.linux-x86_64-3.10/build_adjacency_matrix.o', missing and no known rule to make it
+[13.159s] Traceback (most recent call last):
+[13.160s]   File "/home/student/.local/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 2105, in _run_ninja_build
+[13.160s]     subprocess.run(
+[13.160s]   File "/usr/lib/python3.10/subprocess.py", line 526, in run
+[13.160s]     raise CalledProcessError(retcode, process.args,
+[13.161s] subprocess.CalledProcessError: Command '['ninja', '-v']' returned non-zero exit status 1.
+[13.161s] 
+[13.161s] The above exception was the direct cause of the following exception:
+[13.161s] 
+[13.162s] Traceback (most recent call last):
+[13.162s]   File "/home/student/Desktop/workspace/build/build_adjacency_matrix/setup.py", line 25, in <module>
+[13.162s]     setup(
+[13.162s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 153, in setup
+[13.162s]     return distutils.core.setup(**attrs)
+[13.163s]   File "/usr/lib/python3.10/distutils/core.py", line 148, in setup
+[13.163s]     dist.run_commands()
+[13.163s]   File "/usr/lib/python3.10/distutils/dist.py", line 966, in run_commands
+[13.164s]     self.run_command(cmd)
+[13.164s]   File "/usr/lib/python3.10/distutils/dist.py", line 985, in run_command
+[13.164s]     cmd_obj.run()
+[13.164s]   File "/usr/lib/python3/dist-packages/setuptools/command/develop.py", line 34, in run
+[13.165s]     self.install_for_development()
+[13.165s]   File "/usr/lib/python3/dist-packages/setuptools/command/develop.py", line 114, in install_for_development
+[13.165s]     self.run_command('build_ext')
+[13.165s]   File "/usr/lib/python3.10/distutils/cmd.py", line 313, in run_command
+[13.166s]     self.distribution.run_command(command)
+[13.166s]   File "/usr/lib/python3.10/distutils/dist.py", line 985, in run_command
+[13.166s]     cmd_obj.run()
+[13.166s]   File "/usr/lib/python3/dist-packages/setuptools/command/build_ext.py", line 79, in run
+[13.166s]     _build_ext.run(self)
+[13.166s]   File "/usr/lib/python3.10/distutils/command/build_ext.py", line 340, in run
+[13.168s]     self.build_extensions()
+[13.168s]   File "/home/student/.local/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 866, in build_extensions
+[13.168s]     build_ext.build_extensions(self)
+[13.168s]   File "/usr/lib/python3.10/distutils/command/build_ext.py", line 449, in build_extensions
+[13.168s]     self._build_extensions_serial()
+[13.168s]   File "/usr/lib/python3.10/distutils/command/build_ext.py", line 474, in _build_extensions_serial
+[13.168s]     self.build_extension(ext)
+[13.169s]   File "/usr/lib/python3/dist-packages/setuptools/command/build_ext.py", line 202, in build_extension
+[13.169s]     _build_ext.build_extension(self, ext)
+[13.169s]   File "/home/student/.local/lib/python3.10/site-packages/Cython/Distutils/build_ext.py", line 135, in build_extension
+[13.174s]     super(build_ext, self).build_extension(ext)
+[13.174s]   File "/usr/lib/python3.10/distutils/command/build_ext.py", line 529, in build_extension
+[13.174s]     objects = self.compiler.compile(sources,
+[13.174s]   File "/home/student/.local/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 679, in unix_wrap_ninja_compile
+[13.174s]     _write_ninja_file_and_compile_objects(
+[13.174s]   File "/home/student/.local/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 1785, in _write_ninja_file_and_compile_objects
+[13.174s]     _run_ninja_build(
+[13.174s]   File "/home/student/.local/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 2121, in _run_ninja_build
+[13.175s]     raise RuntimeError(message) from e
+[13.175s] RuntimeError: Error compiling objects for extension
+[14.205s] Invoked command in '/home/student/Desktop/workspace/build/build_adjacency_matrix' returned '1': PYTHONPATH=/home/student/Desktop/workspace/build/build_adjacency_matrix/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/build_adjacency_matrix/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/build_adjacency_matrix/build --no-deps

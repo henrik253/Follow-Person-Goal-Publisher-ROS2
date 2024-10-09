@@ -1,0 +1,3 @@
+source;share/build_adjacency_matrix/hook/pythonpath.ps1
+source;share/build_adjacency_matrix/hook/pythonpath.dsv
+source;share/build_adjacency_matrix/hook/pythonpath.sh

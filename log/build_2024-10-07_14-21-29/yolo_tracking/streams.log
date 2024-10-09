@@ -1,0 +1,19 @@
+[1.411s] Invoking command in '/home/student/Desktop/workspace/build/yolo_tracking': PYTHONPATH=/home/student/Desktop/workspace/build/yolo_tracking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/yolo_tracking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/yolo_tracking/build --no-deps symlink_data
+[1.744s] running develop
+[1.744s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.744s]   warnings.warn(
+[2.020s] running egg_info
+[2.020s] writing yolo_tracking.egg-info/PKG-INFO
+[2.020s] writing dependency_links to yolo_tracking.egg-info/dependency_links.txt
+[2.020s] writing entry points to yolo_tracking.egg-info/entry_points.txt
+[2.021s] writing requirements to yolo_tracking.egg-info/requires.txt
+[2.021s] writing top-level names to yolo_tracking.egg-info/top_level.txt
+[2.023s] reading manifest file 'yolo_tracking.egg-info/SOURCES.txt'
+[2.023s] writing manifest file 'yolo_tracking.egg-info/SOURCES.txt'
+[2.063s] running build_ext
+[2.063s] Creating /home/student/Desktop/workspace/install/yolo_tracking/lib/python3.10/site-packages/yolo-tracking.egg-link (link to .)
+[2.064s] Installing object_detection_node script to /home/student/Desktop/workspace/install/yolo_tracking/lib/yolo_tracking
+[2.064s] 
+[2.064s] Installed /home/student/Desktop/workspace/build/yolo_tracking
+[2.064s] running symlink_data
+[2.113s] Invoked command in '/home/student/Desktop/workspace/build/yolo_tracking' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/yolo_tracking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/yolo_tracking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/yolo_tracking/build --no-deps symlink_data

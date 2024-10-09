@@ -1,0 +1,179 @@
+[9.469s] Invoking command in '/home/student/Desktop/workspace/build/gnn_propagate': PYTHONPATH=/home/student/Desktop/workspace/build/gnn_propagate/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/gnn_propagate/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/student/Desktop/workspace/build/gnn_propagate/build
+[12.449s] running develop
+[12.449s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[12.449s]   warnings.warn(
+[13.155s] Invoked command in '/home/student/Desktop/workspace/build/gnn_propagate' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/gnn_propagate/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/gnn_propagate/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/student/Desktop/workspace/build/gnn_propagate/build
+[13.157s] Invoking command in '/home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation': PYTHONPATH=/home/student/Desktop/workspace/build/gnn_propagate/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/gnn_propagate/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../../../../build/gnn_propagate build --build-base /home/student/Desktop/workspace/build/gnn_propagate/build install --record /home/student/Desktop/workspace/build/gnn_propagate/install.log --single-version-externally-managed
+[15.813s] running egg_info
+[15.815s] writing ../../../../../../../build/gnn_propagate/gnn_propagate.egg-info/PKG-INFO
+[15.815s] writing dependency_links to ../../../../../../../build/gnn_propagate/gnn_propagate.egg-info/dependency_links.txt
+[15.815s] writing top-level names to ../../../../../../../build/gnn_propagate/gnn_propagate.egg-info/top_level.txt
+[15.819s] reading manifest file '../../../../../../../build/gnn_propagate/gnn_propagate.egg-info/SOURCES.txt'
+[15.820s] writing manifest file '../../../../../../../build/gnn_propagate/gnn_propagate.egg-info/SOURCES.txt'
+[15.821s] running build
+[15.821s] running build_ext
+[15.828s] /home/student/.local/lib/python3.10/site-packages/torch/utils/cpp_extension.py:414: UserWarning: The detected CUDA version (12.3) has a minor version mismatch with the version that was used to compile PyTorch (12.1). Most likely this shouldn't be a problem.
+[15.828s]   warnings.warn(CUDA_MISMATCH_WARN.format(cuda_str_version, torch.version.cuda))
+[15.828s] /home/student/.local/lib/python3.10/site-packages/torch/utils/cpp_extension.py:424: UserWarning: There are no x86_64-linux-gnu-g++ version bounds defined for CUDA version 12.3
+[15.828s]   warnings.warn(f'There are no {compiler_name} version bounds defined for CUDA version {cuda_str_version}')
+[16.093s] /usr/lib/python3/dist-packages/pythran/tables.py:4520: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.
+[16.094s]   if not hasattr(numpy, method):
+[16.113s] /usr/lib/python3/dist-packages/pythran/tables.py:4553: FutureWarning: In the future `np.bytes` will be defined as the corresponding NumPy scalar.
+[16.114s]   obj = getattr(themodule, elem)
+[16.309s] /home/student/.local/lib/python3.10/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+[16.309s] If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+[16.309s]   warnings.warn(
+[16.346s] Emitting ninja build file /home/student/Desktop/workspace/build/gnn_propagate/build/temp.linux-x86_64-3.10/build.ninja...
+[16.347s] Compiling objects...
+[16.347s] Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[45.863s] [1/2] c++ -MMD -MF /home/student/Desktop/workspace/build/gnn_propagate/build/temp.linux-x86_64-3.10/gnn_propagate.o.d -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/home/student/.local/lib/python3.10/site-packages/torch/include -I/home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/student/.local/lib/python3.10/site-packages/torch/include/TH -I/home/student/.local/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/student/Desktop/workspace/install/gnn_propagate/include -I/usr/include/python3.10 -c -c /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation/gnn_propagate.cpp -o /home/student/Desktop/workspace/build/gnn_propagate/build/temp.linux-x86_64-3.10/gnn_propagate.o -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=gnn_propagate -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+[45.863s] In file included from /home/student/.local/lib/python3.10/site-packages/torch/include/c10/core/Device.h:5,
+[45.863s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:11,
+[45.863s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/core/Tensor.h:3,
+[45.863s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/Tensor.h:3,
+[45.863s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+[45.863s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+[45.863s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+[45.864s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+[45.864s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+[45.864s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+[45.864s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/extension.h:5,
+[45.864s]                  from /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation/gnn_propagate.cpp:1:
+[45.864s] /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation/gnn_propagate.cpp: In function ‘at::Tensor gnn_propagate(at::Tensor, at::Tensor, at::Tensor)’:
+[45.864s] /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation/gnn_propagate.cpp:8:40: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+[45.864s]     8 | #define CHECK_CUDA(x) AT_ASSERTM(x.type().is_cuda(), #x " must be a CUDA tensor")
+[45.864s]       |                                        ^
+[45.864s] /home/student/.local/lib/python3.10/site-packages/torch/include/c10/util/Exception.h:337:39: note: in definition of macro ‘C10_EXPAND_MSVC_WORKAROUND’
+[45.864s]   337 | #define C10_EXPAND_MSVC_WORKAROUND(x) x
+[45.865s]       |                                       ^
+[45.865s] /home/student/.local/lib/python3.10/site-packages/torch/include/c10/util/Exception.h:357:34: note: in expansion of macro ‘C10_UNLIKELY’
+[45.865s]   357 | #define C10_UNLIKELY_OR_CONST(e) C10_UNLIKELY(e)
+[45.865s]       |                                  ^~~~~~~~~~~~
+[45.865s] /home/student/.local/lib/python3.10/site-packages/torch/include/c10/util/Exception.h:409:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+[45.865s]   409 |   if (C10_UNLIKELY_OR_CONST(!(cond))) {                                          \
+[45.865s]       |       ^~~~~~~~~~~~~~~~~~~~~
+[45.865s] /home/student/.local/lib/python3.10/site-packages/torch/include/c10/util/Exception.h:701:32: note: in expansion of macro ‘TORCH_INTERNAL_ASSERT’
+[45.865s]   701 |     C10_EXPAND_MSVC_WORKAROUND(TORCH_INTERNAL_ASSERT(cond, __VA_ARGS__)); \
+[45.865s]       |                                ^~~~~~~~~~~~~~~~~~~~~
+[45.865s] /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation/gnn_propagate.cpp:8:23: note: in expansion of macro ‘AT_ASSERTM’
+[45.866s]     8 | #define CHECK_CUDA(x) AT_ASSERTM(x.type().is_cuda(), #x " must be a CUDA tensor")
+[45.866s]       |                       ^~~~~~~~~~
+[45.866s] /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation/gnn_propagate.cpp:10:24: note: in expansion of macro ‘CHECK_CUDA’
+[45.866s]    10 | #define CHECK_INPUT(x) CHECK_CUDA(x); CHECK_CONTIGUOUS(x)
+[45.866s]       |                        ^~~~~~~~~~
+[45.866s] /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation/gnn_propagate.cpp:13:5: note: in expansion of macro ‘CHECK_INPUT’
+[45.866s]    13 |     CHECK_INPUT(A);
+[45.866s]       |     ^~~~~~~~~~~
+[45.866s] In file included from /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/core/Tensor.h:3,
+[45.866s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/Tensor.h:3,
+[45.866s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+[45.867s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+[45.867s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+[45.867s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+[45.867s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+[45.867s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+[45.867s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/extension.h:5,
+[45.867s]                  from /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation/gnn_propagate.cpp:1:
+[45.867s] /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:225:30: note: declared here
+[45.867s]   225 |   DeprecatedTypeProperties & type() const {
+[45.867s]       |                              ^~~~
+[45.867s] In file included from /home/student/.local/lib/python3.10/site-packages/torch/include/c10/core/Device.h:5,
+[45.868s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:11,
+[45.868s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/core/Tensor.h:3,
+[45.868s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/Tensor.h:3,
+[45.868s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+[45.868s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+[45.868s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+[45.868s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+[45.868s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+[45.868s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+[45.868s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/extension.h:5,
+[45.868s]                  from /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation/gnn_propagate.cpp:1:
+[45.869s] /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation/gnn_propagate.cpp:8:40: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+[45.869s]     8 | #define CHECK_CUDA(x) AT_ASSERTM(x.type().is_cuda(), #x " must be a CUDA tensor")
+[45.869s]       |                                        ^
+[45.869s] /home/student/.local/lib/python3.10/site-packages/torch/include/c10/util/Exception.h:337:39: note: in definition of macro ‘C10_EXPAND_MSVC_WORKAROUND’
+[45.869s]   337 | #define C10_EXPAND_MSVC_WORKAROUND(x) x
+[45.869s]       |                                       ^
+[45.869s] /home/student/.local/lib/python3.10/site-packages/torch/include/c10/util/Exception.h:357:34: note: in expansion of macro ‘C10_UNLIKELY’
+[45.869s]   357 | #define C10_UNLIKELY_OR_CONST(e) C10_UNLIKELY(e)
+[45.869s]       |                                  ^~~~~~~~~~~~
+[45.869s] /home/student/.local/lib/python3.10/site-packages/torch/include/c10/util/Exception.h:409:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+[45.869s]   409 |   if (C10_UNLIKELY_OR_CONST(!(cond))) {                                          \
+[45.870s]       |       ^~~~~~~~~~~~~~~~~~~~~
+[45.870s] /home/student/.local/lib/python3.10/site-packages/torch/include/c10/util/Exception.h:701:32: note: in expansion of macro ‘TORCH_INTERNAL_ASSERT’
+[45.870s]   701 |     C10_EXPAND_MSVC_WORKAROUND(TORCH_INTERNAL_ASSERT(cond, __VA_ARGS__)); \
+[45.870s]       |                                ^~~~~~~~~~~~~~~~~~~~~
+[45.870s] /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation/gnn_propagate.cpp:8:23: note: in expansion of macro ‘AT_ASSERTM’
+[45.870s]     8 | #define CHECK_CUDA(x) AT_ASSERTM(x.type().is_cuda(), #x " must be a CUDA tensor")
+[45.870s]       |                       ^~~~~~~~~~
+[45.870s] /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation/gnn_propagate.cpp:10:24: note: in expansion of macro ‘CHECK_CUDA’
+[45.870s]    10 | #define CHECK_INPUT(x) CHECK_CUDA(x); CHECK_CONTIGUOUS(x)
+[45.870s]       |                        ^~~~~~~~~~
+[45.870s] /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation/gnn_propagate.cpp:14:5: note: in expansion of macro ‘CHECK_INPUT’
+[45.871s]    14 |     CHECK_INPUT(initial_rank);
+[45.871s]       |     ^~~~~~~~~~~
+[45.871s] In file included from /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/core/Tensor.h:3,
+[45.871s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/Tensor.h:3,
+[45.871s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+[45.871s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+[45.871s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+[45.871s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+[45.871s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+[45.871s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+[45.872s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/extension.h:5,
+[45.872s]                  from /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation/gnn_propagate.cpp:1:
+[45.872s] /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:225:30: note: declared here
+[45.872s]   225 |   DeprecatedTypeProperties & type() const {
+[45.872s]       |                              ^~~~
+[45.872s] In file included from /home/student/.local/lib/python3.10/site-packages/torch/include/c10/core/Device.h:5,
+[45.872s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:11,
+[45.872s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/core/Tensor.h:3,
+[45.872s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/Tensor.h:3,
+[45.872s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+[45.873s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+[45.873s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+[45.873s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+[45.873s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+[45.873s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+[45.873s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/extension.h:5,
+[45.873s]                  from /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation/gnn_propagate.cpp:1:
+[45.873s] /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation/gnn_propagate.cpp:8:40: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+[45.873s]     8 | #define CHECK_CUDA(x) AT_ASSERTM(x.type().is_cuda(), #x " must be a CUDA tensor")
+[45.873s]       |                                        ^
+[45.874s] /home/student/.local/lib/python3.10/site-packages/torch/include/c10/util/Exception.h:337:39: note: in definition of macro ‘C10_EXPAND_MSVC_WORKAROUND’
+[45.874s]   337 | #define C10_EXPAND_MSVC_WORKAROUND(x) x
+[45.874s]       |                                       ^
+[45.874s] /home/student/.local/lib/python3.10/site-packages/torch/include/c10/util/Exception.h:357:34: note: in expansion of macro ‘C10_UNLIKELY’
+[45.874s]   357 | #define C10_UNLIKELY_OR_CONST(e) C10_UNLIKELY(e)
+[45.874s]       |                                  ^~~~~~~~~~~~
+[45.874s] /home/student/.local/lib/python3.10/site-packages/torch/include/c10/util/Exception.h:409:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+[45.874s]   409 |   if (C10_UNLIKELY_OR_CONST(!(cond))) {                                          \
+[45.874s]       |       ^~~~~~~~~~~~~~~~~~~~~
+[45.874s] /home/student/.local/lib/python3.10/site-packages/torch/include/c10/util/Exception.h:701:32: note: in expansion of macro ‘TORCH_INTERNAL_ASSERT’
+[45.874s]   701 |     C10_EXPAND_MSVC_WORKAROUND(TORCH_INTERNAL_ASSERT(cond, __VA_ARGS__)); \
+[45.875s]       |                                ^~~~~~~~~~~~~~~~~~~~~
+[45.875s] /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation/gnn_propagate.cpp:8:23: note: in expansion of macro ‘AT_ASSERTM’
+[45.875s]     8 | #define CHECK_CUDA(x) AT_ASSERTM(x.type().is_cuda(), #x " must be a CUDA tensor")
+[45.875s]       |                       ^~~~~~~~~~
+[45.875s] /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation/gnn_propagate.cpp:10:24: note: in expansion of macro ‘CHECK_CUDA’
+[45.875s]    10 | #define CHECK_INPUT(x) CHECK_CUDA(x); CHECK_CONTIGUOUS(x)
+[45.875s]       |                        ^~~~~~~~~~
+[45.875s] /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation/gnn_propagate.cpp:15:5: note: in expansion of macro ‘CHECK_INPUT’
+[45.875s]    15 |     CHECK_INPUT(S);
+[45.875s]       |     ^~~~~~~~~~~
+[45.875s] In file included from /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/core/Tensor.h:3,
+[45.876s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/Tensor.h:3,
+[45.876s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+[45.876s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+[45.876s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+[45.876s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+[45.876s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+[45.876s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+[45.876s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/extension.h:5,
+[45.876s]                  from /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation/gnn_propagate.cpp:1:
+[45.876s] /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:225:30: note: declared here
+[45.876s]   225 |   DeprecatedTypeProperties & type() const {
+[45.877s]       |                              ^~~~
+[66.095s] [2/2] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /home/student/Desktop/workspace/build/gnn_propagate/build/temp.linux-x86_64-3.10/gnn_propagate_kernel.o.d -I/home/student/.local/lib/python3.10/site-packages/torch/include -I/home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/student/.local/lib/python3.10/site-packages/torch/include/TH -I/home/student/.local/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/student/Desktop/workspace/install/gnn_propagate/include -I/usr/include/python3.10 -c -c /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation/gnn_propagate_kernel.cu -o /home/student/Desktop/workspace/build/gnn_propagate/build/temp.linux-x86_64-3.10/gnn_propagate_kernel.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=gnn_propagate -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_61,code=compute_61 -gencode=arch=compute_61,code=sm_61 -std=c++17
+[67.110s] Invoked command in '/home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/propagation' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/gnn_propagate/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/gnn_propagate/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../../../../build/gnn_propagate build --build-base /home/student/Desktop/workspace/build/gnn_propagate/build install --record /home/student/Desktop/workspace/build/gnn_propagate/install.log --single-version-externally-managed
