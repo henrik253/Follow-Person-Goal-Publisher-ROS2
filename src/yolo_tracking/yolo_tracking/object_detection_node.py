@@ -28,6 +28,12 @@ class ObjectTracker(Node):
             'detected_persons',
             10
         )
+
+        self.image_publisher = self.create_publisher(
+            Image,
+            'tracked_image',
+            10
+        )
         
         # Create CvBridge to convert ROS Image messages to OpenCV images
         self.bridge = CvBridge()
@@ -81,6 +87,10 @@ class ObjectTracker(Node):
         
         detectedPersonsMsg.persons = persons
         self.detected_persons_publisher.publish(detectedPersonsMsg)
+        
+        # Publish image where detection was used on to avoid delay from image and detection time! 
+        tracked_image = self.bridge.cv2_to_imgmsg(cv_image, encoding='bgr8')
+        self.image_publisher.publish(tracked_image)
     
 
 def main(args=None):
