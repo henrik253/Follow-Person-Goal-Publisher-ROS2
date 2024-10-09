@@ -1,0 +1,3 @@
+source;share/Cython-based reid evaluation code/hook/pythonpath.ps1
+source;share/Cython-based reid evaluation code/hook/pythonpath.dsv
+source;share/Cython-based reid evaluation code/hook/pythonpath.sh

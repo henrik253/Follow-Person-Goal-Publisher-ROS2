@@ -19,7 +19,8 @@ setup(
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
-        'console_scripts': [
+         'console_scripts': [
+            'sensor_presentation_node = sensor_presentation.sensor_presentation_node:main',  # Adjust this line
         ],
     },
 )

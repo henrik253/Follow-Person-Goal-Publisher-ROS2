@@ -1,0 +1,81 @@
+[6.993s] Invoking command in '/home/student/Desktop/workspace/build/build_adjacency_matrix': PYTHONPATH=/home/student/Desktop/workspace/build/build_adjacency_matrix/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/build_adjacency_matrix/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/student/Desktop/workspace/build/build_adjacency_matrix/build
+[10.455s] running develop
+[10.456s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[10.456s]   warnings.warn(
+[11.302s] Invoked command in '/home/student/Desktop/workspace/build/build_adjacency_matrix' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/build_adjacency_matrix/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/build_adjacency_matrix/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/student/Desktop/workspace/build/build_adjacency_matrix/build
+[11.303s] Invoking command in '/home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix': PYTHONPATH=/home/student/Desktop/workspace/build/build_adjacency_matrix/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/build_adjacency_matrix/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../../../../build/build_adjacency_matrix build --build-base /home/student/Desktop/workspace/build/build_adjacency_matrix/build install --record /home/student/Desktop/workspace/build/build_adjacency_matrix/install.log --single-version-externally-managed
+[13.650s] running egg_info
+[13.651s] writing ../../../../../../../build/build_adjacency_matrix/build_adjacency_matrix.egg-info/PKG-INFO
+[13.651s] writing dependency_links to ../../../../../../../build/build_adjacency_matrix/build_adjacency_matrix.egg-info/dependency_links.txt
+[13.651s] writing top-level names to ../../../../../../../build/build_adjacency_matrix/build_adjacency_matrix.egg-info/top_level.txt
+[13.656s] reading manifest file '../../../../../../../build/build_adjacency_matrix/build_adjacency_matrix.egg-info/SOURCES.txt'
+[13.657s] writing manifest file '../../../../../../../build/build_adjacency_matrix/build_adjacency_matrix.egg-info/SOURCES.txt'
+[13.657s] running build
+[13.657s] running build_ext
+[13.663s] /home/student/.local/lib/python3.10/site-packages/torch/utils/cpp_extension.py:414: UserWarning: The detected CUDA version (12.3) has a minor version mismatch with the version that was used to compile PyTorch (12.1). Most likely this shouldn't be a problem.
+[13.663s]   warnings.warn(CUDA_MISMATCH_WARN.format(cuda_str_version, torch.version.cuda))
+[13.663s] /home/student/.local/lib/python3.10/site-packages/torch/utils/cpp_extension.py:424: UserWarning: There are no x86_64-linux-gnu-g++ version bounds defined for CUDA version 12.3
+[13.663s]   warnings.warn(f'There are no {compiler_name} version bounds defined for CUDA version {cuda_str_version}')
+[13.918s] /usr/lib/python3/dist-packages/pythran/tables.py:4520: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.
+[13.919s]   if not hasattr(numpy, method):
+[13.942s] /usr/lib/python3/dist-packages/pythran/tables.py:4553: FutureWarning: In the future `np.bytes` will be defined as the corresponding NumPy scalar.
+[13.942s]   obj = getattr(themodule, elem)
+[14.176s] /home/student/.local/lib/python3.10/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+[14.176s] If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+[14.176s]   warnings.warn(
+[14.216s] Emitting ninja build file /home/student/Desktop/workspace/build/build_adjacency_matrix/build/temp.linux-x86_64-3.10/build.ninja...
+[14.216s] Compiling objects...
+[14.216s] Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[44.619s] [1/2] c++ -MMD -MF /home/student/Desktop/workspace/build/build_adjacency_matrix/build/temp.linux-x86_64-3.10/build_adjacency_matrix.o.d -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/home/student/.local/lib/python3.10/site-packages/torch/include -I/home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/student/.local/lib/python3.10/site-packages/torch/include/TH -I/home/student/.local/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/student/Desktop/workspace/install/build_adjacency_matrix/include -I/usr/include/python3.10 -c -c /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix/build_adjacency_matrix.cpp -o /home/student/Desktop/workspace/build/build_adjacency_matrix/build/temp.linux-x86_64-3.10/build_adjacency_matrix.o -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=build_adjacency_matrix -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+[44.620s] In file included from /home/student/.local/lib/python3.10/site-packages/torch/include/c10/core/Device.h:5,
+[44.620s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:11,
+[44.620s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/core/Tensor.h:3,
+[44.620s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/Tensor.h:3,
+[44.620s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+[44.620s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+[44.620s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+[44.620s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+[44.620s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+[44.621s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+[44.621s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/extension.h:5,
+[44.621s]                  from /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix/build_adjacency_matrix.cpp:1:
+[44.621s] /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix/build_adjacency_matrix.cpp: In function ‘at::Tensor build_adjacency_matrix(at::Tensor)’:
+[44.621s] /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix/build_adjacency_matrix.cpp:8:40: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+[44.621s]     8 | #define CHECK_CUDA(x) AT_ASSERTM(x.type().is_cuda(), #x " must be a CUDA tensor")
+[44.621s]       |                                        ^
+[44.621s] /home/student/.local/lib/python3.10/site-packages/torch/include/c10/util/Exception.h:337:39: note: in definition of macro ‘C10_EXPAND_MSVC_WORKAROUND’
+[44.622s]   337 | #define C10_EXPAND_MSVC_WORKAROUND(x) x
+[44.622s]       |                                       ^
+[44.622s] /home/student/.local/lib/python3.10/site-packages/torch/include/c10/util/Exception.h:357:34: note: in expansion of macro ‘C10_UNLIKELY’
+[44.622s]   357 | #define C10_UNLIKELY_OR_CONST(e) C10_UNLIKELY(e)
+[44.622s]       |                                  ^~~~~~~~~~~~
+[44.622s] /home/student/.local/lib/python3.10/site-packages/torch/include/c10/util/Exception.h:409:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+[44.622s]   409 |   if (C10_UNLIKELY_OR_CONST(!(cond))) {                                          \
+[44.622s]       |       ^~~~~~~~~~~~~~~~~~~~~
+[44.622s] /home/student/.local/lib/python3.10/site-packages/torch/include/c10/util/Exception.h:701:32: note: in expansion of macro ‘TORCH_INTERNAL_ASSERT’
+[44.622s]   701 |     C10_EXPAND_MSVC_WORKAROUND(TORCH_INTERNAL_ASSERT(cond, __VA_ARGS__)); \
+[44.623s]       |                                ^~~~~~~~~~~~~~~~~~~~~
+[44.623s] /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix/build_adjacency_matrix.cpp:8:23: note: in expansion of macro ‘AT_ASSERTM’
+[44.623s]     8 | #define CHECK_CUDA(x) AT_ASSERTM(x.type().is_cuda(), #x " must be a CUDA tensor")
+[44.623s]       |                       ^~~~~~~~~~
+[44.623s] /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix/build_adjacency_matrix.cpp:10:24: note: in expansion of macro ‘CHECK_CUDA’
+[44.623s]    10 | #define CHECK_INPUT(x) CHECK_CUDA(x); CHECK_CONTIGUOUS(x)
+[44.623s]       |                        ^~~~~~~~~~
+[44.623s] /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix/build_adjacency_matrix.cpp:13:5: note: in expansion of macro ‘CHECK_INPUT’
+[44.623s]    13 |     CHECK_INPUT(initial_rank);
+[44.624s]       |     ^~~~~~~~~~~
+[44.624s] In file included from /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/core/Tensor.h:3,
+[44.624s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/Tensor.h:3,
+[44.624s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+[44.624s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+[44.624s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+[44.624s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+[44.624s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+[44.625s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+[44.625s]                  from /home/student/.local/lib/python3.10/site-packages/torch/include/torch/extension.h:5,
+[44.625s]                  from /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix/build_adjacency_matrix.cpp:1:
+[44.625s] /home/student/.local/lib/python3.10/site-packages/torch/include/ATen/core/TensorBody.h:225:30: note: declared here
+[44.625s]   225 |   DeprecatedTypeProperties & type() const {
+[44.625s]       |                              ^~~~
+[64.399s] [2/2] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /home/student/Desktop/workspace/build/build_adjacency_matrix/build/temp.linux-x86_64-3.10/build_adjacency_matrix_kernel.o.d -I/home/student/.local/lib/python3.10/site-packages/torch/include -I/home/student/.local/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -I/home/student/.local/lib/python3.10/site-packages/torch/include/TH -I/home/student/.local/lib/python3.10/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/student/Desktop/workspace/install/build_adjacency_matrix/include -I/usr/include/python3.10 -c -c /home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix/build_adjacency_matrix_kernel.cu -o /home/student/Desktop/workspace/build/build_adjacency_matrix/build/temp.linux-x86_64-3.10/build_adjacency_matrix_kernel.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=build_adjacency_matrix -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_61,code=compute_61 -gencode=arch=compute_61,code=sm_61 -std=c++17
+[65.452s] Invoked command in '/home/student/Desktop/workspace/src/deep-person-reid/torchreid/utils/GPU-Re-Ranking/extension/adjacency_matrix' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/build_adjacency_matrix/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/build_adjacency_matrix/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../../../../build/build_adjacency_matrix build --build-base /home/student/Desktop/workspace/build/build_adjacency_matrix/build install --record /home/student/Desktop/workspace/build/build_adjacency_matrix/install.log --single-version-externally-managed
