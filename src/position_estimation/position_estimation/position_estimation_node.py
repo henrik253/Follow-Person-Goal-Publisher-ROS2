@@ -8,7 +8,12 @@ import heapq
 from object_tracking_messages.msg import DetectedPersons, DetectedPerson, BoundingBox, PersonDistance
 import numpy as np
 from cv_bridge import CvBridge
+import logging
 
+
+logging.getLogger('ultralytics').setLevel(logging.WARNING)
+
+'''
 # TODO try to use LiDAR insteaf of ZED depth image! 
 class Person:
     def __init__(self, person_id, x, y, z=float('nan')):
@@ -54,7 +59,7 @@ class PersonPool:
         return f"PersonPool({list(self.pool.values())})"
 
 MAX_POOL_MEMBERS = 5
-
+'''
 class PositionEstimationNode(Node):
     
     def __init__(self):
@@ -82,6 +87,13 @@ class PositionEstimationNode(Node):
             qos_profile
         )
 
+        # Create publisher for detected object positions
+        self.positions_publisher = self.create_publisher(
+            PersonDistance,
+            'estimated_person_positions',
+            10
+        )
+
        # self.detected_person_pool = PersonPool(capacity=MAX_POOL_MEMBERS)
         self.bridge = CvBridge()
         self.width_depth = 0
@@ -93,7 +105,7 @@ class PositionEstimationNode(Node):
         persons = msg.persons
         
         personDistanceMessage = PersonDistance() 
-        personDistanceMessage.detected_persons = persons 
+        personDistanceMessage.detected_persons.persons = persons 
         distances = []
         for person in persons: 
             boundingBox = person.bbox
@@ -111,12 +123,15 @@ class PositionEstimationNode(Node):
                 # Ensure x_center and y_center are within bounds
                 if 0 <= x_center < self.width_depth and 0 <= y_center < self.depth.shape[0]:
                     distance = round(self.depth[y_center, x_center],2)
+                    distances.append(float(distance))
             
-            print(f"id: {id} and distance is {distance}")
-            distances.append(distance)
+            self.get_logger().info(f'id: {id} and distance: {distance}m')                
+        
+        self.get_logger().info(f'distances: {distances}')
+    
         personDistanceMessage.distances = distances
         self.positions_publisher.publish(personDistanceMessage)
-        
+        self.get_logger().info(f"personDistanceMessage: {personDistanceMessage}")   
 
     def depth_callback(self, msg):
     # Convert ROS Image message to OpenCV image
