@@ -15,12 +15,13 @@ logging.getLogger('ultralytics').setLevel(logging.WARNING)
 class ObjectTracker(Node): 
     def __init__(self): 
         super().__init__('yolo_tracking')
-      
+
+        
         self.create_subscription(
             Image,
             '/zed/zed_node/left/image_rect_color',
             self.image_callback,
-            10
+            1 # Low queue-size for low latency! 
         )
 
         self.detected_persons_publisher = self.create_publisher(

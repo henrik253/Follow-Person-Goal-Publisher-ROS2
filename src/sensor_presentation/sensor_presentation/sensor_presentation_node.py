@@ -17,7 +17,7 @@ class VisualizationNode(Node):
             Image,
             'tracked_image',
             self.image_callback,
-            10
+            2
         )
 
         self.create_subscription(
