@@ -18,6 +18,7 @@
 // Member `detected_persons`
 #include "object_tracking_messages/msg/detail/detected_persons__rosidl_typesupport_introspection_c.h"
 // Member `distances`
+// Member `real_world_coordinates`
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
 
 #ifdef __cplusplus
@@ -94,7 +95,62 @@ bool object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspec
   return rosidl_runtime_c__float__Sequence__init(member, size);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__PersonDistance_message_member_array[2] = {
+size_t object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__size_function__PersonDistance__real_world_coordinates(
+  const void * untyped_member)
+{
+  const rosidl_runtime_c__float__Sequence * member =
+    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return member->size;
+}
+
+const void * object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__get_const_function__PersonDistance__real_world_coordinates(
+  const void * untyped_member, size_t index)
+{
+  const rosidl_runtime_c__float__Sequence * member =
+    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void * object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__get_function__PersonDistance__real_world_coordinates(
+  void * untyped_member, size_t index)
+{
+  rosidl_runtime_c__float__Sequence * member =
+    (rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__fetch_function__PersonDistance__real_world_coordinates(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const float * item =
+    ((const float *)
+    object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__get_const_function__PersonDistance__real_world_coordinates(untyped_member, index));
+  float * value =
+    (float *)(untyped_value);
+  *value = *item;
+}
+
+void object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__assign_function__PersonDistance__real_world_coordinates(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  float * item =
+    ((float *)
+    object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__get_function__PersonDistance__real_world_coordinates(untyped_member, index));
+  const float * value =
+    (const float *)(untyped_value);
+  *item = *value;
+}
+
+bool object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__resize_function__PersonDistance__real_world_coordinates(
+  void * untyped_member, size_t size)
+{
+  rosidl_runtime_c__float__Sequence * member =
+    (rosidl_runtime_c__float__Sequence *)(untyped_member);
+  rosidl_runtime_c__float__Sequence__fini(member);
+  return rosidl_runtime_c__float__Sequence__init(member, size);
+}
+
+static rosidl_typesupport_introspection_c__MessageMember object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__PersonDistance_message_member_array[3] = {
   {
     "detected_persons",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -128,13 +184,30 @@ static rosidl_typesupport_introspection_c__MessageMember object_tracking_message
     object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__fetch_function__PersonDistance__distances,  // fetch(index, &value) function pointer
     object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__assign_function__PersonDistance__distances,  // assign(index, value) function pointer
     object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__resize_function__PersonDistance__distances  // resize(index) function pointer
+  },
+  {
+    "real_world_coordinates",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    true,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(object_tracking_messages__msg__PersonDistance, real_world_coordinates),  // bytes offset in struct
+    NULL,  // default value
+    object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__size_function__PersonDistance__real_world_coordinates,  // size() function pointer
+    object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__get_const_function__PersonDistance__real_world_coordinates,  // get_const(index) function pointer
+    object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__get_function__PersonDistance__real_world_coordinates,  // get(index) function pointer
+    object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__fetch_function__PersonDistance__real_world_coordinates,  // fetch(index, &value) function pointer
+    object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__assign_function__PersonDistance__real_world_coordinates,  // assign(index, value) function pointer
+    object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__resize_function__PersonDistance__real_world_coordinates  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__PersonDistance_message_members = {
   "object_tracking_messages__msg",  // message namespace
   "PersonDistance",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(object_tracking_messages__msg__PersonDistance),
   object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__PersonDistance_message_member_array,  // message members
   object_tracking_messages__msg__PersonDistance__rosidl_typesupport_introspection_c__PersonDistance_init_function,  // function to initialize message memory (memory has to be allocated)

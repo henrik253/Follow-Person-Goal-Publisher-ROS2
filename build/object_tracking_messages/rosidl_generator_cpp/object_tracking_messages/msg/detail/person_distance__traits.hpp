@@ -51,6 +51,24 @@ inline void to_flow_style_yaml(
       }
       out << "]";
     }
+    out << ", ";
+  }
+
+  // member: real_world_coordinates
+  {
+    if (msg.real_world_coordinates.size() == 0) {
+      out << "real_world_coordinates: []";
+    } else {
+      out << "real_world_coordinates: [";
+      size_t pending_items = msg.real_world_coordinates.size();
+      for (auto item : msg.real_world_coordinates) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -78,6 +96,26 @@ inline void to_block_style_yaml(
     } else {
       out << "distances:\n";
       for (auto item : msg.distances) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: real_world_coordinates
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.real_world_coordinates.size() == 0) {
+      out << "real_world_coordinates: []\n";
+    } else {
+      out << "real_world_coordinates:\n";
+      for (auto item : msg.real_world_coordinates) {
         if (indentation > 0) {
           out << std::string(indentation, ' ');
         }

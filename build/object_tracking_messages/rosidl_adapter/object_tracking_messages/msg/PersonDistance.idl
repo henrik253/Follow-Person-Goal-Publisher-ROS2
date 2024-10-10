@@ -12,6 +12,8 @@ module object_tracking_messages {
       object_tracking_messages::msg::DetectedPersons detected_persons;
 
       sequence<float> distances;
+
+      sequence<float> real_world_coordinates;
     };
   };
 };

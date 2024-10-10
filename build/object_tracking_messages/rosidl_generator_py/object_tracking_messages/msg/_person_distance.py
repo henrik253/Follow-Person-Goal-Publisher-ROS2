@@ -6,6 +6,7 @@
 # Import statements for member types
 
 # Member 'distances'
+# Member 'real_world_coordinates'
 import array  # noqa: E402, I100
 
 import builtins  # noqa: E402, I100
@@ -66,15 +67,18 @@ class PersonDistance(metaclass=Metaclass_PersonDistance):
     __slots__ = [
         '_detected_persons',
         '_distances',
+        '_real_world_coordinates',
     ]
 
     _fields_and_field_types = {
         'detected_persons': 'object_tracking_messages/DetectedPersons',
         'distances': 'sequence<float>',
+        'real_world_coordinates': 'sequence<float>',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.NamespacedType(['object_tracking_messages', 'msg'], 'DetectedPersons'),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
     )
 
@@ -85,6 +89,7 @@ class PersonDistance(metaclass=Metaclass_PersonDistance):
         from object_tracking_messages.msg import DetectedPersons
         self.detected_persons = kwargs.get('detected_persons', DetectedPersons())
         self.distances = array.array('f', kwargs.get('distances', []))
+        self.real_world_coordinates = array.array('f', kwargs.get('real_world_coordinates', []))
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -118,6 +123,8 @@ class PersonDistance(metaclass=Metaclass_PersonDistance):
         if self.detected_persons != other.detected_persons:
             return False
         if self.distances != other.distances:
+            return False
+        if self.real_world_coordinates != other.real_world_coordinates:
             return False
         return True
 
@@ -167,3 +174,31 @@ class PersonDistance(metaclass=Metaclass_PersonDistance):
                  all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
                 "The 'distances' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
         self._distances = array.array('f', value)
+
+    @builtins.property
+    def real_world_coordinates(self):
+        """Message field 'real_world_coordinates'."""
+        return self._real_world_coordinates
+
+    @real_world_coordinates.setter
+    def real_world_coordinates(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'real_world_coordinates' array.array() must have the type code of 'f'"
+            self._real_world_coordinates = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'real_world_coordinates' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._real_world_coordinates = array.array('f', value)

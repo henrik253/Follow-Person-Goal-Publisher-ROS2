@@ -1,0 +1,174 @@
+[0.044s] Invoking command in '/home/student/Desktop/workspace/build/ouster_sensor_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/sensor_presentation:/home/student/Desktop/workspace/install/position_estimation:/opt/ros/humble /home/student/.local/bin/cmake --build /home/student/Desktop/workspace/build/ouster_sensor_msgs -- -j16 -l16
+[0.856s] [  1%] Built target ouster_sensor_msgs__cpp
+[0.857s] [  1%] Built target ament_cmake_python_symlink_ouster_sensor_msgs
+[0.857s] [ 12%] Built target ouster_sensor_msgs__rosidl_generator_c
+[0.857s] [ 23%] Built target ouster_sensor_msgs__rosidl_typesupport_c
+[0.857s] [ 34%] Built target ouster_sensor_msgs__rosidl_typesupport_introspection_c
+[0.857s] [ 47%] Built target ouster_sensor_msgs__rosidl_typesupport_cpp
+[0.857s] [ 56%] Built target ouster_sensor_msgs__rosidl_typesupport_introspection_cpp
+[0.857s] [ 67%] Built target ouster_sensor_msgs__rosidl_typesupport_fastrtps_cpp
+[0.857s] [ 78%] Built target ouster_sensor_msgs__rosidl_typesupport_fastrtps_c
+[0.858s] [ 78%] Built target ouster_sensor_msgs
+[0.858s] [ 80%] Built target ouster_sensor_msgs__py
+[0.858s] [ 89%] Built target ouster_sensor_msgs__rosidl_generator_py
+[0.858s] [ 96%] Built target ouster_sensor_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.858s] [ 96%] Built target ouster_sensor_msgs__rosidl_typesupport_introspection_c__pyext
+[0.858s] [100%] Built target ouster_sensor_msgs__rosidl_typesupport_c__pyext
+[0.858s] running egg_info
+[0.858s] writing ouster_sensor_msgs.egg-info/PKG-INFO
+[0.859s] writing dependency_links to ouster_sensor_msgs.egg-info/dependency_links.txt
+[0.859s] writing top-level names to ouster_sensor_msgs.egg-info/top_level.txt
+[0.859s] reading manifest file 'ouster_sensor_msgs.egg-info/SOURCES.txt'
+[0.859s] writing manifest file 'ouster_sensor_msgs.egg-info/SOURCES.txt'
+[0.859s] [100%] Built target ament_cmake_python_build_ouster_sensor_msgs_egg
+[0.860s] Invoked command in '/home/student/Desktop/workspace/build/ouster_sensor_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/sensor_presentation:/home/student/Desktop/workspace/install/position_estimation:/opt/ros/humble /home/student/.local/bin/cmake --build /home/student/Desktop/workspace/build/ouster_sensor_msgs -- -j16 -l16
+[1.556s] Invoking command in '/home/student/Desktop/workspace/build/ouster_sensor_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/sensor_presentation:/home/student/Desktop/workspace/install/position_estimation:/opt/ros/humble /home/student/.local/bin/cmake --install /home/student/Desktop/workspace/build/ouster_sensor_msgs
+[1.607s] -- Install configuration: ""
+[1.608s] -- Execute custom install script
+[1.608s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ament_index/resource_index/rosidl_interfaces/ouster_sensor_msgs
+[1.609s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/detail/packet_msg__functions.h
+[1.610s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/detail/packet_msg__struct.h
+[1.610s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/detail/packet_msg__type_support.h
+[1.610s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/packet_msg.h
+[1.611s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/rosidl_generator_c__visibility_control.h
+[1.611s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_config__functions.h
+[1.611s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_config__struct.h
+[1.612s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_config__type_support.h
+[1.612s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_metadata__functions.h
+[1.612s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_metadata__struct.h
+[1.613s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_metadata__type_support.h
+[1.613s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/set_config__functions.h
+[1.613s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/set_config__struct.h
+[1.613s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/set_config__type_support.h
+[1.614s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/get_config.h
+[1.614s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/get_metadata.h
+[1.614s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/set_config.h
+[1.614s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/environment/library_path.sh
+[1.615s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/environment/library_path.dsv
+[1.616s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/detail/packet_msg__rosidl_typesupport_fastrtps_c.h
+[1.616s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.616s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_config__rosidl_typesupport_fastrtps_c.h
+[1.616s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_metadata__rosidl_typesupport_fastrtps_c.h
+[1.617s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/set_config__rosidl_typesupport_fastrtps_c.h
+[1.618s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/detail/packet_msg__builder.hpp
+[1.618s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/detail/packet_msg__struct.hpp
+[1.618s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/detail/packet_msg__traits.hpp
+[1.619s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/packet_msg.hpp
+[1.620s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_config__builder.hpp
+[1.620s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_config__struct.hpp
+[1.620s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_config__traits.hpp
+[1.621s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_metadata__builder.hpp
+[1.621s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_metadata__struct.hpp
+[1.622s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_metadata__traits.hpp
+[1.622s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/set_config__builder.hpp
+[1.623s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/set_config__struct.hpp
+[1.623s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/set_config__traits.hpp
+[1.624s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/get_config.hpp
+[1.624s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/get_metadata.hpp
+[1.625s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/set_config.hpp
+[1.626s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/detail/packet_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[1.626s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.626s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_config__rosidl_typesupport_fastrtps_cpp.hpp
+[1.626s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_metadata__rosidl_typesupport_fastrtps_cpp.hpp
+[1.627s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/set_config__rosidl_typesupport_fastrtps_cpp.hpp
+[1.627s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/detail/packet_msg__rosidl_typesupport_introspection_c.h
+[1.628s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.629s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_config__rosidl_typesupport_introspection_c.h
+[1.629s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_metadata__rosidl_typesupport_introspection_c.h
+[1.630s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/set_config__rosidl_typesupport_introspection_c.h
+[1.631s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/detail/packet_msg__rosidl_typesupport_introspection_cpp.hpp
+[1.631s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_config__rosidl_typesupport_introspection_cpp.hpp
+[1.632s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_metadata__rosidl_typesupport_introspection_cpp.hpp
+[1.632s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/set_config__rosidl_typesupport_introspection_cpp.hpp
+[1.633s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/environment/pythonpath.sh
+[1.633s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/environment/pythonpath.dsv
+[1.634s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs-0.12.2-py3.10.egg-info/PKG-INFO
+[1.634s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs-0.12.2-py3.10.egg-info/SOURCES.txt
+[1.634s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs-0.12.2-py3.10.egg-info/dependency_links.txt
+[1.634s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs-0.12.2-py3.10.egg-info/top_level.txt
+[1.636s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/__init__.py
+[1.636s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/_ouster_sensor_msgs_s.ep.rosidl_typesupport_c.c
+[1.636s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/_ouster_sensor_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.636s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/_ouster_sensor_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[1.637s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/libouster_sensor_msgs__rosidl_generator_py.so
+[1.637s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/msg/__init__.py
+[1.637s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/msg/_packet_msg.py
+[1.638s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/msg/_packet_msg_s.c
+[1.638s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/ouster_sensor_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.638s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/ouster_sensor_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.638s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/ouster_sensor_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.639s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/srv/__init__.py
+[1.639s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/srv/_get_config.py
+[1.640s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/srv/_get_config_s.c
+[1.640s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/srv/_get_metadata.py
+[1.641s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/srv/_get_metadata_s.c
+[1.641s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/srv/_set_config.py
+[1.642s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/srv/_set_config_s.c
+[1.643s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/ouster_sensor_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.643s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/ouster_sensor_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.644s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/ouster_sensor_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.644s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/msg/PacketMsg.idl
+[1.644s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/GetConfig.idl
+[1.644s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/SetConfig.idl
+[1.644s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/GetMetadata.idl
+[1.644s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/msg/PacketMsg.msg
+[1.645s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/GetConfig.srv
+[1.645s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/GetConfig_Request.msg
+[1.645s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/GetConfig_Response.msg
+[1.646s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/SetConfig.srv
+[1.646s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/SetConfig_Request.msg
+[1.647s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/SetConfig_Response.msg
+[1.647s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/GetMetadata.srv
+[1.647s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/GetMetadata_Request.msg
+[1.648s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/GetMetadata_Response.msg
+[1.648s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ament_index/resource_index/package_run_dependencies/ouster_sensor_msgs
+[1.648s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ament_index/resource_index/parent_prefix_path/ouster_sensor_msgs
+[1.649s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/environment/ament_prefix_path.sh
+[1.649s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/environment/ament_prefix_path.dsv
+[1.649s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/environment/path.sh
+[1.650s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/environment/path.dsv
+[1.650s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/local_setup.bash
+[1.650s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/local_setup.sh
+[1.650s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/local_setup.zsh
+[1.650s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/local_setup.dsv
+[1.650s] -- Symlinking: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/package.dsv
+[1.656s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ament_index/resource_index/packages/ouster_sensor_msgs
+[1.656s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/rosidl_cmake-extras.cmake
+[1.656s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.657s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.657s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.657s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.657s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.658s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.658s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ouster_sensor_msgsConfig.cmake
+[1.658s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ouster_sensor_msgsConfig-version.cmake
+[1.658s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/package.xml
+[1.660s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_generator_c.so
+[1.660s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_fastrtps_c.so
+[1.661s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_fastrtps_cpp.so
+[1.661s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_introspection_c.so
+[1.662s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_c.so
+[1.663s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_introspection_cpp.so
+[1.663s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_cpp.so
+[1.733s] Listing '/home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs'...
+[1.733s] Listing '/home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/msg'...
+[1.733s] Listing '/home/student/Desktop/workspace/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/srv'...
+[1.740s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_generator_py.so
+[1.740s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/export_ouster_sensor_msgs__rosidl_generator_cExport.cmake
+[1.741s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/export_ouster_sensor_msgs__rosidl_generator_cExport-noconfig.cmake
+[1.741s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/export_ouster_sensor_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[1.741s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/export_ouster_sensor_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.741s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/export_ouster_sensor_msgs__rosidl_generator_cppExport.cmake
+[1.741s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/export_ouster_sensor_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.742s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/export_ouster_sensor_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.742s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ouster_sensor_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.742s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ouster_sensor_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.742s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ouster_sensor_msgs__rosidl_typesupport_cExport.cmake
+[1.742s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ouster_sensor_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[1.743s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ouster_sensor_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.743s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ouster_sensor_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.743s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ouster_sensor_msgs__rosidl_typesupport_cppExport.cmake
+[1.743s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ouster_sensor_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[1.743s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/export_ouster_sensor_msgs__rosidl_generator_pyExport.cmake
+[1.743s] -- Up-to-date: /home/student/Desktop/workspace/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/export_ouster_sensor_msgs__rosidl_generator_pyExport-noconfig.cmake
+[1.762s] Invoked command in '/home/student/Desktop/workspace/build/ouster_sensor_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/sensor_presentation:/home/student/Desktop/workspace/install/position_estimation:/opt/ros/humble /home/student/.local/bin/cmake --install /home/student/Desktop/workspace/build/ouster_sensor_msgs

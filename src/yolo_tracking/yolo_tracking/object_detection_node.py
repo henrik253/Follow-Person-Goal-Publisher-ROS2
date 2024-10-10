@@ -59,7 +59,7 @@ class ObjectTracker(Node):
         boxes = results[0].boxes
         
         if boxes.data.shape[0] == 0:
-            self.get_logger().info('No detection found')
+            self.get_logger().debug('No detection found')
             return
        
         try:
@@ -85,7 +85,8 @@ class ObjectTracker(Node):
                     persons.append(detectedPerson)
         except Exception as e: 
             print(e)
-        
+
+      
         detectedPersonsMsg.persons = persons
         self.detected_persons_publisher.publish(detectedPersonsMsg)
         

@@ -64,6 +64,10 @@ cdr_serialize(
   {
     cdr << ros_message.distances;
   }
+  // Member: real_world_coordinates
+  {
+    cdr << ros_message.real_world_coordinates;
+  }
   return true;
 }
 
@@ -80,6 +84,11 @@ cdr_deserialize(
   // Member: distances
   {
     cdr >> ros_message.distances;
+  }
+
+  // Member: real_world_coordinates
+  {
+    cdr >> ros_message.real_world_coordinates;
   }
 
   return true;
@@ -110,6 +119,16 @@ get_serialized_size(
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
     size_t item_size = sizeof(ros_message.distances[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: real_world_coordinates
+  {
+    size_t array_size = ros_message.real_world_coordinates.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.real_world_coordinates[0]);
     current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -169,6 +188,19 @@ max_serialized_size_PersonDistance(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Member: real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -177,7 +209,7 @@ max_serialized_size_PersonDistance(
     using DataType = object_tracking_messages::msg::PersonDistance;
     is_plain =
       (
-      offsetof(DataType, distances) +
+      offsetof(DataType, real_world_coordinates) +
       last_member_size
       ) == ret_val;
   }

@@ -35,8 +35,8 @@ extern "C"
 #endif
 
 #include "object_tracking_messages/msg/detail/detected_persons__functions.h"  // detected_persons
-#include "rosidl_runtime_c/primitives_sequence.h"  // distances
-#include "rosidl_runtime_c/primitives_sequence_functions.h"  // distances
+#include "rosidl_runtime_c/primitives_sequence.h"  // distances, real_world_coordinates
+#include "rosidl_runtime_c/primitives_sequence_functions.h"  // distances, real_world_coordinates
 
 // forward declare type support functions
 size_t get_serialized_size_object_tracking_messages__msg__DetectedPersons(
@@ -85,6 +85,14 @@ static bool _PersonDistance__cdr_serialize(
     cdr.serializeArray(array_ptr, size);
   }
 
+  // Field name: real_world_coordinates
+  {
+    size_t size = ros_message->real_world_coordinates.size;
+    auto array_ptr = ros_message->real_world_coordinates.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
   return true;
 }
 
@@ -127,6 +135,22 @@ static bool _PersonDistance__cdr_deserialize(
     cdr.deserializeArray(array_ptr, size);
   }
 
+  // Field name: real_world_coordinates
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->real_world_coordinates.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->real_world_coordinates);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->real_world_coordinates, size)) {
+      fprintf(stderr, "failed to create array for field 'real_world_coordinates'");
+      return false;
+    }
+    auto array_ptr = ros_message->real_world_coordinates.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -152,6 +176,17 @@ size_t get_serialized_size_object_tracking_messages__msg__PersonDistance(
   {
     size_t array_size = ros_message->distances.size;
     auto array_ptr = ros_message->distances.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name real_world_coordinates
+  {
+    size_t array_size = ros_message->real_world_coordinates.size;
+    auto array_ptr = ros_message->real_world_coordinates.data;
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
     (void)array_ptr;
@@ -219,6 +254,18 @@ size_t max_serialized_size_object_tracking_messages__msg__PersonDistance(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // member: real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -228,7 +275,7 @@ size_t max_serialized_size_object_tracking_messages__msg__PersonDistance(
     using DataType = object_tracking_messages__msg__PersonDistance;
     is_plain =
       (
-      offsetof(DataType, distances) +
+      offsetof(DataType, real_world_coordinates) +
       last_member_size
       ) == ret_val;
   }

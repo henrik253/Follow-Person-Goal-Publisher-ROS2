@@ -21,16 +21,32 @@ namespace msg
 namespace builder
 {
 
+class Init_PersonDistance_real_world_coordinates
+{
+public:
+  explicit Init_PersonDistance_real_world_coordinates(::object_tracking_messages::msg::PersonDistance & msg)
+  : msg_(msg)
+  {}
+  ::object_tracking_messages::msg::PersonDistance real_world_coordinates(::object_tracking_messages::msg::PersonDistance::_real_world_coordinates_type arg)
+  {
+    msg_.real_world_coordinates = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::object_tracking_messages::msg::PersonDistance msg_;
+};
+
 class Init_PersonDistance_distances
 {
 public:
   explicit Init_PersonDistance_distances(::object_tracking_messages::msg::PersonDistance & msg)
   : msg_(msg)
   {}
-  ::object_tracking_messages::msg::PersonDistance distances(::object_tracking_messages::msg::PersonDistance::_distances_type arg)
+  Init_PersonDistance_real_world_coordinates distances(::object_tracking_messages::msg::PersonDistance::_distances_type arg)
   {
     msg_.distances = std::move(arg);
-    return std::move(msg_);
+    return Init_PersonDistance_real_world_coordinates(msg_);
   }
 
 private:

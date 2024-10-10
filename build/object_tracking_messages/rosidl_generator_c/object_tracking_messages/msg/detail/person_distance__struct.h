@@ -21,6 +21,7 @@ extern "C"
 // Member 'detected_persons'
 #include "object_tracking_messages/msg/detail/detected_persons__struct.h"
 // Member 'distances'
+// Member 'real_world_coordinates'
 #include "rosidl_runtime_c/primitives_sequence.h"
 
 /// Struct defined in msg/PersonDistance in the package object_tracking_messages.
@@ -31,6 +32,7 @@ typedef struct object_tracking_messages__msg__PersonDistance
 {
   object_tracking_messages__msg__DetectedPersons detected_persons;
   rosidl_runtime_c__float__Sequence distances;
+  rosidl_runtime_c__float__Sequence real_world_coordinates;
 } object_tracking_messages__msg__PersonDistance;
 
 // Struct for a sequence of object_tracking_messages__msg__PersonDistance.

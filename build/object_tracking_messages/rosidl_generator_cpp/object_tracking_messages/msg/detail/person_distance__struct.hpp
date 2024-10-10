@@ -56,6 +56,9 @@ struct PersonDistance_
   using _distances_type =
     std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
   _distances_type distances;
+  using _real_world_coordinates_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _real_world_coordinates_type real_world_coordinates;
 
   // setters for named parameter idiom
   Type & set__detected_persons(
@@ -68,6 +71,12 @@ struct PersonDistance_
     const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
   {
     this->distances = _arg;
+    return *this;
+  }
+  Type & set__real_world_coordinates(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->real_world_coordinates = _arg;
     return *this;
   }
 
@@ -117,6 +126,9 @@ struct PersonDistance_
       return false;
     }
     if (this->distances != other.distances) {
+      return false;
+    }
+    if (this->real_world_coordinates != other.real_world_coordinates) {
       return false;
     }
     return true;

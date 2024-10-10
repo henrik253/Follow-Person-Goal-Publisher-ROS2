@@ -15,6 +15,7 @@
 // Member `detected_persons`
 #include "object_tracking_messages/msg/detail/detected_persons__functions.h"
 // Member `distances`
+// Member `real_world_coordinates`
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
 
 bool
@@ -33,6 +34,11 @@ object_tracking_messages__msg__PersonDistance__init(object_tracking_messages__ms
     object_tracking_messages__msg__PersonDistance__fini(msg);
     return false;
   }
+  // real_world_coordinates
+  if (!rosidl_runtime_c__float__Sequence__init(&msg->real_world_coordinates, 0)) {
+    object_tracking_messages__msg__PersonDistance__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -46,6 +52,8 @@ object_tracking_messages__msg__PersonDistance__fini(object_tracking_messages__ms
   object_tracking_messages__msg__DetectedPersons__fini(&msg->detected_persons);
   // distances
   rosidl_runtime_c__float__Sequence__fini(&msg->distances);
+  // real_world_coordinates
+  rosidl_runtime_c__float__Sequence__fini(&msg->real_world_coordinates);
 }
 
 bool
@@ -63,6 +71,12 @@ object_tracking_messages__msg__PersonDistance__are_equal(const object_tracking_m
   // distances
   if (!rosidl_runtime_c__float__Sequence__are_equal(
       &(lhs->distances), &(rhs->distances)))
+  {
+    return false;
+  }
+  // real_world_coordinates
+  if (!rosidl_runtime_c__float__Sequence__are_equal(
+      &(lhs->real_world_coordinates), &(rhs->real_world_coordinates)))
   {
     return false;
   }
@@ -86,6 +100,12 @@ object_tracking_messages__msg__PersonDistance__copy(
   // distances
   if (!rosidl_runtime_c__float__Sequence__copy(
       &(input->distances), &(output->distances)))
+  {
+    return false;
+  }
+  // real_world_coordinates
+  if (!rosidl_runtime_c__float__Sequence__copy(
+      &(input->real_world_coordinates), &(output->real_world_coordinates)))
   {
     return false;
   }
