@@ -1,3 +1,0 @@
-[console_scripts]
-object_detection_node = yolo_tracking.object_detection_node:main
-

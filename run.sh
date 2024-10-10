@@ -19,7 +19,7 @@ TERMINAL_WIDTH=60
 TERMINAL_HEIGHT=20
 
 # Calculate positions
-X_OFFSET= 0 #$((SCREEN_WIDTH / NUM_TERMINALS))
+X_OFFSET=$((SCREEN_WIDTH / NUM_TERMINALS))
 Y_OFFSET=0  # You can change this to position them vertically if needed
 
 # Open xterm windows with specified geometry
