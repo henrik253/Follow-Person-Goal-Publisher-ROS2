@@ -17,14 +17,14 @@ class VisualizationNode(Node):
             Image,
             'tracked_image',
             self.image_callback,
-            2
+            1
         )
 
         self.create_subscription(
-            PersonDistance,
+            PersonDistance, 
             'estimated_person_positions',
             self.positions_callback,
-            10
+            1
         )
 
         # Create CvBridge to convert ROS Image messages to OpenCV images
@@ -44,16 +44,13 @@ class VisualizationNode(Node):
  
         # Store detected positions along with ID, distance, and confidence
         for i, person in enumerate(msg.detected_persons.persons):
-            # Use bounding box coordinates directly
             x1 = person.bbox.x_min
             y1 = person.bbox.y_min
             x2 = person.bbox.x_max
             y2 = person.bbox.y_max
 
-            # Get the distance for this person
+            # Get the distance and confidence score for this person
             distance = msg.distances[i] if i < len(msg.distances) else None
-
-            # Assuming confidence is stored in person.confidence
             confidence = getattr(person, 'confidence', None)  # Adjust if named differently
 
             self.detected_positions.append({
@@ -80,12 +77,9 @@ class VisualizationNode(Node):
 
             # Format text
             distance_str = f"{detected['distance']:.2f}" if detected['distance'] is not None else "N/A"
-            text = f"ID: {detected['id']}, D: {distance_str}m, C: {detected['confidence']:.2f}"
-
-            text_size = cv2.getTextSize(text, cv2.FONT_HERSHEY_SIMPLEX, 0.8, 2)[0]
+            text = f"ID: {detected['id']},X:{x_center} Y:{y_center} D: {distance_str}m, C: {detected['confidence']:.2f}"
             text_x = x1
             text_y = y1 - 10
-
             cv2.putText(self.cv_image, text, (text_x, text_y), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
 
         # Display the image

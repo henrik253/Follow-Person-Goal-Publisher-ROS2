@@ -11,6 +11,10 @@ setup.py
 resource/sensor_presentation
 sensor_presentation/__init__.py
 sensor_presentation/sensor_presentation_node.py
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
+sensor_presentation.egg-info/PKG-INFO
+sensor_presentation.egg-info/SOURCES.txt
+sensor_presentation.egg-info/dependency_links.txt
+sensor_presentation.egg-info/entry_points.txt
+sensor_presentation.egg-info/requires.txt
+sensor_presentation.egg-info/top_level.txt
+sensor_presentation.egg-info/zip-safe

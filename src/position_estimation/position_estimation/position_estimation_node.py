@@ -127,10 +127,11 @@ class PositionEstimationNode(Node):
             
             self.get_logger().info(f'id: {id} and distance: {distance}m')                
         
-        self.get_logger().info(f'distances: {distances}')
-    
+        
         personDistanceMessage.distances = distances
         self.positions_publisher.publish(personDistanceMessage)
+
+        self.get_logger().info(f'distances: {distances}')
         self.get_logger().info(f"personDistanceMessage: {personDistanceMessage}")   
 
     def depth_callback(self, msg):

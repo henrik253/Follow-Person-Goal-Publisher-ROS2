@@ -4,3 +4,6 @@ source;share/position_estimation/hook/pythonpath.sh
 source;share/position_estimation/hook/ament_prefix_path.ps1
 source;share/position_estimation/hook/ament_prefix_path.dsv
 source;share/position_estimation/hook/ament_prefix_path.sh
+source;../../build/position_estimation/share/position_estimation/hook/pythonpath_develop.ps1
+source;../../build/position_estimation/share/position_estimation/hook/pythonpath_develop.dsv
+source;../../build/position_estimation/share/position_estimation/hook/pythonpath_develop.sh
