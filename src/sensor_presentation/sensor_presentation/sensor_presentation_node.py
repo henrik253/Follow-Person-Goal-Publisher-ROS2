@@ -39,7 +39,6 @@ class VisualizationNode(Node):
 
     def positions_callback(self, msg):
         self.get_logger().debug(f'positions_callback msg: {msg}')
-        # Clear the detected positions list
         self.detected_positions = []
  
         # Store detected positions along with ID, distance, and confidence
@@ -65,8 +64,8 @@ class VisualizationNode(Node):
                 'id': person.id,
                 'distance': distance,
                 'confidence': confidence,
-                'real_coords': (x_real, y_real, z_real),  # Store real-world coordinates
-                'bbox': (x1, y1, x2, y2)  # Store bounding box coordinates
+                'real_coords': (x_real, y_real, z_real),  
+                'bbox': (x1, y1, x2, y2)  
             })
 
         # Visualize detected persons
@@ -74,7 +73,6 @@ class VisualizationNode(Node):
             self.visualize()
 
     def visualize(self):
-        # Draw bounding boxes, center points, and texts based on detected positions
         for detected in self.detected_positions:
             x1, y1, x2, y2 = detected['bbox']
             x_center = int((x1 + x2) / 2)
@@ -85,12 +83,14 @@ class VisualizationNode(Node):
             cv2.circle(self.cv_image, (x_center, y_center), 5, (0, 0, 255), -1)  # Red circle
 
             real_coords_str = ""
-            # Format text
+
+            #TODO avoid try catch block if not neccessary
+            # Format text 
             distance_str = f"{detected['distance']:.2f}" if detected['distance'] is not None else "N/A"
             try:
                 real_coords_str = f"R:({detected['real_coords'][0]:.2f}, {detected['real_coords'][1]:.2f}, {detected['real_coords'][2]:.2f})" 
             except Exception as e:
-                real_coords_str = ""
+                self.get_logger().warning(f'e')
 
             text = f"ID: {detected['id']}, D: {distance_str}m, C: {detected['confidence']:.2f}, {real_coords_str}"
             text_x = x1

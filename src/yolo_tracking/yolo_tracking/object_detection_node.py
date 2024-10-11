@@ -62,12 +62,14 @@ class ObjectTracker(Node):
             self.get_logger().debug('No detection found')
             return
        
+        detectedPersonsMsg = DetectedPersons()
+        persons = []
+        
         try:
-            track_ids = results[0].boxes.id.int().cpu().tolist()
-            class_ids = boxes.cls.int().cpu().tolist()  # when no object is detected an excption is thrown where cls attribute cant be found
+            track_ids = results[0].boxes.id.int().cpu().tolist() # !!! Make sure no Exception is thrown before initaliazing a variable 
+            class_ids = boxes.cls.int().cpu().tolist()  # when no object is detected an exception is thrown "cls attribute cant be found"
             confidences = boxes.conf.float().cpu().tolist()
-            detectedPersonsMsg = DetectedPersons()
-            persons = []
+          
 
             for bbox, track_id, class_id, confidence in zip(boxes,track_ids, class_ids,confidences): 
                 if class_id == self.human_class_id:
@@ -90,7 +92,7 @@ class ObjectTracker(Node):
         detectedPersonsMsg.persons = persons
         self.detected_persons_publisher.publish(detectedPersonsMsg)
         
-        # Publish image where detection was used on to avoid delay from image and detection time! 
+        # Publish image where detection is performed. To make sure image and detected objects synced! 
         tracked_image = self.bridge.cv2_to_imgmsg(cv_image, encoding='bgr8')
         self.image_publisher.publish(tracked_image)
     

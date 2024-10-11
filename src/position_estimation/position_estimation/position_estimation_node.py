@@ -54,11 +54,9 @@ class PositionEstimationNode(Node):
             'estimated_person_positions',
             10
         )
-
-
+        
         self.bridge = CvBridge()
         self.width_depth = 0
-        self.depth_image = None
         self.depth = None
         self.distance_formatted = ""
         
@@ -72,10 +70,10 @@ class PositionEstimationNode(Node):
   
 
     def camera_info_callback(self, msg):
-        # intrinsic paramets dont change so only one call is needed 
+        # Intrinsic paramets dont change so only one call is needed 
         # subscription.unregister does not exist for now! 
         if self.proccess_camera_info:
-            # Get intrinsic parameters from CameraInfo
+            # Get intrinsic parameters of camera
             self.focal_length_x = msg.k[0]
             self.focal_length_y = msg.k[4]
             self.principal_point_x = msg.k[2]
@@ -92,7 +90,6 @@ class PositionEstimationNode(Node):
     
     def detections_callback(self, msg):
         persons = msg.persons
-        
         personDistanceMessage = PersonDistance() 
         personDistanceMessage.detected_persons.persons = persons 
         distances = []
@@ -130,30 +127,20 @@ class PositionEstimationNode(Node):
                         real_world_coordinates.append(float(x_real))
                         real_world_coordinates.append(float(y_real))
                         real_world_coordinates.append(float(z_real))
-            
-            self.get_logger().info(f'id: {id} and distance: {distance}m')                
+                         
         
         personDistanceMessage.distances = distances
         personDistanceMessage.real_world_coordinates = real_world_coordinates  
 
         self.positions_publisher.publish(personDistanceMessage)
-
-        self.get_logger().info(f'distances: {distances}')
-        self.get_logger().info(f'real_world_coordinates: {real_world_coordinates}')
         self.get_logger().info(f"personDistanceMessage: {personDistanceMessage}")   
 
 
     def depth_callback(self, msg):
-        # Convert ROS Image message to OpenCV image
-        depth_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='32FC1')
         width = msg.width
         height = msg.height
-
-        # Convert depth data to numpy array
-        depthmap = np.frombuffer(msg.data, dtype=np.float32).reshape((height, width))
-        
         self.width_depth = width
-        self.depth = depthmap
+        self.depth = np.frombuffer(msg.data, dtype=np.float32).reshape((height, width)) # Convert depth data to numpy array
 
 def main(args=None):
     rclpy.init(args=args)
