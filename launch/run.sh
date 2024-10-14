@@ -22,17 +22,17 @@ TERMINAL_HEIGHT=20
 X_OFFSET=$((SCREEN_WIDTH / NUM_TERMINALS))
 Y_OFFSET=0  # You can change this to position them vertically if needed
 
-# Open xterm windows with specified geometry
+
 xterm -geometry $TERMINAL_WIDTH"x"$TERMINAL_HEIGHT"+"$((0 * X_OFFSET))"+"$Y_OFFSET \
--e "cd '$CURRENT_DIR'; source install/setup.bash; ros2 launch zed_wrapper zed_camera.launch.py camera_model:=zed2i; exec bash" &
+-e "cd '$CURRENT_DIR';cd ..; source install/setup.bash; ros2 launch zed_wrapper zed_camera.launch.py camera_model:=zed2i use_sim_time:=true; exec bash" &
 
 xterm -geometry $TERMINAL_WIDTH"x"$TERMINAL_HEIGHT"+"$((1 * X_OFFSET))"+"$Y_OFFSET \
--e "cd '$CURRENT_DIR'; source install/setup.bash; ros2 run yolo_tracking object_detection_node; exec bash" &
+-e "cd '$CURRENT_DIR';cd ..; source install/setup.bash; ros2 run yolo_tracking object_detection_node; exec bash" &
 
 xterm -geometry $TERMINAL_WIDTH"x"$TERMINAL_HEIGHT"+"$((2 * X_OFFSET))"+"$Y_OFFSET \
--e "cd '$CURRENT_DIR'; source install/setup.bash; ros2 run position_estimation position_estimation_node; exec bash" &
+-e "cd '$CURRENT_DIR';cd ..; source install/setup.bash; ros2 run position_estimation position_estimation_node; exec bash" &
 
 xterm -geometry $TERMINAL_WIDTH"x"$TERMINAL_HEIGHT"+"$((3 * X_OFFSET))"+"$Y_OFFSET \
--e "cd '$CURRENT_DIR'; source install/setup.bash; ros2 run sensor_presentation sensor_presentation_node; exec bash" &
+-e "cd '$CURRENT_DIR';cd ..; source install/setup.bash; ros2 run sensor_presentation sensor_presentation_node; exec bash" &
 
 wait

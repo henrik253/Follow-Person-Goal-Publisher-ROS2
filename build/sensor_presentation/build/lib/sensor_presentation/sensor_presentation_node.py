@@ -4,7 +4,6 @@ from sensor_msgs.msg import Image
 from object_tracking_messages.msg import DetectedPersons, PersonDistance
 from cv_bridge import CvBridge
 import cv2
-
 import logging
 
 logging.getLogger('ultralytics').setLevel(logging.WARNING)
@@ -16,13 +15,13 @@ class VisualizationNode(Node):
         # Create subscriptions
         self.create_subscription(
             Image,
-            '/zed/zed_node/left/image_rect_color',
+            'tracked_image',
             self.image_callback,
             10
         )
 
         self.create_subscription(
-            PersonDistance,
+            PersonDistance, 
             'estimated_person_positions',
             self.positions_callback,
             10
@@ -39,26 +38,34 @@ class VisualizationNode(Node):
         self.cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
 
     def positions_callback(self, msg):
-        self.get_logger.info(f'positions_callback msg: {msg}')
-        # Clear the detected positions list
+        self.get_logger().debug(f'positions_callback msg: {msg}')
         self.detected_positions = []
  
         # Store detected positions along with ID, distance, and confidence
         for i, person in enumerate(msg.detected_persons.persons):
-            x_center = int(person.bbox.x_min + (person.bbox.x_max - person.bbox.x_min) / 2)
-            y_center = int(person.bbox.y_min + (person.bbox.y_max - person.bbox.y_min) / 2)
+            x1 = person.bbox.x_min
+            y1 = person.bbox.y_min
+            x2 = person.bbox.x_max
+            y2 = person.bbox.y_max
 
-            # Get the distance for this person
+            # Get the distance, real-world coordinates, and confidence score for this person
             distance = msg.distances[i] if i < len(msg.distances) else None
-
-            # Assuming confidence is stored in person.confidence
             confidence = getattr(person, 'confidence', None)  # Adjust if named differently
+            
+            # Get real-world coordinates (assuming it's a flat list)
+            if msg.real_world_coordinates and i < len(msg.real_world_coordinates) // 3:
+                x_real = msg.real_world_coordinates[i * 3]   # X coordinate
+                y_real = msg.real_world_coordinates[i * 3 + 1]  # Y coordinate
+                z_real = msg.real_world_coordinates[i * 3 + 2]  # Z coordinate
+            else:
+                x_real, y_real, z_real = None, None, None
 
             self.detected_positions.append({
                 'id': person.id,
                 'distance': distance,
                 'confidence': confidence,
-                'position': (x_center, y_center)
+                'real_coords': (x_real, y_real, z_real),  
+                'bbox': (x1, y1, x2, y2)  
             })
 
         # Visualize detected persons
@@ -66,22 +73,29 @@ class VisualizationNode(Node):
             self.visualize()
 
     def visualize(self):
-        # Draw bounding boxes and center points based on detected positions
         for detected in self.detected_positions:
-            x_center, y_center = detected['position']
-            box_size = 20  # Size of the box
-            x1 = x_center - box_size
-            y1 = y_center - box_size
-            x2 = x_center + box_size
-            y2 = y_center + box_size
+            x1, y1, x2, y2 = detected['bbox']
+            x_center = int((x1 + x2) / 2)
+            y_center = int((y1 + y2) / 2)
 
-            # Draw bounding box and center point
+            # Circle and Bounding Box
             cv2.rectangle(self.cv_image, (x1, y1), (x2, y2), (0, 255, 0), 2)
-            cv2.circle(self.cv_image, (x_center, y_center), 5, (0, 0, 255), -1)  # Red circle at center
+            cv2.circle(self.cv_image, (x_center, y_center), 5, (0, 0, 255), -1)  # Red circle
 
-            # Add text for ID, distance, and confidence
-            text = f"ID: {detected['id']}, D: {detected['distance']}m, C: {detected['confidence']}"
-            cv2.putText(self.cv_image, text, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
+            real_coords_str = ""
+
+            #TODO avoid try catch block if not neccessary
+            # Format text 
+            distance_str = f"{detected['distance']:.2f}" if detected['distance'] is not None else "N/A"
+            try:
+                real_coords_str = f"R:({detected['real_coords'][0]:.2f}, {detected['real_coords'][1]:.2f}, {detected['real_coords'][2]:.2f})" 
+            except Exception as e:
+                self.get_logger().warning(f'e')
+
+            text = f"ID: {detected['id']}, D: {distance_str}m, C: {detected['confidence']:.2f}, {real_coords_str}"
+            text_x = x1
+            text_y = y1 - 10
+            cv2.putText(self.cv_image, text, (text_x, text_y), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
 
         # Display the image
         cv2.imshow('Person Visualization', self.cv_image)

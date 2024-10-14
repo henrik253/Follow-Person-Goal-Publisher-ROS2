@@ -1,0 +1,36 @@
+[2.799s] Invoking command in '/home/student/Desktop/workspace/src/navigation': PYTHONPATH=/home/student/Desktop/workspace/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/student/Desktop/workspace/build/navigation/build install --record /home/student/Desktop/workspace/build/navigation/install.log --single-version-externally-managed install_data
+[3.539s] running egg_info
+[3.542s] creating ../../build/navigation/navigation.egg-info
+[3.542s] writing ../../build/navigation/navigation.egg-info/PKG-INFO
+[3.543s] writing dependency_links to ../../build/navigation/navigation.egg-info/dependency_links.txt
+[3.543s] writing entry points to ../../build/navigation/navigation.egg-info/entry_points.txt
+[3.543s] writing requirements to ../../build/navigation/navigation.egg-info/requires.txt
+[3.543s] writing top-level names to ../../build/navigation/navigation.egg-info/top_level.txt
+[3.544s] writing manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[3.547s] reading manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[3.548s] writing manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[3.549s] running build
+[3.549s] running build_py
+[3.549s] creating /home/student/Desktop/workspace/build/navigation/build
+[3.549s] creating /home/student/Desktop/workspace/build/navigation/build/lib
+[3.549s] creating /home/student/Desktop/workspace/build/navigation/build/lib/navigation
+[3.549s] copying navigation/__init__.py -> /home/student/Desktop/workspace/build/navigation/build/lib/navigation
+[3.550s] running install
+[3.550s] running install_lib
+[3.551s] creating /home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages/navigation
+[3.551s] copying /home/student/Desktop/workspace/build/navigation/build/lib/navigation/__init__.py -> /home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages/navigation
+[3.552s] byte-compiling /home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages/navigation/__init__.py to __init__.cpython-310.pyc
+[3.552s] running install_data
+[3.553s] creating /home/student/Desktop/workspace/install/navigation/share/ament_index
+[3.553s] creating /home/student/Desktop/workspace/install/navigation/share/ament_index/resource_index
+[3.553s] creating /home/student/Desktop/workspace/install/navigation/share/ament_index/resource_index/packages
+[3.553s] copying resource/navigation -> /home/student/Desktop/workspace/install/navigation/share/ament_index/resource_index/packages
+[3.553s] copying package.xml -> /home/student/Desktop/workspace/install/navigation/share/navigation
+[3.553s] creating /home/student/Desktop/workspace/install/navigation/share/navigation/launch
+[3.553s] copying launch/nav2_launch.py -> /home/student/Desktop/workspace/install/navigation/share/navigation/launch
+[3.554s] running install_egg_info
+[3.557s] Copying ../../build/navigation/navigation.egg-info to /home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages/navigation-0.0.0-py3.10.egg-info
+[3.559s] running install_scripts
+[3.596s] Installing nav2_node script to /home/student/Desktop/workspace/install/navigation/lib/navigation
+[3.597s] writing list of installed files to '/home/student/Desktop/workspace/build/navigation/install.log'
+[3.653s] Invoked command in '/home/student/Desktop/workspace/src/navigation' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/student/Desktop/workspace/build/navigation/build install --record /home/student/Desktop/workspace/build/navigation/install.log --single-version-externally-managed install_data
