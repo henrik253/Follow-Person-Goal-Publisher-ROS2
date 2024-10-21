@@ -10,7 +10,7 @@ This project is part of a bachelor thesis at **Hochschule Trier** and is current
 - ATMOS
 - NavTrack
 - FollowMe
-
+  
 ## Run this Project
 
 To build and run the project, follow these steps:
@@ -18,22 +18,20 @@ To build and run the project, follow these steps:
 1. Build the workspace:
    ```bash
    colcon build --symlink-install
+   ```
    
-To launch the main application, run:
-
-```bash
-ros2 launch main main_launch.py
-
+2. To launch the main application, run:
+   ```bash
+   ros2 launch main main_launch.py
+   ```
 
 ## For More Information and Debugging
-
-To build and run the project, follow these steps:
 
 1. Build the workspace:
    ```bash
    colcon build --symlink-install
-   
-To launch the main application, run:
-
-```bash
-source launch/run.sh
+   ```
+To launch the main application, run: 
+   ```bash
+   source launch/run.sh
+   ```
