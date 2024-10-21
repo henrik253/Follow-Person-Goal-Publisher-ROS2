@@ -1,0 +1,19 @@
+[1.995s] Invoking command in '/home/student/Desktop/workspace/build/navigation': PYTHONPATH=/home/student/Desktop/workspace/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/navigation/build --no-deps symlink_data
+[2.325s] running develop
+[2.325s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.325s]   warnings.warn(
+[2.609s] running egg_info
+[2.610s] writing navigation.egg-info/PKG-INFO
+[2.610s] writing dependency_links to navigation.egg-info/dependency_links.txt
+[2.610s] writing entry points to navigation.egg-info/entry_points.txt
+[2.610s] writing requirements to navigation.egg-info/requires.txt
+[2.610s] writing top-level names to navigation.egg-info/top_level.txt
+[2.612s] reading manifest file 'navigation.egg-info/SOURCES.txt'
+[2.613s] writing manifest file 'navigation.egg-info/SOURCES.txt'
+[2.654s] running build_ext
+[2.654s] Creating /home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages/navigation.egg-link (link to .)
+[2.654s] Installing nav2_node script to /home/student/Desktop/workspace/install/navigation/lib/navigation
+[2.654s] 
+[2.654s] Installed /home/student/Desktop/workspace/build/navigation
+[2.654s] running symlink_data
+[2.714s] Invoked command in '/home/student/Desktop/workspace/build/navigation' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/navigation/build --no-deps symlink_data

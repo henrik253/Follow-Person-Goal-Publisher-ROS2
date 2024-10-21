@@ -1,0 +1,4 @@
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:355: UserWarning: Unbuilt egg for sensor-presentation 0.0.0 (/home/student/Desktop/workspace/build/sensor_presentation)
+  self.local_index = Environment(self.shadow_path + sys.path)

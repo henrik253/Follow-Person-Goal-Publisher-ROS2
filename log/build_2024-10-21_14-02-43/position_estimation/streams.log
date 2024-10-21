@@ -1,0 +1,30 @@
+[3.329s] Invoking command in '/home/student/Desktop/workspace/build/position_estimation': PYTHONPATH=/home/student/Desktop/workspace/build/position_estimation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/position_estimation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/student/Desktop/workspace/build/position_estimation/build
+[4.136s] running develop
+[4.142s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.142s]   warnings.warn(
+[4.719s] Removing /home/student/Desktop/workspace/install/position_estimation/lib/python3.10/site-packages/position-estimation.egg-link (link to .)
+[4.796s] Invoked command in '/home/student/Desktop/workspace/build/position_estimation' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/position_estimation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/position_estimation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/student/Desktop/workspace/build/position_estimation/build
+[4.797s] Invoking command in '/home/student/Desktop/workspace/src/position_estimation': PYTHONPATH=/home/student/Desktop/workspace/build/position_estimation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/position_estimation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/position_estimation build --build-base /home/student/Desktop/workspace/build/position_estimation/build install --record /home/student/Desktop/workspace/build/position_estimation/install.log --single-version-externally-managed
+[5.576s] running egg_info
+[5.581s] writing ../../build/position_estimation/position_estimation.egg-info/PKG-INFO
+[5.582s] writing dependency_links to ../../build/position_estimation/position_estimation.egg-info/dependency_links.txt
+[5.582s] writing entry points to ../../build/position_estimation/position_estimation.egg-info/entry_points.txt
+[5.583s] writing requirements to ../../build/position_estimation/position_estimation.egg-info/requires.txt
+[5.585s] writing top-level names to ../../build/position_estimation/position_estimation.egg-info/top_level.txt
+[5.591s] reading manifest file '../../build/position_estimation/position_estimation.egg-info/SOURCES.txt'
+[5.593s] writing manifest file '../../build/position_estimation/position_estimation.egg-info/SOURCES.txt'
+[5.595s] running build
+[5.596s] running build_py
+[5.597s] running install
+[5.598s] running install_lib
+[5.600s] creating /home/student/Desktop/workspace/install/position_estimation/lib/python3.10/site-packages/position_estimation
+[5.601s] copying /home/student/Desktop/workspace/build/position_estimation/build/lib/position_estimation/position_estimation_node.py -> /home/student/Desktop/workspace/install/position_estimation/lib/python3.10/site-packages/position_estimation
+[5.602s] copying /home/student/Desktop/workspace/build/position_estimation/build/lib/position_estimation/__init__.py -> /home/student/Desktop/workspace/install/position_estimation/lib/python3.10/site-packages/position_estimation
+[5.604s] byte-compiling /home/student/Desktop/workspace/install/position_estimation/lib/python3.10/site-packages/position_estimation/position_estimation_node.py to position_estimation_node.cpython-310.pyc
+[5.608s] byte-compiling /home/student/Desktop/workspace/install/position_estimation/lib/python3.10/site-packages/position_estimation/__init__.py to __init__.cpython-310.pyc
+[5.609s] running install_egg_info
+[5.612s] Copying ../../build/position_estimation/position_estimation.egg-info to /home/student/Desktop/workspace/install/position_estimation/lib/python3.10/site-packages/position_estimation-0.0.1-py3.10.egg-info
+[5.614s] running install_scripts
+[5.650s] Installing position_estimation_node script to /home/student/Desktop/workspace/install/position_estimation/lib/position_estimation
+[5.651s] writing list of installed files to '/home/student/Desktop/workspace/build/position_estimation/install.log'
+[5.729s] Invoked command in '/home/student/Desktop/workspace/src/position_estimation' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/position_estimation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/position_estimation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/position_estimation build --build-base /home/student/Desktop/workspace/build/position_estimation/build install --record /home/student/Desktop/workspace/build/position_estimation/install.log --single-version-externally-managed

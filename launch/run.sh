@@ -24,7 +24,7 @@ Y_OFFSET=0  # You can change this to position them vertically if needed
 
 
 xterm -geometry $TERMINAL_WIDTH"x"$TERMINAL_HEIGHT"+"$((0 * X_OFFSET))"+"$Y_OFFSET \
--e "cd '$CURRENT_DIR';cd ..; source install/setup.bash; ros2 launch zed_wrapper zed_camera.launch.py camera_model:=zed2i use_sim_time:=true; exec bash" &
+-e "cd '$CURRENT_DIR';cd ..; source install/setup.bash; ros2 launch zed_wrapper zed_camera.launch.py camera_model:=zed2i; exec bash" & #use_sim_time:=true
 
 xterm -geometry $TERMINAL_WIDTH"x"$TERMINAL_HEIGHT"+"$((1 * X_OFFSET))"+"$Y_OFFSET \
 -e "cd '$CURRENT_DIR';cd ..; source install/setup.bash; ros2 run yolo_tracking object_detection_node; exec bash" &

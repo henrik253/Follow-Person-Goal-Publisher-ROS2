@@ -1,0 +1,198 @@
+[0.602s] Invoking command in '/home/student/Desktop/workspace/build/object_tracking_messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/navigation:/home/student/Desktop/workspace/install/main:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/sensor_presentation:/home/student/Desktop/workspace/install/position_estimation:/opt/ros/humble /home/student/.local/bin/cmake /home/student/Desktop/workspace/src/object_tracking_messages -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/Desktop/workspace/install/object_tracking_messages
+[1.186s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.186s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.186s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.186s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.186s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.186s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.186s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.186s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.186s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.213s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.237s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.263s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.263s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.264s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.309s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.324s] -- Added test 'lint_cmake' to check CMake code style
+[1.325s] -- Added test 'xmllint' to check XML markup files
+[1.329s] -- Configuring done (0.7s)
+[1.360s] -- Generating done (0.0s)
+[1.362s] -- Build files have been written to: /home/student/Desktop/workspace/build/object_tracking_messages
+[1.483s] Invoked command in '/home/student/Desktop/workspace/build/object_tracking_messages' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/navigation:/home/student/Desktop/workspace/install/main:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/sensor_presentation:/home/student/Desktop/workspace/install/position_estimation:/opt/ros/humble /home/student/.local/bin/cmake /home/student/Desktop/workspace/src/object_tracking_messages -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/Desktop/workspace/install/object_tracking_messages
+[1.484s] Invoking command in '/home/student/Desktop/workspace/build/object_tracking_messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/navigation:/home/student/Desktop/workspace/install/main:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/sensor_presentation:/home/student/Desktop/workspace/install/position_estimation:/opt/ros/humble /home/student/.local/bin/cmake --build /home/student/Desktop/workspace/build/object_tracking_messages -- -j16 -l16
+[1.537s] [  1%] Built target object_tracking_messages__cpp
+[1.546s] [  1%] Built target ament_cmake_python_symlink_object_tracking_messages
+[1.547s] [ 12%] Built target object_tracking_messages__rosidl_generator_c
+[1.575s] [ 23%] Built target object_tracking_messages__rosidl_typesupport_introspection_cpp
+[1.579s] [ 34%] Built target object_tracking_messages__rosidl_typesupport_cpp
+[1.585s] [ 49%] Built target object_tracking_messages__rosidl_typesupport_fastrtps_c
+[1.586s] [ 56%] Built target object_tracking_messages__rosidl_typesupport_fastrtps_cpp
+[1.588s] [ 67%] Built target object_tracking_messages__rosidl_typesupport_introspection_c
+[1.599s] [ 78%] Built target object_tracking_messages__rosidl_typesupport_c
+[1.614s] [ 78%] Built target object_tracking_messages
+[1.630s] [ 80%] Built target object_tracking_messages__py
+[1.652s] [ 89%] Built target object_tracking_messages__rosidl_generator_py
+[1.669s] [ 92%] Built target object_tracking_messages__rosidl_typesupport_c__pyext
+[1.671s] [ 96%] Built target object_tracking_messages__rosidl_typesupport_fastrtps_c__pyext
+[1.672s] [100%] Built target object_tracking_messages__rosidl_typesupport_introspection_c__pyext
+[1.902s] running egg_info
+[1.903s] writing object_tracking_messages.egg-info/PKG-INFO
+[1.903s] writing dependency_links to object_tracking_messages.egg-info/dependency_links.txt
+[1.903s] writing top-level names to object_tracking_messages.egg-info/top_level.txt
+[1.905s] reading manifest file 'object_tracking_messages.egg-info/SOURCES.txt'
+[1.906s] writing manifest file 'object_tracking_messages.egg-info/SOURCES.txt'
+[1.935s] [100%] Built target ament_cmake_python_build_object_tracking_messages_egg
+[1.946s] Invoked command in '/home/student/Desktop/workspace/build/object_tracking_messages' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/navigation:/home/student/Desktop/workspace/install/main:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/sensor_presentation:/home/student/Desktop/workspace/install/position_estimation:/opt/ros/humble /home/student/.local/bin/cmake --build /home/student/Desktop/workspace/build/object_tracking_messages -- -j16 -l16
+[2.151s] Invoking command in '/home/student/Desktop/workspace/build/object_tracking_messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/navigation:/home/student/Desktop/workspace/install/main:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/sensor_presentation:/home/student/Desktop/workspace/install/position_estimation:/opt/ros/humble /home/student/.local/bin/cmake --install /home/student/Desktop/workspace/build/object_tracking_messages
+[2.182s] -- Install configuration: ""
+[2.183s] -- Execute custom install script
+[2.183s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/ament_index/resource_index/rosidl_interfaces/object_tracking_messages
+[2.184s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/bounding_box.h
+[2.184s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/bounding_box__functions.h
+[2.184s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/bounding_box__struct.h
+[2.184s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/bounding_box__type_support.h
+[2.184s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_person__functions.h
+[2.184s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_person__struct.h
+[2.184s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_person__type_support.h
+[2.185s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_persons__functions.h
+[2.185s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_persons__struct.h
+[2.185s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_persons__type_support.h
+[2.185s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_distance__functions.h
+[2.185s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_distance__struct.h
+[2.185s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_distance__type_support.h
+[2.185s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detected_person.h
+[2.186s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detected_persons.h
+[2.186s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/person_distance.h
+[2.186s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/rosidl_generator_c__visibility_control.h
+[2.186s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/environment/library_path.sh
+[2.186s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/environment/library_path.dsv
+[2.186s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/bounding_box__rosidl_typesupport_fastrtps_c.h
+[2.186s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_person__rosidl_typesupport_fastrtps_c.h
+[2.186s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_persons__rosidl_typesupport_fastrtps_c.h
+[2.186s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_distance__rosidl_typesupport_fastrtps_c.h
+[2.187s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.187s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/bounding_box__rosidl_typesupport_introspection_c.h
+[2.187s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_person__rosidl_typesupport_introspection_c.h
+[2.187s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_persons__rosidl_typesupport_introspection_c.h
+[2.187s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_distance__rosidl_typesupport_introspection_c.h
+[2.187s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.188s] [33mCMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:62 (file):
+[2.188s]   Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow
+[2.188s]   symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.
+[2.189s]   Use the cmake_policy command to set the policy and suppress this warning.
+[2.189s] Call Stack (most recent call first):
+[2.189s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:332 (ament_cmake_symlink_install_directory)
+[2.189s]   cmake_install.cmake:46 (include)
+[2.189s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.189s] [0m
+[2.189s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/bounding_box.hpp
+[2.189s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/bounding_box__builder.hpp
+[2.189s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/bounding_box__struct.hpp
+[2.190s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/bounding_box__traits.hpp
+[2.190s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_person__builder.hpp
+[2.190s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_person__struct.hpp
+[2.190s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_person__traits.hpp
+[2.190s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_persons__builder.hpp
+[2.190s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_persons__struct.hpp
+[2.190s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_persons__traits.hpp
+[2.191s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_distance__builder.hpp
+[2.191s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_distance__struct.hpp
+[2.191s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_distance__traits.hpp
+[2.191s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detected_person.hpp
+[2.191s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detected_persons.hpp
+[2.191s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/person_distance.hpp
+[2.191s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/bounding_box__rosidl_typesupport_fastrtps_cpp.hpp
+[2.192s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_person__rosidl_typesupport_fastrtps_cpp.hpp
+[2.192s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_persons__rosidl_typesupport_fastrtps_cpp.hpp
+[2.192s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_distance__rosidl_typesupport_fastrtps_cpp.hpp
+[2.192s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.193s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/bounding_box__rosidl_typesupport_introspection_cpp.hpp
+[2.193s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_person__rosidl_typesupport_introspection_cpp.hpp
+[2.193s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_persons__rosidl_typesupport_introspection_cpp.hpp
+[2.193s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_distance__rosidl_typesupport_introspection_cpp.hpp
+[2.193s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/environment/pythonpath.sh
+[2.193s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/environment/pythonpath.dsv
+[2.194s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages-0.0.0-py3.10.egg-info/PKG-INFO
+[2.194s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.194s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.194s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages-0.0.0-py3.10.egg-info/top_level.txt
+[2.195s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/__init__.py
+[2.195s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_c.c
+[2.195s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.195s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_introspection_c.c
+[2.195s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/libobject_tracking_messages__rosidl_generator_py.so
+[2.195s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/__init__.py
+[2.195s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_bounding_box.py
+[2.195s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_bounding_box_s.c
+[2.196s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_detected_person.py
+[2.196s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_detected_person_s.c
+[2.196s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_detected_persons.py
+[2.196s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_detected_persons_s.c
+[2.196s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_person_distance.py
+[2.196s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_person_distance_s.c
+[2.197s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/object_tracking_messages_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.197s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/object_tracking_messages_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.197s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/object_tracking_messages_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.197s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/object_tracking_messages_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.197s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/object_tracking_messages_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.197s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/object_tracking_messages_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.197s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/msg/BoundingBox.idl
+[2.197s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/msg/DetectedPerson.idl
+[2.197s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/msg/DetectedPersons.idl
+[2.198s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/msg/PersonDistance.idl
+[2.198s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/msg/BoundingBox.msg
+[2.198s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/msg/DetectedPerson.msg
+[2.198s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/msg/DetectedPersons.msg
+[2.198s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/msg/PersonDistance.msg
+[2.198s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/ament_index/resource_index/package_run_dependencies/object_tracking_messages
+[2.198s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/ament_index/resource_index/parent_prefix_path/object_tracking_messages
+[2.199s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/environment/ament_prefix_path.sh
+[2.199s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/environment/ament_prefix_path.dsv
+[2.199s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/environment/path.sh
+[2.199s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/environment/path.dsv
+[2.199s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/local_setup.bash
+[2.199s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/local_setup.sh
+[2.199s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/local_setup.zsh
+[2.200s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/local_setup.dsv
+[2.200s] -- Symlinking: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/package.dsv
+[2.203s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/ament_index/resource_index/packages/object_tracking_messages
+[2.203s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/rosidl_cmake-extras.cmake
+[2.203s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.203s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/ament_cmake_export_libraries-extras.cmake
+[2.203s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/ament_cmake_export_targets-extras.cmake
+[2.204s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.204s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.204s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.204s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/object_tracking_messagesConfig.cmake
+[2.205s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/object_tracking_messagesConfig-version.cmake
+[2.205s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/package.xml
+[2.205s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_generator_c.so
+[2.205s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_typesupport_fastrtps_c.so
+[2.206s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_typesupport_introspection_c.so
+[2.206s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_typesupport_c.so
+[2.206s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_typesupport_fastrtps_cpp.so
+[2.207s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_typesupport_introspection_cpp.so
+[2.207s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_typesupport_cpp.so
+[2.245s] Listing '/home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages'...
+[2.245s] Compiling '/home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/__init__.py'...
+[2.245s] Listing '/home/student/Desktop/workspace/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg'...
+[2.249s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_generator_py.so
+[2.249s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/export_object_tracking_messages__rosidl_generator_cExport.cmake
+[2.250s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/export_object_tracking_messages__rosidl_generator_cExport-noconfig.cmake
+[2.250s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/export_object_tracking_messages__rosidl_typesupport_fastrtps_cExport.cmake
+[2.250s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/export_object_tracking_messages__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.250s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/object_tracking_messages__rosidl_typesupport_introspection_cExport.cmake
+[2.250s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/object_tracking_messages__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.250s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/object_tracking_messages__rosidl_typesupport_cExport.cmake
+[2.250s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/object_tracking_messages__rosidl_typesupport_cExport-noconfig.cmake
+[2.251s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/export_object_tracking_messages__rosidl_generator_cppExport.cmake
+[2.251s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/export_object_tracking_messages__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.251s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/export_object_tracking_messages__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.251s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/object_tracking_messages__rosidl_typesupport_introspection_cppExport.cmake
+[2.251s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/object_tracking_messages__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.251s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/object_tracking_messages__rosidl_typesupport_cppExport.cmake
+[2.251s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/object_tracking_messages__rosidl_typesupport_cppExport-noconfig.cmake
+[2.251s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/export_object_tracking_messages__rosidl_generator_pyExport.cmake
+[2.251s] -- Up-to-date: /home/student/Desktop/workspace/install/object_tracking_messages/share/object_tracking_messages/cmake/export_object_tracking_messages__rosidl_generator_pyExport-noconfig.cmake
+[2.257s] Invoked command in '/home/student/Desktop/workspace/build/object_tracking_messages' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/navigation:/home/student/Desktop/workspace/install/main:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/sensor_presentation:/home/student/Desktop/workspace/install/position_estimation:/opt/ros/humble /home/student/.local/bin/cmake --install /home/student/Desktop/workspace/build/object_tracking_messages
