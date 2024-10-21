@@ -133,7 +133,6 @@ class PositionEstimationNode(Node):
         personDistanceMessage.real_world_coordinates = real_world_coordinates  
 
         self.positions_publisher.publish(personDistanceMessage)
-        self.get_logger().info(f"personDistanceMessage: {personDistanceMessage}")   
 
 
     def depth_callback(self, msg):
