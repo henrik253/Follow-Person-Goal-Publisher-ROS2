@@ -1,0 +1,19 @@
+[1.964s] Invoking command in '/home/student/Desktop/workspace/build/sensor_presentation': PYTHONPATH=/home/student/Desktop/workspace/build/sensor_presentation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/sensor_presentation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/sensor_presentation/build --no-deps symlink_data
+[2.307s] running develop
+[2.307s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.307s]   warnings.warn(
+[2.598s] running egg_info
+[2.598s] writing sensor_presentation.egg-info/PKG-INFO
+[2.598s] writing dependency_links to sensor_presentation.egg-info/dependency_links.txt
+[2.598s] writing entry points to sensor_presentation.egg-info/entry_points.txt
+[2.598s] writing requirements to sensor_presentation.egg-info/requires.txt
+[2.598s] writing top-level names to sensor_presentation.egg-info/top_level.txt
+[2.600s] reading manifest file 'sensor_presentation.egg-info/SOURCES.txt'
+[2.600s] writing manifest file 'sensor_presentation.egg-info/SOURCES.txt'
+[2.640s] running build_ext
+[2.640s] Creating /home/student/Desktop/workspace/install/sensor_presentation/lib/python3.10/site-packages/sensor-presentation.egg-link (link to .)
+[2.641s] Installing sensor_presentation_node script to /home/student/Desktop/workspace/install/sensor_presentation/lib/sensor_presentation
+[2.641s] 
+[2.641s] Installed /home/student/Desktop/workspace/build/sensor_presentation
+[2.641s] running symlink_data
+[2.674s] Invoked command in '/home/student/Desktop/workspace/build/sensor_presentation' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/sensor_presentation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/sensor_presentation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/sensor_presentation/build --no-deps symlink_data

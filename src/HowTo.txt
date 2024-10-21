@@ -66,4 +66,6 @@ OUSTER OS1
 -	colcon build --symlink-install // in workspace!!!
 -	. install/local_setup.bash // sourcing des skriptes in eigener Shell (nicht in neuer) z.B.  Umgebungsvariablen in der Shell zu ändern
 -	ros2 launch ouster_ros driver.launch.py  
+
+mit ip a um netze su sehen 
 		
