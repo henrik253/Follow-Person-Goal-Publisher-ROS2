@@ -1,45 +1,39 @@
-ROS2 Workspace: workspace
-Project Overview
+# ROS2 Workspace: workspace
 
-This project focuses on object tracking using the YOLO (You Only Look Once) algorithm in conjunction with the ZED 2i camera. The camera is utilized for detecting and measuring the distance to recognized persons. Once a person is detected, a mobile platform (GO1) follows them, enabling dynamic tracking in real-world environments. For path planning and navigation, the Nav2 stack is employed.
-Bachelor Thesis
+## Project Overview
 
-This project is part of a bachelor thesis at Hochschule Trier and is currently in the development phase.
+This project focuses on **object tracking** using the **YOLO (You Only Look Once)** algorithm in conjunction with the **ZED 2i camera**. The camera is utilized for detecting and measuring the distance to recognized persons. Once a person is detected, a mobile platform (GO1) follows them, enabling dynamic tracking in real-world environments. For path planning and navigation, the **Nav2** stack is employed.
 
-    ATMOS
-    NavTrack
-    FollowMe
+### Bachelor Thesis
 
-Run this Project
+This project is part of a bachelor thesis at **Hochschule Trier** and is currently in the development phase. It aims to adapt and analyze various tracking methods for mobile cognitive systems, specifically focusing on the following methodologies:
+- ATMOS
+- NavTrack
+- FollowMe
+
+## Run this Project
 
 To build and run the project, follow these steps:
 
-    Build the workspace:
+1. Build the workspace:
+   ```bash
+   colcon build --symlink-install
+   
+To launch the main application, run:
 
-    bash
+```bash
+ros2 launch main main_launch.py
 
-colcon build --symlink-install
 
-Launch the main application:
+## For More Information and Debugging
 
-bash
+To build and run the project, follow these steps:
 
-    ros2 launch main main_launch.py
+1. Build the workspace:
+   ```bash
+   colcon build --symlink-install
+   
+To launch the main application, run:
 
-For More Information and Debugging
-
-To gather more information and for debugging purposes, execute the following commands:
-
-    Build the workspace again:
-
-    bash
-
-colcon build --symlink-install
-
-Source the environment:
-
-bash
-
-    source launch/run.sh
-
-Feel free to modify any parts or add more details as needed!
+```bash
+source launch/run.sh
