@@ -6,10 +6,8 @@ This project focuses on **object tracking** using the **YOLO (You Only Look Once
 
 ### Bachelor Thesis
 
-This project is part of a bachelor thesis at **Hochschule Trier** and is currently in the development phase. It aims to adapt and analyze various tracking methods for mobile cognitive systems, specifically focusing on the following methodologies:
-- ATMOS
-- NavTrack
-- FollowMe
+This project is part of a bachelor thesis at **Hochschule Trier** and is currently in the development phase. 
+
   
 ## Run this Project
 
@@ -35,3 +33,9 @@ To launch the main application, run:
    ```bash
    source launch/run.sh
    ```
+
+
+### Possible names for this project
+- ATMOS
+- NavTrack
+- FollowMe
