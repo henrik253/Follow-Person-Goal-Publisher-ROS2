@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project focuses on **object tracking** using the **YOLO (You Only Look Once)** algorithm in conjunction with the **ZED 2i camera**. The camera is utilized for detecting and measuring the distance to recognized persons. Once a person is detected, a mobile platform (GO1) follows them, enabling dynamic tracking in real-world environments. For path planning and navigation, the **Nav2** stack is employed.
+This project focuses on **object tracking** using the **YOLO (You Only Look Once)** algorithm in conjunction with the **ZED 2i camera**. The camera is utilized for detecting and measuring the distance to recognized persons. Once a person is detected, a mobile platform (GO1) follows them, enabling dynamic tracking in real-world environments using **Ouster OS1 LiDAR**. For path planning and navigation, the **Nav2** stack is employed.
 
 ### Bachelor Thesis
 
