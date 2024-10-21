@@ -6,35 +6,29 @@ import os
 def generate_launch_description():
     model = os.environ.get('TURTLEBOT3_MODEL', 'burger')
 
-    # ZED Camera Node
-    zed_params = {
-        'use_sim_time': True
-    }
-
-    # SLAM Toolbox Node
-    slam_params = {
-        'use_sim_time': True
-    }
-
-    # RViz Node
-    rviz_params = {
-        'use_sim_time': True
-    }
-
-    # Robot State Publisher Node
-    robot_state_publisher_params = {
-        'use_sim_time': True
-    }
-
     return LaunchDescription([
-        # Start SLAM using slam_toolbox
         Node(
             package='slam_toolbox',
             executable='sync_slam_toolbox_node',
+            name='slam_toolbox',
             output='screen',
-            parameters=[slam_params]
+            parameters=[{'use_sim_time': False, 'queue_size': 10}],
+            remappings=[('/scan','/ouster/scan'),('/points','/filtered_points')],
         ),
-        # Start RViz for visualization
+          Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            name='static_os_lidar_transform',
+            output='screen',
+            parameters=[],
+            arguments=['0', '0', '0', '0', '0', '0', 'os_lidar', 'os_sensor']  # Adjust this as needed
+        ),
+        ])
+
+
+
+    # Start RViz for visualization
+'''
         Node(
             package='rviz2',
             executable='rviz2',
@@ -56,4 +50,4 @@ def generate_launch_description():
             parameters=[{'use_sim_time': True}]
         ),
         # Add your custom node for detecting and publishing targets here
-    ])
+        '''

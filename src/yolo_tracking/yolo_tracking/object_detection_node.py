@@ -86,7 +86,7 @@ class ObjectTracker(Node):
                     detectedPerson.bbox = boundingBox
                     persons.append(detectedPerson)
         except Exception as e: 
-            print(e)
+            person = [] # Debugging purpose. Exception is always thrown when no object is detected
 
       
         detectedPersonsMsg.persons = persons

@@ -1,0 +1,25 @@
+[2.680s] Invoking command in '/home/student/Desktop/workspace/build/ouster_voxel_filter': PYTHONPATH=/home/student/Desktop/workspace/build/ouster_voxel_filter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/ouster_voxel_filter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/ouster_voxel_filter/build --no-deps symlink_data
+[3.500s] running develop
+[3.501s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.501s]   warnings.warn(
+[4.463s] running egg_info
+[4.463s] creating ouster_voxel_filter.egg-info
+[4.464s] writing ouster_voxel_filter.egg-info/PKG-INFO
+[4.464s] writing dependency_links to ouster_voxel_filter.egg-info/dependency_links.txt
+[4.464s] writing entry points to ouster_voxel_filter.egg-info/entry_points.txt
+[4.465s] writing requirements to ouster_voxel_filter.egg-info/requires.txt
+[4.465s] writing top-level names to ouster_voxel_filter.egg-info/top_level.txt
+[4.465s] writing manifest file 'ouster_voxel_filter.egg-info/SOURCES.txt'
+[4.469s] reading manifest file 'ouster_voxel_filter.egg-info/SOURCES.txt'
+[4.470s] writing manifest file 'ouster_voxel_filter.egg-info/SOURCES.txt'
+[4.684s] running build_ext
+[4.685s] Creating /home/student/Desktop/workspace/install/ouster_voxel_filter/lib/python3.10/site-packages/ouster-voxel-filter.egg-link (link to .)
+[4.686s] 
+[4.686s] Installed /home/student/Desktop/workspace/build/ouster_voxel_filter
+[4.687s] running symlink_data
+[4.699s] creating /home/student/Desktop/workspace/install/ouster_voxel_filter/share/ament_index
+[4.699s] creating /home/student/Desktop/workspace/install/ouster_voxel_filter/share/ament_index/resource_index
+[4.699s] creating /home/student/Desktop/workspace/install/ouster_voxel_filter/share/ament_index/resource_index/packages
+[4.700s] symbolically linking /home/student/Desktop/workspace/build/ouster_voxel_filter/resource/ouster_voxel_filter -> /home/student/Desktop/workspace/install/ouster_voxel_filter/share/ament_index/resource_index/packages
+[4.700s] symbolically linking /home/student/Desktop/workspace/build/ouster_voxel_filter/package.xml -> /home/student/Desktop/workspace/install/ouster_voxel_filter/share/ouster_voxel_filter
+[4.855s] Invoked command in '/home/student/Desktop/workspace/build/ouster_voxel_filter' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/ouster_voxel_filter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/ouster_voxel_filter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/ouster_voxel_filter/build --no-deps symlink_data

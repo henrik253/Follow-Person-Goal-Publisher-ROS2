@@ -1,0 +1,3 @@
+[console_scripts]
+voxel_filter_node = ouster_voxel_filter.voxel_filter_node:main
+

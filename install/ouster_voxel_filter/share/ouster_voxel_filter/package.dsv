@@ -1,0 +1,9 @@
+source;share/ouster_voxel_filter/hook/pythonpath.ps1
+source;share/ouster_voxel_filter/hook/pythonpath.dsv
+source;share/ouster_voxel_filter/hook/pythonpath.sh
+source;share/ouster_voxel_filter/hook/ament_prefix_path.ps1
+source;share/ouster_voxel_filter/hook/ament_prefix_path.dsv
+source;share/ouster_voxel_filter/hook/ament_prefix_path.sh
+source;../../build/ouster_voxel_filter/share/ouster_voxel_filter/hook/pythonpath_develop.ps1
+source;../../build/ouster_voxel_filter/share/ouster_voxel_filter/hook/pythonpath_develop.dsv
+source;../../build/ouster_voxel_filter/share/ouster_voxel_filter/hook/pythonpath_develop.sh
