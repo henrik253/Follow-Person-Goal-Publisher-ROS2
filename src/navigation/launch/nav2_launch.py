@@ -6,26 +6,54 @@ import os
 def generate_launch_description():
     model = os.environ.get('TURTLEBOT3_MODEL', 'burger')
 
+    slam_remappings = [
+        ('/scan','/filtered_scan'),
+        ('/points','/filtered_points')
+        ]
+    
+    # DEBUG NAV2 
+    # 900 Points per message from LiDAR scan 
+    # 324 points per message from turtlebot example 
+
     return LaunchDescription([
         Node(
             package='slam_toolbox',
             executable='sync_slam_toolbox_node',
             name='slam_toolbox',
             output='screen',
-            parameters=[{'use_sim_time': False, 'queue_size': 10}],
-            remappings=[('/scan','/ouster/scan'),('/points','/filtered_points')],
+            parameters=[
+                '/home/student/Desktop/workspace/src/navigation/config/slam_params.yaml',
+                {'use_sim_time': False,  'debug_logging': True}],
+            remappings=slam_remappings,
+        ),
+         Node(
+            package='tf2_ros',
+            namespace = 'os_lidar_to_base_footprint',
+            executable='static_transform_publisher',
+            arguments= ["0.5", "0", "0", "0", "0", "0",  "os_lidar","base_footprint"]
         ),
           Node(
             package='tf2_ros',
+            namespace = 'scan_to_map',
             executable='static_transform_publisher',
-            name='static_os_lidar_transform',
-            output='screen',
-            parameters=[],
-            arguments=['0', '0', '0', '0', '0', '0', 'os_lidar', 'os_sensor']  # Adjust this as needed
+            arguments= ["0.0", "0", "0", "0", "0", "0",  "os_lidar","odom"]
+        ),
+           Node(
+            package='tf2_ros',
+            namespace = 'odom_to_baselink',
+            executable='static_transform_publisher',
+            arguments= ["0.0", "0", "0", "0", "0", "0",  "base_link","odom"] # maybe change these
         ),
         ])
 
 
+# base link -> odom 
+
+# base_link ->  os_lidar
+
+# --- Open RVIZ select map, odom, ...
+# select ouster scan (dont forget best effort)
+# TODO write seperate node for tf2 tree and lookup for tutorial! 
 
     # Start RViz for visualization
 '''

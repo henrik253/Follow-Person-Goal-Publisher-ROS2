@@ -2,6 +2,7 @@ package.xml
 setup.cfg
 setup.py
 ouster_voxel_filter/__init__.py
+ouster_voxel_filter/point_cloud_2_utils.py
 ouster_voxel_filter/voxel_filter_node.py
 ouster_voxel_filter.egg-info/PKG-INFO
 ouster_voxel_filter.egg-info/SOURCES.txt

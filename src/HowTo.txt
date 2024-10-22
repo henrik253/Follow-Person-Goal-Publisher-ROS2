@@ -69,3 +69,5 @@ OUSTER OS1
 
 mit ip a um netze su sehen 
 		
+Zweiter Ansatz: 
+.36 verwenden und in config auf website auf set Local setzen!
