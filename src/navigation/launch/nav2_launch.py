@@ -11,14 +11,21 @@ def generate_launch_description():
         ('/points','/filtered_points')
         ]
     
-    # DEBUG NAV2 
-    # 900 Points per message from LiDAR scan 
-    # 324 points per message from turtlebot example 
+    # TODO refactor
+        # from ament_index_python.packages import get_package_share_directory
+        # get_package_share_directory(directory) returns path to directory  
+    # Maybe use LaunchDescription and LaunchConfiguration  
+        # from launch import LaunchDescription
+        # 
+
+    # look in tb3_simulation_launch.py urdf = os.path.join(sim_dir, 'urdf', 'turtlebot3_waffle.urdf')
+
+    # robot state publisher neccessary for urdf file and publishs state to tf tree
 
     return LaunchDescription([
         Node(
             package='slam_toolbox',
-            executable='sync_slam_toolbox_node',
+            executable='sync_slam_toolbox_node', #online_sync_launch? 
             name='slam_toolbox',
             output='screen',
             parameters=[
@@ -26,23 +33,42 @@ def generate_launch_description():
                 {'use_sim_time': False,  'debug_logging': True}],
             remappings=slam_remappings,
         ),
-         Node(
+        # Transform from map to odom
+        Node(
             package='tf2_ros',
-            namespace = 'os_lidar_to_base_footprint',
+            namespace='map_to_odom',
             executable='static_transform_publisher',
-            arguments= ["0.5", "0", "0", "0", "0", "0",  "os_lidar","base_footprint"]
+            arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "map", "odom"]
         ),
-          Node(
+
+        # Transform from odom to base_footprint
+        Node(
             package='tf2_ros',
-            namespace = 'scan_to_map',
+            namespace='odom_to_base_footprint',
             executable='static_transform_publisher',
-            arguments= ["0.0", "0", "0", "0", "0", "0",  "os_lidar","odom"]
+            arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "odom", "base_footprint"]
         ),
-           Node(
+        # Transform from base_footprint to base_link
+        Node(
             package='tf2_ros',
-            namespace = 'odom_to_baselink',
+            namespace='base_footprint_to_base_link',
             executable='static_transform_publisher',
-            arguments= ["0.0", "0", "0", "0", "0", "0",  "base_link","odom"] # maybe change these
+            arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "base_footprint", "base_link"]
+        ),
+
+        # Transform from base_link to os_lidar
+        Node(
+            package='tf2_ros',
+            namespace='base_link_to_os_lidar',
+            executable='static_transform_publisher',
+            arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "base_link", "os_lidar"]
+        ),
+
+        Node(
+            package='tf2_ros',
+            namespace='base_link_to_os_lidar',
+            executable='static_transform_publisher',
+            arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "base_link", "base_scan"]
         ),
         ])
 
