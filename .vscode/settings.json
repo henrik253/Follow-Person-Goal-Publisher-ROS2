@@ -1,5 +1,6 @@
 {
     "python.analysis.extraPaths": [
         "./src/assets"
-    ]
+    ],
+    "cmake.sourceDirectory": "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces"
 }

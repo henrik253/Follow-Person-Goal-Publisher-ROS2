@@ -82,7 +82,8 @@ class VoxelFilterNode(Node):
         
         self.latest_filtered_scan = filtered_scan
         print(f'publishing scan with header: {msg.header}')
-        if self.count == 2:
+        if self.count == 3:
+            filtered_scan.header.stamp = self.get_clock().now().to_msg()
             self.laser_scan_publisher.publish(self.latest_filtered_scan)
             self.count = 0
         self.count += 1

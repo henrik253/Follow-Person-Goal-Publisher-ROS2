@@ -1,0 +1,21 @@
+[2.492s] Invoking command in '/home/student/Desktop/workspace/build/main': PYTHONPATH=/home/student/Desktop/workspace/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/main/build --no-deps symlink_data --force
+[2.916s] running develop
+[2.918s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.918s]   warnings.warn(
+[3.268s] running egg_info
+[3.268s] writing main.egg-info/PKG-INFO
+[3.269s] writing dependency_links to main.egg-info/dependency_links.txt
+[3.269s] writing entry points to main.egg-info/entry_points.txt
+[3.269s] writing requirements to main.egg-info/requires.txt
+[3.269s] writing top-level names to main.egg-info/top_level.txt
+[3.272s] reading manifest file 'main.egg-info/SOURCES.txt'
+[3.273s] writing manifest file 'main.egg-info/SOURCES.txt'
+[3.339s] running build_ext
+[3.339s] Creating /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main.egg-link (link to .)
+[3.339s] 
+[3.340s] Installed /home/student/Desktop/workspace/build/main
+[3.340s] running symlink_data
+[3.340s] symbolically linking /home/student/Desktop/workspace/build/main/resource/main -> /home/student/Desktop/workspace/install/main/share/ament_index/resource_index/packages
+[3.341s] symbolically linking /home/student/Desktop/workspace/build/main/package.xml -> /home/student/Desktop/workspace/install/main/share/main
+[3.341s] symbolically linking /home/student/Desktop/workspace/build/main/launch/main_launch.py -> /home/student/Desktop/workspace/install/main/share/main/launch
+[3.379s] Invoked command in '/home/student/Desktop/workspace/build/main' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/main/build --no-deps symlink_data --force

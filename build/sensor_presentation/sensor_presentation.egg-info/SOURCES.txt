@@ -1,6 +1,13 @@
 package.xml
 setup.cfg
 setup.py
+../../build/sensor_presentation/sensor_presentation.egg-info/PKG-INFO
+../../build/sensor_presentation/sensor_presentation.egg-info/SOURCES.txt
+../../build/sensor_presentation/sensor_presentation.egg-info/dependency_links.txt
+../../build/sensor_presentation/sensor_presentation.egg-info/entry_points.txt
+../../build/sensor_presentation/sensor_presentation.egg-info/requires.txt
+../../build/sensor_presentation/sensor_presentation.egg-info/top_level.txt
+../../build/sensor_presentation/sensor_presentation.egg-info/zip-safe
 resource/sensor_presentation
 sensor_presentation/__init__.py
 sensor_presentation/sensor_presentation_node.py
