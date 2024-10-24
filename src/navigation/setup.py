@@ -22,7 +22,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'nav2_node = navigation.nav2_node:main',  # Hier den Namen deiner Node anpassen
+            'nav2_node = navigation.nav2_node:main',
+            'odom_publisher_node = navigation.odom_publisher_node:main',
         ],
     },
 )

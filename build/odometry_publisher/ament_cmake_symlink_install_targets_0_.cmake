@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/student/Desktop/workspace/build/odometry_publisher/odom_publisher_node" "TARGETS" "odom_publisher_node" "DESTINATION" "lib/odometry_publisher")

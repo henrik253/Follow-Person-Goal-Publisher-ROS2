@@ -75,5 +75,20 @@ Zweiter Ansatz:
 
 
 ROSBAG 
-ros2 bag record /ouster/scan
-ros2 bag play rosbag2_2024_10_23-18_09_51/rosbag2_2024_10_23-18_09_51_0.db3 --loop
+	ros2 bag record /ouster/scan
+	ros2 bag play rosbag2_2024_10_23-18_09_51/rosbag2_2024_10_23-18_09_51_0.db3 --loop
+
+
+Turtlebot
+	Terminal1:
+		source  /opt/ros/humble/setup.bash
+		export TURTLEBOT3_MODEL=burger
+		export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:`ros2 pkg \
+		prefix turtlebot3_gazebo \
+		`/share/turtlebot3_gazebo/models/
+
+		ros2 launch turtlebot3_gazebo empty_world.launch.py
+	Terminal2: 
+		 export TURTLEBOT3_MODEL=burger
+		 ros2 run turtlebot3_teleop teleop_keyboard
+

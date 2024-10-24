@@ -5,40 +5,40 @@ import os
 
 def generate_launch_description():
     slam_remappings = [
-        ('/scan','/ouster/scan'),
+        ('/scan','/scan'),
         ('/points','/filtered_points')
         ]
 
     slam_toolbox_node = Node(
         package='slam_toolbox',
-        executable='sync_slam_toolbox_node', 
+        executable='async_slam_toolbox_node', 
         name='slam_toolbox',
         output='screen',
         parameters=[
             '/home/student/Desktop/workspace/src/navigation/config/slam_params.yaml',
-            {'use_sim_time': False, 'debug_logging': True}
+            {'use_sim_time': True, 'debug_logging': True}
         ],
-        arguments=['--ros-args', '--log-level', 'Debug'],
-        remappings=slam_remappings,
+       # arguments=['--ros-args', '--log-level', 'INFO'],
+        #remappings=slam_remappings,
     )
+    
+    # # Add namespaces to nodes! and alos 
+    # start_map_saver_server_cmd = Node(
+    #     package='nav2_map_server',
+    #     executable='map_saver_server',
+    #     output='screen',
+    #     #respawn=use_respawn,
+    #     #respawn_delay=2.0,
+    #    # arguments=['--ros-args', '--log-level', log_level],
+    #   #  parameters=[configured_params])
+    # )
 
-    # Add namespaces to nodes! and alos 
-    start_map_saver_server_cmd = Node(
-        package='nav2_map_server',
-        executable='map_saver_server',
-        output='screen',
-        #respawn=use_respawn,
-        #respawn_delay=2.0,
-       # arguments=['--ros-args', '--log-level', log_level],
-      #  parameters=[configured_params])
-    )
-
-    map_to_odom_transform_node = Node(
-        package='tf2_ros',
-        namespace='map_to_odom',
-        executable='static_transform_publisher',
-        arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "map", "odom"]
-    )
+    # map_to_odom_transform_node = Node(
+    #     package='tf2_ros',
+    #     namespace='map_to_odom',
+    #     executable='static_transform_publisher',
+    #     arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "map", "odom"]
+    # )
 
     odom_to_base_footprint_transform_node = Node(
         package='tf2_ros',
@@ -61,25 +61,27 @@ def generate_launch_description():
         arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "base_link", "os_lidar"]
     )
 
-    base_link_to_base_scan_transform_node = Node(
-        package='tf2_ros',
-        namespace='base_link_to_base_scan',
-        executable='static_transform_publisher',
-        arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "base_link", "base_scan"]
-    )
+    # base_link_to_base_scan_transform_node = Node(
+    #     package='tf2_ros',
+    #     namespace='base_link_to_base_scan',
+    #     executable='static_transform_publisher',
+    #     arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "base_link", "base_scan"]
+    # )
     
     # Create the launch description
     ld = LaunchDescription()
 
     # Add nodes to the launch description
     ld.add_action(slam_toolbox_node)
-    ld.add_action(start_map_saver_server_cmd)
+    # ld.add_action(start_map_saver_server_cmd)
 
-    ld.add_action(map_to_odom_transform_node)
+    # ld.add_action(map_to_odom_transform_node)
     ld.add_action(odom_to_base_footprint_transform_node)
     ld.add_action(base_footprint_to_base_link_transform_node)
     ld.add_action(base_link_to_os_lidar_transform_node)
-    ld.add_action(base_link_to_base_scan_transform_node)
+    
+    # ld.add_action(base_link_to_base_scan_transform_node)
+    
     return ld
 
 

@@ -1,0 +1,10 @@
+/home/student/Desktop/workspace/build/odometry_publisher/CMakeFiles/uninstall.dir
+/home/student/Desktop/workspace/build/odometry_publisher/CMakeFiles/odometry_publisher_uninstall.dir
+/home/student/Desktop/workspace/build/odometry_publisher/CMakeFiles/odom_publisher_node.dir
+/home/student/Desktop/workspace/build/odometry_publisher/CMakeFiles/test.dir
+/home/student/Desktop/workspace/build/odometry_publisher/CMakeFiles/edit_cache.dir
+/home/student/Desktop/workspace/build/odometry_publisher/CMakeFiles/rebuild_cache.dir
+/home/student/Desktop/workspace/build/odometry_publisher/CMakeFiles/list_install_components.dir
+/home/student/Desktop/workspace/build/odometry_publisher/CMakeFiles/install.dir
+/home/student/Desktop/workspace/build/odometry_publisher/CMakeFiles/install/local.dir
+/home/student/Desktop/workspace/build/odometry_publisher/CMakeFiles/install/strip.dir
