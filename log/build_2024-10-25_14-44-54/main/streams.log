@@ -1,0 +1,27 @@
+[2.622s] Invoking command in '/home/student/Desktop/workspace/build/main': PYTHONPATH=/home/student/Desktop/workspace/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/main/build --no-deps symlink_data
+[3.208s] running develop
+[3.209s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.209s]   warnings.warn(
+[3.926s] running egg_info
+[3.926s] creating main.egg-info
+[3.927s] writing main.egg-info/PKG-INFO
+[3.928s] writing dependency_links to main.egg-info/dependency_links.txt
+[3.929s] writing entry points to main.egg-info/entry_points.txt
+[3.929s] writing requirements to main.egg-info/requires.txt
+[3.930s] writing top-level names to main.egg-info/top_level.txt
+[3.931s] writing manifest file 'main.egg-info/SOURCES.txt'
+[3.934s] reading manifest file 'main.egg-info/SOURCES.txt'
+[3.946s] writing manifest file 'main.egg-info/SOURCES.txt'
+[4.118s] running build_ext
+[4.138s] Creating /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main.egg-link (link to .)
+[4.138s] 
+[4.138s] Installed /home/student/Desktop/workspace/build/main
+[4.139s] running symlink_data
+[4.139s] creating /home/student/Desktop/workspace/install/main/share/ament_index
+[4.139s] creating /home/student/Desktop/workspace/install/main/share/ament_index/resource_index
+[4.139s] creating /home/student/Desktop/workspace/install/main/share/ament_index/resource_index/packages
+[4.139s] symbolically linking /home/student/Desktop/workspace/build/main/resource/main -> /home/student/Desktop/workspace/install/main/share/ament_index/resource_index/packages
+[4.139s] symbolically linking /home/student/Desktop/workspace/build/main/package.xml -> /home/student/Desktop/workspace/install/main/share/main
+[4.139s] creating /home/student/Desktop/workspace/install/main/share/main/launch
+[4.139s] symbolically linking /home/student/Desktop/workspace/build/main/launch/main_launch.py -> /home/student/Desktop/workspace/install/main/share/main/launch
+[4.294s] Invoked command in '/home/student/Desktop/workspace/build/main' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/main/build --no-deps symlink_data

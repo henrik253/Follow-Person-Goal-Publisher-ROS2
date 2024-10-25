@@ -95,29 +95,7 @@ class VoxelFilterNode(Node):
             x, y, z, _, _, _, _, _, _ = arr  # Ignore other values
             vector = [x, y, z]
             sol.append(vector)
-        return sol, []
-
-    def array_to_pointcloud2(self, points, header):
-        # Create PointCloud2 message from numpy array
-        msg = PointCloud2()
-        msg.header = header
-        msg.height = 1
-        msg.width = points.shape[0]
-        msg.is_dense = True
-        msg.is_bigendian = False
-        msg.point_step = 12  # 3 floats (x, y, z) * 4 bytes each
-        msg.row_step = msg.point_step * msg.width
-
-        # Set fields for the PointCloud2 message
-        msg.fields = [
-            PointField(name='x', offset=0, datatype=PointField.FLOAT32, count=1),
-            PointField(name='y', offset=4, datatype=PointField.FLOAT32, count=1),
-            PointField(name='z', offset=8, datatype=PointField.FLOAT32, count=1)
-        ]
-
-        msg.data = points.astype(np.float32).tobytes()  # Convert to float32
-        
-        return msg
+        return np.array(sol), []
 
 
 def main(args=None):

@@ -1,0 +1,25 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+creating ouster_voxel_filter.egg-info
+writing ouster_voxel_filter.egg-info/PKG-INFO
+writing dependency_links to ouster_voxel_filter.egg-info/dependency_links.txt
+writing entry points to ouster_voxel_filter.egg-info/entry_points.txt
+writing requirements to ouster_voxel_filter.egg-info/requires.txt
+writing top-level names to ouster_voxel_filter.egg-info/top_level.txt
+writing manifest file 'ouster_voxel_filter.egg-info/SOURCES.txt'
+reading manifest file 'ouster_voxel_filter.egg-info/SOURCES.txt'
+writing manifest file 'ouster_voxel_filter.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/student/Desktop/workspace/install/ouster_voxel_filter/lib/python3.10/site-packages/ouster-voxel-filter.egg-link (link to .)
+Installing odom_publisher script to /home/student/Desktop/workspace/install/ouster_voxel_filter/lib/ouster_voxel_filter
+Installing voxel_filter_node script to /home/student/Desktop/workspace/install/ouster_voxel_filter/lib/ouster_voxel_filter
+
+Installed /home/student/Desktop/workspace/build/ouster_voxel_filter
+running symlink_data
+creating /home/student/Desktop/workspace/install/ouster_voxel_filter/share/ament_index
+creating /home/student/Desktop/workspace/install/ouster_voxel_filter/share/ament_index/resource_index
+creating /home/student/Desktop/workspace/install/ouster_voxel_filter/share/ament_index/resource_index/packages
+symbolically linking /home/student/Desktop/workspace/build/ouster_voxel_filter/resource/ouster_voxel_filter -> /home/student/Desktop/workspace/install/ouster_voxel_filter/share/ament_index/resource_index/packages
+symbolically linking /home/student/Desktop/workspace/build/ouster_voxel_filter/package.xml -> /home/student/Desktop/workspace/install/ouster_voxel_filter/share/ouster_voxel_filter

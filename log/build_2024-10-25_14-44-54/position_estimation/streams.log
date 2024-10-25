@@ -1,0 +1,20 @@
+[2.643s] Invoking command in '/home/student/Desktop/workspace/build/position_estimation': PYTHONPATH=/home/student/Desktop/workspace/build/position_estimation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/position_estimation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/position_estimation/build --no-deps
+[3.240s] running develop
+[3.241s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.241s]   warnings.warn(
+[4.010s] running egg_info
+[4.010s] creating position_estimation.egg-info
+[4.011s] writing position_estimation.egg-info/PKG-INFO
+[4.012s] writing dependency_links to position_estimation.egg-info/dependency_links.txt
+[4.012s] writing entry points to position_estimation.egg-info/entry_points.txt
+[4.013s] writing requirements to position_estimation.egg-info/requires.txt
+[4.013s] writing top-level names to position_estimation.egg-info/top_level.txt
+[4.016s] writing manifest file 'position_estimation.egg-info/SOURCES.txt'
+[4.025s] reading manifest file 'position_estimation.egg-info/SOURCES.txt'
+[4.025s] writing manifest file 'position_estimation.egg-info/SOURCES.txt'
+[4.242s] running build_ext
+[4.242s] Creating /home/student/Desktop/workspace/install/position_estimation/lib/python3.10/site-packages/position-estimation.egg-link (link to .)
+[4.266s] Installing position_estimation_node script to /home/student/Desktop/workspace/install/position_estimation/lib/position_estimation
+[4.266s] 
+[4.266s] Installed /home/student/Desktop/workspace/build/position_estimation
+[4.440s] Invoked command in '/home/student/Desktop/workspace/build/position_estimation' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/position_estimation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/position_estimation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/position_estimation/build --no-deps

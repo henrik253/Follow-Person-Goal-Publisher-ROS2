@@ -1,0 +1,23 @@
+[2.562s] Invoking command in '/home/student/Desktop/workspace/build/navigation': PYTHONPATH=/home/student/Desktop/workspace/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/navigation/build --no-deps symlink_data --force
+[2.895s] running develop
+[2.895s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.895s]   warnings.warn(
+[3.170s] running egg_info
+[3.171s] writing navigation.egg-info/PKG-INFO
+[3.171s] writing dependency_links to navigation.egg-info/dependency_links.txt
+[3.171s] writing entry points to navigation.egg-info/entry_points.txt
+[3.171s] writing requirements to navigation.egg-info/requires.txt
+[3.171s] writing top-level names to navigation.egg-info/top_level.txt
+[3.173s] reading manifest file 'navigation.egg-info/SOURCES.txt'
+[3.174s] writing manifest file 'navigation.egg-info/SOURCES.txt'
+[3.214s] running build_ext
+[3.214s] Creating /home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages/navigation.egg-link (link to .)
+[3.215s] Installing nav2_node script to /home/student/Desktop/workspace/install/navigation/lib/navigation
+[3.215s] Installing odom_publisher_node script to /home/student/Desktop/workspace/install/navigation/lib/navigation
+[3.215s] 
+[3.215s] Installed /home/student/Desktop/workspace/build/navigation
+[3.215s] running symlink_data
+[3.215s] symbolically linking /home/student/Desktop/workspace/build/navigation/resource/navigation -> /home/student/Desktop/workspace/install/navigation/share/ament_index/resource_index/packages
+[3.215s] symbolically linking /home/student/Desktop/workspace/build/navigation/package.xml -> /home/student/Desktop/workspace/install/navigation/share/navigation
+[3.215s] symbolically linking /home/student/Desktop/workspace/build/navigation/launch/nav2_launch.py -> /home/student/Desktop/workspace/install/navigation/share/navigation/launch
+[3.249s] Invoked command in '/home/student/Desktop/workspace/build/navigation' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/navigation/build --no-deps symlink_data --force
