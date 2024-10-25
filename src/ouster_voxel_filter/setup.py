@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'voxel_filter_node = ouster_voxel_filter.voxel_filter_node:main'
+            'voxel_filter_node = ouster_voxel_filter.voxel_filter_node:main',
+            'odom_publisher = ouster_voxel_filter.odom_publisher:main',
         ],
     },
 )
