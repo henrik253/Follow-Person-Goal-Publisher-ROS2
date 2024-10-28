@@ -92,3 +92,54 @@ Turtlebot
 		 export TURTLEBOT3_MODEL=burger
 		 ros2 run turtlebot3_teleop teleop_keyboard
 
+
+Running Turtlebot (SLAM) Navigating While Mapping
+	source /opt/ros/humble/setup.bash
+	export TURTLEBOT3_MODEL=waffle
+	export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models
+	ros2 launch nav2_bringup tb3_simulation_launch.py slam:=True
+
+
+tb3_simulation_launch.py Analyse # when slam:=True !!!!
+		start_robot_state_publisher_cmd = Node(
+			condition=IfCondition(use_robot_state_pub),
+			package='robot_state_publisher',
+			executable='robot_state_publisher',
+			name='robot_state_publisher',
+			namespace=namespace,
+			output='screen',
+			parameters=[{'use_sim_time': use_sim_time,
+						'robot_description': robot_description}],
+			remappings=remappings)
+
+bringup_launch.py
+		Node(  # use this for improvement of perfomance by running the nodes in a single proccess!
+            condition=IfCondition(use_composition),
+            name='nav2_container',
+            package='rclcpp_components',
+            executable='component_container_isolated',
+            parameters=[configured_params, {'autostart': autostart}],
+            arguments=['--ros-args', '--log-level', log_level],
+            remappings=remappings,
+            output='screen')
+
+		# Launch SLAM
+		IncludeLaunchDescription(
+					PythonLaunchDescriptionSource(os.path.join(launch_dir, 'slam_launch.py')),
+					condition=IfCondition(slam),
+					launch_arguments={'namespace': namespace,
+									'use_sim_time': use_sim_time,
+									'autostart': autostart,
+									'use_respawn': use_respawn,
+									'params_file': params_file}.items())
+
+		# Launch navigation
+		 IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(os.path.join(launch_dir, 'navigation_launch.py')),
+            launch_arguments={'namespace': namespace,
+                              'use_sim_time': use_sim_time,
+                              'autostart': autostart,
+                              'params_file': params_file,
+                              'use_composition': use_composition,
+                              'use_respawn': use_respawn,
+                              'container_name': 'nav2_container'}.items()),

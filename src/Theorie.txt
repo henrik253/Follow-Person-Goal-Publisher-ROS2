@@ -28,3 +28,9 @@ OUSTER OS1
 	Hostname in driver params eintragen 
 	colcon build --symlink-install
 	. install/local_setup.bash // sourcing des skriptes in eigener Shell (nicht in neuer) z.B. Umgebungsvariablen in der Shell zu ändern
+
+
+
+PLAN
+- Baue Komponente zur dynamischen Navigation (in der Simulation)! 
+- 

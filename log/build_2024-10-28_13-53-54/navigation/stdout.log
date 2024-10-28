@@ -1,0 +1,22 @@
+running develop
+running egg_info
+writing navigation.egg-info/PKG-INFO
+writing dependency_links to navigation.egg-info/dependency_links.txt
+writing entry points to navigation.egg-info/entry_points.txt
+writing requirements to navigation.egg-info/requires.txt
+writing top-level names to navigation.egg-info/top_level.txt
+reading manifest file 'navigation.egg-info/SOURCES.txt'
+writing manifest file 'navigation.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages/navigation.egg-link (link to .)
+Installing nav2_node script to /home/student/Desktop/workspace/install/navigation/lib/navigation
+Installing odom_publisher_node script to /home/student/Desktop/workspace/install/navigation/lib/navigation
+
+Installed /home/student/Desktop/workspace/build/navigation
+running symlink_data
+symbolically linking /home/student/Desktop/workspace/build/navigation/resource/navigation -> /home/student/Desktop/workspace/install/navigation/share/ament_index/resource_index/packages
+symbolically linking /home/student/Desktop/workspace/build/navigation/package.xml -> /home/student/Desktop/workspace/install/navigation/share/navigation
+symbolically linking /home/student/Desktop/workspace/build/navigation/launch/nav2_launch.py -> /home/student/Desktop/workspace/install/navigation/share/navigation/launch
+symbolically linking /home/student/Desktop/workspace/build/navigation/launch/navigation_launch.py -> /home/student/Desktop/workspace/install/navigation/share/navigation/launch
+symbolically linking /home/student/Desktop/workspace/build/navigation/launch/rviz_launch.py -> /home/student/Desktop/workspace/install/navigation/share/navigation/launch
+symbolically linking /home/student/Desktop/workspace/build/navigation/launch/SimulationLaunch.py -> /home/student/Desktop/workspace/install/navigation/share/navigation/launch

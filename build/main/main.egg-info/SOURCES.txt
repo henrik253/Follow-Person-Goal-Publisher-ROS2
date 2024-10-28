@@ -1,6 +1,13 @@
 package.xml
 setup.cfg
 setup.py
+../../build/main/main.egg-info/PKG-INFO
+../../build/main/main.egg-info/SOURCES.txt
+../../build/main/main.egg-info/dependency_links.txt
+../../build/main/main.egg-info/entry_points.txt
+../../build/main/main.egg-info/requires.txt
+../../build/main/main.egg-info/top_level.txt
+../../build/main/main.egg-info/zip-safe
 launch/main_launch.py
 main/__init__.py
 main.egg-info/PKG-INFO

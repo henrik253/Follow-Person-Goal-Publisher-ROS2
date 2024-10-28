@@ -13,7 +13,11 @@ ouster_voxel_filter/icp.py
 ouster_voxel_filter/odom_publisher.py
 ouster_voxel_filter/point_cloud_2_utils.py
 ouster_voxel_filter/voxel_filter_node.py
+ouster_voxel_filter.egg-info/PKG-INFO
+ouster_voxel_filter.egg-info/SOURCES.txt
+ouster_voxel_filter.egg-info/dependency_links.txt
+ouster_voxel_filter.egg-info/entry_points.txt
+ouster_voxel_filter.egg-info/requires.txt
+ouster_voxel_filter.egg-info/top_level.txt
+ouster_voxel_filter.egg-info/zip-safe
 resource/ouster_voxel_filter
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py

@@ -8,7 +8,10 @@ setup.py
 ../../build/navigation/navigation.egg-info/requires.txt
 ../../build/navigation/navigation.egg-info/top_level.txt
 ../../build/navigation/navigation.egg-info/zip-safe
+launch/SimulationLaunch.py
 launch/nav2_launch.py
+launch/navigation_launch.py
+launch/rviz_launch.py
 navigation/__init__.py
 navigation.egg-info/PKG-INFO
 navigation.egg-info/SOURCES.txt

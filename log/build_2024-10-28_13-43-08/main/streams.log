@@ -1,0 +1,35 @@
+[4.186s] Invoking command in '/home/student/Desktop/workspace/build/main': PYTHONPATH=/home/student/Desktop/workspace/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/student/Desktop/workspace/build/main/build
+[4.961s] running develop
+[4.961s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.961s]   warnings.warn(
+[5.885s] Removing /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main.egg-link (link to .)
+[6.021s] Invoked command in '/home/student/Desktop/workspace/build/main' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/student/Desktop/workspace/build/main/build
+[6.021s] Invoking command in '/home/student/Desktop/workspace/src/main': PYTHONPATH=/home/student/Desktop/workspace/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/main build --build-base /home/student/Desktop/workspace/build/main/build install --record /home/student/Desktop/workspace/build/main/install.log --single-version-externally-managed install_data --force
+[6.693s] running egg_info
+[6.696s] writing ../../build/main/main.egg-info/PKG-INFO
+[6.713s] writing dependency_links to ../../build/main/main.egg-info/dependency_links.txt
+[6.713s] writing entry points to ../../build/main/main.egg-info/entry_points.txt
+[6.713s] writing requirements to ../../build/main/main.egg-info/requires.txt
+[6.713s] writing top-level names to ../../build/main/main.egg-info/top_level.txt
+[6.717s] reading manifest file '../../build/main/main.egg-info/SOURCES.txt'
+[6.719s] writing manifest file '../../build/main/main.egg-info/SOURCES.txt'
+[6.719s] running build
+[6.719s] running build_py
+[6.719s] creating /home/student/Desktop/workspace/build/main/build
+[6.719s] creating /home/student/Desktop/workspace/build/main/build/lib
+[6.719s] creating /home/student/Desktop/workspace/build/main/build/lib/main
+[6.719s] copying main/__init__.py -> /home/student/Desktop/workspace/build/main/build/lib/main
+[6.719s] running install
+[6.720s] running install_lib
+[6.721s] creating /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main
+[6.721s] copying /home/student/Desktop/workspace/build/main/build/lib/main/__init__.py -> /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main
+[6.722s] byte-compiling /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main/__init__.py to __init__.cpython-310.pyc
+[6.723s] running install_data
+[6.723s] copying resource/main -> /home/student/Desktop/workspace/install/main/share/ament_index/resource_index/packages
+[6.723s] copying package.xml -> /home/student/Desktop/workspace/install/main/share/main
+[6.723s] copying launch/main_launch.py -> /home/student/Desktop/workspace/install/main/share/main/launch
+[6.723s] running install_egg_info
+[6.741s] Copying ../../build/main/main.egg-info to /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main-0.0.0-py3.10.egg-info
+[6.742s] running install_scripts
+[6.792s] writing list of installed files to '/home/student/Desktop/workspace/build/main/install.log'
+[6.891s] Invoked command in '/home/student/Desktop/workspace/src/main' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/main build --build-base /home/student/Desktop/workspace/build/main/build install --record /home/student/Desktop/workspace/build/main/install.log --single-version-externally-managed install_data --force

@@ -1,143 +1,120 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
+from nav2_common.launch import RewrittenYaml
+from launch_ros.descriptions import ParameterFile
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.substitutions import LaunchConfiguration
 import os
 
 def generate_launch_description():
     slam_remappings = [
-        ('/scan','/scan'),
-        ('/points','/filtered_points')
-        ]
+        ('/scan', '/scan'),
+        ('/points', '/filtered_points')
+    ]
 
+    # SLAM Toolbox Node
     slam_toolbox_node = Node(
         package='slam_toolbox',
-        executable='async_slam_toolbox_node', 
+        executable='async_slam_toolbox_node',
         name='slam_toolbox',
         output='screen',
         parameters=[
             '/home/student/Desktop/workspace/src/navigation/config/slam_params.yaml',
-            {'use_sim_time': False, 'debug_logging': True}
+            {'use_sim_time': LaunchConfiguration('use_sim_time', default='false'), 'debug_logging': True}
         ],
-       # arguments=['--ros-args', '--log-level', 'INFO'],
-        #remappings=slam_remappings,
+        remappings=slam_remappings,
     )
-    
-    # Add namespaces to nodes! and alos 
-    start_map_saver_server_cmd = Node(
-        package='nav2_map_server',
-        executable='map_saver_server',
+
+    # Parameters for Navigation
+    params_file = '/home/student/Desktop/workspace/src/navigation/config/nav2_params.yaml'
+    namespace = ''#LaunchConfiguration('namespace', default='/')  # Use LaunchConfiguration
+    use_sim_time = LaunchConfiguration('use_sim_time', default='false')
+    autostart = True  # Boolean directly
+
+    param_substitutions = {
+        'use_sim_time': str(use_sim_time),
+        'autostart': str(autostart)
+    }
+
+    log_level = 'Debug'
+    remappings = [('/tf', 'tf'), ('/tf_static', 'tf_static')]
+
+    configured_params = ParameterFile(
+        RewrittenYaml(
+            source_file=params_file,
+            root_key=namespace,
+            param_rewrites=param_substitutions,
+            convert_types=True),
+        allow_substs=True
+    )
+
+    #Include Navigation Launch
+    navigation_launch_cmd = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(['/home/student/Desktop/workspace/src/navigation/launch/navigation_launch.py']),
+    )
+
+    simulation_launch_cmd = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(['/home/student/Desktop/workspace/src/navigation/launch/SimulationLaunch.py']),
+    )
+
+
+    # Load Robot Description from URDF
+    urdfPath = '/opt/ros/humble/share/nav2_bringup/urdf/turtlebot3_waffle.urdf'
+    with open(urdfPath, 'r') as infp:
+        robot_description = infp.read()
+
+    # Robot State Publisher
+    start_robot_state_publisher_cmd = Node(
+        package='robot_state_publisher',
+        executable='robot_state_publisher',
+        name='robot_state_publisher',
+        namespace=namespace,
         output='screen',
-        #respawn=use_respawn,
-        #respawn_delay=2.0,
-       # arguments=['--ros-args', '--log-level', log_level],
-      #  parameters=[configured_params])
+        parameters=[{'use_sim_time': use_sim_time, 'robot_description': robot_description}],
+        remappings=remappings
     )
 
-    map_to_odom_transform_node = Node(
-        package='tf2_ros',
-        namespace='map_to_odom',
-        executable='static_transform_publisher',
-        arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "map", "odom"]
+    # Navigation Container
+    nav2_container_cmd = Node(
+        name='nav2_container',
+        package='rclcpp_components',
+        executable='component_container_isolated',
+        parameters=[configured_params, {'autostart': autostart}],
+        arguments=['--ros-args', '--log-level', log_level],
+        remappings=remappings,
+        output='screen'
     )
 
-    odom_to_base_footprint_transform_node = Node(
-        package='tf2_ros',
-        namespace='odom_to_base_footprint',
-        executable='static_transform_publisher',
-        arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "odom", "base_footprint"]
-    )
+    # Static Transform Nodes
+    def create_static_transform_node(frame_id, child_frame_id):
+        return Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", frame_id, child_frame_id]
+        )
 
-    base_footprint_to_base_link_transform_node = Node(
-        package='tf2_ros',
-        namespace='base_footprint_to_base_link',
-        executable='static_transform_publisher',
-        arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "base_footprint", "base_link"]
-    )
+    transform_nodes = [
+        create_static_transform_node("map", "odom"),
+        create_static_transform_node("odom", "base_footprint"),
+        create_static_transform_node("base_footprint", "base_link"),
+        create_static_transform_node("base_link", "os_lidar"),
+        create_static_transform_node("base_link", "base_scan")
+    ]
 
-    base_link_to_os_lidar_transform_node = Node(
-        package='tf2_ros',
-        namespace='base_link_to_os_lidar',
-        executable='static_transform_publisher',
-        arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "base_link", "os_lidar"]
-    )
-
-    base_link_to_base_scan_transform_node = Node(
-        package='tf2_ros',
-        namespace='base_link_to_base_scan',
-        executable='static_transform_publisher',
-        arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "base_link", "base_scan"]
-    )
-    
     # Create the launch description
     ld = LaunchDescription()
 
     # Add nodes to the launch description
     ld.add_action(slam_toolbox_node)
-    # ld.add_action(start_map_saver_server_cmd)
-
-    ld.add_action(map_to_odom_transform_node)
-    ld.add_action(odom_to_base_footprint_transform_node)
-    ld.add_action(base_footprint_to_base_link_transform_node)
-    ld.add_action(base_link_to_os_lidar_transform_node)
-    ld.add_action(base_link_to_base_scan_transform_node)
-    # ld.add_action(base_link_to_base_scan_transform_node)
+    ld.add_action(nav2_container_cmd)
+    ld.add_action(start_robot_state_publisher_cmd)
+    ld.add_action(navigation_launch_cmd)
     
+   # ld.add_action(simulation_launch_cmd)
+
+    for transform_node in transform_nodes:
+        ld.add_action(transform_node)
+
     return ld
-
-
-    
-# TODO refactor
-    # from ament_index_python.packages import get_package_share_directory
-    # get_package_share_directory(directory) returns path to directory  
-# Maybe use LaunchDescription and LaunchConfiguration  
-    # from launch import LaunchDescription
-    # 
-
-# look in tb3_simulation_launch.py urdf = os.path.join(sim_dir, 'urdf', 'turtlebot3_waffle.urdf')
-
-# robot state publisher neccessary for urdf file and publishs state to tf tree
-
-# base link -> odom 
-
-# base_link ->  os_lidar
-
-# --- Open RVIZ select map, odom, ...
-# select ouster scan (dont forget best effort)
-# TODO write seperate node for tf2 tree and lookup for tutorial! 
-
-    # Start RViz for visualization
-'''
-        Node(
-            package='rviz2',
-            executable='rviz2',
-            output='screen',
-            parameters=[rviz_params]
-        ),
-        # Start the robot state publisher
-        Node(
-            package='robot_state_publisher',
-            executable='robot_state_publisher',
-            output='screen',
-            parameters=[robot_state_publisher_params]
-        ),
-        # Start your navigation stack
-        Node(
-            package='navigation',
-            executable='nav2_launch',
-            output='screen',
-            parameters=[{'use_sim_time': True}]
-        ),
-        # Add your custom node for detecting and publishing targets here
-        '''
-
-
-'''
-    start_robot_state_publisher_cmd = Node(
-    package='robot_state_publisher',
-    executable='robot_state_publisher',
-    name='robot_state_publisher',
-    output='screen',
-    parameters=[{'use_sim_time': use_sim_time,
-                    'robot_description': robot_description}],
-    remappings=remappings)
-'''

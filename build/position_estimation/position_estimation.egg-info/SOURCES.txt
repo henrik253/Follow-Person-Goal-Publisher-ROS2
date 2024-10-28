@@ -1,5 +1,12 @@
 setup.cfg
 setup.py
+../../build/position_estimation/position_estimation.egg-info/PKG-INFO
+../../build/position_estimation/position_estimation.egg-info/SOURCES.txt
+../../build/position_estimation/position_estimation.egg-info/dependency_links.txt
+../../build/position_estimation/position_estimation.egg-info/entry_points.txt
+../../build/position_estimation/position_estimation.egg-info/requires.txt
+../../build/position_estimation/position_estimation.egg-info/top_level.txt
+../../build/position_estimation/position_estimation.egg-info/zip-safe
 position_estimation/__init__.py
 position_estimation/position_estimation_node.py
 position_estimation.egg-info/PKG-INFO

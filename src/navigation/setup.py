@@ -12,6 +12,9 @@ setup(
         ('share/' + package_name, ['package.xml']),
         # Füge hier die Launch-Datei hinzu
         ('share/' + package_name + '/launch', ['launch/nav2_launch.py']),  # Launch-Datei einfügen
+        ('share/' + package_name + '/launch', ['launch/navigation_launch.py']),
+        ('share/' + package_name + '/launch', ['launch/rviz_launch.py']),
+        ('share/' + package_name + '/launch', ['launch/SimulationLaunch.py'])
     ],
     install_requires=['setuptools'],
     zip_safe=True,
