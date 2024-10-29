@@ -16,6 +16,7 @@ def generate_launch_description():
     # and robot state publisher is actually only creating a node containing robot_state_publisher
     # and the robot_desc!   
     
+    #export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models
   
     # SLAM Toolbox Node
     slam_toolbox_node = Node(
@@ -36,23 +37,7 @@ def generate_launch_description():
 
     rviz_launch_cmd = IncludeLaunchDescription(PythonLaunchDescriptionSource(['/home/student/Desktop/workspace/src/navigation/launch/rviz_launch.py']))
     
-    bringup_dir = get_package_share_directory('nav2_bringup')
-    declare_world_cmd = DeclareLaunchArgument(
-        'world',
-        default_value=os.path.join(bringup_dir, 'worlds', 'world_only.model'),
-        description='Full path to world model file to load'
-    )
 
-    start_gazebo_server_cmd = ExecuteProcess(
-        cmd=['gzserver', '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so', LaunchConfiguration('world')],
-        output='screen'
-    )
-    start_gazebo_client_cmd = ExecuteProcess(
-        cmd=['gzclient'],
-        output='screen'
-    )
-   
-  
 
     # Static Transform Nodes
     # def create_static_transform_node(frame_id, child_frame_id):
@@ -73,9 +58,6 @@ def generate_launch_description():
     # Create the launch description
     ld = LaunchDescription()
 
-    ld.add_action(declare_world_cmd)
-    ld.add_action(start_gazebo_server_cmd)
-    ld.add_action(start_gazebo_client_cmd)
 
     # Add nodes to the launch description
     ld.add_action(slam_toolbox_node)
