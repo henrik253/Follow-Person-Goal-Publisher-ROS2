@@ -13,7 +13,11 @@ launch/navigation_launch.py
 launch/rviz_launch.py
 launch/simulation_launch.py
 navigation/__init__.py
+navigation.egg-info/PKG-INFO
+navigation.egg-info/SOURCES.txt
+navigation.egg-info/dependency_links.txt
+navigation.egg-info/entry_points.txt
+navigation.egg-info/requires.txt
+navigation.egg-info/top_level.txt
+navigation.egg-info/zip-safe
 resource/navigation
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
