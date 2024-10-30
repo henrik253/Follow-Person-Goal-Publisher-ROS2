@@ -1,0 +1,36 @@
+[0.673s] Invoking command in '/home/student/Desktop/workspace/build/navigation': PYTHONPATH=/home/student/Desktop/workspace/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/student/Desktop/workspace/build/navigation/build
+[0.951s] running develop
+[0.951s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.951s]   warnings.warn(
+[1.181s] Removing /home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages/navigation.egg-link (link to .)
+[1.198s] Invoked command in '/home/student/Desktop/workspace/build/navigation' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/student/Desktop/workspace/build/navigation/build
+[1.200s] Invoking command in '/home/student/Desktop/workspace/src/navigation': PYTHONPATH=/home/student/Desktop/workspace/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/student/Desktop/workspace/build/navigation/build install --record /home/student/Desktop/workspace/build/navigation/install.log --single-version-externally-managed install_data --force
+[1.455s] running egg_info
+[1.456s] writing ../../build/navigation/navigation.egg-info/PKG-INFO
+[1.456s] writing dependency_links to ../../build/navigation/navigation.egg-info/dependency_links.txt
+[1.456s] writing entry points to ../../build/navigation/navigation.egg-info/entry_points.txt
+[1.456s] writing requirements to ../../build/navigation/navigation.egg-info/requires.txt
+[1.456s] writing top-level names to ../../build/navigation/navigation.egg-info/top_level.txt
+[1.457s] reading manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[1.458s] writing manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[1.458s] running build
+[1.458s] running build_py
+[1.458s] running install
+[1.459s] running install_lib
+[1.459s] creating /home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages/navigation
+[1.459s] copying /home/student/Desktop/workspace/build/navigation/build/lib/navigation/__init__.py -> /home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages/navigation
+[1.460s] byte-compiling /home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages/navigation/__init__.py to __init__.cpython-310.pyc
+[1.460s] running install_data
+[1.460s] copying resource/navigation -> /home/student/Desktop/workspace/install/navigation/share/ament_index/resource_index/packages
+[1.460s] copying package.xml -> /home/student/Desktop/workspace/install/navigation/share/navigation
+[1.460s] copying launch/nav2_launch.py -> /home/student/Desktop/workspace/install/navigation/share/navigation/launch
+[1.460s] copying launch/navigation_launch.py -> /home/student/Desktop/workspace/install/navigation/share/navigation/launch
+[1.460s] copying launch/simulation_launch.py -> /home/student/Desktop/workspace/install/navigation/share/navigation/launch
+[1.460s] copying launch/rviz_launch.py -> /home/student/Desktop/workspace/install/navigation/share/navigation/launch
+[1.460s] running install_egg_info
+[1.462s] Copying ../../build/navigation/navigation.egg-info to /home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages/navigation-0.0.0-py3.10.egg-info
+[1.462s] running install_scripts
+[1.477s] Installing nav2_node script to /home/student/Desktop/workspace/install/navigation/lib/navigation
+[1.478s] Installing odom_publisher_node script to /home/student/Desktop/workspace/install/navigation/lib/navigation
+[1.478s] writing list of installed files to '/home/student/Desktop/workspace/build/navigation/install.log'
+[1.492s] Invoked command in '/home/student/Desktop/workspace/src/navigation' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/student/Desktop/workspace/build/navigation/build install --record /home/student/Desktop/workspace/build/navigation/install.log --single-version-externally-managed install_data --force

@@ -1,0 +1,18 @@
+[5.421s] Invoking command in '/home/student/Desktop/workspace/build/position_estimation': PYTHONPATH=/home/student/Desktop/workspace/build/position_estimation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/position_estimation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/position_estimation/build --no-deps
+[6.409s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[6.409s]   warnings.warn(
+[6.409s] running develop
+[6.903s] running egg_info
+[6.904s] writing position_estimation.egg-info/PKG-INFO
+[6.904s] writing dependency_links to position_estimation.egg-info/dependency_links.txt
+[6.904s] writing entry points to position_estimation.egg-info/entry_points.txt
+[6.904s] writing requirements to position_estimation.egg-info/requires.txt
+[6.904s] writing top-level names to position_estimation.egg-info/top_level.txt
+[6.908s] reading manifest file 'position_estimation.egg-info/SOURCES.txt'
+[6.909s] writing manifest file 'position_estimation.egg-info/SOURCES.txt'
+[6.983s] running build_ext
+[6.983s] Creating /home/student/Desktop/workspace/install/position_estimation/lib/python3.10/site-packages/position-estimation.egg-link (link to .)
+[6.985s] Installing position_estimation_node script to /home/student/Desktop/workspace/install/position_estimation/lib/position_estimation
+[6.985s] 
+[6.985s] Installed /home/student/Desktop/workspace/build/position_estimation
+[7.046s] Invoked command in '/home/student/Desktop/workspace/build/position_estimation' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/position_estimation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/position_estimation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/position_estimation/build --no-deps

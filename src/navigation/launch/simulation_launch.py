@@ -1,6 +1,4 @@
-#!/usr/bin/env python3
-#
-# Copyright 2019 ROBOTIS CO., LTD.
+# Copyright (c) 2018 Intel Corporation
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,106 +11,224 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
-# Authors: Darby Lim
+
+"""This is all-in-one launch script intended for use by nav2 developers."""
 
 import os
+
 from ament_index_python.packages import get_package_share_directory
+
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, ExecuteProcess
+from launch.actions import DeclareLaunchArgument, ExecuteProcess, IncludeLaunchDescription
+from launch.conditions import IfCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration, ThisLaunchFileDir
+from launch.substitutions import LaunchConfiguration, PythonExpression
 from launch_ros.actions import Node
 
+'''
+    source /opt/ros/humble/setup.bash
+    export TURTLEBOT3_MODEL=waffle
+    export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models
+'''
+
 def generate_launch_description():
-    TURTLEBOT3_MODEL = os.environ['TURTLEBOT3_MODEL']
-    LDS_MODEL = os.environ['LDS_MODEL']
-    LDS_LAUNCH_FILE = '/hlds_laser.launch.py'
-
-    usb_port = LaunchConfiguration('usb_port', default='/dev/ttyACM0')
-
-    tb3_param_dir = LaunchConfiguration(
-        'tb3_param_dir',
-        default=os.path.join(
-            get_package_share_directory('turtlebot3_bringup'),
-            'param',
-            TURTLEBOT3_MODEL + '.yaml'))
-
-    if LDS_MODEL == 'LDS-01':
-        lidar_pkg_dir = LaunchConfiguration(
-            'lidar_pkg_dir',
-            default=os.path.join(get_package_share_directory('hls_lfcd_lds_driver'), 'launch'))
-    elif LDS_MODEL == 'LDS-02':
-        lidar_pkg_dir = LaunchConfiguration(
-            'lidar_pkg_dir',
-            default=os.path.join(get_package_share_directory('ld08_driver'), 'launch'))
-        LDS_LAUNCH_FILE = '/ld08.launch.py'
-    else:
-        lidar_pkg_dir = LaunchConfiguration(
-            'lidar_pkg_dir',
-            default=os.path.join(get_package_share_directory('hls_lfcd_lds_driver'), 'launch'))
-
-    use_sim_time = LaunchConfiguration('use_sim_time', default='false')
+    # Get the launch directory
     bringup_dir = get_package_share_directory('nav2_bringup')
-    world_model = LaunchConfiguration('world', default=os.path.join(bringup_dir, 'worlds', 'world_only.model'))  # Update path as needed
+    launch_dir = os.path.join(bringup_dir, 'launch')
 
-    return LaunchDescription([
-        DeclareLaunchArgument(
-            'use_sim_time',
-            default_value=use_sim_time,
-            description='Use simulation (Gazebo) clock if true'),
+    # Create the launch configuration variables
+    slam = LaunchConfiguration('slam')
+    namespace = LaunchConfiguration('namespace')
+    use_namespace = LaunchConfiguration('use_namespace')
+    map_yaml_file = LaunchConfiguration('map')
+    use_sim_time = LaunchConfiguration('use_sim_time')
+    params_file = LaunchConfiguration('params_file')
+    autostart = LaunchConfiguration('autostart')
+    use_composition = LaunchConfiguration('use_composition')
+    use_respawn = LaunchConfiguration('use_respawn')
 
-        DeclareLaunchArgument(
-            'usb_port',
-            default_value=usb_port,
-            description='Connected USB port with OpenCR'),
+    # Launch configuration variables specific to simulation
+    rviz_config_file = LaunchConfiguration('rviz_config_file')
+    use_simulator = LaunchConfiguration('use_simulator')
+    use_robot_state_pub = LaunchConfiguration('use_robot_state_pub')
+    use_rviz = LaunchConfiguration('use_rviz')
+    headless = LaunchConfiguration('headless')
+    world = LaunchConfiguration('world')
+    pose = {'x': LaunchConfiguration('x_pose', default='-2.00'),
+            'y': LaunchConfiguration('y_pose', default='-0.50'),
+            'z': LaunchConfiguration('z_pose', default='0.01'),
+            'R': LaunchConfiguration('roll', default='0.00'),
+            'P': LaunchConfiguration('pitch', default='0.00'),
+            'Y': LaunchConfiguration('yaw', default='0.00')}
+    robot_name = LaunchConfiguration('robot_name')
+    robot_sdf = LaunchConfiguration('robot_sdf')
 
-        DeclareLaunchArgument(
-            'tb3_param_dir',
-            default_value=tb3_param_dir,
-            description='Full path to turtlebot3 parameter file to load'),
+    # Map fully qualified names to relative ones so the node's namespace can be prepended.
+    # In case of the transforms (tf), currently, there doesn't seem to be a better alternative
+    # https://github.com/ros/geometry2/issues/32
+    # https://github.com/ros/robot_state_publisher/pull/30
+    # TODO(orduno) Substitute with `PushNodeRemapping`
+    #              https://github.com/ros2/launch_ros/issues/56
 
-        DeclareLaunchArgument(
-            'world',
-            default_value=world_model,
-            description='Full path to world model file to load'
-        ),
-       
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(
-                [ os.path.join(get_package_share_directory('turtlebot3_bringup'),'launch'), '/turtlebot3_state_publisher.launch.py']),
-            launch_arguments={'use_sim_time': use_sim_time}.items(),
-        ),
+    remappings = [('/tf', 'tf'),
+                  ('/tf_static', 'tf_static')]
 
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource([lidar_pkg_dir, LDS_LAUNCH_FILE]),
-            launch_arguments={'port': '/dev/ttyUSB0', 'frame_id': 'base_scan'}.items(),
-        ),
+    # Declare the launch arguments
+    declare_namespace_cmd = DeclareLaunchArgument(
+        'namespace',
+        default_value='',
+        description='Top-level namespace')
 
-        # # Start Gazebo
-        # ExecuteProcess(
-        #     cmd=['gzserver', '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so', LaunchConfiguration('world')],
-        #     output='screen'
-        # ),
+    declare_use_namespace_cmd = DeclareLaunchArgument(
+        'use_namespace',
+        default_value='false',
+        description='Whether to apply a namespace to the navigation stack')
 
-        # ExecuteProcess(
-        #     cmd=['gzclient'],
-        #     output='screen'
-        # ),
+    declare_slam_cmd = DeclareLaunchArgument(
+        'slam',
+        default_value='False',
+        description='Whether run a SLAM')
 
-        # # Spawn the TurtleBot in Gazebo
-        # ExecuteProcess(
-        #     cmd=['ros2', 'run', 'gazebo_ros', 'spawn_entity.py',
-        #          '-entity', 'turtlebot3',
-        #          '-file', os.path.join(get_package_share_directory('turtlebot3_description'), 'urdf', 'turtlebot3_waffle.urdf'),  # Update with the correct path
-        #          '-x', '0', '-y', '0', '-z', '0'],
-        #     output='screen'
-        # ),
+    declare_map_yaml_cmd = DeclareLaunchArgument(
+        'map',
+        default_value=os.path.join(
+            bringup_dir, 'maps', 'turtlebot3_world.yaml'),
+        description='Full path to map file to load')
 
-        Node(
-            package='turtlebot3_node',
-            executable='turtlebot3_ros',
-            parameters=[tb3_param_dir],
-            arguments=['-i', usb_port],
-            output='screen'),
-    ])
+    declare_use_sim_time_cmd = DeclareLaunchArgument(
+        'use_sim_time',
+        default_value='true',
+        description='Use simulation (Gazebo) clock if true')
+
+    declare_params_file_cmd = DeclareLaunchArgument(
+        'params_file',
+        default_value=os.path.join(bringup_dir, 'params', 'nav2_params.yaml'),
+        description='Full path to the ROS2 parameters file to use for all launched nodes')
+
+    declare_autostart_cmd = DeclareLaunchArgument(
+        'autostart', default_value='true',
+        description='Automatically startup the nav2 stack')
+
+    declare_use_composition_cmd = DeclareLaunchArgument(
+        'use_composition', default_value='True',
+        description='Whether to use composed bringup')
+
+    declare_use_respawn_cmd = DeclareLaunchArgument(
+        'use_respawn', default_value='False',
+        description='Whether to respawn if a node crashes. Applied when composition is disabled.')
+
+    declare_rviz_config_file_cmd = DeclareLaunchArgument(
+        'rviz_config_file',
+        default_value=os.path.join(
+            bringup_dir, 'rviz', 'nav2_default_view.rviz'),
+        description='Full path to the RVIZ config file to use')
+
+    declare_use_simulator_cmd = DeclareLaunchArgument(
+        'use_simulator',
+        default_value='True',
+        description='Whether to start the simulator')
+
+    declare_use_robot_state_pub_cmd = DeclareLaunchArgument(
+        'use_robot_state_pub',
+        default_value='True',
+        description='Whether to start the robot state publisher')
+
+    declare_use_rviz_cmd = DeclareLaunchArgument(
+        'use_rviz',
+        default_value='True',
+        description='Whether to start RVIZ')
+
+    declare_simulator_cmd = DeclareLaunchArgument(
+        'headless',
+        default_value='True',
+        description='Whether to execute gzclient)')
+
+    declare_world_cmd = DeclareLaunchArgument(
+        'world',
+        # TODO(orduno) Switch back once ROS argument passing has been fixed upstream
+        #              https://github.com/ROBOTIS-GIT/turtlebot3_simulations/issues/91
+        # default_value=os.path.join(get_package_share_directory('turtlebot3_gazebo'),
+        # worlds/turtlebot3_worlds/waffle.model')
+        default_value=os.path.join(bringup_dir, 'worlds', 'world_only.model'),
+        description='Full path to world model file to load')
+
+    declare_robot_name_cmd = DeclareLaunchArgument(
+        'robot_name',
+        default_value='turtlebot3_waffle',
+        description='name of the robot')
+
+    declare_robot_sdf_cmd = DeclareLaunchArgument(
+        'robot_sdf',
+        default_value=os.path.join(bringup_dir, 'worlds', 'waffle.model'),
+        description='Full path to robot sdf file to spawn the robot in gazebo')
+
+    # Specify the actions
+    start_gazebo_server_cmd = ExecuteProcess(
+        condition=IfCondition(use_simulator),
+        cmd=['gzserver', '-s', 'libgazebo_ros_init.so',
+             '-s', 'libgazebo_ros_factory.so', world],
+        cwd=[launch_dir], output='screen')
+
+    start_gazebo_client_cmd = ExecuteProcess(
+        cmd=['gzclient'],
+        cwd=[launch_dir], output='screen')
+
+    urdf = os.path.join(bringup_dir, 'urdf', 'turtlebot3_waffle.urdf')
+    with open(urdf, 'r') as infp:
+        robot_description = infp.read()
+
+    start_robot_state_publisher_cmd = Node(
+        condition=IfCondition(use_robot_state_pub),
+        package='robot_state_publisher',
+        executable='robot_state_publisher',
+        name='robot_state_publisher',
+        namespace=namespace,
+        output='screen',
+        parameters=[{'use_sim_time': use_sim_time,
+                     'robot_description': robot_description}],
+        remappings=remappings)
+
+    start_gazebo_spawner_cmd = Node(
+        package='gazebo_ros',
+        executable='spawn_entity.py',
+        output='screen',
+        arguments=[
+            '-entity', robot_name,
+            '-file', robot_sdf,
+            '-robot_namespace', namespace,
+            '-x', pose['x'], '-y', pose['y'], '-z', pose['z'],
+            '-R', pose['R'], '-P', pose['P'], '-Y', pose['Y']])
+
+    # Create the launch description and populate
+    ld = LaunchDescription()
+
+    # Declare the launch options
+    ld.add_action(declare_namespace_cmd)
+    ld.add_action(declare_use_namespace_cmd)
+    ld.add_action(declare_slam_cmd)
+    ld.add_action(declare_map_yaml_cmd)
+    ld.add_action(declare_use_sim_time_cmd)
+    ld.add_action(declare_params_file_cmd)
+    ld.add_action(declare_autostart_cmd)
+    ld.add_action(declare_use_composition_cmd)
+
+    ld.add_action(declare_rviz_config_file_cmd)
+    ld.add_action(declare_use_simulator_cmd)
+    ld.add_action(declare_use_robot_state_pub_cmd)
+    ld.add_action(declare_use_rviz_cmd)
+    ld.add_action(declare_simulator_cmd)
+    ld.add_action(declare_world_cmd)
+    ld.add_action(declare_robot_name_cmd)
+    ld.add_action(declare_robot_sdf_cmd)
+    ld.add_action(declare_use_respawn_cmd)
+
+    # Add any conditioned actions
+    ld.add_action(start_gazebo_server_cmd)
+    ld.add_action(start_gazebo_client_cmd)
+    ld.add_action(start_gazebo_spawner_cmd)
+
+    # Add the actions to launch all of the navigation nodes
+    ld.add_action(start_robot_state_publisher_cmd)
+
+
+    return ld

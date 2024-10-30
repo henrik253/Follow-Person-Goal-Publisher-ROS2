@@ -1,0 +1,49 @@
+[0.623s] Invoking command in '/home/student/Desktop/workspace/build/odometry_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/sensor_presentation:/home/student/Desktop/workspace/install/position_estimation:/home/student/Desktop/workspace/install/ouster_voxel_filter:/home/student/Desktop/workspace/install/navigation:/home/student/Desktop/workspace/install/main:/opt/ros/humble /home/student/.local/bin/cmake --build /home/student/Desktop/workspace/build/odometry_publisher -- -j16 -l16
+[2.613s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.613s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.613s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[2.613s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.613s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.613s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.613s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.613s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.613s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.613s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.613s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.614s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.614s] -- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)
+[2.614s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.614s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.614s] -- Configured cppcheck include dirs: /home/student/Desktop/workspace/src/odometry_publisher/include
+[2.614s] -- Configured cppcheck exclude dirs and/or files: 
+[2.614s] -- Added test 'lint_cmake' to check CMake code style
+[2.614s] -- Added test 'uncrustify' to check C / C++ code style
+[2.614s] -- Configured uncrustify additional arguments: 
+[2.614s] -- Added test 'xmllint' to check XML markup files
+[2.614s] -- Configuring done (0.9s)
+[2.615s] -- Generating done (0.0s)
+[2.615s] -- Build files have been written to: /home/student/Desktop/workspace/build/odometry_publisher
+[2.615s] [ 50%] [32mBuilding CXX object CMakeFiles/odom_publisher_node.dir/src/odom_publisher_node.cpp.o[0m
+[10.380s] [100%] [32m[1mLinking CXX executable odom_publisher_node[0m
+[10.852s] [100%] Built target odom_publisher_node
+[10.884s] Invoked command in '/home/student/Desktop/workspace/build/odometry_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/sensor_presentation:/home/student/Desktop/workspace/install/position_estimation:/home/student/Desktop/workspace/install/ouster_voxel_filter:/home/student/Desktop/workspace/install/navigation:/home/student/Desktop/workspace/install/main:/opt/ros/humble /home/student/.local/bin/cmake --build /home/student/Desktop/workspace/build/odometry_publisher -- -j16 -l16
+[11.272s] Invoking command in '/home/student/Desktop/workspace/build/odometry_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/sensor_presentation:/home/student/Desktop/workspace/install/position_estimation:/home/student/Desktop/workspace/install/ouster_voxel_filter:/home/student/Desktop/workspace/install/navigation:/home/student/Desktop/workspace/install/main:/opt/ros/humble /home/student/.local/bin/cmake --install /home/student/Desktop/workspace/build/odometry_publisher
+[11.362s] -- Install configuration: ""
+[11.364s] -- Execute custom install script
+[11.365s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/odometry_publisher/lib/odometry_publisher/odom_publisher_node
+[11.367s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/odometry_publisher/share/ament_index/resource_index/package_run_dependencies/odometry_publisher
+[11.368s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/odometry_publisher/share/ament_index/resource_index/parent_prefix_path/odometry_publisher
+[11.368s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/odometry_publisher/share/odometry_publisher/environment/ament_prefix_path.sh
+[11.368s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/odometry_publisher/share/odometry_publisher/environment/ament_prefix_path.dsv
+[11.371s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/odometry_publisher/share/odometry_publisher/environment/path.sh
+[11.371s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/odometry_publisher/share/odometry_publisher/environment/path.dsv
+[11.372s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/odometry_publisher/share/odometry_publisher/local_setup.bash
+[11.372s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/odometry_publisher/share/odometry_publisher/local_setup.sh
+[11.372s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/odometry_publisher/share/odometry_publisher/local_setup.zsh
+[11.373s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/odometry_publisher/share/odometry_publisher/local_setup.dsv
+[11.373s] -- Symlinking: /home/student/Desktop/workspace/install/odometry_publisher/share/odometry_publisher/package.dsv
+[11.390s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/odometry_publisher/share/ament_index/resource_index/packages/odometry_publisher
+[11.391s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/odometry_publisher/share/odometry_publisher/cmake/odometry_publisherConfig.cmake
+[11.391s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/odometry_publisher/share/odometry_publisher/cmake/odometry_publisherConfig-version.cmake
+[11.391s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/odometry_publisher/share/odometry_publisher/package.xml
+[11.404s] Invoked command in '/home/student/Desktop/workspace/build/odometry_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/sensor_presentation:/home/student/Desktop/workspace/install/position_estimation:/home/student/Desktop/workspace/install/ouster_voxel_filter:/home/student/Desktop/workspace/install/navigation:/home/student/Desktop/workspace/install/main:/opt/ros/humble /home/student/.local/bin/cmake --install /home/student/Desktop/workspace/build/odometry_publisher
