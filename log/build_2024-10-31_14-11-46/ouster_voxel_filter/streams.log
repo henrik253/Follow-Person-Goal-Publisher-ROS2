@@ -1,0 +1,20 @@
+[5.325s] Invoking command in '/home/student/Desktop/workspace/build/ouster_voxel_filter': PYTHONPATH=/home/student/Desktop/workspace/build/ouster_voxel_filter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/ouster_voxel_filter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/ouster_voxel_filter/build --no-deps symlink_data
+[6.651s] running develop
+[6.652s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[6.652s]   warnings.warn(
+[7.216s] running egg_info
+[7.217s] writing ouster_voxel_filter.egg-info/PKG-INFO
+[7.217s] writing dependency_links to ouster_voxel_filter.egg-info/dependency_links.txt
+[7.217s] writing entry points to ouster_voxel_filter.egg-info/entry_points.txt
+[7.218s] writing requirements to ouster_voxel_filter.egg-info/requires.txt
+[7.218s] writing top-level names to ouster_voxel_filter.egg-info/top_level.txt
+[7.222s] reading manifest file 'ouster_voxel_filter.egg-info/SOURCES.txt'
+[7.224s] writing manifest file 'ouster_voxel_filter.egg-info/SOURCES.txt'
+[7.303s] running build_ext
+[7.303s] Creating /home/student/Desktop/workspace/install/ouster_voxel_filter/lib/python3.10/site-packages/ouster-voxel-filter.egg-link (link to .)
+[7.305s] Installing odom_publisher script to /home/student/Desktop/workspace/install/ouster_voxel_filter/lib/ouster_voxel_filter
+[7.305s] Installing voxel_filter_node script to /home/student/Desktop/workspace/install/ouster_voxel_filter/lib/ouster_voxel_filter
+[7.305s] 
+[7.306s] Installed /home/student/Desktop/workspace/build/ouster_voxel_filter
+[7.306s] running symlink_data
+[7.382s] Invoked command in '/home/student/Desktop/workspace/build/ouster_voxel_filter' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/ouster_voxel_filter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/ouster_voxel_filter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/ouster_voxel_filter/build --no-deps symlink_data

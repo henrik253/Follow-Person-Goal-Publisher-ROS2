@@ -10,7 +10,6 @@
 /home/student/Desktop/workspace/install/zed_wrapper/share/zed_wrapper/urdf/include/materials.urdf.xacro
 /home/student/Desktop/workspace/install/zed_wrapper/share/zed_wrapper/urdf/zed_descr.urdf.xacro
 /home/student/Desktop/workspace/install/zed_wrapper/share/zed_wrapper/urdf/zed_macro.urdf.xacro
-/home/student/Desktop/workspace/install/zed_wrapper/share/zed_wrapper/launch/__pycache__/zed_camera.launch.cpython-310.pyc
 /home/student/Desktop/workspace/install/zed_wrapper/share/zed_wrapper/launch/zed_camera.launch.py
 /home/student/Desktop/workspace/install/zed_wrapper/share/ament_index/resource_index/package_run_dependencies/zed_wrapper
 /home/student/Desktop/workspace/install/zed_wrapper/share/ament_index/resource_index/parent_prefix_path/zed_wrapper

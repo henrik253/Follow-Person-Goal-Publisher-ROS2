@@ -19,30 +19,30 @@ def generate_launch_description():
     #export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models
   
     # SLAM Toolbox Node
-    slam_toolbox_node = Node(
-        package='slam_toolbox',
-        executable='async_slam_toolbox_node',
-        name='slam_toolbox',
-        output='screen',
-        parameters=[
-            '/home/student/Desktop/workspace/src/navigation/config/slam_params.yaml',
-            {'use_sim_time': LaunchConfiguration('use_sim_time', default='false'), 'debug_logging': True}
-        ],
-    )
+    # slam_toolbox_node = Node(
+    #     package='slam_toolbox',
+    #     executable='async_slam_toolbox_node',
+    #     name='slam_toolbox',
+    #     output='screen',
+    #     parameters=[
+    #         '/home/student/Desktop/workspace/src/navigation/config/slam_params.yaml',
+    #         {'use_sim_time': LaunchConfiguration('use_sim_time', default='false'), 'debug_logging': True}
+    #     ],
+    # )
 
     #Include Navigation Launch
-    navigation_launch_cmd = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(['/home/student/Desktop/workspace/src/navigation/launch/navigation_launch.py']),
-    )
+#     navigation_launch_cmd = IncludeLaunchDescription(
+#         PythonLaunchDescriptionSource(['/home/student/Desktop/workspace/src/navigation/launch/navigation_launch.py']),
+    # )
 
-    rviz_launch_cmd = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(['/home/student/Desktop/workspace/src/navigation/launch/rviz_launch.py'])
-        )
+    # rviz_launch_cmd = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource(['/home/student/Desktop/workspace/src/navigation/launch/rviz_launch.py'])
+    #     )
     
-    #Simulation 
-    simulation_launch_cmd = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(['/home/student/Desktop/workspace/src/navigation/launch/simulation_launch.py']),
-    )
+    # #Simulation 
+    # simulation_launch_cmd = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource(['/home/student/Desktop/workspace/src/navigation/launch/simulation_launch.py']),
+    # )
 
     # Static Transform Nodes
     # def create_static_transform_node(frame_id, child_frame_id):
@@ -68,7 +68,7 @@ def generate_launch_description():
     ld.add_action(slam_toolbox_node)
     ld.add_action(navigation_launch_cmd)
     ld.add_action(rviz_launch_cmd)
-    ld.add_action(simulation_launch_cmd)
+ #   ld.add_action(simulation_launch_cmd)
     
     # for transform_node in transform_nodes:
     #     ld.add_action(transform_node)

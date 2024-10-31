@@ -13,6 +13,7 @@ launch/navigation_launch.py
 launch/rviz_launch.py
 launch/simulation_launch.py
 navigation/__init__.py
+navigation/goal_publisher_node.py
 navigation.egg-info/PKG-INFO
 navigation.egg-info/SOURCES.txt
 navigation.egg-info/dependency_links.txt

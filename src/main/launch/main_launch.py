@@ -12,18 +12,12 @@ def generate_launch_description():
             PythonLaunchDescriptionSource(['/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed_wrapper/launch/zed_camera.launch.py']),
             launch_arguments={'camera_model': 'zed2i'}.items(),
         ),
-          IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(['/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/launch/driver.launch.py']),
-        ),
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(['/home/student/Desktop/workspace/src/navigation/launch/nav2_launch.py']),
-        ),  
-        Node(
-            package='ouster_voxel_filter',
-            executable='voxel_filter_node',
-            name='voxel_filter_node',
-            output='screen'
-        ),
+        #   IncludeLaunchDescription(
+        #     PythonLaunchDescriptionSource(['/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/launch/driver.launch.py']),
+        # ),
+        # IncludeLaunchDescription(
+        #     PythonLaunchDescriptionSource(['/home/student/Desktop/workspace/src/navigation/launch/nav2_launch.py']),
+        # ),  
         Node(
             package='yolo_tracking',
             executable='object_detection_node',

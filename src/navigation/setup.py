@@ -25,8 +25,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'nav2_node = navigation.nav2_node:main',
-            'odom_publisher_node = navigation.odom_publisher_node:main',
+            'goal_publisher_node = navigation.goal_publisher_node:main',
         ],
     },
 )
