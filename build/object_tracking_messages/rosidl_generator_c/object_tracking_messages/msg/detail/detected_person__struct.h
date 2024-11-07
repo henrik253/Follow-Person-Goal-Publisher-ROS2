@@ -18,8 +18,13 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
+// Member 'label'
+// Member 'body_parts'
+#include "rosidl_runtime_c/string.h"
 // Member 'bbox'
 #include "object_tracking_messages/msg/detail/bounding_box__struct.h"
+// Member 'person_key_point'
+#include "object_tracking_messages/msg/detail/person_key_point__struct.h"
 
 /// Struct defined in msg/DetectedPerson in the package object_tracking_messages.
 /**
@@ -27,9 +32,12 @@ extern "C"
  */
 typedef struct object_tracking_messages__msg__DetectedPerson
 {
+  rosidl_runtime_c__String label;
   float confidence;
   int32_t id;
   object_tracking_messages__msg__BoundingBox bbox;
+  rosidl_runtime_c__String__Sequence body_parts;
+  object_tracking_messages__msg__PersonKeyPoint__Sequence person_key_point;
 } object_tracking_messages__msg__DetectedPerson;
 
 // Struct for a sequence of object_tracking_messages__msg__DetectedPerson.

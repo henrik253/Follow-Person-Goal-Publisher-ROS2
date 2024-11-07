@@ -165,6 +165,7 @@ CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_
  /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__struct.hpp \
  /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_person__struct.hpp \
  /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/bounding_box__struct.hpp \
+ /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/person_key_point__struct.hpp \
  /opt/ros/humble/include/fastcdr/fastcdr/Cdr.h \
  /opt/ros/humble/include/fastcdr/fastcdr/fastcdr_dll.h \
  /opt/ros/humble/include/fastcdr/fastcdr/config.h \

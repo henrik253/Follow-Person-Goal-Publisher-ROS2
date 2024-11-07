@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/detected_persons__type_support.cpp.o.d"
   "CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/person_distance__type_support.cpp.o"
   "CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/person_distance__type_support.cpp.o.d"
+  "CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/person_key_point__type_support.cpp.o"
+  "CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/person_key_point__type_support.cpp.o.d"
   "libobject_tracking_messages__rosidl_typesupport_introspection_cpp.pdb"
   "libobject_tracking_messages__rosidl_typesupport_introspection_cpp.so"
   "rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/bounding_box__rosidl_typesupport_introspection_cpp.hpp"
@@ -17,6 +19,8 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/detected_persons__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/person_distance__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/person_distance__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/person_key_point__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/person_key_point__type_support.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

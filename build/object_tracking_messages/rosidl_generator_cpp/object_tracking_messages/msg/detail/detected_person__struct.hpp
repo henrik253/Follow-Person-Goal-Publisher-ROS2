@@ -18,6 +18,8 @@
 // Include directives for member types
 // Member 'bbox'
 #include "object_tracking_messages/msg/detail/bounding_box__struct.hpp"
+// Member 'person_key_point'
+#include "object_tracking_messages/msg/detail/person_key_point__struct.hpp"
 
 #ifndef _WIN32
 # define DEPRECATED__object_tracking_messages__msg__DetectedPerson __attribute__((deprecated))
@@ -43,23 +45,29 @@ struct DetectedPerson_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
+      this->label = "";
       this->confidence = 0.0f;
       this->id = 0l;
     }
   }
 
   explicit DetectedPerson_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : bbox(_alloc, _init)
+  : label(_alloc),
+    bbox(_alloc, _init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
+      this->label = "";
       this->confidence = 0.0f;
       this->id = 0l;
     }
   }
 
   // field types and members
+  using _label_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _label_type label;
   using _confidence_type =
     float;
   _confidence_type confidence;
@@ -69,8 +77,20 @@ struct DetectedPerson_
   using _bbox_type =
     object_tracking_messages::msg::BoundingBox_<ContainerAllocator>;
   _bbox_type bbox;
+  using _body_parts_type =
+    std::vector<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>>;
+  _body_parts_type body_parts;
+  using _person_key_point_type =
+    std::vector<object_tracking_messages::msg::PersonKeyPoint_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<object_tracking_messages::msg::PersonKeyPoint_<ContainerAllocator>>>;
+  _person_key_point_type person_key_point;
 
   // setters for named parameter idiom
+  Type & set__label(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->label = _arg;
+    return *this;
+  }
   Type & set__confidence(
     const float & _arg)
   {
@@ -87,6 +107,18 @@ struct DetectedPerson_
     const object_tracking_messages::msg::BoundingBox_<ContainerAllocator> & _arg)
   {
     this->bbox = _arg;
+    return *this;
+  }
+  Type & set__body_parts(
+    const std::vector<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>> & _arg)
+  {
+    this->body_parts = _arg;
+    return *this;
+  }
+  Type & set__person_key_point(
+    const std::vector<object_tracking_messages::msg::PersonKeyPoint_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<object_tracking_messages::msg::PersonKeyPoint_<ContainerAllocator>>> & _arg)
+  {
+    this->person_key_point = _arg;
     return *this;
   }
 
@@ -132,6 +164,9 @@ struct DetectedPerson_
   // comparison operators
   bool operator==(const DetectedPerson_ & other) const
   {
+    if (this->label != other.label) {
+      return false;
+    }
     if (this->confidence != other.confidence) {
       return false;
     }
@@ -139,6 +174,12 @@ struct DetectedPerson_
       return false;
     }
     if (this->bbox != other.bbox) {
+      return false;
+    }
+    if (this->body_parts != other.body_parts) {
+      return false;
+    }
+    if (this->person_key_point != other.person_key_point) {
       return false;
     }
     return true;

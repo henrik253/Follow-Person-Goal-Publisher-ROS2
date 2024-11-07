@@ -179,6 +179,7 @@ CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/ro
  /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__struct.hpp \
  /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_person__struct.hpp \
  /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/bounding_box__struct.hpp \
+ /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/person_key_point__struct.hpp \
  /opt/ros/humble/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/field_types.hpp \
  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h \
  /opt/ros/humble/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/identifier.hpp \

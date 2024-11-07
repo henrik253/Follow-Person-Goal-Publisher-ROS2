@@ -6,3 +6,5 @@ msg/DetectedPersons.idl
 msg/DetectedPersons.msg
 msg/PersonDistance.idl
 msg/PersonDistance.msg
+msg/PersonKeyPoint.idl
+msg/PersonKeyPoint.msg

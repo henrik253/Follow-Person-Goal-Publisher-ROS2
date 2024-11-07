@@ -92,6 +92,7 @@ class PositionEstimationNode(Node):
         persons = msg.persons
         personDistanceMessage = PersonDistance() 
         personDistanceMessage.detected_persons.persons = persons 
+        
         distances = []
         real_world_coordinates = []  # List to hold real-world coordinates
 

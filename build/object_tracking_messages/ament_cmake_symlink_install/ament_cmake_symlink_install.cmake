@@ -361,6 +361,9 @@ include("/home/student/Desktop/workspace/build/object_tracking_messages/ament_cm
 # install(FILES "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/BoundingBox.idl" "DESTINATION" "share/object_tracking_messages/msg")
 ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/object_tracking_messages" FILES "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/BoundingBox.idl" "DESTINATION" "share/object_tracking_messages/msg")
 
+# install(FILES "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/PersonKeyPoint.idl" "DESTINATION" "share/object_tracking_messages/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/object_tracking_messages" FILES "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/PersonKeyPoint.idl" "DESTINATION" "share/object_tracking_messages/msg")
+
 # install(FILES "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/DetectedPerson.idl" "DESTINATION" "share/object_tracking_messages/msg")
 ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/object_tracking_messages" FILES "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/DetectedPerson.idl" "DESTINATION" "share/object_tracking_messages/msg")
 
@@ -372,6 +375,9 @@ ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/object_tr
 
 # install(FILES "/home/student/Desktop/workspace/src/object_tracking_messages/msg/BoundingBox.msg" "DESTINATION" "share/object_tracking_messages/msg")
 ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/object_tracking_messages" FILES "/home/student/Desktop/workspace/src/object_tracking_messages/msg/BoundingBox.msg" "DESTINATION" "share/object_tracking_messages/msg")
+
+# install(FILES "/home/student/Desktop/workspace/src/object_tracking_messages/msg/PersonKeyPoint.msg" "DESTINATION" "share/object_tracking_messages/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/object_tracking_messages" FILES "/home/student/Desktop/workspace/src/object_tracking_messages/msg/PersonKeyPoint.msg" "DESTINATION" "share/object_tracking_messages/msg")
 
 # install(FILES "/home/student/Desktop/workspace/src/object_tracking_messages/msg/DetectedPerson.msg" "DESTINATION" "share/object_tracking_messages/msg")
 ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/object_tracking_messages" FILES "/home/student/Desktop/workspace/src/object_tracking_messages/msg/DetectedPerson.msg" "DESTINATION" "share/object_tracking_messages/msg")

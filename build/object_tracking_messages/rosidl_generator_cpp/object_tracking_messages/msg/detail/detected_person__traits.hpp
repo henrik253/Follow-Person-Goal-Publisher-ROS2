@@ -17,6 +17,8 @@
 // Include directives for member types
 // Member 'bbox'
 #include "object_tracking_messages/msg/detail/bounding_box__traits.hpp"
+// Member 'person_key_point'
+#include "object_tracking_messages/msg/detail/person_key_point__traits.hpp"
 
 namespace object_tracking_messages
 {
@@ -29,6 +31,13 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
+  // member: label
+  {
+    out << "label: ";
+    rosidl_generator_traits::value_to_yaml(msg.label, out);
+    out << ", ";
+  }
+
   // member: confidence
   {
     out << "confidence: ";
@@ -47,6 +56,42 @@ inline void to_flow_style_yaml(
   {
     out << "bbox: ";
     to_flow_style_yaml(msg.bbox, out);
+    out << ", ";
+  }
+
+  // member: body_parts
+  {
+    if (msg.body_parts.size() == 0) {
+      out << "body_parts: []";
+    } else {
+      out << "body_parts: [";
+      size_t pending_items = msg.body_parts.size();
+      for (auto item : msg.body_parts) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: person_key_point
+  {
+    if (msg.person_key_point.size() == 0) {
+      out << "person_key_point: []";
+    } else {
+      out << "person_key_point: [";
+      size_t pending_items = msg.person_key_point.size();
+      for (auto item : msg.person_key_point) {
+        to_flow_style_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -55,6 +100,16 @@ inline void to_block_style_yaml(
   const DetectedPerson & msg,
   std::ostream & out, size_t indentation = 0)
 {
+  // member: label
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "label: ";
+    rosidl_generator_traits::value_to_yaml(msg.label, out);
+    out << "\n";
+  }
+
   // member: confidence
   {
     if (indentation > 0) {
@@ -82,6 +137,45 @@ inline void to_block_style_yaml(
     }
     out << "bbox:\n";
     to_block_style_yaml(msg.bbox, out, indentation + 2);
+  }
+
+  // member: body_parts
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.body_parts.size() == 0) {
+      out << "body_parts: []\n";
+    } else {
+      out << "body_parts:\n";
+      for (auto item : msg.body_parts) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: person_key_point
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.person_key_point.size() == 0) {
+      out << "person_key_point: []\n";
+    } else {
+      out << "person_key_point:\n";
+      for (auto item : msg.person_key_point) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "-\n";
+        to_block_style_yaml(item, out, indentation + 2);
+      }
+    }
   }
 }  // NOLINT(readability/fn_size)
 
@@ -131,11 +225,11 @@ inline const char * name<object_tracking_messages::msg::DetectedPerson>()
 
 template<>
 struct has_fixed_size<object_tracking_messages::msg::DetectedPerson>
-  : std::integral_constant<bool, has_fixed_size<object_tracking_messages::msg::BoundingBox>::value> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<object_tracking_messages::msg::DetectedPerson>
-  : std::integral_constant<bool, has_bounded_size<object_tracking_messages::msg::BoundingBox>::value> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct is_message<object_tracking_messages::msg::DetectedPerson>

@@ -1,0 +1,23 @@
+[2.665s] Invoking command in '/home/student/Desktop/workspace/src/yolo_tracking': PYTHONPATH=/home/student/Desktop/workspace/build/yolo_tracking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/yolo_tracking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yolo_tracking build --build-base /home/student/Desktop/workspace/build/yolo_tracking/build install --record /home/student/Desktop/workspace/build/yolo_tracking/install.log --single-version-externally-managed install_data
+[3.194s] running egg_info
+[3.196s] writing ../../build/yolo_tracking/yolo_tracking.egg-info/PKG-INFO
+[3.196s] writing dependency_links to ../../build/yolo_tracking/yolo_tracking.egg-info/dependency_links.txt
+[3.197s] writing entry points to ../../build/yolo_tracking/yolo_tracking.egg-info/entry_points.txt
+[3.197s] writing requirements to ../../build/yolo_tracking/yolo_tracking.egg-info/requires.txt
+[3.197s] writing top-level names to ../../build/yolo_tracking/yolo_tracking.egg-info/top_level.txt
+[3.200s] reading manifest file '../../build/yolo_tracking/yolo_tracking.egg-info/SOURCES.txt'
+[3.202s] writing manifest file '../../build/yolo_tracking/yolo_tracking.egg-info/SOURCES.txt'
+[3.202s] running build
+[3.202s] running build_py
+[3.202s] copying yolo_tracking/object_detection_node.py -> /home/student/Desktop/workspace/build/yolo_tracking/build/lib/yolo_tracking
+[3.202s] running install
+[3.203s] running install_lib
+[3.204s] copying /home/student/Desktop/workspace/build/yolo_tracking/build/lib/yolo_tracking/object_detection_node.py -> /home/student/Desktop/workspace/install/yolo_tracking/lib/python3.10/site-packages/yolo_tracking
+[3.206s] byte-compiling /home/student/Desktop/workspace/install/yolo_tracking/lib/python3.10/site-packages/yolo_tracking/object_detection_node.py to object_detection_node.cpython-310.pyc
+[3.207s] running install_data
+[3.207s] running install_egg_info
+[3.211s] removing '/home/student/Desktop/workspace/install/yolo_tracking/lib/python3.10/site-packages/yolo_tracking-0.0.0-py3.10.egg-info' (and everything under it)
+[3.211s] Copying ../../build/yolo_tracking/yolo_tracking.egg-info to /home/student/Desktop/workspace/install/yolo_tracking/lib/python3.10/site-packages/yolo_tracking-0.0.0-py3.10.egg-info
+[3.212s] running install_scripts
+[3.244s] Installing object_detection_node script to /home/student/Desktop/workspace/install/yolo_tracking/lib/yolo_tracking
+[3.244s] writing list of installed files to '/home/student/Desktop/workspace/build/yolo_tracking/install.log'

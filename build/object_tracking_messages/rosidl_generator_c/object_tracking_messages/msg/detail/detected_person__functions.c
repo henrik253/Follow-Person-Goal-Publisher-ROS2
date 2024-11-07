@@ -12,8 +12,13 @@
 
 
 // Include directives for member types
+// Member `label`
+// Member `body_parts`
+#include "rosidl_runtime_c/string_functions.h"
 // Member `bbox`
 #include "object_tracking_messages/msg/detail/bounding_box__functions.h"
+// Member `person_key_point`
+#include "object_tracking_messages/msg/detail/person_key_point__functions.h"
 
 bool
 object_tracking_messages__msg__DetectedPerson__init(object_tracking_messages__msg__DetectedPerson * msg)
@@ -21,10 +26,25 @@ object_tracking_messages__msg__DetectedPerson__init(object_tracking_messages__ms
   if (!msg) {
     return false;
   }
+  // label
+  if (!rosidl_runtime_c__String__init(&msg->label)) {
+    object_tracking_messages__msg__DetectedPerson__fini(msg);
+    return false;
+  }
   // confidence
   // id
   // bbox
   if (!object_tracking_messages__msg__BoundingBox__init(&msg->bbox)) {
+    object_tracking_messages__msg__DetectedPerson__fini(msg);
+    return false;
+  }
+  // body_parts
+  if (!rosidl_runtime_c__String__Sequence__init(&msg->body_parts, 0)) {
+    object_tracking_messages__msg__DetectedPerson__fini(msg);
+    return false;
+  }
+  // person_key_point
+  if (!object_tracking_messages__msg__PersonKeyPoint__Sequence__init(&msg->person_key_point, 0)) {
     object_tracking_messages__msg__DetectedPerson__fini(msg);
     return false;
   }
@@ -37,16 +57,28 @@ object_tracking_messages__msg__DetectedPerson__fini(object_tracking_messages__ms
   if (!msg) {
     return;
   }
+  // label
+  rosidl_runtime_c__String__fini(&msg->label);
   // confidence
   // id
   // bbox
   object_tracking_messages__msg__BoundingBox__fini(&msg->bbox);
+  // body_parts
+  rosidl_runtime_c__String__Sequence__fini(&msg->body_parts);
+  // person_key_point
+  object_tracking_messages__msg__PersonKeyPoint__Sequence__fini(&msg->person_key_point);
 }
 
 bool
 object_tracking_messages__msg__DetectedPerson__are_equal(const object_tracking_messages__msg__DetectedPerson * lhs, const object_tracking_messages__msg__DetectedPerson * rhs)
 {
   if (!lhs || !rhs) {
+    return false;
+  }
+  // label
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->label), &(rhs->label)))
+  {
     return false;
   }
   // confidence
@@ -63,6 +95,18 @@ object_tracking_messages__msg__DetectedPerson__are_equal(const object_tracking_m
   {
     return false;
   }
+  // body_parts
+  if (!rosidl_runtime_c__String__Sequence__are_equal(
+      &(lhs->body_parts), &(rhs->body_parts)))
+  {
+    return false;
+  }
+  // person_key_point
+  if (!object_tracking_messages__msg__PersonKeyPoint__Sequence__are_equal(
+      &(lhs->person_key_point), &(rhs->person_key_point)))
+  {
+    return false;
+  }
   return true;
 }
 
@@ -74,6 +118,12 @@ object_tracking_messages__msg__DetectedPerson__copy(
   if (!input || !output) {
     return false;
   }
+  // label
+  if (!rosidl_runtime_c__String__copy(
+      &(input->label), &(output->label)))
+  {
+    return false;
+  }
   // confidence
   output->confidence = input->confidence;
   // id
@@ -81,6 +131,18 @@ object_tracking_messages__msg__DetectedPerson__copy(
   // bbox
   if (!object_tracking_messages__msg__BoundingBox__copy(
       &(input->bbox), &(output->bbox)))
+  {
+    return false;
+  }
+  // body_parts
+  if (!rosidl_runtime_c__String__Sequence__copy(
+      &(input->body_parts), &(output->body_parts)))
+  {
+    return false;
+  }
+  // person_key_point
+  if (!object_tracking_messages__msg__PersonKeyPoint__Sequence__copy(
+      &(input->person_key_point), &(output->person_key_point)))
   {
     return false;
   }

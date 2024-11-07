@@ -449,11 +449,13 @@ CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_ty
   /usr/include/c++/11/bits/istream.tcc \
   /usr/include/malloc.h \
   rosidl_generator_c/object_tracking_messages/msg/detail/detected_person__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   rosidl_generator_c/object_tracking_messages/msg/detail/bounding_box__struct.h \
   rosidl_generator_c/object_tracking_messages/msg/detail/detected_person__functions.h \
   /usr/include/c++/11/stdlib.h \
   rosidl_generator_c/object_tracking_messages/msg/rosidl_generator_c__visibility_control.h \
-  rosidl_generator_c/object_tracking_messages/msg/detail/bounding_box__functions.h
+  rosidl_generator_c/object_tracking_messages/msg/detail/bounding_box__functions.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h
 
 CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/object_tracking_messages/msg/detail/detected_persons__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/object_tracking_messages/msg/detail/detected_persons__type_support_c.cpp \
   /usr/include/stdc-predef.h \
@@ -678,6 +680,7 @@ CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_ty
   /usr/include/malloc.h \
   rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__struct.h \
   rosidl_generator_c/object_tracking_messages/msg/detail/detected_person__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   rosidl_generator_c/object_tracking_messages/msg/detail/bounding_box__struct.h \
   rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functions.h \
   /usr/include/c++/11/stdlib.h \
@@ -908,6 +911,7 @@ CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_ty
   rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__struct.h \
   rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__struct.h \
   rosidl_generator_c/object_tracking_messages/msg/detail/detected_person__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   rosidl_generator_c/object_tracking_messages/msg/detail/bounding_box__struct.h \
   rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.h \
   /usr/include/c++/11/stdlib.h \
@@ -949,6 +953,8 @@ rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functio
 /usr/include/c++/11/streambuf:
 
 /usr/include/c++/11/stdexcept:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
@@ -1267,6 +1273,8 @@ rosidl_generator_c/object_tracking_messages/msg/detail/bounding_box__functions.h
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/c++/11/bits/range_access.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h:
 
 /usr/include/c++/11/initializer_list:
 

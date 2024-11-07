@@ -13,9 +13,13 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__builder.hpp"
   "rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__struct.hpp"
   "rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__traits.hpp"
+  "rosidl_generator_cpp/object_tracking_messages/msg/detail/person_key_point__builder.hpp"
+  "rosidl_generator_cpp/object_tracking_messages/msg/detail/person_key_point__struct.hpp"
+  "rosidl_generator_cpp/object_tracking_messages/msg/detail/person_key_point__traits.hpp"
   "rosidl_generator_cpp/object_tracking_messages/msg/detected_person.hpp"
   "rosidl_generator_cpp/object_tracking_messages/msg/detected_persons.hpp"
   "rosidl_generator_cpp/object_tracking_messages/msg/person_distance.hpp"
+  "rosidl_generator_cpp/object_tracking_messages/msg/person_key_point.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

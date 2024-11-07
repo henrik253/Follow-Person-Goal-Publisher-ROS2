@@ -23,6 +23,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_detected_persons_s.c" "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_person_distance.py" "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_person_distance_s.c" "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_person_key_point.py" "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c" "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

@@ -1,0 +1,21 @@
+[2.971s] Invoking command in '/home/student/Desktop/workspace/src/sensor_presentation': PYTHONPATH=/home/student/Desktop/workspace/build/sensor_presentation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/sensor_presentation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/sensor_presentation build --build-base /home/student/Desktop/workspace/build/sensor_presentation/build install --record /home/student/Desktop/workspace/build/sensor_presentation/install.log --single-version-externally-managed install_data
+[3.605s] running egg_info
+[3.609s] writing ../../build/sensor_presentation/sensor_presentation.egg-info/PKG-INFO
+[3.610s] writing dependency_links to ../../build/sensor_presentation/sensor_presentation.egg-info/dependency_links.txt
+[3.612s] writing entry points to ../../build/sensor_presentation/sensor_presentation.egg-info/entry_points.txt
+[3.612s] writing requirements to ../../build/sensor_presentation/sensor_presentation.egg-info/requires.txt
+[3.613s] writing top-level names to ../../build/sensor_presentation/sensor_presentation.egg-info/top_level.txt
+[3.624s] reading manifest file '../../build/sensor_presentation/sensor_presentation.egg-info/SOURCES.txt'
+[3.625s] writing manifest file '../../build/sensor_presentation/sensor_presentation.egg-info/SOURCES.txt'
+[3.625s] running build
+[3.625s] running build_py
+[3.625s] running install
+[3.625s] running install_lib
+[3.630s] running install_data
+[3.630s] running install_egg_info
+[3.635s] removing '/home/student/Desktop/workspace/install/sensor_presentation/lib/python3.10/site-packages/sensor_presentation-0.0.0-py3.10.egg-info' (and everything under it)
+[3.635s] Copying ../../build/sensor_presentation/sensor_presentation.egg-info to /home/student/Desktop/workspace/install/sensor_presentation/lib/python3.10/site-packages/sensor_presentation-0.0.0-py3.10.egg-info
+[3.638s] running install_scripts
+[3.683s] Installing sensor_presentation_node script to /home/student/Desktop/workspace/install/sensor_presentation/lib/sensor_presentation
+[3.684s] writing list of installed files to '/home/student/Desktop/workspace/build/sensor_presentation/install.log'
+[3.755s] Invoked command in '/home/student/Desktop/workspace/src/sensor_presentation' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/sensor_presentation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/sensor_presentation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/sensor_presentation build --build-base /home/student/Desktop/workspace/build/sensor_presentation/build install --record /home/student/Desktop/workspace/build/sensor_presentation/install.log --single-version-externally-managed install_data

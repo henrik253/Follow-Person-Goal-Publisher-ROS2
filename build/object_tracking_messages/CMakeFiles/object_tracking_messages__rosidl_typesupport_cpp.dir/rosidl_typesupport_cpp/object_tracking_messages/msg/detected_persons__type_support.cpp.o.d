@@ -162,6 +162,7 @@ CMakeFiles/object_tracking_messages__rosidl_typesupport_cpp.dir/rosidl_typesuppo
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
  /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_person__struct.hpp \
  /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/bounding_box__struct.hpp \
+ /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/person_key_point__struct.hpp \
  /opt/ros/humble/include/rosidl_typesupport_cpp/rosidl_typesupport_cpp/identifier.hpp \
  /opt/ros/humble/include/rosidl_typesupport_cpp/rosidl_typesupport_cpp/visibility_control.h \
  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \

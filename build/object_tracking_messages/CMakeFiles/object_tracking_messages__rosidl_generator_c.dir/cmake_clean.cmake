@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functions.c.o.d"
   "CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c.o"
   "CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c.o.d"
+  "CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_key_point__functions.c.o"
+  "CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_key_point__functions.c.o.d"
   "libobject_tracking_messages__rosidl_generator_c.pdb"
   "libobject_tracking_messages__rosidl_generator_c.so"
   "rosidl_generator_c/object_tracking_messages/msg/bounding_box.h"
@@ -26,9 +28,14 @@ file(REMOVE_RECURSE
   "rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.h"
   "rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__struct.h"
   "rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__type_support.h"
+  "rosidl_generator_c/object_tracking_messages/msg/detail/person_key_point__functions.c"
+  "rosidl_generator_c/object_tracking_messages/msg/detail/person_key_point__functions.h"
+  "rosidl_generator_c/object_tracking_messages/msg/detail/person_key_point__struct.h"
+  "rosidl_generator_c/object_tracking_messages/msg/detail/person_key_point__type_support.h"
   "rosidl_generator_c/object_tracking_messages/msg/detected_person.h"
   "rosidl_generator_c/object_tracking_messages/msg/detected_persons.h"
   "rosidl_generator_c/object_tracking_messages/msg/person_distance.h"
+  "rosidl_generator_c/object_tracking_messages/msg/person_key_point.h"
 )
 
 # Per-language clean rules from dependency scanning.

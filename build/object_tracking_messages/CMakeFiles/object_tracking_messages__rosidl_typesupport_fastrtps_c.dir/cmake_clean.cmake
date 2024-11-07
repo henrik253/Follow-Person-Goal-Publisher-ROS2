@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/object_tracking_messages/msg/detail/detected_persons__type_support_c.cpp.o.d"
   "CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/object_tracking_messages/msg/detail/person_distance__type_support_c.cpp.o"
   "CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/object_tracking_messages/msg/detail/person_distance__type_support_c.cpp.o.d"
+  "CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/object_tracking_messages/msg/detail/person_key_point__type_support_c.cpp.o"
+  "CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/object_tracking_messages/msg/detail/person_key_point__type_support_c.cpp.o.d"
   "libobject_tracking_messages__rosidl_typesupport_fastrtps_c.pdb"
   "libobject_tracking_messages__rosidl_typesupport_fastrtps_c.so"
   "rosidl_typesupport_fastrtps_c/object_tracking_messages/msg/detail/bounding_box__rosidl_typesupport_fastrtps_c.h"
@@ -17,6 +19,8 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_fastrtps_c/object_tracking_messages/msg/detail/detected_persons__type_support_c.cpp"
   "rosidl_typesupport_fastrtps_c/object_tracking_messages/msg/detail/person_distance__rosidl_typesupport_fastrtps_c.h"
   "rosidl_typesupport_fastrtps_c/object_tracking_messages/msg/detail/person_distance__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/object_tracking_messages/msg/detail/person_key_point__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/object_tracking_messages/msg/detail/person_key_point__type_support_c.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

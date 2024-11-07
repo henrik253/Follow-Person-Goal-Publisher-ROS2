@@ -48,6 +48,10 @@ class Metaclass_DetectedPerson(type):
             if BoundingBox.__class__._TYPE_SUPPORT is None:
                 BoundingBox.__class__.__import_type_support__()
 
+            from object_tracking_messages.msg import PersonKeyPoint
+            if PersonKeyPoint.__class__._TYPE_SUPPORT is None:
+                PersonKeyPoint.__class__.__import_type_support__()
+
     @classmethod
     def __prepare__(cls, name, bases, **kwargs):
         # list constant names here so that they appear in the help text of
@@ -61,31 +65,43 @@ class DetectedPerson(metaclass=Metaclass_DetectedPerson):
     """Message class 'DetectedPerson'."""
 
     __slots__ = [
+        '_label',
         '_confidence',
         '_id',
         '_bbox',
+        '_body_parts',
+        '_person_key_point',
     ]
 
     _fields_and_field_types = {
+        'label': 'string',
         'confidence': 'float',
         'id': 'int32',
         'bbox': 'object_tracking_messages/BoundingBox',
+        'body_parts': 'sequence<string>',
+        'person_key_point': 'sequence<object_tracking_messages/PersonKeyPoint>',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['object_tracking_messages', 'msg'], 'BoundingBox'),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.UnboundedString()),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['object_tracking_messages', 'msg'], 'PersonKeyPoint')),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        self.label = kwargs.get('label', str())
         self.confidence = kwargs.get('confidence', float())
         self.id = kwargs.get('id', int())
         from object_tracking_messages.msg import BoundingBox
         self.bbox = kwargs.get('bbox', BoundingBox())
+        self.body_parts = kwargs.get('body_parts', [])
+        self.person_key_point = kwargs.get('person_key_point', [])
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -116,11 +132,17 @@ class DetectedPerson(metaclass=Metaclass_DetectedPerson):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
+        if self.label != other.label:
+            return False
         if self.confidence != other.confidence:
             return False
         if self.id != other.id:
             return False
         if self.bbox != other.bbox:
+            return False
+        if self.body_parts != other.body_parts:
+            return False
+        if self.person_key_point != other.person_key_point:
             return False
         return True
 
@@ -128,6 +150,19 @@ class DetectedPerson(metaclass=Metaclass_DetectedPerson):
     def get_fields_and_field_types(cls):
         from copy import copy
         return copy(cls._fields_and_field_types)
+
+    @builtins.property
+    def label(self):
+        """Message field 'label'."""
+        return self._label
+
+    @label.setter
+    def label(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'label' field must be of type 'str'"
+        self._label = value
 
     @builtins.property
     def confidence(self):
@@ -172,3 +207,50 @@ class DetectedPerson(metaclass=Metaclass_DetectedPerson):
                 isinstance(value, BoundingBox), \
                 "The 'bbox' field must be a sub message of type 'BoundingBox'"
         self._bbox = value
+
+    @builtins.property
+    def body_parts(self):
+        """Message field 'body_parts'."""
+        return self._body_parts
+
+    @body_parts.setter
+    def body_parts(self, value):
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, str) for v in value) and
+                 True), \
+                "The 'body_parts' field must be a set or sequence and each value of type 'str'"
+        self._body_parts = value
+
+    @builtins.property
+    def person_key_point(self):
+        """Message field 'person_key_point'."""
+        return self._person_key_point
+
+    @person_key_point.setter
+    def person_key_point(self, value):
+        if __debug__:
+            from object_tracking_messages.msg import PersonKeyPoint
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, PersonKeyPoint) for v in value) and
+                 True), \
+                "The 'person_key_point' field must be a set or sequence and each value of type 'PersonKeyPoint'"
+        self._person_key_point = value

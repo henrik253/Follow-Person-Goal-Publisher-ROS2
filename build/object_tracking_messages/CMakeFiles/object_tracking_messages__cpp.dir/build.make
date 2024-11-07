@@ -70,6 +70,10 @@ CMakeFiles/object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_m
 CMakeFiles/object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/bounding_box__builder.hpp
 CMakeFiles/object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/bounding_box__struct.hpp
 CMakeFiles/object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/bounding_box__traits.hpp
+CMakeFiles/object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/person_key_point.hpp
+CMakeFiles/object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/person_key_point__builder.hpp
+CMakeFiles/object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/person_key_point__struct.hpp
+CMakeFiles/object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/person_key_point__traits.hpp
 CMakeFiles/object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detected_person.hpp
 CMakeFiles/object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_person__builder.hpp
 CMakeFiles/object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_person__struct.hpp
@@ -99,6 +103,7 @@ rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp: /opt/ros/hum
 rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp: rosidl_adapter/object_tracking_messages/msg/BoundingBox.idl
+rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp: rosidl_adapter/object_tracking_messages/msg/PersonKeyPoint.idl
 rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp: rosidl_adapter/object_tracking_messages/msg/DetectedPerson.idl
 rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp: rosidl_adapter/object_tracking_messages/msg/DetectedPersons.idl
 rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp: rosidl_adapter/object_tracking_messages/msg/PersonDistance.idl
@@ -113,6 +118,18 @@ rosidl_generator_cpp/object_tracking_messages/msg/detail/bounding_box__struct.hp
 
 rosidl_generator_cpp/object_tracking_messages/msg/detail/bounding_box__traits.hpp: rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/object_tracking_messages/msg/detail/bounding_box__traits.hpp
+
+rosidl_generator_cpp/object_tracking_messages/msg/person_key_point.hpp: rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/object_tracking_messages/msg/person_key_point.hpp
+
+rosidl_generator_cpp/object_tracking_messages/msg/detail/person_key_point__builder.hpp: rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/object_tracking_messages/msg/detail/person_key_point__builder.hpp
+
+rosidl_generator_cpp/object_tracking_messages/msg/detail/person_key_point__struct.hpp: rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/object_tracking_messages/msg/detail/person_key_point__struct.hpp
+
+rosidl_generator_cpp/object_tracking_messages/msg/detail/person_key_point__traits.hpp: rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/object_tracking_messages/msg/detail/person_key_point__traits.hpp
 
 rosidl_generator_cpp/object_tracking_messages/msg/detected_person.hpp: rosidl_generator_cpp/object_tracking_messages/msg/bounding_box.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/object_tracking_messages/msg/detected_person.hpp
@@ -164,9 +181,13 @@ object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg
 object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__builder.hpp
 object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__struct.hpp
 object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__traits.hpp
+object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/person_key_point__builder.hpp
+object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/person_key_point__struct.hpp
+object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detail/person_key_point__traits.hpp
 object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detected_person.hpp
 object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/detected_persons.hpp
 object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/person_distance.hpp
+object_tracking_messages__cpp: rosidl_generator_cpp/object_tracking_messages/msg/person_key_point.hpp
 object_tracking_messages__cpp: CMakeFiles/object_tracking_messages__cpp.dir/build.make
 .PHONY : object_tracking_messages__cpp
 

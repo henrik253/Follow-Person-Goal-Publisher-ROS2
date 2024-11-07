@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_detected_persons_s.c"
   "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_person_distance.py"
   "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_person_distance_s.c"
+  "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_person_key_point.py"
+  "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c"
   "CMakeFiles/object_tracking_messages__py"
 )
 

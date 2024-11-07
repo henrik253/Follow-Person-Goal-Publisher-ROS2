@@ -83,10 +83,24 @@ CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_bounding_box_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_bounding_box_s.c -o CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_bounding_box_s.c.s
 
+CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c.o: CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/flags.make
+CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c.o: rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c
+CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c.o: CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c.o -MF CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c.o.d -o CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c.o -c /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c
+
+CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c > CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c.i
+
+CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c -o CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c.s
+
 CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_person_s.c.o: CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/flags.make
 CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_person_s.c.o: rosidl_generator_py/object_tracking_messages/msg/_detected_person_s.c
 CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_person_s.c.o: CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_person_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_person_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_person_s.c.o -MF CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_person_s.c.o.d -o CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_person_s.c.o -c /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_detected_person_s.c
 
 CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_person_s.c.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py
 CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_persons_s.c.o: CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/flags.make
 CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_persons_s.c.o: rosidl_generator_py/object_tracking_messages/msg/_detected_persons_s.c
 CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_persons_s.c.o: CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_persons_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_persons_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_persons_s.c.o -MF CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_persons_s.c.o.d -o CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_persons_s.c.o -c /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_detected_persons_s.c
 
 CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_persons_s.c.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py
 CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_distance_s.c.o: CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/flags.make
 CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_distance_s.c.o: rosidl_generator_py/object_tracking_messages/msg/_person_distance_s.c
 CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_distance_s.c.o: CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_distance_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_distance_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_distance_s.c.o -MF CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_distance_s.c.o.d -o CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_distance_s.c.o -c /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_py/object_tracking_messages/msg/_person_distance_s.c
 
 CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_distance_s.c.i: cmake_force
@@ -128,6 +142,7 @@ CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py
 # Object files for target object_tracking_messages__rosidl_generator_py
 object_tracking_messages__rosidl_generator_py_OBJECTS = \
 "CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_bounding_box_s.c.o" \
+"CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c.o" \
 "CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_person_s.c.o" \
 "CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_persons_s.c.o" \
 "CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_distance_s.c.o"
@@ -136,6 +151,7 @@ object_tracking_messages__rosidl_generator_py_OBJECTS = \
 object_tracking_messages__rosidl_generator_py_EXTERNAL_OBJECTS =
 
 rosidl_generator_py/object_tracking_messages/libobject_tracking_messages__rosidl_generator_py.so: CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_bounding_box_s.c.o
+rosidl_generator_py/object_tracking_messages/libobject_tracking_messages__rosidl_generator_py.so: CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c.o
 rosidl_generator_py/object_tracking_messages/libobject_tracking_messages__rosidl_generator_py.so: CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_person_s.c.o
 rosidl_generator_py/object_tracking_messages/libobject_tracking_messages__rosidl_generator_py.so: CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_persons_s.c.o
 rosidl_generator_py/object_tracking_messages/libobject_tracking_messages__rosidl_generator_py.so: CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_distance_s.c.o
@@ -146,7 +162,7 @@ rosidl_generator_py/object_tracking_messages/libobject_tracking_messages__rosidl
 rosidl_generator_py/object_tracking_messages/libobject_tracking_messages__rosidl_generator_py.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 rosidl_generator_py/object_tracking_messages/libobject_tracking_messages__rosidl_generator_py.so: /opt/ros/humble/lib/librcutils.so
 rosidl_generator_py/object_tracking_messages/libobject_tracking_messages__rosidl_generator_py.so: CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library rosidl_generator_py/object_tracking_messages/libobject_tracking_messages__rosidl_generator_py.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library rosidl_generator_py/object_tracking_messages/libobject_tracking_messages__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

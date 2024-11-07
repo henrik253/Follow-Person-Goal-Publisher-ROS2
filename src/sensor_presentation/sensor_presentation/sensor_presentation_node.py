@@ -5,7 +5,7 @@ from object_tracking_messages.msg import DetectedPersons, PersonDistance
 from cv_bridge import CvBridge
 import cv2
 import logging
-
+from launch.launch_description_sources import PythonLaunchDescriptionSource
 logging.getLogger('ultralytics').setLevel(logging.WARNING)
 
 class VisualizationNode(Node):
@@ -50,13 +50,11 @@ class VisualizationNode(Node):
 
             # Get the distance, real-world coordinates, and confidence score for this person
             distance = msg.distances[i] if i < len(msg.distances) else None
-            confidence = getattr(person, 'confidence', None)  # Adjust if named differently
-            
-            # Get real-world coordinates (assuming it's a flat list)
+            confidence = getattr(person, 'confidence', None)
             if msg.real_world_coordinates and i < len(msg.real_world_coordinates) // 3:
-                x_real = msg.real_world_coordinates[i * 3]   # X coordinate
-                y_real = msg.real_world_coordinates[i * 3 + 1]  # Y coordinate
-                z_real = msg.real_world_coordinates[i * 3 + 2]  # Z coordinate
+                x_real = msg.real_world_coordinates[i * 3]
+                y_real = msg.real_world_coordinates[i * 3 + 1]
+                z_real = msg.real_world_coordinates[i * 3 + 2]
             else:
                 x_real, y_real, z_real = None, None, None
 
@@ -65,7 +63,10 @@ class VisualizationNode(Node):
                 'distance': distance,
                 'confidence': confidence,
                 'real_coords': (x_real, y_real, z_real),  
-                'bbox': (x1, y1, x2, y2)  
+                'bbox': (x1, y1, x2, y2),
+                'label': person.label,
+                'body_parts': person.body_parts,  # Add body parts
+                'keypoints': person.person_key_point     # Add keypoints
             })
 
         # Visualize detected persons
@@ -73,29 +74,34 @@ class VisualizationNode(Node):
             self.visualize()
 
     def visualize(self):
-        for detected in self.detected_positions:
-            x1, y1, x2, y2 = detected['bbox']
-            x_center = int((x1 + x2) / 2)
-            y_center = int((y1 + y2) / 2)
+        try: 
+            for detected in self.detected_positions:
+                x1, y1, x2, y2 = detected['bbox']
+                x_center = int((x1 + x2) / 2)
+                y_center = int((y1 + y2) / 2)
 
-            # Circle and Bounding Box
-            cv2.rectangle(self.cv_image, (x1, y1), (x2, y2), (0, 255, 0), 2)
-            cv2.circle(self.cv_image, (x_center, y_center), 5, (0, 0, 255), -1)  # Red circle
+                # Draw the bounding box and center point
+                cv2.rectangle(self.cv_image, (x1, y1), (x2, y2), (0, 255, 0), 2)
+                cv2.circle(self.cv_image, (x_center, y_center), 5, (0, 0, 255), -1)
 
-            real_coords_str = ""
+                # Format additional text for distance and real-world coordinates
+                distance_str = f"{detected['distance']:.2f}" if detected['distance'] is not None else "N/A"
+                real_coords_str = ""
+                try:
+                    real_coords_str = f"R:({detected['real_coords'][0]:.2f}, {detected['real_coords'][1]:.2f}, {detected['real_coords'][2]:.2f})"
+                except Exception as e:
+                    self.get_logger().warning(f'Error formatting real-world coordinates: {e}')
 
-            #TODO avoid try catch block if not neccessary
-            # Format text 
-            distance_str = f"{detected['distance']:.2f}" if detected['distance'] is not None else "N/A"
-            try:
-                real_coords_str = f"R:({detected['real_coords'][0]:.2f}, {detected['real_coords'][1]:.2f}, {detected['real_coords'][2]:.2f})" 
-            except Exception as e:
-                self.get_logger().warning(f'e')
+                text = f"{detected['label']}, ID: {detected['id']}, D: {distance_str}m, C: {detected['confidence']:.2f}, {real_coords_str}"
+                cv2.putText(self.cv_image, text, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
 
-            text = f"ID: {detected['id']}, D: {distance_str}m, C: {detected['confidence']:.2f}, {real_coords_str}"
-            text_x = x1
-            text_y = y1 - 10
-            cv2.putText(self.cv_image, text, (text_x, text_y), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
+                # Draw keypoints with body part names
+                for part, keypoint in zip(detected['body_parts'], detected['keypoints']):
+                    kp_x, kp_y, kp_conf = int(keypoint.x), int(keypoint.y), keypoint.confidence
+                    cv2.circle(self.cv_image, (kp_x, kp_y), 3, (0, 255, 255), -1)  # Yellow for keypoints
+                    cv2.putText(self.cv_image, part, (kp_x, kp_y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 1)
+        except Exception as e:
+            self.get_logger().error(f"Visualization error: {e}")
 
         # Display the image
         cv2.imshow('Person Visualization', self.cv_image)

@@ -1,0 +1,22 @@
+[2.948s] Invoking command in '/home/student/Desktop/workspace/src/ouster_voxel_filter': PYTHONPATH=/home/student/Desktop/workspace/build/ouster_voxel_filter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/ouster_voxel_filter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ouster_voxel_filter build --build-base /home/student/Desktop/workspace/build/ouster_voxel_filter/build install --record /home/student/Desktop/workspace/build/ouster_voxel_filter/install.log --single-version-externally-managed install_data
+[3.555s] running egg_info
+[3.557s] writing ../../build/ouster_voxel_filter/ouster_voxel_filter.egg-info/PKG-INFO
+[3.558s] writing dependency_links to ../../build/ouster_voxel_filter/ouster_voxel_filter.egg-info/dependency_links.txt
+[3.558s] writing entry points to ../../build/ouster_voxel_filter/ouster_voxel_filter.egg-info/entry_points.txt
+[3.558s] writing requirements to ../../build/ouster_voxel_filter/ouster_voxel_filter.egg-info/requires.txt
+[3.559s] writing top-level names to ../../build/ouster_voxel_filter/ouster_voxel_filter.egg-info/top_level.txt
+[3.561s] reading manifest file '../../build/ouster_voxel_filter/ouster_voxel_filter.egg-info/SOURCES.txt'
+[3.562s] writing manifest file '../../build/ouster_voxel_filter/ouster_voxel_filter.egg-info/SOURCES.txt'
+[3.562s] running build
+[3.562s] running build_py
+[3.562s] running install
+[3.563s] running install_lib
+[3.566s] running install_data
+[3.566s] running install_egg_info
+[3.568s] removing '/home/student/Desktop/workspace/install/ouster_voxel_filter/lib/python3.10/site-packages/ouster_voxel_filter-0.0.0-py3.10.egg-info' (and everything under it)
+[3.577s] Copying ../../build/ouster_voxel_filter/ouster_voxel_filter.egg-info to /home/student/Desktop/workspace/install/ouster_voxel_filter/lib/python3.10/site-packages/ouster_voxel_filter-0.0.0-py3.10.egg-info
+[3.578s] running install_scripts
+[3.606s] Installing odom_publisher script to /home/student/Desktop/workspace/install/ouster_voxel_filter/lib/ouster_voxel_filter
+[3.606s] Installing voxel_filter_node script to /home/student/Desktop/workspace/install/ouster_voxel_filter/lib/ouster_voxel_filter
+[3.607s] writing list of installed files to '/home/student/Desktop/workspace/build/ouster_voxel_filter/install.log'
+[3.669s] Invoked command in '/home/student/Desktop/workspace/src/ouster_voxel_filter' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/ouster_voxel_filter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/ouster_voxel_filter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ouster_voxel_filter build --build-base /home/student/Desktop/workspace/build/ouster_voxel_filter/build install --record /home/student/Desktop/workspace/build/ouster_voxel_filter/install.log --single-version-externally-managed install_data

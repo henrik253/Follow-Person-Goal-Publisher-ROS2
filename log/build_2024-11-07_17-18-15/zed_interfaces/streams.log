@@ -1,0 +1,24 @@
+[0.075s] Invoking command in '/home/student/Desktop/workspace/build/zed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/sensor_presentation:/home/student/Desktop/workspace/install/position_estimation:/home/student/Desktop/workspace/install/ouster_voxel_filter:/home/student/Desktop/workspace/install/navigation:/home/student/Desktop/workspace/install/main:/opt/ros/humble /home/student/.local/bin/cmake --build /home/student/Desktop/workspace/build/zed_interfaces -- -j16 -l16
+[1.639s] [  0%] Built target zed_interfaces__cpp
+[1.640s] [  0%] Built target ament_cmake_python_symlink_zed_interfaces
+[1.641s] [ 12%] Built target zed_interfaces__rosidl_generator_c
+[1.642s] [ 24%] Built target zed_interfaces__rosidl_typesupport_cpp
+[1.643s] [ 42%] Built target zed_interfaces__rosidl_typesupport_introspection_c
+[1.643s] [ 48%] Built target zed_interfaces__rosidl_typesupport_c
+[1.643s] [ 68%] Built target zed_interfaces__rosidl_typesupport_introspection_cpp
+[1.643s] [ 72%] Built target zed_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.643s] [ 84%] Built target zed_interfaces__rosidl_typesupport_fastrtps_c
+[1.643s] [ 84%] Built target zed_interfaces
+[1.643s] [ 85%] Built target zed_interfaces__py
+[1.644s] [ 96%] Built target zed_interfaces__rosidl_generator_py
+[1.644s] [ 99%] Built target zed_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.644s] [100%] Built target zed_interfaces__rosidl_typesupport_c__pyext
+[1.644s] [100%] Built target zed_interfaces__rosidl_typesupport_introspection_c__pyext
+[1.644s] running egg_info
+[1.644s] writing zed_interfaces.egg-info/PKG-INFO
+[1.644s] writing dependency_links to zed_interfaces.egg-info/dependency_links.txt
+[1.644s] writing top-level names to zed_interfaces.egg-info/top_level.txt
+[1.644s] reading manifest file 'zed_interfaces.egg-info/SOURCES.txt'
+[1.644s] writing manifest file 'zed_interfaces.egg-info/SOURCES.txt'
+[1.644s] [100%] Built target ament_cmake_python_build_zed_interfaces_egg
+[1.980s] Invoked command in '/home/student/Desktop/workspace/build/zed_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/sensor_presentation:/home/student/Desktop/workspace/install/position_estimation:/home/student/Desktop/workspace/install/ouster_voxel_filter:/home/student/Desktop/workspace/install/navigation:/home/student/Desktop/workspace/install/main:/opt/ros/humble /home/student/.local/bin/cmake --build /home/student/Desktop/workspace/build/zed_interfaces -- -j16 -l16

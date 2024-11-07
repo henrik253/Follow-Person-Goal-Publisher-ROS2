@@ -1,0 +1,141 @@
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/student/Desktop/workspace/build/object_tracking_messages
+[  1%] Built target object_tracking_messages__cpp
+[  1%] Built target ament_cmake_python_symlink_object_tracking_messages
+[  3%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/detected_person__functions.c.o[0m
+[  4%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functions.c.o[0m
+[  6%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c.o[0m
+[  9%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/object_tracking_messages/msg/person_distance__type_support.cpp.o[0m
+[  9%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/object_tracking_messages/msg/detected_persons__type_support.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/object_tracking_messages/msg/detail/dds_fastrtps/detected_person__type_support.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/object_tracking_messages/msg/detail/dds_fastrtps/person_distance__type_support.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/object_tracking_messages/msg/detail/dds_fastrtps/detected_persons__type_support.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/object_tracking_messages/msg/detected_person__type_support.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/detected_person__type_support.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/person_distance__type_support.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/detected_persons__type_support.cpp.o[0m
+In file included from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__struct.h:22[m[K,
+                 from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__struct.h:22[m[K,
+                 from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.h:19[m[K,
+                 from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c:4[m[K:
+[01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/detected_person__struct.h:27:10:[m[K [01;31m[Kfatal error: [m[Kobject_tracking_messages/msg/detail/keypoint__struct.h: No such file or directory
+   27 | #include [01;31m[K"object_tracking_messages/msg/detail/keypoint__struct.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/detected_person__functions.h:19[m[K,
+                 from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/detected_person__functions.c:4[m[K:
+[01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/detected_person__struct.h:27:10:[m[K [01;31m[Kfatal error: [m[Kobject_tracking_messages/msg/detail/keypoint__struct.h: No such file or directory
+   27 | #include [01;31m[K"object_tracking_messages/msg/detail/keypoint__struct.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/build.make:225: CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c.o] Error 1
+In file included from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__struct.h:22[m[K,
+                 from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functions.h:19[m[K,
+                 from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functions.c:4[m[K:
+[01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/detected_person__struct.h:27:10:[m[K [01;31m[Kfatal error: [m[Kobject_tracking_messages/msg/detail/keypoint__struct.h: No such file or directory
+   27 | #include [01;31m[K"object_tracking_messages/msg/detail/keypoint__struct.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** Waiting for unfinished jobs....
+compilation terminated.
+gmake[2]: *** [CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/build.make:197: CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/detected_person__functions.c.o] Error 1
+gmake[2]: *** [CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/build.make:211: CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functions.c.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_typesupport_fastrtps_cpp/object_tracking_messages/msg/detail/detected_person__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_typesupport_fastrtps_cpp/object_tracking_messages/msg/detail/dds_fastrtps/detected_person__type_support.cpp:4[m[K:
+[01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_person__struct.hpp:22:10:[m[K [01;31m[Kfatal error: [m[Kobject_tracking_messages/msg/detail/keypoint__struct.hpp: No such file or directory
+   22 | #include [01;31m[K"object_tracking_messages/msg/detail/keypoint__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_typesupport_cpp/object_tracking_messages/msg/detected_person__type_support.cpp:7[m[K:
+[01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_person__struct.hpp:22:10:[m[K [01;31m[Kfatal error: [m[Kobject_tracking_messages/msg/detail/keypoint__struct.hpp: No such file or directory
+   22 | #include [01;31m[K"object_tracking_messages/msg/detail/keypoint__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_cpp.dir/build.make:147: CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/object_tracking_messages/msg/detail/dds_fastrtps/detected_person__type_support.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__struct.hpp:20[m[K,
+                 from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__struct.hpp:20[m[K,
+                 from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_typesupport_cpp/object_tracking_messages/msg/person_distance__type_support.cpp:7[m[K:
+[01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_person__struct.hpp:22:10:[m[K [01;31m[Kfatal error: [m[Kobject_tracking_messages/msg/detail/keypoint__struct.hpp: No such file or directory
+   22 | #include [01;31m[K"object_tracking_messages/msg/detail/keypoint__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__struct.hpp:20[m[K,
+                 from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_typesupport_cpp/object_tracking_messages/msg/detected_persons__type_support.cpp:7[m[K:
+[01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_person__struct.hpp:22:10:[m[K [01;31m[Kfatal error: [m[Kobject_tracking_messages/msg/detail/keypoint__struct.hpp: No such file or directory
+   22 | #include [01;31m[K"object_tracking_messages/msg/detail/keypoint__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/object_tracking_messages__rosidl_typesupport_cpp.dir/build.make:130: CMakeFiles/object_tracking_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/object_tracking_messages/msg/detected_person__type_support.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__struct.hpp:20[m[K,
+                 from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__struct.hpp:20[m[K,
+                 from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_typesupport_fastrtps_cpp/object_tracking_messages/msg/detail/person_distance__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_typesupport_fastrtps_cpp/object_tracking_messages/msg/detail/dds_fastrtps/person_distance__type_support.cpp:4[m[K:
+[01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_person__struct.hpp:22:10:[m[K [01;31m[Kfatal error: [m[Kobject_tracking_messages/msg/detail/keypoint__struct.hpp: No such file or directory
+   22 | #include [01;31m[K"object_tracking_messages/msg/detail/keypoint__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/object_tracking_messages__rosidl_typesupport_cpp.dir/build.make:158: CMakeFiles/object_tracking_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/object_tracking_messages/msg/person_distance__type_support.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/object_tracking_messages__rosidl_typesupport_cpp.dir/build.make:144: CMakeFiles/object_tracking_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/object_tracking_messages/msg/detected_persons__type_support.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_cpp.dir/build.make:175: CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/object_tracking_messages/msg/detail/dds_fastrtps/person_distance__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/object_tracking_messages__rosidl_typesupport_cpp.dir/all] Error 2
+In file included from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__struct.hpp:20[m[K,
+                 from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/detected_persons__type_support.cpp:12[m[K:
+[01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_person__struct.hpp:22:10:[m[K [01;31m[Kfatal error: [m[Kobject_tracking_messages/msg/detail/keypoint__struct.hpp: No such file or directory
+   22 | #include [01;31m[K"object_tracking_messages/msg/detail/keypoint__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/build.make:161: CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/detected_persons__type_support.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__struct.hpp:20[m[K,
+                 from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_typesupport_fastrtps_cpp/object_tracking_messages/msg/detail/detected_persons__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_typesupport_fastrtps_cpp/object_tracking_messages/msg/detail/dds_fastrtps/detected_persons__type_support.cpp:4[m[K:
+[01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_person__struct.hpp:22:10:[m[K [01;31m[Kfatal error: [m[Kobject_tracking_messages/msg/detail/keypoint__struct.hpp: No such file or directory
+   22 | #include [01;31m[K"object_tracking_messages/msg/detail/keypoint__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/detected_person__type_support.cpp:12[m[K:
+[01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_person__struct.hpp:22:10:[m[K [01;31m[Kfatal error: [m[Kobject_tracking_messages/msg/detail/keypoint__struct.hpp: No such file or directory
+   22 | #include [01;31m[K"object_tracking_messages/msg/detail/keypoint__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_cpp.dir/build.make:161: CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/object_tracking_messages/msg/detail/dds_fastrtps/detected_persons__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:343: CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/build.make:147: CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/detected_person__type_support.cpp.o] Error 1
+In file included from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__struct.hpp:20[m[K,
+                 from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__struct.hpp:20[m[K,
+                 from [01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/person_distance__type_support.cpp:12[m[K:
+[01m[K/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_person__struct.hpp:22:10:[m[K [01;31m[Kfatal error: [m[Kobject_tracking_messages/msg/detail/keypoint__struct.hpp: No such file or directory
+   22 | #include [01;31m[K"object_tracking_messages/msg/detail/keypoint__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/build.make:175: CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/person_distance__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+running egg_info
+writing object_tracking_messages.egg-info/PKG-INFO
+writing dependency_links to object_tracking_messages.egg-info/dependency_links.txt
+writing top-level names to object_tracking_messages.egg-info/top_level.txt
+reading manifest file 'object_tracking_messages.egg-info/SOURCES.txt'
+writing manifest file 'object_tracking_messages.egg-info/SOURCES.txt'
+[ 20%] Built target ament_cmake_python_build_object_tracking_messages_egg
+gmake: *** [Makefile:146: all] Error 2

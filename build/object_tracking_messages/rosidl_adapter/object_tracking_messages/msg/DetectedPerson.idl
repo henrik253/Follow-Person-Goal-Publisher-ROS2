@@ -3,17 +3,24 @@
 // generated code does not contain a copyright notice
 
 #include "object_tracking_messages/msg/BoundingBox.idl"
+#include "object_tracking_messages/msg/PersonKeyPoint.idl"
 
 module object_tracking_messages {
   module msg {
     @verbatim (language="comment", text=
       "Detected Person.msg")
     struct DetectedPerson {
+      string label;
+
       float confidence;
 
       int32 id;
 
       object_tracking_messages::msg::BoundingBox bbox;
+
+      sequence<string> body_parts;
+
+      sequence<object_tracking_messages::msg::PersonKeyPoint> person_key_point;
     };
   };
 };
