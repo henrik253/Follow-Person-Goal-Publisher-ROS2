@@ -6,6 +6,8 @@ from cv_bridge import CvBridge
 import cv2
 import logging
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+import numpy as np
+
 logging.getLogger('ultralytics').setLevel(logging.WARNING)
 
 class VisualizationNode(Node):
@@ -40,7 +42,7 @@ class VisualizationNode(Node):
     def positions_callback(self, msg):
         self.get_logger().debug(f'positions_callback msg: {msg}')
         self.detected_positions = []
- 
+
         # Store detected positions along with ID, distance, and confidence
         for i, person in enumerate(msg.detected_persons.persons):
             x1 = person.bbox.x_min
@@ -58,15 +60,21 @@ class VisualizationNode(Node):
             else:
                 x_real, y_real, z_real = None, None, None
 
+            # Classify pose based on real-world keypoints
+            pose_description = self.classify_pose(person, (x_real, y_real, z_real), x1, y1, x2, y2)
+
+            # Append the pose description to the label
+            label_with_pose = f"{person.label} - Pose: {pose_description}"
+
             self.detected_positions.append({
                 'id': person.id,
                 'distance': distance,
                 'confidence': confidence,
                 'real_coords': (x_real, y_real, z_real),  
                 'bbox': (x1, y1, x2, y2),
-                'label': person.label,
-                'body_parts': person.body_parts,  # Add body parts
-                'keypoints': person.person_key_point     # Add keypoints
+                'label': label_with_pose,
+                'body_parts': person.body_parts,
+                'keypoints': person.person_key_point
             })
 
         # Visualize detected persons
@@ -106,6 +114,54 @@ class VisualizationNode(Node):
         # Display the image
         cv2.imshow('Person Visualization', self.cv_image)
         cv2.waitKey(1)
+
+    def classify_pose(self, person, real_world_coords, x1, y1, x2, y2):
+        left_wrist_index = 9
+        right_wrist_index = 10
+
+        # Get the real-world position of the person’s torso (assumed to be the center of the bounding box)
+        if real_world_coords is None or len(person.person_key_point) < max(left_wrist_index, right_wrist_index):
+            return "unknown"
+
+        torso_x, torso_y, torso_z = real_world_coords
+
+        # Calculate the offsets for left and right wrists relative to the torso
+        bbox_width = x2 - x1
+        bbox_height = y2 - y1
+
+        if bbox_width == 0 or bbox_height == 0:
+            self.get_logger().warning("Bounding box has zero width or height, skipping pose classification.")
+            return "unknown"
+
+        left_wrist_offset_x = (person.person_key_point[left_wrist_index].x - x1) / bbox_width
+        left_wrist_offset_y = (person.person_key_point[left_wrist_index].y - y1) / bbox_height
+        right_wrist_offset_x = (person.person_key_point[right_wrist_index].x - x1) / bbox_width
+        right_wrist_offset_y = (person.person_key_point[right_wrist_index].y - y1) / bbox_height
+
+        # Assume wrists are at a similar depth as the torso
+        scaling_factor = 0.001  # Adjust this factor as needed
+        try:
+            left_wrist_real_x = torso_x + (left_wrist_offset_x - 0.5) * bbox_width * scaling_factor
+            left_wrist_real_y = torso_y + (left_wrist_offset_y - 0.5) * bbox_height * scaling_factor
+            left_wrist_real_z = torso_z
+
+            right_wrist_real_x = torso_x + (right_wrist_offset_x - 0.5) * bbox_width * scaling_factor
+            right_wrist_real_y = torso_y + (right_wrist_offset_y - 0.5) * bbox_height * scaling_factor
+            right_wrist_real_z = torso_z
+        except Exception as e:
+            return "normal"
+        # Calculate the real-world distance between wrists
+        wrist_distance = np.linalg.norm([
+            left_wrist_real_x - right_wrist_real_x,
+            left_wrist_real_y - right_wrist_real_y,
+            left_wrist_real_z - right_wrist_real_z
+        ])
+
+        # Determine pose based on wrist distance
+        if wrist_distance < 0.3:  # 30 cm in meters
+            return "hands folded"
+        
+        return "normal"
 
 def main(args=None):
     rclpy.init(args=args)

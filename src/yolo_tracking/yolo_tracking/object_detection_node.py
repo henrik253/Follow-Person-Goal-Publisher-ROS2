@@ -37,6 +37,11 @@ class ObjectTracker(Node):
         # Create CvBridge to convert ROS Image messages to OpenCV images
         self.bridge = CvBridge()
         self.model = YOLO('yolov8n-pose.pt')
+
+        self.body_part_names = ["nose", "left_eye", "right_eye", "left_ear", "right_ear",
+                                "left_shoulder", "right_shoulder", "left_elbow", "right_elbow",
+                                "left_wrist", "right_wrist", "left_hip", "right_hip",
+                                "left_knee", "right_knee", "left_ankle", "right_ankle"]
     
     def image_callback(self, msg):
         # Convert ROS Image message to OpenCV image
@@ -73,12 +78,9 @@ class ObjectTracker(Node):
                 kp_conf = kp.conf.cpu().numpy()[0]
                 print(kp_xy)
                 # Prepare keypoints and body parts for publishing
-                body_part_names = ["nose", "left_eye", "right_eye", "left_ear", "right_ear",
-                                "left_shoulder", "right_shoulder", "left_elbow", "right_elbow",
-                                "left_wrist", "right_wrist", "left_hip", "right_hip",
-                                "left_knee", "right_knee", "left_ankle", "right_ankle"]
+              
 
-                detectedPerson.body_parts = body_part_names
+                detectedPerson.body_parts = self.body_part_names
                 detectedPerson.person_key_point = [
                     PersonKeyPoint(x=float(x), y=float(y), confidence=float(c)) for (x, y), c in zip(kp_xy, kp_conf)
                 ]
@@ -99,28 +101,9 @@ class ObjectTracker(Node):
         detectedPersonsMsg.persons = persons
         self.detected_persons_publisher.publish(detectedPersonsMsg)
         
-        # Publish image with detections
+        # Publish image 
         tracked_image = self.bridge.cv2_to_imgmsg(cv_image, encoding='bgr8')
         self.image_publisher.publish(tracked_image)
-
-    def classify_pose(self, kp):
-        # Define indices for relevant joints
-        left_wrist_index = 9
-        right_wrist_index = 10
-
-        # Ensure required keypoints are available
-        if len(kp) > max(left_wrist_index, right_wrist_index):
-            left_wrist = np.array(kp[left_wrist_index][:2])  # (x, y) of left wrist
-            right_wrist = np.array(kp[right_wrist_index][:2])  # (x, y) of right wrist
-
-            # Calculate the distance between the wrists
-            wrist_distance = np.linalg.norm(left_wrist - right_wrist)
-
-            # Threshold for determining if hands are folded
-            if wrist_distance < 50:  # Adjust threshold as needed
-                return "hands folded"
-
-        return "normal"
 
 
 def main(args=None):
