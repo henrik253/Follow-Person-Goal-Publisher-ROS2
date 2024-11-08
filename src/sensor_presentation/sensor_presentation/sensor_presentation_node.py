@@ -32,6 +32,7 @@ class VisualizationNode(Node):
         self.bridge = CvBridge()
         self.cv_image = None
         self.detected_positions = []
+        self.last_detected_pose = "default"
 
     def image_callback(self, msg):
         # Convert ROS Image message to OpenCV image
@@ -59,21 +60,27 @@ class VisualizationNode(Node):
 
             # Collect real-world coordinates for each keypoint
             keypoints_real_coords = []
+            # Create map of bodyparts to keypoint distances
+            keypointToRealWorld = {}
             for j in range(len(person.person_key_point)):
                 try:
                     kp_real_x = getattr(msg, f'{person.body_parts[j]}_real_world_coordinates', [])[i * 3]
                     kp_real_y = getattr(msg, f'{person.body_parts[j]}_real_world_coordinates', [])[i * 3 + 1]
                     kp_real_z = getattr(msg, f'{person.body_parts[j]}_real_world_coordinates', [])[i * 3 + 2]
+                    keypointToRealWorld[person.body_parts[j]] = (kp_real_x,kp_real_y,kp_real_z)
                 except Exception as e:
                     kp_real_x=0
                     kp_real_y=0
                     kp_real_z=0
                     
                 keypoints_real_coords.append((kp_real_x, kp_real_y, kp_real_z))
-
+            
             # Classify pose based on real-world keypoints
-            pose_description = self.classify_pose(person, (x_real, y_real, z_real), x1, y1, x2, y2)
-            label_with_pose = f"{person.label} - Pose: {pose_description}"
+            pose_description = self.classify_pose(keypointToRealWorld)
+
+            if(not pose_description == 'Default'):
+                self.last_detected_pose = pose_description 
+            label_with_pose = f"{person.label} - Pose: { self.last_detected_pose}"
 
             # Store all data
             self.detected_positions.append({
@@ -117,7 +124,7 @@ class VisualizationNode(Node):
                 for part, keypoint, real_coords in zip(detected['body_parts'], detected['keypoints'], detected['keypoints_real_coords']):
                     kp_x, kp_y, kp_conf = int(keypoint.x), int(keypoint.y), keypoint.confidence
                     cv2.circle(self.cv_image, (kp_x, kp_y), 3, (0, 255, 255), -1)  # Yellow for keypoints
-                    #cv2.putText(self.cv_image, part, (kp_x, kp_y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 1)
+                   # cv2.putText(self.cv_image, part, (kp_x, kp_y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 1)
 
                     # Add real-world coordinates text next to each keypoint
                     if real_coords[0] is not None:
@@ -131,9 +138,33 @@ class VisualizationNode(Node):
         cv2.imshow('Person Visualization', self.cv_image)
         cv2.waitKey(1)
 
-    def classify_pose(self, person, real_world_coords, x1, y1, x2, y2):
-        # Pose classification code here
-        return "normal"  # Placeholder for simplicity
+    def classify_pose(self, keypointToRealWorld):
+        print("Keypoints to Real-World Coordinates:", keypointToRealWorld)
+        
+        # Retrieve the coordinates for the nose, right wrist, and left wrist
+        nose_coords = keypointToRealWorld.get('nose')
+        right_wrist_coords = keypointToRealWorld.get('right_wrist')
+        left_wrist_coords = keypointToRealWorld.get('left_wrist')
+        
+        # Check if each keypoint is defined and contains three coordinates (x, y, z)
+        if not (nose_coords and right_wrist_coords and left_wrist_coords):
+            print("One or more keypoints are undefined.")
+            return "Default"  # Return "Default" if any keypoint is missing
+
+        if len(nose_coords) < 2 or len(right_wrist_coords) < 2 or len(left_wrist_coords) < 2:
+            print("One or more keypoints do not have sufficient coordinates.")
+            return "Default"  # Return "Default" if any keypoint is missing y-coordinate data
+        # Coordinate system is flipped !!!!
+        # Pose classification based on wrist positions relative to the nose
+        if nose_coords[1] > right_wrist_coords[1] and nose_coords[1] > left_wrist_coords[1]:
+            return 'Both Hands Up'
+        elif nose_coords[1] > right_wrist_coords[1]:
+            return 'Right Hand Up'
+        elif nose_coords[1] > left_wrist_coords[1]:
+            return 'Left Hand Up'
+
+        # Default pose if none of the above conditions are met
+        return "Default"
 
 def main(args=None):
     rclpy.init(args=args)
