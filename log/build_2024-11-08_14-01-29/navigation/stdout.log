@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/navigation/navigation.egg-info/PKG-INFO
+writing dependency_links to ../../build/navigation/navigation.egg-info/dependency_links.txt
+writing entry points to ../../build/navigation/navigation.egg-info/entry_points.txt
+writing requirements to ../../build/navigation/navigation.egg-info/requires.txt
+writing top-level names to ../../build/navigation/navigation.egg-info/top_level.txt
+reading manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+writing manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+byte-compiling /home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages/navigation/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages/navigation/goal_publisher_node.py to goal_publisher_node.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages/navigation-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/navigation/navigation.egg-info to /home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages/navigation-0.0.0-py3.10.egg-info
+running install_scripts
+Installing goal_publisher_node script to /home/student/Desktop/workspace/install/navigation/lib/navigation
+writing list of installed files to '/home/student/Desktop/workspace/build/navigation/install.log'

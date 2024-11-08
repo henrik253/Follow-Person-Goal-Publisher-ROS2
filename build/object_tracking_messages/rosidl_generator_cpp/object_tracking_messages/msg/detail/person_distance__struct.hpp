@@ -59,6 +59,57 @@ struct PersonDistance_
   using _real_world_coordinates_type =
     std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
   _real_world_coordinates_type real_world_coordinates;
+  using _nose_real_world_coordinates_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _nose_real_world_coordinates_type nose_real_world_coordinates;
+  using _left_eye_real_world_coordinates_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _left_eye_real_world_coordinates_type left_eye_real_world_coordinates;
+  using _right_eye_real_world_coordinates_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _right_eye_real_world_coordinates_type right_eye_real_world_coordinates;
+  using _left_ear_real_world_coordinates_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _left_ear_real_world_coordinates_type left_ear_real_world_coordinates;
+  using _right_ear_real_world_coordinates_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _right_ear_real_world_coordinates_type right_ear_real_world_coordinates;
+  using _left_shoulder_real_world_coordinates_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _left_shoulder_real_world_coordinates_type left_shoulder_real_world_coordinates;
+  using _right_shoulder_real_world_coordinates_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _right_shoulder_real_world_coordinates_type right_shoulder_real_world_coordinates;
+  using _left_elbow_real_world_coordinates_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _left_elbow_real_world_coordinates_type left_elbow_real_world_coordinates;
+  using _right_elbow_real_world_coordinates_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _right_elbow_real_world_coordinates_type right_elbow_real_world_coordinates;
+  using _left_wrist_real_world_coordinates_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _left_wrist_real_world_coordinates_type left_wrist_real_world_coordinates;
+  using _right_wrist_real_world_coordinates_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _right_wrist_real_world_coordinates_type right_wrist_real_world_coordinates;
+  using _left_hip_real_world_coordinates_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _left_hip_real_world_coordinates_type left_hip_real_world_coordinates;
+  using _right_hip_real_world_coordinates_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _right_hip_real_world_coordinates_type right_hip_real_world_coordinates;
+  using _left_knee_real_world_coordinates_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _left_knee_real_world_coordinates_type left_knee_real_world_coordinates;
+  using _right_knee_real_world_coordinates_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _right_knee_real_world_coordinates_type right_knee_real_world_coordinates;
+  using _left_ankle_real_world_coordinates_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _left_ankle_real_world_coordinates_type left_ankle_real_world_coordinates;
+  using _right_ankle_real_world_coordinates_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _right_ankle_real_world_coordinates_type right_ankle_real_world_coordinates;
 
   // setters for named parameter idiom
   Type & set__detected_persons(
@@ -77,6 +128,108 @@ struct PersonDistance_
     const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
   {
     this->real_world_coordinates = _arg;
+    return *this;
+  }
+  Type & set__nose_real_world_coordinates(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->nose_real_world_coordinates = _arg;
+    return *this;
+  }
+  Type & set__left_eye_real_world_coordinates(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->left_eye_real_world_coordinates = _arg;
+    return *this;
+  }
+  Type & set__right_eye_real_world_coordinates(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->right_eye_real_world_coordinates = _arg;
+    return *this;
+  }
+  Type & set__left_ear_real_world_coordinates(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->left_ear_real_world_coordinates = _arg;
+    return *this;
+  }
+  Type & set__right_ear_real_world_coordinates(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->right_ear_real_world_coordinates = _arg;
+    return *this;
+  }
+  Type & set__left_shoulder_real_world_coordinates(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->left_shoulder_real_world_coordinates = _arg;
+    return *this;
+  }
+  Type & set__right_shoulder_real_world_coordinates(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->right_shoulder_real_world_coordinates = _arg;
+    return *this;
+  }
+  Type & set__left_elbow_real_world_coordinates(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->left_elbow_real_world_coordinates = _arg;
+    return *this;
+  }
+  Type & set__right_elbow_real_world_coordinates(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->right_elbow_real_world_coordinates = _arg;
+    return *this;
+  }
+  Type & set__left_wrist_real_world_coordinates(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->left_wrist_real_world_coordinates = _arg;
+    return *this;
+  }
+  Type & set__right_wrist_real_world_coordinates(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->right_wrist_real_world_coordinates = _arg;
+    return *this;
+  }
+  Type & set__left_hip_real_world_coordinates(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->left_hip_real_world_coordinates = _arg;
+    return *this;
+  }
+  Type & set__right_hip_real_world_coordinates(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->right_hip_real_world_coordinates = _arg;
+    return *this;
+  }
+  Type & set__left_knee_real_world_coordinates(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->left_knee_real_world_coordinates = _arg;
+    return *this;
+  }
+  Type & set__right_knee_real_world_coordinates(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->right_knee_real_world_coordinates = _arg;
+    return *this;
+  }
+  Type & set__left_ankle_real_world_coordinates(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->left_ankle_real_world_coordinates = _arg;
+    return *this;
+  }
+  Type & set__right_ankle_real_world_coordinates(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->right_ankle_real_world_coordinates = _arg;
     return *this;
   }
 
@@ -129,6 +282,57 @@ struct PersonDistance_
       return false;
     }
     if (this->real_world_coordinates != other.real_world_coordinates) {
+      return false;
+    }
+    if (this->nose_real_world_coordinates != other.nose_real_world_coordinates) {
+      return false;
+    }
+    if (this->left_eye_real_world_coordinates != other.left_eye_real_world_coordinates) {
+      return false;
+    }
+    if (this->right_eye_real_world_coordinates != other.right_eye_real_world_coordinates) {
+      return false;
+    }
+    if (this->left_ear_real_world_coordinates != other.left_ear_real_world_coordinates) {
+      return false;
+    }
+    if (this->right_ear_real_world_coordinates != other.right_ear_real_world_coordinates) {
+      return false;
+    }
+    if (this->left_shoulder_real_world_coordinates != other.left_shoulder_real_world_coordinates) {
+      return false;
+    }
+    if (this->right_shoulder_real_world_coordinates != other.right_shoulder_real_world_coordinates) {
+      return false;
+    }
+    if (this->left_elbow_real_world_coordinates != other.left_elbow_real_world_coordinates) {
+      return false;
+    }
+    if (this->right_elbow_real_world_coordinates != other.right_elbow_real_world_coordinates) {
+      return false;
+    }
+    if (this->left_wrist_real_world_coordinates != other.left_wrist_real_world_coordinates) {
+      return false;
+    }
+    if (this->right_wrist_real_world_coordinates != other.right_wrist_real_world_coordinates) {
+      return false;
+    }
+    if (this->left_hip_real_world_coordinates != other.left_hip_real_world_coordinates) {
+      return false;
+    }
+    if (this->right_hip_real_world_coordinates != other.right_hip_real_world_coordinates) {
+      return false;
+    }
+    if (this->left_knee_real_world_coordinates != other.left_knee_real_world_coordinates) {
+      return false;
+    }
+    if (this->right_knee_real_world_coordinates != other.right_knee_real_world_coordinates) {
+      return false;
+    }
+    if (this->left_ankle_real_world_coordinates != other.left_ankle_real_world_coordinates) {
+      return false;
+    }
+    if (this->right_ankle_real_world_coordinates != other.right_ankle_real_world_coordinates) {
       return false;
     }
     return true;

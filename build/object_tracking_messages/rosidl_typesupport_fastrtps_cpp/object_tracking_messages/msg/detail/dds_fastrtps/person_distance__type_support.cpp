@@ -68,6 +68,74 @@ cdr_serialize(
   {
     cdr << ros_message.real_world_coordinates;
   }
+  // Member: nose_real_world_coordinates
+  {
+    cdr << ros_message.nose_real_world_coordinates;
+  }
+  // Member: left_eye_real_world_coordinates
+  {
+    cdr << ros_message.left_eye_real_world_coordinates;
+  }
+  // Member: right_eye_real_world_coordinates
+  {
+    cdr << ros_message.right_eye_real_world_coordinates;
+  }
+  // Member: left_ear_real_world_coordinates
+  {
+    cdr << ros_message.left_ear_real_world_coordinates;
+  }
+  // Member: right_ear_real_world_coordinates
+  {
+    cdr << ros_message.right_ear_real_world_coordinates;
+  }
+  // Member: left_shoulder_real_world_coordinates
+  {
+    cdr << ros_message.left_shoulder_real_world_coordinates;
+  }
+  // Member: right_shoulder_real_world_coordinates
+  {
+    cdr << ros_message.right_shoulder_real_world_coordinates;
+  }
+  // Member: left_elbow_real_world_coordinates
+  {
+    cdr << ros_message.left_elbow_real_world_coordinates;
+  }
+  // Member: right_elbow_real_world_coordinates
+  {
+    cdr << ros_message.right_elbow_real_world_coordinates;
+  }
+  // Member: left_wrist_real_world_coordinates
+  {
+    cdr << ros_message.left_wrist_real_world_coordinates;
+  }
+  // Member: right_wrist_real_world_coordinates
+  {
+    cdr << ros_message.right_wrist_real_world_coordinates;
+  }
+  // Member: left_hip_real_world_coordinates
+  {
+    cdr << ros_message.left_hip_real_world_coordinates;
+  }
+  // Member: right_hip_real_world_coordinates
+  {
+    cdr << ros_message.right_hip_real_world_coordinates;
+  }
+  // Member: left_knee_real_world_coordinates
+  {
+    cdr << ros_message.left_knee_real_world_coordinates;
+  }
+  // Member: right_knee_real_world_coordinates
+  {
+    cdr << ros_message.right_knee_real_world_coordinates;
+  }
+  // Member: left_ankle_real_world_coordinates
+  {
+    cdr << ros_message.left_ankle_real_world_coordinates;
+  }
+  // Member: right_ankle_real_world_coordinates
+  {
+    cdr << ros_message.right_ankle_real_world_coordinates;
+  }
   return true;
 }
 
@@ -89,6 +157,91 @@ cdr_deserialize(
   // Member: real_world_coordinates
   {
     cdr >> ros_message.real_world_coordinates;
+  }
+
+  // Member: nose_real_world_coordinates
+  {
+    cdr >> ros_message.nose_real_world_coordinates;
+  }
+
+  // Member: left_eye_real_world_coordinates
+  {
+    cdr >> ros_message.left_eye_real_world_coordinates;
+  }
+
+  // Member: right_eye_real_world_coordinates
+  {
+    cdr >> ros_message.right_eye_real_world_coordinates;
+  }
+
+  // Member: left_ear_real_world_coordinates
+  {
+    cdr >> ros_message.left_ear_real_world_coordinates;
+  }
+
+  // Member: right_ear_real_world_coordinates
+  {
+    cdr >> ros_message.right_ear_real_world_coordinates;
+  }
+
+  // Member: left_shoulder_real_world_coordinates
+  {
+    cdr >> ros_message.left_shoulder_real_world_coordinates;
+  }
+
+  // Member: right_shoulder_real_world_coordinates
+  {
+    cdr >> ros_message.right_shoulder_real_world_coordinates;
+  }
+
+  // Member: left_elbow_real_world_coordinates
+  {
+    cdr >> ros_message.left_elbow_real_world_coordinates;
+  }
+
+  // Member: right_elbow_real_world_coordinates
+  {
+    cdr >> ros_message.right_elbow_real_world_coordinates;
+  }
+
+  // Member: left_wrist_real_world_coordinates
+  {
+    cdr >> ros_message.left_wrist_real_world_coordinates;
+  }
+
+  // Member: right_wrist_real_world_coordinates
+  {
+    cdr >> ros_message.right_wrist_real_world_coordinates;
+  }
+
+  // Member: left_hip_real_world_coordinates
+  {
+    cdr >> ros_message.left_hip_real_world_coordinates;
+  }
+
+  // Member: right_hip_real_world_coordinates
+  {
+    cdr >> ros_message.right_hip_real_world_coordinates;
+  }
+
+  // Member: left_knee_real_world_coordinates
+  {
+    cdr >> ros_message.left_knee_real_world_coordinates;
+  }
+
+  // Member: right_knee_real_world_coordinates
+  {
+    cdr >> ros_message.right_knee_real_world_coordinates;
+  }
+
+  // Member: left_ankle_real_world_coordinates
+  {
+    cdr >> ros_message.left_ankle_real_world_coordinates;
+  }
+
+  // Member: right_ankle_real_world_coordinates
+  {
+    cdr >> ros_message.right_ankle_real_world_coordinates;
   }
 
   return true;
@@ -129,6 +282,176 @@ get_serialized_size(
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
     size_t item_size = sizeof(ros_message.real_world_coordinates[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: nose_real_world_coordinates
+  {
+    size_t array_size = ros_message.nose_real_world_coordinates.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.nose_real_world_coordinates[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: left_eye_real_world_coordinates
+  {
+    size_t array_size = ros_message.left_eye_real_world_coordinates.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.left_eye_real_world_coordinates[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: right_eye_real_world_coordinates
+  {
+    size_t array_size = ros_message.right_eye_real_world_coordinates.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.right_eye_real_world_coordinates[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: left_ear_real_world_coordinates
+  {
+    size_t array_size = ros_message.left_ear_real_world_coordinates.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.left_ear_real_world_coordinates[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: right_ear_real_world_coordinates
+  {
+    size_t array_size = ros_message.right_ear_real_world_coordinates.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.right_ear_real_world_coordinates[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: left_shoulder_real_world_coordinates
+  {
+    size_t array_size = ros_message.left_shoulder_real_world_coordinates.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.left_shoulder_real_world_coordinates[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: right_shoulder_real_world_coordinates
+  {
+    size_t array_size = ros_message.right_shoulder_real_world_coordinates.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.right_shoulder_real_world_coordinates[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: left_elbow_real_world_coordinates
+  {
+    size_t array_size = ros_message.left_elbow_real_world_coordinates.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.left_elbow_real_world_coordinates[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: right_elbow_real_world_coordinates
+  {
+    size_t array_size = ros_message.right_elbow_real_world_coordinates.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.right_elbow_real_world_coordinates[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: left_wrist_real_world_coordinates
+  {
+    size_t array_size = ros_message.left_wrist_real_world_coordinates.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.left_wrist_real_world_coordinates[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: right_wrist_real_world_coordinates
+  {
+    size_t array_size = ros_message.right_wrist_real_world_coordinates.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.right_wrist_real_world_coordinates[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: left_hip_real_world_coordinates
+  {
+    size_t array_size = ros_message.left_hip_real_world_coordinates.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.left_hip_real_world_coordinates[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: right_hip_real_world_coordinates
+  {
+    size_t array_size = ros_message.right_hip_real_world_coordinates.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.right_hip_real_world_coordinates[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: left_knee_real_world_coordinates
+  {
+    size_t array_size = ros_message.left_knee_real_world_coordinates.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.left_knee_real_world_coordinates[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: right_knee_real_world_coordinates
+  {
+    size_t array_size = ros_message.right_knee_real_world_coordinates.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.right_knee_real_world_coordinates[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: left_ankle_real_world_coordinates
+  {
+    size_t array_size = ros_message.left_ankle_real_world_coordinates.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.left_ankle_real_world_coordinates[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: right_ankle_real_world_coordinates
+  {
+    size_t array_size = ros_message.right_ankle_real_world_coordinates.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.right_ankle_real_world_coordinates[0]);
     current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -201,6 +524,227 @@ max_serialized_size_PersonDistance(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Member: nose_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: left_eye_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: right_eye_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: left_ear_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: right_ear_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: left_shoulder_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: right_shoulder_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: left_elbow_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: right_elbow_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: left_wrist_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: right_wrist_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: left_hip_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: right_hip_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: left_knee_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: right_knee_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: left_ankle_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: right_ankle_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -209,7 +753,7 @@ max_serialized_size_PersonDistance(
     using DataType = object_tracking_messages::msg::PersonDistance;
     is_plain =
       (
-      offsetof(DataType, real_world_coordinates) +
+      offsetof(DataType, right_ankle_real_world_coordinates) +
       last_member_size
       ) == ret_val;
   }

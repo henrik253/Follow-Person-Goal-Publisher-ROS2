@@ -69,6 +69,312 @@ inline void to_flow_style_yaml(
       }
       out << "]";
     }
+    out << ", ";
+  }
+
+  // member: nose_real_world_coordinates
+  {
+    if (msg.nose_real_world_coordinates.size() == 0) {
+      out << "nose_real_world_coordinates: []";
+    } else {
+      out << "nose_real_world_coordinates: [";
+      size_t pending_items = msg.nose_real_world_coordinates.size();
+      for (auto item : msg.nose_real_world_coordinates) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: left_eye_real_world_coordinates
+  {
+    if (msg.left_eye_real_world_coordinates.size() == 0) {
+      out << "left_eye_real_world_coordinates: []";
+    } else {
+      out << "left_eye_real_world_coordinates: [";
+      size_t pending_items = msg.left_eye_real_world_coordinates.size();
+      for (auto item : msg.left_eye_real_world_coordinates) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: right_eye_real_world_coordinates
+  {
+    if (msg.right_eye_real_world_coordinates.size() == 0) {
+      out << "right_eye_real_world_coordinates: []";
+    } else {
+      out << "right_eye_real_world_coordinates: [";
+      size_t pending_items = msg.right_eye_real_world_coordinates.size();
+      for (auto item : msg.right_eye_real_world_coordinates) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: left_ear_real_world_coordinates
+  {
+    if (msg.left_ear_real_world_coordinates.size() == 0) {
+      out << "left_ear_real_world_coordinates: []";
+    } else {
+      out << "left_ear_real_world_coordinates: [";
+      size_t pending_items = msg.left_ear_real_world_coordinates.size();
+      for (auto item : msg.left_ear_real_world_coordinates) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: right_ear_real_world_coordinates
+  {
+    if (msg.right_ear_real_world_coordinates.size() == 0) {
+      out << "right_ear_real_world_coordinates: []";
+    } else {
+      out << "right_ear_real_world_coordinates: [";
+      size_t pending_items = msg.right_ear_real_world_coordinates.size();
+      for (auto item : msg.right_ear_real_world_coordinates) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: left_shoulder_real_world_coordinates
+  {
+    if (msg.left_shoulder_real_world_coordinates.size() == 0) {
+      out << "left_shoulder_real_world_coordinates: []";
+    } else {
+      out << "left_shoulder_real_world_coordinates: [";
+      size_t pending_items = msg.left_shoulder_real_world_coordinates.size();
+      for (auto item : msg.left_shoulder_real_world_coordinates) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: right_shoulder_real_world_coordinates
+  {
+    if (msg.right_shoulder_real_world_coordinates.size() == 0) {
+      out << "right_shoulder_real_world_coordinates: []";
+    } else {
+      out << "right_shoulder_real_world_coordinates: [";
+      size_t pending_items = msg.right_shoulder_real_world_coordinates.size();
+      for (auto item : msg.right_shoulder_real_world_coordinates) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: left_elbow_real_world_coordinates
+  {
+    if (msg.left_elbow_real_world_coordinates.size() == 0) {
+      out << "left_elbow_real_world_coordinates: []";
+    } else {
+      out << "left_elbow_real_world_coordinates: [";
+      size_t pending_items = msg.left_elbow_real_world_coordinates.size();
+      for (auto item : msg.left_elbow_real_world_coordinates) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: right_elbow_real_world_coordinates
+  {
+    if (msg.right_elbow_real_world_coordinates.size() == 0) {
+      out << "right_elbow_real_world_coordinates: []";
+    } else {
+      out << "right_elbow_real_world_coordinates: [";
+      size_t pending_items = msg.right_elbow_real_world_coordinates.size();
+      for (auto item : msg.right_elbow_real_world_coordinates) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: left_wrist_real_world_coordinates
+  {
+    if (msg.left_wrist_real_world_coordinates.size() == 0) {
+      out << "left_wrist_real_world_coordinates: []";
+    } else {
+      out << "left_wrist_real_world_coordinates: [";
+      size_t pending_items = msg.left_wrist_real_world_coordinates.size();
+      for (auto item : msg.left_wrist_real_world_coordinates) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: right_wrist_real_world_coordinates
+  {
+    if (msg.right_wrist_real_world_coordinates.size() == 0) {
+      out << "right_wrist_real_world_coordinates: []";
+    } else {
+      out << "right_wrist_real_world_coordinates: [";
+      size_t pending_items = msg.right_wrist_real_world_coordinates.size();
+      for (auto item : msg.right_wrist_real_world_coordinates) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: left_hip_real_world_coordinates
+  {
+    if (msg.left_hip_real_world_coordinates.size() == 0) {
+      out << "left_hip_real_world_coordinates: []";
+    } else {
+      out << "left_hip_real_world_coordinates: [";
+      size_t pending_items = msg.left_hip_real_world_coordinates.size();
+      for (auto item : msg.left_hip_real_world_coordinates) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: right_hip_real_world_coordinates
+  {
+    if (msg.right_hip_real_world_coordinates.size() == 0) {
+      out << "right_hip_real_world_coordinates: []";
+    } else {
+      out << "right_hip_real_world_coordinates: [";
+      size_t pending_items = msg.right_hip_real_world_coordinates.size();
+      for (auto item : msg.right_hip_real_world_coordinates) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: left_knee_real_world_coordinates
+  {
+    if (msg.left_knee_real_world_coordinates.size() == 0) {
+      out << "left_knee_real_world_coordinates: []";
+    } else {
+      out << "left_knee_real_world_coordinates: [";
+      size_t pending_items = msg.left_knee_real_world_coordinates.size();
+      for (auto item : msg.left_knee_real_world_coordinates) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: right_knee_real_world_coordinates
+  {
+    if (msg.right_knee_real_world_coordinates.size() == 0) {
+      out << "right_knee_real_world_coordinates: []";
+    } else {
+      out << "right_knee_real_world_coordinates: [";
+      size_t pending_items = msg.right_knee_real_world_coordinates.size();
+      for (auto item : msg.right_knee_real_world_coordinates) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: left_ankle_real_world_coordinates
+  {
+    if (msg.left_ankle_real_world_coordinates.size() == 0) {
+      out << "left_ankle_real_world_coordinates: []";
+    } else {
+      out << "left_ankle_real_world_coordinates: [";
+      size_t pending_items = msg.left_ankle_real_world_coordinates.size();
+      for (auto item : msg.left_ankle_real_world_coordinates) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: right_ankle_real_world_coordinates
+  {
+    if (msg.right_ankle_real_world_coordinates.size() == 0) {
+      out << "right_ankle_real_world_coordinates: []";
+    } else {
+      out << "right_ankle_real_world_coordinates: [";
+      size_t pending_items = msg.right_ankle_real_world_coordinates.size();
+      for (auto item : msg.right_ankle_real_world_coordinates) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -116,6 +422,346 @@ inline void to_block_style_yaml(
     } else {
       out << "real_world_coordinates:\n";
       for (auto item : msg.real_world_coordinates) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: nose_real_world_coordinates
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.nose_real_world_coordinates.size() == 0) {
+      out << "nose_real_world_coordinates: []\n";
+    } else {
+      out << "nose_real_world_coordinates:\n";
+      for (auto item : msg.nose_real_world_coordinates) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: left_eye_real_world_coordinates
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.left_eye_real_world_coordinates.size() == 0) {
+      out << "left_eye_real_world_coordinates: []\n";
+    } else {
+      out << "left_eye_real_world_coordinates:\n";
+      for (auto item : msg.left_eye_real_world_coordinates) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: right_eye_real_world_coordinates
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.right_eye_real_world_coordinates.size() == 0) {
+      out << "right_eye_real_world_coordinates: []\n";
+    } else {
+      out << "right_eye_real_world_coordinates:\n";
+      for (auto item : msg.right_eye_real_world_coordinates) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: left_ear_real_world_coordinates
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.left_ear_real_world_coordinates.size() == 0) {
+      out << "left_ear_real_world_coordinates: []\n";
+    } else {
+      out << "left_ear_real_world_coordinates:\n";
+      for (auto item : msg.left_ear_real_world_coordinates) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: right_ear_real_world_coordinates
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.right_ear_real_world_coordinates.size() == 0) {
+      out << "right_ear_real_world_coordinates: []\n";
+    } else {
+      out << "right_ear_real_world_coordinates:\n";
+      for (auto item : msg.right_ear_real_world_coordinates) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: left_shoulder_real_world_coordinates
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.left_shoulder_real_world_coordinates.size() == 0) {
+      out << "left_shoulder_real_world_coordinates: []\n";
+    } else {
+      out << "left_shoulder_real_world_coordinates:\n";
+      for (auto item : msg.left_shoulder_real_world_coordinates) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: right_shoulder_real_world_coordinates
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.right_shoulder_real_world_coordinates.size() == 0) {
+      out << "right_shoulder_real_world_coordinates: []\n";
+    } else {
+      out << "right_shoulder_real_world_coordinates:\n";
+      for (auto item : msg.right_shoulder_real_world_coordinates) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: left_elbow_real_world_coordinates
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.left_elbow_real_world_coordinates.size() == 0) {
+      out << "left_elbow_real_world_coordinates: []\n";
+    } else {
+      out << "left_elbow_real_world_coordinates:\n";
+      for (auto item : msg.left_elbow_real_world_coordinates) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: right_elbow_real_world_coordinates
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.right_elbow_real_world_coordinates.size() == 0) {
+      out << "right_elbow_real_world_coordinates: []\n";
+    } else {
+      out << "right_elbow_real_world_coordinates:\n";
+      for (auto item : msg.right_elbow_real_world_coordinates) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: left_wrist_real_world_coordinates
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.left_wrist_real_world_coordinates.size() == 0) {
+      out << "left_wrist_real_world_coordinates: []\n";
+    } else {
+      out << "left_wrist_real_world_coordinates:\n";
+      for (auto item : msg.left_wrist_real_world_coordinates) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: right_wrist_real_world_coordinates
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.right_wrist_real_world_coordinates.size() == 0) {
+      out << "right_wrist_real_world_coordinates: []\n";
+    } else {
+      out << "right_wrist_real_world_coordinates:\n";
+      for (auto item : msg.right_wrist_real_world_coordinates) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: left_hip_real_world_coordinates
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.left_hip_real_world_coordinates.size() == 0) {
+      out << "left_hip_real_world_coordinates: []\n";
+    } else {
+      out << "left_hip_real_world_coordinates:\n";
+      for (auto item : msg.left_hip_real_world_coordinates) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: right_hip_real_world_coordinates
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.right_hip_real_world_coordinates.size() == 0) {
+      out << "right_hip_real_world_coordinates: []\n";
+    } else {
+      out << "right_hip_real_world_coordinates:\n";
+      for (auto item : msg.right_hip_real_world_coordinates) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: left_knee_real_world_coordinates
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.left_knee_real_world_coordinates.size() == 0) {
+      out << "left_knee_real_world_coordinates: []\n";
+    } else {
+      out << "left_knee_real_world_coordinates:\n";
+      for (auto item : msg.left_knee_real_world_coordinates) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: right_knee_real_world_coordinates
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.right_knee_real_world_coordinates.size() == 0) {
+      out << "right_knee_real_world_coordinates: []\n";
+    } else {
+      out << "right_knee_real_world_coordinates:\n";
+      for (auto item : msg.right_knee_real_world_coordinates) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: left_ankle_real_world_coordinates
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.left_ankle_real_world_coordinates.size() == 0) {
+      out << "left_ankle_real_world_coordinates: []\n";
+    } else {
+      out << "left_ankle_real_world_coordinates:\n";
+      for (auto item : msg.left_ankle_real_world_coordinates) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: right_ankle_real_world_coordinates
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.right_ankle_real_world_coordinates.size() == 0) {
+      out << "right_ankle_real_world_coordinates: []\n";
+    } else {
+      out << "right_ankle_real_world_coordinates:\n";
+      for (auto item : msg.right_ankle_real_world_coordinates) {
         if (indentation > 0) {
           out << std::string(indentation, ' ');
         }

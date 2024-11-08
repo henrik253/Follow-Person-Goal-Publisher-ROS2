@@ -9,3 +9,4 @@ object_tracking_messages/msg/_bounding_box.py
 object_tracking_messages/msg/_detected_person.py
 object_tracking_messages/msg/_detected_persons.py
 object_tracking_messages/msg/_person_distance.py
+object_tracking_messages/msg/_person_key_point.py

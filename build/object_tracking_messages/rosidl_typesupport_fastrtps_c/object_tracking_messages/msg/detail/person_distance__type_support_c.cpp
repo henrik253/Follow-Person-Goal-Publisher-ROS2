@@ -35,8 +35,8 @@ extern "C"
 #endif
 
 #include "object_tracking_messages/msg/detail/detected_persons__functions.h"  // detected_persons
-#include "rosidl_runtime_c/primitives_sequence.h"  // distances, real_world_coordinates
-#include "rosidl_runtime_c/primitives_sequence_functions.h"  // distances, real_world_coordinates
+#include "rosidl_runtime_c/primitives_sequence.h"  // distances, left_ankle_real_world_coordinates, left_ear_real_world_coordinates, left_elbow_real_world_coordinates, left_eye_real_world_coordinates, left_hip_real_world_coordinates, left_knee_real_world_coordinates, left_shoulder_real_world_coordinates, left_wrist_real_world_coordinates, nose_real_world_coordinates, real_world_coordinates, right_ankle_real_world_coordinates, right_ear_real_world_coordinates, right_elbow_real_world_coordinates, right_eye_real_world_coordinates, right_hip_real_world_coordinates, right_knee_real_world_coordinates, right_shoulder_real_world_coordinates, right_wrist_real_world_coordinates
+#include "rosidl_runtime_c/primitives_sequence_functions.h"  // distances, left_ankle_real_world_coordinates, left_ear_real_world_coordinates, left_elbow_real_world_coordinates, left_eye_real_world_coordinates, left_hip_real_world_coordinates, left_knee_real_world_coordinates, left_shoulder_real_world_coordinates, left_wrist_real_world_coordinates, nose_real_world_coordinates, real_world_coordinates, right_ankle_real_world_coordinates, right_ear_real_world_coordinates, right_elbow_real_world_coordinates, right_eye_real_world_coordinates, right_hip_real_world_coordinates, right_knee_real_world_coordinates, right_shoulder_real_world_coordinates, right_wrist_real_world_coordinates
 
 // forward declare type support functions
 size_t get_serialized_size_object_tracking_messages__msg__DetectedPersons(
@@ -89,6 +89,142 @@ static bool _PersonDistance__cdr_serialize(
   {
     size_t size = ros_message->real_world_coordinates.size;
     auto array_ptr = ros_message->real_world_coordinates.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: nose_real_world_coordinates
+  {
+    size_t size = ros_message->nose_real_world_coordinates.size;
+    auto array_ptr = ros_message->nose_real_world_coordinates.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: left_eye_real_world_coordinates
+  {
+    size_t size = ros_message->left_eye_real_world_coordinates.size;
+    auto array_ptr = ros_message->left_eye_real_world_coordinates.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: right_eye_real_world_coordinates
+  {
+    size_t size = ros_message->right_eye_real_world_coordinates.size;
+    auto array_ptr = ros_message->right_eye_real_world_coordinates.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: left_ear_real_world_coordinates
+  {
+    size_t size = ros_message->left_ear_real_world_coordinates.size;
+    auto array_ptr = ros_message->left_ear_real_world_coordinates.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: right_ear_real_world_coordinates
+  {
+    size_t size = ros_message->right_ear_real_world_coordinates.size;
+    auto array_ptr = ros_message->right_ear_real_world_coordinates.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: left_shoulder_real_world_coordinates
+  {
+    size_t size = ros_message->left_shoulder_real_world_coordinates.size;
+    auto array_ptr = ros_message->left_shoulder_real_world_coordinates.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: right_shoulder_real_world_coordinates
+  {
+    size_t size = ros_message->right_shoulder_real_world_coordinates.size;
+    auto array_ptr = ros_message->right_shoulder_real_world_coordinates.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: left_elbow_real_world_coordinates
+  {
+    size_t size = ros_message->left_elbow_real_world_coordinates.size;
+    auto array_ptr = ros_message->left_elbow_real_world_coordinates.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: right_elbow_real_world_coordinates
+  {
+    size_t size = ros_message->right_elbow_real_world_coordinates.size;
+    auto array_ptr = ros_message->right_elbow_real_world_coordinates.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: left_wrist_real_world_coordinates
+  {
+    size_t size = ros_message->left_wrist_real_world_coordinates.size;
+    auto array_ptr = ros_message->left_wrist_real_world_coordinates.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: right_wrist_real_world_coordinates
+  {
+    size_t size = ros_message->right_wrist_real_world_coordinates.size;
+    auto array_ptr = ros_message->right_wrist_real_world_coordinates.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: left_hip_real_world_coordinates
+  {
+    size_t size = ros_message->left_hip_real_world_coordinates.size;
+    auto array_ptr = ros_message->left_hip_real_world_coordinates.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: right_hip_real_world_coordinates
+  {
+    size_t size = ros_message->right_hip_real_world_coordinates.size;
+    auto array_ptr = ros_message->right_hip_real_world_coordinates.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: left_knee_real_world_coordinates
+  {
+    size_t size = ros_message->left_knee_real_world_coordinates.size;
+    auto array_ptr = ros_message->left_knee_real_world_coordinates.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: right_knee_real_world_coordinates
+  {
+    size_t size = ros_message->right_knee_real_world_coordinates.size;
+    auto array_ptr = ros_message->right_knee_real_world_coordinates.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: left_ankle_real_world_coordinates
+  {
+    size_t size = ros_message->left_ankle_real_world_coordinates.size;
+    auto array_ptr = ros_message->left_ankle_real_world_coordinates.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: right_ankle_real_world_coordinates
+  {
+    size_t size = ros_message->right_ankle_real_world_coordinates.size;
+    auto array_ptr = ros_message->right_ankle_real_world_coordinates.data;
     cdr << static_cast<uint32_t>(size);
     cdr.serializeArray(array_ptr, size);
   }
@@ -151,6 +287,278 @@ static bool _PersonDistance__cdr_deserialize(
     cdr.deserializeArray(array_ptr, size);
   }
 
+  // Field name: nose_real_world_coordinates
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->nose_real_world_coordinates.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->nose_real_world_coordinates);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->nose_real_world_coordinates, size)) {
+      fprintf(stderr, "failed to create array for field 'nose_real_world_coordinates'");
+      return false;
+    }
+    auto array_ptr = ros_message->nose_real_world_coordinates.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
+  // Field name: left_eye_real_world_coordinates
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->left_eye_real_world_coordinates.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->left_eye_real_world_coordinates);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->left_eye_real_world_coordinates, size)) {
+      fprintf(stderr, "failed to create array for field 'left_eye_real_world_coordinates'");
+      return false;
+    }
+    auto array_ptr = ros_message->left_eye_real_world_coordinates.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
+  // Field name: right_eye_real_world_coordinates
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->right_eye_real_world_coordinates.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->right_eye_real_world_coordinates);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->right_eye_real_world_coordinates, size)) {
+      fprintf(stderr, "failed to create array for field 'right_eye_real_world_coordinates'");
+      return false;
+    }
+    auto array_ptr = ros_message->right_eye_real_world_coordinates.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
+  // Field name: left_ear_real_world_coordinates
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->left_ear_real_world_coordinates.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->left_ear_real_world_coordinates);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->left_ear_real_world_coordinates, size)) {
+      fprintf(stderr, "failed to create array for field 'left_ear_real_world_coordinates'");
+      return false;
+    }
+    auto array_ptr = ros_message->left_ear_real_world_coordinates.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
+  // Field name: right_ear_real_world_coordinates
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->right_ear_real_world_coordinates.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->right_ear_real_world_coordinates);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->right_ear_real_world_coordinates, size)) {
+      fprintf(stderr, "failed to create array for field 'right_ear_real_world_coordinates'");
+      return false;
+    }
+    auto array_ptr = ros_message->right_ear_real_world_coordinates.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
+  // Field name: left_shoulder_real_world_coordinates
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->left_shoulder_real_world_coordinates.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->left_shoulder_real_world_coordinates);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->left_shoulder_real_world_coordinates, size)) {
+      fprintf(stderr, "failed to create array for field 'left_shoulder_real_world_coordinates'");
+      return false;
+    }
+    auto array_ptr = ros_message->left_shoulder_real_world_coordinates.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
+  // Field name: right_shoulder_real_world_coordinates
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->right_shoulder_real_world_coordinates.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->right_shoulder_real_world_coordinates);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->right_shoulder_real_world_coordinates, size)) {
+      fprintf(stderr, "failed to create array for field 'right_shoulder_real_world_coordinates'");
+      return false;
+    }
+    auto array_ptr = ros_message->right_shoulder_real_world_coordinates.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
+  // Field name: left_elbow_real_world_coordinates
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->left_elbow_real_world_coordinates.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->left_elbow_real_world_coordinates);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->left_elbow_real_world_coordinates, size)) {
+      fprintf(stderr, "failed to create array for field 'left_elbow_real_world_coordinates'");
+      return false;
+    }
+    auto array_ptr = ros_message->left_elbow_real_world_coordinates.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
+  // Field name: right_elbow_real_world_coordinates
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->right_elbow_real_world_coordinates.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->right_elbow_real_world_coordinates);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->right_elbow_real_world_coordinates, size)) {
+      fprintf(stderr, "failed to create array for field 'right_elbow_real_world_coordinates'");
+      return false;
+    }
+    auto array_ptr = ros_message->right_elbow_real_world_coordinates.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
+  // Field name: left_wrist_real_world_coordinates
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->left_wrist_real_world_coordinates.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->left_wrist_real_world_coordinates);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->left_wrist_real_world_coordinates, size)) {
+      fprintf(stderr, "failed to create array for field 'left_wrist_real_world_coordinates'");
+      return false;
+    }
+    auto array_ptr = ros_message->left_wrist_real_world_coordinates.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
+  // Field name: right_wrist_real_world_coordinates
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->right_wrist_real_world_coordinates.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->right_wrist_real_world_coordinates);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->right_wrist_real_world_coordinates, size)) {
+      fprintf(stderr, "failed to create array for field 'right_wrist_real_world_coordinates'");
+      return false;
+    }
+    auto array_ptr = ros_message->right_wrist_real_world_coordinates.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
+  // Field name: left_hip_real_world_coordinates
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->left_hip_real_world_coordinates.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->left_hip_real_world_coordinates);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->left_hip_real_world_coordinates, size)) {
+      fprintf(stderr, "failed to create array for field 'left_hip_real_world_coordinates'");
+      return false;
+    }
+    auto array_ptr = ros_message->left_hip_real_world_coordinates.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
+  // Field name: right_hip_real_world_coordinates
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->right_hip_real_world_coordinates.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->right_hip_real_world_coordinates);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->right_hip_real_world_coordinates, size)) {
+      fprintf(stderr, "failed to create array for field 'right_hip_real_world_coordinates'");
+      return false;
+    }
+    auto array_ptr = ros_message->right_hip_real_world_coordinates.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
+  // Field name: left_knee_real_world_coordinates
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->left_knee_real_world_coordinates.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->left_knee_real_world_coordinates);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->left_knee_real_world_coordinates, size)) {
+      fprintf(stderr, "failed to create array for field 'left_knee_real_world_coordinates'");
+      return false;
+    }
+    auto array_ptr = ros_message->left_knee_real_world_coordinates.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
+  // Field name: right_knee_real_world_coordinates
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->right_knee_real_world_coordinates.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->right_knee_real_world_coordinates);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->right_knee_real_world_coordinates, size)) {
+      fprintf(stderr, "failed to create array for field 'right_knee_real_world_coordinates'");
+      return false;
+    }
+    auto array_ptr = ros_message->right_knee_real_world_coordinates.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
+  // Field name: left_ankle_real_world_coordinates
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->left_ankle_real_world_coordinates.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->left_ankle_real_world_coordinates);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->left_ankle_real_world_coordinates, size)) {
+      fprintf(stderr, "failed to create array for field 'left_ankle_real_world_coordinates'");
+      return false;
+    }
+    auto array_ptr = ros_message->left_ankle_real_world_coordinates.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
+  // Field name: right_ankle_real_world_coordinates
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->right_ankle_real_world_coordinates.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->right_ankle_real_world_coordinates);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->right_ankle_real_world_coordinates, size)) {
+      fprintf(stderr, "failed to create array for field 'right_ankle_real_world_coordinates'");
+      return false;
+    }
+    auto array_ptr = ros_message->right_ankle_real_world_coordinates.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -187,6 +595,193 @@ size_t get_serialized_size_object_tracking_messages__msg__PersonDistance(
   {
     size_t array_size = ros_message->real_world_coordinates.size;
     auto array_ptr = ros_message->real_world_coordinates.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name nose_real_world_coordinates
+  {
+    size_t array_size = ros_message->nose_real_world_coordinates.size;
+    auto array_ptr = ros_message->nose_real_world_coordinates.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name left_eye_real_world_coordinates
+  {
+    size_t array_size = ros_message->left_eye_real_world_coordinates.size;
+    auto array_ptr = ros_message->left_eye_real_world_coordinates.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name right_eye_real_world_coordinates
+  {
+    size_t array_size = ros_message->right_eye_real_world_coordinates.size;
+    auto array_ptr = ros_message->right_eye_real_world_coordinates.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name left_ear_real_world_coordinates
+  {
+    size_t array_size = ros_message->left_ear_real_world_coordinates.size;
+    auto array_ptr = ros_message->left_ear_real_world_coordinates.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name right_ear_real_world_coordinates
+  {
+    size_t array_size = ros_message->right_ear_real_world_coordinates.size;
+    auto array_ptr = ros_message->right_ear_real_world_coordinates.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name left_shoulder_real_world_coordinates
+  {
+    size_t array_size = ros_message->left_shoulder_real_world_coordinates.size;
+    auto array_ptr = ros_message->left_shoulder_real_world_coordinates.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name right_shoulder_real_world_coordinates
+  {
+    size_t array_size = ros_message->right_shoulder_real_world_coordinates.size;
+    auto array_ptr = ros_message->right_shoulder_real_world_coordinates.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name left_elbow_real_world_coordinates
+  {
+    size_t array_size = ros_message->left_elbow_real_world_coordinates.size;
+    auto array_ptr = ros_message->left_elbow_real_world_coordinates.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name right_elbow_real_world_coordinates
+  {
+    size_t array_size = ros_message->right_elbow_real_world_coordinates.size;
+    auto array_ptr = ros_message->right_elbow_real_world_coordinates.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name left_wrist_real_world_coordinates
+  {
+    size_t array_size = ros_message->left_wrist_real_world_coordinates.size;
+    auto array_ptr = ros_message->left_wrist_real_world_coordinates.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name right_wrist_real_world_coordinates
+  {
+    size_t array_size = ros_message->right_wrist_real_world_coordinates.size;
+    auto array_ptr = ros_message->right_wrist_real_world_coordinates.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name left_hip_real_world_coordinates
+  {
+    size_t array_size = ros_message->left_hip_real_world_coordinates.size;
+    auto array_ptr = ros_message->left_hip_real_world_coordinates.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name right_hip_real_world_coordinates
+  {
+    size_t array_size = ros_message->right_hip_real_world_coordinates.size;
+    auto array_ptr = ros_message->right_hip_real_world_coordinates.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name left_knee_real_world_coordinates
+  {
+    size_t array_size = ros_message->left_knee_real_world_coordinates.size;
+    auto array_ptr = ros_message->left_knee_real_world_coordinates.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name right_knee_real_world_coordinates
+  {
+    size_t array_size = ros_message->right_knee_real_world_coordinates.size;
+    auto array_ptr = ros_message->right_knee_real_world_coordinates.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name left_ankle_real_world_coordinates
+  {
+    size_t array_size = ros_message->left_ankle_real_world_coordinates.size;
+    auto array_ptr = ros_message->left_ankle_real_world_coordinates.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name right_ankle_real_world_coordinates
+  {
+    size_t array_size = ros_message->right_ankle_real_world_coordinates.size;
+    auto array_ptr = ros_message->right_ankle_real_world_coordinates.data;
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
     (void)array_ptr;
@@ -266,6 +861,210 @@ size_t max_serialized_size_object_tracking_messages__msg__PersonDistance(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // member: nose_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: left_eye_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: right_eye_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: left_ear_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: right_ear_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: left_shoulder_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: right_shoulder_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: left_elbow_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: right_elbow_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: left_wrist_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: right_wrist_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: left_hip_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: right_hip_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: left_knee_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: right_knee_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: left_ankle_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: right_ankle_real_world_coordinates
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -275,7 +1074,7 @@ size_t max_serialized_size_object_tracking_messages__msg__PersonDistance(
     using DataType = object_tracking_messages__msg__PersonDistance;
     is_plain =
       (
-      offsetof(DataType, real_world_coordinates) +
+      offsetof(DataType, right_ankle_real_world_coordinates) +
       last_member_size
       ) == ret_val;
   }

@@ -1,0 +1,26 @@
+running egg_info
+writing ../../build/sensor_presentation/sensor_presentation.egg-info/PKG-INFO
+writing dependency_links to ../../build/sensor_presentation/sensor_presentation.egg-info/dependency_links.txt
+writing entry points to ../../build/sensor_presentation/sensor_presentation.egg-info/entry_points.txt
+writing requirements to ../../build/sensor_presentation/sensor_presentation.egg-info/requires.txt
+writing top-level names to ../../build/sensor_presentation/sensor_presentation.egg-info/top_level.txt
+reading manifest file '../../build/sensor_presentation/sensor_presentation.egg-info/SOURCES.txt'
+writing manifest file '../../build/sensor_presentation/sensor_presentation.egg-info/SOURCES.txt'
+running build
+running build_py
+copying sensor_presentation/pose_classifyer.py -> /home/student/Desktop/workspace/build/sensor_presentation/build/lib/sensor_presentation
+copying sensor_presentation/sensor_presentation_node.py -> /home/student/Desktop/workspace/build/sensor_presentation/build/lib/sensor_presentation
+running install
+running install_lib
+copying /home/student/Desktop/workspace/build/sensor_presentation/build/lib/sensor_presentation/pose_classifyer.py -> /home/student/Desktop/workspace/install/sensor_presentation/lib/python3.10/site-packages/sensor_presentation
+copying /home/student/Desktop/workspace/build/sensor_presentation/build/lib/sensor_presentation/sensor_presentation_node.py -> /home/student/Desktop/workspace/install/sensor_presentation/lib/python3.10/site-packages/sensor_presentation
+byte-compiling /home/student/Desktop/workspace/install/sensor_presentation/lib/python3.10/site-packages/sensor_presentation/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/student/Desktop/workspace/install/sensor_presentation/lib/python3.10/site-packages/sensor_presentation/pose_classifyer.py to pose_classifyer.cpython-310.pyc
+byte-compiling /home/student/Desktop/workspace/install/sensor_presentation/lib/python3.10/site-packages/sensor_presentation/sensor_presentation_node.py to sensor_presentation_node.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/student/Desktop/workspace/install/sensor_presentation/lib/python3.10/site-packages/sensor_presentation-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/sensor_presentation/sensor_presentation.egg-info to /home/student/Desktop/workspace/install/sensor_presentation/lib/python3.10/site-packages/sensor_presentation-0.0.0-py3.10.egg-info
+running install_scripts
+Installing sensor_presentation_node script to /home/student/Desktop/workspace/install/sensor_presentation/lib/sensor_presentation
+writing list of installed files to '/home/student/Desktop/workspace/build/sensor_presentation/install.log'

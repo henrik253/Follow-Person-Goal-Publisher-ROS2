@@ -14,6 +14,42 @@ module object_tracking_messages {
       sequence<float> distances;
 
       sequence<float> real_world_coordinates;
+
+      @verbatim (language="comment", text=
+        "all the x,y,z values for all bodyparts detected on the image")
+      sequence<float> nose_real_world_coordinates;
+
+      sequence<float> left_eye_real_world_coordinates;
+
+      sequence<float> right_eye_real_world_coordinates;
+
+      sequence<float> left_ear_real_world_coordinates;
+
+      sequence<float> right_ear_real_world_coordinates;
+
+      sequence<float> left_shoulder_real_world_coordinates;
+
+      sequence<float> right_shoulder_real_world_coordinates;
+
+      sequence<float> left_elbow_real_world_coordinates;
+
+      sequence<float> right_elbow_real_world_coordinates;
+
+      sequence<float> left_wrist_real_world_coordinates;
+
+      sequence<float> right_wrist_real_world_coordinates;
+
+      sequence<float> left_hip_real_world_coordinates;
+
+      sequence<float> right_hip_real_world_coordinates;
+
+      sequence<float> left_knee_real_world_coordinates;
+
+      sequence<float> right_knee_real_world_coordinates;
+
+      sequence<float> left_ankle_real_world_coordinates;
+
+      sequence<float> right_ankle_real_world_coordinates;
     };
   };
 };

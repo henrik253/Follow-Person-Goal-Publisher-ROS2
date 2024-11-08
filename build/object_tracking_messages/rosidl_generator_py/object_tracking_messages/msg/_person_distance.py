@@ -7,6 +7,23 @@
 
 # Member 'distances'
 # Member 'real_world_coordinates'
+# Member 'nose_real_world_coordinates'
+# Member 'left_eye_real_world_coordinates'
+# Member 'right_eye_real_world_coordinates'
+# Member 'left_ear_real_world_coordinates'
+# Member 'right_ear_real_world_coordinates'
+# Member 'left_shoulder_real_world_coordinates'
+# Member 'right_shoulder_real_world_coordinates'
+# Member 'left_elbow_real_world_coordinates'
+# Member 'right_elbow_real_world_coordinates'
+# Member 'left_wrist_real_world_coordinates'
+# Member 'right_wrist_real_world_coordinates'
+# Member 'left_hip_real_world_coordinates'
+# Member 'right_hip_real_world_coordinates'
+# Member 'left_knee_real_world_coordinates'
+# Member 'right_knee_real_world_coordinates'
+# Member 'left_ankle_real_world_coordinates'
+# Member 'right_ankle_real_world_coordinates'
 import array  # noqa: E402, I100
 
 import builtins  # noqa: E402, I100
@@ -68,16 +85,67 @@ class PersonDistance(metaclass=Metaclass_PersonDistance):
         '_detected_persons',
         '_distances',
         '_real_world_coordinates',
+        '_nose_real_world_coordinates',
+        '_left_eye_real_world_coordinates',
+        '_right_eye_real_world_coordinates',
+        '_left_ear_real_world_coordinates',
+        '_right_ear_real_world_coordinates',
+        '_left_shoulder_real_world_coordinates',
+        '_right_shoulder_real_world_coordinates',
+        '_left_elbow_real_world_coordinates',
+        '_right_elbow_real_world_coordinates',
+        '_left_wrist_real_world_coordinates',
+        '_right_wrist_real_world_coordinates',
+        '_left_hip_real_world_coordinates',
+        '_right_hip_real_world_coordinates',
+        '_left_knee_real_world_coordinates',
+        '_right_knee_real_world_coordinates',
+        '_left_ankle_real_world_coordinates',
+        '_right_ankle_real_world_coordinates',
     ]
 
     _fields_and_field_types = {
         'detected_persons': 'object_tracking_messages/DetectedPersons',
         'distances': 'sequence<float>',
         'real_world_coordinates': 'sequence<float>',
+        'nose_real_world_coordinates': 'sequence<float>',
+        'left_eye_real_world_coordinates': 'sequence<float>',
+        'right_eye_real_world_coordinates': 'sequence<float>',
+        'left_ear_real_world_coordinates': 'sequence<float>',
+        'right_ear_real_world_coordinates': 'sequence<float>',
+        'left_shoulder_real_world_coordinates': 'sequence<float>',
+        'right_shoulder_real_world_coordinates': 'sequence<float>',
+        'left_elbow_real_world_coordinates': 'sequence<float>',
+        'right_elbow_real_world_coordinates': 'sequence<float>',
+        'left_wrist_real_world_coordinates': 'sequence<float>',
+        'right_wrist_real_world_coordinates': 'sequence<float>',
+        'left_hip_real_world_coordinates': 'sequence<float>',
+        'right_hip_real_world_coordinates': 'sequence<float>',
+        'left_knee_real_world_coordinates': 'sequence<float>',
+        'right_knee_real_world_coordinates': 'sequence<float>',
+        'left_ankle_real_world_coordinates': 'sequence<float>',
+        'right_ankle_real_world_coordinates': 'sequence<float>',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.NamespacedType(['object_tracking_messages', 'msg'], 'DetectedPersons'),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
     )
@@ -90,6 +158,23 @@ class PersonDistance(metaclass=Metaclass_PersonDistance):
         self.detected_persons = kwargs.get('detected_persons', DetectedPersons())
         self.distances = array.array('f', kwargs.get('distances', []))
         self.real_world_coordinates = array.array('f', kwargs.get('real_world_coordinates', []))
+        self.nose_real_world_coordinates = array.array('f', kwargs.get('nose_real_world_coordinates', []))
+        self.left_eye_real_world_coordinates = array.array('f', kwargs.get('left_eye_real_world_coordinates', []))
+        self.right_eye_real_world_coordinates = array.array('f', kwargs.get('right_eye_real_world_coordinates', []))
+        self.left_ear_real_world_coordinates = array.array('f', kwargs.get('left_ear_real_world_coordinates', []))
+        self.right_ear_real_world_coordinates = array.array('f', kwargs.get('right_ear_real_world_coordinates', []))
+        self.left_shoulder_real_world_coordinates = array.array('f', kwargs.get('left_shoulder_real_world_coordinates', []))
+        self.right_shoulder_real_world_coordinates = array.array('f', kwargs.get('right_shoulder_real_world_coordinates', []))
+        self.left_elbow_real_world_coordinates = array.array('f', kwargs.get('left_elbow_real_world_coordinates', []))
+        self.right_elbow_real_world_coordinates = array.array('f', kwargs.get('right_elbow_real_world_coordinates', []))
+        self.left_wrist_real_world_coordinates = array.array('f', kwargs.get('left_wrist_real_world_coordinates', []))
+        self.right_wrist_real_world_coordinates = array.array('f', kwargs.get('right_wrist_real_world_coordinates', []))
+        self.left_hip_real_world_coordinates = array.array('f', kwargs.get('left_hip_real_world_coordinates', []))
+        self.right_hip_real_world_coordinates = array.array('f', kwargs.get('right_hip_real_world_coordinates', []))
+        self.left_knee_real_world_coordinates = array.array('f', kwargs.get('left_knee_real_world_coordinates', []))
+        self.right_knee_real_world_coordinates = array.array('f', kwargs.get('right_knee_real_world_coordinates', []))
+        self.left_ankle_real_world_coordinates = array.array('f', kwargs.get('left_ankle_real_world_coordinates', []))
+        self.right_ankle_real_world_coordinates = array.array('f', kwargs.get('right_ankle_real_world_coordinates', []))
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -125,6 +210,40 @@ class PersonDistance(metaclass=Metaclass_PersonDistance):
         if self.distances != other.distances:
             return False
         if self.real_world_coordinates != other.real_world_coordinates:
+            return False
+        if self.nose_real_world_coordinates != other.nose_real_world_coordinates:
+            return False
+        if self.left_eye_real_world_coordinates != other.left_eye_real_world_coordinates:
+            return False
+        if self.right_eye_real_world_coordinates != other.right_eye_real_world_coordinates:
+            return False
+        if self.left_ear_real_world_coordinates != other.left_ear_real_world_coordinates:
+            return False
+        if self.right_ear_real_world_coordinates != other.right_ear_real_world_coordinates:
+            return False
+        if self.left_shoulder_real_world_coordinates != other.left_shoulder_real_world_coordinates:
+            return False
+        if self.right_shoulder_real_world_coordinates != other.right_shoulder_real_world_coordinates:
+            return False
+        if self.left_elbow_real_world_coordinates != other.left_elbow_real_world_coordinates:
+            return False
+        if self.right_elbow_real_world_coordinates != other.right_elbow_real_world_coordinates:
+            return False
+        if self.left_wrist_real_world_coordinates != other.left_wrist_real_world_coordinates:
+            return False
+        if self.right_wrist_real_world_coordinates != other.right_wrist_real_world_coordinates:
+            return False
+        if self.left_hip_real_world_coordinates != other.left_hip_real_world_coordinates:
+            return False
+        if self.right_hip_real_world_coordinates != other.right_hip_real_world_coordinates:
+            return False
+        if self.left_knee_real_world_coordinates != other.left_knee_real_world_coordinates:
+            return False
+        if self.right_knee_real_world_coordinates != other.right_knee_real_world_coordinates:
+            return False
+        if self.left_ankle_real_world_coordinates != other.left_ankle_real_world_coordinates:
+            return False
+        if self.right_ankle_real_world_coordinates != other.right_ankle_real_world_coordinates:
             return False
         return True
 
@@ -202,3 +321,479 @@ class PersonDistance(metaclass=Metaclass_PersonDistance):
                  all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
                 "The 'real_world_coordinates' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
         self._real_world_coordinates = array.array('f', value)
+
+    @builtins.property
+    def nose_real_world_coordinates(self):
+        """Message field 'nose_real_world_coordinates'."""
+        return self._nose_real_world_coordinates
+
+    @nose_real_world_coordinates.setter
+    def nose_real_world_coordinates(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'nose_real_world_coordinates' array.array() must have the type code of 'f'"
+            self._nose_real_world_coordinates = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'nose_real_world_coordinates' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._nose_real_world_coordinates = array.array('f', value)
+
+    @builtins.property
+    def left_eye_real_world_coordinates(self):
+        """Message field 'left_eye_real_world_coordinates'."""
+        return self._left_eye_real_world_coordinates
+
+    @left_eye_real_world_coordinates.setter
+    def left_eye_real_world_coordinates(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'left_eye_real_world_coordinates' array.array() must have the type code of 'f'"
+            self._left_eye_real_world_coordinates = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'left_eye_real_world_coordinates' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._left_eye_real_world_coordinates = array.array('f', value)
+
+    @builtins.property
+    def right_eye_real_world_coordinates(self):
+        """Message field 'right_eye_real_world_coordinates'."""
+        return self._right_eye_real_world_coordinates
+
+    @right_eye_real_world_coordinates.setter
+    def right_eye_real_world_coordinates(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'right_eye_real_world_coordinates' array.array() must have the type code of 'f'"
+            self._right_eye_real_world_coordinates = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'right_eye_real_world_coordinates' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._right_eye_real_world_coordinates = array.array('f', value)
+
+    @builtins.property
+    def left_ear_real_world_coordinates(self):
+        """Message field 'left_ear_real_world_coordinates'."""
+        return self._left_ear_real_world_coordinates
+
+    @left_ear_real_world_coordinates.setter
+    def left_ear_real_world_coordinates(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'left_ear_real_world_coordinates' array.array() must have the type code of 'f'"
+            self._left_ear_real_world_coordinates = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'left_ear_real_world_coordinates' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._left_ear_real_world_coordinates = array.array('f', value)
+
+    @builtins.property
+    def right_ear_real_world_coordinates(self):
+        """Message field 'right_ear_real_world_coordinates'."""
+        return self._right_ear_real_world_coordinates
+
+    @right_ear_real_world_coordinates.setter
+    def right_ear_real_world_coordinates(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'right_ear_real_world_coordinates' array.array() must have the type code of 'f'"
+            self._right_ear_real_world_coordinates = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'right_ear_real_world_coordinates' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._right_ear_real_world_coordinates = array.array('f', value)
+
+    @builtins.property
+    def left_shoulder_real_world_coordinates(self):
+        """Message field 'left_shoulder_real_world_coordinates'."""
+        return self._left_shoulder_real_world_coordinates
+
+    @left_shoulder_real_world_coordinates.setter
+    def left_shoulder_real_world_coordinates(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'left_shoulder_real_world_coordinates' array.array() must have the type code of 'f'"
+            self._left_shoulder_real_world_coordinates = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'left_shoulder_real_world_coordinates' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._left_shoulder_real_world_coordinates = array.array('f', value)
+
+    @builtins.property
+    def right_shoulder_real_world_coordinates(self):
+        """Message field 'right_shoulder_real_world_coordinates'."""
+        return self._right_shoulder_real_world_coordinates
+
+    @right_shoulder_real_world_coordinates.setter
+    def right_shoulder_real_world_coordinates(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'right_shoulder_real_world_coordinates' array.array() must have the type code of 'f'"
+            self._right_shoulder_real_world_coordinates = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'right_shoulder_real_world_coordinates' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._right_shoulder_real_world_coordinates = array.array('f', value)
+
+    @builtins.property
+    def left_elbow_real_world_coordinates(self):
+        """Message field 'left_elbow_real_world_coordinates'."""
+        return self._left_elbow_real_world_coordinates
+
+    @left_elbow_real_world_coordinates.setter
+    def left_elbow_real_world_coordinates(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'left_elbow_real_world_coordinates' array.array() must have the type code of 'f'"
+            self._left_elbow_real_world_coordinates = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'left_elbow_real_world_coordinates' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._left_elbow_real_world_coordinates = array.array('f', value)
+
+    @builtins.property
+    def right_elbow_real_world_coordinates(self):
+        """Message field 'right_elbow_real_world_coordinates'."""
+        return self._right_elbow_real_world_coordinates
+
+    @right_elbow_real_world_coordinates.setter
+    def right_elbow_real_world_coordinates(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'right_elbow_real_world_coordinates' array.array() must have the type code of 'f'"
+            self._right_elbow_real_world_coordinates = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'right_elbow_real_world_coordinates' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._right_elbow_real_world_coordinates = array.array('f', value)
+
+    @builtins.property
+    def left_wrist_real_world_coordinates(self):
+        """Message field 'left_wrist_real_world_coordinates'."""
+        return self._left_wrist_real_world_coordinates
+
+    @left_wrist_real_world_coordinates.setter
+    def left_wrist_real_world_coordinates(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'left_wrist_real_world_coordinates' array.array() must have the type code of 'f'"
+            self._left_wrist_real_world_coordinates = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'left_wrist_real_world_coordinates' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._left_wrist_real_world_coordinates = array.array('f', value)
+
+    @builtins.property
+    def right_wrist_real_world_coordinates(self):
+        """Message field 'right_wrist_real_world_coordinates'."""
+        return self._right_wrist_real_world_coordinates
+
+    @right_wrist_real_world_coordinates.setter
+    def right_wrist_real_world_coordinates(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'right_wrist_real_world_coordinates' array.array() must have the type code of 'f'"
+            self._right_wrist_real_world_coordinates = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'right_wrist_real_world_coordinates' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._right_wrist_real_world_coordinates = array.array('f', value)
+
+    @builtins.property
+    def left_hip_real_world_coordinates(self):
+        """Message field 'left_hip_real_world_coordinates'."""
+        return self._left_hip_real_world_coordinates
+
+    @left_hip_real_world_coordinates.setter
+    def left_hip_real_world_coordinates(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'left_hip_real_world_coordinates' array.array() must have the type code of 'f'"
+            self._left_hip_real_world_coordinates = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'left_hip_real_world_coordinates' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._left_hip_real_world_coordinates = array.array('f', value)
+
+    @builtins.property
+    def right_hip_real_world_coordinates(self):
+        """Message field 'right_hip_real_world_coordinates'."""
+        return self._right_hip_real_world_coordinates
+
+    @right_hip_real_world_coordinates.setter
+    def right_hip_real_world_coordinates(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'right_hip_real_world_coordinates' array.array() must have the type code of 'f'"
+            self._right_hip_real_world_coordinates = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'right_hip_real_world_coordinates' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._right_hip_real_world_coordinates = array.array('f', value)
+
+    @builtins.property
+    def left_knee_real_world_coordinates(self):
+        """Message field 'left_knee_real_world_coordinates'."""
+        return self._left_knee_real_world_coordinates
+
+    @left_knee_real_world_coordinates.setter
+    def left_knee_real_world_coordinates(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'left_knee_real_world_coordinates' array.array() must have the type code of 'f'"
+            self._left_knee_real_world_coordinates = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'left_knee_real_world_coordinates' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._left_knee_real_world_coordinates = array.array('f', value)
+
+    @builtins.property
+    def right_knee_real_world_coordinates(self):
+        """Message field 'right_knee_real_world_coordinates'."""
+        return self._right_knee_real_world_coordinates
+
+    @right_knee_real_world_coordinates.setter
+    def right_knee_real_world_coordinates(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'right_knee_real_world_coordinates' array.array() must have the type code of 'f'"
+            self._right_knee_real_world_coordinates = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'right_knee_real_world_coordinates' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._right_knee_real_world_coordinates = array.array('f', value)
+
+    @builtins.property
+    def left_ankle_real_world_coordinates(self):
+        """Message field 'left_ankle_real_world_coordinates'."""
+        return self._left_ankle_real_world_coordinates
+
+    @left_ankle_real_world_coordinates.setter
+    def left_ankle_real_world_coordinates(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'left_ankle_real_world_coordinates' array.array() must have the type code of 'f'"
+            self._left_ankle_real_world_coordinates = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'left_ankle_real_world_coordinates' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._left_ankle_real_world_coordinates = array.array('f', value)
+
+    @builtins.property
+    def right_ankle_real_world_coordinates(self):
+        """Message field 'right_ankle_real_world_coordinates'."""
+        return self._right_ankle_real_world_coordinates
+
+    @right_ankle_real_world_coordinates.setter
+    def right_ankle_real_world_coordinates(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'right_ankle_real_world_coordinates' array.array() must have the type code of 'f'"
+            self._right_ankle_real_world_coordinates = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'right_ankle_real_world_coordinates' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._right_ankle_real_world_coordinates = array.array('f', value)
