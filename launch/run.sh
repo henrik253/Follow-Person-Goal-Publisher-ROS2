@@ -27,12 +27,12 @@ xterm -geometry $TERMINAL_WIDTH"x"$TERMINAL_HEIGHT"+"$((0 * X_OFFSET))"+"$Y_OFFS
 -e "cd '$CURRENT_DIR';cd ..; source install/setup.bash; ros2 launch zed_wrapper zed_camera.launch.py camera_model:=zed2i; exec bash" & #use_sim_time:=true
 
 xterm -geometry $TERMINAL_WIDTH"x"$TERMINAL_HEIGHT"+"$((1 * X_OFFSET))"+"$Y_OFFSET \
--e "cd '$CURRENT_DIR';cd ..; source install/setup.bash; ros2 run yolo_tracking object_detection_node; exec bash" &
+-e "cd '$CURRENT_DIR';cd ..; source install/setup.bash; ros2 run main object_detection_node; exec bash" &
 
 xterm -geometry $TERMINAL_WIDTH"x"$TERMINAL_HEIGHT"+"$((2 * X_OFFSET))"+"$Y_OFFSET \
--e "cd '$CURRENT_DIR';cd ..; source install/setup.bash; ros2 run position_estimation position_estimation_node; exec bash" &
+-e "cd '$CURRENT_DIR';cd ..; source install/setup.bash; ros2 run main position_estimation_node; exec bash" &
 
 xterm -geometry $TERMINAL_WIDTH"x"$TERMINAL_HEIGHT"+"$((3 * X_OFFSET))"+"$Y_OFFSET \
--e "cd '$CURRENT_DIR';cd ..; source install/setup.bash; ros2 run sensor_presentation sensor_presentation_node; exec bash" &
+-e "cd '$CURRENT_DIR';cd ..; source install/setup.bash; ros2 run main sensor_presentation_node; exec bash" &
 
 wait

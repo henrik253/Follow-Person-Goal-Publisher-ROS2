@@ -21,6 +21,10 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'sensor_presentation_node = main.sensor_presentation_node:main', 
+            'position_estimation_node = main.position_estimation_node:main',
+            'object_detection_node = main.object_detection_node:main',
+            'goal_publisher_node = main.goal_publisher_node:main'
         ],
     },
 )

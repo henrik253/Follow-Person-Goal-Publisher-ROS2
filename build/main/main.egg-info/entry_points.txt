@@ -1,3 +1,6 @@
 [console_scripts]
-
+goal_publisher_node = main.goal_publisher_node:main
+object_detection_node = main.object_detection_node:main
+position_estimation_node = main.position_estimation_node:main
+sensor_presentation_node = main.sensor_presentation_node:main
 

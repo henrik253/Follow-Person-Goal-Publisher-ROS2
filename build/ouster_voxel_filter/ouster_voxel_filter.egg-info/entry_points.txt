@@ -1,4 +1,0 @@
-[console_scripts]
-odom_publisher = ouster_voxel_filter.odom_publisher:main
-voxel_filter_node = ouster_voxel_filter.voxel_filter_node:main
-

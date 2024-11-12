@@ -1,3 +1,0 @@
-[console_scripts]
-goal_publisher_node = navigation.goal_publisher_node:main
-

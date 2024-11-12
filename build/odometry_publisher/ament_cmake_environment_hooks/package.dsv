@@ -1,4 +1,0 @@
-source;share/odometry_publisher/local_setup.bash
-source;share/odometry_publisher/local_setup.dsv
-source;share/odometry_publisher/local_setup.sh
-source;share/odometry_publisher/local_setup.zsh

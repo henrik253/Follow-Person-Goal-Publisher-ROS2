@@ -19,19 +19,19 @@ def generate_launch_description():
         #     PythonLaunchDescriptionSource(['/home/student/Desktop/workspace/src/navigation/launch/nav2_launch.py']),
         # ),  
         Node(
-            package='yolo_tracking',
+            package='main',
             executable='object_detection_node',
             name='object_detection_node',
             output='screen'
         ),
         Node(
-            package='position_estimation',
+            package='main',
             executable='position_estimation_node',
             name='position_estimation_node',
             output='screen'
         ),
         Node(
-            package='sensor_presentation',
+            package='main',
             executable='sensor_presentation_node',
             name='sensor_presentation_node',
             output='screen'
