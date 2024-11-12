@@ -6,17 +6,11 @@ from cv_bridge import CvBridge
 import cv2
 import logging
 import numpy as np
-from main.person_pose_classifier import classify_pose
+from main.utils.person_pose_classifier import classify_pose
 logging.getLogger('ultralytics').setLevel(logging.WARNING)
 
 class VisualizationNode(Node):
 
-    DEFAULT_POSE = 'Default'
-    BOTH_HANDS_UP_POSE = 'Both Hands Up'
-    NO_HAND_UP = 'No Hand Up'
-    LEFT_HAND_UP_POSE = 'Left Hand Up'
-    RIGHT_HAND_UP_POSE = 'Right Hand Up'
-     
     def __init__(self):
         super().__init__('person_visualizer')
 
