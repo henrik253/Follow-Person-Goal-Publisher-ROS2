@@ -6,7 +6,7 @@ from cv_bridge import CvBridge
 import cv2
 import logging
 import numpy as np
-
+from sensor_presentation.person_pose_classifier import classify_pose
 logging.getLogger('ultralytics').setLevel(logging.WARNING)
 
 class VisualizationNode(Node):
@@ -49,18 +49,16 @@ class VisualizationNode(Node):
 
         for i, person in enumerate(msg.detected_persons.persons):
             x1, y1, x2, y2 = person.bbox.x_min, person.bbox.y_min, person.bbox.x_max, person.bbox.y_max
-
             distance = msg.distances[i] if i < len(msg.distances) else None
             confidence = getattr(person, 'confidence', None)
 
-            # Get main real-world coordinates (center of the person)
+            # Get main real-world coordinates (center of bbox)
             if msg.real_world_coordinates and i < len(msg.real_world_coordinates) // 3:
                 x_real = msg.real_world_coordinates[i * 3]
                 y_real = msg.real_world_coordinates[i * 3 + 1]
                 z_real = msg.real_world_coordinates[i * 3 + 2]
             else:
                 x_real, y_real, z_real = None, None, None
-
 
             keypoints_real_coords = []
             keypointToRealWorld = {}
@@ -77,7 +75,7 @@ class VisualizationNode(Node):
                     
                 keypoints_real_coords.append((kp_real_x, kp_real_y, kp_real_z))
             
-            pose_description = self.classify_pose(keypointToRealWorld)
+            pose_description = classify_pose(keypointToRealWorld)
 
             # Only update pose when not Default
             if(not pose_description == 'Default'):
@@ -85,7 +83,6 @@ class VisualizationNode(Node):
 
             label_with_pose = f"{ self.last_detected_pose}"
 
-            # Store all data
             self.detected_positions.append({
                 'id': person.id,
                 'distance': distance,
@@ -141,28 +138,6 @@ class VisualizationNode(Node):
         cv2.imshow('Person Visualization', self.cv_image)
         cv2.waitKey(1)
 
-    def classify_pose(self, keypointToRealWorld):        
-        nose_coords = keypointToRealWorld.get('nose')
-        right_wrist_coords = keypointToRealWorld.get('right_wrist')
-        left_wrist_coords = keypointToRealWorld.get('left_wrist')
-        
-        if not (nose_coords and right_wrist_coords and left_wrist_coords):
-            return "Default"  
-
-        if len(nose_coords) < 2 or len(right_wrist_coords) < 2 or len(left_wrist_coords) < 2:
-            return "Default"  
-        
-        # Coordinate system is flipped
-        if nose_coords[1] > right_wrist_coords[1] and nose_coords[1] > left_wrist_coords[1]:
-            return 'Both Hands Up'
-        elif nose_coords[1] > right_wrist_coords[1]:
-            return 'Right Hand Up'
-        elif nose_coords[1] > left_wrist_coords[1]:
-            return 'Left Hand Up'
-        elif nose_coords[1] < right_wrist_coords[1] and nose_coords[1] < left_wrist_coords[1]:
-            return 'No Hand Up'
-        
-        return "Default"
 
 def main(args=None):
     rclpy.init(args=args)
