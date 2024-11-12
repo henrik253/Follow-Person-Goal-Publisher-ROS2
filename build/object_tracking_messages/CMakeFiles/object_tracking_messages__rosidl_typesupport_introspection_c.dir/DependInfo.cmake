@@ -29,8 +29,9 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   )
 
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

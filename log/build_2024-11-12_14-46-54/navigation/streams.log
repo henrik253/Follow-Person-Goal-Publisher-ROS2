@@ -1,0 +1,19 @@
+[2.757s] Invoking command in '/home/student/Desktop/workspace/build/navigation': PYTHONPATH=/home/student/Desktop/workspace/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/navigation/build --no-deps symlink_data
+[3.128s] running develop
+[3.128s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.128s]   warnings.warn(
+[3.456s] running egg_info
+[3.456s] writing navigation.egg-info/PKG-INFO
+[3.457s] writing dependency_links to navigation.egg-info/dependency_links.txt
+[3.457s] writing entry points to navigation.egg-info/entry_points.txt
+[3.457s] writing requirements to navigation.egg-info/requires.txt
+[3.457s] writing top-level names to navigation.egg-info/top_level.txt
+[3.460s] reading manifest file 'navigation.egg-info/SOURCES.txt'
+[3.461s] writing manifest file 'navigation.egg-info/SOURCES.txt'
+[3.513s] running build_ext
+[3.513s] Creating /home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages/navigation.egg-link (link to .)
+[3.514s] Installing goal_publisher_node script to /home/student/Desktop/workspace/install/navigation/lib/navigation
+[3.514s] 
+[3.514s] Installed /home/student/Desktop/workspace/build/navigation
+[3.514s] running symlink_data
+[3.553s] Invoked command in '/home/student/Desktop/workspace/build/navigation' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/navigation/build --no-deps symlink_data

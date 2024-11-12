@@ -73,9 +73,7 @@ class PositionEstimationNode(Node):
         personDistanceMessage.detected_persons.persons = persons 
         
         distances = []
-        real_world_coordinates = []  # List to hold real-world coordinates
-
-        # Initialize lists for each body part across all detected persons
+        real_world_coordinates = []  
         body_part_coords = {
             "nose": [],
             "left_eye": [],
@@ -127,11 +125,8 @@ class PositionEstimationNode(Node):
                                 
                                 body_part_coords[body_part_name].extend([float(kp_x_real), float(kp_y_real), float(kp_z_real)])
 
-        # Assign data to the message
         personDistanceMessage.distances = distances
         personDistanceMessage.real_world_coordinates = real_world_coordinates
-        
-        # Add all body part coordinates arrays to the message
         personDistanceMessage.nose_real_world_coordinates = body_part_coords["nose"]
         personDistanceMessage.left_eye_real_world_coordinates = body_part_coords["left_eye"]
         personDistanceMessage.right_eye_real_world_coordinates = body_part_coords["right_eye"]
@@ -151,7 +146,7 @@ class PositionEstimationNode(Node):
         personDistanceMessage.right_ankle_real_world_coordinates = body_part_coords["right_ankle"]
 
         self.positions_publisher.publish(personDistanceMessage)
-        print(personDistanceMessage)
+
     def depth_callback(self, msg):
         self.depth = np.frombuffer(msg.data, dtype=np.float32).reshape((msg.height, msg.width))
 

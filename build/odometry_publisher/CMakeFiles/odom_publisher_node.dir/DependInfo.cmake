@@ -11,8 +11,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/student/Desktop/workspace/src/odometry_publisher/src/odom_publisher_node.cpp" "CMakeFiles/odom_publisher_node.dir/src/odom_publisher_node.cpp.o" "gcc" "CMakeFiles/odom_publisher_node.dir/src/odom_publisher_node.cpp.o.d"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

@@ -10,7 +10,6 @@ setup.py
 ../../build/sensor_presentation/sensor_presentation.egg-info/zip-safe
 resource/sensor_presentation
 sensor_presentation/__init__.py
-sensor_presentation/pose_classifyer.py
 sensor_presentation/sensor_presentation_node.py
 test/test_copyright.py
 test/test_flake8.py

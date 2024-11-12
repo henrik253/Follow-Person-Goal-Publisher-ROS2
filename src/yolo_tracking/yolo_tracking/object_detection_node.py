@@ -44,48 +44,41 @@ class ObjectTracker(Node):
                                 "left_knee", "right_knee", "left_ankle", "right_ankle"]
     
     def image_callback(self, msg):
-        # Convert ROS Image message to OpenCV image
         cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
-        
-        # YOLOv8 detection
-        results = self.model.track(cv_image, persist=True)
-        
-        if results[0].boxes.data.shape[0] == 0:
-            self.get_logger().debug('No detection found')
-            return
-       
+        trackedResults = self.model.track(cv_image, persist=True)
         detectedPersonsMsg = DetectedPersons()
         persons = []
         
         try:
-            track_ids = results[0].boxes.id.int().cpu().tolist()
-            class_ids = results[0].boxes.cls.int().cpu().tolist()
-            confidences = results[0].boxes.conf.float().cpu().tolist()
-            keypoints_data = results[0].keypoints  # Get keypoints object for pose data
-
-            for bbox, track_id, class_id, confidence, kp in zip(
-                results[0].boxes, track_ids, class_ids, confidences, keypoints_data
-            ):
+            track_ids = trackedResults[0].boxes.id.int().cpu().tolist()
+            class_ids = trackedResults[0].boxes.cls.int().cpu().tolist()
+            confidences = trackedResults[0].boxes.conf.float().cpu().tolist()
+            keypoints_data = trackedResults[0].keypoints  # Get keypoints object for pose data
+        except Exception:
+            track_ids, class_ids, confidences, keypoints_data = [], [], [], []
+     
+        try:
+            for bbox, track_id, class_id, confidence, kp in zip(trackedResults[0].boxes, track_ids, class_ids, confidences, keypoints_data):
+                if(not bbox or not track_id or not confidence or not kp ):
+                    continue
+                
                 x1, y1, x2, y2 = map(int, bbox.xyxy[0])
                 detectedPerson = DetectedPerson()
                 boundingBox = BoundingBox()
-
+                
                 detectedPerson.id = track_id
                 detectedPerson.confidence = confidence
 
                 # Access keypoint coordinates and confidence
                 kp_xy = kp.xy.cpu().numpy()[0]  # Convert to numpy array for easier manipulation
                 kp_conf = kp.conf.cpu().numpy()[0]
-                print(kp_xy)
+                
                 # Prepare keypoints and body parts for publishing
-              
-
                 detectedPerson.body_parts = self.body_part_names
                 detectedPerson.person_key_point = [
                     PersonKeyPoint(x=float(x), y=float(y), confidence=float(c)) for (x, y), c in zip(kp_xy, kp_conf)
                 ]
 
-                # Populate additional data
                 detectedPerson.label = f"{self.model.names[class_id]}"
                 boundingBox.x_min = x1
                 boundingBox.x_max = x2
@@ -95,13 +88,10 @@ class ObjectTracker(Node):
                 persons.append(detectedPerson)
         except Exception as e: 
             self.get_logger().error(f"Error processing detection: {e}")
-            persons = []
-
+            pass
 
         detectedPersonsMsg.persons = persons
         self.detected_persons_publisher.publish(detectedPersonsMsg)
-        
-        # Publish image 
         tracked_image = self.bridge.cv2_to_imgmsg(cv_image, encoding='bgr8')
         self.image_publisher.publish(tracked_image)
 

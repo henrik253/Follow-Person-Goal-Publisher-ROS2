@@ -1,0 +1,18 @@
+[2.511s] Invoking command in '/home/student/Desktop/workspace/build/main': PYTHONPATH=/home/student/Desktop/workspace/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/main/build --no-deps symlink_data
+[2.898s] running develop
+[2.899s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.899s]   warnings.warn(
+[3.198s] running egg_info
+[3.199s] writing main.egg-info/PKG-INFO
+[3.199s] writing dependency_links to main.egg-info/dependency_links.txt
+[3.199s] writing entry points to main.egg-info/entry_points.txt
+[3.199s] writing requirements to main.egg-info/requires.txt
+[3.199s] writing top-level names to main.egg-info/top_level.txt
+[3.201s] reading manifest file 'main.egg-info/SOURCES.txt'
+[3.201s] writing manifest file 'main.egg-info/SOURCES.txt'
+[3.242s] running build_ext
+[3.243s] Creating /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main.egg-link (link to .)
+[3.243s] 
+[3.244s] Installed /home/student/Desktop/workspace/build/main
+[3.244s] running symlink_data
+[3.296s] Invoked command in '/home/student/Desktop/workspace/build/main' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/main/build --no-deps symlink_data

@@ -1,0 +1,26 @@
+[2.673s] Invoking command in '/home/student/Desktop/workspace/build/yolo_tracking': PYTHONPATH=/home/student/Desktop/workspace/build/yolo_tracking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/yolo_tracking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/yolo_tracking/build --no-deps symlink_data
+[3.412s] running develop
+[3.413s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.413s]   warnings.warn(
+[4.239s] running egg_info
+[4.240s] creating yolo_tracking.egg-info
+[4.240s] writing yolo_tracking.egg-info/PKG-INFO
+[4.241s] writing dependency_links to yolo_tracking.egg-info/dependency_links.txt
+[4.242s] writing entry points to yolo_tracking.egg-info/entry_points.txt
+[4.242s] writing requirements to yolo_tracking.egg-info/requires.txt
+[4.243s] writing top-level names to yolo_tracking.egg-info/top_level.txt
+[4.243s] writing manifest file 'yolo_tracking.egg-info/SOURCES.txt'
+[4.247s] reading manifest file 'yolo_tracking.egg-info/SOURCES.txt'
+[4.248s] writing manifest file 'yolo_tracking.egg-info/SOURCES.txt'
+[4.330s] running build_ext
+[4.331s] Creating /home/student/Desktop/workspace/install/yolo_tracking/lib/python3.10/site-packages/yolo-tracking.egg-link (link to .)
+[4.333s] Installing object_detection_node script to /home/student/Desktop/workspace/install/yolo_tracking/lib/yolo_tracking
+[4.334s] 
+[4.334s] Installed /home/student/Desktop/workspace/build/yolo_tracking
+[4.334s] running symlink_data
+[4.335s] creating /home/student/Desktop/workspace/install/yolo_tracking/share/ament_index
+[4.335s] creating /home/student/Desktop/workspace/install/yolo_tracking/share/ament_index/resource_index
+[4.335s] creating /home/student/Desktop/workspace/install/yolo_tracking/share/ament_index/resource_index/packages
+[4.336s] symbolically linking /home/student/Desktop/workspace/build/yolo_tracking/resource/yolo_tracking -> /home/student/Desktop/workspace/install/yolo_tracking/share/ament_index/resource_index/packages
+[4.336s] symbolically linking /home/student/Desktop/workspace/build/yolo_tracking/package.xml -> /home/student/Desktop/workspace/install/yolo_tracking/share/yolo_tracking
+[4.435s] Invoked command in '/home/student/Desktop/workspace/build/yolo_tracking' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/yolo_tracking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/yolo_tracking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/workspace/build/yolo_tracking/build --no-deps symlink_data

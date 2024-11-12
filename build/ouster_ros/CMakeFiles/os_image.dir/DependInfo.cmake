@@ -11,8 +11,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/student/Desktop/workspace/build/ouster_ros/rclcpp_components/node_main_os_image.cpp" "CMakeFiles/os_image.dir/rclcpp_components/node_main_os_image.cpp.o" "gcc" "CMakeFiles/os_image.dir/rclcpp_components/node_main_os_image.cpp.o.d"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

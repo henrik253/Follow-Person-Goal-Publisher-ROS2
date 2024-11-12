@@ -10,6 +10,13 @@ import numpy as np
 logging.getLogger('ultralytics').setLevel(logging.WARNING)
 
 class VisualizationNode(Node):
+
+    DEFAULT_POSE = 'Default'
+    BOTH_HANDS_UP_POSE = 'Both Hands Up'
+    NO_HAND_UP = 'No Hand Up'
+    LEFT_HAND_UP_POSE = 'Left Hand Up'
+    RIGHT_HAND_UP_POSE = 'Right Hand Up'
+     
     def __init__(self):
         super().__init__('person_visualizer')
 
@@ -35,18 +42,14 @@ class VisualizationNode(Node):
         self.last_detected_pose = "default"
 
     def image_callback(self, msg):
-        # Convert ROS Image message to OpenCV image
         self.cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
 
     def positions_callback(self, msg):
-        self.get_logger().debug(f'positions_callback msg: {msg}')
         self.detected_positions = []
 
-        # Store detected positions along with ID, distance, confidence, and keypoints with real-world coordinates
         for i, person in enumerate(msg.detected_persons.persons):
             x1, y1, x2, y2 = person.bbox.x_min, person.bbox.y_min, person.bbox.x_max, person.bbox.y_max
 
-            # Get the distance, real-world coordinates, and confidence score for this person
             distance = msg.distances[i] if i < len(msg.distances) else None
             confidence = getattr(person, 'confidence', None)
 
@@ -58,9 +61,8 @@ class VisualizationNode(Node):
             else:
                 x_real, y_real, z_real = None, None, None
 
-            # Collect real-world coordinates for each keypoint
+
             keypoints_real_coords = []
-            # Create map of bodyparts to keypoint distances
             keypointToRealWorld = {}
             for j in range(len(person.person_key_point)):
                 try:
@@ -75,12 +77,13 @@ class VisualizationNode(Node):
                     
                 keypoints_real_coords.append((kp_real_x, kp_real_y, kp_real_z))
             
-            # Classify pose based on real-world keypoints
             pose_description = self.classify_pose(keypointToRealWorld)
 
+            # Only update pose when not Default
             if(not pose_description == 'Default'):
                 self.last_detected_pose = pose_description 
-            label_with_pose = f"{person.label} - Pose: { self.last_detected_pose}"
+
+            label_with_pose = f"{ self.last_detected_pose}"
 
             # Store all data
             self.detected_positions.append({
@@ -113,11 +116,11 @@ class VisualizationNode(Node):
                 distance_str = f"{detected['distance']:.2f}" if detected['distance'] is not None else "N/A"
                 real_coords_str = ""
                 try:
-                    real_coords_str = f"R:({detected['real_coords'][0]:.2f}, {detected['real_coords'][1]:.2f}, {detected['real_coords'][2]:.2f})"
+                    real_coords_str = f"(x: {detected['real_coords'][0]:.2f},y: {detected['real_coords'][1]:.2f},z: {detected['real_coords'][2]:.2f})"
                 except Exception as e:
                     self.get_logger().warning(f'Error formatting real-world coordinates: {e}')
 
-                text = f"{detected['label']}, ID: {detected['id']}, D: {distance_str}m, C: {detected['confidence']:.2f}, {real_coords_str}"
+                text = f"{detected['label']}, ID: {detected['id']}, {real_coords_str}"
                 cv2.putText(self.cv_image, text, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
 
                 # Draw keypoints with body part names and real-world coordinates
@@ -138,32 +141,27 @@ class VisualizationNode(Node):
         cv2.imshow('Person Visualization', self.cv_image)
         cv2.waitKey(1)
 
-    def classify_pose(self, keypointToRealWorld):
-        print("Keypoints to Real-World Coordinates:", keypointToRealWorld)
-        
-        # Retrieve the coordinates for the nose, right wrist, and left wrist
+    def classify_pose(self, keypointToRealWorld):        
         nose_coords = keypointToRealWorld.get('nose')
         right_wrist_coords = keypointToRealWorld.get('right_wrist')
         left_wrist_coords = keypointToRealWorld.get('left_wrist')
         
-        # Check if each keypoint is defined and contains three coordinates (x, y, z)
         if not (nose_coords and right_wrist_coords and left_wrist_coords):
-            print("One or more keypoints are undefined.")
-            return "Default"  # Return "Default" if any keypoint is missing
+            return "Default"  
 
         if len(nose_coords) < 2 or len(right_wrist_coords) < 2 or len(left_wrist_coords) < 2:
-            print("One or more keypoints do not have sufficient coordinates.")
-            return "Default"  # Return "Default" if any keypoint is missing y-coordinate data
-        # Coordinate system is flipped !!!!
-        # Pose classification based on wrist positions relative to the nose
+            return "Default"  
+        
+        # Coordinate system is flipped
         if nose_coords[1] > right_wrist_coords[1] and nose_coords[1] > left_wrist_coords[1]:
             return 'Both Hands Up'
         elif nose_coords[1] > right_wrist_coords[1]:
             return 'Right Hand Up'
         elif nose_coords[1] > left_wrist_coords[1]:
             return 'Left Hand Up'
-
-        # Default pose if none of the above conditions are met
+        elif nose_coords[1] < right_wrist_coords[1] and nose_coords[1] < left_wrist_coords[1]:
+            return 'No Hand Up'
+        
         return "Default"
 
 def main(args=None):

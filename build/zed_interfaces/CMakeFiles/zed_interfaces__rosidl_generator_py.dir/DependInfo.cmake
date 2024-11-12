@@ -29,8 +29,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_generator_py/zed_interfaces/srv/_start_svo_rec_s.c" "CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/srv/_start_svo_rec_s.c.o" "gcc" "CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/srv/_start_svo_rec_s.c.o.d"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/student/Desktop/workspace/build/zed_interfaces/CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/DependInfo.cmake"
+  "/home/student/Desktop/workspace/build/zed_interfaces/CMakeFiles/zed_interfaces__rosidl_generator_c.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
