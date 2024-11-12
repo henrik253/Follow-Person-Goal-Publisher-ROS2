@@ -1,15 +1,14 @@
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import PoseStamped, TransformStamped
-from object_tracking_messages.msg import DetectedPersons  # Replace with your actual package name
-import tf2_ros
-import tf2_geometry_msgs  # For transforming geometry_msgs types
-from tf2_ros import TransformBroadcaster
-
+from geometry_msgs.msg import PoseStamped
+from nav_msgs.msg import Odometry
+from object_tracking_messages.msg import DetectedPersons
+from tf2_ros import TransformBroadcaster, TransformListener, Buffer
+import tf2_geometry_msgs
+from main.utils.goal_state_machine import GoalStateMachine
+from main.utils.goal_state import GoalState
+import main.utils.config as Config
 class GoalPublisher(Node):
-
-
-
     def __init__(self):
         super().__init__('goal_publisher')
         self.goal_publisher = self.create_publisher(PoseStamped, '/goal_pose', 10)
@@ -19,76 +18,60 @@ class GoalPublisher(Node):
             self.person_positions_callback,
             10
         )
+        self.odom_subscriber = self.create_subscription(
+            Odometry,
+            '/odom',
+            self.odom_callback,
+            10
+        )
         self.timer = self.create_timer(1.0, self.publish_goal)  # Publish every second
 
         # TF2 setup
-        self.tf_buffer = tf2_ros.Buffer()
-        self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
+        self.tf_buffer = Buffer()
+        self.tf_listener = TransformListener(self.tf_buffer, self)
         self.tf_broadcaster = TransformBroadcaster(self)
 
-    # STATES: Look for Person 
-    # If State.LookForPerson && found_person.size>0:
-    #   SAVE THE ID of nearest person
-    #   State = State.FollowPerson 
-    # If State.FollowPerson: 
-    #   look for id in person_position_callback
-    #   If(Id found in person_position_callback):
-    #       last_spot_person_found_transformed =  translated_position
-    #   else if(ID not found in person_position_callback):
-    #       State.LookForPerson 
+        # GoalStateMachine setup
+        self.goal_state_machine = GoalStateMachine()
+        self.current_position = None
+
+    def odom_callback(self, msg):
+        # Update robot's current position
+        self.current_position = msg.pose.pose.position
+        self.get_logger().info(f'Current position - x: {self.current_position.x}, y: {self.current_position.y}, z: {self.current_position.z}')
 
     def publish_goal(self):
-        goal_msg = PoseStamped()
-        goal_msg.header.stamp = self.get_clock().now().to_msg()
-        goal_msg.header.frame_id = 'map'  # Use the appropriate frame
-        goal_msg.pose.position.x = 0.0  # Set your desired x position
-        goal_msg.pose.position.y = 0.0  # Set your desired y position
-        goal_msg.pose.position.z = 0.0  # Usually 0 for 2D navigation
+        # Check the state of the GoalStateMachine before publishing
+        if self.goal_state_machine.get_state() == GoalState.FOLLOW_PERSON:
+            goal_msg = PoseStamped()
+            goal_msg.header.stamp = self.get_clock().now().to_msg()
+            goal_msg.header.frame_id = 'map'
 
-        # Set orientation (facing along the x-axis)
-        goal_msg.pose.orientation.x = 0.0
-        goal_msg.pose.orientation.y = 0.0
-        goal_msg.pose.orientation.z = 0.0  # No rotation
-        goal_msg.pose.orientation.w = 1.0  # No rotation
+            # Set your desired goal position
+            goal_msg.pose.position.x = 0.0
+            goal_msg.pose.position.y = 0.0
+            goal_msg.pose.position.z = 0.0
 
-        self.get_logger().info(f'Publishing goal: x: {goal_msg.pose.position.x}, y: {goal_msg.pose.position.y}')
-        self.goal_publisher.publish(goal_msg)
+            # Set orientation
+            goal_msg.pose.orientation.x = 0.0
+            goal_msg.pose.orientation.y = 0.0
+            goal_msg.pose.orientation.z = 0.0
+            goal_msg.pose.orientation.w = 1.0
 
-
+            self.get_logger().info(f'Publishing goal: x: {goal_msg.pose.position.x}, y: {goal_msg.pose.position.y}')
+            self.goal_publisher.publish(goal_msg)
 
     def person_positions_callback(self, msg):
-        # Process the received detected persons data
-        distances = msg.distances
-        real_world_coordinates = msg.real_world_coordinates
-
-        # Transform each person's coordinates from the camera frame to the robot's base frame
-        for i, distance in enumerate(distances):
-            if len(real_world_coordinates) >= (i + 1) * 3:  # Check if coordinates exist
-                x = real_world_coordinates[i * 3]
-                y = real_world_coordinates[i * 3 + 1]
-                z = real_world_coordinates[i * 3 + 2]
-
-                # # Create a PoseStamped for transformation
-                # person_pose = PoseStamped()
-                # person_pose.header.frame_id = "camera_frame"  # Replace with your camera frame ID
-                # person_pose.header.stamp = self.get_clock().now().to_msg()
-                # person_pose.pose.position.x = x
-                # person_pose.pose.position.y = y
-                # person_pose.pose.position.z = z
-                # person_pose.pose.orientation.w = 1.0  # No rotation
-
-                # Transform to the robot base frame
-                # try:
-                #     transform = self.tf_buffer.lookup_transform('base_frame',  # Replace with your base frame ID
-                #                                                 person_pose.header.frame_id,
-                #                                                 rclpy.time.Time())
-                #     transformed_person_pose = tf2_geometry_msgs.do_transform_pose(person_pose, transform)
-                #     self.get_logger().info(
-                #         f'Detected person {i}: Distance: {distance}, Transformed Coordinates: ({transformed_person_pose.pose.position.x}, {transformed_person_pose.pose.position.y}, {transformed_person_pose.pose.position.z})'
-                #     )
-                # except Exception as e:
-                #     self.get_logger().warn(f'Transform error for person {i}: {e}')
-        
+        # Process detected persons data and update state machine
+        for i, person in enumerate(msg.detected_persons.persons):
+            keypointToRealWorld = {
+                person.body_parts[j]: (
+                    getattr(msg, f'{person.body_parts[j]}_real_world_coordinates', [])[i * 3],
+                    getattr(msg, f'{person.body_parts[j]}_real_world_coordinates', [])[i * 3 + 1],
+                    getattr(msg, f'{person.body_parts[j]}_real_world_coordinates', [])[i * 3 + 2]
+                ) for j in range(len(person.person_key_point))
+            }
+            self.goal_state_machine.update_state_based_on_pose(keypointToRealWorld)
 
 def main(args=None):
     rclpy.init(args=args)

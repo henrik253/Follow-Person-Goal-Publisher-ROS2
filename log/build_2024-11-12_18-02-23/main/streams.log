@@ -1,0 +1,54 @@
+[0.762s] Invoking command in '/home/student/Desktop/workspace/build/main': PYTHONPATH=/home/student/Desktop/workspace/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/student/Desktop/workspace/build/main/build
+[1.054s] running develop
+[1.055s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.055s]   warnings.warn(
+[1.438s] Removing /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main.egg-link (link to .)
+[1.497s] Invoked command in '/home/student/Desktop/workspace/build/main' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/student/Desktop/workspace/build/main/build
+[1.498s] Invoking command in '/home/student/Desktop/workspace/src/main': PYTHONPATH=/home/student/Desktop/workspace/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/main build --build-base /home/student/Desktop/workspace/build/main/build install --record /home/student/Desktop/workspace/build/main/install.log --single-version-externally-managed install_data --force
+[2.263s] running egg_info
+[2.265s] writing ../../build/main/main.egg-info/PKG-INFO
+[2.265s] writing dependency_links to ../../build/main/main.egg-info/dependency_links.txt
+[2.266s] writing entry points to ../../build/main/main.egg-info/entry_points.txt
+[2.266s] writing requirements to ../../build/main/main.egg-info/requires.txt
+[2.266s] writing top-level names to ../../build/main/main.egg-info/top_level.txt
+[2.270s] reading manifest file '../../build/main/main.egg-info/SOURCES.txt'
+[2.271s] writing manifest file '../../build/main/main.egg-info/SOURCES.txt'
+[2.272s] running build
+[2.272s] running build_py
+[2.272s] creating /home/student/Desktop/workspace/build/main/build
+[2.272s] creating /home/student/Desktop/workspace/build/main/build/lib
+[2.272s] creating /home/student/Desktop/workspace/build/main/build/lib/main
+[2.272s] copying main/object_detection_node.py -> /home/student/Desktop/workspace/build/main/build/lib/main
+[2.273s] copying main/sensor_presentation_node.py -> /home/student/Desktop/workspace/build/main/build/lib/main
+[2.273s] copying main/goal_publisher_node.py -> /home/student/Desktop/workspace/build/main/build/lib/main
+[2.273s] copying main/__init__.py -> /home/student/Desktop/workspace/build/main/build/lib/main
+[2.273s] copying main/position_estimation_node.py -> /home/student/Desktop/workspace/build/main/build/lib/main
+[2.273s] copying main/config.py -> /home/student/Desktop/workspace/build/main/build/lib/main
+[2.274s] running install
+[2.274s] running install_lib
+[2.276s] creating /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main
+[2.276s] copying /home/student/Desktop/workspace/build/main/build/lib/main/object_detection_node.py -> /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main
+[2.276s] copying /home/student/Desktop/workspace/build/main/build/lib/main/sensor_presentation_node.py -> /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main
+[2.276s] copying /home/student/Desktop/workspace/build/main/build/lib/main/goal_publisher_node.py -> /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main
+[2.277s] copying /home/student/Desktop/workspace/build/main/build/lib/main/__init__.py -> /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main
+[2.277s] copying /home/student/Desktop/workspace/build/main/build/lib/main/position_estimation_node.py -> /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main
+[2.277s] copying /home/student/Desktop/workspace/build/main/build/lib/main/config.py -> /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main
+[2.278s] byte-compiling /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main/object_detection_node.py to object_detection_node.cpython-310.pyc
+[2.279s] byte-compiling /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main/sensor_presentation_node.py to sensor_presentation_node.cpython-310.pyc
+[2.281s] byte-compiling /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main/goal_publisher_node.py to goal_publisher_node.cpython-310.pyc
+[2.282s] byte-compiling /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main/__init__.py to __init__.cpython-310.pyc
+[2.282s] byte-compiling /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main/position_estimation_node.py to position_estimation_node.cpython-310.pyc
+[2.284s] byte-compiling /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main/config.py to config.cpython-310.pyc
+[2.284s] running install_data
+[2.284s] copying resource/main -> /home/student/Desktop/workspace/install/main/share/ament_index/resource_index/packages
+[2.284s] copying package.xml -> /home/student/Desktop/workspace/install/main/share/main
+[2.284s] copying launch/main_launch.py -> /home/student/Desktop/workspace/install/main/share/main/launch
+[2.285s] running install_egg_info
+[2.288s] Copying ../../build/main/main.egg-info to /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main-0.0.0-py3.10.egg-info
+[2.291s] running install_scripts
+[2.322s] Installing goal_publisher_node script to /home/student/Desktop/workspace/install/main/lib/main
+[2.323s] Installing object_detection_node script to /home/student/Desktop/workspace/install/main/lib/main
+[2.323s] Installing position_estimation_node script to /home/student/Desktop/workspace/install/main/lib/main
+[2.323s] Installing sensor_presentation_node script to /home/student/Desktop/workspace/install/main/lib/main
+[2.324s] writing list of installed files to '/home/student/Desktop/workspace/build/main/install.log'
+[2.373s] Invoked command in '/home/student/Desktop/workspace/src/main' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/main build --build-base /home/student/Desktop/workspace/build/main/build install --record /home/student/Desktop/workspace/build/main/install.log --single-version-externally-managed install_data --force
