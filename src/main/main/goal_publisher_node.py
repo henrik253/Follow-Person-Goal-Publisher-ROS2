@@ -2,13 +2,12 @@ import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped
 from nav_msgs.msg import Odometry
-from object_tracking_messages.msg import DetectedPersons
-from tf2_ros import TransformBroadcaster, TransformListener, Buffer, TransformException
+from object_tracking_messages.msg import PersonDistance
+from tf2_ros import TransformBroadcaster, TransformListener, Buffer
 import tf2_geometry_msgs
 from enum import Enum 
 import main.utils.person_pose as Pose
-
-
+from main.utils.person_pose_classifier import classify_pose
 
 class State(Enum): 
     STARTED = 0
@@ -21,13 +20,15 @@ class GoalPublisher(Node):
     def __init__(self):
         super().__init__('goal_publisher')
         self.goal_publisher = self.create_publisher(PoseStamped, '/goal_pose', 10)
-        self.person_subscriber = self.create_subscription(
-            DetectedPersons,
+        
+        self.create_subscription(
+            PersonDistance,
             'estimated_person_positions',
             self.person_positions_callback,
             10
         )
-        self.odom_subscriber = self.create_subscription(
+      
+        self.create_subscription(
             Odometry,
             '/odom',
             self.odom_callback,
@@ -47,12 +48,16 @@ class GoalPublisher(Node):
 
         self.current_robot_position = None
 
+    def change_state(self, new_state):
+        """Helper function to log state changes."""
+        self.get_logger().info(f'State changed from {self.current_state.name} to {new_state.name}')
+        self.current_state = new_state
+
     def odom_callback(self, msg):
         # Update robot's current position
         self.current_robot_position = msg.pose.pose.position
         self.get_logger().info(f'Current position - x: {self.current_robot_position.x}, y: {self.current_robot_position.y}, z: {self.current_robot_position.z}')
         
-
     def publish_goal(self):
         # Check the state of the GoalStateMachine before publishing
         if False: # For debugging false
@@ -69,79 +74,91 @@ class GoalPublisher(Node):
             goal_msg.pose.orientation.z = 0.0
             goal_msg.pose.orientation.w = 1.0
 
-           
             self.get_logger().info(f'Publishing goal: x: {goal_msg.pose.position.x}, y: {goal_msg.pose.position.y}')
             #self.goal_publisher.publish(goal_msg)
 
     def person_positions_callback(self, msg):
-          # Process (detected persons, keypoints) data and update state machine
-
-        print(self.current_state)
+        # Process (detected persons, keypoints) data and update state machine
         person_real_world, person_keypoints = self.proccess_position_estimation_message(msg)
-
-        #print(person_real_world)
-        #print(person_keypoints)
 
         if self.current_state == State.STARTED:
             self.started()
         elif self.current_state == State.LOOK_FOR_PERSON_TO_FOLLOW:
             self.look_for_person_to_follow(person_real_world, person_keypoints)
+        elif self.current_state == State.FOUND_PERSON_TO_FOLLOW:
+            self.found_person_to_follow()
         elif self.current_state == State.FOLLOW_PERSON:
-            self.follow_person(person_real_world)
+            self.follow_person(person_real_world, person_keypoints)
         elif self.current_state == State.STOP_FOLLOW_PERSON:
             self.stop_follow_person()
-          
     
     def started(self):
-        self.current_state = State.LOOK_FOR_PERSON_TO_FOLLOW
+        self.change_state(State.LOOK_FOR_PERSON_TO_FOLLOW)
 
-    def look_for_person_to_follow(self,person_real_world, person_keypoints):
-        persons_with_both_hands_up = []
+    def look_for_person_to_follow(self, person_real_world, person_keypoints):
+        persons_with_right_hand_up = []
         for person_id, keypoints in person_keypoints.items():
-            pose = Pose.classify_pose(keypoints)
-            if pose == Pose.BOTH_HANDS_UP:
+            pose = classify_pose(keypoints)
+            if pose == Pose.RIGHT_HAND_UP:
+                # Correctly reference the person's real-world position using their ID
                 distance = sum(coord ** 2 for coord in person_real_world[person_id]) ** 0.5
-                persons_with_both_hands_up.append((distance, person_id))
+                persons_with_right_hand_up.append((distance, person_id))
 
-        if persons_with_both_hands_up:
-            closest_person = min(persons_with_both_hands_up, key=lambda x: x[0])
+        if persons_with_right_hand_up:
+            closest_person = min(persons_with_right_hand_up, key=lambda x: x[0])
             self.target_person = closest_person[1]
             self.get_logger().info(f'Target person ID: {self.target_person}')
-            self.current_state = State.FOUND_PERSON_TO_FOLLOW
-    
-    def found_person_to_follow(self):
-        self.current_state = State.FOLLOW_PERSON
+            self.change_state(State.FOUND_PERSON_TO_FOLLOW)
 
-    def follow_person(self,person_real_world):
+    def found_person_to_follow(self):
+        self.get_logger().info(f'Person found with ID: {self.target_person}')  # Log the ID of the person found
+        self.change_state(State.FOLLOW_PERSON)
+
+    def follow_person(self, person_real_world, person_keypoints):
         if self.target_person in person_real_world:
+            if classify_pose(person_keypoints[self.target_person]) == Pose.LEFT_HAND_UP:
+                self.change_state(State.STOP_FOLLOW_PERSON)
             try:
+                pass
                 self.target_person_map_position = self.transform_to_map(person_real_world[self.target_person])
-            except TransformException as e:
-                self.get_logger().error(f'Transformation error: {e}')
+            except Exception as e:
+               self.get_logger().error(f'Transformation error: {e}')
+               pass
         else:
             self.get_logger().warn('Target person lost, transitioning to STOP_FOLLOW_PERSON')
-            self.current_state = State.STOP_FOLLOW_PERSON
-    
-    def stop_follow_person(self): 
-        self.get_logger().info('State transitioned to LOOK_FOR_PERSON_TO_FOLLOW')
-        self.current_state = State.LOOK_FOR_PERSON_TO_FOLLOW
+            self.change_state(State.STOP_FOLLOW_PERSON)
 
-    def proccess_position_estimation_message(msg):
+    def stop_follow_person(self): 
+        self.change_state(State.LOOK_FOR_PERSON_TO_FOLLOW)
+
+    def proccess_position_estimation_message(self, msg):
         person_to_key_point_to_real_world = {}
         person_to_real_world = {}
         for i, person in enumerate(msg.detected_persons.persons):
-            # map bodypart to real_world coordinate!
-            keypointToRealWorld = {
-                person.body_parts[j]: (
-                    getattr(msg, f'{person.body_parts[j]}_real_world_coordinates', [])[i * 3],
-                    getattr(msg, f'{person.body_parts[j]}_real_world_coordinates', [])[i * 3 + 1],
-                    getattr(msg, f'{person.body_parts[j]}_real_world_coordinates', [])[i * 3 + 2]
-                ) for j in range(len(person.person_key_point))
-            }
+            # Map bodypart to real-world coordinate
+            keypointToRealWorld = {}
+            for j in range(len(person.person_key_point)):
+                try:
+                    kp_real_x = getattr(msg, f'{person.body_parts[j]}_real_world_coordinates', [])[i * 3]
+                    kp_real_y = getattr(msg, f'{person.body_parts[j]}_real_world_coordinates', [])[i * 3 + 1]
+                    kp_real_z = getattr(msg, f'{person.body_parts[j]}_real_world_coordinates', [])[i * 3 + 2]
+                    keypointToRealWorld[person.body_parts[j]] = (kp_real_x, kp_real_y, kp_real_z)
+                except Exception as e:
+                    kp_real_x = 0
+                    kp_real_y = 0
+                    kp_real_z = 0
 
-            xyz = person.real_world_coordinates
-            person_to_key_point_to_real_world[person] = keypointToRealWorld
-            person_to_real_world[person] = (xyz[i * 3], xyz[i * 3 + 1], xyz[i * 3 + 1])
+            # Get main real-world coordinates (center of bbox)
+            if msg.real_world_coordinates and i < len(msg.real_world_coordinates) // 3:
+                x_real = msg.real_world_coordinates[i * 3]
+                y_real = msg.real_world_coordinates[i * 3 + 1]
+                z_real = msg.real_world_coordinates[i * 3 + 2]
+            else:
+                x_real, y_real, z_real = None, None, None
+
+            # Correctly assign the real-world coordinates using the person's ID
+            person_to_key_point_to_real_world[person.id] = keypointToRealWorld
+            person_to_real_world[person.id] = (x_real, y_real, z_real)
 
         return [person_to_real_world, person_to_key_point_to_real_world]
 
@@ -163,7 +180,7 @@ class GoalPublisher(Node):
                 map_pose.pose.position.y,
                 map_pose.pose.position.z
             )
-        except TransformException as e:
+        except Exception as e:
             self.get_logger().error(f'Transformation error: {e}')
             raise e
         
