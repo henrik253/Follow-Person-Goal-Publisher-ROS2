@@ -14,7 +14,7 @@ SCREEN_WIDTH=$(echo $SCREEN_RESOLUTION | cut -d 'x' -f 1)
 SCREEN_HEIGHT=$(echo $SCREEN_RESOLUTION | cut -d 'x' -f 2)
 
 # Calculate the number of terminals and their dimensions
-NUM_TERMINALS=4
+NUM_TERMINALS=5
 TERMINAL_WIDTH=60
 TERMINAL_HEIGHT=20
 
@@ -34,5 +34,8 @@ xterm -geometry $TERMINAL_WIDTH"x"$TERMINAL_HEIGHT"+"$((2 * X_OFFSET))"+"$Y_OFFS
 
 xterm -geometry $TERMINAL_WIDTH"x"$TERMINAL_HEIGHT"+"$((3 * X_OFFSET))"+"$Y_OFFSET \
 -e "cd '$CURRENT_DIR';cd ..; source install/setup.bash; ros2 run main sensor_presentation_node; exec bash" &
+
+xterm -geometry $TERMINAL_WIDTH"x"$TERMINAL_HEIGHT"+"$((4 * X_OFFSET))"+"$Y_OFFSET \
+-e "cd '$CURRENT_DIR';cd ..; source install/setup.bash; ros2 run main goal_publisher_node; exec bash" &
 
 wait
