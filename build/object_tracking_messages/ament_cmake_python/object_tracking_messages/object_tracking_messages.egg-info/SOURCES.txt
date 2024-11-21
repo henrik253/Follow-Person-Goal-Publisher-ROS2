@@ -4,3 +4,9 @@ object_tracking_messages.egg-info/PKG-INFO
 object_tracking_messages.egg-info/SOURCES.txt
 object_tracking_messages.egg-info/dependency_links.txt
 object_tracking_messages.egg-info/top_level.txt
+object_tracking_messages/msg/__init__.py
+object_tracking_messages/msg/_bounding_box.py
+object_tracking_messages/msg/_detected_person.py
+object_tracking_messages/msg/_detected_persons.py
+object_tracking_messages/msg/_person_distance.py
+object_tracking_messages/msg/_person_key_point.py

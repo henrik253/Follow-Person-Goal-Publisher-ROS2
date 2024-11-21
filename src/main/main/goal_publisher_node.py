@@ -8,6 +8,7 @@ import tf2_geometry_msgs
 from enum import Enum 
 import main.utils.person_pose as Pose
 from main.utils.person_pose_classifier import classify_pose
+from visualization_msgs.msg import Marker
 
 class State(Enum): 
     STARTED = 0
@@ -21,6 +22,9 @@ class GoalPublisher(Node):
         super().__init__('goal_publisher')
         self.goal_publisher = self.create_publisher(PoseStamped, '/goal_pose', 10)
         
+        # Debugging!
+        self.marker_publisher = self.create_publisher(Marker, 'visualization_marker', 10)
+
         self.create_subscription(
             PersonDistance,
             'estimated_person_positions',
@@ -43,10 +47,14 @@ class GoalPublisher(Node):
 
         # GoalStateMachine setup
         self.current_state = State.STARTED
-        self.target_person_map_position = None
         self.target_person = None
 
+
+        self.target_person_camera_position = None
+        self.target_person_map_position = None
         self.current_robot_position = None
+
+        self.last_target_position = False
 
     def change_state(self, new_state):
         """Helper function to log state changes."""
@@ -57,26 +65,67 @@ class GoalPublisher(Node):
         # Update robot's current position
         self.current_robot_position = msg.pose.pose.position
       #  self.get_logger().info(f'Current position - x: {self.current_robot_position.x}, y: {self.current_robot_position.y}, z: {self.current_robot_position.z}')
-        
+    # DEBUGGING
+
+
+    def publish_marker(self):
+        marker = Marker()
+        marker.header.frame_id = "map"  # Replace with your desired frame
+        marker.header.stamp = self.get_clock().now().to_msg()
+        marker.ns = "example_marker"
+        marker.id = 0
+        marker.type = Marker.SPHERE  
+        marker.action = Marker.ADD
+
+        # Set the position
+        if(not self.target_person_map_position):
+            return 
+        marker.pose.position.x = self.target_person_map_position.position.x
+        marker.pose.position.y = self.target_person_map_position.position.y
+        marker.pose.position.z = self.target_person_map_position.position.z
+
+        print(f"Marker Position: x={marker.pose.position.x}, y={marker.pose.position.y}, z={marker.pose.position.z}")
+        print(f"Target Person Map Position: x={self.target_person_map_position.position.x}, y={self.target_person_map_position.position.y}, z={self.target_person_map_position.position.z}")
+    
+        # Orientation (no rotation here)
+        marker.pose.orientation.x = 0.0
+        marker.pose.orientation.y = 0.0
+        marker.pose.orientation.z = 0.0
+        marker.pose.orientation.w = 1.0
+
+        # Set the scale of the marker (1x1x1 means 1 meter in each dimension)
+        marker.scale.x = 0.5
+        marker.scale.y = 0.5
+        marker.scale.z = 0.5
+
+        # Set the color (RGBA)
+        marker.color.r = 1.0  # Red
+        marker.color.g = 0.0  # Green
+        marker.color.b = 0.0  # Blue
+        marker.color.a = 1.0  # Alpha (transparency)
+
+        # Publish the marker
+        self.marker_publisher.publish(marker)
+
+
+
+
     def publish_goal(self):
         # Check the state of the GoalStateMachine before publishing
-        print(self.target_person_map_position)
-        if False: # For debugging false
-            goal_msg = PoseStamped()
-            goal_msg.header.stamp = self.get_clock().now().to_msg()
-            goal_msg.header.frame_id = 'map'
+        print(f'map_pos: {self.target_person_map_position}')
+        print(f'camera_pos {self.target_person_camera_position}')
+        self.publish_marker()
+        if self.current_state == State.FOLLOW_PERSON:
+            if self.last_target_position:
+                    goal_msg = PoseStamped()
+                    goal_msg.header.stamp = self.get_clock().now().to_msg()
+                    goal_msg.header.frame_id = 'map'
 
-            goal_msg.pose.position.x = 0.0
-            goal_msg.pose.position.y = 0.0
-            goal_msg.pose.position.z = 0.0
+                    goal_msg.pose = self.target_person_map_position
 
-            goal_msg.pose.orientation.x = 0.0
-            goal_msg.pose.orientation.y = 0.0
-            goal_msg.pose.orientation.z = 0.0
-            goal_msg.pose.orientation.w = 1.0
-
-            self.get_logger().info(f'Publishing goal: x: {goal_msg.pose.position.x}, y: {goal_msg.pose.position.y}')
-            #self.goal_publisher.publish(goal_msg)
+                    
+                    if False:
+                        self.goal_publisher.publish(goal_msg)
 
     def person_positions_callback(self, msg):
         # Process (detected persons, keypoints) data and update state machine
@@ -120,15 +169,26 @@ class GoalPublisher(Node):
             if classify_pose(person_keypoints[self.target_person]) == Pose.LEFT_HAND_UP:
                 self.change_state(State.STOP_FOLLOW_PERSON)
             try:
-                xyz = person_real_world[self.target_person]
-                if(xyz[0] and xyz[1] and xyz[2]):
-                    self.target_person_map_position = self.transform_to_map(xyz)
-                    self.get_logger().info(f'map position: {self.target_person_map_position}') 
+                print('t1')
+                person_rwc = person_real_world[self.target_person]
+                print('t2')
+                if(person_rwc[0] and person_rwc[1] and person_rwc[2]):
+                    # x -> x, z -> y , y -> z 
+                    flipped_person_rwc = (-person_rwc[0],person_rwc[2],-person_rwc[1]) # x/person_rwc[0] (left or right from camera: positive means more right) : z/person_rwc[2] the distance from the person (the higher the more away)
+                    self.target_person_map_position = self.transform_to_map(flipped_person_rwc)
+                    print('t3')
+                    self.target_person_camera_position = flipped_person_rwc
+                    print('t4')
+                    self.get_logger().info(f'map position: {self.target_person_map_position}')
+                    self.last_target_position = True 
                 else:
                     self.get_logger().warn('Unable to calculate persons position')
+                    print(person_rwc)
+                    self.last_target_position = False
                     return 
             except Exception as e:
-               pass
+                print(e)
+                self.last_target_position = False
         else:
             self.get_logger().warn('Target person lost, transitioning to STOP_FOLLOW_PERSON')
             self.change_state(State.STOP_FOLLOW_PERSON)
@@ -167,57 +227,59 @@ class GoalPublisher(Node):
 
         return [person_to_real_world, person_to_key_point_to_real_world]
 
+    def transform_to_map(self, camera_coords):
+        camera_pose = PoseStamped()
+        camera_pose.header.frame_id = 'camera_frame'
+        camera_pose.header.stamp = self.get_clock().now().to_msg()
+        # camera_coords[0] is x e.g. left right 
+         # camera_coords[1] is top down 
+        # camera_coords[2] is 
+        camera_pose.pose.position.x = camera_coords[1]  # Left/right from the camera (flipped in follow_person)
+        camera_pose.pose.position.y = camera_coords[0]  # Distance from the camera
+        camera_pose.pose.position.z = camera_coords[2] 
+        camera_pose.pose.orientation.w = 1.0
+        
+    
+        pose = camera_pose.pose
+        try:
+          # Perform the transformation from the left camera frame to the map frame
+            transform = self.tf_buffer.lookup_transform('map', 'zed_left_camera_frame', rclpy.time.Time())
+            map_pose = tf2_geometry_msgs.do_transform_pose(pose, transform)
+            return map_pose
+        except Exception as e:
+            self.get_logger().error(f'Transformation error: {e}')
+            raise e
+    
     # def transform_to_map(self, camera_coords):
     #     camera_pose = PoseStamped()
-    #     camera_pose.header.frame_id = 'camera_frame'
+    #     camera_pose.header.frame_id = 'zed_left_camera_frame'
     #     camera_pose.header.stamp = self.get_clock().now().to_msg()
-    #     camera_pose.pose.position.x = camera_coords[0]
-    #     camera_pose.pose.position.y = camera_coords[1]
-    #     camera_pose.pose.position.z = camera_coords[2]
-    #     camera_pose.pose.orientation.w = 1.0
+    #     camera_pose.pose.position.x = float(camera_coords[0])  # Ensure input is float
+    #     camera_pose.pose.position.y = float(camera_coords[1])  # Ensure input is float
+    #     camera_pose.pose.position.z = float(camera_coords[2])  # Ensure input is float
+    #     camera_pose.pose.orientation.w = 1.0  # Default orientation (identity quaternion)
 
     #     try:
-    #         # Perform the transformation from the left camera frame to the map frame
-    #         transform = self.tf_buffer.lookup_transform('map', 'zed_left_camera_frame', rclpy.time.Time())
+    #         # Lookup the transformation from the camera frame to the map frame
+    #         transform = self.tf_buffer.lookup_transform(
+    #             'map',  # Target frame
+    #             'zed_left_camera_frame',  # Source frame
+    #             rclpy.time.Time(),  # Use "latest available" time
+    #             timeout=rclpy.duration.Duration(seconds=1.0)  # Timeout duration
+    #         )
+            
+            
     #         map_pose = tf2_geometry_msgs.do_transform_pose(camera_pose, transform)
+        
     #         return (
     #             map_pose.pose.position.x,
     #             map_pose.pose.position.y,
     #             map_pose.pose.position.z
     #         )
     #     except Exception as e:
-    #         self.get_logger().error(f'Transformation error: {e}')
+    #         # Log and raise transformation errors
+    #         #self.get_logger().error(f'Transformation error: {e}')
     #         raise e
-    def transform_to_map(self, camera_coords):
-        camera_pose = PoseStamped()
-        camera_pose.header.frame_id = 'zed_left_camera_frame'
-        camera_pose.header.stamp = self.get_clock().now().to_msg()
-        camera_pose.pose.position.x = float(camera_coords[0])  # Ensure input is float
-        camera_pose.pose.position.y = float(camera_coords[1])  # Ensure input is float
-        camera_pose.pose.position.z = float(camera_coords[2])  # Ensure input is float
-        camera_pose.pose.orientation.w = 1.0  # Default orientation (identity quaternion)
-
-        try:
-            # Lookup the transformation from the camera frame to the map frame
-            transform = self.tf_buffer.lookup_transform(
-                'map',  # Target frame
-                'zed_left_camera_frame',  # Source frame
-                rclpy.time.Time(),  # Use "latest available" time
-                timeout=rclpy.duration.Duration(seconds=1.0)  # Timeout duration
-            )
-            
-            
-            map_pose = tf2_geometry_msgs.do_transform_pose(camera_pose, transform)
-        
-            return (
-                map_pose.pose.position.x,
-                map_pose.pose.position.y,
-                map_pose.pose.position.z
-            )
-        except Exception as e:
-            # Log and raise transformation errors
-            #self.get_logger().error(f'Transformation error: {e}')
-            raise e
 
 def main(args=None):
     rclpy.init(args=args)

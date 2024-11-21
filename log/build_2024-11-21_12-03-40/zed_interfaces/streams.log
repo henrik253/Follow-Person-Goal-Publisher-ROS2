@@ -1,0 +1,649 @@
+[0.031s] Invoking command in '/home/student/Desktop/workspace/build/zed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/sensor_presentation:/home/student/Desktop/workspace/install/position_estimation:/home/student/Desktop/workspace/install/ouster_voxel_filter:/home/student/Desktop/workspace/install/navigation:/home/student/Desktop/workspace/install/main:/opt/ros/humble /home/student/.local/bin/cmake --build /home/student/Desktop/workspace/build/zed_interfaces -- -j16 -l16
+[0.320s] -- Found ament_cmake_auto: 1.3.10 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.321s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.321s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.322s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.322s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.322s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.322s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.364s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.674s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.031s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.208s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.259s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.306s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.307s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.307s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.461s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.465s] -- Added test 'lint_cmake' to check CMake code style
+[1.469s] -- Added test 'xmllint' to check XML markup files
+[1.476s] -- Configuring done
+[1.599s] -- Generating done
+[1.605s] -- Build files have been written to: /home/student/Desktop/workspace/build/zed_interfaces
+[1.805s] [  0%] Built target zed_interfaces__cpp
+[1.838s] [35m[1mConsolidate compiler generated dependencies of target zed_interfaces__rosidl_typesupport_cpp[0m
+[1.839s] [  0%] Built target ament_cmake_python_symlink_zed_interfaces
+[1.843s] [35m[1mConsolidate compiler generated dependencies of target zed_interfaces__rosidl_typesupport_introspection_cpp[0m
+[1.857s] [35m[1mConsolidate compiler generated dependencies of target zed_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[1.912s] [  1%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/object__type_support.cpp.o[0m
+[1.913s] [  1%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/objects_stamped__type_support.cpp.o[0m
+[1.914s] [  2%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/keypoint2_di__type_support.cpp.o[0m
+[1.919s] [  3%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/objects_stamped__type_support.cpp.o[0m
+[1.926s] [  3%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/keypoint2_df__type_support.cpp.o[0m
+[1.933s] [  4%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/bounding_box2_di__type_support.cpp.o[0m
+[1.933s] [  4%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/object__type_support.cpp.o[0m
+[1.938s] [  5%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/keypoint2_di__type_support.cpp.o[0m
+[1.939s] [  6%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/object__type_support.cpp.o[0m
+[1.958s] [  6%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/keypoint3_d__type_support.cpp.o[0m
+[1.963s] [  7%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/keypoint2_di__type_support.cpp.o[0m
+[1.964s] [  7%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/keypoint2_df__type_support.cpp.o[0m
+[1.966s] [  6%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/objects_stamped__type_support.cpp.o[0m
+[1.976s] [  8%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/keypoint3_d__type_support.cpp.o[0m
+[2.421s] [  8%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/bounding_box3_d__type_support.cpp.o[0m
+[2.421s] [  9%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/bounding_box2_di__type_support.cpp.o[0m
+[2.423s] [ 10%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/bounding_box2_df__type_support.cpp.o[0m
+[2.449s] [ 10%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/keypoint2_df__type_support.cpp.o[0m
+[2.514s] [ 10%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/bounding_box2_df__type_support.cpp.o[0m
+[2.537s] [35m[1mConsolidate compiler generated dependencies of target zed_interfaces__rosidl_generator_c[0m
+[2.566s] [ 11%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/bounding_box3_d__type_support.cpp.o[0m
+[2.635s] [ 12%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/object__functions.c.o[0m
+[2.734s] [ 12%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/skeleton2_d__type_support.cpp.o[0m
+[2.751s] [ 12%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/objects_stamped__functions.c.o[0m
+[2.766s] [ 13%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/keypoint2_di__functions.c.o[0m
+[2.809s] [ 14%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/skeleton3_d__type_support.cpp.o[0m
+[2.820s] running egg_info
+[2.822s] writing zed_interfaces.egg-info/PKG-INFO
+[2.822s] writing dependency_links to zed_interfaces.egg-info/dependency_links.txt
+[2.822s] writing top-level names to zed_interfaces.egg-info/top_level.txt
+[2.842s] reading manifest file 'zed_interfaces.egg-info/SOURCES.txt'
+[2.843s] writing manifest file 'zed_interfaces.egg-info/SOURCES.txt'
+[2.848s] [ 15%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/keypoint3_d__type_support.cpp.o[0m
+[2.852s] [ 16%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/keypoint2_df__functions.c.o[0m
+[2.867s] [ 16%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/depth_info_stamped__type_support.cpp.o[0m
+[2.880s] [ 16%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/keypoint3_d__functions.c.o[0m
+[2.885s] [ 17%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/skeleton2_d__type_support.cpp.o[0m
+[2.897s] [ 18%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/bounding_box2_di__functions.c.o[0m
+[2.911s] [ 18%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/bounding_box2_di__type_support.cpp.o[0m
+[2.928s] [ 18%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/bounding_box2_df__functions.c.o[0m
+[2.931s] [ 18%] Built target ament_cmake_python_build_zed_interfaces_egg
+[2.960s] [ 19%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/skeleton3_d__type_support.cpp.o[0m
+[2.978s] [ 20%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/bounding_box3_d__functions.c.o[0m
+[2.992s] [ 20%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/skeleton2_d__functions.c.o[0m
+[3.030s] [ 21%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/bounding_box2_df__type_support.cpp.o[0m
+[3.066s] [ 22%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.o[0m
+[3.113s] [ 23%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/skeleton3_d__functions.c.o[0m
+[3.116s] [ 24%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/plane_stamped__type_support.cpp.o[0m
+[3.136s] [ 24%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/depth_info_stamped__type_support.cpp.o[0m
+[3.190s] [ 24%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/skeleton2_d__type_support.cpp.o[0m
+[3.206s] [ 25%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/skeleton3_d__type_support.cpp.o[0m
+[3.218s] [ 26%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/pos_track_status__type_support.cpp.o[0m
+[3.260s] [ 27%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/depth_info_stamped__functions.c.o[0m
+[3.298s] [ 27%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/gnss_fusion_status__type_support.cpp.o[0m
+[3.374s] [ 28%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/plane_stamped__type_support.cpp.o[0m
+[3.421s] [ 28%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/plane_stamped__functions.c.o[0m
+[3.465s] [ 29%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/heartbeat__type_support.cpp.o[0m
+[3.474s] [ 30%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/pos_track_status__functions.c.o[0m
+[3.570s] [ 30%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/mag_heading_status__type_support.cpp.o[0m
+[3.668s] [ 30%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/gnss_fusion_status__functions.c.o[0m
+[3.697s] [ 31%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/srv/detail/set_pose__type_support.cpp.o[0m
+[3.717s] [ 32%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/heartbeat__functions.c.o[0m
+[3.750s] [ 32%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/depth_info_stamped__type_support.cpp.o[0m
+[3.758s] [ 32%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/pos_track_status__type_support.cpp.o[0m
+[3.803s] [ 32%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/srv/detail/start_svo_rec__type_support.cpp.o[0m
+[3.816s] [ 33%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/plane_stamped__type_support.cpp.o[0m
+[3.894s] [ 34%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/srv/detail/set_roi__type_support.cpp.o[0m
+[3.910s] [ 35%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/srv/detail/set_pose__functions.c.o[0m
+[3.911s] [ 34%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/mag_heading_status__functions.c.o[0m
+[3.939s] [ 35%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/pos_track_status__type_support.cpp.o[0m
+[4.028s] [ 36%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/gnss_fusion_status__type_support.cpp.o[0m
+[4.030s] [ 37%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/gnss_fusion_status__type_support.cpp.o[0m
+[4.051s] [ 38%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/srv/detail/start_svo_rec__functions.c.o[0m
+[4.064s] [ 39%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/heartbeat__type_support.cpp.o[0m
+[4.146s] [ 39%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/mag_heading_status__type_support.cpp.o[0m
+[4.156s] [ 39%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/srv/detail/set_roi__functions.c.o[0m
+[4.220s] [ 40%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/srv/detail/dds_fastrtps/set_pose__type_support.cpp.o[0m
+[4.308s] [ 40%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/heartbeat__type_support.cpp.o[0m
+[4.310s] [ 40%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/srv/detail/dds_fastrtps/start_svo_rec__type_support.cpp.o[0m
+[4.327s] [ 41%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/mag_heading_status__type_support.cpp.o[0m
+[4.412s] [ 42%] [32m[1mLinking C shared library libzed_interfaces__rosidl_generator_c.so[0m
+[4.445s] [ 43%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/srv/set_pose__type_support.cpp.o[0m
+[4.499s] [ 44%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/srv/detail/dds_fastrtps/set_roi__type_support.cpp.o[0m
+[4.553s] [ 44%] Built target zed_interfaces__rosidl_generator_c
+[4.623s] [35m[1mConsolidate compiler generated dependencies of target zed_interfaces__rosidl_typesupport_fastrtps_c[0m
+[4.711s] [35m[1mConsolidate compiler generated dependencies of target zed_interfaces__rosidl_typesupport_introspection_c[0m
+[4.777s] [ 44%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/object__type_support_c.cpp.o[0m
+[4.798s] [ 45%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/object__type_support.c.o[0m
+[4.818s] [ 46%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/objects_stamped__type_support_c.cpp.o[0m
+[4.848s] [ 47%] [32m[1mLinking CXX shared library libzed_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[4.848s] [ 47%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/objects_stamped__type_support.c.o[0m
+[4.850s] [ 47%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/srv/start_svo_rec__type_support.cpp.o[0m
+[4.984s] [ 48%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/keypoint2_di__type_support.c.o[0m
+[5.057s] [ 49%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/srv/set_roi__type_support.cpp.o[0m
+[5.068s] [35m[1mConsolidate compiler generated dependencies of target zed_interfaces__rosidl_typesupport_c[0m
+[5.084s] [ 49%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/keypoint2_df__type_support.c.o[0m
+[5.130s] [ 50%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/keypoint2_di__type_support_c.cpp.o[0m
+[5.145s] [ 50%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/object__type_support.cpp.o[0m
+[5.148s] [ 51%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/keypoint3_d__type_support.c.o[0m
+[5.205s] [ 51%] Built target zed_interfaces__rosidl_typesupport_introspection_cpp
+[5.245s] [ 51%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/keypoint2_df__type_support_c.cpp.o[0m
+[5.258s] [ 52%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/bounding_box2_di__type_support.c.o[0m
+[5.262s] [ 52%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/keypoint3_d__type_support_c.cpp.o[0m
+[5.274s] [ 53%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/objects_stamped__type_support.cpp.o[0m
+[5.278s] [ 53%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/bounding_box2_di__type_support_c.cpp.o[0m
+[5.297s] [ 53%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/keypoint2_di__type_support.cpp.o[0m
+[5.302s] [ 54%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/bounding_box2_df__type_support.c.o[0m
+[5.350s] [ 55%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/bounding_box3_d__type_support.c.o[0m
+[5.418s] [ 56%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/keypoint2_df__type_support.cpp.o[0m
+[5.426s] [ 57%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/skeleton3_d__type_support.c.o[0m
+[5.431s] [ 58%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/keypoint3_d__type_support.cpp.o[0m
+[5.435s] [ 58%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/skeleton2_d__type_support.c.o[0m
+[5.455s] [ 58%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/bounding_box2_di__type_support.cpp.o[0m
+[5.475s] [ 59%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/bounding_box2_df__type_support_c.cpp.o[0m
+[5.484s] [ 60%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/plane_stamped__type_support.c.o[0m
+[5.494s] [ 60%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/depth_info_stamped__type_support.c.o[0m
+[5.502s] [ 61%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/bounding_box2_df__type_support.cpp.o[0m
+[5.555s] [ 61%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/bounding_box3_d__type_support_c.cpp.o[0m
+[5.562s] [ 61%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/bounding_box3_d__type_support.cpp.o[0m
+[5.599s] [ 62%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/skeleton2_d__type_support.cpp.o[0m
+[5.603s] [ 63%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/skeleton2_d__type_support_c.cpp.o[0m
+[5.647s] [ 63%] [32m[1mLinking CXX shared library libzed_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.657s] [ 63%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/pos_track_status__type_support.c.o[0m
+[5.670s] [ 64%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/gnss_fusion_status__type_support.c.o[0m
+[5.707s] [ 65%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/heartbeat__type_support.c.o[0m
+[5.718s] [ 65%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/skeleton3_d__type_support.cpp.o[0m
+[5.728s] [ 66%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/skeleton3_d__type_support_c.cpp.o[0m
+[5.791s] [ 66%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/mag_heading_status__type_support.c.o[0m
+[5.793s] [ 67%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/depth_info_stamped__type_support.cpp.o[0m
+[5.843s] [ 68%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/srv/detail/set_pose__type_support.c.o[0m
+[5.860s] [ 68%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/srv/detail/start_svo_rec__type_support.c.o[0m
+[5.874s] [ 69%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/plane_stamped__type_support.cpp.o[0m
+[5.897s] [ 69%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/pos_track_status__type_support.cpp.o[0m
+[5.903s] [ 69%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/depth_info_stamped__type_support_c.cpp.o[0m
+[5.931s] [ 70%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/srv/detail/set_roi__type_support.c.o[0m
+[5.943s] [ 71%] Built target zed_interfaces__rosidl_typesupport_fastrtps_cpp
+[5.946s] [ 72%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/plane_stamped__type_support_c.cpp.o[0m
+[5.961s] [ 72%] [32m[1mLinking CXX shared library libzed_interfaces__rosidl_typesupport_cpp.so[0m
+[5.966s] [ 72%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/heartbeat__type_support.cpp.o[0m
+[5.992s] [ 72%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/srv/set_pose__type_support.cpp.o[0m
+[5.994s] [ 72%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/pos_track_status__type_support_c.cpp.o[0m
+[5.997s] [ 73%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/gnss_fusion_status__type_support.cpp.o[0m
+[6.019s] [ 74%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/mag_heading_status__type_support.cpp.o[0m
+[6.079s] [ 74%] [32m[1mLinking C shared library libzed_interfaces__rosidl_typesupport_introspection_c.so[0m
+[6.079s] [ 75%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/srv/start_svo_rec__type_support.cpp.o[0m
+[6.102s] [ 76%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/mag_heading_status__type_support_c.cpp.o[0m
+[6.106s] [ 76%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/heartbeat__type_support_c.cpp.o[0m
+[6.107s] [ 77%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/srv/set_roi__type_support.cpp.o[0m
+[6.112s] [ 79%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/gnss_fusion_status__type_support_c.cpp.o[0m
+[6.113s] [ 79%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/srv/detail/set_pose__type_support_c.cpp.o[0m
+[6.131s] [ 79%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/srv/detail/start_svo_rec__type_support_c.cpp.o[0m
+[6.131s] [ 80%] Built target zed_interfaces__rosidl_typesupport_cpp
+[6.210s] [ 81%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/srv/detail/set_roi__type_support_c.cpp.o[0m
+[6.229s] [ 82%] [32m[1mLinking CXX shared library libzed_interfaces__rosidl_typesupport_c.so[0m
+[6.247s] [ 82%] Built target zed_interfaces__rosidl_typesupport_introspection_c
+[6.373s] [ 83%] Built target zed_interfaces__rosidl_typesupport_c
+[6.701s] [ 83%] [32m[1mLinking CXX shared library libzed_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[6.788s] [ 84%] Built target zed_interfaces__rosidl_typesupport_fastrtps_c
+[6.810s] [ 84%] Built target zed_interfaces
+[6.834s] [ 85%] Built target zed_interfaces__py
+[6.849s] [35m[1mConsolidate compiler generated dependencies of target zed_interfaces__rosidl_generator_py[0m
+[6.882s] [ 86%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_objects_stamped_s.c.o[0m
+[6.883s] [ 86%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_bounding_box2_di_s.c.o[0m
+[6.883s] [ 88%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_skeleton2_d_s.c.o[0m
+[6.883s] [ 88%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_bounding_box2_df_s.c.o[0m
+[6.883s] [ 88%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_bounding_box3_d_s.c.o[0m
+[6.884s] [ 89%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_keypoint2_df_s.c.o[0m
+[6.885s] [ 90%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_depth_info_stamped_s.c.o[0m
+[6.888s] [ 90%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_keypoint2_di_s.c.o[0m
+[6.889s] [ 90%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_object_s.c.o[0m
+[6.889s] [ 90%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_skeleton3_d_s.c.o[0m
+[6.890s] [ 91%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_plane_stamped_s.c.o[0m
+[6.891s] [ 91%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_pos_track_status_s.c.o[0m
+[6.897s] [ 93%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_heartbeat_s.c.o[0m
+[6.897s] [ 93%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_gnss_fusion_status_s.c.o[0m
+[6.898s] [ 93%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_keypoint3_d_s.c.o[0m
+[6.945s] [ 94%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_mag_heading_status_s.c.o[0m
+[7.032s] [ 94%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/srv/_set_pose_s.c.o[0m
+[7.044s] [ 95%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/srv/_set_roi_s.c.o[0m
+[7.052s] [ 96%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/srv/_start_svo_rec_s.c.o[0m
+[7.178s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/zed_interfaces/libzed_interfaces__rosidl_generator_py.so[0m
+[7.232s] [ 96%] Built target zed_interfaces__rosidl_generator_py
+[7.244s] [35m[1mConsolidate compiler generated dependencies of target zed_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[7.247s] [35m[1mConsolidate compiler generated dependencies of target zed_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[7.248s] [35m[1mConsolidate compiler generated dependencies of target zed_interfaces__rosidl_typesupport_c__pyext[0m
+[7.260s] [ 97%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/zed_interfaces/_zed_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.262s] [ 98%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/zed_interfaces/_zed_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[7.264s] [ 99%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/zed_interfaces/_zed_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.413s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/zed_interfaces/zed_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.421s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/zed_interfaces/zed_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.456s] [ 99%] Built target zed_interfaces__rosidl_typesupport_c__pyext
+[7.458s] [100%] [32m[1mLinking C shared library rosidl_generator_py/zed_interfaces/zed_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.467s] [100%] Built target zed_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[7.502s] [100%] Built target zed_interfaces__rosidl_typesupport_introspection_c__pyext
+[7.518s] Invoked command in '/home/student/Desktop/workspace/build/zed_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/sensor_presentation:/home/student/Desktop/workspace/install/position_estimation:/home/student/Desktop/workspace/install/ouster_voxel_filter:/home/student/Desktop/workspace/install/navigation:/home/student/Desktop/workspace/install/main:/opt/ros/humble /home/student/.local/bin/cmake --build /home/student/Desktop/workspace/build/zed_interfaces -- -j16 -l16
+[8.040s] Invoking command in '/home/student/Desktop/workspace/build/zed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/sensor_presentation:/home/student/Desktop/workspace/install/position_estimation:/home/student/Desktop/workspace/install/ouster_voxel_filter:/home/student/Desktop/workspace/install/navigation:/home/student/Desktop/workspace/install/main:/opt/ros/humble /home/student/.local/bin/cmake --install /home/student/Desktop/workspace/build/zed_interfaces
+[8.063s] -- Install configuration: ""
+[8.064s] -- Execute custom install script
+[8.064s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/ament_index/resource_index/rosidl_interfaces/zed_interfaces
+[8.065s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/bounding_box2_df.h
+[8.065s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/bounding_box2_di.h
+[8.065s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/bounding_box3_d.h
+[8.066s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/depth_info_stamped.h
+[8.066s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__functions.h
+[8.066s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__struct.h
+[8.066s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__type_support.h
+[8.066s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__functions.h
+[8.066s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__struct.h
+[8.066s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__type_support.h
+[8.066s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__functions.h
+[8.066s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__struct.h
+[8.067s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__type_support.h
+[8.067s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__functions.h
+[8.067s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__struct.h
+[8.067s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__type_support.h
+[8.067s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/gnss_fusion_status__functions.h
+[8.067s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/gnss_fusion_status__struct.h
+[8.067s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/gnss_fusion_status__type_support.h
+[8.067s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__functions.h
+[8.067s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__struct.h
+[8.067s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__type_support.h
+[8.067s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__functions.h
+[8.068s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__struct.h
+[8.068s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__type_support.h
+[8.068s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__functions.h
+[8.068s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__struct.h
+[8.068s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__type_support.h
+[8.068s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__functions.h
+[8.068s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__struct.h
+[8.068s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__type_support.h
+[8.068s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/mag_heading_status__functions.h
+[8.068s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/mag_heading_status__struct.h
+[8.069s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/mag_heading_status__type_support.h
+[8.069s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__functions.h
+[8.069s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__struct.h
+[8.069s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__type_support.h
+[8.069s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__functions.h
+[8.069s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__struct.h
+[8.069s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__type_support.h
+[8.069s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__functions.h
+[8.069s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__struct.h
+[8.069s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__type_support.h
+[8.070s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__functions.h
+[8.070s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__struct.h
+[8.070s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__type_support.h
+[8.070s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__functions.h
+[8.070s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__struct.h
+[8.070s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__type_support.h
+[8.070s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__functions.h
+[8.070s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__struct.h
+[8.070s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__type_support.h
+[8.070s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/gnss_fusion_status.h
+[8.071s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/heartbeat.h
+[8.071s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/keypoint2_df.h
+[8.071s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/keypoint2_di.h
+[8.071s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/keypoint3_d.h
+[8.071s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/mag_heading_status.h
+[8.071s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/object.h
+[8.071s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/objects_stamped.h
+[8.071s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/plane_stamped.h
+[8.071s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/pos_track_status.h
+[8.071s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/rosidl_generator_c__visibility_control.h
+[8.072s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/skeleton2_d.h
+[8.072s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/skeleton3_d.h
+[8.072s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__functions.h
+[8.072s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__struct.h
+[8.072s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__type_support.h
+[8.072s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__functions.h
+[8.072s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__struct.h
+[8.072s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__type_support.h
+[8.073s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__functions.h
+[8.073s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__struct.h
+[8.073s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__type_support.h
+[8.073s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/set_pose.h
+[8.073s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/set_roi.h
+[8.073s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/start_svo_rec.h
+[8.073s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/environment/library_path.sh
+[8.073s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/environment/library_path.dsv
+[8.074s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__rosidl_typesupport_fastrtps_c.h
+[8.075s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__rosidl_typesupport_fastrtps_c.h
+[8.075s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_c.h
+[8.075s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__rosidl_typesupport_fastrtps_c.h
+[8.075s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/gnss_fusion_status__rosidl_typesupport_fastrtps_c.h
+[8.075s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__rosidl_typesupport_fastrtps_c.h
+[8.075s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__rosidl_typesupport_fastrtps_c.h
+[8.075s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__rosidl_typesupport_fastrtps_c.h
+[8.075s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__rosidl_typesupport_fastrtps_c.h
+[8.075s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/mag_heading_status__rosidl_typesupport_fastrtps_c.h
+[8.075s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__rosidl_typesupport_fastrtps_c.h
+[8.076s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__rosidl_typesupport_fastrtps_c.h
+[8.076s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__rosidl_typesupport_fastrtps_c.h
+[8.076s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__rosidl_typesupport_fastrtps_c.h
+[8.076s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__rosidl_typesupport_fastrtps_c.h
+[8.076s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__rosidl_typesupport_fastrtps_c.h
+[8.076s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.076s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__rosidl_typesupport_fastrtps_c.h
+[8.076s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__rosidl_typesupport_fastrtps_c.h
+[8.076s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__rosidl_typesupport_fastrtps_c.h
+[8.077s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/bounding_box2_df.hpp
+[8.077s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/bounding_box2_di.hpp
+[8.078s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/bounding_box3_d.hpp
+[8.078s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/depth_info_stamped.hpp
+[8.078s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__builder.hpp
+[8.078s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__struct.hpp
+[8.078s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__traits.hpp
+[8.078s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__builder.hpp
+[8.078s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__struct.hpp
+[8.078s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__traits.hpp
+[8.078s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__builder.hpp
+[8.078s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__struct.hpp
+[8.079s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__traits.hpp
+[8.079s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__builder.hpp
+[8.079s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__struct.hpp
+[8.079s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__traits.hpp
+[8.079s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/gnss_fusion_status__builder.hpp
+[8.079s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/gnss_fusion_status__struct.hpp
+[8.079s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/gnss_fusion_status__traits.hpp
+[8.079s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__builder.hpp
+[8.079s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__struct.hpp
+[8.079s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__traits.hpp
+[8.080s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__builder.hpp
+[8.080s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__struct.hpp
+[8.080s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__traits.hpp
+[8.080s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__builder.hpp
+[8.080s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__struct.hpp
+[8.080s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__traits.hpp
+[8.080s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__builder.hpp
+[8.080s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__struct.hpp
+[8.080s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__traits.hpp
+[8.081s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/mag_heading_status__builder.hpp
+[8.081s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/mag_heading_status__struct.hpp
+[8.081s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/mag_heading_status__traits.hpp
+[8.081s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__builder.hpp
+[8.081s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__struct.hpp
+[8.081s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__traits.hpp
+[8.081s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__builder.hpp
+[8.081s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__struct.hpp
+[8.081s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__traits.hpp
+[8.081s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__builder.hpp
+[8.082s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__struct.hpp
+[8.082s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__traits.hpp
+[8.082s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__builder.hpp
+[8.082s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__struct.hpp
+[8.082s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__traits.hpp
+[8.082s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__builder.hpp
+[8.082s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__struct.hpp
+[8.082s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__traits.hpp
+[8.082s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__builder.hpp
+[8.082s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__struct.hpp
+[8.083s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__traits.hpp
+[8.083s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/gnss_fusion_status.hpp
+[8.083s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/heartbeat.hpp
+[8.083s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/keypoint2_df.hpp
+[8.083s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/keypoint2_di.hpp
+[8.083s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/keypoint3_d.hpp
+[8.083s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/mag_heading_status.hpp
+[8.083s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/object.hpp
+[8.083s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/objects_stamped.hpp
+[8.083s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/plane_stamped.hpp
+[8.084s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/pos_track_status.hpp
+[8.084s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/skeleton2_d.hpp
+[8.084s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/skeleton3_d.hpp
+[8.084s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__builder.hpp
+[8.084s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__struct.hpp
+[8.084s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__traits.hpp
+[8.084s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__builder.hpp
+[8.084s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__struct.hpp
+[8.084s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__traits.hpp
+[8.084s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__builder.hpp
+[8.085s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__struct.hpp
+[8.085s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__traits.hpp
+[8.085s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/set_pose.hpp
+[8.085s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/set_roi.hpp
+[8.085s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/start_svo_rec.hpp
+[8.086s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__rosidl_typesupport_fastrtps_cpp.hpp
+[8.086s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__rosidl_typesupport_fastrtps_cpp.hpp
+[8.086s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_cpp.hpp
+[8.086s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[8.086s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/gnss_fusion_status__rosidl_typesupport_fastrtps_cpp.hpp
+[8.086s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__rosidl_typesupport_fastrtps_cpp.hpp
+[8.087s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__rosidl_typesupport_fastrtps_cpp.hpp
+[8.087s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__rosidl_typesupport_fastrtps_cpp.hpp
+[8.087s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__rosidl_typesupport_fastrtps_cpp.hpp
+[8.087s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/mag_heading_status__rosidl_typesupport_fastrtps_cpp.hpp
+[8.087s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__rosidl_typesupport_fastrtps_cpp.hpp
+[8.087s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[8.087s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[8.087s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__rosidl_typesupport_fastrtps_cpp.hpp
+[8.087s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__rosidl_typesupport_fastrtps_cpp.hpp
+[8.087s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__rosidl_typesupport_fastrtps_cpp.hpp
+[8.088s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.088s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[8.088s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__rosidl_typesupport_fastrtps_cpp.hpp
+[8.088s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__rosidl_typesupport_fastrtps_cpp.hpp
+[8.088s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__rosidl_typesupport_introspection_c.h
+[8.089s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__rosidl_typesupport_introspection_c.h
+[8.089s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_c.h
+[8.089s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__rosidl_typesupport_introspection_c.h
+[8.089s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/gnss_fusion_status__rosidl_typesupport_introspection_c.h
+[8.089s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__rosidl_typesupport_introspection_c.h
+[8.089s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__rosidl_typesupport_introspection_c.h
+[8.089s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__rosidl_typesupport_introspection_c.h
+[8.089s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__rosidl_typesupport_introspection_c.h
+[8.089s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/mag_heading_status__rosidl_typesupport_introspection_c.h
+[8.089s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__rosidl_typesupport_introspection_c.h
+[8.090s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__rosidl_typesupport_introspection_c.h
+[8.090s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__rosidl_typesupport_introspection_c.h
+[8.090s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__rosidl_typesupport_introspection_c.h
+[8.090s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__rosidl_typesupport_introspection_c.h
+[8.090s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__rosidl_typesupport_introspection_c.h
+[8.090s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.090s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__rosidl_typesupport_introspection_c.h
+[8.090s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__rosidl_typesupport_introspection_c.h
+[8.090s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__rosidl_typesupport_introspection_c.h
+[8.091s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__rosidl_typesupport_introspection_cpp.hpp
+[8.091s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__rosidl_typesupport_introspection_cpp.hpp
+[8.091s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_cpp.hpp
+[8.091s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__rosidl_typesupport_introspection_cpp.hpp
+[8.091s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/gnss_fusion_status__rosidl_typesupport_introspection_cpp.hpp
+[8.091s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__rosidl_typesupport_introspection_cpp.hpp
+[8.092s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__rosidl_typesupport_introspection_cpp.hpp
+[8.092s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__rosidl_typesupport_introspection_cpp.hpp
+[8.092s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__rosidl_typesupport_introspection_cpp.hpp
+[8.092s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/mag_heading_status__rosidl_typesupport_introspection_cpp.hpp
+[8.092s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__rosidl_typesupport_introspection_cpp.hpp
+[8.092s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__rosidl_typesupport_introspection_cpp.hpp
+[8.092s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__rosidl_typesupport_introspection_cpp.hpp
+[8.092s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__rosidl_typesupport_introspection_cpp.hpp
+[8.092s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__rosidl_typesupport_introspection_cpp.hpp
+[8.092s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__rosidl_typesupport_introspection_cpp.hpp
+[8.093s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__rosidl_typesupport_introspection_cpp.hpp
+[8.093s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__rosidl_typesupport_introspection_cpp.hpp
+[8.093s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__rosidl_typesupport_introspection_cpp.hpp
+[8.093s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/environment/pythonpath.sh
+[8.093s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/environment/pythonpath.dsv
+[8.093s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces-4.1.0-py3.10.egg-info/PKG-INFO
+[8.093s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces-4.1.0-py3.10.egg-info/SOURCES.txt
+[8.094s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces-4.1.0-py3.10.egg-info/dependency_links.txt
+[8.094s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces-4.1.0-py3.10.egg-info/top_level.txt
+[8.095s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/__init__.py
+[8.095s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/_zed_interfaces_s.ep.rosidl_typesupport_c.c
+[8.095s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/_zed_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.095s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/_zed_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[8.095s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/libzed_interfaces__rosidl_generator_py.so
+[8.095s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/__init__.py
+[8.095s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box2_df.py
+[8.095s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box2_df_s.c
+[8.096s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box2_di.py
+[8.096s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box2_di_s.c
+[8.096s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box3_d.py
+[8.096s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box3_d_s.c
+[8.096s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_depth_info_stamped.py
+[8.096s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_depth_info_stamped_s.c
+[8.096s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_gnss_fusion_status.py
+[8.096s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_gnss_fusion_status_s.c
+[8.096s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_heartbeat.py
+[8.096s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_heartbeat_s.c
+[8.097s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint2_df.py
+[8.097s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint2_df_s.c
+[8.097s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint2_di.py
+[8.097s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint2_di_s.c
+[8.097s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint3_d.py
+[8.097s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint3_d_s.c
+[8.097s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_mag_heading_status.py
+[8.097s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_mag_heading_status_s.c
+[8.097s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_object.py
+[8.097s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_object_s.c
+[8.098s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_objects_stamped.py
+[8.098s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_objects_stamped_s.c
+[8.098s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_plane_stamped.py
+[8.098s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_plane_stamped_s.c
+[8.098s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_pos_track_status.py
+[8.098s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_pos_track_status_s.c
+[8.098s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_skeleton2_d.py
+[8.098s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_skeleton2_d_s.c
+[8.098s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_skeleton3_d.py
+[8.099s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_skeleton3_d_s.c
+[8.099s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/__init__.py
+[8.099s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_set_pose.py
+[8.099s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_set_pose_s.c
+[8.099s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_set_roi.py
+[8.099s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_set_roi_s.c
+[8.099s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_start_svo_rec.py
+[8.099s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_start_svo_rec_s.c
+[8.099s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/zed_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.099s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/zed_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.100s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/zed_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.100s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/zed_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.100s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/zed_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.100s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/zed_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.100s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/Object.idl
+[8.101s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/ObjectsStamped.idl
+[8.101s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/Keypoint2Di.idl
+[8.101s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/Keypoint2Df.idl
+[8.101s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/Keypoint3D.idl
+[8.101s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox2Di.idl
+[8.101s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox2Df.idl
+[8.101s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox3D.idl
+[8.102s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/Skeleton2D.idl
+[8.102s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/Skeleton3D.idl
+[8.102s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/DepthInfoStamped.idl
+[8.102s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/PlaneStamped.idl
+[8.102s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/PosTrackStatus.idl
+[8.102s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/GnssFusionStatus.idl
+[8.102s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/Heartbeat.idl
+[8.103s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/MagHeadingStatus.idl
+[8.103s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/srv/SetPose.idl
+[8.103s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/srv/StartSvoRec.idl
+[8.103s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/srv/SetROI.idl
+[8.103s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/Object.msg
+[8.103s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/ObjectsStamped.msg
+[8.103s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/Keypoint2Di.msg
+[8.104s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/Keypoint2Df.msg
+[8.104s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/Keypoint3D.msg
+[8.104s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox2Di.msg
+[8.104s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox2Df.msg
+[8.104s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox3D.msg
+[8.104s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/Skeleton2D.msg
+[8.104s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/Skeleton3D.msg
+[8.105s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/DepthInfoStamped.msg
+[8.105s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/PlaneStamped.msg
+[8.105s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/PosTrackStatus.msg
+[8.105s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/GnssFusionStatus.msg
+[8.105s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/Heartbeat.msg
+[8.105s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/msg/MagHeadingStatus.msg
+[8.105s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/srv/SetPose.srv
+[8.106s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/srv/SetPose_Request.msg
+[8.106s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/srv/SetPose_Response.msg
+[8.106s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/srv/StartSvoRec.srv
+[8.106s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/srv/StartSvoRec_Request.msg
+[8.106s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/srv/StartSvoRec_Response.msg
+[8.106s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/srv/SetROI.srv
+[8.106s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/srv/SetROI_Request.msg
+[8.107s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/srv/SetROI_Response.msg
+[8.107s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/meshes/virtual.stl
+[8.107s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/meshes/zed.stl
+[8.107s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/meshes/zed2.stl
+[8.107s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/meshes/zed2i.stl
+[8.107s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/meshes/zedm.stl
+[8.107s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/meshes/zedx.stl
+[8.107s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/meshes/zedxm.stl
+[8.108s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/ament_index/resource_index/package_run_dependencies/zed_interfaces
+[8.108s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/ament_index/resource_index/parent_prefix_path/zed_interfaces
+[8.108s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/environment/ament_prefix_path.sh
+[8.108s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/environment/ament_prefix_path.dsv
+[8.108s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/environment/path.sh
+[8.108s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/environment/path.dsv
+[8.108s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/local_setup.bash
+[8.109s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/local_setup.sh
+[8.109s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/local_setup.zsh
+[8.109s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/local_setup.dsv
+[8.109s] -- Symlinking: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/package.dsv
+[8.116s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/ament_index/resource_index/packages/zed_interfaces
+[8.117s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/rosidl_cmake-extras.cmake
+[8.117s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.117s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.117s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[8.117s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[8.117s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.118s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.118s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfacesConfig.cmake
+[8.118s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfacesConfig-version.cmake
+[8.118s] -- Up-to-date symlink: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/package.xml
+[8.118s] -- Installing: /home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_generator_c.so
+[8.119s] -- Set runtime path of "/home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_generator_c.so" to ""
+[8.119s] -- Installing: /home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_fastrtps_c.so
+[8.119s] -- Set runtime path of "/home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[8.120s] -- Installing: /home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[8.120s] -- Set runtime path of "/home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[8.120s] -- Installing: /home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_introspection_c.so
+[8.121s] -- Set runtime path of "/home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[8.121s] -- Installing: /home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_c.so
+[8.121s] -- Set runtime path of "/home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_c.so" to ""
+[8.122s] -- Installing: /home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_introspection_cpp.so
+[8.122s] -- Set runtime path of "/home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[8.123s] -- Installing: /home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_cpp.so
+[8.123s] -- Set runtime path of "/home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_cpp.so" to ""
+[8.192s] Listing '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces'...
+[8.192s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/__init__.py'...
+[8.192s] Listing '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg'...
+[8.192s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/__init__.py'...
+[8.192s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box2_df.py'...
+[8.192s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box2_di.py'...
+[8.193s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box3_d.py'...
+[8.193s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_depth_info_stamped.py'...
+[8.193s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_gnss_fusion_status.py'...
+[8.193s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_heartbeat.py'...
+[8.193s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint2_df.py'...
+[8.193s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint2_di.py'...
+[8.193s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint3_d.py'...
+[8.193s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_mag_heading_status.py'...
+[8.193s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_object.py'...
+[8.193s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_objects_stamped.py'...
+[8.193s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_plane_stamped.py'...
+[8.193s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_pos_track_status.py'...
+[8.194s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_skeleton2_d.py'...
+[8.194s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_skeleton3_d.py'...
+[8.194s] Listing '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv'...
+[8.194s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/__init__.py'...
+[8.194s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_set_pose.py'...
+[8.194s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_set_roi.py'...
+[8.194s] Compiling '/home/student/Desktop/workspace/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_start_svo_rec.py'...
+[8.196s] -- Installing: /home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_generator_py.so
+[8.197s] -- Set runtime path of "/home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_generator_py.so" to ""
+[8.197s] -- Up-to-date: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cExport.cmake
+[8.197s] -- Up-to-date: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cExport-noconfig.cmake
+[8.197s] -- Up-to-date: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[8.197s] -- Up-to-date: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[8.198s] -- Up-to-date: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cppExport.cmake
+[8.198s] -- Up-to-date: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[8.198s] -- Up-to-date: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[8.198s] -- Up-to-date: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[8.198s] -- Up-to-date: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[8.198s] -- Up-to-date: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cExport.cmake
+[8.198s] -- Up-to-date: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[8.198s] -- Up-to-date: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[8.199s] -- Up-to-date: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[8.199s] -- Up-to-date: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cppExport.cmake
+[8.199s] -- Up-to-date: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[8.199s] -- Up-to-date: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_pyExport.cmake
+[8.199s] -- Up-to-date: /home/student/Desktop/workspace/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[8.204s] Invoked command in '/home/student/Desktop/workspace/build/zed_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/workspace/install/yolo_tracking:/home/student/Desktop/workspace/install/sensor_presentation:/home/student/Desktop/workspace/install/position_estimation:/home/student/Desktop/workspace/install/ouster_voxel_filter:/home/student/Desktop/workspace/install/navigation:/home/student/Desktop/workspace/install/main:/opt/ros/humble /home/student/.local/bin/cmake --install /home/student/Desktop/workspace/build/zed_interfaces
