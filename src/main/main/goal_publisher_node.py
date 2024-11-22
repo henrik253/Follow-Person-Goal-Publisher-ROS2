@@ -17,6 +17,8 @@ class State(Enum):
     FOLLOW_PERSON = 3
     STOP_FOLLOW_PERSON = 4
 
+PUBLISH_GOAL_RATE = 1.0 # in seconds
+
 class GoalPublisher(Node):
     def __init__(self):
         super().__init__('goal_publisher')
@@ -32,7 +34,7 @@ class GoalPublisher(Node):
             10
         )
       
-        self.timer = self.create_timer(1.0, self.publish_goal)  # Publish every second
+        self.timer = self.create_timer(PUBLISH_GOAL_RATE, self.publish_goal)  # Publish a goal to configured rate
 
         # TF2 setup
         self.tf_buffer = Buffer()
