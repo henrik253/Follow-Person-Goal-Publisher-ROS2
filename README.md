@@ -1,6 +1,6 @@
 # Follow Person Implementation in ROS2  
 
-# Project Overview: Object Tracking with YOLO and ZED 2i Camera
+## Project Overview: Object Tracking with YOLO and ZED 2i Camera
 
 This project focuses on **object tracking** using the **YOLO (You Only Look Once)** algorithm in combination with the **ZED 2i camera**. The camera is utilized to measure the distance to persons recognized by YOLO, leveraging the **YOLOv8n-pose** model.
 
