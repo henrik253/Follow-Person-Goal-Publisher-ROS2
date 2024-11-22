@@ -1,6 +1,4 @@
-# ROS2 Workspace: workspace
-
-## Project Overview
+# Follow Person Implementation in ROS2  
 
 # Project Overview: Object Tracking with YOLO and ZED 2i Camera
 
