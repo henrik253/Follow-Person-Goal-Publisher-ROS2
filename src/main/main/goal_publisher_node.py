@@ -86,8 +86,8 @@ class GoalPublisher(Node):
         marker.pose.orientation.w = 1.0
 
         # Set the scale of the marker (1x1x1 means 1 meter in each dimension)
-        marker.scale.x = 0.1
-        marker.scale.y = 0.1
+        marker.scale.x = 0.3
+        marker.scale.y = 0.3
         marker.scale.z = 0.5
 
         # Set the color (RGBA)
