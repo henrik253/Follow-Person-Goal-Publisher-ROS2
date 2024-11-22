@@ -49,12 +49,14 @@ class GoalPublisher(Node):
         self.current_state = State.STARTED
         self.target_person = None
 
-
         self.target_person_camera_position = None
         self.target_person_map_position = None
-        self.current_robot_position = None
+        self.current_robot_position = None # ?
 
         self.last_target_position = False
+
+        # distance
+        self.distance = 1.0 # 1m min distance to person 
 
     def change_state(self, new_state):
         """Helper function to log state changes."""
@@ -67,7 +69,6 @@ class GoalPublisher(Node):
       #  self.get_logger().info(f'Current position - x: {self.current_robot_position.x}, y: {self.current_robot_position.y}, z: {self.current_robot_position.z}')
     # DEBUGGING
 
-
     def publish_marker(self):
         marker = Marker()
         marker.header.frame_id = "map"  # Replace with your desired frame
@@ -77,9 +78,9 @@ class GoalPublisher(Node):
         marker.type = Marker.SPHERE  
         marker.action = Marker.ADD
 
-        # Set the position
         if(not self.target_person_map_position):
             return 
+        
         marker.pose.position.x = self.target_person_map_position.position.x
         marker.pose.position.y = self.target_person_map_position.position.y
         marker.pose.position.z = self.target_person_map_position.position.z
@@ -94,8 +95,8 @@ class GoalPublisher(Node):
         marker.pose.orientation.w = 1.0
 
         # Set the scale of the marker (1x1x1 means 1 meter in each dimension)
-        marker.scale.x = 0.5
-        marker.scale.y = 0.5
+        marker.scale.x = 0.1
+        marker.scale.y = 0.1
         marker.scale.z = 0.5
 
         # Set the color (RGBA)
@@ -107,23 +108,19 @@ class GoalPublisher(Node):
         # Publish the marker
         self.marker_publisher.publish(marker)
 
-
-
-
     def publish_goal(self):
         # Check the state of the GoalStateMachine before publishing
         print(f'map_pos: {self.target_person_map_position}')
         print(f'camera_pos {self.target_person_camera_position}')
-        self.publish_marker()
+        
+
         if self.current_state == State.FOLLOW_PERSON:
             if self.last_target_position:
                     goal_msg = PoseStamped()
                     goal_msg.header.stamp = self.get_clock().now().to_msg()
                     goal_msg.header.frame_id = 'map'
-
                     goal_msg.pose = self.target_person_map_position
-
-                    
+                    self.publish_marker()
                     if False:
                         self.goal_publisher.publish(goal_msg)
 
@@ -132,20 +129,20 @@ class GoalPublisher(Node):
         person_real_world, person_keypoints = self.proccess_position_estimation_message(msg)
 
         if self.current_state == State.STARTED:
-            self.started()
+            self.started_state()
         elif self.current_state == State.LOOK_FOR_PERSON_TO_FOLLOW:
-            self.look_for_person_to_follow(person_real_world, person_keypoints)
+            self.look_for_person_to_follow_state(person_real_world, person_keypoints)
         elif self.current_state == State.FOUND_PERSON_TO_FOLLOW:
-            self.found_person_to_follow()
+            self.found_person_to_follow_state()
         elif self.current_state == State.FOLLOW_PERSON:
-            self.follow_person(person_real_world, person_keypoints)
+            self.follow_person_state(person_real_world, person_keypoints)
         elif self.current_state == State.STOP_FOLLOW_PERSON:
-            self.stop_follow_person()
+            self.stop_follow_person_state()
     
-    def started(self):
+    def started_state(self):
         self.change_state(State.LOOK_FOR_PERSON_TO_FOLLOW)
 
-    def look_for_person_to_follow(self, person_real_world, person_keypoints):
+    def look_for_person_to_follow_state(self, person_real_world, person_keypoints):
         persons_with_right_hand_up = []
         for person_id, keypoints in person_keypoints.items():
             pose = classify_pose(keypoints)
@@ -160,26 +157,22 @@ class GoalPublisher(Node):
             self.get_logger().info(f'Target person ID: {self.target_person}')
             self.change_state(State.FOUND_PERSON_TO_FOLLOW)
 
-    def found_person_to_follow(self):
+    def found_person_to_follow_state(self):
         self.get_logger().info(f'Person found with ID: {self.target_person}')  # Log the ID of the person found
         self.change_state(State.FOLLOW_PERSON)
 
-    def follow_person(self, person_real_world, person_keypoints):
+    def follow_person_state(self, person_real_world, person_keypoints):
         if self.target_person in person_real_world:
             if classify_pose(person_keypoints[self.target_person]) == Pose.LEFT_HAND_UP:
                 self.change_state(State.STOP_FOLLOW_PERSON)
             try:
-                print('t1')
                 person_rwc = person_real_world[self.target_person]
-                print('t2')
-                if(person_rwc[0] and person_rwc[1] and person_rwc[2]):
+                if(person_rwc[0] and person_rwc[1] and person_rwc[2]): 
                     # x -> x, z -> y , y -> z 
-                    flipped_person_rwc = (-person_rwc[0],person_rwc[2],-person_rwc[1]) # x/person_rwc[0] (left or right from camera: positive means more right) : z/person_rwc[2] the distance from the person (the higher the more away)
+                    depth_value = max(person_rwc[2] - self.distance, 0)
+                    flipped_person_rwc = (-person_rwc[0],depth_value,-person_rwc[1]) # x/person_rwc[0] (left or right from camera: positive means more right) : z/person_rwc[2] the distance from the person (the higher the more away)
                     self.target_person_map_position = self.transform_to_map(flipped_person_rwc)
-                    print('t3')
                     self.target_person_camera_position = flipped_person_rwc
-                    print('t4')
-                    self.get_logger().info(f'map position: {self.target_person_map_position}')
                     self.last_target_position = True 
                 else:
                     self.get_logger().warn('Unable to calculate persons position')
@@ -193,7 +186,7 @@ class GoalPublisher(Node):
             self.get_logger().warn('Target person lost, transitioning to STOP_FOLLOW_PERSON')
             self.change_state(State.STOP_FOLLOW_PERSON)
 
-    def stop_follow_person(self): 
+    def stop_follow_person_state(self): # maybe wait a second 
         self.change_state(State.LOOK_FOR_PERSON_TO_FOLLOW)
 
     def proccess_position_estimation_message(self, msg):
@@ -221,7 +214,6 @@ class GoalPublisher(Node):
             else:
                 x_real, y_real, z_real = None, None, None
 
-            # Correctly assign the real-world coordinates using the person's ID
             person_to_key_point_to_real_world[person.id] = keypointToRealWorld
             person_to_real_world[person.id] = (x_real, y_real, z_real)
 
@@ -231,16 +223,14 @@ class GoalPublisher(Node):
         camera_pose = PoseStamped()
         camera_pose.header.frame_id = 'camera_frame'
         camera_pose.header.stamp = self.get_clock().now().to_msg()
-        # camera_coords[0] is x e.g. left right 
-         # camera_coords[1] is top down 
-        # camera_coords[2] is 
-        camera_pose.pose.position.x = camera_coords[1]  # Left/right from the camera (flipped in follow_person)
-        camera_pose.pose.position.y = camera_coords[0]  # Distance from the camera
+
+        camera_pose.pose.position.x = camera_coords[1]  # Left/right from the camera (flipped in follow_person), descibes the depth of the camera
+        camera_pose.pose.position.y = camera_coords[0]  # Distance from the camera is actually the x value from the camera
         camera_pose.pose.position.z = camera_coords[2] 
         camera_pose.pose.orientation.w = 1.0
         
-    
         pose = camera_pose.pose
+
         try:
           # Perform the transformation from the left camera frame to the map frame
             transform = self.tf_buffer.lookup_transform('map', 'zed_left_camera_frame', rclpy.time.Time())
@@ -249,37 +239,6 @@ class GoalPublisher(Node):
         except Exception as e:
             self.get_logger().error(f'Transformation error: {e}')
             raise e
-    
-    # def transform_to_map(self, camera_coords):
-    #     camera_pose = PoseStamped()
-    #     camera_pose.header.frame_id = 'zed_left_camera_frame'
-    #     camera_pose.header.stamp = self.get_clock().now().to_msg()
-    #     camera_pose.pose.position.x = float(camera_coords[0])  # Ensure input is float
-    #     camera_pose.pose.position.y = float(camera_coords[1])  # Ensure input is float
-    #     camera_pose.pose.position.z = float(camera_coords[2])  # Ensure input is float
-    #     camera_pose.pose.orientation.w = 1.0  # Default orientation (identity quaternion)
-
-    #     try:
-    #         # Lookup the transformation from the camera frame to the map frame
-    #         transform = self.tf_buffer.lookup_transform(
-    #             'map',  # Target frame
-    #             'zed_left_camera_frame',  # Source frame
-    #             rclpy.time.Time(),  # Use "latest available" time
-    #             timeout=rclpy.duration.Duration(seconds=1.0)  # Timeout duration
-    #         )
-            
-            
-    #         map_pose = tf2_geometry_msgs.do_transform_pose(camera_pose, transform)
-        
-    #         return (
-    #             map_pose.pose.position.x,
-    #             map_pose.pose.position.y,
-    #             map_pose.pose.position.z
-    #         )
-    #     except Exception as e:
-    #         # Log and raise transformation errors
-    #         #self.get_logger().error(f'Transformation error: {e}')
-    #         raise e
 
 def main(args=None):
     rclpy.init(args=args)
