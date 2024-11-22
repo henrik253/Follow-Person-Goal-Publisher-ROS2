@@ -2,7 +2,25 @@
 
 ## Project Overview
 
-This project focuses on **object tracking** using the **YOLO (You Only Look Once)** algorithm in conjunction with the **ZED 2i camera**. The camera is utilized for detecting and measuring the distance to recognized persons. Once a person is detected, a mobile platform (GO1) follows them, enabling dynamic tracking in real-world environments using **Ouster OS1 LiDAR**. For path planning and navigation, the **Nav2** stack is employed.
+# Project Overview: Object Tracking with YOLO and ZED 2i Camera
+
+This project focuses on **object tracking** using the **YOLO (You Only Look Once)** algorithm in combination with the **ZED 2i camera**. The camera is utilized to measure the distance to persons recognized by YOLO, leveraging the **YOLOv8n-pose** model.
+
+When a person raises their right arm:
+- Their **ID** is saved.
+- Their position will be published to the `/goal_pose` topic at a configurable frequency until the ID disappears or the person raises their left arm.
+
+## Requirements
+
+1. A fully functional robot with:
+   - A working **Nav2 stack**.
+   - A properly configured **TF2 tree**.
+
+2. TF2 setup:
+   - The **ZED 2i camera** must be defined relative to the robot's `base` frame in the TF2 tree.
+   - A transformation to the `/map` frame must be provided. 
+     - This ensures that the detected person's position in real-world coordinates can be translated to map coordinates.
+     - The map coordinates are then published to the `/goal_pose` topic.
 
 ### Bachelor Thesis
 
@@ -13,9 +31,10 @@ This project is part of a bachelor thesis at **Hochschule Trier** and is current
 
 To build and run the project, follow these steps:
 
-1. Build the workspace:
+1. Build & source the workspace:
    ```bash
    colcon build --symlink-install
+   . install/setup.bash
    ```
    
 2. To launch the main application, run:
@@ -23,19 +42,16 @@ To build and run the project, follow these steps:
    ros2 launch main main_launch.py
    ```
 
-## For More Information and Debugging
+For More Information and Debugging
 
 1. Build the workspace:
    ```bash
    colcon build --symlink-install
    ```
-To launch the main application, run: 
+2. To launch the main application, run: 
    ```bash
-   source launch/run.sh
+   . launch/run.sh
    ```
 
 
-### Possible names for this project
-- ATMOS
-- NavTrack
-- FollowMe
+
