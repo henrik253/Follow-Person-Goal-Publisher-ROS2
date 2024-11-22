@@ -32,12 +32,6 @@ class GoalPublisher(Node):
             10
         )
       
-        self.create_subscription(
-            Odometry,
-            '/odom',
-            self.odom_callback,
-            10
-        )
         self.timer = self.create_timer(1.0, self.publish_goal)  # Publish every second
 
         # TF2 setup
@@ -47,14 +41,16 @@ class GoalPublisher(Node):
 
         # GoalStateMachine setup
         self.current_state = State.STARTED
+        
+        # Tracked target person 
         self.target_person = None
 
+        # Position from camera
         self.target_person_camera_position = None
+        # Position transformed to map 
         self.target_person_map_position = None
-        self.current_robot_position = None # ?
-
-        self.last_target_position = False
-
+        # Flag if transform to map succeded 
+        self.last_target_position_success = False
         # distance
         self.distance = 1.0 # 1m min distance to person 
 
@@ -63,11 +59,6 @@ class GoalPublisher(Node):
         self.get_logger().info(f'State changed from {self.current_state.name} to {new_state.name}')
         self.current_state = new_state
 
-    def odom_callback(self, msg):
-        # Update robot's current position
-        self.current_robot_position = msg.pose.pose.position
-      #  self.get_logger().info(f'Current position - x: {self.current_robot_position.x}, y: {self.current_robot_position.y}, z: {self.current_robot_position.z}')
-    # DEBUGGING
 
     def publish_marker(self):
         marker = Marker()
@@ -113,16 +104,15 @@ class GoalPublisher(Node):
         print(f'map_pos: {self.target_person_map_position}')
         print(f'camera_pos {self.target_person_camera_position}')
         
-
         if self.current_state == State.FOLLOW_PERSON:
-            if self.last_target_position:
+            if self.last_target_position_success:
                     goal_msg = PoseStamped()
                     goal_msg.header.stamp = self.get_clock().now().to_msg()
                     goal_msg.header.frame_id = 'map'
                     goal_msg.pose = self.target_person_map_position
                     self.publish_marker()
-                    if False:
-                        self.goal_publisher.publish(goal_msg)
+  
+                    self.goal_publisher.publish(goal_msg)
 
     def person_positions_callback(self, msg):
         # Process (detected persons, keypoints) data and update state machine
@@ -146,12 +136,14 @@ class GoalPublisher(Node):
         persons_with_right_hand_up = []
         for person_id, keypoints in person_keypoints.items():
             pose = classify_pose(keypoints)
+            
+            # Calculate distances of all person with pose
             if pose == Pose.RIGHT_HAND_UP:
-                # Correctly reference the person's real-world position using their ID
                 distance = sum(coord ** 2 for coord in person_real_world[person_id]) ** 0.5
                 persons_with_right_hand_up.append((distance, person_id))
 
         if persons_with_right_hand_up:
+            # taret person with pose that has the closet distance 
             closest_person = min(persons_with_right_hand_up, key=lambda x: x[0])
             self.target_person = closest_person[1]
             self.get_logger().info(f'Target person ID: {self.target_person}')
@@ -173,15 +165,15 @@ class GoalPublisher(Node):
                     flipped_person_rwc = (-person_rwc[0],depth_value,-person_rwc[1]) # x/person_rwc[0] (left or right from camera: positive means more right) : z/person_rwc[2] the distance from the person (the higher the more away)
                     self.target_person_map_position = self.transform_to_map(flipped_person_rwc)
                     self.target_person_camera_position = flipped_person_rwc
-                    self.last_target_position = True 
+                    self.last_target_position_success = True 
                 else:
                     self.get_logger().warn('Unable to calculate persons position')
                     print(person_rwc)
-                    self.last_target_position = False
+                    self.last_target_position_success = False
                     return 
             except Exception as e:
                 print(e)
-                self.last_target_position = False
+                self.last_target_position_success = False
         else:
             self.get_logger().warn('Target person lost, transitioning to STOP_FOLLOW_PERSON')
             self.change_state(State.STOP_FOLLOW_PERSON)

@@ -70,12 +70,8 @@ class VisualizationNode(Node):
                 keypoints_real_coords.append((kp_real_x, kp_real_y, kp_real_z))
             
             pose_description = classify_pose(keypointToRealWorld)
-
-            # Only update pose when not Default
-            #if(not pose_description == 'Default'):
             self.last_detected_pose = pose_description 
-
-            label_with_pose = f"{ self.last_detected_pose}"
+            label_with_pose = f"{self.last_detected_pose}"
 
             self.detected_positions.append({
                 'id': person.id,
@@ -99,11 +95,10 @@ class VisualizationNode(Node):
                 x_center = int((x1 + x2) / 2)
                 y_center = int((y1 + y2) / 2)
 
-                # Draw the bounding box and center point
+                # Draw the bounding box and center point of detected person 
                 cv2.rectangle(self.cv_image, (x1, y1), (x2, y2), (0, 255, 0), 2)
                 cv2.circle(self.cv_image, (x_center, y_center), 5, (0, 0, 255), -1)
 
-                # Format additional text for distance and real-world coordinates
                 distance_str = f"{detected['distance']:.2f}" if detected['distance'] is not None else "N/A"
                 real_coords_str = ""
                 try:
@@ -114,7 +109,7 @@ class VisualizationNode(Node):
                 text = f"{detected['label']}, ID: {detected['id']}, {real_coords_str}"
                 cv2.putText(self.cv_image, text, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
 
-                # Draw keypoints with body part names and real-world coordinates
+                # Draw keypoints with their real-world coordinates
                 for part, keypoint, real_coords in zip(detected['body_parts'], detected['keypoints'], detected['keypoints_real_coords']):
                     kp_x, kp_y, kp_conf = int(keypoint.x), int(keypoint.y), keypoint.confidence
                     cv2.circle(self.cv_image, (kp_x, kp_y), 3, (0, 255, 255), -1)  # Yellow for keypoints
