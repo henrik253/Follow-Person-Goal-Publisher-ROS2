@@ -6,7 +6,7 @@ This project is part of a bachelor thesis at **Hochschule Trier** and is current
 
 - **Person Detection & Tracking**: Detects and tracks people in real-time using **YOLOv8-N Pose Model** and the **ZED 2i camera**.
 - **Depth & Coordinate Estimation**: Estimates depth and real-world **3D coordinates** (X, Y, Z) for each detected person.
-- **Pose Analysis**: Detects when a person raises their **right arm** and saves their **ID** for targeting their location.
+- **Pose Analysis**: Detects when a person raises their **right arm** and saves their **ID** for targeting their location. (This can easily be changed, just expand the classify_pose (which works with real_world_coordinates) function and change the condition in goal_pose_publisher!)
 - **Goal Pose Publisher**: Publishes the target person's position (on the map) to the **goal_pose** topic.
 - **Visualization**: Includes a node for visualizing tracked persons and their positions in real-time.
 - **Modular**: Each task is separated into individual nodes, each publishing on custom messages.
