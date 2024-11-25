@@ -48,15 +48,6 @@ Make sure you are using ROS2 Humble.
 ```bash
    git clone --recursive https://github.com/henrik253/workspace
 ```
-2. Make sure that the ZED 2i camera is either publishing to a topic or properly connected via USB before attempting to run the project.
-3. Install Missing Dependencies
-   If any dependencies are missing, install them using the requirements.txt file:
-   ```bash
-   cd workspace
-   pip install -r requirements.txt
-   ```
-
-
   
 ## Run this Project
 
