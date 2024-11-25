@@ -292,7 +292,7 @@ function(_ament_cmake_symlink_install_create_symlink absolute_file symlink)
   endif()
 
   execute_process(
-    COMMAND "/usr/bin/cmake" "-E" "create_symlink"
+    COMMAND "/home/student/.local/lib/python3.10/site-packages/cmake/data/bin/cmake" "-E" "create_symlink"
       "${absolute_file}"
       "${symlink}"
   )
@@ -373,6 +373,9 @@ ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/object_tr
 # install(FILES "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/PersonDistance.idl" "DESTINATION" "share/object_tracking_messages/msg")
 ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/object_tracking_messages" FILES "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/PersonDistance.idl" "DESTINATION" "share/object_tracking_messages/msg")
 
+# install(FILES "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/FollowPersonState.idl" "DESTINATION" "share/object_tracking_messages/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/object_tracking_messages" FILES "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/FollowPersonState.idl" "DESTINATION" "share/object_tracking_messages/msg")
+
 # install(FILES "/home/student/Desktop/workspace/src/object_tracking_messages/msg/BoundingBox.msg" "DESTINATION" "share/object_tracking_messages/msg")
 ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/object_tracking_messages" FILES "/home/student/Desktop/workspace/src/object_tracking_messages/msg/BoundingBox.msg" "DESTINATION" "share/object_tracking_messages/msg")
 
@@ -387,6 +390,9 @@ ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/object_tr
 
 # install(FILES "/home/student/Desktop/workspace/src/object_tracking_messages/msg/PersonDistance.msg" "DESTINATION" "share/object_tracking_messages/msg")
 ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/object_tracking_messages" FILES "/home/student/Desktop/workspace/src/object_tracking_messages/msg/PersonDistance.msg" "DESTINATION" "share/object_tracking_messages/msg")
+
+# install(FILES "/home/student/Desktop/workspace/src/object_tracking_messages/msg/FollowPersonState.msg" "DESTINATION" "share/object_tracking_messages/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/object_tracking_messages" FILES "/home/student/Desktop/workspace/src/object_tracking_messages/msg/FollowPersonState.msg" "DESTINATION" "share/object_tracking_messages/msg")
 
 # install(FILES "/home/student/Desktop/workspace/build/object_tracking_messages/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/object_tracking_messages" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/object_tracking_messages" FILES "/home/student/Desktop/workspace/build/object_tracking_messages/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/object_tracking_messages" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

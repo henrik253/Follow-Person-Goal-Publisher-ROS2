@@ -218,4 +218,7 @@ CMakeFiles/object_tracking_messages__rosidl_typesupport_c__pyext.dir/rosidl_gene
  /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functions.h \
  /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__type_support.h \
  /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__struct.h \
- /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.h
+ /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.h \
+ /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/follow_person_state__type_support.h \
+ /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/follow_person_state__struct.h \
+ /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_generator_c/object_tracking_messages/msg/detail/follow_person_state__functions.h

@@ -10,6 +10,9 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__builder.hpp"
   "rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__struct.hpp"
   "rosidl_generator_cpp/object_tracking_messages/msg/detail/detected_persons__traits.hpp"
+  "rosidl_generator_cpp/object_tracking_messages/msg/detail/follow_person_state__builder.hpp"
+  "rosidl_generator_cpp/object_tracking_messages/msg/detail/follow_person_state__struct.hpp"
+  "rosidl_generator_cpp/object_tracking_messages/msg/detail/follow_person_state__traits.hpp"
   "rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__builder.hpp"
   "rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__struct.hpp"
   "rosidl_generator_cpp/object_tracking_messages/msg/detail/person_distance__traits.hpp"
@@ -18,6 +21,7 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/object_tracking_messages/msg/detail/person_key_point__traits.hpp"
   "rosidl_generator_cpp/object_tracking_messages/msg/detected_person.hpp"
   "rosidl_generator_cpp/object_tracking_messages/msg/detected_persons.hpp"
+  "rosidl_generator_cpp/object_tracking_messages/msg/follow_person_state.hpp"
   "rosidl_generator_cpp/object_tracking_messages/msg/person_distance.hpp"
   "rosidl_generator_cpp/object_tracking_messages/msg/person_key_point.hpp"
 )

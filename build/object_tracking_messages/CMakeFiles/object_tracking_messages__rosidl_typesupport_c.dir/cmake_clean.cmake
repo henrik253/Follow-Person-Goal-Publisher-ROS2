@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/object_tracking_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/object_tracking_messages/msg/detected_person__type_support.cpp.o.d"
   "CMakeFiles/object_tracking_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/object_tracking_messages/msg/detected_persons__type_support.cpp.o"
   "CMakeFiles/object_tracking_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/object_tracking_messages/msg/detected_persons__type_support.cpp.o.d"
+  "CMakeFiles/object_tracking_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/object_tracking_messages/msg/follow_person_state__type_support.cpp.o"
+  "CMakeFiles/object_tracking_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/object_tracking_messages/msg/follow_person_state__type_support.cpp.o.d"
   "CMakeFiles/object_tracking_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/object_tracking_messages/msg/person_distance__type_support.cpp.o"
   "CMakeFiles/object_tracking_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/object_tracking_messages/msg/person_distance__type_support.cpp.o.d"
   "CMakeFiles/object_tracking_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/object_tracking_messages/msg/person_key_point__type_support.cpp.o"
@@ -14,6 +16,7 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_c/object_tracking_messages/msg/bounding_box__type_support.cpp"
   "rosidl_typesupport_c/object_tracking_messages/msg/detected_person__type_support.cpp"
   "rosidl_typesupport_c/object_tracking_messages/msg/detected_persons__type_support.cpp"
+  "rosidl_typesupport_c/object_tracking_messages/msg/follow_person_state__type_support.cpp"
   "rosidl_typesupport_c/object_tracking_messages/msg/person_distance__type_support.cpp"
   "rosidl_typesupport_c/object_tracking_messages/msg/person_key_point__type_support.cpp"
 )

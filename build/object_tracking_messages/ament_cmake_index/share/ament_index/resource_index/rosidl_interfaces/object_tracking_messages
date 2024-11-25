@@ -4,6 +4,8 @@ msg/DetectedPerson.idl
 msg/DetectedPerson.msg
 msg/DetectedPersons.idl
 msg/DetectedPersons.msg
+msg/FollowPersonState.idl
+msg/FollowPersonState.msg
 msg/PersonDistance.idl
 msg/PersonDistance.msg
 msg/PersonKeyPoint.idl

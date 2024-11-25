@@ -3,3 +3,4 @@
 /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages:msg/DetectedPerson.idl
 /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages:msg/DetectedPersons.idl
 /home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages:msg/PersonDistance.idl
+/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages:msg/FollowPersonState.idl

@@ -1,0 +1,30 @@
+[0.816s] Invoking command in '/home/student/Desktop/workspace/src/main': PYTHONPATH=/home/student/Desktop/workspace/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/main build --build-base /home/student/Desktop/workspace/build/main/build install --record /home/student/Desktop/workspace/build/main/install.log --single-version-externally-managed install_data
+[1.206s] running egg_info
+[1.207s] writing ../../build/main/main.egg-info/PKG-INFO
+[1.207s] writing dependency_links to ../../build/main/main.egg-info/dependency_links.txt
+[1.208s] writing entry points to ../../build/main/main.egg-info/entry_points.txt
+[1.208s] writing requirements to ../../build/main/main.egg-info/requires.txt
+[1.208s] writing top-level names to ../../build/main/main.egg-info/top_level.txt
+[1.211s] reading manifest file '../../build/main/main.egg-info/SOURCES.txt'
+[1.212s] writing manifest file '../../build/main/main.egg-info/SOURCES.txt'
+[1.212s] running build
+[1.213s] running build_py
+[1.213s] copying main/goal_publisher_node.py -> /home/student/Desktop/workspace/build/main/build/lib/main
+[1.213s] copying main/sensor_presentation_node.py -> /home/student/Desktop/workspace/build/main/build/lib/main
+[1.214s] running install
+[1.214s] running install_lib
+[1.215s] copying /home/student/Desktop/workspace/build/main/build/lib/main/goal_publisher_node.py -> /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main
+[1.216s] copying /home/student/Desktop/workspace/build/main/build/lib/main/sensor_presentation_node.py -> /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main
+[1.217s] byte-compiling /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main/goal_publisher_node.py to goal_publisher_node.cpython-310.pyc
+[1.219s] byte-compiling /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main/sensor_presentation_node.py to sensor_presentation_node.cpython-310.pyc
+[1.221s] running install_data
+[1.221s] running install_egg_info
+[1.224s] removing '/home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main-0.0.0-py3.10.egg-info' (and everything under it)
+[1.224s] Copying ../../build/main/main.egg-info to /home/student/Desktop/workspace/install/main/lib/python3.10/site-packages/main-0.0.0-py3.10.egg-info
+[1.225s] running install_scripts
+[1.245s] Installing goal_publisher_node script to /home/student/Desktop/workspace/install/main/lib/main
+[1.246s] Installing object_detection_node script to /home/student/Desktop/workspace/install/main/lib/main
+[1.246s] Installing position_estimation_node script to /home/student/Desktop/workspace/install/main/lib/main
+[1.246s] Installing sensor_presentation_node script to /home/student/Desktop/workspace/install/main/lib/main
+[1.246s] writing list of installed files to '/home/student/Desktop/workspace/build/main/install.log'
+[1.276s] Invoked command in '/home/student/Desktop/workspace/src/main' returned '0': PYTHONPATH=/home/student/Desktop/workspace/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/workspace/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/main build --build-base /home/student/Desktop/workspace/build/main/build install --record /home/student/Desktop/workspace/build/main/install.log --single-version-externally-managed install_data

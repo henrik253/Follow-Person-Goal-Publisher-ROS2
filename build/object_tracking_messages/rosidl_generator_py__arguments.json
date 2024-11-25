@@ -7,7 +7,8 @@
     "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages:msg/PersonKeyPoint.idl",
     "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages:msg/DetectedPerson.idl",
     "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages:msg/DetectedPersons.idl",
-    "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages:msg/PersonDistance.idl"
+    "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages:msg/PersonDistance.idl",
+    "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages:msg/FollowPersonState.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
@@ -27,6 +28,7 @@
     "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/PersonKeyPoint.idl",
     "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/DetectedPerson.idl",
     "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/DetectedPersons.idl",
-    "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/PersonDistance.idl"
+    "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/PersonDistance.idl",
+    "/home/student/Desktop/workspace/build/object_tracking_messages/rosidl_adapter/object_tracking_messages/msg/FollowPersonState.idl"
   ]
 }
