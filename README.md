@@ -1,4 +1,16 @@
-# Follow Person Implementation in ROS2  
+# Follow Person Implementation in ROS2 Humble
+
+This project is part of a bachelor thesis at **Hochschule Trier** and is currently in the development phase. 
+
+### Key-Features
+
+- **Person Detection & Tracking**: Detects and tracks people in real-time using **YOLOv8-N Pose Model** and the **ZED 2i camera**.
+- **Depth & Coordinate Estimation**: Estimates depth and real-world **3D coordinates** (X, Y, Z) for each detected person.
+- **Pose Analysis**: Detects when a person raises their **right arm** and saves their **ID** for targeting their location.
+- **Goal Pose Publisher**: Publishes the target person's position (on the map) to the **goal_pose** topic.
+- **Visualization**: Includes a node for visualizing tracked persons and their positions in real-time.
+- **Modular**: Each task is separated into individual nodes, each publishing on custom messages.
+
 
 ## Project Overview: Object Tracking with YOLO and ZED 2i Camera
 
@@ -8,7 +20,16 @@ When a person raises their right arm:
 - Their **ID** is saved.
 - Their position will be published to the `/goal_pose` topic at a configurable frequency until the ID disappears or the person raises their left arm.
 
-## Requirements
+### Key-Features
+
+- **Person Detection & Tracking**: Detects and tracks people in real-time using **YOLOv8-N Pose Model** and the **ZED 2i camera**.
+- **Depth & Coordinate Estimation**: Estimates depth and real-world **3D coordinates** (X, Y, Z) for each detected person.
+- **Pose Analysis**: Detects when a person raises their **right arm** and saves their **ID** for targeting their location.
+- **Goal Pose Publisher**: Publishes the target person's position (on the map) to the **goal_pose** topic.
+- **Visualization**: Includes a node for visualizing tracked persons and their positions in real-time.
+- **Modular**: Each task is separated into individual nodes, each publishing on custom messages
+
+## Project Requirements
 
 1. A fully functional robot with:
    - A working **Nav2 stack**.
@@ -20,9 +41,21 @@ When a person raises their right arm:
      - This ensures that the detected person's position in real-world coordinates can be translated to map coordinates.
      - The map coordinates are then published to the `/goal_pose` topic.
 
-### Bachelor Thesis
+## Installation
+Make sure you are using ROS2 Humble.
 
-This project is part of a bachelor thesis at **Hochschule Trier** and is currently in the development phase. 
+1. Clone the Repository and Its Submodules
+```bash
+   git clone --recursive https://github.com/henrik253/workspace
+```
+2. Make sure that the ZED 2i camera is either publishing to a topic or properly connected via USB before attempting to run the project.
+3. Install Missing Dependencies
+   If any dependencies are missing, install them using the requirements.txt file:
+   ```bash
+   cd workspace
+   pip install -r requirements.txt
+   ```
+
 
   
 ## Run this Project
