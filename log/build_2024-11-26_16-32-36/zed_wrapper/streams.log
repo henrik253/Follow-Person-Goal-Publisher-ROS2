@@ -1,0 +1,92 @@
+[0.023s] Invoking command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper
+[0.138s] -- The C compiler identification is GNU 11.4.0
+[0.227s] -- The CXX compiler identification is GNU 11.4.0
+[0.240s] -- Detecting C compiler ABI info
+[0.353s] -- Detecting C compiler ABI info - done
+[0.377s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.377s] -- Detecting C compile features
+[0.379s] -- Detecting C compile features - done
+[0.388s] -- Detecting CXX compiler ABI info
+[0.524s] -- Detecting CXX compiler ABI info - done
+[0.538s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.539s] -- Detecting CXX compile features
+[0.540s] -- Detecting CXX compile features - done
+[0.548s] -- Looking for sgemm_
+[0.678s] -- Looking for sgemm_ - not found
+[0.680s] -- Looking for pthread.h
+[0.810s] -- Looking for pthread.h - found
+[0.810s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.947s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.948s] -- Found Threads: TRUE  
+[1.008s] -- Looking for sgemm_
+[1.177s] -- Looking for sgemm_ - found
+[1.179s] -- Found BLAS: /usr/lib/aarch64-linux-gnu/libopenblas.so  
+[1.245s] -- Found CUDA: /usr/local/cuda (found suitable version "12.6", minimum required is "12.2") 
+[1.288s] -- Found CUDA: /usr/local/cuda (found version "12.6") 
+[1.294s] -- Found ament_cmake_auto: 1.3.10 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.618s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.747s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.025s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.033s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.048s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.071s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.100s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.180s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.185s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.347s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.394s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.464s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.852s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.855s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.855s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.182s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.256s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.259s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.259s] -- Configured cppcheck include dirs: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper/src
+[3.260s] -- Configured cppcheck exclude dirs and/or files: 
+[3.261s] -- Added test 'lint_cmake' to check CMake code style
+[3.262s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.265s] -- Added test 'uncrustify' to check C / C++ code style
+[3.265s] -- Configured uncrustify additional arguments: 
+[3.267s] -- Added test 'xmllint' to check XML markup files
+[3.270s] -- Configuring done
+[3.356s] -- Generating done
+[3.362s] -- Build files have been written to: /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper
+[3.394s] Invoked command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper' returned '0': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper
+[3.397s] Invoking command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper -- -j8 -l8
+[3.487s] [ 50%] [32mBuilding CXX object CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o[0m
+[14.984s] [100%] [32m[1mLinking CXX executable zed_wrapper[0m
+[15.605s] [100%] Built target zed_wrapper
+[15.630s] Invoked command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper' returned '0': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper -- -j8 -l8
+[15.688s] Invoking command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper
+[15.707s] -- Install configuration: "Release"
+[15.708s] -- Execute custom install script
+[15.709s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/lib/zed_wrapper/zed_wrapper
+[15.759s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/config/common.yaml
+[15.833s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/config/virtual.yaml
+[15.849s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/config/zed.yaml
+[15.864s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/config/zed2.yaml
+[15.880s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/config/zed2i.yaml
+[15.895s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/config/zedm.yaml
+[15.910s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/config/zedx.yaml
+[15.926s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/config/zedxm.yaml
+[15.941s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/urdf/include/materials.urdf.xacro
+[16.015s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/urdf/zed_descr.urdf.xacro
+[16.076s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/urdf/zed_macro.urdf.xacro
+[16.092s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/launch/zed_camera.launch.py
+[16.147s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/ament_index/resource_index/package_run_dependencies/zed_wrapper
+[16.221s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/ament_index/resource_index/parent_prefix_path/zed_wrapper
+[16.239s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/environment/ament_prefix_path.sh
+[16.256s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/environment/ament_prefix_path.dsv
+[16.277s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/environment/path.sh
+[16.351s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/environment/path.dsv
+[16.413s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/local_setup.bash
+[16.430s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/local_setup.sh
+[16.491s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/local_setup.zsh
+[16.540s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/local_setup.dsv
+[16.558s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/package.dsv
+[16.630s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/ament_index/resource_index/packages/zed_wrapper
+[16.669s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/cmake/zed_wrapperConfig.cmake
+[16.686s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/cmake/zed_wrapperConfig-version.cmake
+[16.732s] -- Symlinking: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/package.xml
+[16.787s] Invoked command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper' returned '0': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper

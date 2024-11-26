@@ -1,0 +1,568 @@
+[0.204s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.205s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffa53ac130>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa5377bb0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa5377bb0>>, mixin_verb=('build',))
+[0.523s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.524s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.524s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.524s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.524s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.524s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.524s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/student/Desktop/go1_follow_person_ws_henrik'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ignore', 'ignore_ament_install']
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore'
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore_ament_install'
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_pkg']
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_pkg'
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_meta']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_meta'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ros']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ros'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['cmake', 'python']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'cmake'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['python_setup_py']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python_setup_py'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extensions ['ignore', 'ignore_ament_install']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extension 'ignore'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extension 'ignore_ament_install'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extensions ['colcon_pkg']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extension 'colcon_pkg'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extensions ['colcon_meta']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extension 'colcon_meta'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extensions ['ros']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extension 'ros'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extensions ['cmake', 'python']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extension 'cmake'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extension 'python'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extensions ['python_setup_py']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extension 'python_setup_py'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(src/main) by extensions ['ignore', 'ignore_ament_install']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/main) by extension 'ignore'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/main) by extension 'ignore_ament_install'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/main) by extensions ['colcon_pkg']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/main) by extension 'colcon_pkg'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/main) by extensions ['colcon_meta']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/main) by extension 'colcon_meta'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/main) by extensions ['ros']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/main) by extension 'ros'
+[0.556s] DEBUG:colcon.colcon_core.package_identification:Package 'src/main' with type 'ros.ament_python' and name 'main'
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracking_messages) by extensions ['ignore', 'ignore_ament_install']
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracking_messages) by extension 'ignore'
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracking_messages) by extension 'ignore_ament_install'
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracking_messages) by extensions ['colcon_pkg']
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracking_messages) by extension 'colcon_pkg'
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracking_messages) by extensions ['colcon_meta']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracking_messages) by extension 'colcon_meta'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracking_messages) by extensions ['ros']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/object_tracking_messages) by extension 'ros'
+[0.558s] DEBUG:colcon.colcon_core.package_identification:Package 'src/object_tracking_messages' with type 'ros.ament_cmake' and name 'object_tracking_messages'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['ignore', 'ignore_ament_install']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'ignore'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'ignore_ament_install'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['colcon_pkg']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'colcon_pkg'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['colcon_meta']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'colcon_meta'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['ros']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'ros'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['cmake', 'python']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'cmake'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'python'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['python_setup_py']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'python_setup_py'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['ignore', 'ignore_ament_install']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'ignore'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'ignore_ament_install'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['colcon_pkg']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'colcon_pkg'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['colcon_meta']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'colcon_meta'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['ros']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'ros'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['cmake', 'python']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'cmake'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'python'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['python_setup_py']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'python_setup_py'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['ignore', 'ignore_ament_install']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'ignore'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'ignore_ament_install'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['colcon_pkg']
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'colcon_pkg'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['colcon_meta']
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'colcon_meta'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['ros']
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'ros'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['cmake', 'python']
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'cmake'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'python'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['python_setup_py']
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'python_setup_py'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed-ros2-interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed-ros2-interfaces) by extension 'ignore'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed-ros2-interfaces) by extension 'ignore_ament_install'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed-ros2-interfaces) by extensions ['colcon_pkg']
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed-ros2-interfaces) by extension 'colcon_pkg'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed-ros2-interfaces) by extensions ['colcon_meta']
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed-ros2-interfaces) by extension 'colcon_meta'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed-ros2-interfaces) by extensions ['ros']
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed-ros2-interfaces) by extension 'ros'
+[0.564s] DEBUG:colcon.colcon_core.package_identification:Package 'src/zed-ros2-wrapper/zed-ros2-interfaces' with type 'ros.ament_cmake' and name 'zed_interfaces'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extensions ['ignore', 'ignore_ament_install']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'ignore'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'ignore_ament_install'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extensions ['colcon_pkg']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'colcon_pkg'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extensions ['colcon_meta']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'colcon_meta'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extensions ['ros']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'ros'
+[0.568s] DEBUG:colcon.colcon_core.package_identification:Package 'src/zed-ros2-wrapper/zed_components' with type 'ros.ament_cmake' and name 'zed_components'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'ignore'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'ignore_ament_install'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extensions ['colcon_pkg']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'colcon_pkg'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extensions ['colcon_meta']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'colcon_meta'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extensions ['ros']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'ros'
+[0.570s] DEBUG:colcon.colcon_core.package_identification:Package 'src/zed-ros2-wrapper/zed_ros2' with type 'ros.ament_cmake' and name 'zed_ros2'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extensions ['ignore', 'ignore_ament_install']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'ignore'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'ignore_ament_install'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extensions ['colcon_pkg']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'colcon_pkg'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extensions ['colcon_meta']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'colcon_meta'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extensions ['ros']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'ros'
+[0.572s] DEBUG:colcon.colcon_core.package_identification:Package 'src/zed-ros2-wrapper/zed_wrapper' with type 'ros.ament_cmake' and name 'zed_wrapper'
+[0.572s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.572s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.572s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.572s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.572s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.632s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.633s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.634s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.634s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.635s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.635s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.635s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.635s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.635s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.635s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/student/Desktop/go1_follow_person_ws_henrik/install/main' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.635s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.635s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.635s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.635s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.636s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.636s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.636s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.637s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/student/Desktop/go1_follow_person_ws_henrik/install
+[0.639s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 351 installed packages in /opt/ros/humble
+[0.642s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'main' build argument 'cmake_args' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'main' build argument 'cmake_target' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'main' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'main' build argument 'cmake_clean_cache' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'main' build argument 'cmake_clean_first' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'main' build argument 'cmake_force_configure' from command line to 'False'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'main' build argument 'ament_cmake_args' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'main' build argument 'catkin_cmake_args' from command line to 'None'
+[0.723s] Level 5:colcon.colcon_core.verb:set package 'main' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.723s] DEBUG:colcon.colcon_core.verb:Building package 'main' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/Desktop/go1_follow_person_ws_henrik/build/main', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/Desktop/go1_follow_person_ws_henrik/install/main', 'merge_install': False, 'path': '/home/student/Desktop/go1_follow_person_ws_henrik/src/main', 'symlink_install': True, 'test_result_base': None}
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'object_tracking_messages' build argument 'cmake_args' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'object_tracking_messages' build argument 'cmake_target' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'object_tracking_messages' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'object_tracking_messages' build argument 'cmake_clean_cache' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'object_tracking_messages' build argument 'cmake_clean_first' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'object_tracking_messages' build argument 'cmake_force_configure' from command line to 'False'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'object_tracking_messages' build argument 'ament_cmake_args' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'object_tracking_messages' build argument 'catkin_cmake_args' from command line to 'None'
+[0.724s] Level 5:colcon.colcon_core.verb:set package 'object_tracking_messages' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.724s] DEBUG:colcon.colcon_core.verb:Building package 'object_tracking_messages' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages', 'merge_install': False, 'path': '/home/student/Desktop/go1_follow_person_ws_henrik/src/object_tracking_messages', 'symlink_install': True, 'test_result_base': None}
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'zed_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'zed_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'zed_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'zed_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'zed_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'zed_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'zed_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'zed_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.725s] Level 5:colcon.colcon_core.verb:set package 'zed_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.725s] DEBUG:colcon.colcon_core.verb:Building package 'zed_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces', 'merge_install': False, 'path': '/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_target' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_clean_cache' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_clean_first' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_force_configure' from command line to 'False'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'ament_cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'catkin_cmake_args' from command line to 'None'
+[0.726s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.726s] DEBUG:colcon.colcon_core.verb:Building package 'zed_components' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_components', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components', 'merge_install': False, 'path': '/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_components', 'symlink_install': True, 'test_result_base': None}
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_args' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_target' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_clean_cache' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_clean_first' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_force_configure' from command line to 'False'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'ament_cmake_args' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'catkin_cmake_args' from command line to 'None'
+[0.727s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.727s] DEBUG:colcon.colcon_core.verb:Building package 'zed_wrapper' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper', 'merge_install': False, 'path': '/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper', 'symlink_install': True, 'test_result_base': None}
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_args' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_target' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.728s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.728s] DEBUG:colcon.colcon_core.verb:Building package 'zed_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2', 'merge_install': False, 'path': '/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_ros2', 'symlink_install': True, 'test_result_base': None}
+[0.729s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.731s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.732s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces' with build type 'ament_cmake'
+[0.732s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces'
+[0.736s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.736s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.736s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.742s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/student/Desktop/go1_follow_person_ws_henrik/src/main' with build type 'ament_python'
+[0.742s] Level 1:colcon.colcon_core.shell:create_environment_hook('main', 'ament_prefix_path')
+[0.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/main/share/main/hook/ament_prefix_path.ps1'
+[0.744s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/main/share/main/hook/ament_prefix_path.dsv'
+[0.745s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/main/share/main/hook/ament_prefix_path.sh'
+[0.746s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.747s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.752s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/Desktop/go1_follow_person_ws_henrik/src/object_tracking_messages' with build type 'ament_cmake'
+[0.752s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/Desktop/go1_follow_person_ws_henrik/src/object_tracking_messages'
+[0.753s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.753s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.765s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble /usr/bin/cmake /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces
+[1.281s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/student/Desktop/go1_follow_person_ws_henrik/src/main'
+[1.282s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.282s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.302s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble /usr/bin/cmake /home/student/Desktop/go1_follow_person_ws_henrik/src/object_tracking_messages -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages
+[2.109s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/main': PYTHONPATH=/home/student/Desktop/go1_follow_person_ws_henrik/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/go1_follow_person_ws_henrik/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/go1_follow_person_ws_henrik/build/main/build --no-deps symlink_data
+[3.148s] Level 1:colcon.colcon_core.shell:create_environment_hook('main', 'pythonpath_develop')
+[3.190s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/build/main/share/main/hook/pythonpath_develop.ps1'
+[3.192s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/main' returned '0': PYTHONPATH=/home/student/Desktop/go1_follow_person_ws_henrik/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/go1_follow_person_ws_henrik/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/go1_follow_person_ws_henrik/build/main/build --no-deps symlink_data
+[3.192s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/build/main/share/main/hook/pythonpath_develop.dsv'
+[3.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/build/main/share/main/hook/pythonpath_develop.sh'
+[3.200s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/main' for CMake module files
+[3.240s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/main' for CMake config files
+[3.241s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/main/lib'
+[3.241s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/main/bin'
+[3.241s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/main/lib/pkgconfig/main.pc'
+[3.242s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/main/lib/python3.10/site-packages'
+[3.242s] Level 1:colcon.colcon_core.shell:create_environment_hook('main', 'pythonpath')
+[3.242s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/main/share/main/hook/pythonpath.ps1'
+[3.243s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/main/share/main/hook/pythonpath.dsv'
+[3.244s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/main/share/main/hook/pythonpath.sh'
+[3.245s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/main/bin'
+[3.245s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(main)
+[3.246s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/main/share/main/package.ps1'
+[3.248s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/main/share/main/package.dsv'
+[3.249s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/main/share/main/package.sh'
+[3.250s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/main/share/main/package.bash'
+[3.252s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/main/share/main/package.zsh'
+[3.254s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/Desktop/go1_follow_person_ws_henrik/install/main/share/colcon-core/packages/main)
+[4.530s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble /usr/bin/cmake /home/student/Desktop/go1_follow_person_ws_henrik/src/object_tracking_messages -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages
+[4.534s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble /usr/bin/cmake --build /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages -- -j8 -l8
+[4.720s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble /usr/bin/cmake /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces
+[4.722s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble /usr/bin/cmake --build /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces -- -j8 -l8
+[22.098s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble /usr/bin/cmake --build /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages -- -j8 -l8
+[24.067s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble /usr/bin/cmake --install /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages
+[27.334s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(object_tracking_messages)
+[27.335s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages' for CMake module files
+[27.335s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble /usr/bin/cmake --install /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages
+[27.336s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages' for CMake config files
+[27.338s] Level 1:colcon.colcon_core.shell:create_environment_hook('object_tracking_messages', 'cmake_prefix_path')
+[27.339s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/hook/cmake_prefix_path.ps1'
+[27.340s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/hook/cmake_prefix_path.dsv'
+[27.340s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/hook/cmake_prefix_path.sh'
+[27.341s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib'
+[27.341s] Level 1:colcon.colcon_core.shell:create_environment_hook('object_tracking_messages', 'ld_library_path_lib')
+[27.342s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/hook/ld_library_path_lib.ps1'
+[27.342s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/hook/ld_library_path_lib.dsv'
+[27.343s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/hook/ld_library_path_lib.sh'
+[27.344s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/bin'
+[27.344s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib/pkgconfig/object_tracking_messages.pc'
+[27.344s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib/python3.10/site-packages'
+[27.345s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/bin'
+[27.345s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/package.ps1'
+[27.346s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/package.dsv'
+[27.347s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/package.sh'
+[27.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/package.bash'
+[27.349s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/package.zsh'
+[27.349s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/colcon-core/packages/object_tracking_messages)
+[27.580s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(object_tracking_messages)
+[27.581s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages' for CMake module files
+[27.582s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages' for CMake config files
+[27.584s] Level 1:colcon.colcon_core.shell:create_environment_hook('object_tracking_messages', 'cmake_prefix_path')
+[27.584s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/hook/cmake_prefix_path.ps1'
+[27.585s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/hook/cmake_prefix_path.dsv'
+[27.586s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/hook/cmake_prefix_path.sh'
+[27.587s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib'
+[27.587s] Level 1:colcon.colcon_core.shell:create_environment_hook('object_tracking_messages', 'ld_library_path_lib')
+[27.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/hook/ld_library_path_lib.ps1'
+[27.588s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/hook/ld_library_path_lib.dsv'
+[27.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/hook/ld_library_path_lib.sh'
+[27.590s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/bin'
+[27.590s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib/pkgconfig/object_tracking_messages.pc'
+[27.591s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib/python3.10/site-packages'
+[27.591s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/bin'
+[27.592s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/package.ps1'
+[27.593s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/package.dsv'
+[27.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/package.sh'
+[27.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/package.bash'
+[27.596s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/object_tracking_messages/package.zsh'
+[27.597s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/share/colcon-core/packages/object_tracking_messages)
+[38.053s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble /usr/bin/cmake --build /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces -- -j8 -l8
+[38.731s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble /usr/bin/cmake --install /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces
+[46.017s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_interfaces)
+[46.018s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces' for CMake module files
+[46.019s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble /usr/bin/cmake --install /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces
+[46.021s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces' for CMake config files
+[46.028s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_interfaces', 'cmake_prefix_path')
+[46.029s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/hook/cmake_prefix_path.ps1'
+[46.030s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/hook/cmake_prefix_path.dsv'
+[46.031s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/hook/cmake_prefix_path.sh'
+[46.033s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib'
+[46.033s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_interfaces', 'ld_library_path_lib')
+[46.034s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/hook/ld_library_path_lib.ps1'
+[46.035s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/hook/ld_library_path_lib.dsv'
+[46.036s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/hook/ld_library_path_lib.sh'
+[46.038s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/bin'
+[46.038s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib/pkgconfig/zed_interfaces.pc'
+[46.038s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib/python3.10/site-packages'
+[46.039s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/bin'
+[46.040s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/package.ps1'
+[46.041s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/package.dsv'
+[46.042s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/package.sh'
+[46.043s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/package.bash'
+[46.044s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/package.zsh'
+[46.045s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/colcon-core/packages/zed_interfaces)
+[46.746s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_interfaces)
+[46.747s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces' for CMake module files
+[46.749s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces' for CMake config files
+[46.756s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_interfaces', 'cmake_prefix_path')
+[46.757s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/hook/cmake_prefix_path.ps1'
+[46.758s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/hook/cmake_prefix_path.dsv'
+[46.759s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/hook/cmake_prefix_path.sh'
+[46.761s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib'
+[46.761s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_interfaces', 'ld_library_path_lib')
+[46.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/hook/ld_library_path_lib.ps1'
+[46.763s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/hook/ld_library_path_lib.dsv'
+[46.764s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/hook/ld_library_path_lib.sh'
+[46.765s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/bin'
+[46.765s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib/pkgconfig/zed_interfaces.pc'
+[46.765s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib/python3.10/site-packages'
+[46.766s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/bin'
+[46.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/package.ps1'
+[46.768s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/package.dsv'
+[46.769s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/package.sh'
+[46.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/package.bash'
+[46.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/zed_interfaces/package.zsh'
+[46.773s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/share/colcon-core/packages/zed_interfaces)
+[46.774s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_components' with build type 'ament_cmake'
+[46.775s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_components'
+[46.776s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[46.776s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[46.799s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_components': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_components -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components
+[50.041s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_components' returned '0': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_components -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components
+[50.044s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_components': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_components -- -j8 -l8
+[188.979s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_components' returned '0': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_components -- -j8 -l8
+[189.046s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_components': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_components
+[189.556s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_components)
+[189.557s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components' for CMake module files
+[189.559s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_components' returned '0': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_components
+[189.560s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components' for CMake config files
+[189.561s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_components', 'cmake_prefix_path')
+[189.563s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/hook/cmake_prefix_path.ps1'
+[189.564s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/hook/cmake_prefix_path.dsv'
+[189.566s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/hook/cmake_prefix_path.sh'
+[189.568s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib'
+[189.568s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_components', 'ld_library_path_lib')
+[189.569s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/hook/ld_library_path_lib.ps1'
+[189.570s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/hook/ld_library_path_lib.dsv'
+[189.571s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/hook/ld_library_path_lib.sh'
+[189.573s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/bin'
+[189.573s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib/pkgconfig/zed_components.pc'
+[189.574s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib/python3.10/site-packages'
+[189.574s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/bin'
+[189.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/package.ps1'
+[189.577s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/package.dsv'
+[189.579s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/package.sh'
+[189.580s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/package.bash'
+[189.581s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/package.zsh'
+[189.582s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/colcon-core/packages/zed_components)
+[189.642s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_components)
+[189.644s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components' for CMake module files
+[189.647s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components' for CMake config files
+[189.649s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_components', 'cmake_prefix_path')
+[189.650s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/hook/cmake_prefix_path.ps1'
+[189.652s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/hook/cmake_prefix_path.dsv'
+[189.654s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/hook/cmake_prefix_path.sh'
+[189.656s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib'
+[189.657s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_components', 'ld_library_path_lib')
+[189.658s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/hook/ld_library_path_lib.ps1'
+[189.660s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/hook/ld_library_path_lib.dsv'
+[189.662s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/hook/ld_library_path_lib.sh'
+[189.664s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/bin'
+[189.664s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib/pkgconfig/zed_components.pc'
+[189.665s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib/python3.10/site-packages'
+[189.665s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/bin'
+[189.666s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/package.ps1'
+[189.668s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/package.dsv'
+[189.669s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/package.sh'
+[189.671s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/package.bash'
+[189.672s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/zed_components/package.zsh'
+[189.673s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/share/colcon-core/packages/zed_components)
+[189.675s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper' with build type 'ament_cmake'
+[189.675s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper'
+[189.676s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[189.676s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[189.702s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper
+[193.073s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper' returned '0': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper
+[193.076s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper -- -j8 -l8
+[205.309s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper' returned '0': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper -- -j8 -l8
+[205.367s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper
+[206.463s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_wrapper)
+[206.464s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper' for CMake module files
+[206.466s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper' returned '0': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper
+[206.468s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper' for CMake config files
+[206.469s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_wrapper', 'cmake_prefix_path')
+[206.470s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/hook/cmake_prefix_path.ps1'
+[206.471s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/hook/cmake_prefix_path.dsv'
+[206.473s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/hook/cmake_prefix_path.sh'
+[206.474s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/lib'
+[206.475s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/bin'
+[206.475s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/lib/pkgconfig/zed_wrapper.pc'
+[206.476s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/lib/python3.10/site-packages'
+[206.477s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/bin'
+[206.478s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/package.ps1'
+[206.480s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/package.dsv'
+[206.481s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/package.sh'
+[206.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/package.bash'
+[206.484s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/package.zsh'
+[206.486s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/colcon-core/packages/zed_wrapper)
+[206.533s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_wrapper)
+[206.548s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper' for CMake module files
+[206.550s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper' for CMake config files
+[206.551s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_wrapper', 'cmake_prefix_path')
+[206.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/hook/cmake_prefix_path.ps1'
+[206.553s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/hook/cmake_prefix_path.dsv'
+[206.554s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/hook/cmake_prefix_path.sh'
+[206.556s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/lib'
+[206.556s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/bin'
+[206.557s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/lib/pkgconfig/zed_wrapper.pc'
+[206.557s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/lib/python3.10/site-packages'
+[206.558s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/bin'
+[206.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/package.ps1'
+[206.600s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/package.dsv'
+[206.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/package.sh'
+[206.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/package.bash'
+[206.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/zed_wrapper/package.zsh'
+[206.607s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/share/colcon-core/packages/zed_wrapper)
+[206.608s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_ros2' with build type 'ament_cmake'
+[206.609s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_ros2'
+[206.610s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[206.610s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[206.669s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_ros2': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2
+[207.620s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_ros2' returned '0': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2
+[207.624s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_ros2': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_ros2 -- -j8 -l8
+[207.693s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_ros2' returned '0': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_ros2 -- -j8 -l8
+[207.792s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_ros2': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_ros2
+[208.167s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_ros2)
+[208.168s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2' for CMake module files
+[208.170s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_ros2' returned '0': CMAKE_PREFIX_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages:/home/student/Desktop/go1_follow_person_ws_henrik/install/main:/opt/ros/humble LD_LIBRARY_PATH=/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib:/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_ros2
+[208.171s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2' for CMake config files
+[208.172s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_ros2', 'cmake_prefix_path')
+[208.173s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/share/zed_ros2/hook/cmake_prefix_path.ps1'
+[208.174s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/share/zed_ros2/hook/cmake_prefix_path.dsv'
+[208.175s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/share/zed_ros2/hook/cmake_prefix_path.sh'
+[208.177s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/bin'
+[208.177s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/lib/pkgconfig/zed_ros2.pc'
+[208.178s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/lib/python3.10/site-packages'
+[208.179s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/bin'
+[208.180s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/share/zed_ros2/package.ps1'
+[208.181s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/share/zed_ros2/package.dsv'
+[208.182s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/share/zed_ros2/package.sh'
+[208.183s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/share/zed_ros2/package.bash'
+[208.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/share/zed_ros2/package.zsh'
+[208.187s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/share/colcon-core/packages/zed_ros2)
+[208.224s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_ros2)
+[208.225s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2' for CMake module files
+[208.227s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2' for CMake config files
+[208.228s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_ros2', 'cmake_prefix_path')
+[208.229s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/share/zed_ros2/hook/cmake_prefix_path.ps1'
+[208.231s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/share/zed_ros2/hook/cmake_prefix_path.dsv'
+[208.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/share/zed_ros2/hook/cmake_prefix_path.sh'
+[208.233s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/bin'
+[208.233s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/lib/pkgconfig/zed_ros2.pc'
+[208.234s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/lib/python3.10/site-packages'
+[208.235s] Level 1:colcon.colcon_core.environment:checking '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/bin'
+[208.236s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/share/zed_ros2/package.ps1'
+[208.238s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/share/zed_ros2/package.dsv'
+[208.240s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/share/zed_ros2/package.sh'
+[208.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/share/zed_ros2/package.bash'
+[208.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/share/zed_ros2/package.zsh'
+[208.245s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_ros2/share/colcon-core/packages/zed_ros2)
+[208.246s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[208.247s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[208.248s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[208.248s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[208.266s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[208.266s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[208.266s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[208.315s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[208.316s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/Desktop/go1_follow_person_ws_henrik/install/local_setup.ps1'
+[208.318s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/student/Desktop/go1_follow_person_ws_henrik/install/_local_setup_util_ps1.py'
+[208.321s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/Desktop/go1_follow_person_ws_henrik/install/setup.ps1'
+[208.323s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/Desktop/go1_follow_person_ws_henrik/install/local_setup.sh'
+[208.324s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/student/Desktop/go1_follow_person_ws_henrik/install/_local_setup_util_sh.py'
+[208.325s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/Desktop/go1_follow_person_ws_henrik/install/setup.sh'
+[208.327s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/Desktop/go1_follow_person_ws_henrik/install/local_setup.bash'
+[208.328s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/Desktop/go1_follow_person_ws_henrik/install/setup.bash'
+[208.330s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/Desktop/go1_follow_person_ws_henrik/install/local_setup.zsh'
+[208.331s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/Desktop/go1_follow_person_ws_henrik/install/setup.zsh'

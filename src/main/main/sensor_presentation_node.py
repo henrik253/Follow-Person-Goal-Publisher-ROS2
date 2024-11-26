@@ -29,21 +29,21 @@ class VisualizationNode(Node):
             Image,
             'tracked_image',
             self.image_callback,
-            10
+            1
         )
 
         self.create_subscription(
             PersonDistance, 
             'estimated_person_positions',
             self.positions_callback,
-            10
+            1
         )
 
         self.create_subscription(
             FollowPersonState,
             'follow_person_state',
             self.follow_person_state_callback,
-            10
+            1
         )
 
         # Create CvBridge to convert ROS Image messages to OpenCV images

@@ -1,1 +1,0 @@
-/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_generator_py/ouster_sensor_msgs/msg/_packet_msg_s.c

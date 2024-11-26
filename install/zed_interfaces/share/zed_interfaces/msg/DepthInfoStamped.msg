@@ -1,1 +1,1 @@
-/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/DepthInfoStamped.msg
+/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/DepthInfoStamped.msg

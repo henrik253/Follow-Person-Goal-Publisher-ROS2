@@ -1,1 +1,0 @@
-/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/ouster-sdk/ouster_client/include/ouster/sensor_http.h

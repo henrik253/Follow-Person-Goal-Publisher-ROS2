@@ -1,1 +1,0 @@
-/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs/msg/PacketMsg.msg

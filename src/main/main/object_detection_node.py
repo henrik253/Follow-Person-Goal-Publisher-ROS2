@@ -25,13 +25,13 @@ class ObjectTracker(Node):
         self.detected_persons_publisher = self.create_publisher(
             DetectedPersons,
             'detected_persons',
-            10
+            1
         )
 
         self.image_publisher = self.create_publisher(
             Image,
             'tracked_image',
-            10
+            1
         )
         
         # Create CvBridge to convert ROS Image messages to OpenCV images

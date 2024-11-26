@@ -13,8 +13,8 @@ set_target_properties(zed_interfaces::zed_interfaces__rosidl_typesupport_c PROPE
   IMPORTED_SONAME_NOCONFIG "libzed_interfaces__rosidl_typesupport_c.so"
   )
 
-list(APPEND _cmake_import_check_targets zed_interfaces::zed_interfaces__rosidl_typesupport_c )
-list(APPEND _cmake_import_check_files_for_zed_interfaces::zed_interfaces__rosidl_typesupport_c "${_IMPORT_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_c.so" )
+list(APPEND _IMPORT_CHECK_TARGETS zed_interfaces::zed_interfaces__rosidl_typesupport_c )
+list(APPEND _IMPORT_CHECK_FILES_FOR_zed_interfaces::zed_interfaces__rosidl_typesupport_c "${_IMPORT_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_c.so" )
 
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)
