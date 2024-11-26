@@ -1,8 +1,8 @@
-# Install script for directory: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper
+# Install script for directory: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed_wrapper
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper")
+  set(CMAKE_INSTALL_PREFIX "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_wrapper")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,1 +1,1 @@
-/home/student/Desktop/go1_follow_person_ws_henrik/src/main/launch/main_launch.py
+/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/main/launch/main_launch.py

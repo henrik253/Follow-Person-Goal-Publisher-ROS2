@@ -1,1 +1,1 @@
-/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_core/zed_wrapperConfig-version.cmake
+/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_core/zed_wrapperConfig-version.cmake

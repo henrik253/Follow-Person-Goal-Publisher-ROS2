@@ -1,1 +1,1 @@
-/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_cmake/srv/SetROI_Response.msg
+/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/rosidl_cmake/srv/SetROI_Response.msg

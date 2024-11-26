@@ -1,1 +1,1 @@
-/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox2Di.msg
+/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox2Di.msg

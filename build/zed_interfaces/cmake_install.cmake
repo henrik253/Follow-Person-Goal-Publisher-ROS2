@@ -1,8 +1,8 @@
-# Install script for directory: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces
+# Install script for directory: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -53,7 +53,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_generator_c.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/libzed_interfaces__rosidl_generator_c.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/libzed_interfaces__rosidl_generator_c.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_generator_c.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_generator_c.so")
     file(RPATH_CHANGE
@@ -76,12 +76,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_fastrtps_c.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/libzed_interfaces__rosidl_typesupport_fastrtps_c.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/libzed_interfaces__rosidl_typesupport_fastrtps_c.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_fastrtps_c.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_fastrtps_c.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_fastrtps_c.so"
-         OLD_RPATH "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces:/opt/ros/humble/lib:"
+         OLD_RPATH "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces:/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_fastrtps_c.so")
@@ -99,7 +99,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_fastrtps_cpp.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/libzed_interfaces__rosidl_typesupport_fastrtps_cpp.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/libzed_interfaces__rosidl_typesupport_fastrtps_cpp.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_fastrtps_cpp.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_fastrtps_cpp.so")
     file(RPATH_CHANGE
@@ -122,12 +122,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_introspection_c.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/libzed_interfaces__rosidl_typesupport_introspection_c.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/libzed_interfaces__rosidl_typesupport_introspection_c.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_introspection_c.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_introspection_c.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_introspection_c.so"
-         OLD_RPATH "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces:/opt/ros/humble/lib:"
+         OLD_RPATH "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces:/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_introspection_c.so")
@@ -145,12 +145,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_c.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/libzed_interfaces__rosidl_typesupport_c.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/libzed_interfaces__rosidl_typesupport_c.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_c.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_c.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_c.so"
-         OLD_RPATH "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces:/opt/ros/humble/lib:"
+         OLD_RPATH "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces:/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_c.so")
@@ -168,7 +168,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_introspection_cpp.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/libzed_interfaces__rosidl_typesupport_introspection_cpp.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/libzed_interfaces__rosidl_typesupport_introspection_cpp.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_introspection_cpp.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_introspection_cpp.so")
     file(RPATH_CHANGE
@@ -191,7 +191,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_cpp.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/libzed_interfaces__rosidl_typesupport_cpp.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/libzed_interfaces__rosidl_typesupport_cpp.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_cpp.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_typesupport_cpp.so")
     file(RPATH_CHANGE
@@ -211,7 +211,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   execute_process(
         COMMAND
         "/usr/bin/python3" "-m" "compileall"
-        "/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces"
+        "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces"
       )
 endif()
 
@@ -222,12 +222,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_generator_py.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_generator_py/zed_interfaces/libzed_interfaces__rosidl_generator_py.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/rosidl_generator_py/zed_interfaces/libzed_interfaces__rosidl_generator_py.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_generator_py.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_generator_py.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_generator_py.so"
-         OLD_RPATH "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces:/opt/ros/humble/lib:"
+         OLD_RPATH "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces:/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libzed_interfaces__rosidl_generator_py.so")
@@ -242,7 +242,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cExport.cmake"
-         "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cExport.cmake")
+         "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -251,9 +251,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cExport-noconfig.cmake")
   endif()
 endif()
 
@@ -261,7 +261,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cExport.cmake"
-         "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cExport.cmake")
+         "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -270,9 +270,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake")
   endif()
 endif()
 
@@ -280,7 +280,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cppExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cppExport.cmake"
-         "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cppExport.cmake")
+         "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cppExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cppExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -289,14 +289,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cppExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cppExport.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake"
-         "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake")
+         "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cppExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -305,9 +305,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake")
   endif()
 endif()
 
@@ -315,7 +315,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cExport.cmake"
-         "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cExport.cmake")
+         "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -324,9 +324,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake")
   endif()
 endif()
 
@@ -334,7 +334,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cExport.cmake"
-         "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cExport.cmake")
+         "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -343,9 +343,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cExport-noconfig.cmake")
   endif()
 endif()
 
@@ -353,7 +353,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cppExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cppExport.cmake"
-         "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cppExport.cmake")
+         "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cppExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cppExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -362,9 +362,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cppExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cppExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake")
   endif()
 endif()
 
@@ -372,7 +372,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cppExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cppExport.cmake"
-         "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cppExport.cmake")
+         "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cppExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cppExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -381,9 +381,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cppExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cppExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cppExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cppExport-noconfig.cmake")
   endif()
 endif()
 
@@ -391,7 +391,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_pyExport.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_pyExport.cmake"
-         "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_pyExport.cmake")
+         "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_pyExport.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_pyExport-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -400,15 +400,15 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_pyExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_pyExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_pyExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/zed_interfaces/cmake" TYPE FILE FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/Export/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_pyExport-noconfig.cmake")
   endif()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/zed_interfaces__py/cmake_install.cmake")
+  include("/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/zed_interfaces__py/cmake_install.cmake")
 
 endif()
 
@@ -420,5 +420,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

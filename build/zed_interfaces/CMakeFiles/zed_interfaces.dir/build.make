@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces
+CMAKE_SOURCE_DIR = /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces
+CMAKE_BINARY_DIR = /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces
 
 # Utility rule file for zed_interfaces.
 
@@ -66,29 +66,29 @@ include CMakeFiles/zed_interfaces.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/zed_interfaces.dir/progress.make
 
-CMakeFiles/zed_interfaces: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Object.msg
-CMakeFiles/zed_interfaces: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/ObjectsStamped.msg
-CMakeFiles/zed_interfaces: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Keypoint2Di.msg
-CMakeFiles/zed_interfaces: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Keypoint2Df.msg
-CMakeFiles/zed_interfaces: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Keypoint3D.msg
-CMakeFiles/zed_interfaces: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox2Di.msg
-CMakeFiles/zed_interfaces: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox2Df.msg
-CMakeFiles/zed_interfaces: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox3D.msg
-CMakeFiles/zed_interfaces: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Skeleton2D.msg
-CMakeFiles/zed_interfaces: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Skeleton3D.msg
-CMakeFiles/zed_interfaces: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/DepthInfoStamped.msg
-CMakeFiles/zed_interfaces: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/PlaneStamped.msg
-CMakeFiles/zed_interfaces: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/PosTrackStatus.msg
-CMakeFiles/zed_interfaces: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/GnssFusionStatus.msg
-CMakeFiles/zed_interfaces: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Heartbeat.msg
-CMakeFiles/zed_interfaces: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/MagHeadingStatus.msg
-CMakeFiles/zed_interfaces: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/srv/SetPose.srv
+CMakeFiles/zed_interfaces: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Object.msg
+CMakeFiles/zed_interfaces: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/ObjectsStamped.msg
+CMakeFiles/zed_interfaces: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Keypoint2Di.msg
+CMakeFiles/zed_interfaces: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Keypoint2Df.msg
+CMakeFiles/zed_interfaces: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Keypoint3D.msg
+CMakeFiles/zed_interfaces: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox2Di.msg
+CMakeFiles/zed_interfaces: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox2Df.msg
+CMakeFiles/zed_interfaces: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox3D.msg
+CMakeFiles/zed_interfaces: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Skeleton2D.msg
+CMakeFiles/zed_interfaces: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Skeleton3D.msg
+CMakeFiles/zed_interfaces: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/DepthInfoStamped.msg
+CMakeFiles/zed_interfaces: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/PlaneStamped.msg
+CMakeFiles/zed_interfaces: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/PosTrackStatus.msg
+CMakeFiles/zed_interfaces: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/GnssFusionStatus.msg
+CMakeFiles/zed_interfaces: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Heartbeat.msg
+CMakeFiles/zed_interfaces: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/MagHeadingStatus.msg
+CMakeFiles/zed_interfaces: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces/srv/SetPose.srv
 CMakeFiles/zed_interfaces: rosidl_cmake/srv/SetPose_Request.msg
 CMakeFiles/zed_interfaces: rosidl_cmake/srv/SetPose_Response.msg
-CMakeFiles/zed_interfaces: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/srv/StartSvoRec.srv
+CMakeFiles/zed_interfaces: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces/srv/StartSvoRec.srv
 CMakeFiles/zed_interfaces: rosidl_cmake/srv/StartSvoRec_Request.msg
 CMakeFiles/zed_interfaces: rosidl_cmake/srv/StartSvoRec_Response.msg
-CMakeFiles/zed_interfaces: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/srv/SetROI.srv
+CMakeFiles/zed_interfaces: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces/srv/SetROI.srv
 CMakeFiles/zed_interfaces: rosidl_cmake/srv/SetROI_Request.msg
 CMakeFiles/zed_interfaces: rosidl_cmake/srv/SetROI_Response.msg
 CMakeFiles/zed_interfaces: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
@@ -171,6 +171,6 @@ CMakeFiles/zed_interfaces.dir/clean:
 .PHONY : CMakeFiles/zed_interfaces.dir/clean
 
 CMakeFiles/zed_interfaces.dir/depend:
-	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/zed_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/CMakeFiles/zed_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/zed_interfaces.dir/depend
 

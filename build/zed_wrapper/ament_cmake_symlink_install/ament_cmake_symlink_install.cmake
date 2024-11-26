@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_wrapper/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_wrapper/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_wrapper/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_wrapper/${destination}")
+      set(destination "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_wrapper/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,55 +311,55 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install("TARGETS" "zed_wrapper" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "lib/zed_wrapper")
-include("/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "config" "DESTINATION" "share/zed_wrapper")
-ament_cmake_symlink_install_directory("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper" DIRECTORY "config" "DESTINATION" "share/zed_wrapper")
+ament_cmake_symlink_install_directory("/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed_wrapper" DIRECTORY "config" "DESTINATION" "share/zed_wrapper")
 
 # install(DIRECTORY "urdf" "DESTINATION" "share/zed_wrapper")
-ament_cmake_symlink_install_directory("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper" DIRECTORY "urdf" "DESTINATION" "share/zed_wrapper")
+ament_cmake_symlink_install_directory("/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed_wrapper" DIRECTORY "urdf" "DESTINATION" "share/zed_wrapper")
 
 # install(DIRECTORY "launch" "DESTINATION" "share/zed_wrapper")
-ament_cmake_symlink_install_directory("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper" DIRECTORY "launch" "DESTINATION" "share/zed_wrapper")
+ament_cmake_symlink_install_directory("/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed_wrapper" DIRECTORY "launch" "DESTINATION" "share/zed_wrapper")
 
-# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/zed_wrapper" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/zed_wrapper" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/zed_wrapper" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/zed_wrapper" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/zed_wrapper" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/zed_wrapper" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/zed_wrapper" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/zed_wrapper" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/zed_wrapper/environment")
-ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/zed_wrapper/environment")
+ament_cmake_symlink_install_files("/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed_wrapper" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/zed_wrapper/environment")
 
-# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/zed_wrapper/environment")
-ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/zed_wrapper/environment")
+# install(FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/zed_wrapper/environment")
+ament_cmake_symlink_install_files("/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/zed_wrapper/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/zed_wrapper/environment")
-ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/zed_wrapper/environment")
+ament_cmake_symlink_install_files("/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed_wrapper" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/zed_wrapper/environment")
 
-# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/zed_wrapper/environment")
-ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/zed_wrapper/environment")
+# install(FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/zed_wrapper/environment")
+ament_cmake_symlink_install_files("/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/zed_wrapper/environment")
 
-# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/zed_wrapper")
-ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/zed_wrapper")
+# install(FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/zed_wrapper")
+ament_cmake_symlink_install_files("/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/zed_wrapper")
 
-# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/zed_wrapper")
-ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/zed_wrapper")
+# install(FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/zed_wrapper")
+ament_cmake_symlink_install_files("/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/zed_wrapper")
 
-# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/zed_wrapper")
-ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/zed_wrapper")
+# install(FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/zed_wrapper")
+ament_cmake_symlink_install_files("/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/zed_wrapper")
 
-# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/zed_wrapper")
-ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/zed_wrapper")
+# install(FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/zed_wrapper")
+ament_cmake_symlink_install_files("/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/zed_wrapper")
 
-# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/zed_wrapper")
-ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/zed_wrapper")
+# install(FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/zed_wrapper")
+ament_cmake_symlink_install_files("/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/zed_wrapper")
 
-# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_index/share/ament_index/resource_index/packages/zed_wrapper" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_index/share/ament_index/resource_index/packages/zed_wrapper" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_index/share/ament_index/resource_index/packages/zed_wrapper" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_index/share/ament_index/resource_index/packages/zed_wrapper" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_core/zed_wrapperConfig.cmake" "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_core/zed_wrapperConfig-version.cmake" "DESTINATION" "share/zed_wrapper/cmake")
-ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_core/zed_wrapperConfig.cmake" "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/ament_cmake_core/zed_wrapperConfig-version.cmake" "DESTINATION" "share/zed_wrapper/cmake")
+# install(FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_core/zed_wrapperConfig.cmake" "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_core/zed_wrapperConfig-version.cmake" "DESTINATION" "share/zed_wrapper/cmake")
+ament_cmake_symlink_install_files("/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_core/zed_wrapperConfig.cmake" "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/ament_cmake_core/zed_wrapperConfig-version.cmake" "DESTINATION" "share/zed_wrapper/cmake")
 
-# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper/package.xml" "DESTINATION" "share/zed_wrapper")
-ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper/package.xml" "DESTINATION" "share/zed_wrapper")
+# install(FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed_wrapper/package.xml" "DESTINATION" "share/zed_wrapper")
+ament_cmake_symlink_install_files("/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed_wrapper" FILES "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed_wrapper/package.xml" "DESTINATION" "share/zed_wrapper")

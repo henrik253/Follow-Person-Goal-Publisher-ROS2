@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/src/object_tracking_messages
+CMAKE_SOURCE_DIR = /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/object_tracking_messages
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages
+CMAKE_BINARY_DIR = /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/object_tracking_messages
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/go1_follow_person_ws_henrik/src/object_tracking_messages /home/student/Desktop/go1_follow_person_ws_henrik/src/object_tracking_messages /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/object_tracking_messages && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/object_tracking_messages /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/object_tracking_messages /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/object_tracking_messages /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/object_tracking_messages /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/object_tracking_messages/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

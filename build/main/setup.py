@@ -1,1 +1,1 @@
-/home/student/Desktop/go1_follow_person_ws_henrik/src/main/setup.py
+/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/main/setup.py

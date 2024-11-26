@@ -1,1 +1,1 @@
-/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_components/ament_cmake_environment_hooks/local_setup.zsh
+/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_components/ament_cmake_environment_hooks/local_setup.zsh

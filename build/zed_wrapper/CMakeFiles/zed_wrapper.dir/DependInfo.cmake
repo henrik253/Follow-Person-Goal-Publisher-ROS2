@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper/src/zed_wrapper.cpp" "CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o" "gcc" "CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o.d"
+  "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed_wrapper/src/zed_wrapper.cpp" "CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o" "gcc" "CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o.d"
   )
 
 # Targets to which this target links.

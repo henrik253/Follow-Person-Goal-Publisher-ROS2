@@ -1,8 +1,8 @@
-# Install script for directory: /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages/object_tracking_messages__py
+# Install script for directory: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/object_tracking_messages/object_tracking_messages__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/student/Desktop/go1_follow_person_ws_henrik/install/object_tracking_messages")
+  set(CMAKE_INSTALL_PREFIX "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
