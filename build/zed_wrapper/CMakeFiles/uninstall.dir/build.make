@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/workspace/src/zed-ros2-wrapper/zed_wrapper
+CMAKE_SOURCE_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/workspace/build/zed_wrapper
+CMAKE_BINARY_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/student/Desktop/workspace/build/zed_wrapper && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/workspace/src/zed-ros2-wrapper/zed_wrapper /home/student/Desktop/workspace/src/zed-ros2-wrapper/zed_wrapper /home/student/Desktop/workspace/build/zed_wrapper /home/student/Desktop/workspace/build/zed_wrapper /home/student/Desktop/workspace/build/zed_wrapper/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

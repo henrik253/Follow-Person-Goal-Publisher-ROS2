@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/workspace/src/ouster-ros/ouster-ros
+CMAKE_SOURCE_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/workspace/build/ouster_ros
+CMAKE_BINARY_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ouster_ros_library.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/ouster_ros_library.dir/progress.make
 include CMakeFiles/ouster_ros_library.dir/flags.make
 
 CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.o: CMakeFiles/ouster_ros_library.dir/flags.make
-CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.o: /home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_ros.cpp
+CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.o: /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros/src/os_ros.cpp
 CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.o: CMakeFiles/ouster_ros_library.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/workspace/build/ouster_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.o -MF CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.o.d -o CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.o -c /home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_ros.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.o -MF CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.o.d -o CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.o -c /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros/src/os_ros.cpp
 
 CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_ros.cpp > CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros/src/os_ros.cpp > CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.i
 
 CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Desktop/workspace/src/ouster-ros/ouster-ros/src/os_ros.cpp -o CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros/src/os_ros.cpp -o CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.s
 
 # Object files for target ouster_ros_library
 ouster_ros_library_OBJECTS = \
@@ -92,12 +92,12 @@ ouster_ros_library_EXTERNAL_OBJECTS =
 
 libouster_ros_library.so: CMakeFiles/ouster_ros_library.dir/src/os_ros.cpp.o
 libouster_ros_library.so: CMakeFiles/ouster_ros_library.dir/build.make
-libouster_ros_library.so: /home/student/Desktop/workspace/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_fastrtps_c.so
-libouster_ros_library.so: /home/student/Desktop/workspace/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_fastrtps_cpp.so
-libouster_ros_library.so: /home/student/Desktop/workspace/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_introspection_c.so
-libouster_ros_library.so: /home/student/Desktop/workspace/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_introspection_cpp.so
-libouster_ros_library.so: /home/student/Desktop/workspace/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_cpp.so
-libouster_ros_library.so: /home/student/Desktop/workspace/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_generator_py.so
+libouster_ros_library.so: /home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_fastrtps_c.so
+libouster_ros_library.so: /home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_fastrtps_cpp.so
+libouster_ros_library.so: /home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_introspection_c.so
+libouster_ros_library.so: /home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_introspection_cpp.so
+libouster_ros_library.so: /home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_cpp.so
+libouster_ros_library.so: /home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_generator_py.so
 libouster_ros_library.so: /opt/ros/humble/lib/libmessage_filters.so
 libouster_ros_library.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 libouster_ros_library.so: /opt/ros/humble/lib/librmw.so
@@ -142,11 +142,11 @@ libouster_ros_library.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.
 libouster_ros_library.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 libouster_ros_library.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 libouster_ros_library.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
-libouster_ros_library.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
-libouster_ros_library.so: /usr/lib/x86_64-linux-gnu/libpcl_common.so
+libouster_ros_library.so: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+libouster_ros_library.so: /usr/lib/aarch64-linux-gnu/libpcl_common.so
 libouster_ros_library.so: ouster_example/ouster_client/libouster_client.a
-libouster_ros_library.so: /home/student/Desktop/workspace/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_c.so
-libouster_ros_library.so: /home/student/Desktop/workspace/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_generator_c.so
+libouster_ros_library.so: /home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_c.so
+libouster_ros_library.so: /home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_generator_c.so
 libouster_ros_library.so: /opt/ros/humble/lib/libtf2_ros.so
 libouster_ros_library.so: /opt/ros/humble/lib/libtf2.so
 libouster_ros_library.so: /opt/ros/humble/lib/libmessage_filters.so
@@ -235,7 +235,7 @@ libouster_ros_library.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c
 libouster_ros_library.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_py.so
 libouster_ros_library.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 libouster_ros_library.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
-libouster_ros_library.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+libouster_ros_library.so: /usr/lib/aarch64-linux-gnu/libpython3.10.so
 libouster_ros_library.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
 libouster_ros_library.so: /opt/ros/humble/lib/libpcl_msgs__rosidl_generator_c.so
 libouster_ros_library.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
@@ -248,17 +248,17 @@ libouster_ros_library.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 libouster_ros_library.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libouster_ros_library.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libouster_ros_library.so: /opt/ros/humble/lib/librcutils.so
-libouster_ros_library.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0
-libouster_ros_library.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.74.0
-libouster_ros_library.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.74.0
-libouster_ros_library.so: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.74.0
-libouster_ros_library.so: /usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.74.0
-libouster_ros_library.so: /usr/lib/x86_64-linux-gnu/libcurl.so
-libouster_ros_library.so: /usr/lib/x86_64-linux-gnu/libjsoncpp.so.1.9.5
-libouster_ros_library.so: /usr/lib/x86_64-linux-gnu/libspdlog.so.1.9.2
-libouster_ros_library.so: /usr/lib/x86_64-linux-gnu/libfmt.so.8.1.1
+libouster_ros_library.so: /usr/lib/aarch64-linux-gnu/libboost_system.so.1.74.0
+libouster_ros_library.so: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so.1.74.0
+libouster_ros_library.so: /usr/lib/aarch64-linux-gnu/libboost_date_time.so.1.74.0
+libouster_ros_library.so: /usr/lib/aarch64-linux-gnu/libboost_iostreams.so.1.74.0
+libouster_ros_library.so: /usr/lib/aarch64-linux-gnu/libboost_serialization.so.1.74.0
+libouster_ros_library.so: /usr/lib/aarch64-linux-gnu/libcurl.so
+libouster_ros_library.so: /usr/lib/aarch64-linux-gnu/libjsoncpp.so.1.9.5
+libouster_ros_library.so: /usr/lib/aarch64-linux-gnu/libspdlog.so.1.9.2
+libouster_ros_library.so: /usr/lib/aarch64-linux-gnu/libfmt.so.8.1.1
 libouster_ros_library.so: CMakeFiles/ouster_ros_library.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Desktop/workspace/build/ouster_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libouster_ros_library.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libouster_ros_library.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ouster_ros_library.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -270,6 +270,6 @@ CMakeFiles/ouster_ros_library.dir/clean:
 .PHONY : CMakeFiles/ouster_ros_library.dir/clean
 
 CMakeFiles/ouster_ros_library.dir/depend:
-	cd /home/student/Desktop/workspace/build/ouster_ros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/workspace/src/ouster-ros/ouster-ros /home/student/Desktop/workspace/src/ouster-ros/ouster-ros /home/student/Desktop/workspace/build/ouster_ros /home/student/Desktop/workspace/build/ouster_ros /home/student/Desktop/workspace/build/ouster_ros/CMakeFiles/ouster_ros_library.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros/CMakeFiles/ouster_ros_library.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ouster_ros_library.dir/depend
 

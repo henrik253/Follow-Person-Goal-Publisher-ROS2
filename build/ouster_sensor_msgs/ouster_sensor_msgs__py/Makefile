@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs
+CMAKE_SOURCE_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/workspace/build/ouster_sensor_msgs
+CMAKE_BINARY_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,8 +77,8 @@ test/fast: test
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/student/Desktop/workspace/build/ouster_sensor_msgs && $(CMAKE_COMMAND) -E cmake_progress_start /home/student/Desktop/workspace/build/ouster_sensor_msgs/CMakeFiles /home/student/Desktop/workspace/build/ouster_sensor_msgs/ouster_sensor_msgs__py//CMakeFiles/progress.marks
-	cd /home/student/Desktop/workspace/build/ouster_sensor_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ouster_sensor_msgs__py/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Desktop/workspace/build/ouster_sensor_msgs/CMakeFiles 0
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs && $(CMAKE_COMMAND) -E cmake_progress_start /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/CMakeFiles /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ouster_sensor_msgs__py//CMakeFiles/progress.marks
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ouster_sensor_msgs__py/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/student/Desktop/workspace/build/ouster_sensor_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ouster_sensor_msgs__py/clean
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ouster_sensor_msgs__py/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/student/Desktop/workspace/build/ouster_sensor_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ouster_sensor_msgs__py/preinstall
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ouster_sensor_msgs__py/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/student/Desktop/workspace/build/ouster_sensor_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ouster_sensor_msgs__py/preinstall
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ouster_sensor_msgs__py/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/student/Desktop/workspace/build/ouster_sensor_msgs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ouster_sensor_msgs__py/CMakeFiles/ouster_sensor_msgs__py.dir/rule:
-	cd /home/student/Desktop/workspace/build/ouster_sensor_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ouster_sensor_msgs__py/CMakeFiles/ouster_sensor_msgs__py.dir/rule
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ouster_sensor_msgs__py/CMakeFiles/ouster_sensor_msgs__py.dir/rule
 .PHONY : ouster_sensor_msgs__py/CMakeFiles/ouster_sensor_msgs__py.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ ouster_sensor_msgs__py: ouster_sensor_msgs__py/CMakeFiles/ouster_sensor_msgs__py
 
 # fast build rule for target.
 ouster_sensor_msgs__py/fast:
-	cd /home/student/Desktop/workspace/build/ouster_sensor_msgs && $(MAKE) $(MAKESILENT) -f ouster_sensor_msgs__py/CMakeFiles/ouster_sensor_msgs__py.dir/build.make ouster_sensor_msgs__py/CMakeFiles/ouster_sensor_msgs__py.dir/build
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs && $(MAKE) $(MAKESILENT) -f ouster_sensor_msgs__py/CMakeFiles/ouster_sensor_msgs__py.dir/build.make ouster_sensor_msgs__py/CMakeFiles/ouster_sensor_msgs__py.dir/build
 .PHONY : ouster_sensor_msgs__py/fast
 
 # Help Target
@@ -210,6 +210,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/student/Desktop/workspace/build/ouster_sensor_msgs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

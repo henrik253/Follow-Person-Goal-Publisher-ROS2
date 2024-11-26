@@ -1,1 +1,1 @@
-/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_python/ouster_sensor_msgs/ouster_sensor_msgs.egg-info/SOURCES.txt
+/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_python/ouster_sensor_msgs/ouster_sensor_msgs.egg-info/SOURCES.txt

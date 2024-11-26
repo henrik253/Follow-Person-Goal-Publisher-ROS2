@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/workspace/src/ouster-ros/ouster-ros
+CMAKE_SOURCE_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/workspace/build/ouster_ros
+CMAKE_BINARY_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros
 
 # Utility rule file for ouster_ros_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ouster_ros_uninstall.dir/compiler_depend.make
 include CMakeFiles/ouster_ros_uninstall.dir/progress.make
 
 CMakeFiles/ouster_ros_uninstall:
-	/usr/bin/cmake -P /home/student/Desktop/workspace/build/ouster_ros/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 ouster_ros_uninstall: CMakeFiles/ouster_ros_uninstall
 ouster_ros_uninstall: CMakeFiles/ouster_ros_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ouster_ros_uninstall.dir/clean:
 .PHONY : CMakeFiles/ouster_ros_uninstall.dir/clean
 
 CMakeFiles/ouster_ros_uninstall.dir/depend:
-	cd /home/student/Desktop/workspace/build/ouster_ros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/workspace/src/ouster-ros/ouster-ros /home/student/Desktop/workspace/src/ouster-ros/ouster-ros /home/student/Desktop/workspace/build/ouster_ros /home/student/Desktop/workspace/build/ouster_ros /home/student/Desktop/workspace/build/ouster_ros/CMakeFiles/ouster_ros_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros/CMakeFiles/ouster_ros_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ouster_ros_uninstall.dir/depend
 

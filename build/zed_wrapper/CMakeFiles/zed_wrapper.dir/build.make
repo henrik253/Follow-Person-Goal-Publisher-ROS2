@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/workspace/src/zed-ros2-wrapper/zed_wrapper
+CMAKE_SOURCE_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/workspace/build/zed_wrapper
+CMAKE_BINARY_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper
 
 # Include any dependencies generated for this target.
 include CMakeFiles/zed_wrapper.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/zed_wrapper.dir/progress.make
 include CMakeFiles/zed_wrapper.dir/flags.make
 
 CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o: CMakeFiles/zed_wrapper.dir/flags.make
-CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o: /home/student/Desktop/workspace/src/zed-ros2-wrapper/zed_wrapper/src/zed_wrapper.cpp
+CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o: /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper/src/zed_wrapper.cpp
 CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o: CMakeFiles/zed_wrapper.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/workspace/build/zed_wrapper/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o -MF CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o.d -o CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o -c /home/student/Desktop/workspace/src/zed-ros2-wrapper/zed_wrapper/src/zed_wrapper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o -MF CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o.d -o CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o -c /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper/src/zed_wrapper.cpp
 
 CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Desktop/workspace/src/zed-ros2-wrapper/zed_wrapper/src/zed_wrapper.cpp > CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper/src/zed_wrapper.cpp > CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.i
 
 CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Desktop/workspace/src/zed-ros2-wrapper/zed_wrapper/src/zed_wrapper.cpp -o CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper/src/zed_wrapper.cpp -o CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.s
 
 # Object files for target zed_wrapper
 zed_wrapper_OBJECTS = \
@@ -93,7 +93,7 @@ zed_wrapper_EXTERNAL_OBJECTS =
 zed_wrapper: CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o
 zed_wrapper: CMakeFiles/zed_wrapper.dir/build.make
 zed_wrapper: /opt/ros/humble/lib/libcomponent_manager.so
-zed_wrapper: /home/student/Desktop/workspace/install/zed_components/lib/libzed_camera_component.so
+zed_wrapper: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_components/lib/libzed_camera_component.so
 zed_wrapper: /opt/ros/humble/lib/librosgraph_msgs__rosidl_generator_c.so
 zed_wrapper: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so
 zed_wrapper: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -137,8 +137,8 @@ zed_wrapper: /opt/ros/humble/lib/libcomposition_interfaces__rosidl_typesupport_c
 zed_wrapper: /opt/ros/humble/lib/libcomposition_interfaces__rosidl_generator_py.so
 zed_wrapper: /opt/ros/humble/lib/libament_index_cpp.so
 zed_wrapper: /opt/ros/humble/lib/libclass_loader.so
-zed_wrapper: /opt/ros/humble/lib/x86_64-linux-gnu/libimage_transport.so
-zed_wrapper: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
+zed_wrapper: /opt/ros/humble/lib/aarch64-linux-gnu/libimage_transport.so
+zed_wrapper: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.1.0
 zed_wrapper: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
 zed_wrapper: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
 zed_wrapper: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -158,7 +158,7 @@ zed_wrapper: /opt/ros/humble/lib/libtf2_msgs__rosidl_generator_py.so
 zed_wrapper: /opt/ros/humble/lib/libtf2.so
 zed_wrapper: /opt/ros/humble/lib/libtf2_ros.so
 zed_wrapper: /opt/ros/humble/lib/libstatic_transform_broadcaster_node.so
-zed_wrapper: /usr/lib/x86_64-linux-gnu/liborocos-kdl.so
+zed_wrapper: /usr/lib/aarch64-linux-gnu/liborocos-kdl.so
 zed_wrapper: /opt/ros/humble/lib/libtf2_ros.so
 zed_wrapper: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_c.so
 zed_wrapper: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so
@@ -195,20 +195,20 @@ zed_wrapper: /opt/ros/humble/lib/libstereo_msgs__rosidl_typesupport_introspectio
 zed_wrapper: /opt/ros/humble/lib/libstereo_msgs__rosidl_typesupport_cpp.so
 zed_wrapper: /opt/ros/humble/lib/libstereo_msgs__rosidl_generator_py.so
 zed_wrapper: /opt/ros/humble/lib/libstereo_msgs__rosidl_typesupport_c.so
-zed_wrapper: /home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_generator_c.so
-zed_wrapper: /home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_fastrtps_c.so
+zed_wrapper: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib/libzed_interfaces__rosidl_generator_c.so
+zed_wrapper: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_fastrtps_c.so
 zed_wrapper: /opt/ros/humble/lib/libshape_msgs__rosidl_typesupport_fastrtps_c.so
-zed_wrapper: /home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_fastrtps_cpp.so
+zed_wrapper: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_fastrtps_cpp.so
 zed_wrapper: /opt/ros/humble/lib/libshape_msgs__rosidl_typesupport_fastrtps_cpp.so
-zed_wrapper: /home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_introspection_c.so
+zed_wrapper: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_introspection_c.so
 zed_wrapper: /opt/ros/humble/lib/libshape_msgs__rosidl_typesupport_introspection_c.so
-zed_wrapper: /home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_c.so
-zed_wrapper: /home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_introspection_cpp.so
+zed_wrapper: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_c.so
+zed_wrapper: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_introspection_cpp.so
 zed_wrapper: /opt/ros/humble/lib/libshape_msgs__rosidl_typesupport_introspection_cpp.so
-zed_wrapper: /home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_cpp.so
+zed_wrapper: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_cpp.so
 zed_wrapper: /opt/ros/humble/lib/libshape_msgs__rosidl_typesupport_cpp.so
-zed_wrapper: /home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_generator_py.so
-zed_wrapper: /home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_c.so
+zed_wrapper: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib/libzed_interfaces__rosidl_generator_py.so
+zed_wrapper: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_c.so
 zed_wrapper: /opt/ros/humble/lib/libshape_msgs__rosidl_generator_py.so
 zed_wrapper: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_c.so
 zed_wrapper: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_c.so
@@ -317,11 +317,11 @@ zed_wrapper: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
 zed_wrapper: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
 zed_wrapper: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
 zed_wrapper: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
-zed_wrapper: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+zed_wrapper: /usr/lib/aarch64-linux-gnu/libpython3.10.so
 zed_wrapper: /opt/ros/humble/lib/libclass_loader.so
-zed_wrapper: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+zed_wrapper: /usr/lib/aarch64-linux-gnu/libtinyxml2.so
 zed_wrapper: /opt/ros/humble/lib/librcpputils.so
-zed_wrapper: /opt/ros/humble/lib/x86_64-linux-gnu/libpoint_cloud_transport.so
+zed_wrapper: /opt/ros/humble/lib/aarch64-linux-gnu/libpoint_cloud_transport.so
 zed_wrapper: /opt/ros/humble/lib/libmessage_filters.so
 zed_wrapper: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 zed_wrapper: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -349,7 +349,7 @@ zed_wrapper: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_c.so
 zed_wrapper: /opt/ros/humble/lib/libtf2_msgs__rosidl_generator_c.so
 zed_wrapper: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
 zed_wrapper: /opt/ros/humble/lib/libtf2.so
-zed_wrapper: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
+zed_wrapper: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.1.0
 zed_wrapper: /opt/ros/humble/lib/librclcpp.so
 zed_wrapper: /opt/ros/humble/lib/liblibstatistics_collector.so
 zed_wrapper: /opt/ros/humble/lib/librcl.so
@@ -387,7 +387,7 @@ zed_wrapper: /opt/ros/humble/lib/libament_index_cpp.so
 zed_wrapper: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_c.so
 zed_wrapper: /opt/ros/humble/lib/libnmea_msgs__rosidl_generator_c.so
 zed_wrapper: /opt/ros/humble/lib/libstereo_msgs__rosidl_generator_c.so
-zed_wrapper: /home/student/Desktop/workspace/install/zed_interfaces/lib/libzed_interfaces__rosidl_generator_c.so
+zed_wrapper: /home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/lib/libzed_interfaces__rosidl_generator_c.so
 zed_wrapper: /opt/ros/humble/lib/libshape_msgs__rosidl_generator_c.so
 zed_wrapper: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_c.so
 zed_wrapper: /opt/ros/humble/lib/libvisualization_msgs__rosidl_generator_c.so
@@ -425,7 +425,7 @@ zed_wrapper: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
 zed_wrapper: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
 zed_wrapper: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 zed_wrapper: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
-zed_wrapper: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+zed_wrapper: /usr/lib/aarch64-linux-gnu/libpython3.10.so
 zed_wrapper: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
 zed_wrapper: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
 zed_wrapper: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
@@ -444,7 +444,7 @@ zed_wrapper: /opt/ros/humble/lib/librcpputils.so
 zed_wrapper: /opt/ros/humble/lib/librosidl_runtime_c.so
 zed_wrapper: /opt/ros/humble/lib/librcutils.so
 zed_wrapper: CMakeFiles/zed_wrapper.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Desktop/workspace/build/zed_wrapper/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable zed_wrapper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable zed_wrapper"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/zed_wrapper.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -456,6 +456,6 @@ CMakeFiles/zed_wrapper.dir/clean:
 .PHONY : CMakeFiles/zed_wrapper.dir/clean
 
 CMakeFiles/zed_wrapper.dir/depend:
-	cd /home/student/Desktop/workspace/build/zed_wrapper && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/workspace/src/zed-ros2-wrapper/zed_wrapper /home/student/Desktop/workspace/src/zed-ros2-wrapper/zed_wrapper /home/student/Desktop/workspace/build/zed_wrapper /home/student/Desktop/workspace/build/zed_wrapper /home/student/Desktop/workspace/build/zed_wrapper/CMakeFiles/zed_wrapper.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed_wrapper /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_wrapper/CMakeFiles/zed_wrapper.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/zed_wrapper.dir/depend
 

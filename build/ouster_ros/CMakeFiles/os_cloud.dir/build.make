@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/workspace/src/ouster-ros/ouster-ros
+CMAKE_SOURCE_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/workspace/build/ouster_ros
+CMAKE_BINARY_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros
 
 # Include any dependencies generated for this target.
 include CMakeFiles/os_cloud.dir/depend.make
@@ -72,16 +72,16 @@ include CMakeFiles/os_cloud.dir/flags.make
 CMakeFiles/os_cloud.dir/rclcpp_components/node_main_os_cloud.cpp.o: CMakeFiles/os_cloud.dir/flags.make
 CMakeFiles/os_cloud.dir/rclcpp_components/node_main_os_cloud.cpp.o: rclcpp_components/node_main_os_cloud.cpp
 CMakeFiles/os_cloud.dir/rclcpp_components/node_main_os_cloud.cpp.o: CMakeFiles/os_cloud.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/workspace/build/ouster_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/os_cloud.dir/rclcpp_components/node_main_os_cloud.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/os_cloud.dir/rclcpp_components/node_main_os_cloud.cpp.o -MF CMakeFiles/os_cloud.dir/rclcpp_components/node_main_os_cloud.cpp.o.d -o CMakeFiles/os_cloud.dir/rclcpp_components/node_main_os_cloud.cpp.o -c /home/student/Desktop/workspace/build/ouster_ros/rclcpp_components/node_main_os_cloud.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/os_cloud.dir/rclcpp_components/node_main_os_cloud.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/os_cloud.dir/rclcpp_components/node_main_os_cloud.cpp.o -MF CMakeFiles/os_cloud.dir/rclcpp_components/node_main_os_cloud.cpp.o.d -o CMakeFiles/os_cloud.dir/rclcpp_components/node_main_os_cloud.cpp.o -c /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros/rclcpp_components/node_main_os_cloud.cpp
 
 CMakeFiles/os_cloud.dir/rclcpp_components/node_main_os_cloud.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/os_cloud.dir/rclcpp_components/node_main_os_cloud.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Desktop/workspace/build/ouster_ros/rclcpp_components/node_main_os_cloud.cpp > CMakeFiles/os_cloud.dir/rclcpp_components/node_main_os_cloud.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros/rclcpp_components/node_main_os_cloud.cpp > CMakeFiles/os_cloud.dir/rclcpp_components/node_main_os_cloud.cpp.i
 
 CMakeFiles/os_cloud.dir/rclcpp_components/node_main_os_cloud.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/os_cloud.dir/rclcpp_components/node_main_os_cloud.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Desktop/workspace/build/ouster_ros/rclcpp_components/node_main_os_cloud.cpp -o CMakeFiles/os_cloud.dir/rclcpp_components/node_main_os_cloud.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros/rclcpp_components/node_main_os_cloud.cpp -o CMakeFiles/os_cloud.dir/rclcpp_components/node_main_os_cloud.cpp.s
 
 # Object files for target os_cloud
 os_cloud_OBJECTS = \
@@ -119,7 +119,7 @@ os_cloud: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so
 os_cloud: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so
 os_cloud: /opt/ros/humble/lib/libtracetools.so
 os_cloud: /opt/ros/humble/lib/libclass_loader.so
-os_cloud: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
+os_cloud: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.1.0
 os_cloud: /opt/ros/humble/lib/libament_index_cpp.so
 os_cloud: /opt/ros/humble/lib/libcomposition_interfaces__rosidl_typesupport_fastrtps_c.so
 os_cloud: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
@@ -156,9 +156,9 @@ os_cloud: /opt/ros/humble/lib/librosidl_typesupport_c.so
 os_cloud: /opt/ros/humble/lib/librcpputils.so
 os_cloud: /opt/ros/humble/lib/librosidl_runtime_c.so
 os_cloud: /opt/ros/humble/lib/librcutils.so
-os_cloud: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+os_cloud: /usr/lib/aarch64-linux-gnu/libpython3.10.so
 os_cloud: CMakeFiles/os_cloud.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Desktop/workspace/build/ouster_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable os_cloud"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable os_cloud"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/os_cloud.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -170,6 +170,6 @@ CMakeFiles/os_cloud.dir/clean:
 .PHONY : CMakeFiles/os_cloud.dir/clean
 
 CMakeFiles/os_cloud.dir/depend:
-	cd /home/student/Desktop/workspace/build/ouster_ros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/workspace/src/ouster-ros/ouster-ros /home/student/Desktop/workspace/src/ouster-ros/ouster-ros /home/student/Desktop/workspace/build/ouster_ros /home/student/Desktop/workspace/build/ouster_ros /home/student/Desktop/workspace/build/ouster_ros/CMakeFiles/os_cloud.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros/CMakeFiles/os_cloud.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/os_cloud.dir/depend
 

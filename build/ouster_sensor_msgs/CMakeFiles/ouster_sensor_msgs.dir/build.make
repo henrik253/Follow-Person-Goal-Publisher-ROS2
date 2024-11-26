@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs
+CMAKE_SOURCE_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/workspace/build/ouster_sensor_msgs
+CMAKE_BINARY_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs
 
 # Utility rule file for ouster_sensor_msgs.
 
@@ -66,14 +66,14 @@ include CMakeFiles/ouster_sensor_msgs.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/ouster_sensor_msgs.dir/progress.make
 
-CMakeFiles/ouster_sensor_msgs: /home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs/msg/PacketMsg.msg
-CMakeFiles/ouster_sensor_msgs: /home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs/srv/GetConfig.srv
+CMakeFiles/ouster_sensor_msgs: /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs/msg/PacketMsg.msg
+CMakeFiles/ouster_sensor_msgs: /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs/srv/GetConfig.srv
 CMakeFiles/ouster_sensor_msgs: rosidl_cmake/srv/GetConfig_Request.msg
 CMakeFiles/ouster_sensor_msgs: rosidl_cmake/srv/GetConfig_Response.msg
-CMakeFiles/ouster_sensor_msgs: /home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs/srv/SetConfig.srv
+CMakeFiles/ouster_sensor_msgs: /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs/srv/SetConfig.srv
 CMakeFiles/ouster_sensor_msgs: rosidl_cmake/srv/SetConfig_Request.msg
 CMakeFiles/ouster_sensor_msgs: rosidl_cmake/srv/SetConfig_Response.msg
-CMakeFiles/ouster_sensor_msgs: /home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs/srv/GetMetadata.srv
+CMakeFiles/ouster_sensor_msgs: /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs/srv/GetMetadata.srv
 CMakeFiles/ouster_sensor_msgs: rosidl_cmake/srv/GetMetadata_Request.msg
 CMakeFiles/ouster_sensor_msgs: rosidl_cmake/srv/GetMetadata_Response.msg
 CMakeFiles/ouster_sensor_msgs: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -120,6 +120,6 @@ CMakeFiles/ouster_sensor_msgs.dir/clean:
 .PHONY : CMakeFiles/ouster_sensor_msgs.dir/clean
 
 CMakeFiles/ouster_sensor_msgs.dir/depend:
-	cd /home/student/Desktop/workspace/build/ouster_sensor_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs /home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs /home/student/Desktop/workspace/build/ouster_sensor_msgs /home/student/Desktop/workspace/build/ouster_sensor_msgs /home/student/Desktop/workspace/build/ouster_sensor_msgs/CMakeFiles/ouster_sensor_msgs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/CMakeFiles/ouster_sensor_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ouster_sensor_msgs.dir/depend
 

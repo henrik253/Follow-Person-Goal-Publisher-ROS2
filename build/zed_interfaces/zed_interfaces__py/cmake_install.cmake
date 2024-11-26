@@ -1,8 +1,8 @@
-# Install script for directory: /home/student/Desktop/workspace/build/zed_interfaces/zed_interfaces__py
+# Install script for directory: /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/zed_interfaces__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/student/Desktop/workspace/install/zed_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

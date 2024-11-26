@@ -1,1 +1,1 @@
-/home/student/Desktop/workspace/build/ouster_ros/ouster_example/OusterSDKConfig.cmake
+/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros/ouster_example/OusterSDKConfig.cmake

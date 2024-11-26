@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs
+CMAKE_SOURCE_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/workspace/build/ouster_sensor_msgs
+CMAKE_BINARY_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs
 
 # Utility rule file for ament_cmake_python_symlink_ouster_sensor_msgs.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_symlink_ouster_sensor_msgs.dir/compiler_de
 include CMakeFiles/ament_cmake_python_symlink_ouster_sensor_msgs.dir/progress.make
 
 CMakeFiles/ament_cmake_python_symlink_ouster_sensor_msgs:
-	/usr/bin/cmake -E create_symlink /home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_generator_py/ouster_sensor_msgs /home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_python/ouster_sensor_msgs/ouster_sensor_msgs
+	/usr/bin/cmake -E create_symlink /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_generator_py/ouster_sensor_msgs /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_python/ouster_sensor_msgs/ouster_sensor_msgs
 
 ament_cmake_python_symlink_ouster_sensor_msgs: CMakeFiles/ament_cmake_python_symlink_ouster_sensor_msgs
 ament_cmake_python_symlink_ouster_sensor_msgs: CMakeFiles/ament_cmake_python_symlink_ouster_sensor_msgs.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_symlink_ouster_sensor_msgs.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_symlink_ouster_sensor_msgs.dir/clean
 
 CMakeFiles/ament_cmake_python_symlink_ouster_sensor_msgs.dir/depend:
-	cd /home/student/Desktop/workspace/build/ouster_sensor_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs /home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs /home/student/Desktop/workspace/build/ouster_sensor_msgs /home/student/Desktop/workspace/build/ouster_sensor_msgs /home/student/Desktop/workspace/build/ouster_sensor_msgs/CMakeFiles/ament_cmake_python_symlink_ouster_sensor_msgs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/CMakeFiles/ament_cmake_python_symlink_ouster_sensor_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_symlink_ouster_sensor_msgs.dir/depend
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/student/Desktop/workspace/src/ouster-ros/ouster-ros/ouster-sdk/ouster_client
+# Install script for directory: /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros/ouster-sdk/ouster_client
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/student/Desktop/workspace/install/ouster_ros")
+  set(CMAKE_INSTALL_PREFIX "/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,6 +43,6 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/student/Desktop/workspace/build/ouster_ros/ouster_example/ouster_client/libouster_client.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros/ouster_example/ouster_client/libouster_client.a")
 endif()
 

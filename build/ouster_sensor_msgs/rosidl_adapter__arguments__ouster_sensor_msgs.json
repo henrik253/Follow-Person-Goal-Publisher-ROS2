@@ -1,9 +1,9 @@
 {
   "package_name": "ouster_sensor_msgs",
   "non_idl_tuples": [
-    "/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs:msg/PacketMsg.msg",
-    "/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs:srv/GetConfig.srv",
-    "/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs:srv/SetConfig.srv",
-    "/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs:srv/GetMetadata.srv"
+    "/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs:msg/PacketMsg.msg",
+    "/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs:srv/GetConfig.srv",
+    "/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs:srv/SetConfig.srv",
+    "/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs:srv/GetMetadata.srv"
   ]
 }

@@ -1,8 +1,8 @@
-# Install script for directory: /home/student/Desktop/workspace/build/ouster_sensor_msgs/ouster_sensor_msgs__py
+# Install script for directory: /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ouster_sensor_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/student/Desktop/workspace/install/ouster_sensor_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

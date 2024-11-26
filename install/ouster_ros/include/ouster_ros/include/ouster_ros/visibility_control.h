@@ -1,1 +1,1 @@
-/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/include/ouster_ros/visibility_control.h
+/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros/include/ouster_ros/visibility_control.h

@@ -1,1 +1,1 @@
-/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/include/ouster_ros/sensor_point_types.h
+/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros/include/ouster_ros/sensor_point_types.h

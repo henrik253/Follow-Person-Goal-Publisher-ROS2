@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/student/Desktop/workspace/install/ouster_sensor_msgs/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/student/Desktop/workspace/install/ouster_sensor_msgs/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/student/Desktop/workspace/install/ouster_sensor_msgs/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/student/Desktop/workspace/install/ouster_sensor_msgs/${destination}")
+      set(destination "/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_sensor_msgs/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -310,155 +310,155 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/ouster_sensor_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/ouster_sensor_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/ouster_sensor_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/ouster_sensor_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
 
-# install(DIRECTORY "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_generator_c/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" DIRECTORY "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_generator_c/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN" "*.h")
+# install(DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_generator_c/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_generator_c/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN" "*.h")
 
 # install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/ouster_sensor_msgs/environment")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/ouster_sensor_msgs/environment")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/ouster_sensor_msgs/environment")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/ouster_sensor_msgs/environment")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/ouster_sensor_msgs/environment")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/ouster_sensor_msgs/environment")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/ouster_sensor_msgs/environment")
 
-# install(DIRECTORY "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_typesupport_fastrtps_c/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" DIRECTORY "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_typesupport_fastrtps_c/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_typesupport_fastrtps_c/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_typesupport_fastrtps_c/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_generator_cpp/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" DIRECTORY "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_generator_cpp/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN" "*.hpp")
+# install(DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_generator_cpp/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_generator_cpp/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN" "*.hpp")
 
-# install(DIRECTORY "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_typesupport_fastrtps_cpp/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" DIRECTORY "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_typesupport_fastrtps_cpp/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_typesupport_fastrtps_cpp/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_typesupport_fastrtps_cpp/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_typesupport_introspection_c/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" DIRECTORY "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_typesupport_introspection_c/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN" "*.h")
+# install(DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_typesupport_introspection_c/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_typesupport_introspection_c/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN" "*.h")
 
-# install(DIRECTORY "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_typesupport_introspection_cpp/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" DIRECTORY "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_typesupport_introspection_cpp/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN" "*.hpp")
+# install(DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_typesupport_introspection_cpp/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_typesupport_introspection_cpp/ouster_sensor_msgs/" "DESTINATION" "include/ouster_sensor_msgs/ouster_sensor_msgs" "PATTERN" "*.hpp")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/ouster_sensor_msgs/environment")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/ouster_sensor_msgs/environment")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/ouster_sensor_msgs/environment")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/ouster_sensor_msgs/environment")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/ouster_sensor_msgs/environment")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/ouster_sensor_msgs/environment")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/ouster_sensor_msgs/environment")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/ouster_sensor_msgs/environment")
 
-# install(DIRECTORY "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_python/ouster_sensor_msgs/ouster_sensor_msgs.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/ouster_sensor_msgs-0.12.2-py3.10.egg-info")
-ament_cmake_symlink_install_directory("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" DIRECTORY "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_python/ouster_sensor_msgs/ouster_sensor_msgs.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/ouster_sensor_msgs-0.12.2-py3.10.egg-info")
+# install(DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_python/ouster_sensor_msgs/ouster_sensor_msgs.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/ouster_sensor_msgs-0.12.2-py3.10.egg-info")
+ament_cmake_symlink_install_directory("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_python/ouster_sensor_msgs/ouster_sensor_msgs.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/ouster_sensor_msgs-0.12.2-py3.10.egg-info")
 
-# install(DIRECTORY "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_generator_py/ouster_sensor_msgs/" "DESTINATION" "local/lib/python3.10/dist-packages/ouster_sensor_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
-ament_cmake_symlink_install_directory("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" DIRECTORY "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_generator_py/ouster_sensor_msgs/" "DESTINATION" "local/lib/python3.10/dist-packages/ouster_sensor_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+# install(DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_generator_py/ouster_sensor_msgs/" "DESTINATION" "local/lib/python3.10/dist-packages/ouster_sensor_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_generator_py/ouster_sensor_msgs/" "DESTINATION" "local/lib/python3.10/dist-packages/ouster_sensor_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
 # install("TARGETS" "ouster_sensor_msgs__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/ouster_sensor_msgs")
-include("/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "ouster_sensor_msgs__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/ouster_sensor_msgs")
-include("/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "ouster_sensor_msgs__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/ouster_sensor_msgs")
-include("/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_adapter/ouster_sensor_msgs/msg/PacketMsg.idl" "DESTINATION" "share/ouster_sensor_msgs/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_adapter/ouster_sensor_msgs/msg/PacketMsg.idl" "DESTINATION" "share/ouster_sensor_msgs/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_adapter/ouster_sensor_msgs/msg/PacketMsg.idl" "DESTINATION" "share/ouster_sensor_msgs/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_adapter/ouster_sensor_msgs/msg/PacketMsg.idl" "DESTINATION" "share/ouster_sensor_msgs/msg")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_adapter/ouster_sensor_msgs/srv/GetConfig.idl" "DESTINATION" "share/ouster_sensor_msgs/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_adapter/ouster_sensor_msgs/srv/GetConfig.idl" "DESTINATION" "share/ouster_sensor_msgs/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_adapter/ouster_sensor_msgs/srv/GetConfig.idl" "DESTINATION" "share/ouster_sensor_msgs/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_adapter/ouster_sensor_msgs/srv/GetConfig.idl" "DESTINATION" "share/ouster_sensor_msgs/srv")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_adapter/ouster_sensor_msgs/srv/SetConfig.idl" "DESTINATION" "share/ouster_sensor_msgs/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_adapter/ouster_sensor_msgs/srv/SetConfig.idl" "DESTINATION" "share/ouster_sensor_msgs/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_adapter/ouster_sensor_msgs/srv/SetConfig.idl" "DESTINATION" "share/ouster_sensor_msgs/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_adapter/ouster_sensor_msgs/srv/SetConfig.idl" "DESTINATION" "share/ouster_sensor_msgs/srv")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_adapter/ouster_sensor_msgs/srv/GetMetadata.idl" "DESTINATION" "share/ouster_sensor_msgs/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_adapter/ouster_sensor_msgs/srv/GetMetadata.idl" "DESTINATION" "share/ouster_sensor_msgs/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_adapter/ouster_sensor_msgs/srv/GetMetadata.idl" "DESTINATION" "share/ouster_sensor_msgs/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_adapter/ouster_sensor_msgs/srv/GetMetadata.idl" "DESTINATION" "share/ouster_sensor_msgs/srv")
 
-# install(FILES "/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs/msg/PacketMsg.msg" "DESTINATION" "share/ouster_sensor_msgs/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs/msg/PacketMsg.msg" "DESTINATION" "share/ouster_sensor_msgs/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs/msg/PacketMsg.msg" "DESTINATION" "share/ouster_sensor_msgs/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs/msg/PacketMsg.msg" "DESTINATION" "share/ouster_sensor_msgs/msg")
 
-# install(FILES "/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs/srv/GetConfig.srv" "DESTINATION" "share/ouster_sensor_msgs/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs/srv/GetConfig.srv" "DESTINATION" "share/ouster_sensor_msgs/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs/srv/GetConfig.srv" "DESTINATION" "share/ouster_sensor_msgs/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs/srv/GetConfig.srv" "DESTINATION" "share/ouster_sensor_msgs/srv")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_cmake/srv/GetConfig_Request.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_cmake/srv/GetConfig_Request.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_cmake/srv/GetConfig_Request.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_cmake/srv/GetConfig_Request.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_cmake/srv/GetConfig_Response.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_cmake/srv/GetConfig_Response.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_cmake/srv/GetConfig_Response.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_cmake/srv/GetConfig_Response.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
 
-# install(FILES "/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs/srv/SetConfig.srv" "DESTINATION" "share/ouster_sensor_msgs/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs/srv/SetConfig.srv" "DESTINATION" "share/ouster_sensor_msgs/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs/srv/SetConfig.srv" "DESTINATION" "share/ouster_sensor_msgs/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs/srv/SetConfig.srv" "DESTINATION" "share/ouster_sensor_msgs/srv")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_cmake/srv/SetConfig_Request.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_cmake/srv/SetConfig_Request.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_cmake/srv/SetConfig_Request.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_cmake/srv/SetConfig_Request.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_cmake/srv/SetConfig_Response.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_cmake/srv/SetConfig_Response.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_cmake/srv/SetConfig_Response.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_cmake/srv/SetConfig_Response.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
 
-# install(FILES "/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs/srv/GetMetadata.srv" "DESTINATION" "share/ouster_sensor_msgs/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs/srv/GetMetadata.srv" "DESTINATION" "share/ouster_sensor_msgs/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs/srv/GetMetadata.srv" "DESTINATION" "share/ouster_sensor_msgs/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs/srv/GetMetadata.srv" "DESTINATION" "share/ouster_sensor_msgs/srv")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_cmake/srv/GetMetadata_Request.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_cmake/srv/GetMetadata_Request.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_cmake/srv/GetMetadata_Request.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_cmake/srv/GetMetadata_Request.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_cmake/srv/GetMetadata_Response.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_cmake/srv/GetMetadata_Response.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_cmake/srv/GetMetadata_Response.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_cmake/srv/GetMetadata_Response.msg" "DESTINATION" "share/ouster_sensor_msgs/srv")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ouster_sensor_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ouster_sensor_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ouster_sensor_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ouster_sensor_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ouster_sensor_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ouster_sensor_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ouster_sensor_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ouster_sensor_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ouster_sensor_msgs/environment")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ouster_sensor_msgs/environment")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/ouster_sensor_msgs/environment")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ouster_sensor_msgs/environment")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ouster_sensor_msgs/environment")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ouster_sensor_msgs/environment")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/ouster_sensor_msgs/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ouster_sensor_msgs/environment")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ouster_sensor_msgs/environment")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/ouster_sensor_msgs/environment")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ouster_sensor_msgs/environment")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ouster_sensor_msgs/environment")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ouster_sensor_msgs/environment")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/ouster_sensor_msgs/environment")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ouster_sensor_msgs")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ouster_sensor_msgs")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ouster_sensor_msgs")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/ouster_sensor_msgs")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ouster_sensor_msgs")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ouster_sensor_msgs")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ouster_sensor_msgs")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/ouster_sensor_msgs")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ouster_sensor_msgs")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ouster_sensor_msgs")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ouster_sensor_msgs")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/ouster_sensor_msgs")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ouster_sensor_msgs")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ouster_sensor_msgs")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ouster_sensor_msgs")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/ouster_sensor_msgs")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ouster_sensor_msgs")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ouster_sensor_msgs")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ouster_sensor_msgs")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/ouster_sensor_msgs")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_index/share/ament_index/resource_index/packages/ouster_sensor_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_index/share/ament_index/resource_index/packages/ouster_sensor_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_index/share/ament_index/resource_index/packages/ouster_sensor_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_index/share/ament_index/resource_index/packages/ouster_sensor_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
 
-# install(FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_core/ouster_sensor_msgsConfig.cmake" "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_core/ouster_sensor_msgsConfig-version.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_core/ouster_sensor_msgsConfig.cmake" "/home/student/Desktop/workspace/build/ouster_sensor_msgs/ament_cmake_core/ouster_sensor_msgsConfig-version.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_core/ouster_sensor_msgsConfig.cmake" "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_core/ouster_sensor_msgsConfig-version.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_core/ouster_sensor_msgsConfig.cmake" "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/ament_cmake_core/ouster_sensor_msgsConfig-version.cmake" "DESTINATION" "share/ouster_sensor_msgs/cmake")
 
-# install(FILES "/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs/package.xml" "DESTINATION" "share/ouster_sensor_msgs")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs/package.xml" "DESTINATION" "share/ouster_sensor_msgs")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs/package.xml" "DESTINATION" "share/ouster_sensor_msgs")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs/package.xml" "DESTINATION" "share/ouster_sensor_msgs")

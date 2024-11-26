@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces
+CMAKE_SOURCE_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/workspace/build/zed_interfaces
+CMAKE_BINARY_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces
 
 # Utility rule file for zed_interfaces_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/zed_interfaces_uninstall.dir/compiler_depend.make
 include CMakeFiles/zed_interfaces_uninstall.dir/progress.make
 
 CMakeFiles/zed_interfaces_uninstall:
-	/usr/bin/cmake -P /home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 zed_interfaces_uninstall: CMakeFiles/zed_interfaces_uninstall
 zed_interfaces_uninstall: CMakeFiles/zed_interfaces_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/zed_interfaces_uninstall.dir/clean:
 .PHONY : CMakeFiles/zed_interfaces_uninstall.dir/clean
 
 CMakeFiles/zed_interfaces_uninstall.dir/depend:
-	cd /home/student/Desktop/workspace/build/zed_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces /home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces /home/student/Desktop/workspace/build/zed_interfaces /home/student/Desktop/workspace/build/zed_interfaces /home/student/Desktop/workspace/build/zed_interfaces/CMakeFiles/zed_interfaces_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/zed_interfaces_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/zed_interfaces_uninstall.dir/depend
 

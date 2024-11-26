@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs
+CMAKE_SOURCE_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/workspace/build/ouster_sensor_msgs
+CMAKE_BINARY_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs
 
 # Utility rule file for ouster_sensor_msgs__cpp.
 
@@ -134,8 +134,8 @@ rosidl_generator_cpp/ouster_sensor_msgs/msg/packet_msg.hpp: /opt/ros/humble/shar
 rosidl_generator_cpp/ouster_sensor_msgs/msg/packet_msg.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_cpp/ouster_sensor_msgs/msg/packet_msg.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/ouster_sensor_msgs/msg/packet_msg.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Desktop/workspace/build/ouster_sensor_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/student/Desktop/workspace/build/ouster_sensor_msgs/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/ouster_sensor_msgs/msg/detail/packet_msg__builder.hpp: rosidl_generator_cpp/ouster_sensor_msgs/msg/packet_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ouster_sensor_msgs/msg/detail/packet_msg__builder.hpp
@@ -211,6 +211,6 @@ CMakeFiles/ouster_sensor_msgs__cpp.dir/clean:
 .PHONY : CMakeFiles/ouster_sensor_msgs__cpp.dir/clean
 
 CMakeFiles/ouster_sensor_msgs__cpp.dir/depend:
-	cd /home/student/Desktop/workspace/build/ouster_sensor_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs /home/student/Desktop/workspace/src/ouster-ros/ouster-sensor-msgs /home/student/Desktop/workspace/build/ouster_sensor_msgs /home/student/Desktop/workspace/build/ouster_sensor_msgs /home/student/Desktop/workspace/build/ouster_sensor_msgs/CMakeFiles/ouster_sensor_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-sensor-msgs /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_sensor_msgs/CMakeFiles/ouster_sensor_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ouster_sensor_msgs__cpp.dir/depend
 

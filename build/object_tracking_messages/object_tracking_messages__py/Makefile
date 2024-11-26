@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/workspace/src/object_tracking_messages
+CMAKE_SOURCE_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/src/object_tracking_messages
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/workspace/build/object_tracking_messages
+CMAKE_BINARY_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,8 +77,8 @@ test/fast: test
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/student/Desktop/workspace/build/object_tracking_messages && $(CMAKE_COMMAND) -E cmake_progress_start /home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles /home/student/Desktop/workspace/build/object_tracking_messages/object_tracking_messages__py//CMakeFiles/progress.marks
-	cd /home/student/Desktop/workspace/build/object_tracking_messages && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 object_tracking_messages__py/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Desktop/workspace/build/object_tracking_messages/CMakeFiles 0
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages && $(CMAKE_COMMAND) -E cmake_progress_start /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages/CMakeFiles /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages/object_tracking_messages__py//CMakeFiles/progress.marks
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 object_tracking_messages__py/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/student/Desktop/workspace/build/object_tracking_messages && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 object_tracking_messages__py/clean
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 object_tracking_messages__py/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/student/Desktop/workspace/build/object_tracking_messages && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 object_tracking_messages__py/preinstall
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 object_tracking_messages__py/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/student/Desktop/workspace/build/object_tracking_messages && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 object_tracking_messages__py/preinstall
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 object_tracking_messages__py/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/student/Desktop/workspace/build/object_tracking_messages && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 object_tracking_messages__py/CMakeFiles/object_tracking_messages__py.dir/rule:
-	cd /home/student/Desktop/workspace/build/object_tracking_messages && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 object_tracking_messages__py/CMakeFiles/object_tracking_messages__py.dir/rule
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 object_tracking_messages__py/CMakeFiles/object_tracking_messages__py.dir/rule
 .PHONY : object_tracking_messages__py/CMakeFiles/object_tracking_messages__py.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ object_tracking_messages__py: object_tracking_messages__py/CMakeFiles/object_tra
 
 # fast build rule for target.
 object_tracking_messages__py/fast:
-	cd /home/student/Desktop/workspace/build/object_tracking_messages && $(MAKE) $(MAKESILENT) -f object_tracking_messages__py/CMakeFiles/object_tracking_messages__py.dir/build.make object_tracking_messages__py/CMakeFiles/object_tracking_messages__py.dir/build
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages && $(MAKE) $(MAKESILENT) -f object_tracking_messages__py/CMakeFiles/object_tracking_messages__py.dir/build.make object_tracking_messages__py/CMakeFiles/object_tracking_messages__py.dir/build
 .PHONY : object_tracking_messages__py/fast
 
 # Help Target
@@ -210,6 +210,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/student/Desktop/workspace/build/object_tracking_messages && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/object_tracking_messages && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

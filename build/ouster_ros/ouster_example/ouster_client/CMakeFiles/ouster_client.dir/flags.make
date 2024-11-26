@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DEIGEN_MPL2_ONLY -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB
 
-CXX_INCLUDES = -I/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/ouster-sdk/ouster_client/include -I/home/student/Desktop/workspace/build/ouster_ros/ouster_example/generated -isystem /home/student/Desktop/workspace/src/ouster-ros/ouster-ros/ouster-sdk/ouster_client/include/optional-lite -isystem /usr/include/eigen3 -isystem /usr/include/jsoncpp
+CXX_INCLUDES = -I/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros/ouster-sdk/ouster_client/include -I/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros/ouster_example/generated -isystem /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros/ouster-sdk/ouster_client/include/optional-lite -isystem /usr/include/eigen3 -isystem /usr/include/jsoncpp
 
 CXX_FLAGS = -O3 -DNDEBUG -fPIC -Wall -Wextra -std=gnu++17
 

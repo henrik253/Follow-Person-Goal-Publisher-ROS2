@@ -1,1 +1,1 @@
-/home/student/Desktop/workspace/src/ouster-ros/ouster-ros/launch/driver.launch.py
+/home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros/launch/driver.launch.py

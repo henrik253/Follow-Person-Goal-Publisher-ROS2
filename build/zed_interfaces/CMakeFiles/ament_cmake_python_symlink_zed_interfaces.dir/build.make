@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces
+CMAKE_SOURCE_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/workspace/build/zed_interfaces
+CMAKE_BINARY_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces
 
 # Utility rule file for ament_cmake_python_symlink_zed_interfaces.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_symlink_zed_interfaces.dir/compiler_depend
 include CMakeFiles/ament_cmake_python_symlink_zed_interfaces.dir/progress.make
 
 CMakeFiles/ament_cmake_python_symlink_zed_interfaces:
-	/usr/bin/cmake -E create_symlink /home/student/Desktop/workspace/build/zed_interfaces/rosidl_generator_py/zed_interfaces /home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_python/zed_interfaces/zed_interfaces
+	/usr/bin/cmake -E create_symlink /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_generator_py/zed_interfaces /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_python/zed_interfaces/zed_interfaces
 
 ament_cmake_python_symlink_zed_interfaces: CMakeFiles/ament_cmake_python_symlink_zed_interfaces
 ament_cmake_python_symlink_zed_interfaces: CMakeFiles/ament_cmake_python_symlink_zed_interfaces.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_symlink_zed_interfaces.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_symlink_zed_interfaces.dir/clean
 
 CMakeFiles/ament_cmake_python_symlink_zed_interfaces.dir/depend:
-	cd /home/student/Desktop/workspace/build/zed_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces /home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces /home/student/Desktop/workspace/build/zed_interfaces /home/student/Desktop/workspace/build/zed_interfaces /home/student/Desktop/workspace/build/zed_interfaces/CMakeFiles/ament_cmake_python_symlink_zed_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/ament_cmake_python_symlink_zed_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_symlink_zed_interfaces.dir/depend
 

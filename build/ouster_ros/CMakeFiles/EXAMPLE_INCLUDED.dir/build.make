@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/workspace/src/ouster-ros/ouster-ros
+CMAKE_SOURCE_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/workspace/build/ouster_ros
+CMAKE_BINARY_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros
 
 # Utility rule file for EXAMPLE_INCLUDED.
 
@@ -78,6 +78,6 @@ CMakeFiles/EXAMPLE_INCLUDED.dir/clean:
 .PHONY : CMakeFiles/EXAMPLE_INCLUDED.dir/clean
 
 CMakeFiles/EXAMPLE_INCLUDED.dir/depend:
-	cd /home/student/Desktop/workspace/build/ouster_ros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/workspace/src/ouster-ros/ouster-ros /home/student/Desktop/workspace/src/ouster-ros/ouster-ros /home/student/Desktop/workspace/build/ouster_ros /home/student/Desktop/workspace/build/ouster_ros /home/student/Desktop/workspace/build/ouster_ros/CMakeFiles/EXAMPLE_INCLUDED.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros /home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros/CMakeFiles/EXAMPLE_INCLUDED.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/EXAMPLE_INCLUDED.dir/depend
 

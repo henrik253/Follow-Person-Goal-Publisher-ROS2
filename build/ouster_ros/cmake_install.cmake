@@ -1,8 +1,8 @@
-# Install script for directory: /home/student/Desktop/workspace/src/ouster-ros/ouster-ros
+# Install script for directory: /home/student/Desktop/go1_follow_person_ws_henrik/src/ouster-ros/ouster-ros
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/student/Desktop/workspace/install/ouster_ros")
+  set(CMAKE_INSTALL_PREFIX "/home/student/Desktop/go1_follow_person_ws_henrik/install/ouster_ros")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,12 +43,12 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/student/Desktop/workspace/build/ouster_ros/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/student/Desktop/workspace/build/ouster_ros/gtest/cmake_install.cmake")
+  include("/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros/gtest/cmake_install.cmake")
 
 endif()
 
@@ -60,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/student/Desktop/workspace/build/ouster_ros/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/student/Desktop/go1_follow_person_ws_henrik/build/ouster_ros/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/student/Desktop/workspace/install/zed_interfaces/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/student/Desktop/workspace/install/zed_interfaces/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/student/Desktop/workspace/install/zed_interfaces/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/student/Desktop/workspace/install/zed_interfaces/${destination}")
+      set(destination "/home/student/Desktop/go1_follow_person_ws_henrik/install/zed_interfaces/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -310,248 +310,248 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/zed_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/zed_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/zed_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/zed_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
 
-# install(DIRECTORY "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_generator_c/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" DIRECTORY "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_generator_c/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN" "*.h")
+# install(DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_generator_c/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_generator_c/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN" "*.h")
 
 # install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/zed_interfaces/environment")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/zed_interfaces/environment")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/zed_interfaces/environment")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/zed_interfaces/environment")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/zed_interfaces/environment")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/zed_interfaces/environment")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/zed_interfaces/environment")
 
-# install(DIRECTORY "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_typesupport_fastrtps_c/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" DIRECTORY "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_typesupport_fastrtps_c/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_typesupport_fastrtps_c/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_typesupport_fastrtps_c/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_generator_cpp/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" DIRECTORY "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_generator_cpp/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN" "*.hpp")
+# install(DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_generator_cpp/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_generator_cpp/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN" "*.hpp")
 
-# install(DIRECTORY "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_typesupport_fastrtps_cpp/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" DIRECTORY "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_typesupport_fastrtps_cpp/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_typesupport_fastrtps_cpp/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_typesupport_fastrtps_cpp/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_typesupport_introspection_c/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" DIRECTORY "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_typesupport_introspection_c/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN" "*.h")
+# install(DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_typesupport_introspection_c/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_typesupport_introspection_c/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN" "*.h")
 
-# install(DIRECTORY "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_typesupport_introspection_cpp/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" DIRECTORY "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_typesupport_introspection_cpp/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN" "*.hpp")
+# install(DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_typesupport_introspection_cpp/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_typesupport_introspection_cpp/zed_interfaces/" "DESTINATION" "include/zed_interfaces/zed_interfaces" "PATTERN" "*.hpp")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/zed_interfaces/environment")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/zed_interfaces/environment")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/zed_interfaces/environment")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/zed_interfaces/environment")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/zed_interfaces/environment")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/zed_interfaces/environment")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/zed_interfaces/environment")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/zed_interfaces/environment")
 
-# install(DIRECTORY "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_python/zed_interfaces/zed_interfaces.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/zed_interfaces-4.1.0-py3.10.egg-info")
-ament_cmake_symlink_install_directory("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" DIRECTORY "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_python/zed_interfaces/zed_interfaces.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/zed_interfaces-4.1.0-py3.10.egg-info")
+# install(DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_python/zed_interfaces/zed_interfaces.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/zed_interfaces-4.1.0-py3.10.egg-info")
+ament_cmake_symlink_install_directory("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_python/zed_interfaces/zed_interfaces.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/zed_interfaces-4.1.0-py3.10.egg-info")
 
-# install(DIRECTORY "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_generator_py/zed_interfaces/" "DESTINATION" "local/lib/python3.10/dist-packages/zed_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
-ament_cmake_symlink_install_directory("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" DIRECTORY "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_generator_py/zed_interfaces/" "DESTINATION" "local/lib/python3.10/dist-packages/zed_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+# install(DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_generator_py/zed_interfaces/" "DESTINATION" "local/lib/python3.10/dist-packages/zed_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" DIRECTORY "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_generator_py/zed_interfaces/" "DESTINATION" "local/lib/python3.10/dist-packages/zed_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
 # install("TARGETS" "zed_interfaces__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/zed_interfaces")
-include("/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "zed_interfaces__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/zed_interfaces")
-include("/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "zed_interfaces__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/zed_interfaces")
-include("/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Object.idl" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Object.idl" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Object.idl" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Object.idl" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/ObjectsStamped.idl" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/ObjectsStamped.idl" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/ObjectsStamped.idl" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/ObjectsStamped.idl" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Keypoint2Di.idl" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Keypoint2Di.idl" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Keypoint2Di.idl" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Keypoint2Di.idl" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Keypoint2Df.idl" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Keypoint2Df.idl" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Keypoint2Df.idl" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Keypoint2Df.idl" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Keypoint3D.idl" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Keypoint3D.idl" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Keypoint3D.idl" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Keypoint3D.idl" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/BoundingBox2Di.idl" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/BoundingBox2Di.idl" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/BoundingBox2Di.idl" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/BoundingBox2Di.idl" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/BoundingBox2Df.idl" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/BoundingBox2Df.idl" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/BoundingBox2Df.idl" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/BoundingBox2Df.idl" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/BoundingBox3D.idl" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/BoundingBox3D.idl" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/BoundingBox3D.idl" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/BoundingBox3D.idl" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Skeleton2D.idl" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Skeleton2D.idl" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Skeleton2D.idl" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Skeleton2D.idl" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Skeleton3D.idl" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Skeleton3D.idl" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Skeleton3D.idl" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Skeleton3D.idl" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/DepthInfoStamped.idl" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/DepthInfoStamped.idl" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/DepthInfoStamped.idl" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/DepthInfoStamped.idl" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/PlaneStamped.idl" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/PlaneStamped.idl" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/PlaneStamped.idl" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/PlaneStamped.idl" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/PosTrackStatus.idl" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/PosTrackStatus.idl" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/PosTrackStatus.idl" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/PosTrackStatus.idl" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/GnssFusionStatus.idl" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/GnssFusionStatus.idl" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/GnssFusionStatus.idl" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/GnssFusionStatus.idl" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Heartbeat.idl" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Heartbeat.idl" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Heartbeat.idl" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/Heartbeat.idl" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/MagHeadingStatus.idl" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/MagHeadingStatus.idl" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/MagHeadingStatus.idl" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/msg/MagHeadingStatus.idl" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/srv/SetPose.idl" "DESTINATION" "share/zed_interfaces/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/srv/SetPose.idl" "DESTINATION" "share/zed_interfaces/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/srv/SetPose.idl" "DESTINATION" "share/zed_interfaces/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/srv/SetPose.idl" "DESTINATION" "share/zed_interfaces/srv")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/srv/StartSvoRec.idl" "DESTINATION" "share/zed_interfaces/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/srv/StartSvoRec.idl" "DESTINATION" "share/zed_interfaces/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/srv/StartSvoRec.idl" "DESTINATION" "share/zed_interfaces/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/srv/StartSvoRec.idl" "DESTINATION" "share/zed_interfaces/srv")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/srv/SetROI.idl" "DESTINATION" "share/zed_interfaces/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_adapter/zed_interfaces/srv/SetROI.idl" "DESTINATION" "share/zed_interfaces/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/srv/SetROI.idl" "DESTINATION" "share/zed_interfaces/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_adapter/zed_interfaces/srv/SetROI.idl" "DESTINATION" "share/zed_interfaces/srv")
 
-# install(FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Object.msg" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Object.msg" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Object.msg" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Object.msg" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/ObjectsStamped.msg" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/ObjectsStamped.msg" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/ObjectsStamped.msg" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/ObjectsStamped.msg" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Keypoint2Di.msg" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Keypoint2Di.msg" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Keypoint2Di.msg" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Keypoint2Di.msg" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Keypoint2Df.msg" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Keypoint2Df.msg" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Keypoint2Df.msg" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Keypoint2Df.msg" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Keypoint3D.msg" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Keypoint3D.msg" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Keypoint3D.msg" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Keypoint3D.msg" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox2Di.msg" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox2Di.msg" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox2Di.msg" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox2Di.msg" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox2Df.msg" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox2Df.msg" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox2Df.msg" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox2Df.msg" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox3D.msg" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox3D.msg" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox3D.msg" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox3D.msg" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Skeleton2D.msg" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Skeleton2D.msg" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Skeleton2D.msg" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Skeleton2D.msg" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Skeleton3D.msg" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Skeleton3D.msg" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Skeleton3D.msg" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Skeleton3D.msg" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/DepthInfoStamped.msg" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/DepthInfoStamped.msg" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/DepthInfoStamped.msg" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/DepthInfoStamped.msg" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/PlaneStamped.msg" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/PlaneStamped.msg" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/PlaneStamped.msg" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/PlaneStamped.msg" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/PosTrackStatus.msg" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/PosTrackStatus.msg" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/PosTrackStatus.msg" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/PosTrackStatus.msg" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/GnssFusionStatus.msg" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/GnssFusionStatus.msg" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/GnssFusionStatus.msg" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/GnssFusionStatus.msg" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Heartbeat.msg" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Heartbeat.msg" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Heartbeat.msg" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Heartbeat.msg" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/MagHeadingStatus.msg" "DESTINATION" "share/zed_interfaces/msg")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/MagHeadingStatus.msg" "DESTINATION" "share/zed_interfaces/msg")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/MagHeadingStatus.msg" "DESTINATION" "share/zed_interfaces/msg")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/MagHeadingStatus.msg" "DESTINATION" "share/zed_interfaces/msg")
 
-# install(FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/srv/SetPose.srv" "DESTINATION" "share/zed_interfaces/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/srv/SetPose.srv" "DESTINATION" "share/zed_interfaces/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/srv/SetPose.srv" "DESTINATION" "share/zed_interfaces/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/srv/SetPose.srv" "DESTINATION" "share/zed_interfaces/srv")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_cmake/srv/SetPose_Request.msg" "DESTINATION" "share/zed_interfaces/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_cmake/srv/SetPose_Request.msg" "DESTINATION" "share/zed_interfaces/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_cmake/srv/SetPose_Request.msg" "DESTINATION" "share/zed_interfaces/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_cmake/srv/SetPose_Request.msg" "DESTINATION" "share/zed_interfaces/srv")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_cmake/srv/SetPose_Response.msg" "DESTINATION" "share/zed_interfaces/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_cmake/srv/SetPose_Response.msg" "DESTINATION" "share/zed_interfaces/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_cmake/srv/SetPose_Response.msg" "DESTINATION" "share/zed_interfaces/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_cmake/srv/SetPose_Response.msg" "DESTINATION" "share/zed_interfaces/srv")
 
-# install(FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/srv/StartSvoRec.srv" "DESTINATION" "share/zed_interfaces/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/srv/StartSvoRec.srv" "DESTINATION" "share/zed_interfaces/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/srv/StartSvoRec.srv" "DESTINATION" "share/zed_interfaces/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/srv/StartSvoRec.srv" "DESTINATION" "share/zed_interfaces/srv")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_cmake/srv/StartSvoRec_Request.msg" "DESTINATION" "share/zed_interfaces/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_cmake/srv/StartSvoRec_Request.msg" "DESTINATION" "share/zed_interfaces/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_cmake/srv/StartSvoRec_Request.msg" "DESTINATION" "share/zed_interfaces/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_cmake/srv/StartSvoRec_Request.msg" "DESTINATION" "share/zed_interfaces/srv")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_cmake/srv/StartSvoRec_Response.msg" "DESTINATION" "share/zed_interfaces/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_cmake/srv/StartSvoRec_Response.msg" "DESTINATION" "share/zed_interfaces/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_cmake/srv/StartSvoRec_Response.msg" "DESTINATION" "share/zed_interfaces/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_cmake/srv/StartSvoRec_Response.msg" "DESTINATION" "share/zed_interfaces/srv")
 
-# install(FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/srv/SetROI.srv" "DESTINATION" "share/zed_interfaces/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/srv/SetROI.srv" "DESTINATION" "share/zed_interfaces/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/srv/SetROI.srv" "DESTINATION" "share/zed_interfaces/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/srv/SetROI.srv" "DESTINATION" "share/zed_interfaces/srv")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_cmake/srv/SetROI_Request.msg" "DESTINATION" "share/zed_interfaces/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_cmake/srv/SetROI_Request.msg" "DESTINATION" "share/zed_interfaces/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_cmake/srv/SetROI_Request.msg" "DESTINATION" "share/zed_interfaces/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_cmake/srv/SetROI_Request.msg" "DESTINATION" "share/zed_interfaces/srv")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_cmake/srv/SetROI_Response.msg" "DESTINATION" "share/zed_interfaces/srv")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_cmake/srv/SetROI_Response.msg" "DESTINATION" "share/zed_interfaces/srv")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_cmake/srv/SetROI_Response.msg" "DESTINATION" "share/zed_interfaces/srv")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_cmake/srv/SetROI_Response.msg" "DESTINATION" "share/zed_interfaces/srv")
 
 # install(DIRECTORY "meshes" "DESTINATION" "share/zed_interfaces")
-ament_cmake_symlink_install_directory("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" DIRECTORY "meshes" "DESTINATION" "share/zed_interfaces")
+ament_cmake_symlink_install_directory("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" DIRECTORY "meshes" "DESTINATION" "share/zed_interfaces")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/zed_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/zed_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/zed_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/zed_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/zed_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/zed_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/zed_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/zed_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/zed_interfaces/environment")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/zed_interfaces/environment")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/zed_interfaces/environment")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/zed_interfaces/environment")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/zed_interfaces/environment")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/zed_interfaces/environment")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/zed_interfaces/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/zed_interfaces/environment")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/zed_interfaces/environment")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/zed_interfaces/environment")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/zed_interfaces/environment")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/zed_interfaces/environment")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/zed_interfaces/environment")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/zed_interfaces/environment")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/zed_interfaces")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/zed_interfaces")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/zed_interfaces")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/zed_interfaces")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/zed_interfaces")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/zed_interfaces")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/zed_interfaces")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/zed_interfaces")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/zed_interfaces")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/zed_interfaces")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/zed_interfaces")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/zed_interfaces")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/zed_interfaces")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/zed_interfaces")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/zed_interfaces")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/zed_interfaces")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/zed_interfaces")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/zed_interfaces")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/zed_interfaces")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/zed_interfaces")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/zed_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/zed_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/zed_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/zed_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/zed_interfaces/cmake")
 
-# install(FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_core/zed_interfacesConfig.cmake" "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_core/zed_interfacesConfig-version.cmake" "DESTINATION" "share/zed_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_core/zed_interfacesConfig.cmake" "/home/student/Desktop/workspace/build/zed_interfaces/ament_cmake_core/zed_interfacesConfig-version.cmake" "DESTINATION" "share/zed_interfaces/cmake")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_core/zed_interfacesConfig.cmake" "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_core/zed_interfacesConfig-version.cmake" "DESTINATION" "share/zed_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_core/zed_interfacesConfig.cmake" "/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/ament_cmake_core/zed_interfacesConfig-version.cmake" "DESTINATION" "share/zed_interfaces/cmake")
 
-# install(FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/package.xml" "DESTINATION" "share/zed_interfaces")
-ament_cmake_symlink_install_files("/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces/package.xml" "DESTINATION" "share/zed_interfaces")
+# install(FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/package.xml" "DESTINATION" "share/zed_interfaces")
+ament_cmake_symlink_install_files("/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces" FILES "/home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces/package.xml" "DESTINATION" "share/zed_interfaces")

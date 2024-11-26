@@ -1,1 +1,1 @@
-/home/student/Desktop/workspace/build/zed_interfaces/rosidl_generator_c/zed_interfaces/msg/detail/mag_heading_status__functions.h
+/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_generator_c/zed_interfaces/msg/detail/mag_heading_status__functions.h

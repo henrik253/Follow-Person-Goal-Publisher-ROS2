@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces
+CMAKE_SOURCE_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/workspace/build/zed_interfaces
+CMAKE_BINARY_DIR = /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces
 
 # Utility rule file for all_zed_interfaces_files.
 
@@ -78,6 +78,6 @@ CMakeFiles/all_zed_interfaces_files.dir/clean:
 .PHONY : CMakeFiles/all_zed_interfaces_files.dir/clean
 
 CMakeFiles/all_zed_interfaces_files.dir/depend:
-	cd /home/student/Desktop/workspace/build/zed_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces /home/student/Desktop/workspace/src/zed-ros2-wrapper/zed-ros2-interfaces /home/student/Desktop/workspace/build/zed_interfaces /home/student/Desktop/workspace/build/zed_interfaces /home/student/Desktop/workspace/build/zed_interfaces/CMakeFiles/all_zed_interfaces_files.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces /home/student/Desktop/go1_follow_person_ws_henrik/src/zed-ros2-wrapper/zed-ros2-interfaces /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces /home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/CMakeFiles/all_zed_interfaces_files.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/all_zed_interfaces_files.dir/depend
 
