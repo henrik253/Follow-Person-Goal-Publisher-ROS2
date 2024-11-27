@@ -16,8 +16,8 @@ from torch.nn.functional import cosine_similarity
 
 logging.getLogger('ultralytics').setLevel(logging.WARNING)
 
-
-min_similarity = 0.5
+# pip install torchreid!
+min_similarity = 0.65
 
 class ObjectTracker(Node): 
     def __init__(self): 
@@ -68,13 +68,15 @@ class ObjectTracker(Node):
     def preprocess_image(self,image):
         resized_image = cv2.resize(image, (128, 256))
         rgb_image = cv2.cvtColor(resized_image, cv2.COLOR_BGR2RGB)
-        cv2.imwrite('temp.jpg', rgb_image)
-        return 'temp.jpg'
+       # cv2.imwrite('temp.jpg', rgb_image)
+       # return 'temp.jpg'
+        return rgb_image  
 
     def extract_features(self,image):
         """Extract features of the person."""
-        image_path = self.preprocess_image(image)
-        features = self.extractor([image_path])[0]
+        #image_path = self.preprocess_image(image)
+        #features = self.extractor([image_path])[0]
+        features = self.extractor(self.preprocess_image(image))[0]
         return features
 
     def image_callback(self, msg):
@@ -195,3 +197,33 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+
+# REID: 
+# Erstelle Map für aktive ID's (Personen) Custom ID -> Feature
+# Erstelle Map für verschwundene ID's (Personen) Custom ID -> Feature
+# Erstelle Map für YOLO-IDs zu Custom IDs
+# Zähler für neue Custom IDs
+
+# Definiere Konstante min_similarity
+
+# Berechne Tracking für momentanes Image mit YOLO
+
+# Für jedes Objekt (Bounding Box und ID) in den Ergebnissen:
+    # Wenn das erkannte Objekt eine Person ist, dann weiter, anonsten überspringe
+
+    # Schneide den Bereich der Person aus und extrahiere Merkmale
+
+    # Wenn die YOLO-ID bereits aktiv ist (also yolo_id in yolo_to_custom):
+        # Nutze die existierende Custom ID
+    # Wenn die YOLO-ID nicht enthalten ist (bedeutet: Neue Person erkannt!):
+        # Berechne die Ähnlichkeit zu allen verschwundenen Personen
+        # Bestimme die höchste Ähnlichkeit
+        # Ist die höchste Ähnlichkeit über dem Schwellwert min_similarity?
+            # Ja: Weise der Person ihre alte Custom ID zu
+            # Nein: Vergib der Person eine neue Custom ID
+
+    # Mappe die YOLO-ID auf die Custom ID
+    # Aktualisiere aktive Personen
+
+# Aktualisiere verschwundene Personen -> alle bisher getracketen IDs ohne aktiven IDs
+# Aktualisiere Mapping von YOLO-IDs auf Custom IDs (nur für aktive IDs)

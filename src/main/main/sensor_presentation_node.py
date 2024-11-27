@@ -9,9 +9,6 @@ import numpy as np
 from main.utils.person_pose_classifier import classify_pose
 from enum import Enum 
 
-
-
-
 logging.getLogger('ultralytics').setLevel(logging.INFO)
 
 class State(Enum): 
@@ -148,7 +145,7 @@ class VisualizationNode(Node):
                 #text_down = f"ID: {detected['id']}, {real_coords_str}"
                 self.last_conf = detected['confidence'] if detected['confidence'] > 0.0 else self.last_conf
                 
-                text_down = f"ID: {detected['id']}, SIM: {self.last_conf}"
+                text_down = f"ID: {detected['id']}, SIM: {self.last_conf:.2f}"
                 #cv2.putText(self.cv_image, text_up, (x1, y1 - 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
                 cv2.putText(self.cv_image, text_down + " : " + text_up, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
 
@@ -186,9 +183,6 @@ class VisualizationNode(Node):
         # Blend the rectangle (overlay) with the original image (cv_image)
         alpha = 0.5  # Transparency factor
         cv2.addWeighted(overlay, alpha, self.cv_image, 1 - alpha, 0, self.cv_image)
-
-        # Draw the text on top of the rectangle
-        # First line (State text)
         cv2.putText(self.cv_image, text_state, (box_padding, y_offset + h1 + box_padding), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
         # Second line (Target text) - Place below the first line with enough space
         cv2.putText(self.cv_image, text_target_follow_person, (box_padding, y_offset + h1 + h2 + box_padding + 10), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
