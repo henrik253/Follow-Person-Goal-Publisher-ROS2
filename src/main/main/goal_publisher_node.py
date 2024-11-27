@@ -9,9 +9,9 @@ import main.utils.person_pose as Pose
 from main.utils.person_pose_classifier import classify_pose
 from visualization_msgs.msg import Marker
 from enum import Enum 
-#from main.utils.follow_person_state import FollowPersonState
+import logging
 
-
+logging.getLogger().setLevel(logging.INFO)
 
 PUBLISH_GOAL_RATE = 0.5 # in seconds
 
@@ -38,7 +38,8 @@ class GoalPublisher(Node):
             self.person_positions_callback,
             10
         )
-      
+        
+
         self.timer = self.create_timer(PUBLISH_GOAL_RATE, self.publish_goal)  # Publish a goal to configured rate
 
         # TF2 setup

@@ -1,19 +1,19 @@
 Determining if the function sgemm_ exists failed with the following output:
 Change Dir: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_12de5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_12de5.dir/build.make CMakeFiles/cmTC_12de5.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_dd53b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dd53b.dir/build.make CMakeFiles/cmTC_dd53b.dir/build
 gmake[1]: Entering directory '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_12de5.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_12de5.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
-Linking C executable cmTC_12de5
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12de5.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_12de5.dir/CheckFunctionExists.c.o -o cmTC_12de5 
-/usr/bin/ld: CMakeFiles/cmTC_12de5.dir/CheckFunctionExists.c.o: in function `main':
+Building C object CMakeFiles/cmTC_dd53b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_dd53b.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_dd53b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd53b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_dd53b.dir/CheckFunctionExists.c.o -o cmTC_dd53b 
+/usr/bin/ld: CMakeFiles/cmTC_dd53b.dir/CheckFunctionExists.c.o: in function `main':
 CheckFunctionExists.c:(.text+0x14): undefined reference to `sgemm_'
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_12de5.dir/build.make:99: cmTC_12de5] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_dd53b.dir/build.make:99: cmTC_dd53b] Error 1
 gmake[1]: Leaving directory '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_wrapper/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_12de5/fast] Error 2
+gmake: *** [Makefile:127: cmTC_dd53b/fast] Error 2
 
 
 

@@ -1,0 +1,79 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/zed_interfaces__py/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "zed_interfaces::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "zed_interfaces__py::@ca42c76ffdd9cb26c62f",
+	"name" : "zed_interfaces__py",
+	"paths" : 
+	{
+		"build" : "zed_interfaces__py",
+		"source" : "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/zed_interfaces__py"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/zed_interfaces__py/CMakeFiles/zed_interfaces__py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/zed_interfaces__py/CMakeFiles/zed_interfaces__py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/rosidl_generator_py/zed_interfaces/_zed_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}
