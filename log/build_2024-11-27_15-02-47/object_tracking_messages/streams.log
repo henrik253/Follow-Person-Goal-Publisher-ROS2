@@ -1,0 +1,325 @@
+[0.296s] Invoking command in '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/object_tracking_messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main:/opt/ros/humble /usr/bin/cmake /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/object_tracking_messages -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages
+[0.339s] -- The C compiler identification is GNU 11.4.0
+[0.382s] -- The CXX compiler identification is GNU 11.4.0
+[0.388s] -- Detecting C compiler ABI info
+[0.442s] -- Detecting C compiler ABI info - done
+[0.448s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.448s] -- Detecting C compile features
+[0.448s] -- Detecting C compile features - done
+[0.451s] -- Detecting CXX compiler ABI info
+[0.510s] -- Detecting CXX compiler ABI info - done
+[0.516s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.516s] -- Detecting CXX compile features
+[0.516s] -- Detecting CXX compile features - done
+[0.520s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.652s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.704s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.755s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.762s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.773s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.828s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.870s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.146s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.344s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.555s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.576s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.580s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.606s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.606s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.607s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.607s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.626s] -- Found PythonExtra: .so  
+[1.668s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.700s] -- Added test 'lint_cmake' to check CMake code style
+[1.702s] -- Added test 'xmllint' to check XML markup files
+[1.706s] -- Configuring done
+[1.740s] -- Generating done
+[1.758s] -- Build files have been written to: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/object_tracking_messages
+[1.766s] Invoked command in '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/object_tracking_messages' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main:/opt/ros/humble /usr/bin/cmake /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/object_tracking_messages -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages
+[1.767s] Invoking command in '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/object_tracking_messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main:/opt/ros/humble /usr/bin/cmake --build /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/object_tracking_messages -- -j16 -l16
+[1.806s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.816s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.824s] [  2%] Built target ament_cmake_python_symlink_object_tracking_messages
+[2.144s] running egg_info
+[2.145s] creating object_tracking_messages.egg-info
+[2.145s] writing object_tracking_messages.egg-info/PKG-INFO
+[2.145s] writing dependency_links to object_tracking_messages.egg-info/dependency_links.txt
+[2.145s] writing top-level names to object_tracking_messages.egg-info/top_level.txt
+[2.146s] writing manifest file 'object_tracking_messages.egg-info/SOURCES.txt'
+[2.148s] reading manifest file 'object_tracking_messages.egg-info/SOURCES.txt'
+[2.148s] writing manifest file 'object_tracking_messages.egg-info/SOURCES.txt'
+[2.175s] [  2%] Built target ament_cmake_python_build_object_tracking_messages_egg
+[2.395s] [  2%] Built target object_tracking_messages__cpp
+[2.405s] [  4%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.406s] [  5%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.406s] [  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.419s] [  8%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/detected_persons__functions.c.o[0m
+[2.420s] [  9%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/bounding_box__functions.c.o[0m
+[2.421s] [ 11%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/detected_person__functions.c.o[0m
+[2.422s] [ 15%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/follow_person_state__functions.c.o[0m
+[2.422s] [ 15%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_key_point__functions.c.o[0m
+[2.422s] [ 15%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_generator_c.dir/rosidl_generator_c/object_tracking_messages/msg/detail/person_distance__functions.c.o[0m
+[2.482s] [ 16%] [32m[1mLinking C shared library libobject_tracking_messages__rosidl_generator_c.so[0m
+[2.517s] [ 16%] Built target object_tracking_messages__rosidl_generator_c
+[2.529s] [ 18%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.530s] [ 19%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.532s] [ 21%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.849s] [ 29%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/object_tracking_messages/msg/detected_persons__type_support.cpp.o[0m
+[2.849s] [ 29%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/object_tracking_messages/msg/detected_person__type_support.cpp.o[0m
+[2.849s] [ 29%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/object_tracking_messages/msg/follow_person_state__type_support.cpp.o[0m
+[2.849s] [ 29%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/object_tracking_messages/msg/person_key_point__type_support.cpp.o[0m
+[2.849s] [ 29%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/object_tracking_messages/msg/bounding_box__type_support.cpp.o[0m
+[2.849s] [ 29%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/object_tracking_messages/msg/person_distance__type_support.cpp.o[0m
+[3.009s] [ 30%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/bounding_box__type_support.cpp.o[0m
+[3.022s] [ 33%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/person_key_point__type_support.cpp.o[0m
+[3.022s] [ 33%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/detected_person__type_support.cpp.o[0m
+[3.027s] [ 35%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/detected_persons__type_support.cpp.o[0m
+[3.036s] [ 36%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/person_distance__type_support.cpp.o[0m
+[3.049s] [ 38%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/object_tracking_messages/msg/detail/follow_person_state__type_support.cpp.o[0m
+[3.132s] [ 39%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/object_tracking_messages/msg/detail/dds_fastrtps/bounding_box__type_support.cpp.o[0m
+[3.211s] [ 40%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/object_tracking_messages/msg/detail/dds_fastrtps/person_key_point__type_support.cpp.o[0m
+[3.215s] [ 42%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/object_tracking_messages/msg/detail/dds_fastrtps/detected_person__type_support.cpp.o[0m
+[3.241s] [ 43%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/object_tracking_messages/msg/detail/dds_fastrtps/detected_persons__type_support.cpp.o[0m
+[3.265s] [ 45%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/object_tracking_messages/msg/detail/dds_fastrtps/person_distance__type_support.cpp.o[0m
+[3.268s] [ 46%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/object_tracking_messages/msg/detail/dds_fastrtps/follow_person_state__type_support.cpp.o[0m
+[3.276s] [ 47%] [32m[1mLinking CXX shared library libobject_tracking_messages__rosidl_typesupport_cpp.so[0m
+[3.288s] [ 49%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/object_tracking_messages/msg/detail/bounding_box__type_support.c.o[0m
+[3.303s] [ 50%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/object_tracking_messages/msg/bounding_box__type_support.cpp.o[0m
+[3.352s] [ 52%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/object_tracking_messages/msg/detail/person_key_point__type_support.c.o[0m
+[3.405s] [ 52%] Built target object_tracking_messages__rosidl_typesupport_cpp
+[3.406s] [ 53%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/object_tracking_messages/msg/person_key_point__type_support.cpp.o[0m
+[3.441s] [ 54%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/object_tracking_messages/msg/detail/detected_person__type_support.c.o[0m
+[3.452s] [ 56%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/object_tracking_messages/msg/detected_person__type_support.cpp.o[0m
+[3.467s] [ 57%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/object_tracking_messages/msg/detail/detected_persons__type_support.c.o[0m
+[3.501s] [ 59%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/object_tracking_messages/msg/detected_persons__type_support.cpp.o[0m
+[3.565s] [ 61%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/object_tracking_messages/msg/person_distance__type_support.cpp.o[0m
+[3.566s] [ 61%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/object_tracking_messages/msg/detail/person_distance__type_support.c.o[0m
+[3.594s] [ 64%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/object_tracking_messages/msg/follow_person_state__type_support.cpp.o[0m
+[3.594s] [ 64%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/object_tracking_messages/msg/detail/follow_person_state__type_support.c.o[0m
+[3.645s] [ 66%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/object_tracking_messages/msg/detail/bounding_box__type_support_c.cpp.o[0m
+[3.650s] [ 67%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/object_tracking_messages/msg/detail/person_key_point__type_support_c.cpp.o[0m
+[3.659s] [ 69%] [32m[1mLinking CXX shared library libobject_tracking_messages__rosidl_typesupport_c.so[0m
+[3.662s] [ 70%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/object_tracking_messages/msg/detail/detected_person__type_support_c.cpp.o[0m
+[3.666s] [ 71%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/object_tracking_messages/msg/detail/detected_persons__type_support_c.cpp.o[0m
+[3.674s] [ 73%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/object_tracking_messages/msg/detail/person_distance__type_support_c.cpp.o[0m
+[3.685s] [ 74%] [32mBuilding CXX object CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/object_tracking_messages/msg/detail/follow_person_state__type_support_c.cpp.o[0m
+[3.704s] [ 76%] [32m[1mLinking C shared library libobject_tracking_messages__rosidl_typesupport_introspection_c.so[0m
+[3.748s] [ 76%] Built target object_tracking_messages__rosidl_typesupport_c
+[3.781s] [ 76%] Built target object_tracking_messages__rosidl_typesupport_introspection_c
+[3.810s] [ 77%] [32m[1mLinking CXX shared library libobject_tracking_messages__rosidl_typesupport_introspection_cpp.so[0m
+[3.924s] [ 78%] [32m[1mLinking CXX shared library libobject_tracking_messages__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.939s] [ 78%] Built target object_tracking_messages__rosidl_typesupport_introspection_cpp
+[4.003s] [ 78%] Built target object_tracking_messages__rosidl_typesupport_fastrtps_cpp
+[4.184s] [ 80%] [32m[1mLinking CXX shared library libobject_tracking_messages__rosidl_typesupport_fastrtps_c.so[0m
+[4.293s] [ 80%] Built target object_tracking_messages__rosidl_typesupport_fastrtps_c
+[4.321s] [ 80%] Built target object_tracking_messages
+[4.348s] [ 81%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.280s] [ 81%] Built target object_tracking_messages__py
+[5.301s] [ 83%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_key_point_s.c.o[0m
+[5.304s] [ 85%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_person_s.c.o[0m
+[5.304s] [ 85%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_bounding_box_s.c.o[0m
+[5.304s] [ 87%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_detected_persons_s.c.o[0m
+[5.305s] [ 88%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_person_distance_s.c.o[0m
+[5.305s] [ 90%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_generator_py.dir/rosidl_generator_py/object_tracking_messages/msg/_follow_person_state_s.c.o[0m
+[5.533s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/object_tracking_messages/libobject_tracking_messages__rosidl_generator_py.so[0m
+[5.577s] [ 91%] Built target object_tracking_messages__rosidl_generator_py
+[5.599s] [ 94%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_c.c.o[0m
+[5.599s] [ 94%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.602s] [ 95%] [32mBuilding C object CMakeFiles/object_tracking_messages__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.771s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/object_tracking_messages/object_tracking_messages_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.797s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/object_tracking_messages/object_tracking_messages_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.816s] [100%] [32m[1mLinking C shared library rosidl_generator_py/object_tracking_messages/object_tracking_messages_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.921s] [100%] Built target object_tracking_messages__rosidl_typesupport_fastrtps_c__pyext
+[5.929s] [100%] Built target object_tracking_messages__rosidl_typesupport_introspection_c__pyext
+[5.944s] [100%] Built target object_tracking_messages__rosidl_typesupport_c__pyext
+[5.985s] Invoked command in '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/object_tracking_messages' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main:/opt/ros/humble /usr/bin/cmake --build /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/object_tracking_messages -- -j16 -l16
+[6.000s] Invoking command in '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/object_tracking_messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main:/opt/ros/humble /usr/bin/cmake --install /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/object_tracking_messages
+[6.014s] -- Install configuration: ""
+[6.015s] -- Execute custom install script
+[6.015s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/ament_index/resource_index/rosidl_interfaces/object_tracking_messages
+[6.030s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/bounding_box.h
+[6.044s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/bounding_box__functions.h
+[6.057s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/bounding_box__struct.h
+[6.071s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/bounding_box__type_support.h
+[6.084s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_person__functions.h
+[6.099s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_person__struct.h
+[6.112s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_person__type_support.h
+[6.126s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_persons__functions.h
+[6.140s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_persons__struct.h
+[6.153s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_persons__type_support.h
+[6.167s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/follow_person_state__functions.h
+[6.180s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/follow_person_state__struct.h
+[6.196s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/follow_person_state__type_support.h
+[6.210s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_distance__functions.h
+[6.224s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_distance__struct.h
+[6.239s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_distance__type_support.h
+[6.252s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_key_point__functions.h
+[6.268s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_key_point__struct.h
+[6.282s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_key_point__type_support.h
+[6.295s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detected_person.h
+[6.317s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detected_persons.h
+[6.332s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/follow_person_state.h
+[6.347s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/person_distance.h
+[6.364s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/person_key_point.h
+[6.376s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/rosidl_generator_c__visibility_control.h
+[6.395s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/environment/library_path.sh
+[6.422s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/environment/library_path.dsv
+[6.443s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/bounding_box__rosidl_typesupport_fastrtps_c.h
+[6.459s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_person__rosidl_typesupport_fastrtps_c.h
+[6.472s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_persons__rosidl_typesupport_fastrtps_c.h
+[6.486s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/follow_person_state__rosidl_typesupport_fastrtps_c.h
+[6.502s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_distance__rosidl_typesupport_fastrtps_c.h
+[6.519s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_key_point__rosidl_typesupport_fastrtps_c.h
+[6.535s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.549s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/bounding_box__rosidl_typesupport_introspection_c.h
+[6.563s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_person__rosidl_typesupport_introspection_c.h
+[6.575s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_persons__rosidl_typesupport_introspection_c.h
+[6.589s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/follow_person_state__rosidl_typesupport_introspection_c.h
+[6.603s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_distance__rosidl_typesupport_introspection_c.h
+[6.616s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_key_point__rosidl_typesupport_introspection_c.h
+[6.632s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.648s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/bounding_box.hpp
+[6.662s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/bounding_box__builder.hpp
+[6.675s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/bounding_box__struct.hpp
+[6.690s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/bounding_box__traits.hpp
+[6.705s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_person__builder.hpp
+[6.719s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_person__struct.hpp
+[6.733s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_person__traits.hpp
+[6.754s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_persons__builder.hpp
+[6.767s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_persons__struct.hpp
+[6.781s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_persons__traits.hpp
+[6.796s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/follow_person_state__builder.hpp
+[6.811s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/follow_person_state__struct.hpp
+[6.825s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/follow_person_state__traits.hpp
+[6.841s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_distance__builder.hpp
+[6.854s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_distance__struct.hpp
+[6.868s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_distance__traits.hpp
+[6.882s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_key_point__builder.hpp
+[6.896s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_key_point__struct.hpp
+[6.911s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_key_point__traits.hpp
+[6.927s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detected_person.hpp
+[6.948s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detected_persons.hpp
+[6.996s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/follow_person_state.hpp
+[7.034s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/person_distance.hpp
+[7.052s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/person_key_point.hpp
+[7.074s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/bounding_box__rosidl_typesupport_fastrtps_cpp.hpp
+[7.107s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_person__rosidl_typesupport_fastrtps_cpp.hpp
+[7.123s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_persons__rosidl_typesupport_fastrtps_cpp.hpp
+[7.138s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/follow_person_state__rosidl_typesupport_fastrtps_cpp.hpp
+[7.159s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_distance__rosidl_typesupport_fastrtps_cpp.hpp
+[7.182s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_key_point__rosidl_typesupport_fastrtps_cpp.hpp
+[7.197s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[7.212s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/bounding_box__rosidl_typesupport_introspection_cpp.hpp
+[7.232s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_person__rosidl_typesupport_introspection_cpp.hpp
+[7.246s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/detected_persons__rosidl_typesupport_introspection_cpp.hpp
+[7.261s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/follow_person_state__rosidl_typesupport_introspection_cpp.hpp
+[7.275s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_distance__rosidl_typesupport_introspection_cpp.hpp
+[7.300s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/include/object_tracking_messages/object_tracking_messages/msg/detail/person_key_point__rosidl_typesupport_introspection_cpp.hpp
+[7.315s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/environment/pythonpath.sh
+[7.329s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/environment/pythonpath.dsv
+[7.343s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages-0.0.0-py3.10.egg-info/PKG-INFO
+[7.358s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages-0.0.0-py3.10.egg-info/SOURCES.txt
+[7.385s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages-0.0.0-py3.10.egg-info/dependency_links.txt
+[7.403s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages-0.0.0-py3.10.egg-info/top_level.txt
+[7.417s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/__init__.py
+[7.432s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_c.c
+[7.447s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_fastrtps_c.c
+[7.469s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/_object_tracking_messages_s.ep.rosidl_typesupport_introspection_c.c
+[7.481s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/libobject_tracking_messages__rosidl_generator_py.so
+[7.514s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/__init__.py
+[7.531s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_bounding_box.py
+[7.546s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_bounding_box_s.c
+[7.559s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_detected_person.py
+[7.574s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_detected_person_s.c
+[7.588s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_detected_persons.py
+[7.604s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_detected_persons_s.c
+[7.618s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_follow_person_state.py
+[7.632s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_follow_person_state_s.c
+[7.644s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_person_distance.py
+[7.658s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_person_distance_s.c
+[7.676s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_person_key_point.py
+[7.690s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_person_key_point_s.c
+[7.703s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/object_tracking_messages_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[7.729s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/object_tracking_messages_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[7.742s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/object_tracking_messages_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[7.754s] -- Up-to-date symlink: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/object_tracking_messages_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[7.754s] -- Up-to-date symlink: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/object_tracking_messages_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[7.754s] -- Up-to-date symlink: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/object_tracking_messages_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[7.755s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/msg/BoundingBox.idl
+[7.767s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/msg/PersonKeyPoint.idl
+[7.780s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/msg/DetectedPerson.idl
+[7.794s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/msg/DetectedPersons.idl
+[7.808s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/msg/PersonDistance.idl
+[7.821s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/msg/FollowPersonState.idl
+[7.836s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/msg/BoundingBox.msg
+[7.849s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/msg/PersonKeyPoint.msg
+[7.864s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/msg/DetectedPerson.msg
+[7.877s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/msg/DetectedPersons.msg
+[7.904s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/msg/PersonDistance.msg
+[7.919s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/msg/FollowPersonState.msg
+[7.943s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/ament_index/resource_index/package_run_dependencies/object_tracking_messages
+[7.971s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/ament_index/resource_index/parent_prefix_path/object_tracking_messages
+[8.012s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/environment/ament_prefix_path.sh
+[8.035s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/environment/ament_prefix_path.dsv
+[8.050s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/environment/path.sh
+[8.065s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/environment/path.dsv
+[8.086s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/local_setup.bash
+[8.103s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/local_setup.sh
+[8.122s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/local_setup.zsh
+[8.138s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/local_setup.dsv
+[8.152s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/package.dsv
+[8.169s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/ament_index/resource_index/packages/object_tracking_messages
+[8.183s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/rosidl_cmake-extras.cmake
+[8.200s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.214s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/ament_cmake_export_libraries-extras.cmake
+[8.229s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/ament_cmake_export_targets-extras.cmake
+[8.262s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.276s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.290s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.305s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/object_tracking_messagesConfig.cmake
+[8.330s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/object_tracking_messagesConfig-version.cmake
+[8.367s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/package.xml
+[8.414s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_generator_c.so
+[8.414s] -- Set runtime path of "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_generator_c.so" to ""
+[8.415s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_typesupport_fastrtps_c.so
+[8.416s] -- Set runtime path of "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_typesupport_fastrtps_c.so" to ""
+[8.416s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_typesupport_introspection_c.so
+[8.417s] -- Set runtime path of "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_typesupport_introspection_c.so" to ""
+[8.417s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_typesupport_c.so
+[8.417s] -- Set runtime path of "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_typesupport_c.so" to ""
+[8.418s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_typesupport_fastrtps_cpp.so
+[8.418s] -- Set runtime path of "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_typesupport_fastrtps_cpp.so" to ""
+[8.418s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_typesupport_introspection_cpp.so
+[8.418s] -- Set runtime path of "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_typesupport_introspection_cpp.so" to ""
+[8.418s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_typesupport_cpp.so
+[8.419s] -- Set runtime path of "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_typesupport_cpp.so" to ""
+[8.515s] Listing '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages'...
+[8.515s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/__init__.py'...
+[8.515s] Listing '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg'...
+[8.515s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/__init__.py'...
+[8.515s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_bounding_box.py'...
+[8.515s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_detected_person.py'...
+[8.515s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_detected_persons.py'...
+[8.515s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_follow_person_state.py'...
+[8.515s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_person_distance.py'...
+[8.516s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/local/lib/python3.10/dist-packages/object_tracking_messages/msg/_person_key_point.py'...
+[8.522s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_generator_py.so
+[8.524s] -- Set runtime path of "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/lib/libobject_tracking_messages__rosidl_generator_py.so" to ""
+[8.525s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/export_object_tracking_messages__rosidl_generator_cExport.cmake
+[8.526s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/export_object_tracking_messages__rosidl_generator_cExport-noconfig.cmake
+[8.526s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/export_object_tracking_messages__rosidl_typesupport_fastrtps_cExport.cmake
+[8.526s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/export_object_tracking_messages__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[8.527s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/object_tracking_messages__rosidl_typesupport_introspection_cExport.cmake
+[8.527s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/object_tracking_messages__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[8.528s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/object_tracking_messages__rosidl_typesupport_cExport.cmake
+[8.528s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/object_tracking_messages__rosidl_typesupport_cExport-noconfig.cmake
+[8.528s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/export_object_tracking_messages__rosidl_generator_cppExport.cmake
+[8.529s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/export_object_tracking_messages__rosidl_typesupport_fastrtps_cppExport.cmake
+[8.529s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/export_object_tracking_messages__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[8.530s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/object_tracking_messages__rosidl_typesupport_introspection_cppExport.cmake
+[8.530s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/object_tracking_messages__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[8.531s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/object_tracking_messages__rosidl_typesupport_cppExport.cmake
+[8.531s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/object_tracking_messages__rosidl_typesupport_cppExport-noconfig.cmake
+[8.532s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/export_object_tracking_messages__rosidl_generator_pyExport.cmake
+[8.532s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/object_tracking_messages/share/object_tracking_messages/cmake/export_object_tracking_messages__rosidl_generator_pyExport-noconfig.cmake
+[8.542s] Invoked command in '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/object_tracking_messages' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main:/opt/ros/humble /usr/bin/cmake --install /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/object_tracking_messages
