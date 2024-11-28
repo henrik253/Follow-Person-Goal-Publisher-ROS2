@@ -17,7 +17,7 @@ from torch.nn.functional import cosine_similarity
 logging.getLogger('ultralytics').setLevel(logging.WARNING)
 
 # pip install torchreid!
-min_similarity = 0.65
+min_similarity = 0.55
 
 class ObjectTracker(Node): 
     def __init__(self): 
@@ -64,6 +64,18 @@ class ObjectTracker(Node):
                                 "left_wrist", "right_wrist", "left_hip", "right_hip",
                                 "left_knee", "right_knee", "left_ankle", "right_ankle"]
     
+        self.store_image_counter = 0
+
+    def store_image(self,image,type):
+        resized_image = cv2.resize(image, (128, 256))
+        rgb_image = cv2.cvtColor(resized_image, cv2.COLOR_BGR2RGB)
+        if(type == 'mapped'):
+            cv2.imwrite(f'images/temp_{type}.jpg', rgb_image)
+        else:
+            self.store_image_counter += 1
+            cv2.imwrite(f'images/temp{self.store_image_counter}_{type}.jpg', rgb_image)
+       
+
     # RE-ID
     def preprocess_image(self,image):
         resized_image = cv2.resize(image, (128, 256))
@@ -108,7 +120,7 @@ class ObjectTracker(Node):
               
                 cropped_person = cv_image[y1:y2, x1:x2] 
                 person_feature = self.extract_features(cropped_person)
-
+                
                 yolo_id = int(track_id) if track_id is not None else None
                 
                 best_similarity = 0.0 # Debugging!
@@ -117,6 +129,7 @@ class ObjectTracker(Node):
                 # Check if YOLO ID is already mapped to a custom ID
                     if yolo_id in self.yolo_to_custom_id:
                         custom_id = self.yolo_to_custom_id[yolo_id]
+                        self.store_image(cropped_person,'mapped')
                     else:
                         # Attempt to match with disappeared persons
                         best_match_id = None
@@ -125,6 +138,8 @@ class ObjectTracker(Node):
                             similarity = cosine_similarity(
                                 disappeared_feature.unsqueeze(0), person_feature.unsqueeze(0)
                             ).item()
+                            self.store_image(cropped_person,'rematch')
+                            print(f'disappeared id: {disappeared_id}')
                             if similarity > min_similarity and similarity > best_similarity:
                                 best_match_id = disappeared_id
                                 best_similarity = similarity

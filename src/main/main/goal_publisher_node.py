@@ -186,8 +186,9 @@ class GoalPublisher(Node):
                 print(e)
                 self.last_target_position_success = False
         else:
-            self.get_logger().warn('Target person lost, transitioning to STOP_FOLLOW_PERSON')
-            self.change_state(State.STOP_FOLLOW_PERSON)
+            pass
+            #self.get_logger().warn('Target person lost, transitioning to STOP_FOLLOW_PERSON')
+          #  self.change_state(State.STOP_FOLLOW_PERSON)
 
     def stop_follow_person_state(self): # maybe wait a second 
         self.change_state(State.LOOK_FOR_PERSON_TO_FOLLOW)
