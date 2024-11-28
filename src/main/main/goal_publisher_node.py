@@ -60,7 +60,7 @@ class GoalPublisher(Node):
         # Flag if transform to map succeded 
         self.last_target_position_success = False
         # distance
-        self.distance = 1.0 # 1m min distance to person 
+        self.distance = 1.5 # 1m min distance to person 
 
     def change_state(self, new_state):
         self.get_logger().info(f'State changed from {self.current_state.name} to {new_state.name}')

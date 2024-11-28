@@ -1,0 +1,121 @@
+Henrik kommt rein
+Mat kommt rein
+Henrik verlässt 
+Mat verlässt
+Henrik kommt rein 
+mat kommt rein 
+mat geht hinter henrik und kommt links wieder raus 
+mat geht hinter henrik von links nach rechts
+henrik geht hinter mat von links nach rechts
+henrik verlässt 
+kommt wieder rein und geht vor mat rechts nach links
+und von links nach rechts (vor mat) 
+henrik kommt von rechts und überdeckt mat 
+henrik geht raus und mat auch 
+henrik kommt wieder rein und geht auch wieder raus von links nach rechts
+mat kommt von links rein 
+henrik kommt von rechts nach links
+
+
+
+Person1 & Person2 betreten sequenziell
+Person1 & Person verlassen sequenziell
+Person1 & Person betreten Sequenziell
+Person2 wird überlappt von Person1 (bewegung hinter Person1)
+Person2 geht hinter Person1 von links nach rechts
+Person1 wird überlappt durch Person2 (bewegung hinter Person2) 
+Person1 verlässt & kommt wieder rein 
+Überlappung von Person2 durch Person1
+und von links nach rechts (vor Person2)
+Person2 wird überlappt durch Person1 (Person1 nimmt großen Teil des Bildes ein)
+Person1 geht raus und Person2 auch
+Person1 kommt wieder rein und geht auch wieder raus von links nach rechts
+Person2 kommt von links rein
+Person1 geht durch Sequenz von rechts nach links
+
+Auswertung
+
+
+min_similarity=0.5
+
+	Hen & Mat betreten sequenziell:	Hen 1 mat 3 
+	Hen & Mat verlassen sequenziell:
+	Hen & Mat betreten sequenziell: Hen wieder 1, Hen geht durch Tisch und Yolo erkannt doppelt Hen hat nun id 3, Mat bekommt 2
+	Mat wird überlappt von Hen (Bewegung hinter Hen): Mat behält 2
+	Mat wird überlappt von Hen (weitere Bewegung hiter Hen): Mat behält 2
+	Hen wird überlappt durch Mat (Bewegung hinter Mat): Henrik behält 3 
+	Hen verlässt & kommt wieder rein (zweimal): Henrik behält 3 zweimal 
+	Überlappung von Mat durch Hen: Mat behält 2
+	und von links nach rechts (vor Mat): Mat behält 2
+	Mat wird überlappt durch Hen:Mat behält 2
+	Hen geht raus und Mat auch: 
+	Hen kommt wieder rein und geht auch wieder raus von links nach rechts:Hen 3 
+	Mat kommt von links rein: Mat bekommt 3
+	Hen kommt wieder: Hen 3
+
+min_similarity=0.6
+
+	Hen & Mat betreten sequenziell:	Hen 1 & Mat 2
+	Hen & Mat verlassen sequenziell: wärend verlassen Hen durch Tisch und doppelte Erkennung entsteht: Hen bekommt 1 & 3
+	Hen & Mat betreten sequenziell: Hen 3, Mat2 
+	Mat wird überlappt von Hen (Bewegung hinter Hen): Mat 2
+	Mat wird überlappt von Hen (weitere Bewegung hiter Hen): Mat2
+	Hen wird überlappt durch Mat (Bewegung hinter Mat): Henrik 3
+	Hen verlässt & kommt wieder rein (zweimal): Henrik3 und danach Henrik4
+	Überlappung von Mat durch Hen: Mat2
+	und von links nach rechts (vor Mat): Mat2
+	Mat wird überlappt durch Hen: Mat2
+	Hen geht raus und Mat auch:  wärend rausgehen Mat bekommt1 (verdeckung durch Tisch) 
+	Hen kommt wieder rein und geht auch wieder raus von links nach rechts: Henrik4
+	Mat kommt von links rein:  Mat bekommt 4
+	Hen kommt wieder: Hen 4
+	
+min_similarity=0.7
+	
+	Hen & Mat betreten sequenziell:	Hen 1 Mat 2
+	Hen & Mat verlassen sequenziell:Hen bekommt 4 ( verdeckung durch Tisch) 
+	Hen & Mat betreten sequenziell: Hen bekommt 4 vor Tisch und nach Tisch 3, Mat bekommt 6
+	Mat wird überlappt von Hen (Bewegung hinter Hen): Mat 7 
+	Mat wird überlappt von Hen (weitere Bewegung hiter Hen):Mat 7
+	Hen wird überlappt durch Mat (Bewegung hinter Mat): Hen 8
+	Hen verlässt & kommt wieder rein (zweimal): Hen 9, Hen 10
+	Überlappung von Mat durch Hen: Mat 7
+	und von links nach rechts (vor Mat): 
+	Mat wird überlappt durch Hen: Mat 7 
+	Hen geht raus und Mat auch:  
+	Hen kommt wieder rein und geht auch wieder raus von links nach rechts: Hen 10 
+	Mat kommt von links rein: Mat 13
+	Hen kommt wieder: Hen 10
+
+
+	
+	
+Schwächen: 
+	Wenn Person an Tisch vorbiegeht wird nur der Kopf erkannt: 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

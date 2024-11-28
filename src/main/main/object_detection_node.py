@@ -17,7 +17,7 @@ from torch.nn.functional import cosine_similarity
 logging.getLogger('ultralytics').setLevel(logging.WARNING)
 
 # pip install torchreid!
-min_similarity = 0.55
+min_similarity = 0.7
 
 class ObjectTracker(Node): 
     def __init__(self): 
@@ -78,7 +78,7 @@ class ObjectTracker(Node):
 
     # RE-ID
     def preprocess_image(self,image):
-        resized_image = cv2.resize(image, (128, 256))
+        resized_image = cv2.resize(image, (256, 512))
         rgb_image = cv2.cvtColor(resized_image, cv2.COLOR_BGR2RGB)
        # cv2.imwrite('temp.jpg', rgb_image)
        # return 'temp.jpg'
@@ -124,7 +124,7 @@ class ObjectTracker(Node):
                 yolo_id = int(track_id) if track_id is not None else None
                 
                 best_similarity = 0.0 # Debugging!
-                
+                print('------')
                 if yolo_id is not None:
                 # Check if YOLO ID is already mapped to a custom ID
                     if yolo_id in self.yolo_to_custom_id:
@@ -134,12 +134,14 @@ class ObjectTracker(Node):
                         # Attempt to match with disappeared persons
                         best_match_id = None
                         best_similarity = 0.0
+                       
                         for disappeared_id, disappeared_feature in self.disappeared_persons.items():
                             similarity = cosine_similarity(
                                 disappeared_feature.unsqueeze(0), person_feature.unsqueeze(0)
                             ).item()
                             self.store_image(cropped_person,'rematch')
                             print(f'disappeared id: {disappeared_id}')
+                            print(f'calculated sim: {similarity}')
                             if similarity > min_similarity and similarity > best_similarity:
                                 best_match_id = disappeared_id
                                 best_similarity = similarity
@@ -189,6 +191,7 @@ class ObjectTracker(Node):
         disappeared_ids = set(self.tracked_persons.keys()) - active_ids
         for disappeared_id in disappeared_ids:
             self.disappeared_persons[disappeared_id] = self.tracked_persons.pop(disappeared_id)
+            print(disappeared_id)
 
         # Remove old YOLO to custom ID mappings for disappeared YOLO IDs
         self.yolo_to_custom_id = {
@@ -197,6 +200,7 @@ class ObjectTracker(Node):
             if custom_id in self.tracked_persons
         }
 
+     
         detectedPersonsMsg.persons = persons
         self.detected_persons_publisher.publish(detectedPersonsMsg)
         tracked_image = self.bridge.cv2_to_imgmsg(cv_image, encoding='bgr8')
