@@ -1,0 +1,31 @@
+[0.766s] Invoking command in '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/main': PYTHONPATH=/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/main/build --no-deps symlink_data
+[1.047s] running develop
+[1.047s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.048s]   warnings.warn(
+[1.329s] running egg_info
+[1.329s] creating main.egg-info
+[1.329s] writing main.egg-info/PKG-INFO
+[1.329s] writing dependency_links to main.egg-info/dependency_links.txt
+[1.330s] writing entry points to main.egg-info/entry_points.txt
+[1.330s] writing requirements to main.egg-info/requires.txt
+[1.330s] writing top-level names to main.egg-info/top_level.txt
+[1.330s] writing manifest file 'main.egg-info/SOURCES.txt'
+[1.334s] reading manifest file 'main.egg-info/SOURCES.txt'
+[1.334s] writing manifest file 'main.egg-info/SOURCES.txt'
+[1.376s] running build_ext
+[1.376s] Creating /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main/lib/python3.10/site-packages/main.egg-link (link to .)
+[1.377s] Installing goal_publisher_node script to /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main/lib/main
+[1.378s] Installing object_detection_node script to /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main/lib/main
+[1.378s] Installing position_estimation_node script to /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main/lib/main
+[1.378s] Installing sensor_presentation_node script to /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main/lib/main
+[1.378s] 
+[1.378s] Installed /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/main
+[1.378s] running symlink_data
+[1.379s] creating /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main/share/ament_index
+[1.379s] creating /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main/share/ament_index/resource_index
+[1.379s] creating /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main/share/ament_index/resource_index/packages
+[1.379s] symbolically linking /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/main/resource/main -> /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main/share/ament_index/resource_index/packages
+[1.379s] symbolically linking /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/main/package.xml -> /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main/share/main
+[1.379s] creating /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main/share/main/launch
+[1.379s] symbolically linking /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/main/launch/main_launch.py -> /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main/share/main/launch
+[1.419s] Invoked command in '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/main' returned '0': PYTHONPATH=/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/main/build --no-deps symlink_data
