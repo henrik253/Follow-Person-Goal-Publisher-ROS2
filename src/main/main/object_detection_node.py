@@ -32,7 +32,7 @@ MAX_LIST_SIZE_FIXED_FEATURES = 30
 MIN_AVG_SIMILARITY_TRESHOLD = 0.6 # similarity between values in fixed are coming close to this value
 MIN_REMOVE_CANDIDATE_TRESHOLD = 0.9
 # REID Debugging
-SAVE_CROPPED_PERSON = True
+SAVE_CROPPED_PERSON = False
 #YOLO Parameter
 YOLO_MIN_CONF_SCORE = 0.8
 
@@ -78,6 +78,8 @@ class ObjectTracker(Node):
         self.yolo_to_custom_id = {}  # YOLO ID -> Custom ID
         self.person_id_counter = 0  # Counter for new IDs
 
+        # Improvements
+        self.similarity_cache = {} 
 
         self.body_part_names = ["nose", "left_eye", "right_eye", "left_ear", "right_ear",
                                 "left_shoulder", "right_shoulder", "left_elbow", "right_elbow",
@@ -176,8 +178,8 @@ class ObjectTracker(Node):
         for i in range(len(self.fixed_tracked_persons[custom_id])):
             similarity_sum = float(0.0) # lowest possible value
             for j in range(len(self.fixed_tracked_persons[custom_id])): 
-                if i != j:
-                    similarity_sum += cosine_similarity(self.fixed_tracked_persons[custom_id][i].unsqueeze(0),self.fixed_tracked_persons[custom_id][j].unsqueeze(0)).item()
+                if i != j:  
+                    similarity_sum += self.get_similarity(self.fixed_tracked_persons[custom_id][i],self.fixed_tracked_persons[custom_id][j])
 
             if similarity_sum >= max_summed_feature_similarity:
                 max_summed_feature_similarity = similarity_sum
@@ -190,7 +192,7 @@ class ObjectTracker(Node):
     def get_summed_similarity(self,custom_id,feature):
         similarity_sum = 0.0
         for i in range(len(self.fixed_tracked_persons[custom_id])):
-            similarity_sum += cosine_similarity(feature.unsqueeze(0),self.fixed_tracked_persons[custom_id][i].unsqueeze(0)).item()
+            similarity_sum += self.get_similarity(feature,self.fixed_tracked_persons[custom_id][i])
         return similarity_sum
         
     # it can happen that there are multiple canditates that are the same person 
@@ -222,9 +224,9 @@ class ObjectTracker(Node):
                 similarities = []
                 for feature1 in features1:
                     for feature2 in features2:
-                        sim = cosine_similarity(
-                            feature1.unsqueeze(0), feature2.unsqueeze(0)
-                        ).item()
+                        sim = self.get_similarity(
+                            feature1, feature2
+                        )
                         similarities.append(sim)
 
                 if similarities:
@@ -252,6 +254,17 @@ class ObjectTracker(Node):
             del self.disappeared_persons[inconsistent_id] 
         except KeyError as e:
             pass
+        
+    def get_similarity(self, feature1, feature2):
+        # Create a unique key for the pair
+        pair_key = (id(feature1), id(feature2))
+        if pair_key in self.similarity_cache:
+            return self.similarity_cache[pair_key]
+        
+        # Calculate similarity and cache it
+        similarity = cosine_similarity(feature1.unsqueeze(0), feature2.unsqueeze(0)).item()
+        self.similarity_cache[pair_key] = similarity
+        return similarity
 
     def image_callback(self, msg):
         cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
@@ -269,7 +282,7 @@ class ObjectTracker(Node):
         except Exception:
             track_ids, class_ids, confidences, keypoints_data = [], [], [], []
 
-        print(f'image containing: {len(trackedResults[0].boxes)} bounding boxes')
+
         try:
             for bbox, track_id, class_id, confidence, kp in zip(trackedResults[0].boxes, track_ids, class_ids, confidences, keypoints_data):
                 if(not bbox or not track_id or not confidence or not kp ):
@@ -279,10 +292,10 @@ class ObjectTracker(Node):
                     continue 
                 #print(len(kp.xy.cpu().numpy()[0]))
                 if len(kp.xy.cpu().numpy()[0])  < 5:
-                    print('skipping because to low keypoints')
+
                     continue
                 
-                
+
                 detectedPerson = DetectedPerson()
                 boundingBox = BoundingBox()
 
@@ -293,10 +306,11 @@ class ObjectTracker(Node):
                 yolo_id = int(track_id)
                 
                 best_similarity = 0.0 # Debugging!
-                print('in iterating')
+
                 # Check if YOLO ID is already mapped to a custom ID
-                if yolo_id in self.yolo_to_custom_id:
+                if yolo_id in self.yolo_to_custom_id.keys():
                     custom_id = self.yolo_to_custom_id[yolo_id]
+                    print(self.yolo_to_custom_id)
                 else:
                     self.get_logger().info('\n \n \n')
                     self.get_logger().info('Person entered the frame!')
@@ -305,22 +319,27 @@ class ObjectTracker(Node):
                     best_similarity = 0.0
                     
                    
-                    disapperead_persons = list(self.disappeared_persons.items())
-                    for disappeared_id, disappeared_features in disapperead_persons:
+                    cloned_disapperead_persons = list(self.disappeared_persons.items())
+                    print(f'------ DISAPPEARED KEYS: {self.disappeared_persons.keys()}--------')
+                    for disappeared_id, disappeared_features in cloned_disapperead_persons:
                         self.get_logger().info(f'   Comparing entered candidate with disappeared ID: {disappeared_id}')
                         self.get_logger().info(f'   available ids to take: {list(self.disappeared_persons.keys())}')
                         similarities = []
 
                         # Calculate similarities between disappeared_features and person_feature
                         for disappeared_feature in disappeared_features:
-                            sim = cosine_similarity(disappeared_feature.unsqueeze(0), person_feature.unsqueeze(0)).item()
+                            sim = self.get_similarity(disappeared_feature, person_feature)
                             torch.cuda.synchronize() 
                             similarities.append(sim)
                             self.get_logger().info(f"       Similarity with disappeared feature: {sim}")  # Debug each similarity
                         
-                        # highest_values = sorted(similarities, reverse=True)[:5] # insteaf of max we take n best values
-                        # similarity = np.mean(highest_values)
-                        similarity = max(similarities) if similarities else 0.0
+
+                        if similarities:
+                            highest_values = sorted(similarities, reverse=True)[:5] # insteaf of max we take n best values
+                            similarity = np.mean(highest_values)
+                        else: 
+                            similarity = 0.0
+                        # similarity = max(similarities) if similarities else 0.0
                         self.get_logger().info(f'       Best similarity: {similarity}')
 
                         if float(similarity) >= float(MIN_SIMILARITY_FOR_MATCHING) and float(similarity) > float(best_similarity): # float neccessary?
@@ -375,16 +394,15 @@ class ObjectTracker(Node):
         
         # Handle disappeared persons
         disappeared_ids = set(self.fixed_tracked_persons.keys()) - set(active_ids)
-        self.get_logger().info(f'current: {disappeared_ids}') 
         self.disappeared_persons = {}
         for disappeared_id in disappeared_ids:
             self.disappeared_persons[disappeared_id] = self.fixed_tracked_persons[disappeared_id] # + list(self.last_tracked_persons[disappeared_id]) # only using fixed frames
-      
+        self.get_logger().info(f'END OF FRAME, current: {self.disappeared_persons.keys()}') 
         # Remove old YOLO to custom ID mappings for disappeared YOLO IDs
         self.yolo_to_custom_id = {
             yolo_id: custom_id
             for yolo_id, custom_id in self.yolo_to_custom_id.items()
-            if custom_id in self.last_tracked_persons
+            if custom_id in self.fixed_tracked_persons
         }
         
         detectedPersonsMsg.persons = persons

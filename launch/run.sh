@@ -15,7 +15,7 @@ SCREEN_HEIGHT=$(echo $SCREEN_RESOLUTION | cut -d 'x' -f 2)
 
 # Calculate the number of terminals and their dimensions
 NUM_TERMINALS=5
-TERMINAL_WIDTH=60
+TERMINAL_WIDTH=130
 TERMINAL_HEIGHT=20
 
 # Calculate positions
