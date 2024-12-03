@@ -16,6 +16,8 @@ from collections import deque
 
 import statistics
 import os
+import shutil
+
 
 logging.getLogger('ultralytics').setLevel(logging.WARNING)
 
@@ -28,10 +30,10 @@ max_queue_size = 2
 
 max_fixed_tracked_person_size = 30
 
-min_summed_similarity_treshold = 0.8 # similarity between values in fixed are coming close to this value
+min_summed_similarity_treshold = 0.6 # similarity between values in fixed are coming close to this value
 
 #YOLO Parameter
-min_confidence_score = 0.7
+min_confidence_score = 0.85
 
 
 class ObjectTracker(Node): 
@@ -62,7 +64,7 @@ class ObjectTracker(Node):
         self.model = YOLO('yolov8n-pose.pt')
 
         # REID 
-
+        
         self.extractor = FeatureExtractor(
             model_name='osnet_x1_0',
             device='cuda' if torch.cuda.is_available() else 'cpu'
@@ -84,14 +86,14 @@ class ObjectTracker(Node):
         self.store_image_counter = 0
 
         self.image_storage_dir = "/home/student/Desktop/images"
+        if os.path.exists(self.image_storage_dir):
+            shutil.rmtree(self.image_storage_dir)
+       
         os.makedirs(self.image_storage_dir, exist_ok=True)  
-
+        
         self.cropped_person1 = None
 
     def save_cropped_person_image(self,type, custom_id, image = None):
-        """
-        Saves the cropped person image into a folder named after the custom ID.
-        """
         image = self.cropped_person1
        
         # Create a directory for the custom ID if it doesn't exist
@@ -151,6 +153,7 @@ class ObjectTracker(Node):
                 if normalized_feature_summed_similarity < normalized_summed_similarity_all_neighbours and normalized_feature_summed_similarity >= min_summed_similarity_treshold:
                     self.fixed_tracked_persons[custom_id][index] = feature
                     self.save_cropped_person_image(f'fixed_{index}',custom_id)
+                    print(f'replace avg sim {normalized_summed_similarity_all_neighbours} with compared avg sim {normalized_feature_summed_similarity}')
                     #print(f'replacing the feature {summed_similarity_all_neighbours} and in norm {normalized_summed_similarity_all_neighbours}')
                     #print(f'with the new feature of person {custom_id} detected, with in sum {feature_summed_similarity} and in norm {normalized_feature_summed_similarity}')
                 else: 
@@ -190,11 +193,10 @@ class ObjectTracker(Node):
     # id will always stay!
     
     def update_untracked_persons(self):
-        similarity_threshold = 0.05  # Threshold for considering two disappeared persons as the same
+        similarity_threshold = 0.8  # Threshold for considering two disappeared persons as the same
         ids_to_remove = set()  # Keep track of IDs to remove
 
         disappeared_ids = list(self.disappeared_persons.keys())  # Get list of disappeared IDs
-
         # Compare every pair of disappeared persons
         for i, id1 in enumerate(disappeared_ids):
             if id1 in ids_to_remove:
@@ -208,7 +210,6 @@ class ObjectTracker(Node):
 
                 features2 = self.disappeared_persons[id2]
 
-                # Calculate median similarity of two candidates
                 similarities = []
                 for feature1 in features1:
                     for feature2 in features2:
@@ -222,7 +223,7 @@ class ObjectTracker(Node):
                     print(f"Similarity between ID {id1} and ID {id2}: {max_similarity}")
 
                     # If similarity is above the threshold, consider them the same person
-                    if max_similarity > 1 - similarity_threshold:
+                    if max_similarity >= similarity_threshold:
                         # Remove the person with the higher ID
                         higher_id = max(id1, id2)
                         ids_to_remove.add(higher_id)
@@ -231,6 +232,8 @@ class ObjectTracker(Node):
         for id_to_remove in ids_to_remove:
             print(f"Removing disappeared person with ID {id_to_remove}")
             del self.disappeared_persons[id_to_remove]
+            del self.fixed_tracked_persons[id_to_remove]
+            del self.last_tracked_persons[id_to_remove]
         
 
     def image_callback(self, msg):
@@ -268,52 +271,55 @@ class ObjectTracker(Node):
                 yolo_id = int(track_id) if track_id is not None else None
                 
                 best_similarity = 0.0 # Debugging!
-                if yolo_id is not None:
-                    # Check if YOLO ID is already mapped to a custom ID
-                    if yolo_id in self.yolo_to_custom_id:
-                        custom_id = self.yolo_to_custom_id[yolo_id]
+
+                # Check if YOLO ID is already mapped to a custom ID
+                if yolo_id in self.yolo_to_custom_id:
+                    custom_id = self.yolo_to_custom_id[yolo_id]
+                else:
+                    print('Person entered the frame!')
+                    # Attempt to match with disappeared persons
+                    best_match_id = None
+                    best_similarity = 0.0
+                    
+                    self.update_untracked_persons()  # Ensure no candidate is multiple in disappeared_persons
+                    disapperead_persons = list(self.disappeared_persons.items())
+                    for disappeared_id, disappeared_features in disapperead_persons:
+                        print(f'\n Comparing entered candidate with disappeared ID: {disappeared_id}')
+                        print(f'available ids to take: {list(self.disappeared_persons.keys())}')
+                        
+                        similarities = []
+
+                        # Calculate similarities between disappeared_features and person_feature
+                        for disappeared_feature in disappeared_features:
+                            sim = cosine_similarity(disappeared_feature.unsqueeze(0), person_feature.unsqueeze(0)).item()
+                            print(f"    Similarity with disappeared feature: {sim}")  # Debug each similarity
+                            similarities.append(sim)
+                        
+                        highest_values = sorted(similarities, reverse=True)[:5] # insteaf of max we take n best values
+                        similarity = np.mean(highest_values)
+
+                        print(f'Best similarity: {similarity}')
+
+                        if float(similarity) >= float(min_similarity) and float(similarity) > float(best_similarity): # float neccessary?
+                            best_match_id = disappeared_id
+                            best_similarity = similarity
+                            custom_id = best_match_id
+                            
+
+                    if best_match_id is not None:
+                        del self.disappeared_persons[custom_id]
+                        print(f'after removing, disappeared available ids:: {self.disappeared_persons.keys()}')
+                        print(f'Match found for {best_match_id}')
+                        self.save_cropped_person_image("matching",custom_id,cropped_person)
                     else:
-                        print('Person entered the frame!')
-                        # Attempt to match with disappeared persons
-                        best_match_id = None
-                        best_similarity = 0.0
+                        # Assign a new custom ID                
+                        self.person_id_counter += 1
+                        print("---------------------------")
+                        print(f'new id {self.person_id_counter}')
+                        custom_id = self.person_id_counter
+                        self.save_cropped_person_image("new_id",custom_id,cropped_person)
                         
-                        #self.update_untracked_persons()  # Ensure no candidate is multiple in disappeared_persons
-                        disapperead_persons = list(self.disappeared_persons.items())
-                        for disappeared_id, disappeared_features in disapperead_persons:
-                            print(f'\n Comparing entered candidate with disappeared ID: {disappeared_id}')
-                            print(f'available ids to take: {list(self.disappeared_persons.keys())}')
-                            
-                            similarities = []
-
-                            # Calculate similarities between disappeared_features and person_feature
-
-                            for disappeared_feature in disappeared_features:
-                                sim = cosine_similarity(disappeared_feature.unsqueeze(0), person_feature.unsqueeze(0)).item()
-                                print(f"    Similarity with disappeared feature: {sim}")  # Debug each similarity
-                                similarities.append(sim)
-                        
-                            similarity = max(similarities) if similarities else 0.0
-                            print(f'Best similarity: {similarity}')
-
-                            if float(similarity) >= float(min_similarity) and float(similarity) > float(best_similarity): # float neccessary?
-                                best_match_id = disappeared_id
-                                best_similarity = similarity
-                                custom_id = best_match_id
-                                print(f'removing {custom_id}')
-                                del self.disappeared_persons[custom_id]
-                                print(f'removed: {self.disappeared_persons.keys()}')
-                                print(f'Match found for {best_match_id}')
-                          
-                        if best_match_id is None:
-                            # Assign a new custom ID                
-                            self.person_id_counter += 1
-                            print("---------------------------")
-                            print(f'new id {self.person_id_counter}')
-                            print("---------------------------")
-                            custom_id = self.person_id_counter
-                            
-                        self.yolo_to_custom_id[yolo_id] = custom_id
+                    self.yolo_to_custom_id[yolo_id] = custom_id
                         
                 
                 self.update_tracked_persons(custom_id, person_feature) # every detected person will be handled in these function but no untracked as the name suggests
@@ -341,11 +347,16 @@ class ObjectTracker(Node):
                 boundingBox.y_max = y2
                 detectedPerson.bbox = boundingBox
                 persons.append(detectedPerson)
+
+                # DEBUGGING
+                cv2.rectangle(cv_image, (x1, y1), (x2, y2), (0, 0, 255), 2)
+                cv2.putText(cv_image, f'ID: {custom_id} C: {confidence}', (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
+                # DEBUGGING
         except Exception as e: 
             self.get_logger().error(f"Error processing detection: {e}")
             raise e
             pass
-        
+            
         # Handle disappeared persons
         disappeared_ids = set(self.last_tracked_persons.keys()) - active_ids
         for disappeared_id in disappeared_ids:
@@ -357,11 +368,14 @@ class ObjectTracker(Node):
             for yolo_id, custom_id in self.yolo_to_custom_id.items()
             if custom_id in self.last_tracked_persons
         }
-
-        detectedPersonsMsg.persons = persons
-        self.detected_persons_publisher.publish(detectedPersonsMsg)
-        tracked_image = self.bridge.cv2_to_imgmsg(cv_image, encoding='bgr8')
-        self.image_publisher.publish(tracked_image)
+        
+        
+        cv2.imshow('Person Visualization',cv_image)
+        cv2.waitKey(1)
+        # detectedPersonsMsg.persons = persons
+        # self.detected_persons_publisher.publish(detectedPersonsMsg)
+        # tracked_image = self.bridge.cv2_to_imgmsg(cv_image, encoding='bgr8')
+        # self.image_publisher.publish(tracked_image)
 
 
 def main(args=None):
