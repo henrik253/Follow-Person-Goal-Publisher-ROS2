@@ -365,7 +365,7 @@ class ObjectTracker(Node):
                         self.save_cropped_person_image(f"new_id_{self.get_image_counter()}",custom_id,cropped_person)
                         
                     self.yolo_to_custom_id[yolo_id] = custom_id
-                    self.update_candidates()  # Ensure no candidate is multiple in disappeared_persons        
+                    self.update_candidates()  # Ensure no candidate is multiple in disappeared_persons      !!!!! BUGFIXING !!!!!! <----  
                 
                 self.update_tracked_persons(custom_id, person_feature) # every detected person will be handled in these function but no untracked as the name suggests
                 active_ids.add(custom_id)   
