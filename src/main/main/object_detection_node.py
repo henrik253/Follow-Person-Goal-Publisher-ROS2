@@ -33,9 +33,10 @@ MIN_AVG_SIMILARITY_TRESHOLD = 0.6 # similarity between values in fixed are comin
 MIN_REMOVE_CANDIDATE_TRESHOLD = 0.9
 # REID Debugging
 SAVE_CROPPED_PERSON = True
+ENABLE_CACHING = True
 #YOLO Parameter
 YOLO_MIN_CONF_SCORE = 0.8
-
+MIN_KEY_POINTS = 10 # Important for quality!!!!
 
 class ObjectTracker(Node): 
     def __init__(self): 
@@ -257,9 +258,10 @@ class ObjectTracker(Node):
         
     def get_similarity(self, feature1, feature2):
         # Create a unique key for the pair
-        pair_key = (id(feature1), id(feature2))
-        if pair_key in self.similarity_cache:
-            return self.similarity_cache[pair_key]
+        if ENABLE_CACHING:
+            pair_key = (id(feature1), id(feature2))
+            if pair_key in self.similarity_cache:
+                return self.similarity_cache[pair_key]
         
         # Calculate similarity and cache it
         similarity = cosine_similarity(feature1.unsqueeze(0), feature2.unsqueeze(0)).item()
@@ -295,7 +297,7 @@ class ObjectTracker(Node):
                 
                 valid_keypoints = [(x, y) for (x, y), c in zip(kp.xy.cpu().numpy()[0], kp.conf.cpu().numpy()[0]) if c > 0.5]  # Confidence threshold
                
-                if len(valid_keypoints)  <= 10:
+                if len(valid_keypoints)  <= MIN_KEY_POINTS:
                     continue
                 
 
