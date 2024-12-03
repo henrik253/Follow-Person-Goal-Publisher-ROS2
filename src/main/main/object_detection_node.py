@@ -28,11 +28,11 @@ format='%(message)s'  # Custom format to show only the message
 # REID Parameter
 MIN_SIMILARITY_FOR_MATCHING = 0.68
 MAX_QUEUE_SIZE_LAST_FEATURES = 2
-MAX_LIST_SIZE_FIXED_FEATURES = 30
+MAX_LIST_SIZE_FIXED_FEATURES = 100
 MIN_AVG_SIMILARITY_TRESHOLD = 0.6 # similarity between values in fixed are coming close to this value
 MIN_REMOVE_CANDIDATE_TRESHOLD = 0.9
 # REID Debugging
-SAVE_CROPPED_PERSON = False
+SAVE_CROPPED_PERSON = True
 #YOLO Parameter
 YOLO_MIN_CONF_SCORE = 0.8
 
@@ -291,8 +291,11 @@ class ObjectTracker(Node):
                 if confidence < YOLO_MIN_CONF_SCORE:
                     continue 
                 #print(len(kp.xy.cpu().numpy()[0]))
-                if len(kp.xy.cpu().numpy()[0])  < 5:
 
+                
+                valid_keypoints = [(x, y) for (x, y), c in zip(kp.xy.cpu().numpy()[0], kp.conf.cpu().numpy()[0]) if c > 0.5]  # Confidence threshold
+               
+                if len(valid_keypoints)  <= 10:
                     continue
                 
 
@@ -310,7 +313,7 @@ class ObjectTracker(Node):
                 # Check if YOLO ID is already mapped to a custom ID
                 if yolo_id in self.yolo_to_custom_id.keys():
                     custom_id = self.yolo_to_custom_id[yolo_id]
-                    print(self.yolo_to_custom_id)
+                   
                 else:
                     self.get_logger().info('\n \n \n')
                     self.get_logger().info('Person entered the frame!')
@@ -397,7 +400,7 @@ class ObjectTracker(Node):
         self.disappeared_persons = {}
         for disappeared_id in disappeared_ids:
             self.disappeared_persons[disappeared_id] = self.fixed_tracked_persons[disappeared_id] # + list(self.last_tracked_persons[disappeared_id]) # only using fixed frames
-        self.get_logger().info(f'END OF FRAME, current: {self.disappeared_persons.keys()}') 
+    
         # Remove old YOLO to custom ID mappings for disappeared YOLO IDs
         self.yolo_to_custom_id = {
             yolo_id: custom_id
