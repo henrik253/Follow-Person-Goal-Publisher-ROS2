@@ -31,11 +31,16 @@ logging.getLogger("rclpy").setLevel(logging.ERROR)  # Suppress logging from rclp
 logging.getLogger("sensor_msgs").setLevel(logging.ERROR)  # Suppress logging from sensor_msgs if needed
 
 # REID Parameter
-MAX_QUEUE_SIZE_LAST_FEATURES = 20
-MAX_LIST_SIZE_FIXED_FEATURES = 50
-MIN_SIMILARITY_FOR_MATCHING = 0.68
-MIN_AVG_SIMILARITY_TRESHOLD = 0.7 # average similarity between features inside a candidate are coming close to this value
+MAX_QUEUE_SIZE_LAST_FEATURES = 10
+MAX_LIST_SIZE_FIXED_FEATURES = 10
+MIN_SIMILARITY_FOR_MATCHING = 0.67
+MIN_AVG_SIMILARITY_TRESHOLD = 0.85 # average similarity between features inside a candidate are coming close to this value
 MIN_REMOVE_CANDIDATE_TRESHOLD = 0.9
+FILL_FIXED_FEATURES_WITH_FILTERING = False # set this to true when calibrating is not going to be used!
+
+USE_MARGIN = True# TODO make a padding from where on values should be cut out!
+MARGIN_LEFT_RIGHT_PERCENTAGE = 0.15 # in percentage 
+
 # REID Debugging
 SAVE_CROPPED_PERSON = True
 ENABLE_CACHING = True
@@ -51,7 +56,7 @@ class ObjectTracker(Node):
             Image,
             '/zed/zed_node/left/image_rect_color',
             self.image_callback,
-            1  # Low queue-size for low latency
+            4  # Low queue-size for low latency
         )
 
         self.detected_persons_publisher = self.create_publisher(
@@ -104,9 +109,16 @@ class ObjectTracker(Node):
         self.current_cropped_person = None
 
         self.image_counter = -1
+        self.counter_map = {}
 
-    def get_image_counter(self):
+    def get_image_counter(self, custom_id = None):
         self.image_counter+=1
+        # if custom_id: 
+        #     if custom_id in self.counter_map: 
+        #         self.counter_map[custom_id] += 1
+        #     else:
+        #         self.counter_map[custom_id] = 0
+        #     return self.image_counter[custom_id]
         return self.image_counter
 
     def save_cropped_person_image(self,type, custom_id, image = None):
@@ -154,30 +166,37 @@ class ObjectTracker(Node):
         last_feature = None 
         
         if len(self.last_tracked_persons[custom_id]) >= MAX_QUEUE_SIZE_LAST_FEATURES: # max_queue size is m 
-            last_feature = self.last_tracked_persons[custom_id].popleft() # remove the oldest feature map when max_size is reached | this is m+1 
-            
-        self.last_tracked_persons[custom_id].append(feature)
-        #self.save_cropped_person_image(f'current_{self.last_tracked_persons[custom_id].index(feature.item())}',custom_id)
+                last_feature = self.last_tracked_persons[custom_id].popleft() # remove the oldest feature map when max_size is reached | this is m+1 
+        
+      
+        self.last_tracked_persons[custom_id].append(feature) # fill fixed_frames up with last_frames without checking 
+
         if last_feature != None: 
-            # last_tracked_persons is a queue and fixed_tracked_persons ins a list
-            if len(self.fixed_tracked_persons[custom_id]) < MAX_LIST_SIZE_FIXED_FEATURES :
-                self.fixed_tracked_persons[custom_id].append(last_feature)
-                self.save_cropped_person_image(f'fixed_{len(self.fixed_tracked_persons[custom_id]) - 1}',custom_id)
+            n = float(len(self.fixed_tracked_persons[custom_id]))
+
+            if len(self.fixed_tracked_persons[custom_id]) < MAX_LIST_SIZE_FIXED_FEATURES :                
+                if FILL_FIXED_FEATURES_WITH_FILTERING and n > 0:
+                    avg_similarity_of_feature_to_fixed_features = self.get_summed_similarity_of_feature(custom_id,feature) / n
+                    if(avg_similarity_of_feature_to_fixed_features >= MIN_AVG_SIMILARITY_TRESHOLD):
+                        self.fixed_tracked_persons[custom_id].append(last_feature)
+                        self.save_cropped_person_image(f'first_fixed_{len(self.fixed_tracked_persons[custom_id]) - 1}',custom_id)
+                else:
+                    self.fixed_tracked_persons[custom_id].append(last_feature)
+                    self.save_cropped_person_image(f'first_fixed_{len(self.fixed_tracked_persons[custom_id]) - 1}',custom_id)
             else:
-                most_similar_feature, index, summed_similarity_all_neighbours = self.get_max_summed_similar_feature_of_neighbours(custom_id)
-                feature_summed_similarity = self.get_summed_similarity(custom_id,feature)
-                n = float(len(self.fixed_tracked_persons[custom_id]))
+                most_similar_feature, index, summed_similarity_all_neighbours = self.get_summed_similarity_of_fixed_features(custom_id)
+                feature_summed_similarity = self.get_summed_similarity_of_feature(custom_id,feature)
                 normalized_summed_similarity_all_neighbours = summed_similarity_all_neighbours / (n - 1.0) # n - 1, because its a feature and is compared to all its n - 1 neighbours
                 normalized_feature_summed_similarity = feature_summed_similarity / (n)
 
                 if normalized_feature_summed_similarity < normalized_summed_similarity_all_neighbours and normalized_feature_summed_similarity >= MIN_AVG_SIMILARITY_TRESHOLD:
                     self.fixed_tracked_persons[custom_id][index] = feature
-                    self.save_cropped_person_image(f'fixed_{index}',custom_id)
+                    self.save_cropped_person_image(f'replace_{index}',custom_id)
                     #self.get_logger().info(f'replace avg sim {normalized_summed_similarity_all_neighbours} with compared avg sim {normalized_feature_summed_similarity}')
                 else: 
                     pass
 
-    def get_max_summed_similar_feature_of_neighbours(self,custom_id): 
+    def get_summed_similarity_of_fixed_features(self,custom_id): 
         most_similar_feature = None
         max_summed_feature_similarity = 0.0
         most_similar_feature_index = 0
@@ -195,7 +214,7 @@ class ObjectTracker(Node):
         return [most_similar_feature, most_similar_feature_index, max_summed_feature_similarity] 
     
 
-    def get_summed_similarity(self,custom_id,feature):
+    def get_summed_similarity_of_feature(self,custom_id,feature):
         similarity_sum = 0.0
         for i in range(len(self.fixed_tracked_persons[custom_id])):
             similarity_sum += self.get_similarity(feature,self.fixed_tracked_persons[custom_id][i])
@@ -275,8 +294,9 @@ class ObjectTracker(Node):
 
     def determine_best_similarity(self,similarities):
         if similarities:
-            highest_values = sorted(similarities, reverse=True)[:5] # insteaf of max we take n best values
-            return np.mean(highest_values)
+            # highest_values = sorted(similarities, reverse=True)[:5] # insteaf of max we take n best values
+            # return np.mean(highest_values)
+            return max(similarities)
         else: 
             return 0.0
         
@@ -289,20 +309,28 @@ class ObjectTracker(Node):
         for disappeared_feature in self.fixed_tracked_persons[disappeared_id]:
             sim = self.get_similarity(disappeared_feature, current_person_feature)
             similarities.append(sim)
-            print(f"    {sim}")  
+            print(f"        {sim}")  
         
-        print('last similarites: ')
 
+
+        print('last similarites: ')
+        temp = []
         for disappeared_feature in self.last_tracked_persons[disappeared_id]:
+
             sim = self.get_similarity(disappeared_feature, current_person_feature)
             similarities.append(sim)
-            print(f"    {sim}")  
+            temp.append(sim)
+            print(f"        {sim}")  
 
+
+        print(f'    Best similarity (fixed): {self.determine_best_similarity(similarities)}')
+        print(f'    Average Similarity (fixed): {statistics.mean(similarities) if similarities else 0.0}')
+        print(f'    Median Similarity (fixed): {statistics.median(similarities) if similarities else 0.0}')
         return similarities 
     
     def image_callback(self, msg):
         cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
-        trackedResults = self.model.track(cv_image, persist=True)
+        trackedResults = self.model.track(cv_image, persist=True, iou=0.8)
         detectedPersonsMsg = DetectedPersons()
         persons = []
         
@@ -337,7 +365,22 @@ class ObjectTracker(Node):
                 boundingBox = BoundingBox()
 
                 x1, y1, x2, y2 = map(int, bbox.xyxy[0])
-                cropped_person = cv_image[y1:y2, x1:x2] 
+
+            
+                if USE_MARGIN:
+                    # Calculate the margin in pixels
+                    margin_x = int((x2 - x1) * MARGIN_LEFT_RIGHT_PERCENTAGE)
+
+                    # Apply the margin by adjusting the left and right bounds
+                    x1_adjusted = max(x1 + margin_x, 0)  # Ensure x1 does not go below 0
+                    x2_adjusted = min(x2 - margin_x, cv_image.shape[1])  # Ensure x2 does not exceed image width
+
+                    # Crop the person with the adjusted bounding box
+                    cropped_person = cv_image[y1:y2, x1_adjusted:x2_adjusted]
+                else:
+                    # Use the full bounding box if no margin is applied
+                    cropped_person = cv_image[y1:y2, x1:x2]
+
                 self.current_cropped_person = cropped_person
                 current_person_feature = self.extract_features(cropped_person)
                 yolo_id = int(track_id)
@@ -347,11 +390,11 @@ class ObjectTracker(Node):
                 # Check if YOLO ID is already mapped to a custom ID
                 if yolo_id in self.yolo_to_custom_id.keys():
                     custom_id = self.yolo_to_custom_id[yolo_id]
-                    print('from yolo_id: {yolo_id} to custom_id: {custom_id}' )
-                    print(self.yolo_to_custom_id)
                 else:
                     print('\n \n \n')
-                    print('Person entered the frame!')
+                    print(f'Person entered the frame! avaible {self.disappeared_ids}')
+                    self.update_candidates()  # Ensure no candidate is multiple in disappeared_persons      !!!!! BUGFIXING !!!!!! <----  
+                
                     # Attempt to match with disappeared persons
                     best_match_id = None
                     best_similarity = 0.0
@@ -360,11 +403,7 @@ class ObjectTracker(Node):
                         print(f'comparing to {disappeared_id}')
                         similarities = self.calculate_similarities(disappeared_id,current_person_feature)
                         similarity = self.determine_best_similarity(similarities)
-
-                        # similarity = max(similarities) if similarities else 0.0
-                        print(f'    Best similarity: {similarity}')
-                        print(f'    Average Similarity: {statistics.mean(similarities)}')
-                        print(f'    Median Similarity: {statistics.median(similarities)}')
+                       
                         if float(similarity) >= float(MIN_SIMILARITY_FOR_MATCHING) and float(similarity) > float(best_similarity): # float neccessary?
                             best_match_id = disappeared_id
                             best_similarity = similarity
@@ -377,14 +416,13 @@ class ObjectTracker(Node):
                         self.save_cropped_person_image(f"matching_{self.get_image_counter()}",custom_id,cropped_person)
                     else:
                         # Assign a new custom ID                
-                        self.person_id_counter += 1
+                        self.person_id_counter -= 1
                         print(f'    new id {self.person_id_counter}')
                         custom_id = self.person_id_counter
                         self.save_cropped_person_image(f"new_id_{self.get_image_counter()}",custom_id,cropped_person)
                         
                     self.yolo_to_custom_id[yolo_id] = custom_id
-                    self.update_candidates()  # Ensure no candidate is multiple in disappeared_persons      !!!!! BUGFIXING !!!!!! <----  
-                
+                  
                 self.update_tracked_persons(custom_id, current_person_feature) # every detected person will be handled in these function but no untracked as the name suggests
                 active_ids.add(custom_id)   
 
