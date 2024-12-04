@@ -19,17 +19,22 @@ import os
 import shutil
 
 
-logging.getLogger().setLevel(logging.INFO)
-logging.getLogger("ultralytics").setLevel(logging.ERROR)  
-# pip install torchreid!
 logging.basicConfig(
-format='%(message)s'  # Custom format to show only the message
+    level=logging.INFO, 
+    format='%(message)s' 
 )
+
+logging.getLogger("ultralytics").setLevel(logging.ERROR)  # Suppress messages from 'ultralytics'
+
+# Disable other unnecessary loggers if required
+logging.getLogger("rclpy").setLevel(logging.ERROR)  # Suppress logging from rclpy if needed
+logging.getLogger("sensor_msgs").setLevel(logging.ERROR)  # Suppress logging from sensor_msgs if needed
+
 # REID Parameter
 MIN_SIMILARITY_FOR_MATCHING = 0.68
-MAX_QUEUE_SIZE_LAST_FEATURES = 2
-MAX_LIST_SIZE_FIXED_FEATURES = 100
-MIN_AVG_SIMILARITY_TRESHOLD = 0.6 # similarity between values in fixed are coming close to this value
+MAX_QUEUE_SIZE_LAST_FEATURES = 20
+MAX_LIST_SIZE_FIXED_FEATURES = 50
+MIN_AVG_SIMILARITY_TRESHOLD = 0.7 # average similarity between features inside a candidate are coming close to this value
 MIN_REMOVE_CANDIDATE_TRESHOLD = 0.9
 # REID Debugging
 SAVE_CROPPED_PERSON = True
@@ -231,16 +236,16 @@ class ObjectTracker(Node):
                         similarities.append(sim)
 
                 if similarities:
-                    max_similarity = max(similarities)
-                    self.get_logger().info(f"Similarity between ID {id1} and ID {id2}: {max_similarity}")
-                  
-                    if max_similarity >= MIN_REMOVE_CANDIDATE_TRESHOLD:   # If similarity is above the threshold, we consider them as the same person or as an inconsistency! 
+                    mean_similarity = statistics.mean(similarities)
+                    print(f"Mean similarity between ID {id1} and ID {id2}: {mean_similarity}")
+                    
+                    if mean_similarity >= MIN_REMOVE_CANDIDATE_TRESHOLD:   # If similarity is above the threshold, we consider them as the same person or as an inconsistency! 
                         ids_to_remove[id1] = id2
 
         # Remove the marked IDs from all appereances!
         for base_id, incosistent_id in ids_to_remove.items():
             self.merge_candidates(incosistent_id,base_id)
-            self.get_logger().info(f"Merging candidate {incosistent_id} in {base_id}")
+            print(f"Merging candidate {incosistent_id} in {base_id}")
             self.remove_cropped_person_folder(incosistent_id)
         
     # just fill up IMPORTANT TO SAY WHY 
@@ -317,8 +322,8 @@ class ObjectTracker(Node):
                     custom_id = self.yolo_to_custom_id[yolo_id]
                    
                 else:
-                    self.get_logger().info('\n \n \n')
-                    self.get_logger().info('Person entered the frame!')
+                    print('\n \n \n')
+                    print('Person entered the frame!')
                     # Attempt to match with disappeared persons
                     best_match_id = None
                     best_similarity = 0.0
@@ -327,16 +332,16 @@ class ObjectTracker(Node):
                     cloned_disapperead_persons = list(self.disappeared_persons.items())
                     print(f'------ DISAPPEARED KEYS: {self.disappeared_persons.keys()}--------')
                     for disappeared_id, disappeared_features in cloned_disapperead_persons:
-                        self.get_logger().info(f'   Comparing entered candidate with disappeared ID: {disappeared_id}')
-                        self.get_logger().info(f'   available ids to take: {list(self.disappeared_persons.keys())}')
+                        print(f'   Comparing entered candidate with disappeared ID: {disappeared_id}')
+                        print(f'   available ids to take: {list(self.disappeared_persons.keys())}')
                         similarities = []
 
                         # Calculate similarities between disappeared_features and person_feature
                         for disappeared_feature in disappeared_features:
                             sim = self.get_similarity(disappeared_feature, person_feature)
-                            torch.cuda.synchronize() 
+                            
                             similarities.append(sim)
-                            self.get_logger().info(f"       Similarity with disappeared feature: {sim}")  # Debug each similarity
+                            print(f"    {sim}")  # Debug each similarity
                         
 
                         if similarities:
@@ -345,8 +350,9 @@ class ObjectTracker(Node):
                         else: 
                             similarity = 0.0
                         # similarity = max(similarities) if similarities else 0.0
-                        self.get_logger().info(f'       Best similarity: {similarity}')
-
+                        print(f'    Best similarity: {similarity}')
+                        print(f'    Average Similarity: {statistics.mean(similarities)}')
+                        print(f'    Median Similarity: {statistics.median(similarities)}')
                         if float(similarity) >= float(MIN_SIMILARITY_FOR_MATCHING) and float(similarity) > float(best_similarity): # float neccessary?
                             best_match_id = disappeared_id
                             best_similarity = similarity
@@ -355,12 +361,12 @@ class ObjectTracker(Node):
 
                     if best_match_id is not None:
                         del self.disappeared_persons[custom_id]
-                        self.get_logger().info(f'   MATCH FOUND FOR {best_match_id}')
+                        print(f'   MATCH FOUND FOR {best_match_id}')
                         self.save_cropped_person_image(f"matching_{self.get_image_counter()}",custom_id,cropped_person)
                     else:
                         # Assign a new custom ID                
                         self.person_id_counter += 1
-                        self.get_logger().info(f'    new id {self.person_id_counter}')
+                        print(f'    new id {self.person_id_counter}')
                         custom_id = self.person_id_counter
                         self.save_cropped_person_image(f"new_id_{self.get_image_counter()}",custom_id,cropped_person)
                         
