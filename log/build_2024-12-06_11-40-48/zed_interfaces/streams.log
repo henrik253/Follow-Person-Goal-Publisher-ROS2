@@ -1,0 +1,667 @@
+[0.021s] Invoking command in '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main:/opt/ros/humble /usr/bin/cmake /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces
+[0.297s] -- The C compiler identification is GNU 11.4.0
+[0.298s] -- The CXX compiler identification is GNU 11.4.0
+[0.298s] -- Detecting C compiler ABI info
+[0.298s] -- Detecting C compiler ABI info - done
+[0.298s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.298s] -- Detecting C compile features
+[0.299s] -- Detecting C compile features - done
+[0.299s] -- Detecting CXX compiler ABI info
+[0.299s] -- Detecting CXX compiler ABI info - done
+[0.299s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.299s] -- Detecting CXX compile features
+[0.300s] -- Detecting CXX compile features - done
+[0.300s] -- Found ament_cmake_auto: 1.3.10 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.382s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.434s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.580s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.588s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.598s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.614s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.634s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.715s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.015s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.423s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.579s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.600s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.603s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.628s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.628s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.629s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.629s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.648s] -- Found PythonExtra: .so  
+[1.729s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.732s] -- Added test 'lint_cmake' to check CMake code style
+[1.735s] -- Added test 'xmllint' to check XML markup files
+[1.741s] -- Configuring done
+[1.808s] -- Generating done
+[1.811s] -- Build files have been written to: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces
+[1.821s] Invoked command in '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main:/opt/ros/humble /usr/bin/cmake /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/zed-ros2-wrapper/zed-ros2-interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces
+[1.823s] Invoking command in '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main:/opt/ros/humble /usr/bin/cmake --build /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces -- -j16 -l16
+[1.868s] [  0%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.880s] [  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.886s] [  0%] Built target ament_cmake_python_symlink_zed_interfaces
+[2.310s] running egg_info
+[2.310s] creating zed_interfaces.egg-info
+[2.310s] writing zed_interfaces.egg-info/PKG-INFO
+[2.311s] writing dependency_links to zed_interfaces.egg-info/dependency_links.txt
+[2.311s] writing top-level names to zed_interfaces.egg-info/top_level.txt
+[2.311s] writing manifest file 'zed_interfaces.egg-info/SOURCES.txt'
+[2.313s] reading manifest file 'zed_interfaces.egg-info/SOURCES.txt'
+[2.314s] writing manifest file 'zed_interfaces.egg-info/SOURCES.txt'
+[2.349s] [  0%] Built target ament_cmake_python_build_zed_interfaces_egg
+[4.464s] [  2%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/keypoint2_di__functions.c.o[0m
+[4.465s] [  2%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/object__functions.c.o[0m
+[4.465s] [  5%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/keypoint2_df__functions.c.o[0m
+[4.465s] [  5%] Built target zed_interfaces__cpp
+[4.465s] [  5%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/depth_info_stamped__functions.c.o[0m
+[4.465s] [  6%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/bounding_box2_di__functions.c.o[0m
+[4.465s] [  6%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/bounding_box2_df__functions.c.o[0m
+[4.466s] [  6%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/bounding_box3_d__functions.c.o[0m
+[4.466s] [  6%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/plane_stamped__functions.c.o[0m
+[4.466s] [  6%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/keypoint3_d__functions.c.o[0m
+[4.466s] [  6%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/skeleton2_d__functions.c.o[0m
+[4.467s] [  7%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/gnss_fusion_status__functions.c.o[0m
+[4.467s] [  7%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/skeleton3_d__functions.c.o[0m
+[4.469s] [  7%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/objects_stamped__functions.c.o[0m
+[4.469s] [  8%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/heartbeat__functions.c.o[0m
+[4.475s] [  9%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/pos_track_status__functions.c.o[0m
+[4.484s] [ 10%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.539s] [ 11%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/srv/detail/set_pose__functions.c.o[0m
+[4.540s] [ 11%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/mag_heading_status__functions.c.o[0m
+[4.540s] [ 12%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/srv/detail/set_roi__functions.c.o[0m
+[4.540s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.541s] [ 13%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/srv/detail/start_svo_rec__functions.c.o[0m
+[4.546s] [ 13%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.593s] [ 14%] [32m[1mLinking C shared library libzed_interfaces__rosidl_generator_c.so[0m
+[4.628s] [ 14%] Built target zed_interfaces__rosidl_generator_c
+[4.640s] [ 17%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.640s] [ 17%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.640s] [ 17%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[5.890s] [ 17%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/object__type_support.cpp.o[0m
+[5.890s] [ 17%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/keypoint2_df__type_support.cpp.o[0m
+[5.890s] [ 19%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/keypoint3_d__type_support.cpp.o[0m
+[5.890s] [ 19%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/bounding_box2_di__type_support.cpp.o[0m
+[5.890s] [ 19%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/keypoint2_di__type_support.cpp.o[0m
+[5.890s] [ 19%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/bounding_box3_d__type_support.cpp.o[0m
+[5.891s] [ 21%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/skeleton3_d__type_support.cpp.o[0m
+[5.891s] [ 21%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/objects_stamped__type_support.cpp.o[0m
+[5.891s] [ 22%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/skeleton2_d__type_support.cpp.o[0m
+[5.891s] [ 23%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/bounding_box2_df__type_support.cpp.o[0m
+[5.904s] [ 23%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/depth_info_stamped__type_support.cpp.o[0m
+[6.272s] [ 24%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/plane_stamped__type_support.cpp.o[0m
+[6.274s] [ 24%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/pos_track_status__type_support.cpp.o[0m
+[6.278s] [ 25%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/gnss_fusion_status__type_support.cpp.o[0m
+[6.281s] [ 25%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/heartbeat__type_support.cpp.o[0m
+[6.292s] [ 25%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/object__type_support.cpp.o[0m
+[6.295s] [ 26%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/mag_heading_status__type_support.cpp.o[0m
+[6.302s] [ 27%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/srv/set_pose__type_support.cpp.o[0m
+[6.306s] [ 28%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/objects_stamped__type_support.cpp.o[0m
+[6.332s] [ 28%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/keypoint2_di__type_support.cpp.o[0m
+[6.349s] [ 29%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/keypoint2_df__type_support.cpp.o[0m
+[6.366s] [ 29%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/srv/start_svo_rec__type_support.cpp.o[0m
+[6.366s] [ 30%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/keypoint3_d__type_support.cpp.o[0m
+[6.366s] [ 31%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/srv/set_roi__type_support.cpp.o[0m
+[6.417s] [ 32%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/bounding_box2_df__type_support.cpp.o[0m
+[6.419s] [ 32%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/bounding_box2_di__type_support.cpp.o[0m
+[6.421s] [ 32%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/bounding_box3_d__type_support.cpp.o[0m
+[6.461s] [ 33%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/skeleton2_d__type_support.cpp.o[0m
+[6.464s] [ 34%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/skeleton3_d__type_support.cpp.o[0m
+[6.464s] [ 34%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/depth_info_stamped__type_support.cpp.o[0m
+[6.511s] [ 34%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/pos_track_status__type_support.cpp.o[0m
+[6.519s] [ 35%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/plane_stamped__type_support.cpp.o[0m
+[6.537s] [ 36%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/gnss_fusion_status__type_support.cpp.o[0m
+[6.569s] [ 37%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/mag_heading_status__type_support.cpp.o[0m
+[6.580s] [ 37%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/heartbeat__type_support.cpp.o[0m
+[6.587s] [ 37%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/srv/set_pose__type_support.cpp.o[0m
+[6.620s] [ 38%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/srv/start_svo_rec__type_support.cpp.o[0m
+[6.644s] [ 39%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/srv/set_roi__type_support.cpp.o[0m
+[6.687s] [ 40%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/object__type_support.cpp.o[0m
+[6.692s] [ 40%] [32m[1mLinking CXX shared library libzed_interfaces__rosidl_typesupport_c.so[0m
+[6.698s] [ 40%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/objects_stamped__type_support.cpp.o[0m
+[6.702s] [ 41%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/keypoint2_di__type_support.cpp.o[0m
+[6.706s] [ 41%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/keypoint2_df__type_support.cpp.o[0m
+[6.712s] [ 42%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/keypoint3_d__type_support.cpp.o[0m
+[6.720s] [ 43%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/bounding_box2_di__type_support.cpp.o[0m
+[6.737s] [ 43%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/bounding_box2_df__type_support.cpp.o[0m
+[6.756s] [ 43%] [32m[1mLinking CXX shared library libzed_interfaces__rosidl_typesupport_cpp.so[0m
+[6.760s] [ 43%] Built target zed_interfaces__rosidl_typesupport_c
+[6.768s] [ 44%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/object__type_support.cpp.o[0m
+[6.768s] [ 45%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/bounding_box3_d__type_support.cpp.o[0m
+[6.776s] [ 45%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/objects_stamped__type_support.cpp.o[0m
+[6.778s] [ 45%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/skeleton2_d__type_support.cpp.o[0m
+[6.790s] [ 46%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/skeleton3_d__type_support.cpp.o[0m
+[6.821s] [ 47%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/keypoint2_di__type_support.cpp.o[0m
+[6.847s] [ 47%] Built target zed_interfaces__rosidl_typesupport_cpp
+[6.913s] [ 47%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/keypoint2_df__type_support.cpp.o[0m
+[6.964s] [ 48%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/object__type_support.c.o[0m
+[7.117s] [ 48%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/objects_stamped__type_support.c.o[0m
+[7.138s] [ 48%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/object__type_support_c.cpp.o[0m
+[7.195s] [ 49%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/keypoint2_di__type_support.c.o[0m
+[7.287s] [ 50%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/objects_stamped__type_support_c.cpp.o[0m
+[7.299s] [ 50%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/keypoint2_df__type_support.c.o[0m
+[7.301s] [ 51%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/plane_stamped__type_support.cpp.o[0m
+[7.311s] [ 51%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/depth_info_stamped__type_support.cpp.o[0m
+[7.355s] [ 52%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/pos_track_status__type_support.cpp.o[0m
+[7.390s] [ 53%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/keypoint3_d__type_support.c.o[0m
+[7.398s] [ 53%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/gnss_fusion_status__type_support.cpp.o[0m
+[7.405s] [ 53%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/bounding_box2_di__type_support.c.o[0m
+[7.422s] [ 54%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/heartbeat__type_support.cpp.o[0m
+[7.423s] [ 54%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/mag_heading_status__type_support.cpp.o[0m
+[7.472s] [ 54%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/srv/detail/start_svo_rec__type_support.cpp.o[0m
+[7.482s] [ 55%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/bounding_box2_df__type_support.c.o[0m
+[7.482s] [ 56%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/srv/detail/set_pose__type_support.cpp.o[0m
+[7.495s] [ 57%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/bounding_box3_d__type_support.c.o[0m
+[7.501s] [ 58%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/keypoint3_d__type_support.cpp.o[0m
+[7.535s] [ 59%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/srv/detail/set_roi__type_support.cpp.o[0m
+[7.544s] [ 60%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/skeleton2_d__type_support.c.o[0m
+[7.544s] [ 60%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/keypoint2_di__type_support_c.cpp.o[0m
+[7.552s] [ 61%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/skeleton3_d__type_support.c.o[0m
+[7.557s] [ 61%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/bounding_box2_di__type_support.cpp.o[0m
+[7.613s] [ 62%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/bounding_box2_df__type_support.cpp.o[0m
+[7.664s] [ 62%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/depth_info_stamped__type_support.c.o[0m
+[7.779s] [ 63%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/plane_stamped__type_support.c.o[0m
+[7.794s] [ 63%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/pos_track_status__type_support.c.o[0m
+[7.795s] [ 63%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/keypoint2_df__type_support_c.cpp.o[0m
+[7.852s] [ 64%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/gnss_fusion_status__type_support.c.o[0m
+[7.888s] [ 65%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/heartbeat__type_support.c.o[0m
+[7.914s] [ 65%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/mag_heading_status__type_support.c.o[0m
+[7.931s] [ 66%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/srv/detail/set_pose__type_support.c.o[0m
+[7.943s] [ 67%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/keypoint3_d__type_support_c.cpp.o[0m
+[7.949s] [ 67%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/srv/detail/start_svo_rec__type_support.c.o[0m
+[7.950s] [ 68%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/srv/detail/set_roi__type_support.c.o[0m
+[7.960s] [ 69%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.o[0m
+[7.967s] [ 69%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/bounding_box2_di__type_support_c.cpp.o[0m
+[7.999s] [ 69%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/skeleton2_d__type_support.cpp.o[0m
+[8.003s] [ 70%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/skeleton3_d__type_support.cpp.o[0m
+[8.007s] [ 70%] [32m[1mLinking C shared library libzed_interfaces__rosidl_typesupport_introspection_c.so[0m
+[8.009s] [ 71%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/plane_stamped__type_support.cpp.o[0m
+[8.016s] [ 71%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/depth_info_stamped__type_support.cpp.o[0m
+[8.016s] [ 72%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/bounding_box2_df__type_support_c.cpp.o[0m
+[8.030s] [ 72%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/pos_track_status__type_support.cpp.o[0m
+[8.078s] [ 73%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/gnss_fusion_status__type_support.cpp.o[0m
+[8.115s] [ 73%] Built target zed_interfaces__rosidl_typesupport_introspection_c
+[8.121s] [ 74%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/heartbeat__type_support.cpp.o[0m
+[8.134s] [ 74%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/bounding_box3_d__type_support_c.cpp.o[0m
+[8.142s] [ 75%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/mag_heading_status__type_support.cpp.o[0m
+[8.143s] [ 75%] [32m[1mLinking CXX shared library libzed_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[8.238s] [ 76%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/srv/detail/dds_fastrtps/set_pose__type_support.cpp.o[0m
+[8.285s] [ 77%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/skeleton2_d__type_support_c.cpp.o[0m
+[8.302s] [ 77%] Built target zed_interfaces__rosidl_typesupport_introspection_cpp
+[8.315s] [ 78%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/skeleton3_d__type_support_c.cpp.o[0m
+[8.447s] [ 78%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/depth_info_stamped__type_support_c.cpp.o[0m
+[8.460s] [ 79%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/plane_stamped__type_support_c.cpp.o[0m
+[8.493s] [ 79%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/pos_track_status__type_support_c.cpp.o[0m
+[8.529s] [ 79%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/srv/detail/dds_fastrtps/start_svo_rec__type_support.cpp.o[0m
+[8.565s] [ 80%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/srv/detail/dds_fastrtps/set_roi__type_support.cpp.o[0m
+[8.577s] [ 81%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/gnss_fusion_status__type_support_c.cpp.o[0m
+[8.623s] [ 81%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/heartbeat__type_support_c.cpp.o[0m
+[8.626s] [ 82%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/mag_heading_status__type_support_c.cpp.o[0m
+[8.628s] [ 83%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/srv/detail/set_pose__type_support_c.cpp.o[0m
+[8.647s] [ 83%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/srv/detail/start_svo_rec__type_support_c.cpp.o[0m
+[8.667s] [ 84%] [32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/srv/detail/set_roi__type_support_c.cpp.o[0m
+[9.080s] [ 84%] [32m[1mLinking CXX shared library libzed_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[9.130s] [ 84%] [32m[1mLinking CXX shared library libzed_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[9.156s] [ 84%] Built target zed_interfaces__rosidl_typesupport_fastrtps_cpp
+[9.196s] [ 84%] Built target zed_interfaces__rosidl_typesupport_fastrtps_c
+[9.214s] [ 84%] Built target zed_interfaces
+[9.235s] [ 85%] [34m[1mGenerating Python code for ROS interfaces[0m
+[12.008s] [ 85%] Built target zed_interfaces__py
+[12.034s] [ 86%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_objects_stamped_s.c.o[0m
+[12.035s] [ 86%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_object_s.c.o[0m
+[12.035s] [ 87%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_keypoint2_df_s.c.o[0m
+[12.036s] [ 88%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_depth_info_stamped_s.c.o[0m
+[12.036s] [ 88%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_keypoint2_di_s.c.o[0m
+[12.037s] [ 88%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_bounding_box3_d_s.c.o[0m
+[12.038s] [ 89%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_bounding_box2_di_s.c.o[0m
+[12.038s] [ 90%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_skeleton3_d_s.c.o[0m
+[12.039s] [ 91%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_plane_stamped_s.c.o[0m
+[12.039s] [ 91%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_heartbeat_s.c.o[0m
+[12.039s] [ 92%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_bounding_box2_df_s.c.o[0m
+[12.039s] [ 92%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_skeleton2_d_s.c.o[0m
+[12.039s] [ 92%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_keypoint3_d_s.c.o[0m
+[12.039s] [ 92%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_pos_track_status_s.c.o[0m
+[12.040s] [ 93%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_gnss_fusion_status_s.c.o[0m
+[12.041s] [ 94%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/msg/_mag_heading_status_s.c.o[0m
+[12.189s] [ 94%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/srv/_set_pose_s.c.o[0m
+[12.191s] [ 95%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/srv/_set_roi_s.c.o[0m
+[12.191s] [ 96%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/zed_interfaces/srv/_start_svo_rec_s.c.o[0m
+[12.274s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/zed_interfaces/libzed_interfaces__rosidl_generator_py.so[0m
+[12.307s] [ 96%] Built target zed_interfaces__rosidl_generator_py
+[12.327s] [ 98%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/zed_interfaces/_zed_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[12.327s] [ 98%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/zed_interfaces/_zed_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[12.327s] [ 99%] [32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/zed_interfaces/_zed_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[12.452s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/zed_interfaces/zed_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[12.454s] [100%] [32m[1mLinking C shared library rosidl_generator_py/zed_interfaces/zed_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[12.454s] [100%] [32m[1mLinking C shared library rosidl_generator_py/zed_interfaces/zed_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[12.488s] [100%] Built target zed_interfaces__rosidl_typesupport_c__pyext
+[12.489s] [100%] Built target zed_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[12.489s] [100%] Built target zed_interfaces__rosidl_typesupport_introspection_c__pyext
+[12.498s] Invoked command in '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main:/opt/ros/humble /usr/bin/cmake --build /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces -- -j16 -l16
+[13.501s] Invoking command in '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main:/opt/ros/humble /usr/bin/cmake --install /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces
+[13.522s] -- Install configuration: ""
+[13.523s] -- Execute custom install script
+[13.524s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/ament_index/resource_index/rosidl_interfaces/zed_interfaces
+[13.540s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/bounding_box2_df.h
+[13.555s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/bounding_box2_di.h
+[13.569s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/bounding_box3_d.h
+[13.582s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/depth_info_stamped.h
+[13.592s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__functions.h
+[13.600s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__struct.h
+[13.607s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__type_support.h
+[13.613s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__functions.h
+[13.620s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__struct.h
+[13.626s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__type_support.h
+[13.632s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__functions.h
+[13.638s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__struct.h
+[13.645s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__type_support.h
+[13.651s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__functions.h
+[13.657s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__struct.h
+[13.663s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__type_support.h
+[13.669s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/gnss_fusion_status__functions.h
+[13.675s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/gnss_fusion_status__struct.h
+[13.681s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/gnss_fusion_status__type_support.h
+[13.687s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__functions.h
+[13.693s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__struct.h
+[13.698s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__type_support.h
+[13.704s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__functions.h
+[13.710s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__struct.h
+[13.716s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__type_support.h
+[13.722s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__functions.h
+[13.727s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__struct.h
+[13.733s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__type_support.h
+[13.740s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__functions.h
+[13.746s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__struct.h
+[13.752s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__type_support.h
+[13.759s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/mag_heading_status__functions.h
+[13.765s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/mag_heading_status__struct.h
+[13.771s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/mag_heading_status__type_support.h
+[13.777s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__functions.h
+[13.783s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__struct.h
+[13.789s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__type_support.h
+[13.795s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__functions.h
+[13.801s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__struct.h
+[13.807s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__type_support.h
+[13.813s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__functions.h
+[13.819s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__struct.h
+[13.826s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__type_support.h
+[13.832s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__functions.h
+[13.839s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__struct.h
+[13.845s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__type_support.h
+[13.851s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__functions.h
+[13.857s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__struct.h
+[13.863s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__type_support.h
+[13.869s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__functions.h
+[13.875s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__struct.h
+[13.881s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__type_support.h
+[13.887s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/gnss_fusion_status.h
+[13.892s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/heartbeat.h
+[13.898s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/keypoint2_df.h
+[13.904s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/keypoint2_di.h
+[13.909s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/keypoint3_d.h
+[13.915s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/mag_heading_status.h
+[13.921s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/object.h
+[13.927s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/objects_stamped.h
+[13.933s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/plane_stamped.h
+[13.940s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/pos_track_status.h
+[13.947s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/rosidl_generator_c__visibility_control.h
+[13.954s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/skeleton2_d.h
+[13.961s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/skeleton3_d.h
+[13.967s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__functions.h
+[13.973s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__struct.h
+[13.979s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__type_support.h
+[13.985s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__functions.h
+[13.991s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__struct.h
+[13.997s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__type_support.h
+[14.003s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__functions.h
+[14.009s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__struct.h
+[14.015s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__type_support.h
+[14.021s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/set_pose.h
+[14.027s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/set_roi.h
+[14.033s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/start_svo_rec.h
+[14.040s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/environment/library_path.sh
+[14.046s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/environment/library_path.dsv
+[14.053s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__rosidl_typesupport_fastrtps_c.h
+[14.059s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__rosidl_typesupport_fastrtps_c.h
+[14.065s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_c.h
+[14.071s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__rosidl_typesupport_fastrtps_c.h
+[14.077s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/gnss_fusion_status__rosidl_typesupport_fastrtps_c.h
+[14.083s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__rosidl_typesupport_fastrtps_c.h
+[14.089s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__rosidl_typesupport_fastrtps_c.h
+[14.095s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__rosidl_typesupport_fastrtps_c.h
+[14.102s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__rosidl_typesupport_fastrtps_c.h
+[14.108s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/mag_heading_status__rosidl_typesupport_fastrtps_c.h
+[14.114s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__rosidl_typesupport_fastrtps_c.h
+[14.120s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__rosidl_typesupport_fastrtps_c.h
+[14.125s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__rosidl_typesupport_fastrtps_c.h
+[14.132s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__rosidl_typesupport_fastrtps_c.h
+[14.138s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__rosidl_typesupport_fastrtps_c.h
+[14.145s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__rosidl_typesupport_fastrtps_c.h
+[14.151s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[14.166s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__rosidl_typesupport_fastrtps_c.h
+[14.189s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__rosidl_typesupport_fastrtps_c.h
+[14.206s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__rosidl_typesupport_fastrtps_c.h
+[14.225s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/bounding_box2_df.hpp
+[14.243s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/bounding_box2_di.hpp
+[14.260s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/bounding_box3_d.hpp
+[14.277s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/depth_info_stamped.hpp
+[14.294s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__builder.hpp
+[14.311s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__struct.hpp
+[14.327s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__traits.hpp
+[14.345s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__builder.hpp
+[14.362s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__struct.hpp
+[14.376s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__traits.hpp
+[14.386s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__builder.hpp
+[14.396s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__struct.hpp
+[14.405s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__traits.hpp
+[14.415s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__builder.hpp
+[14.424s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__struct.hpp
+[14.434s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__traits.hpp
+[14.444s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/gnss_fusion_status__builder.hpp
+[14.453s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/gnss_fusion_status__struct.hpp
+[14.463s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/gnss_fusion_status__traits.hpp
+[14.471s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__builder.hpp
+[14.477s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__struct.hpp
+[14.483s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__traits.hpp
+[14.488s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__builder.hpp
+[14.494s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__struct.hpp
+[14.500s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__traits.hpp
+[14.505s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__builder.hpp
+[14.511s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__struct.hpp
+[14.517s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__traits.hpp
+[14.523s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__builder.hpp
+[14.529s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__struct.hpp
+[14.536s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__traits.hpp
+[14.542s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/mag_heading_status__builder.hpp
+[14.548s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/mag_heading_status__struct.hpp
+[14.555s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/mag_heading_status__traits.hpp
+[14.560s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__builder.hpp
+[14.566s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__struct.hpp
+[14.572s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__traits.hpp
+[14.578s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__builder.hpp
+[14.584s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__struct.hpp
+[14.590s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__traits.hpp
+[14.596s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__builder.hpp
+[14.602s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__struct.hpp
+[14.609s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__traits.hpp
+[14.615s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__builder.hpp
+[14.622s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__struct.hpp
+[14.628s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__traits.hpp
+[14.635s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__builder.hpp
+[14.641s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__struct.hpp
+[14.648s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__traits.hpp
+[14.654s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__builder.hpp
+[14.660s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__struct.hpp
+[14.667s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__traits.hpp
+[14.673s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/gnss_fusion_status.hpp
+[14.679s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/heartbeat.hpp
+[14.685s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/keypoint2_df.hpp
+[14.691s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/keypoint2_di.hpp
+[14.697s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/keypoint3_d.hpp
+[14.703s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/mag_heading_status.hpp
+[14.708s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/object.hpp
+[14.714s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/objects_stamped.hpp
+[14.720s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/plane_stamped.hpp
+[14.726s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/pos_track_status.hpp
+[14.732s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/skeleton2_d.hpp
+[14.738s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/skeleton3_d.hpp
+[14.745s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__builder.hpp
+[14.751s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__struct.hpp
+[14.758s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__traits.hpp
+[14.764s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__builder.hpp
+[14.770s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__struct.hpp
+[14.776s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__traits.hpp
+[14.782s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__builder.hpp
+[14.788s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__struct.hpp
+[14.795s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__traits.hpp
+[14.801s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/set_pose.hpp
+[14.807s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/set_roi.hpp
+[14.813s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/start_svo_rec.hpp
+[14.820s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__rosidl_typesupport_fastrtps_cpp.hpp
+[14.826s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__rosidl_typesupport_fastrtps_cpp.hpp
+[14.832s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_cpp.hpp
+[14.839s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[14.845s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/gnss_fusion_status__rosidl_typesupport_fastrtps_cpp.hpp
+[14.851s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__rosidl_typesupport_fastrtps_cpp.hpp
+[14.857s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__rosidl_typesupport_fastrtps_cpp.hpp
+[14.863s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__rosidl_typesupport_fastrtps_cpp.hpp
+[14.869s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__rosidl_typesupport_fastrtps_cpp.hpp
+[14.875s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/mag_heading_status__rosidl_typesupport_fastrtps_cpp.hpp
+[14.881s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__rosidl_typesupport_fastrtps_cpp.hpp
+[14.887s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[14.894s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[14.899s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__rosidl_typesupport_fastrtps_cpp.hpp
+[14.905s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__rosidl_typesupport_fastrtps_cpp.hpp
+[14.911s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__rosidl_typesupport_fastrtps_cpp.hpp
+[14.916s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[14.922s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[14.928s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__rosidl_typesupport_fastrtps_cpp.hpp
+[14.934s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__rosidl_typesupport_fastrtps_cpp.hpp
+[14.941s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__rosidl_typesupport_introspection_c.h
+[14.948s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__rosidl_typesupport_introspection_c.h
+[14.954s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_c.h
+[14.960s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__rosidl_typesupport_introspection_c.h
+[14.967s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/gnss_fusion_status__rosidl_typesupport_introspection_c.h
+[14.973s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__rosidl_typesupport_introspection_c.h
+[14.979s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__rosidl_typesupport_introspection_c.h
+[14.985s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__rosidl_typesupport_introspection_c.h
+[14.992s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__rosidl_typesupport_introspection_c.h
+[15.000s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/mag_heading_status__rosidl_typesupport_introspection_c.h
+[15.008s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__rosidl_typesupport_introspection_c.h
+[15.015s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__rosidl_typesupport_introspection_c.h
+[15.021s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__rosidl_typesupport_introspection_c.h
+[15.027s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__rosidl_typesupport_introspection_c.h
+[15.033s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__rosidl_typesupport_introspection_c.h
+[15.040s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__rosidl_typesupport_introspection_c.h
+[15.046s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[15.052s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__rosidl_typesupport_introspection_c.h
+[15.058s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__rosidl_typesupport_introspection_c.h
+[15.064s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__rosidl_typesupport_introspection_c.h
+[15.071s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__rosidl_typesupport_introspection_cpp.hpp
+[15.077s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__rosidl_typesupport_introspection_cpp.hpp
+[15.084s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_cpp.hpp
+[15.089s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__rosidl_typesupport_introspection_cpp.hpp
+[15.095s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/gnss_fusion_status__rosidl_typesupport_introspection_cpp.hpp
+[15.101s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__rosidl_typesupport_introspection_cpp.hpp
+[15.107s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__rosidl_typesupport_introspection_cpp.hpp
+[15.113s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__rosidl_typesupport_introspection_cpp.hpp
+[15.119s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__rosidl_typesupport_introspection_cpp.hpp
+[15.125s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/mag_heading_status__rosidl_typesupport_introspection_cpp.hpp
+[15.132s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__rosidl_typesupport_introspection_cpp.hpp
+[15.139s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__rosidl_typesupport_introspection_cpp.hpp
+[15.146s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__rosidl_typesupport_introspection_cpp.hpp
+[15.152s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__rosidl_typesupport_introspection_cpp.hpp
+[15.158s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__rosidl_typesupport_introspection_cpp.hpp
+[15.164s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__rosidl_typesupport_introspection_cpp.hpp
+[15.170s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__rosidl_typesupport_introspection_cpp.hpp
+[15.176s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__rosidl_typesupport_introspection_cpp.hpp
+[15.181s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__rosidl_typesupport_introspection_cpp.hpp
+[15.188s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/environment/pythonpath.sh
+[15.194s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/environment/pythonpath.dsv
+[15.200s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces-4.1.0-py3.10.egg-info/PKG-INFO
+[15.205s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces-4.1.0-py3.10.egg-info/SOURCES.txt
+[15.211s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces-4.1.0-py3.10.egg-info/dependency_links.txt
+[15.217s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces-4.1.0-py3.10.egg-info/top_level.txt
+[15.223s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/__init__.py
+[15.229s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/_zed_interfaces_s.ep.rosidl_typesupport_c.c
+[15.235s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/_zed_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[15.242s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/_zed_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[15.248s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/libzed_interfaces__rosidl_generator_py.so
+[15.255s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/__init__.py
+[15.261s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box2_df.py
+[15.267s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box2_df_s.c
+[15.273s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box2_di.py
+[15.279s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box2_di_s.c
+[15.285s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box3_d.py
+[15.291s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box3_d_s.c
+[15.297s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_depth_info_stamped.py
+[15.304s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_depth_info_stamped_s.c
+[15.310s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_gnss_fusion_status.py
+[15.316s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_gnss_fusion_status_s.c
+[15.322s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_heartbeat.py
+[15.328s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_heartbeat_s.c
+[15.334s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint2_df.py
+[15.341s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint2_df_s.c
+[15.347s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint2_di.py
+[15.354s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint2_di_s.c
+[15.360s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint3_d.py
+[15.366s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint3_d_s.c
+[15.372s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_mag_heading_status.py
+[15.378s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_mag_heading_status_s.c
+[15.383s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_object.py
+[15.389s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_object_s.c
+[15.395s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_objects_stamped.py
+[15.401s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_objects_stamped_s.c
+[15.407s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_plane_stamped.py
+[15.413s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_plane_stamped_s.c
+[15.420s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_pos_track_status.py
+[15.427s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_pos_track_status_s.c
+[15.435s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_skeleton2_d.py
+[15.443s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_skeleton2_d_s.c
+[15.450s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_skeleton3_d.py
+[15.457s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_skeleton3_d_s.c
+[15.464s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/__init__.py
+[15.471s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_set_pose.py
+[15.478s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_set_pose_s.c
+[15.485s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_set_roi.py
+[15.492s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_set_roi_s.c
+[15.499s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_start_svo_rec.py
+[15.506s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_start_svo_rec_s.c
+[15.513s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/zed_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[15.520s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/zed_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[15.526s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/zed_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[15.534s] -- Up-to-date symlink: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/zed_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[15.534s] -- Up-to-date symlink: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/zed_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[15.534s] -- Up-to-date symlink: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/zed_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[15.534s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/Object.idl
+[15.543s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/ObjectsStamped.idl
+[15.550s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/Keypoint2Di.idl
+[15.557s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/Keypoint2Df.idl
+[15.564s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/Keypoint3D.idl
+[15.571s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox2Di.idl
+[15.578s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox2Df.idl
+[15.585s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox3D.idl
+[15.592s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/Skeleton2D.idl
+[15.599s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/Skeleton3D.idl
+[15.605s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/DepthInfoStamped.idl
+[15.614s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/PlaneStamped.idl
+[15.621s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/PosTrackStatus.idl
+[15.628s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/GnssFusionStatus.idl
+[15.635s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/Heartbeat.idl
+[15.643s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/MagHeadingStatus.idl
+[15.650s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/srv/SetPose.idl
+[15.657s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/srv/StartSvoRec.idl
+[15.664s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/srv/SetROI.idl
+[15.671s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/Object.msg
+[15.678s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/ObjectsStamped.msg
+[15.685s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/Keypoint2Di.msg
+[15.692s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/Keypoint2Df.msg
+[15.699s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/Keypoint3D.msg
+[15.706s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox2Di.msg
+[15.713s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox2Df.msg
+[15.720s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox3D.msg
+[15.727s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/Skeleton2D.msg
+[15.735s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/Skeleton3D.msg
+[15.743s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/DepthInfoStamped.msg
+[15.750s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/PlaneStamped.msg
+[15.757s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/PosTrackStatus.msg
+[15.764s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/GnssFusionStatus.msg
+[15.771s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/Heartbeat.msg
+[15.778s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/msg/MagHeadingStatus.msg
+[15.785s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/srv/SetPose.srv
+[15.792s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/srv/SetPose_Request.msg
+[15.800s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/srv/SetPose_Response.msg
+[15.807s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/srv/StartSvoRec.srv
+[15.815s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/srv/StartSvoRec_Request.msg
+[15.822s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/srv/StartSvoRec_Response.msg
+[15.829s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/srv/SetROI.srv
+[15.837s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/srv/SetROI_Request.msg
+[15.845s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/srv/SetROI_Response.msg
+[15.852s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/meshes/virtual.stl
+[15.860s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/meshes/zed.stl
+[15.867s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/meshes/zed2.stl
+[15.874s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/meshes/zed2i.stl
+[15.881s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/meshes/zedm.stl
+[15.888s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/meshes/zedx.stl
+[15.894s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/meshes/zedxm.stl
+[15.901s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/ament_index/resource_index/package_run_dependencies/zed_interfaces
+[15.908s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/ament_index/resource_index/parent_prefix_path/zed_interfaces
+[15.915s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/environment/ament_prefix_path.sh
+[15.922s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/environment/ament_prefix_path.dsv
+[15.929s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/environment/path.sh
+[15.937s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/environment/path.dsv
+[15.945s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/local_setup.bash
+[15.952s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/local_setup.sh
+[15.959s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/local_setup.zsh
+[15.967s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/local_setup.dsv
+[15.974s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/package.dsv
+[15.981s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/ament_index/resource_index/packages/zed_interfaces
+[15.988s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/rosidl_cmake-extras.cmake
+[15.995s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.002s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.009s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[16.016s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[16.023s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[16.030s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[16.039s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfacesConfig.cmake
+[16.046s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfacesConfig-version.cmake
+[16.053s] -- Symlinking: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/package.xml
+[16.060s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/lib/libzed_interfaces__rosidl_generator_c.so
+[16.061s] -- Set runtime path of "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/lib/libzed_interfaces__rosidl_generator_c.so" to ""
+[16.061s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_fastrtps_c.so
+[16.061s] -- Set runtime path of "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[16.061s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[16.062s] -- Set runtime path of "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[16.062s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_introspection_c.so
+[16.062s] -- Set runtime path of "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[16.062s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_c.so
+[16.062s] -- Set runtime path of "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_c.so" to ""
+[16.062s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_introspection_cpp.so
+[16.063s] -- Set runtime path of "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[16.063s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_cpp.so
+[16.063s] -- Set runtime path of "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_cpp.so" to ""
+[16.110s] Listing '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces'...
+[16.110s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/__init__.py'...
+[16.110s] Listing '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg'...
+[16.110s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/__init__.py'...
+[16.110s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box2_df.py'...
+[16.111s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box2_di.py'...
+[16.111s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box3_d.py'...
+[16.111s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_depth_info_stamped.py'...
+[16.111s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_gnss_fusion_status.py'...
+[16.111s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_heartbeat.py'...
+[16.111s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint2_df.py'...
+[16.111s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint2_di.py'...
+[16.111s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint3_d.py'...
+[16.111s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_mag_heading_status.py'...
+[16.111s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_object.py'...
+[16.111s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_objects_stamped.py'...
+[16.111s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_plane_stamped.py'...
+[16.111s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_pos_track_status.py'...
+[16.111s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_skeleton2_d.py'...
+[16.111s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_skeleton3_d.py'...
+[16.111s] Listing '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv'...
+[16.111s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/__init__.py'...
+[16.111s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_set_pose.py'...
+[16.111s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_set_roi.py'...
+[16.111s] Compiling '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_start_svo_rec.py'...
+[16.114s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/lib/libzed_interfaces__rosidl_generator_py.so
+[16.115s] -- Set runtime path of "/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/lib/libzed_interfaces__rosidl_generator_py.so" to ""
+[16.115s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cExport.cmake
+[16.115s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cExport-noconfig.cmake
+[16.116s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[16.116s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[16.116s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cppExport.cmake
+[16.116s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[16.116s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[16.116s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[16.117s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[16.117s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cExport.cmake
+[16.117s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[16.117s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[16.117s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[16.117s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cppExport.cmake
+[16.118s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[16.118s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_pyExport.cmake
+[16.118s] -- Installing: /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[16.120s] Invoked command in '/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/install/main:/opt/ros/humble /usr/bin/cmake --install /home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces

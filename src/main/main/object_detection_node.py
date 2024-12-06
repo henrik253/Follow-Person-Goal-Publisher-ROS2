@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
+from PIL import Image as PIL_Image
 from std_msgs.msg import Float32MultiArray
 from cv_bridge import CvBridge
 import cv2
@@ -8,15 +9,15 @@ from ultralytics import YOLO
 import numpy as np
 import logging
 from object_tracking_messages.msg import DetectedPersons, DetectedPerson, BoundingBox, PersonKeyPoint
-
 import torch
 from torchreid.reid.utils import FeatureExtractor
 from torch.nn.functional import cosine_similarity
+from torchvision import transforms
 from collections import deque 
-
 import statistics
 import os
 import shutil
+from main.utils.id_mapper import idMapper
 
 
 logging.basicConfig(
@@ -33,9 +34,9 @@ logging.getLogger("sensor_msgs").setLevel(logging.ERROR)  # Suppress logging fro
 # REID Parameter
 MAX_QUEUE_SIZE_LAST_FEATURES = 10
 MAX_LIST_SIZE_FIXED_FEATURES = 10
-MIN_SIMILARITY_FOR_MATCHING = 0.67
+MIN_SIMILARITY_FOR_MATCHING = 0.6
 MIN_AVG_SIMILARITY_TRESHOLD = 0.85 # average similarity between features inside a candidate are coming close to this value
-MIN_REMOVE_CANDIDATE_TRESHOLD = 0.9
+MIN_REMOVE_CANDIDATE_TRESHOLD = 0.8
 FILL_FIXED_FEATURES_WITH_FILTERING = False # set this to true when calibrating is not going to be used!
 
 USE_MARGIN = True# TODO make a padding from where on values should be cut out!
@@ -77,16 +78,23 @@ class ObjectTracker(Node):
 
         # REID 
         self.extractor = FeatureExtractor(
-            model_name='osnet_x1_0',
+            model_name='pcb_p6',
             device='cuda' if torch.cuda.is_available() else 'cpu'
         )
+
+        self.transform =  transforms.Compose([
+            transforms.Resize((256, 128)),  # ReID-typische Bildgröße
+            transforms.ToTensor(),
+            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])  # ImageNet-Normalisierung
+        ])
 
         # ID manager
         self.last_tracked_persons = {}  # Custom ID -> feature vector
         self.fixed_tracked_persons = {} # Custom ID -> feature vector
 
         self.disappeared_ids = set() # disapperead ids
-        self.yolo_to_custom_id = {}  # YOLO ID -> Custom ID
+        self.disappeared_yolo_ids = set()
+        self.yolo_to_custom_id = idMapper()  # YOLO ID -> Custom ID
         self.person_id_counter = 0  # Counter for new IDs
 
         # Improvements
@@ -151,12 +159,16 @@ class ObjectTracker(Node):
     def preprocess_image(self,image):
         resized_image = cv2.resize(image, (256, 512))
         rgb_image = cv2.cvtColor(resized_image, cv2.COLOR_BGR2RGB)
-        return rgb_image  
+        
+        # Convert numpy array to PIL Image
+        pil_image = PIL_Image.fromarray(rgb_image)
+        
+        # Apply the transformations
+        return self.transform(pil_image)
 
     def extract_features(self,image):
         features = self.extractor(self.preprocess_image(image))[0]
         return features
-
     
     def update_tracked_persons(self, custom_id, feature):
         if custom_id not in self.last_tracked_persons and custom_id not in self.fixed_tracked_persons: # new candidate will be created with fixed and current features
@@ -233,6 +245,7 @@ class ObjectTracker(Node):
 
         ids_to_remove = {} # Keep track of IDs to remove
         candidate_ids = list(self.fixed_tracked_persons.keys())  # Get list of disappeared IDs
+
         # Compare every pair of disappeared persons
         for i, id1 in enumerate(candidate_ids):
             if id1 in ids_to_remove.values():
@@ -246,16 +259,17 @@ class ObjectTracker(Node):
 
                 features2 = self.fixed_tracked_persons[id2]
 
-                similarities = []
+                similarities_from_id1_and_id2 = []
                 for feature1 in features1:
                     for feature2 in features2:
                         sim = self.get_similarity(
                             feature1, feature2
                         )
-                        similarities.append(sim)
+                        similarities_from_id1_and_id2.append(sim)
 
-                if similarities:
-                    mean_similarity = statistics.mean(similarities)
+                if similarities_from_id1_and_id2:
+                    
+                    mean_similarity = statistics.mean(similarities_from_id1_and_id2)
                     print(f"Mean similarity between ID {id1} and ID {id2}: {mean_similarity}")
                     
                     if mean_similarity >= MIN_REMOVE_CANDIDATE_TRESHOLD:   # If similarity is above the threshold, we consider them as the same person or as an inconsistency! 
@@ -269,17 +283,17 @@ class ObjectTracker(Node):
         
     # just fill up IMPORTANT TO SAY WHY 
     def merge_candidates(self,inconsistent_id, id_to_merge_in):  
-         
-        while len(self.fixed_tracked_persons[id_to_merge_in]) < MAX_LIST_SIZE_FIXED_FEATURES:
+        
+        while len(self.fixed_tracked_persons[id_to_merge_in]) < MAX_LIST_SIZE_FIXED_FEATURES and len(self.fixed_tracked_persons[inconsistent_id]) > 0: 
             self.fixed_tracked_persons[id_to_merge_in].append(self.fixed_tracked_persons[inconsistent_id].pop()) 
         
         del self.fixed_tracked_persons[inconsistent_id]
         del self.last_tracked_persons[inconsistent_id]
-        try:
-            del self.disappeared_persons[inconsistent_id] 
-        except KeyError as e:
-            pass
+        yolo_id = self.yolo_to_custom_id.get_key_from_value(inconsistent_id)
         
+        if(yolo_id):
+            self.disappeared_yolo_ids.remove(yolo_id)
+
     def get_similarity(self, feature1, feature2):
         # Create a unique key for the pair
         if ENABLE_CACHING:
@@ -296,37 +310,40 @@ class ObjectTracker(Node):
         if similarities:
             # highest_values = sorted(similarities, reverse=True)[:5] # insteaf of max we take n best values
             # return np.mean(highest_values)
-            return max(similarities)
+            return np.median(similarities)
         else: 
             return 0.0
         
 
     def calculate_similarities(self, disappeared_id, current_person_feature):
         similarities = []
-        
-        print('fixed similarites: ')
-        
+
+        print('fixed similarities: ')
         for disappeared_feature in self.fixed_tracked_persons[disappeared_id]:
             sim = self.get_similarity(disappeared_feature, current_person_feature)
             similarities.append(sim)
-            print(f"        {sim}")  
-        
+            print(f"        {sim}")
 
-
-        print('last similarites: ')
+        print('last similarities: ')
         temp = []
         for disappeared_feature in self.last_tracked_persons[disappeared_id]:
-
             sim = self.get_similarity(disappeared_feature, current_person_feature)
+            temp.append(torch.dist(disappeared_feature, current_person_feature, p=2))
             similarities.append(sim)
-            temp.append(sim)
-            print(f"        {sim}")  
+            print(f"        {sim}")
 
+        # Ensure all items are converted to float for statistics module
+        temp = [sim.item() if isinstance(sim, torch.Tensor) else float(sim) for sim in temp]
+        similarities = [sim.item() if isinstance(sim, torch.Tensor) else float(sim) for sim in similarities]
 
-        print(f'    Best similarity (fixed): {self.determine_best_similarity(similarities)}')
-        print(f'    Average Similarity (fixed): {statistics.mean(similarities) if similarities else 0.0}')
-        print(f'    Median Similarity (fixed): {statistics.median(similarities) if similarities else 0.0}')
-        return similarities 
+        print(f'    Best similarity: {self.determine_best_similarity(similarities)}')
+        print(f'    Average Similarity: {statistics.mean(similarities) if similarities else 0.0}')
+        print(f'    Median Similarity: {statistics.median(similarities) if similarities else 0.0}')
+        print(f'    Best temp Similarity: {self.determine_best_similarity(temp) if temp else 0.0}')
+        print(f'    mean temp Similarity: {statistics.mean(temp) if temp else 0.0}')
+        print(f'    median temp Similarity: {statistics.median(temp) if temp else 0.0}')
+
+        return similarities
     
     def image_callback(self, msg):
         cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
@@ -335,6 +352,7 @@ class ObjectTracker(Node):
         persons = []
         
         active_ids = set()
+        active_yolo_ids = set() 
 
         try:
             track_ids = trackedResults[0].boxes.id.int().cpu().tolist()
@@ -388,8 +406,8 @@ class ObjectTracker(Node):
                 best_similarity = 0.0 # Debugging!
 
                 # Check if YOLO ID is already mapped to a custom ID
-                if yolo_id in self.yolo_to_custom_id.keys():
-                    custom_id = self.yolo_to_custom_id[yolo_id]
+                if yolo_id in self.yolo_to_custom_id.keys() and yolo_id not in self.disappeared_yolo_ids:
+                    custom_id = self.yolo_to_custom_id.get(yolo_id)
                 else:
                     print('\n \n \n')
                     print(f'Person entered the frame! avaible {self.disappeared_ids}')
@@ -421,10 +439,11 @@ class ObjectTracker(Node):
                         custom_id = self.person_id_counter
                         self.save_cropped_person_image(f"new_id_{self.get_image_counter()}",custom_id,cropped_person)
                         
-                    self.yolo_to_custom_id[yolo_id] = custom_id
+                    self.yolo_to_custom_id.put(yolo_id,custom_id)
                   
                 self.update_tracked_persons(custom_id, current_person_feature) # every detected person will be handled in these function but no untracked as the name suggests
                 active_ids.add(custom_id)   
+                active_yolo_ids.add(yolo_id)
 
                 detectedPerson.id = custom_id
                 detectedPerson.confidence = confidence
@@ -455,16 +474,8 @@ class ObjectTracker(Node):
         
         # Handle disappeared persons
         self.disappeared_ids = set(self.fixed_tracked_persons.keys()) - set(active_ids)
-        
-
-    
-        # Remove old YOLO to custom ID mappings for disappeared YOLO IDs
-        self.yolo_to_custom_id = {
-            yolo_id: custom_id
-            for yolo_id, custom_id in self.yolo_to_custom_id.items()
-            if custom_id in self.fixed_tracked_persons
-        }
-        
+        self.disappeared_yolo_ids = set(self.yolo_to_custom_id.keys()) - active_yolo_ids
+     
         detectedPersonsMsg.persons = persons
         self.detected_persons_publisher.publish(detectedPersonsMsg)
         tracked_image = self.bridge.cv2_to_imgmsg(cv_image, encoding='bgr8')
