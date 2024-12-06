@@ -10,10 +10,12 @@ from main.utils.person_pose_classifier import classify_pose
 from visualization_msgs.msg import Marker
 from enum import Enum 
 import logging
+from collections import defaultdict
 
 logging.getLogger().setLevel(logging.INFO)
 
-PUBLISH_GOAL_RATE = 0.5 # in seconds
+PUBLISH_GOAL_RATE = 0.25 # in seconds
+MIN_POSE_COUNT = 3
 
 class State(Enum): 
     STARTED = 0
@@ -50,6 +52,8 @@ class GoalPublisher(Node):
         # GoalStateMachine setup
         self.current_state = State.STARTED
         
+        self.pose_counter = defaultdict(int)
+
         # Tracked target person 
         self.target_person = None
 
@@ -59,8 +63,8 @@ class GoalPublisher(Node):
         self.target_person_map_position = None
         # Flag if transform to map succeded 
         self.last_target_position_success = False
-        # distance
-        self.distance = 1.5 # 1m min distance to person 
+
+        self.distance = 0.5 # minimum distance to person  
 
     def change_state(self, new_state):
         self.get_logger().info(f'State changed from {self.current_state.name} to {new_state.name}')
@@ -144,6 +148,8 @@ class GoalPublisher(Node):
     def started_state(self):
         self.change_state(State.LOOK_FOR_PERSON_TO_FOLLOW)
 
+
+
     def look_for_person_to_follow_state(self, person_real_world, person_keypoints):
         persons_with_right_hand_up = []
         for person_id, keypoints in person_keypoints.items():
@@ -151,8 +157,12 @@ class GoalPublisher(Node):
             
             # Calculate distances of all person with pose
             if pose == Pose.RIGHT_HAND_UP:
+                self.pose_counter[(person_id,Pose.RIGHT_HAND_UP)] += 1 
+
+            if self.pose_counter[(person_id,Pose.RIGHT_HAND_UP)] >= MIN_POSE_COUNT: 
                 distance = sum(coord ** 2 for coord in person_real_world[person_id]) ** 0.5
                 persons_with_right_hand_up.append((distance, person_id))
+                self.pose_counter[(self.target_person, Pose.LEFT_HAND_UP)] = 0 
 
         if persons_with_right_hand_up:
             # taret person with pose that has the closet distance 
@@ -168,7 +178,12 @@ class GoalPublisher(Node):
     def follow_person_state(self, persons_to_real_world, persons_to_keypoints):
         if self.target_person in persons_to_real_world:
             if classify_pose(persons_to_keypoints[self.target_person]) == Pose.LEFT_HAND_UP:
+                self.pose_counter[(self.target_person, Pose.LEFT_HAND_UP)] += 1
+            if self.pose_counter[(self.target_person, Pose.LEFT_HAND_UP)]  >= MIN_POSE_COUNT:
                 self.change_state(State.STOP_FOLLOW_PERSON)
+                self.pose_counter[(self.target_person, Pose.RIGHT_HAND_UP)] = 0
+            else:
+                pass
             try:
                 person_rwc = persons_to_real_world[self.target_person]
                 if(person_rwc[0] and person_rwc[1] and person_rwc[2]): 

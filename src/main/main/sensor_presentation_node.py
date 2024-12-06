@@ -145,7 +145,7 @@ class VisualizationNode(Node):
                 #text_down = f"ID: {detected['id']}, {real_coords_str}"
                 self.last_conf = detected['confidence'] if detected['confidence'] > 0.0 else self.last_conf
                 
-                text_down = f"ID: {detected['id']}, SIM: {self.last_conf:.2f}"
+                text_down = f"ID: {detected['id']}"
                 #cv2.putText(self.cv_image, text_up, (x1, y1 - 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
                 cv2.putText(self.cv_image, text_down + " : " + text_up, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
 

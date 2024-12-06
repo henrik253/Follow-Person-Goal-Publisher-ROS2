@@ -32,15 +32,15 @@ logging.getLogger("rclpy").setLevel(logging.ERROR)  # Suppress logging from rclp
 logging.getLogger("sensor_msgs").setLevel(logging.ERROR)  # Suppress logging from sensor_msgs if needed
 
 # REID Parameter
-MAX_QUEUE_SIZE_LAST_FEATURES = 10
-MAX_LIST_SIZE_FIXED_FEATURES = 10
+MAX_QUEUE_SIZE_LAST_FEATURES = 15
+MAX_LIST_SIZE_FIXED_FEATURES = 20
 MIN_SIMILARITY_FOR_MATCHING = 0.6
-MIN_AVG_SIMILARITY_TRESHOLD = 0.85 # average similarity between features inside a candidate are coming close to this value
+MIN_AVG_SIMILARITY_TRESHOLD = 0.76 # average similarity between features inside a candidate are coming close to this value
 MIN_REMOVE_CANDIDATE_TRESHOLD = 0.8
-FILL_FIXED_FEATURES_WITH_FILTERING = False # set this to true when calibrating is not going to be used!
+FILL_FIXED_FEATURES_WITH_FILTERING = True # set this to true when calibrating is not going to be used!
 
-USE_MARGIN = True# TODO make a padding from where on values should be cut out!
-MARGIN_LEFT_RIGHT_PERCENTAGE = 0.15 # in percentage 
+USE_MARGIN = False# TODO make a padding from where on values should be cut out!
+MARGIN_LEFT_RIGHT_PERCENTAGE = 0.1 # in percentage 
 
 # REID Debugging
 SAVE_CROPPED_PERSON = True
@@ -75,10 +75,16 @@ class ObjectTracker(Node):
         # Create CvBridge to convert ROS Image messages to OpenCV images
         self.bridge = CvBridge()
         self.model = YOLO('yolov8n-pose.pt')
+#['resnet18', 'resnet34', 'resnet50', 'resnet101', 'resnet152', 'resnext50_32x4d', 'resnext101_32x8d', 'resnet50_fc512', 'se_resnet50', 'se_resnet50_fc512', 'se_resnet101', 
+# 'se_resnext50_32x4d', 'se_resnext101_32x4d', 'densenet121', 'densenet169', 'densenet201', 'densenet161', 'densenet121_fc512', 'inceptionresnetv2',
+#  'inceptionv4', 'xception', 'resnet50_ibn_a', 'resnet50_ibn_b', 'nasnsetmobile', 'mobilenetv2_x1_0', 'mobilenetv2_x1_4', 'shufflenet', 'squeezenet1_0',
+#  'squeezenet1_0_fc512', 'squeezenet1_1', 'shufflenet_v2_x0_5', 'shufflenet_v2_x1_0', 'shufflenet_v2_x1_5', 'shufflenet_v2_x2_0', 'mudeep', 'resnet50mid',
+#  'hacnn', 'pcb_p6', 'pcb_p4', 'mlfn', 'osnet_x1_0', 'osnet_x0_75', 'osnet_x0_5', 'osnet_x0_25', 'osnet_ibn_x1_0', 'osnet_ain_x1_0', 'osnet_ain_x0_75', 
+# 'osnet_ain_x0_5', 'osnet_ain_x0_25']"
 
         # REID 
-        self.extractor = FeatureExtractor(
-            model_name='pcb_p6',
+        self.extractor = FeatureExtractor( # 
+            model_name='osnet_x1_0',   # 1. perfect run: resnext50_32x4d 
             device='cuda' if torch.cuda.is_available() else 'cpu'
         )
 
@@ -138,11 +144,12 @@ class ObjectTracker(Node):
         # Create a directory for the custom ID if it doesn't exist
         person_dir = os.path.join(self.image_storage_dir, f"person_{custom_id}")
         os.makedirs(person_dir, exist_ok=True)
-
+        resized_image = cv2.resize(image, (256, 512))
+        rgb_image = cv2.cvtColor(resized_image, cv2.COLOR_BGR2RGB)
         # Save the image with a unique name
         image_count = len(os.listdir(person_dir))
         image_path = os.path.join(person_dir, f"image_{custom_id}_{type}.jpg")
-        cv2.imwrite(image_path, image)
+        cv2.imwrite(image_path, rgb_image)
         #self.get_logger().info(f"Saved cropped image for person {custom_id} at {image_path}")
 
     def remove_cropped_person_folder(self, custom_id): 
@@ -157,11 +164,11 @@ class ObjectTracker(Node):
 
     # RE-ID
     def preprocess_image(self,image):
-        resized_image = cv2.resize(image, (256, 512))
-        rgb_image = cv2.cvtColor(resized_image, cv2.COLOR_BGR2RGB)
+        # resized_image = cv2.resize(image, (256, 512))
+        # rgb_image = cv2.cvtColor(resized_image, cv2.COLOR_BGR2RGB)
         
         # Convert numpy array to PIL Image
-        pil_image = PIL_Image.fromarray(rgb_image)
+        pil_image = PIL_Image.fromarray(image)
         
         # Apply the transformations
         return self.transform(pil_image)
@@ -200,7 +207,7 @@ class ObjectTracker(Node):
                 feature_summed_similarity = self.get_summed_similarity_of_feature(custom_id,feature)
                 normalized_summed_similarity_all_neighbours = summed_similarity_all_neighbours / (n - 1.0) # n - 1, because its a feature and is compared to all its n - 1 neighbours
                 normalized_feature_summed_similarity = feature_summed_similarity / (n)
-
+                
                 if normalized_feature_summed_similarity < normalized_summed_similarity_all_neighbours and normalized_feature_summed_similarity >= MIN_AVG_SIMILARITY_TRESHOLD:
                     self.fixed_tracked_persons[custom_id][index] = feature
                     self.save_cropped_person_image(f'replace_{index}',custom_id)
@@ -283,18 +290,20 @@ class ObjectTracker(Node):
         
     # just fill up IMPORTANT TO SAY WHY 
     def merge_candidates(self,inconsistent_id, id_to_merge_in):  
-        
-        while len(self.fixed_tracked_persons[id_to_merge_in]) < MAX_LIST_SIZE_FIXED_FEATURES and len(self.fixed_tracked_persons[inconsistent_id]) > 0: 
-            self.fixed_tracked_persons[id_to_merge_in].append(self.fixed_tracked_persons[inconsistent_id].pop()) 
-        
-        del self.fixed_tracked_persons[inconsistent_id]
-        del self.last_tracked_persons[inconsistent_id]
-        yolo_id = self.yolo_to_custom_id.get_key_from_value(inconsistent_id)
-        
-        if(yolo_id):
-            self.disappeared_yolo_ids.remove(yolo_id)
+        try:
+            while len(self.fixed_tracked_persons[id_to_merge_in]) < MAX_LIST_SIZE_FIXED_FEATURES and len(self.fixed_tracked_persons[inconsistent_id]) > 0: 
+                self.fixed_tracked_persons[id_to_merge_in].append(self.fixed_tracked_persons[inconsistent_id].pop()) 
+            
+            del self.fixed_tracked_persons[inconsistent_id]
+            del self.last_tracked_persons[inconsistent_id]
+            yolo_id = self.yolo_to_custom_id.get_key_from_value(inconsistent_id)
+            
+            if(yolo_id):
+                self.disappeared_yolo_ids.remove(yolo_id)
+        except KeyError:
+            pass
 
-    def get_similarity(self, feature1, feature2):
+    def get_cosine_similarity(self, feature1, feature2):
         # Create a unique key for the pair
         if ENABLE_CACHING:
             pair_key = (id(feature1), id(feature2))
@@ -305,45 +314,72 @@ class ObjectTracker(Node):
         similarity = cosine_similarity(feature1.unsqueeze(0), feature2.unsqueeze(0)).item()
         self.similarity_cache[pair_key] = similarity
         return similarity
+    
+    def get_similarity(self, feature1, feature2, w1=0.9, w2=0.1, max_distance=30.0, min_distance=5.0):
+        if ENABLE_CACHING:
+            pair_key = (id(feature1), id(feature2))
+            if pair_key in self.similarity_cache:
+                return self.similarity_cache[pair_key]
 
+
+        cosine_sim = cosine_similarity(feature1.unsqueeze(0), feature2.unsqueeze(0)).item()
+        distance = torch.dist(feature1, feature2, p=2).item()
+        
+        if distance <= min_distance:
+            normalized_distance = 1.0
+        elif distance >= max_distance:
+            normalized_distance = 0.0
+        else:
+            normalized_distance = (max_distance - distance) / (max_distance - min_distance)
+        
+        combined_score = w1 * cosine_sim + w2 * normalized_distance
+        combined_score = max(0.0, min(1.0, combined_score))
+        
+        # Cache the combined score
+        if ENABLE_CACHING:
+            self.similarity_cache[pair_key] = combined_score
+        
+        return combined_score
+
+
+    
     def determine_best_similarity(self,similarities):
         if similarities:
-            # highest_values = sorted(similarities, reverse=True)[:5] # insteaf of max we take n best values
-            # return np.mean(highest_values)
-            return np.median(similarities)
+            #  top_n_candidates = int((MAX_LIST_SIZE_FIXED_FEATURES + MAX_QUEUE_SIZE_LAST_FEATURES) / 4)
+            #  highest_values = sorted(similarities, reverse=True)[:top_n_candidates] # insteaf of max we take n best values
+            #  return statistics.median(highest_values)
+            return max(similarities)
         else: 
             return 0.0
         
 
     def calculate_similarities(self, disappeared_id, current_person_feature):
-        similarities = []
-
+        cosine_similarities = []
+        euclidian_sims = []
         print('fixed similarities: ')
         for disappeared_feature in self.fixed_tracked_persons[disappeared_id]:
             sim = self.get_similarity(disappeared_feature, current_person_feature)
-            similarities.append(sim)
+            cosine_similarities.append(sim)
             print(f"        {sim}")
 
         print('last similarities: ')
-        temp = []
+
         for disappeared_feature in self.last_tracked_persons[disappeared_id]:
             sim = self.get_similarity(disappeared_feature, current_person_feature)
-            temp.append(torch.dist(disappeared_feature, current_person_feature, p=2))
-            similarities.append(sim)
+            cosine_similarities.append(sim)
             print(f"        {sim}")
 
         # Ensure all items are converted to float for statistics module
-        temp = [sim.item() if isinstance(sim, torch.Tensor) else float(sim) for sim in temp]
-        similarities = [sim.item() if isinstance(sim, torch.Tensor) else float(sim) for sim in similarities]
+        euclidian_sims = [sim.item() if isinstance(sim, torch.Tensor) else float(sim) for sim in euclidian_sims]
+        cosine_similarities = [sim.item() if isinstance(sim, torch.Tensor) else float(sim) for sim in cosine_similarities]
 
-        print(f'    Best similarity: {self.determine_best_similarity(similarities)}')
-        print(f'    Average Similarity: {statistics.mean(similarities) if similarities else 0.0}')
-        print(f'    Median Similarity: {statistics.median(similarities) if similarities else 0.0}')
-        print(f'    Best temp Similarity: {self.determine_best_similarity(temp) if temp else 0.0}')
-        print(f'    mean temp Similarity: {statistics.mean(temp) if temp else 0.0}')
-        print(f'    median temp Similarity: {statistics.median(temp) if temp else 0.0}')
+        print(f'    Best similarity: {self.determine_best_similarity(cosine_similarities)}')
+        print(f'    Average Similarity: {statistics.mean(cosine_similarities) if cosine_similarities else 0.0}')
+        print(f'    Median Similarity: {statistics.median(cosine_similarities) if cosine_similarities else 0.0}')
+        
 
-        return similarities
+
+        return cosine_similarities
     
     def image_callback(self, msg):
         cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
@@ -411,7 +447,7 @@ class ObjectTracker(Node):
                 else:
                     print('\n \n \n')
                     print(f'Person entered the frame! avaible {self.disappeared_ids}')
-                    self.update_candidates()  # Ensure no candidate is multiple in disappeared_persons      !!!!! BUGFIXING !!!!!! <----  
+                    #self.update_candidates()  # Ensure no candidate is multiple in disappeared_persons      !!!!! BUGFIXING !!!!!! <----  
                 
                     # Attempt to match with disappeared persons
                     best_match_id = None
@@ -434,7 +470,7 @@ class ObjectTracker(Node):
                         self.save_cropped_person_image(f"matching_{self.get_image_counter()}",custom_id,cropped_person)
                     else:
                         # Assign a new custom ID                
-                        self.person_id_counter -= 1
+                        self.person_id_counter += 1
                         print(f'    new id {self.person_id_counter}')
                         custom_id = self.person_id_counter
                         self.save_cropped_person_image(f"new_id_{self.get_image_counter()}",custom_id,cropped_person)
