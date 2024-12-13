@@ -33,9 +33,9 @@ logging.getLogger("sensor_msgs").setLevel(logging.ERROR)  # Suppress logging fro
 
 # REID Parameter
 MAX_QUEUE_SIZE_LAST_FEATURES = 15
-MAX_LIST_SIZE_FIXED_FEATURES = 20
+MAX_LIST_SIZE_FIXED_FEATURES = 10
 MIN_SIMILARITY_FOR_MATCHING = 0.6
-MIN_AVG_SIMILARITY_TRESHOLD = 0.76 # average similarity between features inside a candidate are coming close to this value
+MIN_AVG_SIMILARITY_TRESHOLD = 0.8 # average similarity between features inside a candidate are coming close to this value
 MIN_REMOVE_CANDIDATE_TRESHOLD = 0.8
 FILL_FIXED_FEATURES_WITH_FILTERING = True # set this to true when calibrating is not going to be used!
 
@@ -84,7 +84,7 @@ class ObjectTracker(Node):
 
         # REID 
         self.extractor = FeatureExtractor( # 
-            model_name='osnet_x1_0',   # 1. perfect run: resnext50_32x4d 
+            model_name='osnet_x1_0',   # 1. perfect run: 
             device='cuda' if torch.cuda.is_available() else 'cpu'
         )
 
@@ -145,7 +145,7 @@ class ObjectTracker(Node):
         person_dir = os.path.join(self.image_storage_dir, f"person_{custom_id}")
         os.makedirs(person_dir, exist_ok=True)
         resized_image = cv2.resize(image, (256, 512))
-        rgb_image = cv2.cvtColor(resized_image, cv2.COLOR_BGR2RGB)
+        rgb_image = cv2.cvtColor(resized_image, cv2.COLOR_RGB2RGBA)
         # Save the image with a unique name
         image_count = len(os.listdir(person_dir))
         image_path = os.path.join(person_dir, f"image_{custom_id}_{type}.jpg")
@@ -199,6 +199,8 @@ class ObjectTracker(Node):
                     if(avg_similarity_of_feature_to_fixed_features >= MIN_AVG_SIMILARITY_TRESHOLD):
                         self.fixed_tracked_persons[custom_id].append(last_feature)
                         self.save_cropped_person_image(f'first_fixed_{len(self.fixed_tracked_persons[custom_id]) - 1}',custom_id)
+                        if(custom_id == 1):    
+                            print(f'fill: {avg_similarity_of_feature_to_fixed_features}')
                 else:
                     self.fixed_tracked_persons[custom_id].append(last_feature)
                     self.save_cropped_person_image(f'first_fixed_{len(self.fixed_tracked_persons[custom_id]) - 1}',custom_id)
@@ -206,9 +208,12 @@ class ObjectTracker(Node):
                 most_similar_feature, index, summed_similarity_all_neighbours = self.get_summed_similarity_of_fixed_features(custom_id)
                 feature_summed_similarity = self.get_summed_similarity_of_feature(custom_id,feature)
                 normalized_summed_similarity_all_neighbours = summed_similarity_all_neighbours / (n - 1.0) # n - 1, because its a feature and is compared to all its n - 1 neighbours
+          
                 normalized_feature_summed_similarity = feature_summed_similarity / (n)
                 
                 if normalized_feature_summed_similarity < normalized_summed_similarity_all_neighbours and normalized_feature_summed_similarity >= MIN_AVG_SIMILARITY_TRESHOLD:
+                    if(custom_id == 1):
+                        print(f'id: {custom_id} : {normalized_summed_similarity_all_neighbours}')
                     self.fixed_tracked_persons[custom_id][index] = feature
                     self.save_cropped_person_image(f'replace_{index}',custom_id)
                     #self.get_logger().info(f'replace avg sim {normalized_summed_similarity_all_neighbours} with compared avg sim {normalized_feature_summed_similarity}')
@@ -277,7 +282,7 @@ class ObjectTracker(Node):
                 if similarities_from_id1_and_id2:
                     
                     mean_similarity = statistics.mean(similarities_from_id1_and_id2)
-                    print(f"Mean similarity between ID {id1} and ID {id2}: {mean_similarity}")
+                    #print(f"Mean similarity between ID {id1} and ID {id2}: {mean_similarity}")
                     
                     if mean_similarity >= MIN_REMOVE_CANDIDATE_TRESHOLD:   # If similarity is above the threshold, we consider them as the same person or as an inconsistency! 
                         ids_to_remove[id1] = id2
@@ -285,7 +290,7 @@ class ObjectTracker(Node):
         # Remove the marked IDs from all appereances!
         for base_id, incosistent_id in ids_to_remove.items():
             self.merge_candidates(incosistent_id,base_id)
-            print(f"Merging candidate {incosistent_id} in {base_id}")
+            #print(f"Merging candidate {incosistent_id} in {base_id}")
             self.remove_cropped_person_folder(incosistent_id)
         
     # just fill up IMPORTANT TO SAY WHY 
@@ -333,7 +338,7 @@ class ObjectTracker(Node):
             normalized_distance = (max_distance - distance) / (max_distance - min_distance)
         
         combined_score = w1 * cosine_sim + w2 * normalized_distance
-        combined_score = max(0.0, min(1.0, combined_score))
+        combined_score = max(0.0, min(1.0, cosine_sim))#max(0.0, min(1.0, combined_score))
         
         # Cache the combined score
         if ENABLE_CACHING:
@@ -345,10 +350,10 @@ class ObjectTracker(Node):
     
     def determine_best_similarity(self,similarities):
         if similarities:
-            #  top_n_candidates = int((MAX_LIST_SIZE_FIXED_FEATURES + MAX_QUEUE_SIZE_LAST_FEATURES) / 4)
-            #  highest_values = sorted(similarities, reverse=True)[:top_n_candidates] # insteaf of max we take n best values
-            #  return statistics.median(highest_values)
-            return max(similarities)
+             top_n_candidates = int((MAX_LIST_SIZE_FIXED_FEATURES + MAX_QUEUE_SIZE_LAST_FEATURES) / 4)
+             highest_values = sorted(similarities, reverse=True)[:top_n_candidates] # insteaf of max we take n best values
+             return statistics.median(highest_values)
+            #return max(similarities)
         else: 
             return 0.0
         
@@ -356,28 +361,28 @@ class ObjectTracker(Node):
     def calculate_similarities(self, disappeared_id, current_person_feature):
         cosine_similarities = []
         euclidian_sims = []
-        print('fixed similarities: ')
+        # print('fixed similarities: ')
         for disappeared_feature in self.fixed_tracked_persons[disappeared_id]:
             sim = self.get_similarity(disappeared_feature, current_person_feature)
             cosine_similarities.append(sim)
-            print(f"        {sim}")
+            #print(f"        {sim}")
 
-        print('last similarities: ')
+        # print('last similarities: ')
 
         for disappeared_feature in self.last_tracked_persons[disappeared_id]:
             sim = self.get_similarity(disappeared_feature, current_person_feature)
             cosine_similarities.append(sim)
-            print(f"        {sim}")
+            #print(f"        {sim}")
 
         # Ensure all items are converted to float for statistics module
         euclidian_sims = [sim.item() if isinstance(sim, torch.Tensor) else float(sim) for sim in euclidian_sims]
         cosine_similarities = [sim.item() if isinstance(sim, torch.Tensor) else float(sim) for sim in cosine_similarities]
 
-        print(f'    Best similarity: {self.determine_best_similarity(cosine_similarities)}')
-        print(f'    Average Similarity: {statistics.mean(cosine_similarities) if cosine_similarities else 0.0}')
-        print(f'    Median Similarity: {statistics.median(cosine_similarities) if cosine_similarities else 0.0}')
+        # print(f'    Best similarity: {self.determine_best_similarity(cosine_similarities)}')
+        # print(f'    Average Similarity: {statistics.mean(cosine_similarities) if cosine_similarities else 0.0}')
+        # print(f'    Median Similarity: {statistics.median(cosine_similarities) if cosine_similarities else 0.0}')
         
-
+       # print(statistics.mean(cosine_similarities))
 
         return cosine_similarities
     
@@ -445,8 +450,8 @@ class ObjectTracker(Node):
                 if yolo_id in self.yolo_to_custom_id.keys() and yolo_id not in self.disappeared_yolo_ids:
                     custom_id = self.yolo_to_custom_id.get(yolo_id)
                 else:
-                    print('\n \n \n')
-                    print(f'Person entered the frame! avaible {self.disappeared_ids}')
+                    #print('\n \n \n')
+                    #print(f'Person entered the frame! avaible {self.disappeared_ids}')
                     #self.update_candidates()  # Ensure no candidate is multiple in disappeared_persons      !!!!! BUGFIXING !!!!!! <----  
                 
                     # Attempt to match with disappeared persons
@@ -454,7 +459,7 @@ class ObjectTracker(Node):
                     best_similarity = 0.0
                     # Compare entered person with disappeared featrues 
                     for disappeared_id in self.disappeared_ids:
-                        print(f'comparing to {disappeared_id}')
+                        #print(f'comparing to {disappeared_id}')
                         similarities = self.calculate_similarities(disappeared_id,current_person_feature)
                         similarity = self.determine_best_similarity(similarities)
                        
@@ -466,12 +471,12 @@ class ObjectTracker(Node):
 
                     if best_match_id is not None:
                         self.disappeared_ids.remove(best_match_id)
-                        print(f'   MATCH FOUND FOR {best_match_id}')
+                        #print(f'   MATCH FOUND FOR {best_match_id}')
                         self.save_cropped_person_image(f"matching_{self.get_image_counter()}",custom_id,cropped_person)
                     else:
                         # Assign a new custom ID                
                         self.person_id_counter += 1
-                        print(f'    new id {self.person_id_counter}')
+                        #print(f'    new id {self.person_id_counter}')
                         custom_id = self.person_id_counter
                         self.save_cropped_person_image(f"new_id_{self.get_image_counter()}",custom_id,cropped_person)
                         

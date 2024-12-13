@@ -129,6 +129,7 @@ class GoalPublisher(Node):
                     self.publish_marker()
   
                     self.goal_publisher.publish(goal_msg)
+                    print(goal_msg)
 
     def person_positions_callback(self, msg):
         # Process (detected persons, keypoints) data and update state machine
