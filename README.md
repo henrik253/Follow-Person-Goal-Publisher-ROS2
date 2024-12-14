@@ -56,7 +56,7 @@ To build and run the project, follow these steps:
    
 2. To launch the main application, run:
    ```bash
-    ros2 launch main main_launch.py or . launch/run.sh
+    ros2 launch main main_launch.py 
    ```
    or
      ```bash
