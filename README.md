@@ -65,6 +65,7 @@ To build and run the project, follow these steps:
 if there are any missing dependencys, just install them via pip. For example:
  ```bash
    pip install torchreid
+   pip install godwn
    pip install tensorboard
    ```
 For More Information and Debugging
