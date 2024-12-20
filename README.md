@@ -29,11 +29,13 @@ When a person raises their right arm:
    - A working **Nav2 stack**.
    - A properly configured **TF2 tree**.
    
-3. TF2 setup:
+2. TF2 setup:
    - The **ZED 2i camera** must be defined relative to the robot's `base` frame in the TF2 tree.
    - A transformation to the `/map` frame must be provided. 
      - This ensures that the detected person's position in real-world coordinates can be translated to map coordinates.
      - The map coordinates are then published to the `/goal_pose` topic.
+
+
 
 ## Installation
 Make sure you are using ROS2 Humble.
@@ -81,5 +83,5 @@ For More Information and Debugging
    . launch/run.sh
    ```
 
-
+To work with this project in the Robotics Lab, read HOW_TO_RUN.txt.
 
