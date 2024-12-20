@@ -2,7 +2,7 @@
 
 This project is part of a bachelor thesis at **Hochschule Trier** and is currently in the development phase. 
 
-<video width="640" height="360" controls> <source src="demonstration.mp4" type="video/mp4"> Your browser does not support the video tag. </video> ```
+<video width="640" height="360" controls> <source src="demonstration.mp4" type="video/mp4"> Your browser does not support the video tag. </video> 
 
 ### Key-Features
 
