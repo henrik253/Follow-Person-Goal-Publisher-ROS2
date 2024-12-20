@@ -2,6 +2,8 @@
 
 This project is part of a bachelor thesis at **Hochschule Trier** and is currently in the development phase. 
 
+<video width="640" height="360" controls> <source src="demonstration.mp4" type="video/mp4"> Your browser does not support the video tag. </video> ```
+
 ### Key-Features
 
 - **Person Detection & Tracking**: Detects and tracks people in real-time using **YOLOv8-N Pose Model** and the **ZED 2i camera**.
