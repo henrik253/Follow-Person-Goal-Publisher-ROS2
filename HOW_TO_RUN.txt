@@ -1,0 +1,13 @@
+Prepare the GO1 and nav2 stack (login to remina, etc.) 
+For better presentation in RViz, visualize the ouster cloud point and activate the goal_pose in RViz.
+
+
+Install the dependencies: 
+pip install torchreid
+pip install godown
+pip install tensorboard
+
+Run this project: 
+1. colon build --symlink-install
+2. install/setub.bash
+3. launch/run.sh 
