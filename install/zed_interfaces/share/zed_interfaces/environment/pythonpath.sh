@@ -1,1 +1,0 @@
-/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/ament_cmake_environment_hooks/pythonpath.sh

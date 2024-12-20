@@ -1,9 +1,0 @@
-/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_ros2/CMakeFiles/uninstall.dir
-/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_ros2/CMakeFiles/zed_ros2_uninstall.dir
-/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_ros2/CMakeFiles/all_zed_ros2_files.dir
-/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_ros2/CMakeFiles/test.dir
-/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_ros2/CMakeFiles/edit_cache.dir
-/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_ros2/CMakeFiles/rebuild_cache.dir
-/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_ros2/CMakeFiles/list_install_components.dir
-/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_ros2/CMakeFiles/install.dir
-/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_ros2/CMakeFiles/install/local.dir

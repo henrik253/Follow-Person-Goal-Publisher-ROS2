@@ -1,1 +1,0 @@
-/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/rosidl_generator_py/zed_interfaces/_zed_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c

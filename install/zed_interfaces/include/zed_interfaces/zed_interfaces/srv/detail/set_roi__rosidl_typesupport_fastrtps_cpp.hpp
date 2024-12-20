@@ -1,1 +1,0 @@
-/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/zed_interfaces/rosidl_typesupport_fastrtps_cpp/zed_interfaces/srv/detail/set_roi__rosidl_typesupport_fastrtps_cpp.hpp

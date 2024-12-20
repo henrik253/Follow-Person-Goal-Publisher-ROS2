@@ -1,1 +1,0 @@
-/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/src/object_tracking_messages/msg/PersonKeyPoint.msg

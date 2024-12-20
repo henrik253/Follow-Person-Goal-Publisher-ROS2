@@ -43,7 +43,7 @@ sleep 3
 # -e "cd '$CURRENT_DIR';cd ../../Downloads;ros2 bag play rosbag2_2024_12_04-18_06_54/ --loop; exec bash" &
 
 
-xterm -geometry $TERMINAL_WIDTH"x"$TERMINAL_HEIGHT"+"$((0 * X_OFFSET))"+"$(40) \
--e "cd '$CURRENT_DIR';cd ../../Desktop;ros2 bag play 4_personen --loop; exec bash" &
+# xterm -geometry $TERMINAL_WIDTH"x"$TERMINAL_HEIGHT"+"$((0 * X_OFFSET))"+"$(40) \
+# -e "cd '$CURRENT_DIR';cd ../../Desktop;ros2 bag play 4_personen --loop; exec bash" &
 
 wait

@@ -203,10 +203,8 @@ class GoalPublisher(Node):
                 self.last_target_position_success = False
         else:
             pass
-            #self.get_logger().warn('Target person lost, transitioning to STOP_FOLLOW_PERSON')
-          #  self.change_state(State.STOP_FOLLOW_PERSON)
 
-    def stop_follow_person_state(self): # maybe wait a second 
+    def stop_follow_person_state(self): 
         self.change_state(State.LOOK_FOR_PERSON_TO_FOLLOW)
 
     def proccess_position_estimation_message(self, msg):

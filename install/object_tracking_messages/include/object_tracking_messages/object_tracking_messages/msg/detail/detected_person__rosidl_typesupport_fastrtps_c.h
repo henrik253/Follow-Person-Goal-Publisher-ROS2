@@ -1,1 +1,0 @@
-/home/student/Desktop/Follow-Person-Goal-Publisher-ROS2/build/object_tracking_messages/rosidl_typesupport_fastrtps_c/object_tracking_messages/msg/detail/detected_person__rosidl_typesupport_fastrtps_c.h
