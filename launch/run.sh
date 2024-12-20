@@ -15,7 +15,7 @@ SCREEN_HEIGHT=$(echo $SCREEN_RESOLUTION | cut -d 'x' -f 2)
 
 # Calculate the number of terminals and their dimensions
 NUM_TERMINALS=5
-TERMINAL_WIDTH=60
+TERMINAL_WIDTH=130
 TERMINAL_HEIGHT=20
 
 # Calculate positions
@@ -37,5 +37,13 @@ xterm -geometry $TERMINAL_WIDTH"x"$TERMINAL_HEIGHT"+"$((3 * X_OFFSET))"+"$Y_OFFS
 
 xterm -geometry $TERMINAL_WIDTH"x"$TERMINAL_HEIGHT"+"$((4 * X_OFFSET))"+"$Y_OFFSET \
 -e "cd '$CURRENT_DIR';cd ..; source install/setup.bash; ros2 run main goal_publisher_node; exec bash" &
+
+sleep 3
+# xterm -geometry $TERMINAL_WIDTH"x"$TERMINAL_HEIGHT"+"$((0 * X_OFFSET))"+"$(40) \
+# -e "cd '$CURRENT_DIR';cd ../../Downloads;ros2 bag play rosbag2_2024_12_04-18_06_54/ --loop; exec bash" &
+
+
+# xterm -geometry $TERMINAL_WIDTH"x"$TERMINAL_HEIGHT"+"$((0 * X_OFFSET))"+"$(40) \
+# -e "cd '$CURRENT_DIR';cd ../../Desktop;ros2 bag play 4_personen --loop; exec bash" &
 
 wait
