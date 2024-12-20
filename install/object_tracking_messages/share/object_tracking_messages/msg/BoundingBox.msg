@@ -1,1 +1,0 @@
-/home/student/Desktop/go1_follow_person_ws_henrik/src/object_tracking_messages/msg/BoundingBox.msg

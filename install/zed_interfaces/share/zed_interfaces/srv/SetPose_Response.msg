@@ -1,1 +1,0 @@
-/home/student/Desktop/go1_follow_person_ws_henrik/build/zed_interfaces/rosidl_cmake/srv/SetPose_Response.msg
