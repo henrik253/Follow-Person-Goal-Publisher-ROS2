@@ -2,7 +2,7 @@
 
 This project is part of a bachelor thesis at **Hochschule Trier** and is currently in the development phase. 
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/H27P_XvEwmA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 ### Key-Features
