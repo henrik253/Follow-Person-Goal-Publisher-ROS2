@@ -1,7 +1,11 @@
 # Follow Person Implementation in ROS2 Humble
 
 This project is part of a bachelor thesis at **Hochschule Trier** and is currently in the development phase. 
-[![Watch the video](https://img.youtube.com/vi/H27P_XvEwmA/hqdefault.jpg)](https://www.youtube.com/watch?v=H27P_XvEwmA)
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=H27P_XvEwmA">
+    <img src="https://img.youtube.com/vi/H27P_XvEwmA/hqdefault.jpg" alt="Watch the video" hspace="20">
+  </a>
+</p>
 
 ### Key-Features
 
